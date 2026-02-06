@@ -19,8 +19,8 @@ export function Header({
     <header className="bg-card border-b border-border">
       <div className="px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-2 text-primary">
-          <Mountain className="w-5 h-5" />
-          <span className="text-sm font-medium tracking-wide uppercase">
+          <Mountain className="w-10 h-10" />
+          <span className="text-2xl pt-2 font-bold tracking-wide uppercase">
             Ontario Ski Guide
           </span>
         </div>

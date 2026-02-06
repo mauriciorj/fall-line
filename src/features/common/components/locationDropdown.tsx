@@ -16,8 +16,8 @@ const LocationDropdown = ({
   return (
     <div className="flex flex-row items-center">
       <div>
-        <span className="whitespace-nowrap font-medium text-foreground mr-2">
-          Your Location
+        <span className="whitespace-nowrap text-foreground mr-2">
+          Current Location
         </span>
       </div>
       <Select

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Resort } from "@/types/resort";
 import { RunBreakdown } from "./runBreakdown";
-import { MapPin, Ticket, Package } from "lucide-react";
+import { Star, Ticket, Package } from "lucide-react";
 import { cn } from "@/utils/utils";
 import { useRouter } from "next/navigation";
 
@@ -56,7 +56,7 @@ export function ResortCard({ resort, isHovered, onHover }: ResortCardProps) {
         />
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-3 gap-3 pt-1">
+        <div className="grid grid-cols-4 gap-3 pt-1">
           <div className="space-y-1">
             <div className="flex items-center gap-1 text-muted-foreground">
               <Ticket className="w-3.5 h-3.5" />
@@ -72,22 +72,30 @@ export function ResortCard({ resort, isHovered, onHover }: ResortCardProps) {
             <div className="flex items-center gap-1 text-muted-foreground">
               <Package className="w-3.5 h-3.5" />
               <span className="text-[10px] uppercase tracking-wide">
-                Rental
+                Ski Rental
               </span>
             </div>
             <p className="text-sm font-medium text-foreground">
-              ${resort.rentalPrice}
+              ${resort.skiRentalPrice}
             </p>
           </div>
-          <div className="space-y-1">
+          <div className="space-y-1 w-max">
             <div className="flex items-center gap-1 text-muted-foreground">
-              <MapPin className="w-3.5 h-3.5" />
+              <Package className="w-3.5 h-3.5" />
               <span className="text-[10px] uppercase tracking-wide">
-                Distance
+                Snowboard Rental
               </span>
             </div>
             <p className="text-sm font-medium text-foreground">
-              {resort.distance} km
+              ${resort.snowBoardRentalPrice}
+            </p>
+          </div>
+          <div className="space-y-1 ml-12">
+            <div className="flex items-center gap-1 text-muted-foreground">
+              <Star className="w-3.5 h-3.5" />
+            </div>
+            <p className="text-sm font-medium text-foreground">
+              {resort.rating}
             </p>
           </div>
         </div>

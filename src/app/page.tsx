@@ -6,8 +6,17 @@ import { ResortList } from "@/components/resortList";
 import { ResortMap } from "@/components/resortMap";
 import { FilterState } from "@/components/filterPopover";
 import { resorts as allResorts } from "@/data/resorts";
+import { useIsMobile } from "@/hooks/useMobile";
+// import { Group, Panel } from "react-resizable-panels";
+import {
+  ResizableHandle,
+  ResizablePanel,
+  ResizablePanelGroup,
+} from "@/components/ui/resizable";
 
 const Index = () => {
+  const isMobile = useIsMobile();
+
   const [hoveredResortId, setHoveredResortId] = useState<string | null>(null);
   const [filters, setFilters] = useState<FilterState>({
     sortBy: "distance",
@@ -75,24 +84,43 @@ const Index = () => {
       />
 
       <main className="flex flex-col lg:flex-row h-[calc(100vh-57px)]">
-        {/* Resort Cards - Left Side */}
+        {isMobile ? (
+          <ResizablePanelGroup orientation="vertical">
+            <ResizablePanel defaultSize="50%" minSize="5%">
+              <ResortMap
+                resorts={filteredResorts}
+                hoveredResortId={hoveredResortId}
+                onMarkerHover={setHoveredResortId}
+              />
+            </ResizablePanel>
+            <ResizableHandle withHandle />
+            <ResizablePanel defaultSize="50%" minSize="10%">
+              <ResortList
+                resorts={filteredResorts}
+                hoveredResortId={hoveredResortId}
+                onHover={setHoveredResortId}
+              />
+            </ResizablePanel>
+          </ResizablePanelGroup>
+        ) : (
+          <>
+            <section className="order-2 lg:order-1 w-full lg:w-[480px] xl:w-[520px] flex-1 lg:flex-none border-t lg:border-t-0 lg:border-r border-border flex flex-col overflow-hidden min-h-0">
+              <ResortList
+                resorts={filteredResorts}
+                hoveredResortId={hoveredResortId}
+                onHover={setHoveredResortId}
+              />
+            </section>
 
-        <section className="order-2 lg:order-1 w-full lg:w-[480px] xl:w-[520px] flex-1 lg:flex-none border-t lg:border-t-0 lg:border-r border-border flex flex-col overflow-hidden min-h-0">
-          <ResortList
-            resorts={filteredResorts}
-            hoveredResortId={hoveredResortId}
-            onHover={setHoveredResortId}
-          />
-        </section>
-
-        {/* Map - Right Side */}
-        <section className="order-1 lg:order-2 w-full h-[40%] lg:h-auto flex-none lg:flex-1 relative">
-          <ResortMap
-            resorts={filteredResorts}
-            hoveredResortId={hoveredResortId}
-            onMarkerHover={setHoveredResortId}
-          />
-        </section>
+            <section className="order-1 lg:order-2 w-full h-[40%] lg:h-auto flex-none lg:flex-1 relative">
+              <ResortMap
+                resorts={filteredResorts}
+                hoveredResortId={hoveredResortId}
+                onMarkerHover={setHoveredResortId}
+              />
+            </section>
+          </>
+        )}
       </main>
     </div>
   );
