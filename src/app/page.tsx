@@ -1,9 +1,9 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { HeroSection } from "@/components/heroSection";
+import { Header } from "@/components/header";
 import { ResortList } from "@/components/resortList";
-import { StaticMap } from "@/components/staticMap";
+import { ResortMap } from "@/components/resortMap";
 import { FilterState } from "@/components/filterPopover";
 import { resorts as allResorts } from "@/data/resorts";
 
@@ -67,7 +67,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <HeroSection
+      <Header
         filters={filters}
         onFiltersChange={setFilters}
         isFiltersActive={isFiltersActive}
@@ -76,7 +76,8 @@ const Index = () => {
 
       <main className="flex flex-col lg:flex-row h-[calc(100vh-57px)]">
         {/* Resort Cards - Left Side */}
-        <section className="w-full lg:w-[480px] xl:w-[520px] flex-shrink-0 border-r border-border flex flex-col">
+
+        <section className="order-2 lg:order-1 w-full lg:w-[480px] xl:w-[520px] flex-1 lg:flex-none border-t lg:border-t-0 lg:border-r border-border flex flex-col overflow-hidden min-h-0">
           <ResortList
             resorts={filteredResorts}
             hoveredResortId={hoveredResortId}
@@ -85,8 +86,8 @@ const Index = () => {
         </section>
 
         {/* Map - Right Side */}
-        <section className="flex-1 hidden lg:block">
-          <StaticMap
+        <section className="order-1 lg:order-2 w-full h-[40%] lg:h-auto flex-none lg:flex-1 relative">
+          <ResortMap
             resorts={filteredResorts}
             hoveredResortId={hoveredResortId}
             onMarkerHover={setHoveredResortId}

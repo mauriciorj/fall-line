@@ -56,7 +56,7 @@ export function ResortCard({ resort, isHovered, onHover }: ResortCardProps) {
         />
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-3 gap-3 pt-2">
+        <div className="grid grid-cols-3 gap-3 pt-1">
           <div className="space-y-1">
             <div className="flex items-center gap-1 text-muted-foreground">
               <Ticket className="w-3.5 h-3.5" />

@@ -8,7 +8,7 @@ interface HeroSectionProps {
   onClearFilters: () => void;
 }
 
-export function HeroSection({
+export function Header({
   filters,
   onFiltersChange,
   isFiltersActive,

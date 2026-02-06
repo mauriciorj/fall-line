@@ -64,13 +64,16 @@ export function FilterPopover({
 
   return (
     <Dialog open={open} onOpenChange={handleOpenChange}>
-      <DialogTrigger asChild>
+      <DialogTrigger
+        asChild
+        className="xs:relative md:fixed top-3 left-[calc(50%-20px)] z-50"
+      >
         <button
           className={cn(
-            "flex items-center gap-2 px-3 py-1.5 rounded-full text-sm font-medium transition-all duration-200",
+            "cursor-pointer flex items-center gap-2 px-3 py-1.5 rounded-full text-sm font-medium transition-all duration-200",
             isActive
               ? "bg-primary text-primary-foreground shadow-sm"
-              : "bg-muted/50 text-muted-foreground hover:text-foreground hover:bg-muted"
+              : "bg-primary text-primary-foreground hover:text-foreground hover:bg-muted"
           )}
         >
           <SlidersHorizontal className="w-4 h-4" />

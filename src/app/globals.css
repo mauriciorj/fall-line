@@ -144,6 +144,10 @@
   --border-radius-md: calc(var(--radius) - 2px);
   --border-radius-sm: calc(var(--radius) - 4px);
 
+  --color-run-green: hsl(var(--run-green));
+  --color-run-blue: hsl(var(--run-blue));
+  --color-run-black: hsl(var(--run-black));
+
   --animate-accordion-down: accordion-down 0.2s ease-out;
   --animate-accordion-up: accordion-up 0.2s ease-out;
   --animate-pulse-glow: pulse-glow 2s ease-in-out infinite;
