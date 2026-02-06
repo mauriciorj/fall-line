@@ -70,7 +70,7 @@ export function FilterPopover({
       >
         <button
           className={cn(
-            "cursor-pointer flex items-center gap-2 px-3 py-1.5 rounded-full text-sm font-medium transition-all duration-200",
+            "cursor-pointer flex items-center gap-2 px-6 py-3 rounded-full font-medium transition-all duration-200",
             isActive
               ? "bg-primary text-primary-foreground shadow-sm"
               : "bg-primary text-primary-foreground hover:text-foreground hover:bg-muted"

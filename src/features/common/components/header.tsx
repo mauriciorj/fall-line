@@ -1,5 +1,6 @@
 import { Mountain } from "lucide-react";
 import { FilterPopover, FilterState } from "./filterPopover";
+import LocationDropdown from "./locationDropdown";
 
 interface HeroSectionProps {
   filters: FilterState;
@@ -23,12 +24,15 @@ export function Header({
             Ontario Ski Guide
           </span>
         </div>
-        <FilterPopover
-          filters={filters}
-          onChange={onFiltersChange}
-          isActive={isFiltersActive}
-          onClear={onClearFilters}
-        />
+        <div>
+          <LocationDropdown setLocation={() => {}} />
+          <FilterPopover
+            filters={filters}
+            onChange={onFiltersChange}
+            isActive={isFiltersActive}
+            onClear={onClearFilters}
+          />
+        </div>
       </div>
     </header>
   );
