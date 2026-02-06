@@ -13,6 +13,8 @@ import {
   ResizablePanel,
   ResizablePanelGroup,
 } from "@/components/ui/resizable";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { Drawer, DrawerContent } from "@/components/ui/drawer";
 
 const Index = () => {
   const isMobile = useIsMobile();
@@ -85,8 +87,8 @@ const Index = () => {
 
       <main className="flex flex-col lg:flex-row h-[calc(100vh-57px)]">
         {isMobile ? (
-          <ResizablePanelGroup orientation="vertical">
-            <ResizablePanel defaultSize="50%" minSize="5%">
+          <ResizablePanelGroup orientation="vertical" className="h-full">
+            <ResizablePanel defaultSize={50} minSize={15}>
               <ResortMap
                 resorts={filteredResorts}
                 hoveredResortId={hoveredResortId}
@@ -94,12 +96,14 @@ const Index = () => {
               />
             </ResizablePanel>
             <ResizableHandle withHandle />
-            <ResizablePanel defaultSize="50%" minSize="10%">
-              <ResortList
-                resorts={filteredResorts}
-                hoveredResortId={hoveredResortId}
-                onHover={setHoveredResortId}
-              />
+            <ResizablePanel defaultSize={50} minSize={15}>
+              <div className="overflow-y-auto h-full">
+                <ResortList
+                  resorts={filteredResorts}
+                  hoveredResortId={hoveredResortId}
+                  onHover={setHoveredResortId}
+                />
+              </div>
             </ResizablePanel>
           </ResizablePanelGroup>
         ) : (
