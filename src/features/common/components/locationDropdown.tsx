@@ -7,19 +7,23 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { useIsMobile } from "@/hooks/useMobile";
 
 const LocationDropdown = ({
   setLocation,
 }: {
   setLocation: (location: string) => void;
 }) => {
+  const isMobile = useIsMobile();
   return (
     <div className="flex flex-row items-center">
-      <div>
-        <span className="whitespace-nowrap text-foreground mr-2">
-          Current Location
-        </span>
-      </div>
+      {!isMobile && (
+        <div>
+          <span className="whitespace-nowrap text-foreground mr-2">
+            Current Location
+          </span>
+        </div>
+      )}
       <Select
         value="ontario"
         onValueChange={(value: string) => setLocation(value)}

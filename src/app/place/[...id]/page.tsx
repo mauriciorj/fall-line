@@ -18,7 +18,12 @@ const ResortDetail = () => {
   const { id } = useParams();
   const router = useRouter();
 
-  const resort = resorts.find((r) => r.id === id);
+  const resort = resorts.find((r) => r.id === id[0]);
+  console.log("");
+  console.log("");
+  console.log("");
+  console.log("id => ", id);
+  console.log("resorts => ", resorts);
 
   if (!resort) {
     return (
@@ -52,12 +57,6 @@ const ResortDetail = () => {
               <span className="text-sm">Back</span>
             </button>
             <div className="h-4 w-px bg-border" />
-            <div className="flex items-center gap-2 text-primary">
-              <Mountain className="w-5 h-5" />
-              <span className="text-sm font-medium tracking-wide uppercase">
-                Ontario Ski Guide
-              </span>
-            </div>
           </div>
         </div>
       </header>

@@ -10,7 +10,7 @@ export const resorts: Resort[] = [
     dayTicketPrice: 67.47, // not update
     distance: 148, // not update
     email: "josborne@lakeridgeresort.ca",
-    id: "Lakeridge Ski Resort",
+    id: "lakeridge-ski-resort",
     image: lakeridgeSkiResortImg, // not update
     hasLessons: true,
     hasTubing: true,
@@ -40,7 +40,7 @@ export const resorts: Resort[] = [
     dayTicketPrice: 72, // not update
     distance: 112, // not update
     email: "josborne@lakeridgeresort.ca", // not update
-    id: "Dagmar Ski Resort",
+    id: "dagmar-ski-resort",
     image: lakeridgeSkiResortImg, // not update
     hasLessons: true, // not update
     hasTubing: true, // not update
@@ -70,7 +70,7 @@ export const resorts: Resort[] = [
     dayTicketPrice: 72, // not update
     distance: 112, // not update
     email: "josborne@lakeridgeresort.ca", // not update
-    id: "Brimacombe",
+    id: "brimacombe",
     image: lakeridgeSkiResortImg, // not update
     hasLessons: true, // not update
     hasTubing: true, // not update
@@ -100,7 +100,7 @@ export const resorts: Resort[] = [
     dayTicketPrice: 72, // not update
     distance: 112, // not update
     email: "josborne@lakeridgeresort.ca", // not update
-    id: "Snow Valley Ski Resort",
+    id: "snow-valley-ski-resort",
     image: lakeridgeSkiResortImg, // not update
     hasLessons: true, // not update
     hasTubing: true, // not update
@@ -130,7 +130,7 @@ export const resorts: Resort[] = [
     dayTicketPrice: 72, // not update
     distance: 112, // not update
     email: "josborne@lakeridgeresort.ca", // not update
-    id: "Horseshoe Valley Resort",
+    id: "horseshoe-valley-resort",
     image: lakeridgeSkiResortImg, // not update
     hasLessons: true, // not update
     hasTubing: true, // not update
@@ -160,7 +160,7 @@ export const resorts: Resort[] = [
     dayTicketPrice: 72, // not update
     distance: 112, // not update
     email: "josborne@lakeridgeresort.ca", // not update
-    id: "Blue Mountain",
+    id: "blue-mountain",
     image: lakeridgeSkiResortImg, // not update
     hasLessons: true, // not update
     hasTubing: true, // not update
@@ -190,7 +190,7 @@ export const resorts: Resort[] = [
     dayTicketPrice: 72, // not update
     distance: 112, // not update
     email: "josborne@lakeridgeresort.ca", // not update
-    id: "Glen Eden",
+    id: "glen-eden",
     image: lakeridgeSkiResortImg, // not update
     hasLessons: true, // not update
     hasTubing: true, // not update
@@ -220,7 +220,7 @@ export const resorts: Resort[] = [
     dayTicketPrice: 72, // not update
     distance: 112, // not update
     email: "josborne@lakeridgeresort.ca", // not update
-    id: "Chicopee",
+    id: "chicopee",
     image: lakeridgeSkiResortImg, // not update
     hasLessons: true, // not update
     hasTubing: true, // not update
@@ -250,7 +250,7 @@ export const resorts: Resort[] = [
     dayTicketPrice: 72, // not update
     distance: 112, // not update
     email: "josborne@lakeridgeresort.ca", // not update
-    id: "Caledon Ski Club",
+    id: "caledon-ski-club",
     image: lakeridgeSkiResortImg, // not update
     hasLessons: true, // not update
     hasTubing: true, // not update
