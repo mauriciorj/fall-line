@@ -18,7 +18,7 @@ const ResortDetail = () => {
   const { id } = useParams();
   const router = useRouter();
 
-  const resort = resorts.find((r) => r.id === id[0]);
+  const resort = resorts.find((r) => r.id === id?.[0]);
   console.log("");
   console.log("");
   console.log("");
