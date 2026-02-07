@@ -14,6 +14,15 @@ export const resorts: Resort[] = [
     image: lakeridgeSkiResortImg, // not update
     hasLessons: true,
     hasTubing: true,
+    hours: {
+      monday: "9:00am - 9:30pm",
+      tuesday: "9:00am - 9:30pm",
+      wednesday: "9:00am - 9:30pm",
+      thursday: "9:00am - 9:30pm",
+      friday: "9:00am - 9:30pm",
+      saturday: "9:00am - 9:30pm",
+      sunday: "9:00am - 9:30pm",
+    },
     lessonsPrice: 123.12,
     name: "Lakeridge Ski Resort",
     phone: "(905) 644-7467",
@@ -30,13 +39,29 @@ export const resorts: Resort[] = [
     coordinates: { lat: 44.02314189216543, lng: -79.04741821453386 },
     dayTicketPrice: 72, // not update
     distance: 112, // not update
+    email: "josborne@lakeridgeresort.ca", // not update
     id: "Dagmar Ski Resort",
     image: lakeridgeSkiResortImg, // not update
+    hasLessons: true, // not update
+    hasTubing: true, // not update
+    hours: {
+      monday: "CLOSED",
+      tuesday: "CLOSED",
+      wednesday: "10:00am - 9:30pm",
+      thursday: "10:00am - 9:30pm",
+      friday: "10:00am - 9:30pm",
+      saturday: "9:00am - 9:30pm",
+      sunday: "9:00am - 9:30pm",
+    },
+    lessonsPrice: 123.12, // not update
     name: "Dagmar Ski Resort",
     phone: "(905) 644-7467", // not update
     rating: 4.2,
-    rentalPrice: 55, // not update
+    skiRentalPrice: 55, // not update
+    snowBoardRentalPrice: 66, // not update
     runs: { green: 8, blue: 14, black: 7 }, // not update
+    trailMap: lakeridgeSkiResortTrailmap, // not update
+    tubingPrice: 30, // not update
     website: "http://www.skidagmar.com/",
   },
   {
@@ -44,13 +69,29 @@ export const resorts: Resort[] = [
     coordinates: { lat: 44.06901178082853, lng: -78.5731371079196 },
     dayTicketPrice: 72, // not update
     distance: 112, // not update
+    email: "josborne@lakeridgeresort.ca", // not update
     id: "Brimacombe",
     image: lakeridgeSkiResortImg, // not update
+    hasLessons: true, // not update
+    hasTubing: true, // not update
+    hours: {
+      monday: "CLOSED", // not update
+      tuesday: "CLOSED", // not update
+      wednesday: "10:00am - 9:30pm", // not update
+      thursday: "10:00am - 9:30pm", // not update
+      friday: "10:00am - 9:30pm", // not update
+      saturday: "9:00am - 9:30pm", // not update
+      sunday: "9:00am - 9:30pm", // not update
+    },
+    lessonsPrice: 123.12, // not update
     name: "Brimacombe",
     phone: "(905) 644-7467", // not update
     rating: 4.2,
-    rentalPrice: 55, // not update
+    skiRentalPrice: 55, // not update
+    snowBoardRentalPrice: 66, // not update
     runs: { green: 8, blue: 14, black: 7 }, // not update
+    trailMap: lakeridgeSkiResortTrailmap, // not update
+    tubingPrice: 30, // not update
     website: "http://www.skidagmar.com/",
   },
   {
@@ -58,13 +99,29 @@ export const resorts: Resort[] = [
     coordinates: { lat: 44.46119110037171, lng: -79.7835534199466 },
     dayTicketPrice: 72, // not update
     distance: 112, // not update
+    email: "josborne@lakeridgeresort.ca", // not update
     id: "Snow Valley Ski Resort",
     image: lakeridgeSkiResortImg, // not update
+    hasLessons: true, // not update
+    hasTubing: true, // not update
+    hours: {
+      monday: "CLOSED", // not update
+      tuesday: "CLOSED", // not update
+      wednesday: "10:00am - 9:30pm", // not update
+      thursday: "10:00am - 9:30pm", // not update
+      friday: "10:00am - 9:30pm", // not update
+      saturday: "9:00am - 9:30pm", // not update
+      sunday: "9:00am - 9:30pm", // not update
+    },
+    lessonsPrice: 123.12, // not update
     name: "Snow Valley Ski Resort",
     phone: "(705) 721-7669", // not update
     rating: 4.3,
-    rentalPrice: 55, // not update
+    skiRentalPrice: 55, // not update
+    snowBoardRentalPrice: 66, // not update
     runs: { green: 8, blue: 14, black: 7 }, // not update
+    trailMap: lakeridgeSkiResortTrailmap, // not update
+    tubingPrice: 30, // not update
     website: "http://www.skisnowvalley.com/",
   },
   {
@@ -72,13 +129,29 @@ export const resorts: Resort[] = [
     coordinates: { lat: 44.59429988048484, lng: -79.68125046375664 },
     dayTicketPrice: 72, // not update
     distance: 112, // not update
+    email: "josborne@lakeridgeresort.ca", // not update
     id: "Horseshoe Valley Resort",
     image: lakeridgeSkiResortImg, // not update
+    hasLessons: true, // not update
+    hasTubing: true, // not update
+    hours: {
+      monday: "CLOSED", // not update
+      tuesday: "CLOSED", // not update
+      wednesday: "10:00am - 9:30pm", // not update
+      thursday: "10:00am - 9:30pm", // not update
+      friday: "10:00am - 9:30pm", // not update
+      saturday: "9:00am - 9:30pm", // not update
+      sunday: "9:00am - 9:30pm", // not update
+    },
+    lessonsPrice: 123.12, // not update
     name: "Horseshoe Valley Resort",
     phone: "(705) 721-7669", // not update
     rating: 4.1,
-    rentalPrice: 55, // not update
+    skiRentalPrice: 55, // not update
+    snowBoardRentalPrice: 66, // not update
     runs: { green: 8, blue: 14, black: 7 }, // not update
+    trailMap: lakeridgeSkiResortTrailmap, // not update
+    tubingPrice: 30, // not update
     website: "http://horseshoeresort.com/",
   },
   {
@@ -86,13 +159,29 @@ export const resorts: Resort[] = [
     coordinates: { lat: 44.55091707586931, lng: -80.31056434810445 },
     dayTicketPrice: 72, // not update
     distance: 112, // not update
+    email: "josborne@lakeridgeresort.ca", // not update
     id: "Blue Mountain",
     image: lakeridgeSkiResortImg, // not update
+    hasLessons: true, // not update
+    hasTubing: true, // not update
+    hours: {
+      monday: "CLOSED", // not update
+      tuesday: "CLOSED", // not update
+      wednesday: "10:00am - 9:30pm", // not update
+      thursday: "10:00am - 9:30pm", // not update
+      friday: "10:00am - 9:30pm", // not update
+      saturday: "9:00am - 9:30pm", // not update
+      sunday: "9:00am - 9:30pm", // not update
+    },
+    lessonsPrice: 123.12, // not update
     name: "Blue Mountain",
     phone: "(705) 721-7669", // not update
     rating: 4.4,
-    rentalPrice: 55, // not update
+    skiRentalPrice: 55, // not update
+    snowBoardRentalPrice: 66, // not update
     runs: { green: 8, blue: 14, black: 7 }, // not update
+    trailMap: lakeridgeSkiResortTrailmap, // not update
+    tubingPrice: 30, // not update
     website: "https://www.bluemountain.ca/",
   },
   {
@@ -100,13 +189,29 @@ export const resorts: Resort[] = [
     coordinates: { lat: 43.55418055900003, lng: -79.93414693948958 },
     dayTicketPrice: 72, // not update
     distance: 112, // not update
+    email: "josborne@lakeridgeresort.ca", // not update
     id: "Glen Eden",
     image: lakeridgeSkiResortImg, // not update
+    hasLessons: true, // not update
+    hasTubing: true, // not update
+    hours: {
+      monday: "CLOSED", // not update
+      tuesday: "CLOSED", // not update
+      wednesday: "10:00am - 9:30pm", // not update
+      thursday: "10:00am - 9:30pm", // not update
+      friday: "10:00am - 9:30pm", // not update
+      saturday: "9:00am - 9:30pm", // not update
+      sunday: "9:00am - 9:30pm", // not update
+    },
+    lessonsPrice: 123.12, // not update
     name: "Glen Eden",
     phone: "(705) 721-7669", // not update
     rating: 4.2,
-    rentalPrice: 55, // not update
+    skiRentalPrice: 55, // not update
+    snowBoardRentalPrice: 66, // not update
     runs: { green: 8, blue: 14, black: 7 }, // not update
+    trailMap: lakeridgeSkiResortTrailmap, // not update
+    tubingPrice: 30, // not update
     website: "https://gleneden.on.ca/",
   },
   {
@@ -114,13 +219,29 @@ export const resorts: Resort[] = [
     coordinates: { lat: 43.50150295771778, lng: -80.42101373098909 },
     dayTicketPrice: 72, // not update
     distance: 112, // not update
+    email: "josborne@lakeridgeresort.ca", // not update
     id: "Chicopee",
     image: lakeridgeSkiResortImg, // not update
+    hasLessons: true, // not update
+    hasTubing: true, // not update
+    hours: {
+      monday: "CLOSED", // not update
+      tuesday: "CLOSED", // not update
+      wednesday: "10:00am - 9:30pm", // not update
+      thursday: "10:00am - 9:30pm", // not update
+      friday: "10:00am - 9:30pm", // not update
+      saturday: "9:00am - 9:30pm", // not update
+      sunday: "9:00am - 9:30pm", // not update
+    },
+    lessonsPrice: 123.12, // not update
     name: "Chicopee",
     phone: "(705) 721-7669", // not update
     rating: 4.2,
-    rentalPrice: 55, // not update
+    skiRentalPrice: 55, // not update
+    snowBoardRentalPrice: 66, // not update
     runs: { green: 8, blue: 14, black: 7 }, // not update
+    trailMap: lakeridgeSkiResortTrailmap, // not update
+    tubingPrice: 30, // not update
     website: "http://www.discoverchicopee.com/",
   },
   {
@@ -128,13 +249,29 @@ export const resorts: Resort[] = [
     coordinates: { lat: 43.856306447577786, lng: -80.00755054550318 }, //
     dayTicketPrice: 72, // not update
     distance: 112, // not update
+    email: "josborne@lakeridgeresort.ca", // not update
     id: "Caledon Ski Club",
     image: lakeridgeSkiResortImg, // not update
+    hasLessons: true, // not update
+    hasTubing: true, // not update
+    hours: {
+      monday: "CLOSED", // not update
+      tuesday: "CLOSED", // not update
+      wednesday: "10:00am - 9:30pm", // not update
+      thursday: "10:00am - 9:30pm", // not update
+      friday: "10:00am - 9:30pm", // not update
+      saturday: "9:00am - 9:30pm", // not update
+      sunday: "9:00am - 9:30pm", // not update
+    },
+    lessonsPrice: 123.12, // not update
     name: "Caledon Ski Club",
     phone: "(705) 721-7669", // not update
     rating: 4.6,
-    rentalPrice: 55, // not update
+    skiRentalPrice: 55, // not update
+    snowBoardRentalPrice: 66, // not update
     runs: { green: 8, blue: 14, black: 7 }, // not update
+    trailMap: lakeridgeSkiResortTrailmap, // not update
+    tubingPrice: 30, // not update
     website: "http://caledonskiclub.com/",
   },
 ];

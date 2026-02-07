@@ -11,6 +11,15 @@ export interface Resort {
   email: string;
   hasLessons: boolean;
   hasTubing: boolean;
+  hours: {
+    monday: string;
+    tuesday: string;
+    wednesday: string;
+    thursday: string;
+    friday: string;
+    saturday: string;
+    sunday: string;
+  };
   id: string;
   image: StaticImageData;
   lessonsPrice: number;

@@ -102,7 +102,7 @@ const ResortDetail = () => {
               <span className="text-xs uppercase tracking-wide">Rental</span>
             </div>
             <p className="text-2xl font-medium text-foreground">
-              ${resort.rentalPrice}
+              ${resort.skiRentalPrice}
             </p>
           </div>
           <div className="bg-card rounded-lg p-5 border border-border">
@@ -211,7 +211,7 @@ const ResortDetail = () => {
                 </p>
               </div>
               <p className="text-xl font-medium text-foreground">
-                ${resort.rentalPrice}
+                ${resort.skiRentalPrice}
               </p>
             </div>
             <div className="flex items-center justify-between p-5 bg-muted/30">
@@ -222,7 +222,7 @@ const ResortDetail = () => {
                 </p>
               </div>
               <p className="text-xl font-medium text-primary">
-                ${resort.dayTicketPrice + resort.rentalPrice}
+                ${resort.dayTicketPrice + resort.skiRentalPrice}
               </p>
             </div>
           </div>

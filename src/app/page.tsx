@@ -87,7 +87,7 @@ const Index = () => {
 
       <main className="flex flex-col lg:flex-row h-[calc(100vh-57px)]">
         {isMobile ? (
-          <ResizablePanelGroup orientation="vertical" className="h-full">
+          <ResizablePanelGroup direction="vertical" className="h-full">
             <ResizablePanel defaultSize={50} minSize={15}>
               <ResortMap
                 resorts={filteredResorts}
