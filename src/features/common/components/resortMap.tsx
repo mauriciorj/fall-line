@@ -89,19 +89,19 @@ export function ResortMap({
   onMarkerHover,
 }: ResortMapProps) {
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: "", // Will show in demo mode without key
+    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_JAVASCRIPT_API!, // Will show in demo mode without key
   });
 
   const options = useMemo(
     () => ({
-      styles: mapStyles,
+      // styles: mapStyles,
       disableDefaultUI: true,
       zoomControl: true,
       mapTypeControl: false,
       streetViewControl: false,
       fullscreenControl: false,
     }),
-    []
+    [],
   );
 
   if (loadError) {
@@ -116,15 +116,11 @@ export function ResortMap({
     <GoogleMap
       mapContainerStyle={containerStyle}
       center={defaultCenter}
-      zoom={7}
+      zoom={8}
       options={options}
     >
       {resorts.map((resort) => (
         <MarkerF
-          key={resort.id}
-          position={resort.coordinates}
-          onMouseOver={() => onMarkerHover(resort.id)}
-          onMouseOut={() => onMarkerHover(null)}
           icon={{
             path: "M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z",
             fillColor: hoveredResortId === resort.id ? "#4A6FA5" : "#6B7280",
@@ -134,7 +130,17 @@ export function ResortMap({
             scale: hoveredResortId === resort.id ? 1.8 : 1.4,
             anchor: { x: 12, y: 24 } as google.maps.Point,
           }}
-        />
+          key={resort.id}
+          onMouseOver={() => onMarkerHover(resort.id)}
+          onMouseOut={() => onMarkerHover(null)}
+          position={resort.coordinates}
+          label={{
+            text: resort.name,
+            color: "#333",
+            fontSize: "12px",
+            fontWeight: "bold",
+          }}
+        ></MarkerF>
       ))}
     </GoogleMap>
   );

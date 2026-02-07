@@ -19,11 +19,6 @@ const ResortDetail = () => {
   const router = useRouter();
 
   const resort = resorts.find((r) => r.id === id?.[0]);
-  console.log("");
-  console.log("");
-  console.log("");
-  console.log("id => ", id);
-  console.log("resorts => ", resorts);
 
   if (!resort) {
     return (
