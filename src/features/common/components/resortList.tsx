@@ -1,5 +1,6 @@
 import { Resort } from "@/types/resort";
 import { ResortCard } from "./resortCard";
+import { useEffect, useRef } from "react";
 
 interface ResortListProps {
   resorts: Resort[];
@@ -14,6 +15,17 @@ export function ResortList({
   hoveredResort,
   setHoveredResort,
 }: ResortListProps) {
+  const itemRefs = useRef<Record<string, HTMLDivElement | null>>({});
+
+  useEffect(() => {
+    if (selectedResort && itemRefs.current[selectedResort]) {
+      itemRefs.current[selectedResort]?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  }, [selectedResort]);
+
   if (resorts.length === 0) {
     return (
       <div className="flex-1 flex items-center justify-center p-6">
@@ -35,7 +47,10 @@ export function ResortList({
         {resorts.map((resort, index) => (
           <div
             key={resort.id}
-            className="animate-fade-in"
+            ref={(el) => {
+              if (el) itemRefs.current[resort.id] = el;
+            }}
+            className="animate-fade-in scroll-mt-7"
             style={{ animationDelay: `${index * 50}ms` }}
           >
             <ResortCard
