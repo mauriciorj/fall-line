@@ -4,14 +4,14 @@ import { cn } from "@/utils/utils";
 
 interface StaticMapProps {
   resorts: Resort[];
-  hoveredResortId: string | null;
+  hoveredResort: string | null;
   onMarkerHover: (id: string | null) => void;
 }
 
 // Simple static map visualization without Google Maps API
 export function StaticMap({
   resorts,
-  hoveredResortId,
+  hoveredResort,
   onMarkerHover,
 }: StaticMapProps) {
   // Convert lat/lng to approximate pixel positions
@@ -72,7 +72,7 @@ export function StaticMap({
       {resorts.map((resort) => {
         const x = lngToX(resort.coordinates.lng);
         const y = latToY(resort.coordinates.lat);
-        const isHovered = hoveredResortId === resort.id;
+        const isHovered = hoveredResort === resort.id;
 
         return (
           <div

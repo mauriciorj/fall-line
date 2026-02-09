@@ -5,7 +5,9 @@ import { FilterState } from "@/components/filterPopover";
 import { resorts as allResorts } from "@/data/resorts";
 
 const useFilters = () => {
-  const [hoveredResortId, setHoveredResortId] = useState<string | null>(null);
+  const [hoveredResort, setHoveredResort] = useState<string | null>(null);
+  const [selectedResort, setSelectedResort] = useState<string | null>(null);
+
   const [filters, setFilters] = useState<FilterState>({
     sortBy: "distance",
     distanceRange: [0, 250],
@@ -63,13 +65,15 @@ const useFilters = () => {
   };
 
   return {
-    hoveredResortId,
-    setHoveredResortId,
     filters,
-    setFilters,
     filteredResorts,
-    isFiltersActive,
     handleClearFilters,
+    hoveredResort,
+    isFiltersActive,
+    selectedResort,
+    setFilters,
+    setHoveredResort,
+    setSelectedResort,
   };
 };
 

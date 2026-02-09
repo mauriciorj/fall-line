@@ -7,11 +7,15 @@ import { useRouter } from "next/navigation";
 
 interface ResortCardProps {
   resort: Resort;
-  isHovered: boolean;
-  onHover: (id: string | null) => void;
+  isResortHoveredOrSelected: boolean;
+  setHoveredResort: (id: string | null) => void;
 }
 
-export function ResortCard({ resort, isHovered, onHover }: ResortCardProps) {
+export function ResortCard({
+  resort,
+  isResortHoveredOrSelected,
+  setHoveredResort,
+}: ResortCardProps) {
   const router = useRouter();
 
   const handleClick = () => {
@@ -23,10 +27,11 @@ export function ResortCard({ resort, isHovered, onHover }: ResortCardProps) {
       className={cn(
         "group bg-card rounded-lg overflow-hidden transition-all duration-300 cursor-pointer",
         "shadow-card hover:shadow-card-hover",
-        isHovered && "shadow-card-hover ring-1 ring-primary/20"
+        isResortHoveredOrSelected &&
+          "shadow-md shadow-primary ring-1 ring-primary"
       )}
-      onMouseEnter={() => onHover(resort.id)}
-      onMouseLeave={() => onHover(null)}
+      onMouseEnter={() => setHoveredResort(resort.id)}
+      onMouseLeave={() => setHoveredResort(null)}
       onClick={handleClick}
     >
       {/* Hero Image */}

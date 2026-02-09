@@ -29,8 +29,10 @@ function MapPlaceholder({ message }: { message: string }) {
 
 interface ResortMapProps {
   resorts: Resort[];
-  hoveredResortId: string | null;
-  onMarkerHover: (id: string | null) => void;
+  hoveredResort: string | null;
+  selectedResort: string | null;
+  setSelectedResort: (id: string | null) => void;
+  setHoveredResort: (id: string | null) => void;
 }
 
 // Desaturated, clean map style
@@ -84,9 +86,11 @@ const defaultCenter = {
 };
 
 export function ResortMap({
+  hoveredResort,
+  selectedResort,
+  setSelectedResort,
+  setHoveredResort,
   resorts,
-  hoveredResortId,
-  onMarkerHover,
 }: ResortMapProps) {
   const { isLoaded, loadError } = useLoadScript({
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_JAVASCRIPT_API!, // Will show in demo mode without key
@@ -101,7 +105,7 @@ export function ResortMap({
       streetViewControl: false,
       fullscreenControl: false,
     }),
-    [],
+    []
   );
 
   if (loadError) {
@@ -123,16 +127,20 @@ export function ResortMap({
         <MarkerF
           icon={{
             path: "M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z",
-            fillColor: hoveredResortId === resort.id ? "#4A6FA5" : "#6B7280",
+            fillColor:
+              hoveredResort === resort.id || selectedResort === resort.id
+                ? "#4A6FA5"
+                : "#6B7280",
             fillOpacity: 1,
             strokeColor: "#ffffff",
             strokeWeight: 2,
-            scale: hoveredResortId === resort.id ? 1.8 : 1.4,
+            scale: hoveredResort === resort.id ? 1.8 : 1.4,
             anchor: { x: 12, y: 24 } as google.maps.Point,
           }}
           key={resort.id}
-          onMouseOver={() => onMarkerHover(resort.id)}
-          onMouseOut={() => onMarkerHover(null)}
+          onClick={() => setSelectedResort(resort.id)}
+          onMouseOver={() => setHoveredResort(resort.id)}
+          onMouseOut={() => setHoveredResort(null)}
           position={resort.coordinates}
           label={{
             text: resort.name,

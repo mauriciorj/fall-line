@@ -3,14 +3,16 @@ import { ResortCard } from "./resortCard";
 
 interface ResortListProps {
   resorts: Resort[];
-  hoveredResortId: string | null;
-  onHover: (id: string | null) => void;
+  selectedResort: string | null;
+  hoveredResort: string | null;
+  setHoveredResort: (id: string | null) => void;
 }
 
 export function ResortList({
   resorts,
-  hoveredResortId,
-  onHover,
+  selectedResort,
+  hoveredResort,
+  setHoveredResort,
 }: ResortListProps) {
   if (resorts.length === 0) {
     return (
@@ -38,8 +40,10 @@ export function ResortList({
           >
             <ResortCard
               resort={resort}
-              isHovered={hoveredResortId === resort.id}
-              onHover={onHover}
+              isResortHoveredOrSelected={
+                hoveredResort === resort.id || selectedResort === resort.id
+              }
+              setHoveredResort={setHoveredResort}
             />
           </div>
         ))}
