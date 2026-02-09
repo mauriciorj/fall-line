@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/dialog";
 import { useIsMobile } from "@/hooks/useMobile";
 import { SlidersHorizontal, X } from "lucide-react";
+import LocationDropdown from "./locationDropdown";
 
 export interface FilterState {
   sortBy: "distance" | "price";
@@ -25,6 +26,7 @@ interface FilterPopoverProps {
   onChange: (filters: FilterState) => void;
   isActive: boolean;
   onClear: () => void;
+  setLocation: () => void;
 }
 
 export function FilterPopover({
@@ -32,6 +34,7 @@ export function FilterPopover({
   onChange,
   isActive,
   onClear,
+  setLocation,
 }: FilterPopoverProps) {
   const isMobile = useIsMobile();
 
@@ -40,7 +43,7 @@ export function FilterPopover({
 
   const updateLocalFilter = <K extends keyof FilterState>(
     key: K,
-    value: FilterState[K],
+    value: FilterState[K]
   ) => {
     setLocalFilters({ ...localFilters, [key]: value });
   };
@@ -73,7 +76,7 @@ export function FilterPopover({
         asChild
         className={
           isMobile
-            ? "relative top-3 left-[calc(70%-15px)] z-50"
+            ? "fixed top-4 left-[40%] z-50"
             : "xs:relative md:fixed top-4 left-[calc(50%-20px)] z-50"
         }
       >
@@ -81,9 +84,7 @@ export function FilterPopover({
           variant="outline"
           className={cn(
             "cursor-pointer flex items-center gap-2 px-4 py-3 rounded-full font-medium transition-all duration-200 border-primary text-primary",
-            isActive
-              ? "shadow-sm"
-              : "hover:text-primary hover:bg-muted",
+            isActive ? "shadow-sm" : "hover:text-primary hover:bg-muted"
           )}
         >
           <SlidersHorizontal className="w-4 h-4" />
@@ -100,6 +101,15 @@ export function FilterPopover({
           </DialogTitle>
         </DialogHeader>
 
+        {isMobile && (
+          <div className="space-y-3">
+            <span className="text-xs font-medium text-foreground">
+              Location
+            </span>
+            <LocationDropdown setLocation={setLocation} />
+          </div>
+        )}
+
         <div className="space-y-6 py-4">
           {/* Sort by */}
           <div className="space-y-3">
@@ -111,7 +121,7 @@ export function FilterPopover({
                   "flex-1 px-4 py-2.5 text-sm font-medium rounded-lg transition-all duration-200",
                   localFilters.sortBy === "distance"
                     ? "bg-primary text-primary-foreground shadow-sm"
-                    : "bg-muted/50 text-muted-foreground hover:text-foreground hover:bg-muted",
+                    : "bg-muted/50 text-muted-foreground hover:text-foreground hover:bg-muted"
                 )}
               >
                 Distance
@@ -122,7 +132,7 @@ export function FilterPopover({
                   "flex-1 px-4 py-2.5 text-sm font-medium rounded-lg transition-all duration-200",
                   localFilters.sortBy === "price"
                     ? "bg-primary text-primary-foreground shadow-sm"
-                    : "bg-muted/50 text-muted-foreground hover:text-foreground hover:bg-muted",
+                    : "bg-muted/50 text-muted-foreground hover:text-foreground hover:bg-muted"
                 )}
               >
                 Price
@@ -164,7 +174,7 @@ export function FilterPopover({
                 onClick={() =>
                   updateLocalFilter(
                     "difficulty",
-                    localFilters.difficulty === "beginner" ? null : "beginner",
+                    localFilters.difficulty === "beginner" ? null : "beginner"
                   )
                 }
               />
@@ -177,7 +187,7 @@ export function FilterPopover({
                     "difficulty",
                     localFilters.difficulty === "intermediate"
                       ? null
-                      : "intermediate",
+                      : "intermediate"
                   )
                 }
               />
@@ -188,7 +198,7 @@ export function FilterPopover({
                 onClick={() =>
                   updateLocalFilter(
                     "difficulty",
-                    localFilters.difficulty === "advanced" ? null : "advanced",
+                    localFilters.difficulty === "advanced" ? null : "advanced"
                   )
                 }
               />
@@ -261,7 +271,7 @@ function DifficultyToggle({
         "flex items-center gap-2 px-3 py-2 rounded-lg transition-all duration-200 text-sm",
         isActive
           ? `${colorClasses[color].active} ring-1 text-foreground`
-          : "bg-muted/30 text-muted-foreground hover:text-foreground hover:bg-muted/50",
+          : "bg-muted/30 text-muted-foreground hover:text-foreground hover:bg-muted/50"
       )}
     >
       <span className={cn("w-2 h-2 rounded-full", colorClasses[color].dot)} />

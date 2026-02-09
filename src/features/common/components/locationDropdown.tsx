@@ -20,7 +20,7 @@ const LocationDropdown = ({
       {!isMobile && (
         <div>
           <span className="whitespace-nowrap text-foreground mr-2">
-            Current Location
+            Location
           </span>
         </div>
       )}
