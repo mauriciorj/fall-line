@@ -10,11 +10,12 @@ export const resorts: Resort[] = [
     dayTicketPrice: 67.47, // not update
     distance: 148, // not update
     email: "josborne@lakeridgeresort.ca",
+    googleMapsUrl: "https://maps.app.goo.gl/3J7NiWbwWLPE2xJp9",
     id: "lakeridge-ski-resort",
     image: lakeridgeSkiResortImg, // not update
     hasLessons: true,
     hasTubing: true,
-    hours: {
+    hoursOfOperation: {
       monday: "9:00am - 9:30pm",
       tuesday: "9:00am - 9:30pm",
       wednesday: "9:00am - 9:30pm",
@@ -30,8 +31,14 @@ export const resorts: Resort[] = [
     skiRentalPrice: 55,
     snowBoardRentalPrice: 66,
     runs: { green: 6, blue: 4, black: 7 },
+    ticketUrl: "https://www.ski-lakeridge.com/",
+    trackConditions: [
+      { name: "Green", condition: "Good", difficulty: "green" },
+      { name: "Blue", condition: "Good", difficulty: "blue" },
+      { name: "Black", condition: "Good", difficulty: "black" },
+    ],
     trailMap: lakeridgeSkiResortTrailmap,
-    tubingPrice: 30,
+    tubbingPrice: 30,
     website: "http://www.ski-lakeridge.com/",
   },
   {
@@ -40,11 +47,12 @@ export const resorts: Resort[] = [
     dayTicketPrice: 72, // not update
     distance: 112, // not update
     email: "josborne@lakeridgeresort.ca", // not update
+    googleMapsUrl: "https://maps.app.goo.gl/3J7NiWbwWLPE2xJp9", // not update
     id: "dagmar-ski-resort",
     image: lakeridgeSkiResortImg, // not update
     hasLessons: true, // not update
     hasTubing: true, // not update
-    hours: {
+    hoursOfOperation: {
       monday: "CLOSED",
       tuesday: "CLOSED",
       wednesday: "10:00am - 9:30pm",
@@ -61,7 +69,7 @@ export const resorts: Resort[] = [
     snowBoardRentalPrice: 66, // not update
     runs: { green: 8, blue: 14, black: 7 }, // not update
     trailMap: lakeridgeSkiResortTrailmap, // not update
-    tubingPrice: 30, // not update
+    tubbingPrice: 30, // not update
     website: "http://www.skidagmar.com/",
   },
   {
@@ -70,11 +78,12 @@ export const resorts: Resort[] = [
     dayTicketPrice: 72, // not update
     distance: 112, // not update
     email: "josborne@lakeridgeresort.ca", // not update
+    googleMapsUrl: "https://maps.app.goo.gl/3J7NiWbwWLPE2xJp9", // not update
     id: "brimacombe",
     image: lakeridgeSkiResortImg, // not update
     hasLessons: true, // not update
     hasTubing: true, // not update
-    hours: {
+    hoursOfOperation: {
       monday: "CLOSED", // not update
       tuesday: "CLOSED", // not update
       wednesday: "10:00am - 9:30pm", // not update
@@ -91,7 +100,7 @@ export const resorts: Resort[] = [
     snowBoardRentalPrice: 66, // not update
     runs: { green: 8, blue: 14, black: 7 }, // not update
     trailMap: lakeridgeSkiResortTrailmap, // not update
-    tubingPrice: 30, // not update
+    tubbingPrice: 30, // not update
     website: "http://www.skidagmar.com/",
   },
   {
@@ -100,11 +109,12 @@ export const resorts: Resort[] = [
     dayTicketPrice: 72, // not update
     distance: 112, // not update
     email: "josborne@lakeridgeresort.ca", // not update
+    googleMapsUrl: "https://maps.app.goo.gl/3J7NiWbwWLPE2xJp9", // not update
     id: "snow-valley-ski-resort",
     image: lakeridgeSkiResortImg, // not update
     hasLessons: true, // not update
     hasTubing: true, // not update
-    hours: {
+    hoursOfOperation: {
       monday: "CLOSED", // not update
       tuesday: "CLOSED", // not update
       wednesday: "10:00am - 9:30pm", // not update
@@ -121,7 +131,7 @@ export const resorts: Resort[] = [
     snowBoardRentalPrice: 66, // not update
     runs: { green: 8, blue: 14, black: 7 }, // not update
     trailMap: lakeridgeSkiResortTrailmap, // not update
-    tubingPrice: 30, // not update
+    tubbingPrice: 30, // not update
     website: "http://www.skisnowvalley.com/",
   },
   {
@@ -130,11 +140,12 @@ export const resorts: Resort[] = [
     dayTicketPrice: 72, // not update
     distance: 112, // not update
     email: "josborne@lakeridgeresort.ca", // not update
+    googleMapsUrl: "https://maps.app.goo.gl/3J7NiWbwWLPE2xJp9", // not update
     id: "horseshoe-valley-resort",
     image: lakeridgeSkiResortImg, // not update
     hasLessons: true, // not update
     hasTubing: true, // not update
-    hours: {
+    hoursOfOperation: {
       monday: "CLOSED", // not update
       tuesday: "CLOSED", // not update
       wednesday: "10:00am - 9:30pm", // not update
@@ -151,7 +162,7 @@ export const resorts: Resort[] = [
     snowBoardRentalPrice: 66, // not update
     runs: { green: 8, blue: 14, black: 7 }, // not update
     trailMap: lakeridgeSkiResortTrailmap, // not update
-    tubingPrice: 30, // not update
+    tubbingPrice: 30, // not update
     website: "http://horseshoeresort.com/",
   },
   {
@@ -160,11 +171,12 @@ export const resorts: Resort[] = [
     dayTicketPrice: 72, // not update
     distance: 112, // not update
     email: "josborne@lakeridgeresort.ca", // not update
+    googleMapsUrl: "https://maps.app.goo.gl/3J7NiWbwWLPE2xJp9", // not update
     id: "blue-mountain",
     image: lakeridgeSkiResortImg, // not update
     hasLessons: true, // not update
     hasTubing: true, // not update
-    hours: {
+    hoursOfOperation: {
       monday: "CLOSED", // not update
       tuesday: "CLOSED", // not update
       wednesday: "10:00am - 9:30pm", // not update
@@ -181,7 +193,7 @@ export const resorts: Resort[] = [
     snowBoardRentalPrice: 66, // not update
     runs: { green: 8, blue: 14, black: 7 }, // not update
     trailMap: lakeridgeSkiResortTrailmap, // not update
-    tubingPrice: 30, // not update
+    tubbingPrice: 30, // not update
     website: "https://www.bluemountain.ca/",
   },
   {
@@ -190,11 +202,12 @@ export const resorts: Resort[] = [
     dayTicketPrice: 72, // not update
     distance: 112, // not update
     email: "josborne@lakeridgeresort.ca", // not update
+    googleMapsUrl: "https://maps.app.goo.gl/3J7NiWbwWLPE2xJp9", // not update
     id: "glen-eden",
     image: lakeridgeSkiResortImg, // not update
     hasLessons: true, // not update
     hasTubing: true, // not update
-    hours: {
+    hoursOfOperation: {
       monday: "CLOSED", // not update
       tuesday: "CLOSED", // not update
       wednesday: "10:00am - 9:30pm", // not update
@@ -211,7 +224,7 @@ export const resorts: Resort[] = [
     snowBoardRentalPrice: 66, // not update
     runs: { green: 8, blue: 14, black: 7 }, // not update
     trailMap: lakeridgeSkiResortTrailmap, // not update
-    tubingPrice: 30, // not update
+    tubbingPrice: 30, // not update
     website: "https://gleneden.on.ca/",
   },
   {
@@ -220,11 +233,12 @@ export const resorts: Resort[] = [
     dayTicketPrice: 72, // not update
     distance: 112, // not update
     email: "josborne@lakeridgeresort.ca", // not update
+    googleMapsUrl: "https://maps.app.goo.gl/3J7NiWbwWLPE2xJp9", // not update
     id: "chicopee",
     image: lakeridgeSkiResortImg, // not update
     hasLessons: true, // not update
     hasTubing: true, // not update
-    hours: {
+    hoursOfOperation: {
       monday: "CLOSED", // not update
       tuesday: "CLOSED", // not update
       wednesday: "10:00am - 9:30pm", // not update
@@ -241,7 +255,7 @@ export const resorts: Resort[] = [
     snowBoardRentalPrice: 66, // not update
     runs: { green: 8, blue: 14, black: 7 }, // not update
     trailMap: lakeridgeSkiResortTrailmap, // not update
-    tubingPrice: 30, // not update
+    tubbingPrice: 30, // not update
     website: "http://www.discoverchicopee.com/",
   },
   {
@@ -250,11 +264,12 @@ export const resorts: Resort[] = [
     dayTicketPrice: 72, // not update
     distance: 112, // not update
     email: "josborne@lakeridgeresort.ca", // not update
+    googleMapsUrl: "https://maps.app.goo.gl/3J7NiWbwWLPE2xJp9", // not update
     id: "caledon-ski-club",
     image: lakeridgeSkiResortImg, // not update
     hasLessons: true, // not update
     hasTubing: true, // not update
-    hours: {
+    hoursOfOperation: {
       monday: "CLOSED", // not update
       tuesday: "CLOSED", // not update
       wednesday: "10:00am - 9:30pm", // not update
@@ -271,7 +286,7 @@ export const resorts: Resort[] = [
     snowBoardRentalPrice: 66, // not update
     runs: { green: 8, blue: 14, black: 7 }, // not update
     trailMap: lakeridgeSkiResortTrailmap, // not update
-    tubingPrice: 30, // not update
+    tubbingPrice: 30, // not update
     website: "http://caledonskiclub.com/",
   },
 ];

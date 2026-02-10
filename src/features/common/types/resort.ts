@@ -9,9 +9,10 @@ export interface Resort {
   dayTicketPrice: number;
   distance: number; // in km
   email: string;
+  googleMapsUrl: string;
   hasLessons: boolean;
   hasTubing: boolean;
-  hours: {
+  hoursOfOperation: {
     monday: string;
     tuesday: string;
     wednesday: string;
@@ -33,7 +34,13 @@ export interface Resort {
     blue: number;
     black: number;
   };
-  trailMap: StaticImageData;
-  tubingPrice: number;
+  ticketUrl?: string;
+  trackConditions?: {
+    name: string;
+    condition: string;
+    difficulty: "black" | "blue" | "double-black" | "green";
+  }[];
+  trailMap: StaticImageData | string;
+  tubbingPrice?: number;
   website: string;
 }

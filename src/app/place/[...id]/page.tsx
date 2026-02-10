@@ -6,13 +6,17 @@ import { resorts } from "@/data/resorts";
 import { RunBreakdown } from "@/components/runBreakdown";
 import {
   ArrowLeft,
+  CircleDot,
+  GraduationCap,
   MapPin,
-  Ticket,
-  Package,
   Mountain,
   Navigation,
+  Package,
+  Ticket,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ResortInfoSection } from "@/place/component/resortInfoSection";
+import { TracksSection } from "@/place/component/tracksSection";
 
 const ResortDetail = () => {
   const { id } = useParams();
@@ -40,75 +44,81 @@ const ResortDetail = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="bg-card border-b border-border">
-        <div className="px-6 py-4">
-          <div className="flex items-center gap-4">
-            <button
-              onClick={() => router.push("/")}
-              className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
-            >
-              <ArrowLeft className="w-4 h-4" />
-              <span className="text-sm">Back</span>
-            </button>
-            <div className="h-4 w-px bg-border" />
-          </div>
-        </div>
-      </header>
-
       {/* Hero Image */}
       <div className="relative h-[40vh] md:h-[50vh] overflow-hidden">
         <Image
           src={resort.image}
           alt={resort.name}
-          width={500}
-          height={500}
-          className="w-full h-full object-cover"
+          fill
+          className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
-        <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10">
+        <div className="absolute bottom-10 left-0 right-0 p-6 md:p-10">
           <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
             {resort.name}
           </h1>
-          <div className="flex items-center gap-2 mt-3 text-muted-foreground">
+          {/* <div className="flex items-center gap-2 mt-3 text-muted-foreground">
             <MapPin className="w-4 h-4" />
             <span className="text-sm">{resort.distance} km from Toronto</span>
-          </div>
+          </div> */}
         </div>
       </div>
 
       {/* Content */}
-      <main className="max-w-4xl mx-auto px-6 py-10 space-y-10">
+      <main className="max-w-4xl mx-auto mb-20 px-6 py-10 space-y-10">
+        {/* Buy Tickets CTA - Sticky on mobile */}
+        {resort?.ticketUrl && (
+          <div className="sticky top-16 z-30 bg-background/95 backdrop-blur-sm px-6 py-3">
+            <a
+              href={resort.ticketUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
+            >
+              <Button
+                className="w-full h-12 text-base font-semibold shadow-lg"
+                size="lg"
+              >
+                <Ticket className="w-5 h-5 mr-2" />
+                Buy Tickets — from ${resort.dayTicketPrice}
+              </Button>
+            </a>
+          </div>
+        )}
         {/* Quick Stats */}
         <section className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div className="bg-card rounded-lg p-5 border border-border">
+          <div className="flex flex-col justify-between bg-card rounded-lg p-5 border border-border">
             <div className="flex items-center gap-2 text-muted-foreground mb-2">
               <Ticket className="w-4 h-4" />
-              <span className="text-xs uppercase tracking-wide">Day Pass</span>
+              <span className="text-xs uppercase tracking-wide">Lift Pass</span>
             </div>
             <p className="text-2xl font-medium text-foreground">
               ${resort.dayTicketPrice}
             </p>
           </div>
-          <div className="bg-card rounded-lg p-5 border border-border">
+          <div className="flex flex-col justify-between  bg-card rounded-lg p-5 border border-border">
             <div className="flex items-center gap-2 text-muted-foreground mb-2">
               <Package className="w-4 h-4" />
-              <span className="text-xs uppercase tracking-wide">Rental</span>
+              <span className="text-xs uppercase tracking-wide">
+                Ski Rental
+              </span>
             </div>
             <p className="text-2xl font-medium text-foreground">
               ${resort.skiRentalPrice}
             </p>
           </div>
-          <div className="bg-card rounded-lg p-5 border border-border">
+          <div className="flex flex-col justify-between  bg-card rounded-lg p-5 border border-border">
             <div className="flex items-center gap-2 text-muted-foreground mb-2">
               <Navigation className="w-4 h-4" />
-              <span className="text-xs uppercase tracking-wide">Distance</span>
+              <span className="text-xs uppercase tracking-wide">
+                Snowboard Rental
+              </span>
             </div>
             <p className="text-2xl font-medium text-foreground">
-              {resort.distance} km
+              ${resort.snowBoardRentalPrice}
             </p>
           </div>
-          <div className="bg-card rounded-lg p-5 border border-border">
+          <div className="flex flex-col justify-between  bg-card rounded-lg p-5 border border-border">
             <div className="flex items-center gap-2 text-muted-foreground mb-2">
               <Mountain className="w-4 h-4" />
               <span className="text-xs uppercase tracking-wide">
@@ -118,6 +128,12 @@ const ResortDetail = () => {
             <p className="text-2xl font-medium text-foreground">{totalRuns}</p>
           </div>
         </section>
+
+        {/* Main Info */}
+        <ResortInfoSection resort={resort} />
+
+        {/* Tracks */}
+        <TracksSection resort={resort} />
 
         {/* Terrain Breakdown */}
         <section className="space-y-4">
@@ -188,10 +204,10 @@ const ResortDetail = () => {
           <div className="bg-card rounded-lg border border-border divide-y divide-border">
             <div className="flex items-center justify-between p-5">
               <div>
-                <p className="font-medium text-foreground">Day Pass</p>
-                <p className="text-sm text-muted-foreground">
-                  Full day lift access
-                </p>
+                <p className="font-medium text-foreground">Lift Pass</p>
+                {/* <p className="text-sm text-muted-foreground">
+                  Lift access
+                </p> */}
               </div>
               <p className="text-xl font-medium text-foreground">
                 ${resort.dayTicketPrice}
@@ -199,24 +215,50 @@ const ResortDetail = () => {
             </div>
             <div className="flex items-center justify-between p-5">
               <div>
-                <p className="font-medium text-foreground">Equipment Rental</p>
-                <p className="text-sm text-muted-foreground">
-                  Skis or snowboard with boots
-                </p>
+                <p className="font-medium text-foreground">Ski Rental</p>
+                {/* <p className="text-sm text-muted-foreground">Skis with boots</p> */}
               </div>
               <p className="text-xl font-medium text-foreground">
                 ${resort.skiRentalPrice}
               </p>
             </div>
-            <div className="flex items-center justify-between p-5 bg-muted/30">
+            <div className="flex items-center justify-between p-5">
               <div>
-                <p className="font-medium text-foreground">Total Estimated</p>
-                <p className="text-sm text-muted-foreground">
-                  Day pass + rental
-                </p>
+                <p className="font-medium text-foreground">Snowboard Rental</p>
+                {/* <p className="text-sm text-muted-foreground">
+                  Snowboard with boots
+                </p> */}
               </div>
-              <p className="text-xl font-medium text-primary">
-                ${resort.dayTicketPrice + resort.skiRentalPrice}
+              <p className="text-xl font-medium text-foreground">
+                ${resort.snowBoardRentalPrice}
+              </p>
+            </div>
+            <div className="flex items-center justify-between p-5">
+              <div className="flex items-center gap-2">
+                <GraduationCap className="w-4 h-4 text-muted-foreground" />
+                <div>
+                  <p className="font-medium text-foreground">Lessons</p>
+                  {/* <p className="text-sm text-muted-foreground">
+                    Group lesson (2 hours)
+                  </p> */}
+                </div>
+              </div>
+              <p className="text-xl font-medium text-foreground">
+                ${resort.lessonsPrice}
+              </p>
+            </div>
+            <div className="flex items-center justify-between p-5">
+              <div className="flex items-center gap-2">
+                <CircleDot className="w-4 h-4 text-muted-foreground" />
+                <div>
+                  <p className="font-medium text-foreground">Tubing</p>
+                  {/* <p className="text-sm text-muted-foreground">
+                    Full day snow tubing pass
+                  </p> */}
+                </div>
+              </div>
+              <p className="text-xl font-medium text-foreground">
+                ${resort?.tubbingPrice}
               </p>
             </div>
           </div>
@@ -233,15 +275,14 @@ const ResortDetail = () => {
                 <MapPin className="w-5 h-5 text-primary" />
               </div>
               <div className="space-y-1">
-                <p className="font-medium text-foreground">
+                {/* <p className="font-medium text-foreground">
                   {resort.distance} km from Toronto
-                </p>
-                <p className="text-sm text-muted-foreground">
-                  Coordinates: {resort.coordinates.lat.toFixed(4)}°N,{" "}
-                  {Math.abs(resort.coordinates.lng).toFixed(4)}°W
+                </p> */}
+                <p className="font-medium text-foreground">
+                  Address: {resort.address}
                 </p>
                 <a
-                  href={`https://www.google.com/maps/dir/?api=1&destination=${resort.coordinates.lat},${resort.coordinates.lng}`}
+                  href={resort.googleMapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1 text-sm text-primary hover:underline mt-2"
@@ -253,6 +294,24 @@ const ResortDetail = () => {
             </div>
           </div>
         </section>
+
+        {/* Bottom CTA */}
+        {/* <section className="pb-6">
+          <a
+            href={resort.ticketUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block"
+          >
+            <Button
+              className="w-full h-14 text-lg font-semibold shadow-lg"
+              size="lg"
+            >
+              <Ticket className="w-5 h-5 mr-2" />
+              Buy Tickets
+            </Button>
+          </a>
+        </section> */}
       </main>
     </div>
   );
