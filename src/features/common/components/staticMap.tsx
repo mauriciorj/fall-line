@@ -95,9 +95,9 @@ export function StaticMap({
                 <p className="font-serif text-sm font-medium text-foreground">
                   {resort.name}
                 </p>
-                <p className="text-xs text-muted-foreground">
+                {/* <p className="text-xs text-muted-foreground">
                   ${resort.dayTicketPrice}/day · {resort.distance} km
-                </p>
+                </p> */}
               </div>
               {/* Arrow */}
               <div className="absolute top-full left-1/2 -translate-x-1/2 -translate-y-px">

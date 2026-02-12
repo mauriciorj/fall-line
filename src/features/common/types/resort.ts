@@ -6,20 +6,27 @@ export interface Resort {
     lat: number;
     lng: number;
   };
+  crawlerUrls?: {
+    dayTicketPriceUrl?: string;
+    equipmentRentalsUrl?: string;
+    hoursOfOperationUrl?: string;
+    lessonsUrl?: string;
+    trackConditionsUrl?: string;
+    tubbing?: string;
+  };
   dayTicketPrice: number;
-  distance: number; // in km
   email: string;
   googleMapsUrl: string;
   hasLessons: boolean;
   hasTubing: boolean;
   hoursOfOperation: {
+    sunday: string;
     monday: string;
     tuesday: string;
     wednesday: string;
     thursday: string;
     friday: string;
     saturday: string;
-    sunday: string;
   };
   id: string;
   image: StaticImageData;
@@ -35,6 +42,7 @@ export interface Resort {
     black: number;
   };
   ticketUrl?: string;
+  tollFree?: string;
   trackConditions?: {
     name: string;
     condition: string;

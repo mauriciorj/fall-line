@@ -1,292 +1,396 @@
 import { Resort } from "@/types/resort";
 
+import blueMountainImg from "@/assets/blue-mountain.jpg";
+import blueMountainTrailMap from "@/assets/blue-mountain-trail-map.jpg";
+
+import brimacombeImg from "@/assets/brimacombe.jpg";
+import brimacombeTrailMap from "@/assets/brimacombe-trail-map.jpg";
+
+import calendonImg from "@/assets/calendon.jpg";
+import calendonTrailMap from "@/assets/caledon-trail-map.jpg";
+
+import chicopeeImg from "@/assets/chicopee.jpg";
+import chicopeeTrailMap from "@/assets/chicopee-trail-map.jpg";
+
+import dagmarSkiResortImg from "@/assets/dagmar-ski-resort.jpg";
+import dagmarSkiResortTrailMap from "@/assets/lakeridge-ski-resort-trail-map.jpg";
+
+import glenEdenImg from "@/assets/glen-eden.webp";
+import glenEdenTrailMap from "@/assets/glen-eden-trail-map.webp";
+
+import horseshoeValleyResortImg from "@/assets/horseshoe-valley-resort.webp";
+import horseshoeValleyResortTrailMap from "@/assets/lakeridge-ski-resort-trail-map.jpg";
+
 import lakeridgeSkiResortImg from "@/assets/lakeridge-ski-resort.webp";
-import lakeridgeSkiResortTrailmap from "@/assets/lakeridge-ski-resort-trail-map.jpg";
+import lakeridgeSkiResortTrailMap from "@/assets/lakeridge-ski-resort-trail-map.jpg";
 
 export const resorts: Resort[] = [
   {
     address: "790 Chalk Lake Rd, Uxbridge, ON L9P 1R4",
     coordinates: { lat: 44.04597402067868, lng: -79.06573258279116 },
-    dayTicketPrice: 67.47, // not update
-    distance: 148, // not update
-    email: "josborne@lakeridgeresort.ca",
+    crawlerUrls: {
+      dayTicketPriceUrl:
+        "https://ski-lakeridge.com/skiing-snowboarding/hours-ticket-prices/",
+      equipmentRentalsUrl:
+        "https://ski-lakeridge.com/skiing-snowboarding/equipment-rentals/", // when there is not specific page for ski and snowboarding
+      lessonsUrl:
+        "https://ski-lakeridge.com/school-activities/skiing-snowboarding/",
+      hoursOfOperationUrl:
+        "https://ski-lakeridge.com/skiing-snowboarding/hours-ticket-prices/",
+      trackConditionsUrl:
+        "https://ski-lakeridge.com/skiing-snowboarding/trail-status/",
+    },
+    dayTicketPrice: 67.47,
+    email: "admin@lakeridgeresort.ca",
     googleMapsUrl: "https://maps.app.goo.gl/3J7NiWbwWLPE2xJp9",
     id: "lakeridge-ski-resort",
-    image: lakeridgeSkiResortImg, // not update
+    image: lakeridgeSkiResortImg, // need to be update for something better
     hasLessons: true,
     hasTubing: true,
     hoursOfOperation: {
+      sunday: "9:00am - 9:30pm",
       monday: "9:00am - 9:30pm",
       tuesday: "9:00am - 9:30pm",
       wednesday: "9:00am - 9:30pm",
       thursday: "9:00am - 9:30pm",
       friday: "9:00am - 9:30pm",
       saturday: "9:00am - 9:30pm",
-      sunday: "9:00am - 9:30pm",
     },
     lessonsPrice: 123.12,
     name: "Lakeridge Ski Resort",
-    phone: "(905) 644-7467",
+    phone: "(905) 649-2058",
     rating: 4.3,
     skiRentalPrice: 55,
     snowBoardRentalPrice: 66,
     runs: { green: 6, blue: 4, black: 7 },
-    ticketUrl: "https://www.ski-lakeridge.com/",
+    ticketUrl: "https://ski-lakeridge.resortstore.net/en/catalogue/categories/",
+    tollFree: "1-877-350-3640",
     trackConditions: [
       { name: "Green", condition: "Good", difficulty: "green" },
       { name: "Blue", condition: "Good", difficulty: "blue" },
       { name: "Black", condition: "Good", difficulty: "black" },
     ],
-    trailMap: lakeridgeSkiResortTrailmap,
+    trailMap: lakeridgeSkiResortTrailMap,
     tubbingPrice: 30,
     website: "http://www.ski-lakeridge.com/",
   },
   {
     address: "1220 Lake Ridge Rd, Uxbridge, ON L9L 1V7",
     coordinates: { lat: 44.02314189216543, lng: -79.04741821453386 },
-    dayTicketPrice: 72, // not update
-    distance: 112, // not update
-    email: "josborne@lakeridgeresort.ca", // not update
-    googleMapsUrl: "https://maps.app.goo.gl/3J7NiWbwWLPE2xJp9", // not update
+    crawlerUrls: {
+      dayTicketPriceUrl: "https://www.skidagmar.com/alpine-rates/",
+      equipmentRentalsUrl: "https://www.skidagmar.com/alpine-rates/",
+      hoursOfOperationUrl: "",
+      lessonsUrl: "https://www.skidagmar.com/private-lessons/",
+      trackConditionsUrl: "https://www.skidagmar.com/trailmap/",
+    },
+    dayTicketPrice: 66.37,
+    email: "info@skidagmar.com",
+    googleMapsUrl: "https://maps.app.goo.gl/m7aFQ1mktoy449cC6",
     id: "dagmar-ski-resort",
-    image: lakeridgeSkiResortImg, // not update
-    hasLessons: true, // not update
-    hasTubing: true, // not update
+    image: dagmarSkiResortImg,
+    hasLessons: true,
+    hasTubing: false,
     hoursOfOperation: {
-      monday: "CLOSED",
+      sunday: "9:00am - 9:30pm",
+      monday: "9:00am - 9:30pm",
       tuesday: "CLOSED",
       wednesday: "10:00am - 9:30pm",
       thursday: "10:00am - 9:30pm",
       friday: "10:00am - 9:30pm",
       saturday: "9:00am - 9:30pm",
-      sunday: "9:00am - 9:30pm",
     },
-    lessonsPrice: 123.12, // not update
+    lessonsPrice: 116.81,
     name: "Dagmar Ski Resort",
-    phone: "(905) 644-7467", // not update
+    phone: "(905) 649-2002",
     rating: 4.2,
-    skiRentalPrice: 55, // not update
-    snowBoardRentalPrice: 66, // not update
-    runs: { green: 8, blue: 14, black: 7 }, // not update
-    trailMap: lakeridgeSkiResortTrailmap, // not update
-    tubbingPrice: 30, // not update
+    skiRentalPrice: 48.67,
+    snowBoardRentalPrice: 60.18,
+    runs: { green: 6, blue: 5, black: 3 },
+    trailMap: dagmarSkiResortTrailMap,
+    tubbingPrice: 0, // not update
     website: "http://www.skidagmar.com/",
   },
   {
     address: "4098 Regional Road 9, Orono, ON L0B 1M0",
     coordinates: { lat: 44.06901178082853, lng: -78.5731371079196 },
-    dayTicketPrice: 72, // not update
-    distance: 112, // not update
-    email: "josborne@lakeridgeresort.ca", // not update
-    googleMapsUrl: "https://maps.app.goo.gl/3J7NiWbwWLPE2xJp9", // not update
-    id: "brimacombe",
-    image: lakeridgeSkiResortImg, // not update
-    hasLessons: true, // not update
-    hasTubing: true, // not update
-    hoursOfOperation: {
-      monday: "CLOSED", // not update
-      tuesday: "CLOSED", // not update
-      wednesday: "10:00am - 9:30pm", // not update
-      thursday: "10:00am - 9:30pm", // not update
-      friday: "10:00am - 9:30pm", // not update
-      saturday: "9:00am - 9:30pm", // not update
-      sunday: "9:00am - 9:30pm", // not update
+    crawlerUrls: {
+      dayTicketPriceUrl: "https://brimacombe.ca/contact-us/",
+      equipmentRentalsUrl: "https://brimacombe.ca/plan-your-visit/rentals/",
+      hoursOfOperationUrl: "string",
+      lessonsUrl: "https://brimacombe.ca/snow-school/",
+      trackConditionsUrl:
+        "https://brimacombe.ca/at-the-brim/snow-conditions-and-trails/",
     },
-    lessonsPrice: 123.12, // not update
+    dayTicketPrice: 65,
+    email: "info@brimacombe.ca",
+    googleMapsUrl: "https://maps.app.goo.gl/y2c4XGM9iTEwzmh76",
+    id: "brimacombe",
+    image: brimacombeImg,
+    hasLessons: true,
+    hasTubing: false,
+    hoursOfOperation: {
+      sunday: "9:00am - 4:30pm",
+      monday: "9:00am - 9:30pm",
+      tuesday: "CLOSED",
+      wednesday: "9:00am - 9:30pm",
+      thursday: "9:00am - 9:30pm",
+      friday: "9:00am - 9:30pm",
+      saturday: "9:00am - 9:30pm",
+    },
+    lessonsPrice: 120,
     name: "Brimacombe",
-    phone: "(905) 644-7467", // not update
+    phone: "(905) 983-5983",
     rating: 4.2,
-    skiRentalPrice: 55, // not update
-    snowBoardRentalPrice: 66, // not update
-    runs: { green: 8, blue: 14, black: 7 }, // not update
-    trailMap: lakeridgeSkiResortTrailmap, // not update
-    tubbingPrice: 30, // not update
-    website: "http://www.skidagmar.com/",
+    runs: { green: 9, blue: 6, black: 8 },
+    skiRentalPrice: 77,
+    snowBoardRentalPrice: 77,
+    ticketUrl: "https://brimacombe.ca/shop-online/",
+    tollFree: "1.877.672.2582",
+    trailMap: brimacombeTrailMap,
+    tubbingPrice: 0,
+    website: "http://brimacombe.ca/",
   },
   {
-    address: "2632 Vespra Valley Rd, Minesing, ON L9X 0G8",
+    address: "2632 Vespra Valley Rd, Minesing ON L9X 0G8",
     coordinates: { lat: 44.46119110037171, lng: -79.7835534199466 },
-    dayTicketPrice: 72, // not update
-    distance: 112, // not update
-    email: "josborne@lakeridgeresort.ca", // not update
-    googleMapsUrl: "https://maps.app.goo.gl/3J7NiWbwWLPE2xJp9", // not update
-    id: "snow-valley-ski-resort",
-    image: lakeridgeSkiResortImg, // not update
-    hasLessons: true, // not update
-    hasTubing: true, // not update
-    hoursOfOperation: {
-      monday: "CLOSED", // not update
-      tuesday: "CLOSED", // not update
-      wednesday: "10:00am - 9:30pm", // not update
-      thursday: "10:00am - 9:30pm", // not update
-      friday: "10:00am - 9:30pm", // not update
-      saturday: "9:00am - 9:30pm", // not update
-      sunday: "9:00am - 9:30pm", // not update
+    crawlerUrls: {
+      dayTicketPriceUrl:
+        "https://www.skisnowvalley.com/plan/ski-snowboard/tickets-and-passes/",
+      equipmentRentalsUrl:
+        "https://www.skisnowvalley.com/plan/ski-snowboard/equipment-rentals/",
+      hoursOfOperationUrl: "https://www.skisnowvalley.com/about/#hours",
+      lessonsUrl: "https://www.skisnowvalley.com/school-programs/lessons/",
+      trackConditionsUrl: "https://www.skisnowvalley.com/plan/weather-webcams/",
     },
-    lessonsPrice: 123.12, // not update
+    dayTicketPrice: 65,
+    email: "info@skisnowvalley.com",
+    googleMapsUrl: "https://maps.app.goo.gl/HsGTUq8paByDS8z4A",
+    id: "snow-valley-ski-resort",
+    image: lakeridgeSkiResortImg,
+    hasLessons: true,
+    hasTubing: true,
+    hoursOfOperation: {
+      sunday: "9:00am - 9:00pm",
+      monday: "9:00am - 4:00pm",
+      tuesday: "9:00am - 9:00pm",
+      wednesday: "19:00am - 9:00pm",
+      thursday: "19:00am - 9:00pm",
+      friday: "19:00am - 9:00pm",
+      saturday: "9:00am - 9:00pm",
+    },
+    lessonsPrice: 139,
     name: "Snow Valley Ski Resort",
-    phone: "(705) 721-7669", // not update
+    phone: "(705) 721-7669",
     rating: 4.3,
-    skiRentalPrice: 55, // not update
-    snowBoardRentalPrice: 66, // not update
-    runs: { green: 8, blue: 14, black: 7 }, // not update
-    trailMap: lakeridgeSkiResortTrailmap, // not update
-    tubbingPrice: 30, // not update
+    runs: { green: 9, blue: 5, black: 6 },
+    skiRentalPrice: 70,
+    snowBoardRentalPrice: 70,
+    ticketUrl: "https://skisnowvalley.resortstore.net/en/catalogue/categories/",
+    tollFree: "1-877-404-4744",
+    trailMap: lakeridgeSkiResortTrailMap,
+    tubbingPrice: 27,
     website: "http://www.skisnowvalley.com/",
   },
   {
     address: "1101 Horseshoe Valley Rd W, Barrie, ON L4M 4Y8",
     coordinates: { lat: 44.59429988048484, lng: -79.68125046375664 },
-    dayTicketPrice: 72, // not update
-    distance: 112, // not update
-    email: "josborne@lakeridgeresort.ca", // not update
-    googleMapsUrl: "https://maps.app.goo.gl/3J7NiWbwWLPE2xJp9", // not update
-    id: "horseshoe-valley-resort",
-    image: lakeridgeSkiResortImg, // not update
-    hasLessons: true, // not update
-    hasTubing: true, // not update
-    hoursOfOperation: {
-      monday: "CLOSED", // not update
-      tuesday: "CLOSED", // not update
-      wednesday: "10:00am - 9:30pm", // not update
-      thursday: "10:00am - 9:30pm", // not update
-      friday: "10:00am - 9:30pm", // not update
-      saturday: "9:00am - 9:30pm", // not update
-      sunday: "9:00am - 9:30pm", // not update
+    crawlerUrls: {
+      dayTicketPriceUrl:
+        "https://horseshoeresort.com/ski/lift-ticket-and-rentals-pricing/",
+      equipmentRentalsUrl:
+        "https://horseshoeresort.com/ski/lift-ticket-and-rentals-pricing/",
+      hoursOfOperationUrl: "https://horseshoeresort.com/hours-of-operation/",
+      lessonsUrl: "https://horseshoeresort.com/ski/snow-school/",
+      trackConditionsUrl: "https://horseshoeresort.com/ski-report-trails/",
+      tubbing:
+        "https://horseshoeresort.com/activities/winter-activities/tubing/",
     },
-    lessonsPrice: 123.12, // not update
+    dayTicketPrice: 99,
+    email: "info@horseshoeresort.com",
+    googleMapsUrl: "https://maps.app.goo.gl/bzCpVSuKs9mPU3BNA",
+    id: "horseshoe-valley-resort",
+    image: horseshoeValleyResortImg,
+    hasLessons: true,
+    hasTubing: true,
+    hoursOfOperation: {
+      monday: "9:00am - 9:00pm",
+      tuesday: "9:00am - 9:00pm",
+      wednesday: "9:00am - 9:00pm",
+      thursday: "9:00am - 9:00pm",
+      friday: "9:00am - 9:00pm",
+      saturday: "9:00am - 9:00pm",
+      sunday: "9:00am - 9:00pm",
+    },
+    lessonsPrice: 159,
     name: "Horseshoe Valley Resort",
-    phone: "(705) 721-7669", // not update
+    phone: "(705) 835-2790",
     rating: 4.1,
-    skiRentalPrice: 55, // not update
-    snowBoardRentalPrice: 66, // not update
-    runs: { green: 8, blue: 14, black: 7 }, // not update
-    trailMap: lakeridgeSkiResortTrailmap, // not update
-    tubbingPrice: 30, // not update
+    skiRentalPrice: 79,
+    snowBoardRentalPrice: 79,
+    runs: { green: 8, blue: 15, black: 3 },
+    ticketUrl: "https://shop.horseshoeresort.com/tickets",
+    trailMap: horseshoeValleyResortTrailMap,
+    tubbingPrice: 39,
     website: "http://horseshoeresort.com/",
   },
   {
-    address: "190 Gord Canning Dr, The Blue Mountains, ON L9Y 1C2",
+    address: "190 Gord Canning Drive Blue Mountains, Ontario, Canada L9Y 1C2",
     coordinates: { lat: 44.55091707586931, lng: -80.31056434810445 },
-    dayTicketPrice: 72, // not update
-    distance: 112, // not update
-    email: "josborne@lakeridgeresort.ca", // not update
-    googleMapsUrl: "https://maps.app.goo.gl/3J7NiWbwWLPE2xJp9", // not update
-    id: "blue-mountain",
-    image: lakeridgeSkiResortImg, // not update
-    hasLessons: true, // not update
-    hasTubing: true, // not update
-    hoursOfOperation: {
-      monday: "CLOSED", // not update
-      tuesday: "CLOSED", // not update
-      wednesday: "10:00am - 9:30pm", // not update
-      thursday: "10:00am - 9:30pm", // not update
-      friday: "10:00am - 9:30pm", // not update
-      saturday: "9:00am - 9:30pm", // not update
-      sunday: "9:00am - 9:30pm", // not update
+    crawlerUrls: {
+      dayTicketPriceUrl:
+        "https://www.bluemountain.ca/plan-your-trip/day-tickets",
+      equipmentRentalsUrl: "https://www.bluemountain.ca/plan-your-trip/rentals",
+      hoursOfOperationUrl: "https://www.bluemountain.ca/mountain/hours",
+      lessonsUrl: "https://www.bluemountain.ca/plan-your-trip/lessons",
+      trackConditionsUrl:
+        "https://www.bluemountain.ca/mountain/mountain-report",
+      tubbing:
+        "https://www.bluemountain.ca/plan-your-trip/day-tickets/attraction-day-tickets",
     },
-    lessonsPrice: 123.12, // not update
+    dayTicketPrice: 100,
+    email: "mail@bluemountain.ca",
+    googleMapsUrl: "https://maps.app.goo.gl/mX4YUs7faBFud9sX8",
+    id: "blue-mountain",
+    image: blueMountainImg,
+    hasLessons: true,
+    hasTubing: true,
+    hoursOfOperation: {
+      monday: "9:00am - 9:00pm",
+      tuesday: "9:00am - 9:00pm",
+      wednesday: "9:00am - 9:00pm",
+      thursday: "9:00am - 9:00pm",
+      friday: "9:00am - 9:00pm",
+      saturday: "9:00am - 9:00pm",
+      sunday: "9:00am - 9:00pm",
+    },
+    lessonsPrice: 279,
     name: "Blue Mountain",
-    phone: "(705) 721-7669", // not update
+    phone: "1-833-583-2583",
     rating: 4.4,
-    skiRentalPrice: 55, // not update
-    snowBoardRentalPrice: 66, // not update
-    runs: { green: 8, blue: 14, black: 7 }, // not update
-    trailMap: lakeridgeSkiResortTrailmap, // not update
-    tubbingPrice: 30, // not update
+    skiRentalPrice: 109,
+    snowBoardRentalPrice: 109,
+    runs: { green: 12, blue: 19, black: 25 },
+    ticketUrl:
+      "https://www.bluemountain.ca/plan-your-trip/day-tickets/winter-lift-tickets",
+    tollFree: "1-833-583-2583",
+    trailMap: blueMountainTrailMap,
+    tubbingPrice: 84.84,
     website: "https://www.bluemountain.ca/",
   },
   {
     address: "5234 Kelso Rd, Milton, ON L9T 2X7",
     coordinates: { lat: 43.55418055900003, lng: -79.93414693948958 },
-    dayTicketPrice: 72, // not update
-    distance: 112, // not update
-    email: "josborne@lakeridgeresort.ca", // not update
-    googleMapsUrl: "https://maps.app.goo.gl/3J7NiWbwWLPE2xJp9", // not update
-    id: "glen-eden",
-    image: lakeridgeSkiResortImg, // not update
-    hasLessons: true, // not update
-    hasTubing: true, // not update
-    hoursOfOperation: {
-      monday: "CLOSED", // not update
-      tuesday: "CLOSED", // not update
-      wednesday: "10:00am - 9:30pm", // not update
-      thursday: "10:00am - 9:30pm", // not update
-      friday: "10:00am - 9:30pm", // not update
-      saturday: "9:00am - 9:30pm", // not update
-      sunday: "9:00am - 9:30pm", // not update
+    crawlerUrls: {
+      dayTicketPriceUrl: "https://gleneden.on.ca/plan-your-visit/",
+      equipmentRentalsUrl: "https://gleneden.on.ca/plan-your-visit/",
+      hoursOfOperationUrl: "https://gleneden.on.ca/plan-your-visit/",
+      lessonsUrl: "https://gleneden.on.ca/snow-school/",
+      trackConditionsUrl:
+        "https://gleneden.on.ca/at-glen-eden/slope-conditions/",
+      tubbing: "string",
     },
-    lessonsPrice: 123.12, // not update
+    dayTicketPrice: 65,
+    email: "gleneden@hrca.on.ca",
+    googleMapsUrl: "https://maps.app.goo.gl/B1FXSZ1VtYbVTsaXA",
+    id: "glen-eden",
+    image: glenEdenImg,
+    hasLessons: true,
+    hasTubing: false,
+    hoursOfOperation: {
+      monday: "8:30am - 9:30pm",
+      tuesday: "8:30am - 9:30pm",
+      wednesday: "8:30am - 9:30pm",
+      thursday: "8:30am - 9:30pm",
+      friday: "8:30am - 9:30pm",
+      saturday: "8:30am - 9:30pm",
+      sunday: "8:30am - 9:30pm",
+    },
+    lessonsPrice: 125,
     name: "Glen Eden",
-    phone: "(705) 721-7669", // not update
+    phone: "(905) 878-5011",
     rating: 4.2,
-    skiRentalPrice: 55, // not update
-    snowBoardRentalPrice: 66, // not update
-    runs: { green: 8, blue: 14, black: 7 }, // not update
-    trailMap: lakeridgeSkiResortTrailmap, // not update
-    tubbingPrice: 30, // not update
+    skiRentalPrice: 52,
+    snowBoardRentalPrice: 52,
+    runs: { green: 7, blue: 4, black: 2 },
+    trailMap: glenEdenTrailMap,
+    tubbingPrice: 0,
     website: "https://gleneden.on.ca/",
   },
   {
     address: "396 Morrison Road, Kitchener, ON N2A 2Z6",
     coordinates: { lat: 43.50150295771778, lng: -80.42101373098909 },
-    dayTicketPrice: 72, // not update
-    distance: 112, // not update
-    email: "josborne@lakeridgeresort.ca", // not update
-    googleMapsUrl: "https://maps.app.goo.gl/3J7NiWbwWLPE2xJp9", // not update
-    id: "chicopee",
-    image: lakeridgeSkiResortImg, // not update
-    hasLessons: true, // not update
-    hasTubing: true, // not update
-    hoursOfOperation: {
-      monday: "CLOSED", // not update
-      tuesday: "CLOSED", // not update
-      wednesday: "10:00am - 9:30pm", // not update
-      thursday: "10:00am - 9:30pm", // not update
-      friday: "10:00am - 9:30pm", // not update
-      saturday: "9:00am - 9:30pm", // not update
-      sunday: "9:00am - 9:30pm", // not update
+    crawlerUrls: {
+      dayTicketPriceUrl: "https://www.discoverchicopee.com/plan-a-day",
+      equipmentRentalsUrl: "string",
+      hoursOfOperationUrl: "https://www.discoverchicopee.com/contact#hours",
+      lessonsUrl: "string",
+      trackConditionsUrl: "https://www.discoverchicopee.com/activity-report",
+      tubbing: "string",
     },
-    lessonsPrice: 123.12, // not update
+    dayTicketPrice: 65,
+    email: "guestservices@chicopee.ca",
+    googleMapsUrl: "https://maps.app.goo.gl/GSNWkGQzo5aHdWmf9",
+    id: "chicopee",
+    image: chicopeeImg,
+    hasLessons: true,
+    hasTubing: false,
+    hoursOfOperation: {
+      monday: "9:00am - 9:00pm",
+      tuesday: "9:00am - 9:00pm",
+      wednesday: "9:00am - 9:00pm",
+      thursday: "9:00am - 9:00pm",
+      friday: "9:00am - 9:00pm",
+      saturday: "9:00am - 9:00pm",
+      sunday: "9:00am - 9:00pm",
+    },
+    lessonsPrice: 350,
     name: "Chicopee",
-    phone: "(705) 721-7669", // not update
+    phone: "(519) 894-5610",
     rating: 4.2,
-    skiRentalPrice: 55, // not update
-    snowBoardRentalPrice: 66, // not update
-    runs: { green: 8, blue: 14, black: 7 }, // not update
-    trailMap: lakeridgeSkiResortTrailmap, // not update
-    tubbingPrice: 30, // not update
+    skiRentalPrice: 53,
+    snowBoardRentalPrice: 53,
+    runs: { green: 3, blue: 5, black: 5 },
+    trailMap: chicopeeTrailMap,
+    tubbingPrice: 0,
     website: "http://www.discoverchicopee.com/",
   },
   {
-    address: "17431 Mississauga Rd, Caledon, ON L7K 0E9",
-    coordinates: { lat: 43.856306447577786, lng: -80.00755054550318 }, //
-    dayTicketPrice: 72, // not update
-    distance: 112, // not update
-    email: "josborne@lakeridgeresort.ca", // not update
-    googleMapsUrl: "https://maps.app.goo.gl/3J7NiWbwWLPE2xJp9", // not update
-    id: "caledon-ski-club",
-    image: lakeridgeSkiResortImg, // not update
-    hasLessons: true, // not update
-    hasTubing: true, // not update
-    hoursOfOperation: {
-      monday: "CLOSED", // not update
-      tuesday: "CLOSED", // not update
-      wednesday: "10:00am - 9:30pm", // not update
-      thursday: "10:00am - 9:30pm", // not update
-      friday: "10:00am - 9:30pm", // not update
-      saturday: "9:00am - 9:30pm", // not update
-      sunday: "9:00am - 9:30pm", // not update
+    address: "17431 Mississauga Road, Caledon, Ontario L7K 0E9",
+    coordinates: { lat: 43.856306447577786, lng: -80.00755054550318 },
+    crawlerUrls: {
+      dayTicketPriceUrl: "https://caledonskiclub.com/hours-lift-prices",
+      equipmentRentalsUrl: "https://caledonskiclub.com/proshop",
+      hoursOfOperationUrl: "https://caledonskiclub.com/hours-lift-prices",
+      lessonsUrl: "https://caledonskiclub.com/private-lessons",
+      trackConditionsUrl: "string",
+      tubbing: "string",
     },
-    lessonsPrice: 123.12, // not update
+    dayTicketPrice: 85,
+    email: "admin@caledonskiclub.on.ca",
+    googleMapsUrl: "https://maps.app.goo.gl/UqTeQ1vjSiSMV1CK7",
+    id: "caledon-ski-club",
+    image: calendonImg,
+    hasLessons: true,
+    hasTubing: false,
+    hoursOfOperation: {
+      sunday: "8:30am - 4:00pm",
+      monday: "8:30am - 4:00pm",
+      tuesday: "8:30am - 4:00pm",
+      wednesday: "8:30am - 4:00pm",
+      thursday: "8:30am - 4:00pm",
+      friday: "8:30am - 4:00pm",
+      saturday: "8:30am - 4:00pm",
+    },
+    lessonsPrice: 0,
     name: "Caledon Ski Club",
-    phone: "(705) 721-7669", // not update
+    phone: "1-800-363-7669",
     rating: 4.6,
-    skiRentalPrice: 55, // not update
-    snowBoardRentalPrice: 66, // not update
-    runs: { green: 8, blue: 14, black: 7 }, // not update
-    trailMap: lakeridgeSkiResortTrailmap, // not update
-    tubbingPrice: 30, // not update
+    skiRentalPrice: 74.99,
+    snowBoardRentalPrice: 74.99,
+    runs: { green: 6, blue: 9, black: 7 },
+    trailMap: calendonTrailMap,
+    tubbingPrice: 0,
     website: "http://caledonskiclub.com/",
   },
 ];

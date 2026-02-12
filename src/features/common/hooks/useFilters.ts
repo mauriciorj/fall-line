@@ -16,13 +16,13 @@ const useFilters = () => {
 
   const filteredResorts = useMemo(() => {
     let result = allResorts.filter((resort) => {
-      // Distance filter
-      if (
-        resort.distance < filters.distanceRange[0] ||
-        resort.distance > filters.distanceRange[1]
-      ) {
-        return false;
-      }
+      // // Distance filter
+      // if (
+      //   resort.distance < filters.distanceRange[0] ||
+      //   resort.distance > filters.distanceRange[1]
+      // ) {
+      //   return false;
+      // }
       // Difficulty emphasis filter
       if (filters.difficulty) {
         const total = resort.runs.green + resort.runs.blue + resort.runs.black;
@@ -42,9 +42,9 @@ const useFilters = () => {
 
     // Sort
     result = [...result].sort((a, b) => {
-      if (filters.sortBy === "distance") {
-        return a.distance - b.distance;
-      }
+      // if (filters.sortBy === "distance") {
+      //   return a.distance - b.distance;
+      // }
       return a.dayTicketPrice - b.dayTicketPrice;
     });
 
