@@ -66,7 +66,7 @@ export function ResortCard({
             <div className="flex items-center gap-1 text-muted-foreground">
               <Ticket className="w-3.5 h-3.5" />
               <span className="text-[10px] uppercase tracking-wide">
-                Day Pass
+                Lift Pass
               </span>
             </div>
             <p className="text-sm font-medium text-foreground">

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { cn } from "@/utils/utils";
-import { Slider } from "@/components/ui/slider";
+// import { Slider } from "@/components/ui/slider";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -13,15 +13,17 @@ import {
 } from "@/components/ui/dialog";
 import { useIsMobile } from "@/hooks/useMobile";
 import { SlidersHorizontal, X } from "lucide-react";
-import LocationDropdown from "./locationDropdown";
+import LocationDropdown from "../locationDropdown";
+
+import Toggle from "@/components/filter/toggle";
 
 export interface FilterState {
-  sortBy: "distance" | "price";
+  sortBy: "price" | "rating";
   distanceRange: [number, number];
-  difficulty: "beginner" | "intermediate" | "advanced" | null;
+  activities: "tubbing" | null;
 }
 
-interface FilterPopoverProps {
+interface FilterProps {
   filters: FilterState;
   onChange: (filters: FilterState) => void;
   isActive: boolean;
@@ -29,13 +31,13 @@ interface FilterPopoverProps {
   setLocation: () => void;
 }
 
-export function FilterPopover({
+export function Filter({
   filters,
   onChange,
   isActive,
   onClear,
   setLocation,
-}: FilterPopoverProps) {
+}: FilterProps) {
   const isMobile = useIsMobile();
 
   const [open, setOpen] = useState(false);
@@ -55,9 +57,9 @@ export function FilterPopover({
 
   const handleClear = () => {
     const clearedFilters: FilterState = {
-      sortBy: "distance",
+      sortBy: "price",
       distanceRange: [0, 250],
-      difficulty: null,
+      activities: null,
     };
     setLocalFilters(clearedFilters);
     onClear();
@@ -116,17 +118,6 @@ export function FilterPopover({
             <span className="text-xs font-medium text-foreground">Sort by</span>
             <div className="flex items-center gap-2">
               <button
-                onClick={() => updateLocalFilter("sortBy", "distance")}
-                className={cn(
-                  "flex-1 px-4 py-2.5 text-sm font-medium rounded-lg transition-all duration-200",
-                  localFilters.sortBy === "distance"
-                    ? "bg-primary text-primary-foreground shadow-sm"
-                    : "bg-muted/50 text-muted-foreground hover:text-foreground hover:bg-muted"
-                )}
-              >
-                Distance
-              </button>
-              <button
                 onClick={() => updateLocalFilter("sortBy", "price")}
                 className={cn(
                   "flex-1 px-4 py-2.5 text-sm font-medium rounded-lg transition-all duration-200",
@@ -135,13 +126,24 @@ export function FilterPopover({
                     : "bg-muted/50 text-muted-foreground hover:text-foreground hover:bg-muted"
                 )}
               >
-                Price
+                Lift Price
+              </button>
+              <button
+                onClick={() => updateLocalFilter("sortBy", "rating")}
+                className={cn(
+                  "flex-1 px-4 py-2.5 text-sm font-medium rounded-lg transition-all duration-200",
+                  localFilters.sortBy === "rating"
+                    ? "bg-primary text-primary-foreground shadow-sm"
+                    : "bg-muted/50 text-muted-foreground hover:text-foreground hover:bg-muted"
+                )}
+              >
+                Rating
               </button>
             </div>
           </div>
 
           {/* Distance slider */}
-          <div className="space-y-3">
+          {/* <div className="space-y-3">
             <div className="flex items-center justify-between">
               <span className="text-xs font-medium text-foreground">
                 Distance
@@ -161,44 +163,21 @@ export function FilterPopover({
               step={10}
               className="filter-slider"
             />
-          </div>
+          </div> */}
 
-          {/* Terrain toggles */}
           <div className="space-y-3">
-            <span className="text-xs font-medium text-foreground">Terrain</span>
+            <span className="text-xs font-medium text-foreground">
+              Activities
+            </span>
             <div className="flex flex-wrap gap-2">
-              <DifficultyToggle
-                label="Beginner-friendly"
+              <Toggle
+                label="tubbing"
                 color="green"
-                isActive={localFilters.difficulty === "beginner"}
+                isActive={localFilters.activities === "tubbing"}
                 onClick={() =>
                   updateLocalFilter(
-                    "difficulty",
-                    localFilters.difficulty === "beginner" ? null : "beginner"
-                  )
-                }
-              />
-              <DifficultyToggle
-                label="Balanced terrain"
-                color="blue"
-                isActive={localFilters.difficulty === "intermediate"}
-                onClick={() =>
-                  updateLocalFilter(
-                    "difficulty",
-                    localFilters.difficulty === "intermediate"
-                      ? null
-                      : "intermediate"
-                  )
-                }
-              />
-              <DifficultyToggle
-                label="Expert-heavy"
-                color="black"
-                isActive={localFilters.difficulty === "advanced"}
-                onClick={() =>
-                  updateLocalFilter(
-                    "difficulty",
-                    localFilters.difficulty === "advanced" ? null : "advanced"
+                    "activities",
+                    localFilters.activities === "tubbing" ? null : "tubbing"
                   )
                 }
               />
@@ -233,49 +212,5 @@ export function FilterPopover({
         </div>
       </DialogContent>
     </Dialog>
-  );
-}
-
-interface DifficultyToggleProps {
-  label: string;
-  color: "green" | "blue" | "black";
-  isActive: boolean;
-  onClick: () => void;
-}
-
-function DifficultyToggle({
-  label,
-  color,
-  isActive,
-  onClick,
-}: DifficultyToggleProps) {
-  const colorClasses = {
-    green: {
-      dot: "bg-run-green",
-      active: "ring-run-green/30 bg-run-green/10",
-    },
-    blue: {
-      dot: "bg-run-blue",
-      active: "ring-run-blue/30 bg-run-blue/10",
-    },
-    black: {
-      dot: "bg-run-black",
-      active: "ring-run-black/20 bg-run-black/5",
-    },
-  };
-
-  return (
-    <button
-      onClick={onClick}
-      className={cn(
-        "flex items-center gap-2 px-3 py-2 rounded-lg transition-all duration-200 text-sm",
-        isActive
-          ? `${colorClasses[color].active} ring-1 text-foreground`
-          : "bg-muted/30 text-muted-foreground hover:text-foreground hover:bg-muted/50"
-      )}
-    >
-      <span className={cn("w-2 h-2 rounded-full", colorClasses[color].dot)} />
-      {label}
-    </button>
   );
 }

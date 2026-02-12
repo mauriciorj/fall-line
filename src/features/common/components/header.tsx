@@ -1,7 +1,7 @@
 "use client";
 
 import { Mountain } from "lucide-react";
-import { FilterPopover } from "./filterPopover";
+import { Filter } from "./filter";
 import LocationDropdown from "./locationDropdown";
 import useFilters from "@/hooks/useFilters";
 import { useIsMobile } from "@/hooks/useMobile";
@@ -24,7 +24,7 @@ export function Header() {
         </div>
         {isMobile ? (
           <>
-            <FilterPopover
+            <Filter
               filters={filters}
               onChange={setFilters}
               isActive={isFiltersActive}
@@ -36,7 +36,7 @@ export function Header() {
         ) : (
           <div className="flex flex-row">
             <LocationDropdown setLocation={() => {}} />
-            <FilterPopover
+            <Filter
               filters={filters}
               onChange={setFilters}
               isActive={isFiltersActive}

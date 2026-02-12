@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useMemo } from "react";
-import { FilterState } from "@/components/filterPopover";
+import { useState, useMemo, useEffect } from "react";
+import { FilterState } from "@/src/features/common/components/filter";
 import { resorts as allResorts } from "@/data/resorts";
 
 const useFilters = () => {
@@ -9,58 +9,54 @@ const useFilters = () => {
   const [selectedResort, setSelectedResort] = useState<string | null>(null);
 
   const [filters, setFilters] = useState<FilterState>({
-    sortBy: "distance",
+    sortBy: "price",
     distanceRange: [0, 250],
-    difficulty: null,
+    activities: null,
   });
 
-  const filteredResorts = useMemo(() => {
-    let result = allResorts.filter((resort) => {
-      // // Distance filter
-      // if (
-      //   resort.distance < filters.distanceRange[0] ||
-      //   resort.distance > filters.distanceRange[1]
-      // ) {
-      //   return false;
-      // }
-      // Difficulty emphasis filter
-      if (filters.difficulty) {
-        const total = resort.runs.green + resort.runs.blue + resort.runs.black;
-        const greenRatio = resort.runs.green / total;
-        const blueRatio = resort.runs.blue / total;
-        const blackRatio = resort.runs.black / total;
+  useEffect(() => {}, []);
 
-        if (filters.difficulty === "beginner" && greenRatio < 0.25)
-          return false;
-        if (filters.difficulty === "intermediate" && blueRatio < 0.3)
-          return false;
-        if (filters.difficulty === "advanced" && blackRatio < 0.15)
-          return false;
+  const filteredResorts = useMemo(() => {
+    console.log("");
+    console.log("");
+    console.log("");
+    console.log("filters => ", filters);
+    let result = allResorts.filter((resort) => {
+      // Activities filter
+      if (filters.activities === "tubbing" && resort.hasTubing) {
+        return true;
+      } else if (filters.activities === "tubbing" && !resort.hasTubing) {
+        return false;
       }
       return true;
     });
 
     // Sort
     result = [...result].sort((a, b) => {
-      // if (filters.sortBy === "distance") {
-      //   return a.distance - b.distance;
-      // }
+      if (filters.sortBy === "rating") {
+        return b.rating - a.rating;
+      }
       return a.dayTicketPrice - b.dayTicketPrice;
     });
 
     return result;
   }, [filters]);
 
+  console.log("");
+  console.log("");
+  console.log("");
+  console.log("filteredResorts => ", filteredResorts);
+
   const isFiltersActive =
     filters.distanceRange[0] > 0 ||
     filters.distanceRange[1] < 250 ||
-    filters.difficulty !== null;
+    filters.activities !== null;
 
   const handleClearFilters = () => {
     setFilters({
-      sortBy: "distance",
+      sortBy: "price",
       distanceRange: [0, 250],
-      difficulty: null,
+      activities: null,
     });
   };
 
