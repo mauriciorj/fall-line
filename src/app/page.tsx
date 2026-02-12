@@ -3,13 +3,12 @@
 import { ResortList } from "@/components/resortList";
 import { ResortMap } from "@/components/resortMap";
 import { useIsMobile } from "@/hooks/useMobile";
-// import { Group, Panel } from "react-resizable-panels";
 import {
   ResizableHandle,
   ResizablePanel,
   ResizablePanelGroup,
 } from "@/components/ui/resizable";
-import useFilters from "@/hooks/useFilters";
+import { useFiltersContext } from "@/context/filtersContext";
 
 const Index = () => {
   const isMobile = useIsMobile();
@@ -20,7 +19,7 @@ const Index = () => {
     setHoveredResort,
     setSelectedResort,
     filteredResorts,
-  } = useFilters();
+  } = useFiltersContext();
 
   return (
     <main className="flex flex-col lg:flex-row h-[calc(100vh-57px)]">

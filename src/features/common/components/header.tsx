@@ -3,7 +3,7 @@
 import { Mountain } from "lucide-react";
 import { Filter } from "./filter";
 import LocationDropdown from "./locationDropdown";
-import useFilters from "@/hooks/useFilters";
+import { useFiltersContext } from "@/context/filtersContext";
 import { useIsMobile } from "@/hooks/useMobile";
 import Menu from "@/components/menu";
 
@@ -11,7 +11,7 @@ export function Header() {
   const isMobile = useIsMobile();
 
   const { filters, setFilters, isFiltersActive, handleClearFilters } =
-    useFilters();
+    useFiltersContext();
 
   return (
     <header className="sticky top-0 z-50 bg-card border-b border-border">

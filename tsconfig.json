@@ -22,6 +22,7 @@
       "@/*": ["./*"],
       "@/assets/*": ["./public/assets/*"],
       "@/components/*": ["./src/features/common/components/*"],
+      "@/context/*": ["./src/features/common/context/*"],
       "@/data/*": ["./src/data/*"],
       "@/hooks/*": ["./src/features/common/hooks/*"],
       "@/place/*": ["./src/features/place/*"],

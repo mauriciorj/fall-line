@@ -171,7 +171,7 @@ export function Filter({
             </span>
             <div className="flex flex-wrap gap-2">
               <Toggle
-                label="tubbing"
+                label="Tubbing"
                 color="green"
                 isActive={localFilters.activities === "tubbing"}
                 onClick={() =>

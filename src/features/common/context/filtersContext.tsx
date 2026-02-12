@@ -1,10 +1,25 @@
 "use client";
 
-import { useState, useMemo, useEffect } from "react";
+import { createContext, useContext, useState, useMemo, ReactNode } from "react";
 import { FilterState } from "@/src/features/common/components/filter";
 import { resorts as allResorts } from "@/data/resorts";
+import { Resort } from "@/types/resort";
 
-const useFilters = () => {
+interface FiltersContextType {
+  filters: FilterState;
+  setFilters: (filters: FilterState) => void;
+  hoveredResort: string | null;
+  setHoveredResort: (id: string | null) => void;
+  selectedResort: string | null;
+  setSelectedResort: (id: string | null) => void;
+  filteredResorts: Resort[];
+  isFiltersActive: boolean;
+  handleClearFilters: () => void;
+}
+
+const FiltersContext = createContext<FiltersContextType | undefined>(undefined);
+
+export function FiltersProvider({ children }: { children: ReactNode }) {
   const [hoveredResort, setHoveredResort] = useState<string | null>(null);
   const [selectedResort, setSelectedResort] = useState<string | null>(null);
 
@@ -14,13 +29,7 @@ const useFilters = () => {
     activities: null,
   });
 
-  useEffect(() => {}, []);
-
   const filteredResorts = useMemo(() => {
-    console.log("");
-    console.log("");
-    console.log("");
-    console.log("filters => ", filters);
     let result = allResorts.filter((resort) => {
       // Activities filter
       if (filters.activities === "tubbing" && resort.hasTubing) {
@@ -42,11 +51,6 @@ const useFilters = () => {
     return result;
   }, [filters]);
 
-  console.log("");
-  console.log("");
-  console.log("");
-  console.log("filteredResorts => ", filteredResorts);
-
   const isFiltersActive =
     filters.distanceRange[0] > 0 ||
     filters.distanceRange[1] < 250 ||
@@ -60,17 +64,27 @@ const useFilters = () => {
     });
   };
 
-  return {
+  const value = {
     filters,
-    filteredResorts,
-    handleClearFilters,
-    hoveredResort,
-    isFiltersActive,
-    selectedResort,
     setFilters,
+    hoveredResort,
     setHoveredResort,
+    selectedResort,
     setSelectedResort,
+    filteredResorts,
+    isFiltersActive,
+    handleClearFilters,
   };
-};
 
-export default useFilters;
+  return (
+    <FiltersContext.Provider value={value}>{children}</FiltersContext.Provider>
+  );
+}
+
+export function useFiltersContext() {
+  const context = useContext(FiltersContext);
+  if (context === undefined) {
+    throw new Error("useFiltersContext must be used within a FiltersProvider");
+  }
+  return context;
+}
