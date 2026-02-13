@@ -1,11 +1,13 @@
 import Image from "next/image";
-import { CableCar } from "lucide-react";
+import { CableCar, Mountain } from "lucide-react";
 import skiIcon from "@/icons/ski-svgrepo-com.svg";
 import snowboardIcon from "@/icons/snowboard-1-svgrepo-com.svg";
 import tubbingIcon from "@/icons/buoy-svgrepo-com.svg";
 import { Resort } from "@/types/resort";
+import TrackStats from "@/utils/trackStats";
 
 const QuickStatsCards = (resort: Resort) => {
+  const { totalTracks } = TrackStats({ resort });
   return (
     <section className="grid grid-cols-2 md:grid-cols-4 gap-4">
       <div className="flex flex-col justify-between bg-card rounded-lg p-5 border border-border">
@@ -53,7 +55,7 @@ const QuickStatsCards = (resort: Resort) => {
           <Mountain className="w-4 h-4" />
           <span className="text-xs uppercase tracking-wide">Total Runs</span>
         </div>
-        <p className="text-2xl font-medium text-foreground">{totalRuns}</p>
+        <p className="text-2xl font-medium text-foreground">{totalTracks}</p>
       </div>
     </section>
   );
