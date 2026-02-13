@@ -42,7 +42,9 @@
   /* Run difficulty colors */
   --run-green: 142 50% 45%;
   --run-blue: 217 70% 50%;
-  --run-black: 0 0% 10%;
+  --run-black: 0 0% 30%;
+  --run-double-black: 0 0% 10%;
+  --run-free-style: 20 80.8% 45%;
 
   /* Shadows */
   --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.03);
@@ -147,6 +149,8 @@
   --color-run-green: hsl(var(--run-green));
   --color-run-blue: hsl(var(--run-blue));
   --color-run-black: hsl(var(--run-black));
+  --color-run-double-black: hsl(var(--run-double-black));
+  --color-run-free-style: hsl(var(--run-free-style));
 
   --animate-accordion-down: accordion-down 0.2s ease-out;
   --animate-accordion-up: accordion-up 0.2s ease-out;

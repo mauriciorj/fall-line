@@ -70,9 +70,13 @@ export function ResortCard({
 
         {/* Run Breakdown */}
         <RunBreakdown
-          green={resort.runs.green}
-          blue={resort.runs.blue}
           black={resort.runs.black}
+          blue={resort.runs.blue}
+          doubleBlack={resort.runs.doubleBlack}
+          freeStyle={resort.runs.freeStyle}
+          green={resort.runs.green}
+          name={resort.name}
+          trackConditions={resort.trackConditions}
         />
 
         {/* Stats Grid */}

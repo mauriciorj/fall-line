@@ -42,9 +42,11 @@ export interface Resort {
   snowBoardRentalPrice: number;
   skiRentalPrice: number;
   runs: {
-    green: number;
-    blue: number;
     black: number;
+    blue: number;
+    doubleBlack: number;
+    freeStyle?: number;
+    green: number;
   };
   ticketUrl?: string;
   tollFree?: string;

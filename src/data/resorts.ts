@@ -66,7 +66,7 @@ export const resorts: Resort[] = [
     rating: 4.3,
     skiRentalPrice: 55,
     snowBoardRentalPrice: 66,
-    runs: { green: 6, blue: 4, black: 7 },
+    runs: { black: 5, blue: 3, doubleBlack: 2, freeStyle: 19, green: 6 },
     ticketUrl: "https://ski-lakeridge.resortstore.net/en/catalogue/categories/",
     tollFree: "1-877-350-3640",
     trackConditions: [
@@ -138,7 +138,7 @@ export const resorts: Resort[] = [
     rating: 4.2,
     skiRentalPrice: 48.67,
     snowBoardRentalPrice: 60.18,
-    runs: { green: 6, blue: 5, black: 3 },
+    runs: { black: 1, blue: 5, doubleBlack: 2, freeStyle: 14, green: 6 },
     trackConditions: [
       { name: "Park View", condition: "Open", difficulty: "green" },
       { name: "The Chute", condition: "Open", difficulty: "blue" },
@@ -194,7 +194,7 @@ export const resorts: Resort[] = [
     name: "Brimacombe",
     phone: "(905) 983-5983",
     rating: 4.2,
-    runs: { green: 9, blue: 6, black: 8 },
+    runs: { black: 8, blue: 6, doubleBlack: 0, freeStyle: 22, green: 8 },
     skiRentalPrice: 77,
     snowBoardRentalPrice: 77,
     ticketUrl: "https://brimacombe.ca/shop-online/",
@@ -264,7 +264,7 @@ export const resorts: Resort[] = [
     name: "Snow Valley Ski Resort",
     phone: "(705) 721-7669",
     rating: 4.3,
-    runs: { green: 9, blue: 5, black: 6 },
+    runs: { black: 5, blue: 4, doubleBlack: 1, freeStyle: 16, green: 6 },
     skiRentalPrice: 70,
     snowBoardRentalPrice: 70,
     ticketUrl: "https://skisnowvalley.resortstore.net/en/catalogue/categories/",
@@ -331,7 +331,7 @@ export const resorts: Resort[] = [
     rating: 4.1,
     skiRentalPrice: 79,
     snowBoardRentalPrice: 79,
-    runs: { green: 8, blue: 15, black: 3 },
+    runs: { black: 2, blue: 15, doubleBlack: 0, freeStyle: 27, green: 8 },
     ticketUrl: "https://shop.horseshoeresort.com/tickets",
     trackConditions: [
       { name: "Ponyback", condition: "Open", difficulty: "green" },
@@ -406,7 +406,7 @@ export const resorts: Resort[] = [
     rating: 4.4,
     skiRentalPrice: 109,
     snowBoardRentalPrice: 109,
-    runs: { green: 12, blue: 19, black: 25 },
+    runs: { black: 9, blue: 19, doubleBlack: 16, freeStyle: 60, green: 12 },
     ticketUrl:
       "https://www.bluemountain.ca/plan-your-trip/day-tickets/winter-lift-tickets",
     trackConditions: [
@@ -550,7 +550,7 @@ export const resorts: Resort[] = [
     rating: 4.2,
     skiRentalPrice: 52,
     snowBoardRentalPrice: 52,
-    runs: { green: 7, blue: 4, black: 2 },
+    runs: { black: 2, blue: 4, doubleBlack: 0, freeStyle: 17, green: 7 },
     trackConditions: [
       { name: "Escarpment Run", condition: "Open", difficulty: "green" },
       { name: "Night Hawk", condition: "Open", difficulty: "green" },
@@ -611,7 +611,7 @@ export const resorts: Resort[] = [
     rating: 4.2,
     skiRentalPrice: 53,
     snowBoardRentalPrice: 53,
-    runs: { green: 3, blue: 5, black: 5 },
+    runs: { black: 5, blue: 5, doubleBlack: 0, freeStyle: 13, green: 3 },
     trackConditions: [
       { name: "Discover", condition: "Open", difficulty: "green" },
       { name: "Adventure", condition: "Open", difficulty: "green" },
@@ -672,7 +672,7 @@ export const resorts: Resort[] = [
     rating: 4.6,
     skiRentalPrice: 74.99,
     snowBoardRentalPrice: 74.99,
-    runs: { green: 6, blue: 9, black: 7 },
+    runs: { black: 0, blue: 0, doubleBlack: 0, freeStyle: 27, green: 27 },
     trackConditions: [
       { name: "Alley Way", condition: "Open", difficulty: "green" },
       { name: "Boughner's Boogie", condition: "Open", difficulty: "green" },
