@@ -14,7 +14,7 @@ interface ActivitiesListProps {
 
 export function ActivitiesList({ resort }: ActivitiesListProps) {
   return (
-    <div className="flex flex-row flex-wrap">
+    <div className="flex flex-row flex-wrap gap-1">
       {resort.hasAccommodations && (
         <div className="ml-1">
           <Badge

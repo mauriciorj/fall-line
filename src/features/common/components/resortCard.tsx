@@ -80,11 +80,11 @@ export function ResortCard({
         />
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-4 gap-3 pt-1">
+        <div className="grid grid-cols-4 gap-3 pt-3 border-t border-border">
           <div className="flex flex-col justify-between space-y-1">
             <div className="flex items-center gap-1 text-muted-foreground h-[30px]">
               <CableCar className="w-3.5 h-3.5" />
-              <span className="text-[10px] uppercase tracking-wide">
+              <span className="text-[10px] font-bold uppercase tracking-wide">
                 Lift Pass
               </span>
             </div>
@@ -95,7 +95,7 @@ export function ResortCard({
           <div className="flex flex-col justify-between space-y-1">
             <div className="flex items-center gap-1 text-muted-foreground h-[30px]">
               <Image alt="ski-icons" src={skiIcon} width={16} height={16} />
-              <span className="text-[10px] uppercase tracking-wide">
+              <span className="text-[10px] font-bold uppercase tracking-wide">
                 Ski Rental
               </span>
             </div>
@@ -111,7 +111,7 @@ export function ResortCard({
                 width={14}
                 height={14}
               />
-              <span className="text-[10px] uppercase tracking-wide">
+              <span className="text-[10px] font-bold uppercase tracking-wide">
                 Snowboard Rental
               </span>
             </div>
@@ -128,7 +128,7 @@ export function ResortCard({
                   width={14}
                   height={14}
                 />
-                <span className="text-[10px] uppercase tracking-wide">
+                <span className="text-[10px] font-bold uppercase tracking-wide">
                   Tubbing
                 </span>
               </div>

@@ -14,6 +14,32 @@ interface RunBreakdownProps {
     difficulty: "black" | "blue" | "double-black" | "free-style" | "green";
   }[];
 }
+interface TrackStatus {
+  open: number;
+  total: number;
+  type: "green" | "blue" | "black" | "double-black" | "free-style";
+  className?: string;
+}
+
+function StatusBadge({ open, total, type, className }: TrackStatus) {
+  return (
+    <span
+      className={cn(
+        "text-[11px] font-medium px-1.5 pb-0.5 pt-1 rounded-full",
+        className,
+        type === "green" && "border border-run-green text-run-green",
+        type === "blue" && "border border-run-blue text-run-blue",
+        type === "black" && "border border-run-black text-run-black",
+        type === "double-black" &&
+          "border border-run-double-black text-run-double-black",
+        type === "free-style" &&
+          "border border-run-free-style text-run-free-style"
+      )}
+    >
+      {open}/{total} open
+    </span>
+  );
+}
 
 export function RunBreakdown({
   black,
@@ -32,22 +58,52 @@ export function RunBreakdown({
   const doubleBlackPercent = ((doubleBlack || 0) / total) * 100;
   const freeStylePercent = ((freeStyle || 0) / total) * 100;
 
-  // const greenTracks = trackConditions
-  //   ? trackConditions.filter((item) => item.difficulty === "green")?.length
-  //   : 0;
-  // const blueTracks = trackConditions
-  //   ? trackConditions.filter((item) => item.difficulty === "blue")?.length
-  //   : 0;
-  // const blackTracks = trackConditions
-  //   ? trackConditions.filter((item) => item.difficulty === "black")?.length
-  //   : 0;
-  // const doubleBlackTracks = trackConditions
-  //   ? trackConditions.filter((item) => item.difficulty === "double-black")
-  //       ?.length
-  //   : 0;
-  // const freeStyleTracks = trackConditions
-  //   ? trackConditions.map((item) => item.difficulty === "free-style")?.length
-  //   : 0;
+  const greenTracks = trackConditions
+    ? trackConditions.filter((item) => item.difficulty === "green")?.length
+    : 0;
+  const greenTracksOpen = trackConditions
+    ? trackConditions.filter(
+        (item) => item.difficulty === "green" && item.condition === "open"
+      )?.length
+    : 0;
+
+  const blueTracks = trackConditions
+    ? trackConditions.filter((item) => item.difficulty === "blue")?.length
+    : 0;
+  const blueTracksOpen = trackConditions
+    ? trackConditions.filter(
+        (item) => item.difficulty === "blue" && item.condition === "open"
+      )?.length
+    : 0;
+
+  const blackTracks = trackConditions
+    ? trackConditions.filter((item) => item.difficulty === "black")?.length
+    : 0;
+  const blackTracksOpen = trackConditions
+    ? trackConditions.filter(
+        (item) => item.difficulty === "black" && item.condition === "open"
+      )?.length
+    : 0;
+
+  const doubleBlackTracks = trackConditions
+    ? trackConditions.filter((item) => item.difficulty === "double-black")
+        ?.length
+    : 0;
+  const doubleBlackTracksOpen = trackConditions
+    ? trackConditions.filter(
+        (item) =>
+          item.difficulty === "double-black" && item.condition === "open"
+      )?.length
+    : 0;
+
+  const freeStyleTracks = trackConditions
+    ? trackConditions.filter((item) => item.difficulty === "free-style")?.length
+    : 0;
+  const freeStyleTracksOpen = trackConditions
+    ? trackConditions.filter(
+        (item) => item.difficulty === "free-style" && item.condition === "open"
+      )?.length
+    : 0;
 
   // console.log("");
   // console.log(name);
@@ -59,53 +115,114 @@ export function RunBreakdown({
     <div className={cn("space-y-2", className)}>
       <div className="flex items-center gap-3">
         <div>
-          <p className="text-xs text-muted-foreground">Tracks</p>
+          <p className="text-xs text-muted-foreground">Tracks:</p>
         </div>
         <div className="flex items-center gap-3 text-xs text-muted-foreground">
-          <span className="flex items-center gap-1.5">
-            <span className="w-3 h-3 rounded-full bg-run-green" />
-            {green}
-          </span>
-          <span className="flex items-center gap-1.5">
-            <span className="w-3 h-3 rounded-full bg-run-blue" />
-            {blue}
-          </span>
-          <span className="flex items-center gap-1.5">
-            <span className="w-3 h-3 rounded-full bg-run-black" />
-            {black}
-          </span>
-          <span className="flex items-center gap-1.5">
-            <span className="w-3 h-3 rounded-full bg-run-double-black" />
-            <span className="w-3 h-3 rounded-full bg-run-double-black" />
-            {doubleBlack}
-          </span>
-          <span className="flex items-center gap-1.5">
-            <span className="w-3 h-3 rounded-full bg-run-free-style" />
-            {freeStyle}
-          </span>
+          {Boolean(green > 0) && (
+            <span className="flex items-center gap-1.5">
+              <span className="w-3 h-3 rounded-full bg-run-green" />
+              {green}
+            </span>
+          )}
+          {Boolean(blue > 0) && (
+            <span className="flex items-center gap-1.5">
+              <span className="w-3 h-3 rounded-full bg-run-blue" />
+              {blue}
+            </span>
+          )}
+          {Boolean(black > 0) && (
+            <span className="flex items-center gap-1.5">
+              <span className="w-3 h-3 rounded-full bg-run-black" />
+              {black}
+            </span>
+          )}
+          {Boolean(doubleBlack && doubleBlack > 0) && (
+            <span className="flex items-center gap-1.5">
+              <span className="w-3 h-3 rounded-full bg-run-double-black" />
+              <span className="w-3 h-3 rounded-full bg-run-double-black" />
+              {doubleBlack}
+            </span>
+          )}
+          {Boolean(freeStyle && freeStyle > 0) && (
+            <span className="flex items-center gap-1.5">
+              <span className="w-3 h-3 rounded-full bg-run-free-style" />
+              {freeStyle}
+            </span>
+          )}
         </div>
       </div>
       <div className="h-2.5 w-full flex rounded-full overflow-hidden bg-muted">
-        <div
-          className="h-full bg-run-green transition-all duration-300"
-          style={{ width: `${greenPercent}%` }}
-        />
-        <div
-          className="h-full bg-run-blue transition-all duration-300"
-          style={{ width: `${bluePercent}%` }}
-        />
-        <div
-          className="h-full bg-run-black transition-all duration-300"
-          style={{ width: `${blackPercent}%` }}
-        />
-        <div
-          className="h-full bg-run-double-black transition-all duration-300"
-          style={{ width: `${doubleBlackPercent}%` }}
-        />
-        <div
-          className="h-full bg-run-free-style transition-all duration-300"
-          style={{ width: `${freeStylePercent}%` }}
-        />
+        {Boolean(greenPercent > 0) && (
+          <div
+            className="h-full bg-run-green transition-all duration-300"
+            style={{ width: `${greenPercent}%` }}
+          />
+        )}
+        {Boolean(bluePercent > 0) && (
+          <div
+            className="h-full bg-run-blue transition-all duration-300"
+            style={{ width: `${bluePercent}%` }}
+          />
+        )}
+        {Boolean(blackPercent > 0) && (
+          <div
+            className="h-full bg-run-black transition-all duration-300"
+            style={{ width: `${blackPercent}%` }}
+          />
+        )}
+        {Boolean(doubleBlackPercent > 0) && (
+          <div
+            className="h-full bg-run-double-black transition-all duration-300"
+            style={{ width: `${doubleBlackPercent}%` }}
+          />
+        )}
+        {Boolean(freeStylePercent > 0) && (
+          <div
+            className="h-full bg-run-free-style transition-all duration-300"
+            style={{ width: `${freeStylePercent}%` }}
+          />
+        )}
+      </div>
+      <div className="flex items-center text-xs text-muted-foreground">
+        {Boolean(greenTracks > 0) && (
+          <StatusBadge
+            className="mr-2"
+            open={greenTracksOpen}
+            total={greenTracks}
+            type="green"
+          />
+        )}
+        {Boolean(blueTracks > 0) && (
+          <StatusBadge
+            className="mr-2"
+            open={blueTracksOpen}
+            total={blueTracks}
+            type="blue"
+          />
+        )}
+        {Boolean(blackTracks > 0) && (
+          <StatusBadge
+            className="mr-2"
+            open={blackTracksOpen}
+            total={blackTracks}
+            type="black"
+          />
+        )}
+        {Boolean(doubleBlackTracks > 0) && (
+          <StatusBadge
+            className="mr-2"
+            open={doubleBlackTracksOpen}
+            total={doubleBlackTracks}
+            type="double-black"
+          />
+        )}
+        {Boolean(freeStyleTracks > 0) && (
+          <StatusBadge
+            open={freeStyleTracksOpen}
+            total={freeStyleTracks}
+            type="free-style"
+          />
+        )}
       </div>
     </div>
   );
