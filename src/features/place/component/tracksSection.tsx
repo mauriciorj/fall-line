@@ -25,6 +25,7 @@ const difficultyColor = {
   blue: "bg-run-blue",
   black: "bg-run-black",
   "double-black": "bg-run-black",
+  "free-style": "bg-run-free-style",
 };
 
 const difficultyLabel = {

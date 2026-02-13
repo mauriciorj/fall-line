@@ -142,9 +142,13 @@ const ResortDetail = () => {
           </h2>
           <div className="bg-card rounded-lg p-6 border border-border space-y-6">
             <RunBreakdown
-              green={resort.runs.green}
-              blue={resort.runs.blue}
               black={resort.runs.black}
+              blue={resort.runs.blue}
+              doubleBlack={resort.runs.doubleBlack}
+              freeStyle={resort.runs.freeStyle}
+              green={resort.runs.green}
+              name={resort.name}
+              trackConditions={resort.trackConditions}
             />
 
             <div className="grid grid-cols-3 gap-4 pt-4 border-t border-border">
