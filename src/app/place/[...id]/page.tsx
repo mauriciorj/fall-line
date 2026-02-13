@@ -16,6 +16,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { ResortInfoSection } from "@/place/component/resortInfoSection";
 import { TracksSection } from "@/place/component/tracksSection";
+import StatusBadge from "@/components/statusBadge";
 
 import skiIcon from "@/icons/ski-svgrepo-com.svg";
 import snowboardIcon from "@/icons/snowboard-1-svgrepo-com.svg";
@@ -43,7 +44,62 @@ const ResortDetail = () => {
     );
   }
 
-  const totalRuns = resort.runs.green + resort.runs.blue + resort.runs.black;
+  const { green, blue, black, doubleBlack, freeStyle } = resort.runs;
+
+  const totalRuns =
+    green + blue + black + (doubleBlack || 0) + (freeStyle || 0);
+
+  const greenTracks = resort.trackConditions
+    ? resort.trackConditions.filter((item) => item.difficulty === "green")
+        ?.length
+    : 0;
+  const greenTracksOpen = resort.trackConditions
+    ? resort.trackConditions.filter(
+        (item) => item.difficulty === "green" && item.condition === "open"
+      )?.length
+    : 0;
+
+  const blueTracks = resort.trackConditions
+    ? resort.trackConditions.filter((item) => item.difficulty === "blue")
+        ?.length
+    : 0;
+  const blueTracksOpen = resort.trackConditions
+    ? resort.trackConditions.filter(
+        (item) => item.difficulty === "blue" && item.condition === "open"
+      )?.length
+    : 0;
+
+  const blackTracks = resort.trackConditions
+    ? resort.trackConditions.filter((item) => item.difficulty === "black")
+        ?.length
+    : 0;
+  const blackTracksOpen = resort.trackConditions
+    ? resort.trackConditions.filter(
+        (item) => item.difficulty === "black" && item.condition === "open"
+      )?.length
+    : 0;
+
+  const doubleBlackTracks = resort.trackConditions
+    ? resort.trackConditions.filter(
+        (item) => item.difficulty === "double-black"
+      )?.length
+    : 0;
+  const doubleBlackTracksOpen = resort.trackConditions
+    ? resort.trackConditions.filter(
+        (item) =>
+          item.difficulty === "double-black" && item.condition === "open"
+      )?.length
+    : 0;
+
+  const freeStyleTracks = resort.trackConditions
+    ? resort.trackConditions.filter((item) => item.difficulty === "free-style")
+        ?.length
+    : 0;
+  const freeStyleTracksOpen = resort.trackConditions
+    ? resort.trackConditions.filter(
+        (item) => item.difficulty === "free-style" && item.condition === "open"
+      )?.length
+    : 0;
 
   return (
     <div className="min-h-screen bg-background">
@@ -173,18 +229,25 @@ const ResortDetail = () => {
               green={resort.runs.green}
               name={resort.name}
               trackConditions={resort.trackConditions}
+              isToHideStatusBadge={true}
             />
 
             <div className="grid grid-cols-3 gap-4 pt-4 border-t border-border">
               <div className="text-center">
                 <div className="flex items-center justify-center gap-2 mb-2">
                   <span className="w-3 h-3 rounded-full bg-run-green" />
-                  <span className="text-sm text-muted-foreground">
-                    Beginner
-                  </span>
+                  <span className="text-sm text-muted-foreground">Green</span>
                 </div>
-                <p className="text-xl font-medium text-foreground">
+                <p className="flex flex-row items-center justify-center text-xl font-medium text-foreground">
                   {resort.runs.green} runs
+                  {Boolean(greenTracks > 0) && (
+                    <StatusBadge
+                      className="ml-2"
+                      open={greenTracksOpen}
+                      total={greenTracks}
+                      type="green"
+                    />
+                  )}
                 </p>
                 <p className="text-xs text-muted-foreground mt-1">
                   {Math.round((resort.runs.green / totalRuns) * 100)}% of
@@ -194,12 +257,18 @@ const ResortDetail = () => {
               <div className="text-center">
                 <div className="flex items-center justify-center gap-2 mb-2">
                   <span className="w-3 h-3 rounded-full bg-run-blue" />
-                  <span className="text-sm text-muted-foreground">
-                    Intermediate
-                  </span>
+                  <span className="text-sm text-muted-foreground">Blue</span>
                 </div>
-                <p className="text-xl font-medium text-foreground">
+                <p className="flex flex-row items-center justify-center text-xl font-medium text-foreground">
                   {resort.runs.blue} runs
+                  {Boolean(blueTracks > 0) && (
+                    <StatusBadge
+                      className="ml-2"
+                      open={blueTracksOpen}
+                      total={blueTracks}
+                      type="blue"
+                    />
+                  )}
                 </p>
                 <p className="text-xs text-muted-foreground mt-1">
                   {Math.round((resort.runs.blue / totalRuns) * 100)}% of terrain
@@ -208,16 +277,70 @@ const ResortDetail = () => {
               <div className="text-center">
                 <div className="flex items-center justify-center gap-2 mb-2">
                   <span className="w-3 h-3 rounded-full bg-run-black" />
-                  <span className="text-sm text-muted-foreground">
-                    Advanced
-                  </span>
+                  <span className="text-sm text-muted-foreground">Black</span>
                 </div>
-                <p className="text-xl font-medium text-foreground">
+                <p className="flex flex-row items-center justify-center text-xl font-medium text-foreground">
                   {resort.runs.black} runs
+                  {Boolean(blackTracks > 0) && (
+                    <StatusBadge
+                      className="ml-2"
+                      open={blackTracksOpen}
+                      total={blackTracks}
+                      type="black"
+                    />
+                  )}
                 </p>
                 <p className="text-xs text-muted-foreground mt-1">
                   {Math.round((resort.runs.black / totalRuns) * 100)}% of
                   terrain
+                </p>
+              </div>
+              <div className="text-center">
+                <div className="flex items-center justify-center gap-2 mb-2">
+                  <span className="w-3 h-3 rounded-full bg-run-double-black" />
+                  <span className="text-sm text-muted-foreground">
+                    Double Black
+                  </span>
+                </div>
+                <p className="flex flex-row items-center justify-center text-xl font-medium text-foreground">
+                  {resort.runs.doubleBlack} runs
+                  {Boolean(doubleBlackTracks > 0) && (
+                    <StatusBadge
+                      className="ml-2"
+                      open={doubleBlackTracksOpen}
+                      total={doubleBlackTracks}
+                      type="double-black"
+                    />
+                  )}
+                </p>
+                <p className="text-xs text-muted-foreground mt-1">
+                  {Math.round((resort.runs.doubleBlack / totalRuns) * 100)}% of
+                  terrain
+                </p>
+              </div>
+              <div className="text-center">
+                <div className="flex items-center justify-center gap-2 mb-2">
+                  <span className="w-3 h-3 rounded-full bg-run-free-style" />
+                  <span className="text-sm text-muted-foreground">
+                    Free Style
+                  </span>
+                </div>
+                <p className="flex flex-row items-center justify-center text-xl font-medium text-foreground">
+                  {resort.runs.freeStyle} runs
+                  {Boolean(freeStyleTracks > 0) && (
+                    <StatusBadge
+                      className="ml-2"
+                      open={freeStyleTracksOpen}
+                      total={freeStyleTracks}
+                      type="free-style"
+                    />
+                  )}
+                </p>
+                <p className="text-xs text-muted-foreground mt-1">
+                  {resort.runs.freeStyle
+                    ? Math.round((resort.runs.freeStyle / totalRuns) * 100)
+                    : 0}
+                  % of terrain
                 </p>
               </div>
             </div>

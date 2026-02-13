@@ -123,21 +123,13 @@ export function TracksSection({ resort }: TracksSectionProps) {
                   {resort.name} — Trail Map
                 </DialogTitle>
               </DialogHeader>
-              {/* <div className="mt-2">
-                {getFileType(resort?.trailMap) === "pdf" && (
-                  <iframe
-                    src={resort.trailMap}
-                    className="w-full h-[70vh] rounded-md border border-border"
-                  />
-                )}
-                {getFileType(resort?.trailMap) === "image" && (
-                  <Image
-                    src={resort.trailMap}
-                    alt={`${resort.name} trail map`}
-                    className="w-full rounded-md"
-                  />
-                )}
-              </div> */}
+              <div className="mt-2">
+                <Image
+                  src={resort.trailMap}
+                  alt={`${resort.name} trail map`}
+                  className="w-full rounded-md"
+                />
+              </div>
             </DialogContent>
           </Dialog>
         </div>

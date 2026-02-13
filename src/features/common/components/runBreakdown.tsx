@@ -1,4 +1,5 @@
 import { cn } from "@/utils/utils";
+import StatusBadge from "@/components/statusBadge";
 
 interface RunBreakdownProps {
   black: number;
@@ -13,32 +14,7 @@ interface RunBreakdownProps {
     condition: string;
     difficulty: "black" | "blue" | "double-black" | "free-style" | "green";
   }[];
-}
-interface TrackStatus {
-  open: number;
-  total: number;
-  type: "green" | "blue" | "black" | "double-black" | "free-style";
-  className?: string;
-}
-
-function StatusBadge({ open, total, type, className }: TrackStatus) {
-  return (
-    <span
-      className={cn(
-        "text-[11px] font-medium px-1.5 pb-0.5 pt-1 rounded-full",
-        className,
-        type === "green" && "border border-run-green text-run-green",
-        type === "blue" && "border border-run-blue text-run-blue",
-        type === "black" && "border border-run-black text-run-black",
-        type === "double-black" &&
-          "border border-run-double-black text-run-double-black",
-        type === "free-style" &&
-          "border border-run-free-style text-run-free-style"
-      )}
-    >
-      {open}/{total} open
-    </span>
-  );
+  isToHideStatusBadge?: boolean;
 }
 
 export function RunBreakdown({
@@ -50,6 +26,7 @@ export function RunBreakdown({
   green,
   name,
   trackConditions,
+  isToHideStatusBadge = false,
 }: RunBreakdownProps) {
   const total = green + blue + black + (doubleBlack || 0) + (freeStyle || 0);
   const greenPercent = (green / total) * 100;
@@ -183,47 +160,49 @@ export function RunBreakdown({
           />
         )}
       </div>
-      <div className="flex items-center text-xs text-muted-foreground">
-        {Boolean(greenTracks > 0) && (
-          <StatusBadge
-            className="mr-2"
-            open={greenTracksOpen}
-            total={greenTracks}
-            type="green"
-          />
-        )}
-        {Boolean(blueTracks > 0) && (
-          <StatusBadge
-            className="mr-2"
-            open={blueTracksOpen}
-            total={blueTracks}
-            type="blue"
-          />
-        )}
-        {Boolean(blackTracks > 0) && (
-          <StatusBadge
-            className="mr-2"
-            open={blackTracksOpen}
-            total={blackTracks}
-            type="black"
-          />
-        )}
-        {Boolean(doubleBlackTracks > 0) && (
-          <StatusBadge
-            className="mr-2"
-            open={doubleBlackTracksOpen}
-            total={doubleBlackTracks}
-            type="double-black"
-          />
-        )}
-        {Boolean(freeStyleTracks > 0) && (
-          <StatusBadge
-            open={freeStyleTracksOpen}
-            total={freeStyleTracks}
-            type="free-style"
-          />
-        )}
-      </div>
+      {!isToHideStatusBadge && (
+        <div className="flex items-center text-xs text-muted-foreground">
+          {Boolean(greenTracks > 0) && (
+            <StatusBadge
+              className="mr-2"
+              open={greenTracksOpen}
+              total={greenTracks}
+              type="green"
+            />
+          )}
+          {Boolean(blueTracks > 0) && (
+            <StatusBadge
+              className="mr-2"
+              open={blueTracksOpen}
+              total={blueTracks}
+              type="blue"
+            />
+          )}
+          {Boolean(blackTracks > 0) && (
+            <StatusBadge
+              className="mr-2"
+              open={blackTracksOpen}
+              total={blackTracks}
+              type="black"
+            />
+          )}
+          {Boolean(doubleBlackTracks > 0) && (
+            <StatusBadge
+              className="mr-2"
+              open={doubleBlackTracksOpen}
+              total={doubleBlackTracks}
+              type="double-black"
+            />
+          )}
+          {Boolean(freeStyleTracks > 0) && (
+            <StatusBadge
+              open={freeStyleTracksOpen}
+              total={freeStyleTracks}
+              type="free-style"
+            />
+          )}
+        </div>
+      )}
     </div>
   );
 }
