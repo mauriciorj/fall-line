@@ -1,11 +1,9 @@
-"use client";
-
 import {
-  Menu as MenuIcon,
-  Mail,
-  HelpCircle,
-  MessageCircle,
   FileText,
+  HelpCircle,
+  Mail,
+  Menu as MenuIcon,
+  MessageCircle,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {

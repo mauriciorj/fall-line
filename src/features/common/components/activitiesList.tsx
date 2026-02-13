@@ -1,18 +1,18 @@
-import { Resort } from "@/types/resort";
 import {
-  Hotel,
-  Trees,
-  Sparkles,
-  GraduationCap,
   Footprints,
+  GraduationCap,
+  Hotel,
+  Sparkles,
+  Trees,
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { Resort } from "@/types/resort";
 
 interface ActivitiesListProps {
   resort: Resort;
 }
 
-export function ActivitiesList({ resort }: ActivitiesListProps) {
+const ActivitiesList = ({ resort }: ActivitiesListProps) => {
   return (
     <div className="flex flex-row flex-wrap gap-1">
       {resort.hasAccommodations && (
@@ -72,4 +72,6 @@ export function ActivitiesList({ resort }: ActivitiesListProps) {
       )}
     </div>
   );
-}
+};
+
+export default ActivitiesList;

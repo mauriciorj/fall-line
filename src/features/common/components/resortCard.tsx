@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { Resort } from "@/types/resort";
-import TracksBreakdown from "./tracksBreakdown";
 import { Star, CableCar } from "lucide-react";
-import { ActivitiesList } from "@/src/features/common/components/activitiesList";
+import TracksBreakdown from "@/components/tracksBreakdown";
+import ActivitiesList from "@/components/activitiesList";
+import { Resort } from "@/types/resort";
 import { cn } from "@/utils/utils";
 
 import skiIcon from "@/icons/ski-svgrepo-com.svg";
@@ -11,16 +11,16 @@ import snowboardIcon from "@/icons/snowboard-1-svgrepo-com.svg";
 import tubbingIcon from "@/icons/buoy-svgrepo-com.svg";
 
 interface ResortCardProps {
-  resort: Resort;
   isResortHoveredOrSelected: boolean;
+  resort: Resort;
   setHoveredResort: (id: string | null) => void;
 }
 
-export function ResortCard({
-  resort,
+const ResortCard = ({
   isResortHoveredOrSelected,
+  resort,
   setHoveredResort,
-}: ResortCardProps) {
+}: ResortCardProps) => {
   const router = useRouter();
 
   const handleClick = () => {
@@ -133,4 +133,6 @@ export function ResortCard({
       </div>
     </article>
   );
-}
+};
+
+export default ResortCard;

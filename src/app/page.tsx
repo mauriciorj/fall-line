@@ -1,24 +1,24 @@
 "use client";
 
-import { ResortList } from "@/components/resortList";
-import { ResortMap } from "@/components/resortMap";
-import { useIsMobile } from "@/hooks/useMobile";
+import ResortList from "@/components/resortList";
+import ResortMap from "@/components/resortMap";
 import {
   ResizableHandle,
   ResizablePanel,
   ResizablePanelGroup,
 } from "@/components/ui/resizable";
 import { useFiltersContext } from "@/context/filtersContext";
+import { useIsMobile } from "@/hooks/useMobile";
 
 const Index = () => {
   const isMobile = useIsMobile();
 
   const {
+    filteredResorts,
     hoveredResort,
     selectedResort,
     setHoveredResort,
     setSelectedResort,
-    filteredResorts,
   } = useFiltersContext();
 
   return (

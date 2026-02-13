@@ -1,13 +1,13 @@
 import { cn } from "@/utils/utils";
 
 interface TrackStatus {
+  className?: string;
   open: number;
   total: number;
   type: "green" | "blue" | "black" | "double-black" | "free-style";
-  className?: string;
 }
 
-function StatusBadge({ open, total, type, className }: TrackStatus) {
+const StatusBadge = ({ open, total, type, className }: TrackStatus) => {
   return (
     <span
       className={cn(
@@ -25,6 +25,6 @@ function StatusBadge({ open, total, type, className }: TrackStatus) {
       {open}/{total} open
     </span>
   );
-}
+};
 
 export default StatusBadge;

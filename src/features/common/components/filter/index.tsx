@@ -38,13 +38,13 @@ interface FilterProps {
   setLocation: () => void;
 }
 
-export function Filter({
+const Filter = ({
   filters,
   onChange,
   isActive,
   onClear,
   setLocation,
-}: FilterProps) {
+}: FilterProps) => {
   const isMobile = useIsMobile();
 
   const [open, setOpen] = useState(false);
@@ -282,4 +282,6 @@ export function Filter({
       </DialogContent>
     </Dialog>
   );
-}
+};
+
+export default Filter;

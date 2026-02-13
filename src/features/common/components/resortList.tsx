@@ -1,20 +1,20 @@
-import { Resort } from "@/types/resort";
-import { ResortCard } from "./resortCard";
 import { useEffect, useRef } from "react";
+import { Resort } from "@/types/resort";
+import ResortCard from "@/components/resortCard";
 
 interface ResortListProps {
+  hoveredResort: string | null;
   resorts: Resort[];
   selectedResort: string | null;
-  hoveredResort: string | null;
   setHoveredResort: (id: string | null) => void;
 }
 
-export function ResortList({
+const ResortList = ({
+  hoveredResort,
   resorts,
   selectedResort,
-  hoveredResort,
   setHoveredResort,
-}: ResortListProps) {
+}: ResortListProps) => {
   const itemRefs = useRef<Record<string, HTMLDivElement | null>>({});
 
   useEffect(() => {
@@ -65,4 +65,6 @@ export function ResortList({
       </div>
     </div>
   );
-}
+};
+
+export default ResortList;

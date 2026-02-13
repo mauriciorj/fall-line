@@ -1,13 +1,13 @@
 "use client";
 
 import { Mountain } from "lucide-react";
-import { Filter } from "./filter";
-import LocationDropdown from "./locationDropdown";
+import Filter from "@/components/filter";
+import LocationDropdown from "@/components/locationDropdown";
 import { useFiltersContext } from "@/context/filtersContext";
 import { useIsMobile } from "@/hooks/useMobile";
 import Menu from "@/components/menu";
 
-export function Header() {
+const Header = () => {
   const isMobile = useIsMobile();
 
   const { filters, setFilters, isFiltersActive, handleClearFilters } =
@@ -49,4 +49,6 @@ export function Header() {
       </div>
     </header>
   );
-}
+};
+
+export default Header;
