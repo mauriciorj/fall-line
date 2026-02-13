@@ -78,7 +78,7 @@ export function ResortCard({
         {/* Stats Grid */}
         <div className="grid grid-cols-4 gap-3 pt-1">
           <div className="flex flex-col justify-between space-y-1">
-            <div className="flex items-center gap-1 text-muted-foreground">
+            <div className="flex items-center gap-1 text-muted-foreground h-[30px]">
               <CableCar className="w-3.5 h-3.5" />
               <span className="text-[10px] uppercase tracking-wide">
                 Lift Pass
@@ -89,7 +89,7 @@ export function ResortCard({
             </p>
           </div>
           <div className="flex flex-col justify-between space-y-1">
-            <div className="flex items-center gap-1 text-muted-foreground">
+            <div className="flex items-center gap-1 text-muted-foreground h-[30px]">
               <Image alt="ski-icons" src={skiIcon} width={16} height={16} />
               <span className="text-[10px] uppercase tracking-wide">
                 Ski Rental
@@ -99,7 +99,7 @@ export function ResortCard({
               ${resort.skiRentalPrice}
             </p>
           </div>
-          <div className="flex flex-col justify-between space-y-1 w-max">
+          <div className="flex flex-col justify-between space-y-1">
             <div className="flex items-center gap-1 text-muted-foreground">
               <Image
                 alt="ski-icons"
@@ -116,8 +116,8 @@ export function ResortCard({
             </p>
           </div>
           {Boolean(resort?.tubbingPrice && resort?.tubbingPrice > 0) && (
-            <div className="flex flex-col justify-between space-y-1 ml-12">
-              <div className="flex items-center gap-1 text-muted-foreground">
+            <div className="flex flex-col justify-between space-y-1 ml-4">
+              <div className="flex items-center gap-1 text-muted-foreground h-[30px]">
                 <Image
                   alt="ski-icons"
                   src={tubbingIcon}

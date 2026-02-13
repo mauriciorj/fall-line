@@ -19,9 +19,9 @@ export function ActivitiesList({ resort }: ActivitiesListProps) {
         <div className="ml-1">
           <Badge
             variant="secondary"
-            className="text-[10px] font-medium gap-1 px-2 py-0.5"
+            className="text-[12px] font-medium gap-1 px-2 py-0.5"
           >
-            <Hotel className="w-3 h-3" />
+            <Hotel className="w-4 h-4" />
             Accommodations
           </Badge>
         </div>
@@ -30,9 +30,9 @@ export function ActivitiesList({ resort }: ActivitiesListProps) {
         <div className="ml-1">
           <Badge
             variant="secondary"
-            className="text-[10px] font-medium gap-1 px-2 py-0.5"
+            className="text-[12px] font-medium gap-1 px-2 py-0.5"
           >
-            <Trees className="w-3 h-3" />
+            <Trees className="w-4 h-4" />
             Cross Country
           </Badge>
         </div>
@@ -41,9 +41,9 @@ export function ActivitiesList({ resort }: ActivitiesListProps) {
         <div className="ml-1">
           <Badge
             variant="secondary"
-            className="text-[10px] font-medium gap-1 px-2 py-0.5"
+            className="text-[12px] font-medium gap-1 px-2 py-0.5"
           >
-            <GraduationCap className="w-3 h-3" />
+            <GraduationCap className="w-4 h-4" />
             Lessons
           </Badge>
         </div>
@@ -52,9 +52,9 @@ export function ActivitiesList({ resort }: ActivitiesListProps) {
         <div className="ml-1">
           <Badge
             variant="secondary"
-            className="text-[10px] font-medium gap-1 px-2 py-0.5"
+            className="text-[12px] font-medium gap-1 px-2 py-0.5"
           >
-            <Footprints className="w-3 h-3" />
+            <Footprints className="w-4 h-4" />
             Snowshoeing
           </Badge>
         </div>
@@ -63,9 +63,9 @@ export function ActivitiesList({ resort }: ActivitiesListProps) {
         <div className="ml-1">
           <Badge
             variant="secondary"
-            className="text-[10px] font-medium gap-1 px-2 py-0.5"
+            className="text-[12px] font-medium gap-1 px-2 py-0.5"
           >
-            <Sparkles className="w-3 h-3" />
+            <Sparkles className="w-4 h-4" />
             Spa
           </Badge>
         </div>
