@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation";
 import { Resort } from "@/types/resort";
 import { RunBreakdown } from "./runBreakdown";
 import { Star, CableCar } from "lucide-react";
-import { AmenitiesList } from "@/components/amenitiesList";
+import { ActivitiesList } from "@/src/features/common/components/activitiesList";
 import { cn } from "@/utils/utils";
 
 import skiIcon from "@/icons/ski-svgrepo-com.svg";
@@ -66,7 +66,7 @@ export function ResortCard({
           </div>
         </div>
 
-        <AmenitiesList resort={resort} />
+        <ActivitiesList resort={resort} />
 
         {/* Run Breakdown */}
         <RunBreakdown

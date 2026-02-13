@@ -20,7 +20,14 @@ import Toggle from "@/components/filter/toggle";
 export interface FilterState {
   sortBy: "price" | "rating";
   distanceRange: [number, number];
-  activities: "tubbing" | null;
+  activities: {
+    accommodations: boolean;
+    crosscountry: boolean;
+    lessons: boolean;
+    snowshoeing: boolean;
+    spa: boolean;
+    tubbing: boolean;
+  };
 }
 
 interface FilterProps {
@@ -59,7 +66,14 @@ export function Filter({
     const clearedFilters: FilterState = {
       sortBy: "price",
       distanceRange: [0, 250],
-      activities: null,
+      activities: {
+        accommodations: false,
+        crosscountry: false,
+        lessons: false,
+        snowshoeing: false,
+        spa: false,
+        tubbing: false,
+      },
     };
     setLocalFilters(clearedFilters);
     onClear();
@@ -171,14 +185,69 @@ export function Filter({
             </span>
             <div className="flex flex-wrap gap-2">
               <Toggle
+                label="Accommodations"
+                color="green"
+                isActive={localFilters.activities.accommodations}
+                onClick={() =>
+                  updateLocalFilter("activities", {
+                    ...localFilters.activities,
+                    accommodations: !localFilters.activities.accommodations,
+                  })
+                }
+              />
+              <Toggle
+                label="Cross Country"
+                color="green"
+                isActive={localFilters.activities.crosscountry}
+                onClick={() =>
+                  updateLocalFilter("activities", {
+                    ...localFilters.activities,
+                    crosscountry: !localFilters.activities.crosscountry,
+                  })
+                }
+              />
+              <Toggle
+                label="Lessons"
+                color="green"
+                isActive={localFilters.activities.lessons}
+                onClick={() =>
+                  updateLocalFilter("activities", {
+                    ...localFilters.activities,
+                    lessons: !localFilters.activities.lessons,
+                  })
+                }
+              />
+              <Toggle
+                label="Snowshoeing"
+                color="green"
+                isActive={localFilters.activities.snowshoeing}
+                onClick={() =>
+                  updateLocalFilter("activities", {
+                    ...localFilters.activities,
+                    snowshoeing: !localFilters.activities.snowshoeing,
+                  })
+                }
+              />
+              <Toggle
+                label="Spa"
+                color="green"
+                isActive={localFilters.activities.spa}
+                onClick={() =>
+                  updateLocalFilter("activities", {
+                    ...localFilters.activities,
+                    spa: !localFilters.activities.spa,
+                  })
+                }
+              />
+              <Toggle
                 label="Tubbing"
                 color="green"
-                isActive={localFilters.activities === "tubbing"}
+                isActive={localFilters.activities.tubbing}
                 onClick={() =>
-                  updateLocalFilter(
-                    "activities",
-                    localFilters.activities === "tubbing" ? null : "tubbing"
-                  )
+                  updateLocalFilter("activities", {
+                    ...localFilters.activities,
+                    tubbing: !localFilters.activities.tubbing,
+                  })
                 }
               />
             </div>

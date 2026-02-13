@@ -8,21 +8,21 @@ import {
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
-interface AmenitiesListProps {
+interface ActivitiesListProps {
   resort: Resort;
 }
 
-export function AmenitiesList({ resort }: AmenitiesListProps) {
+export function ActivitiesList({ resort }: ActivitiesListProps) {
   return (
     <div className="flex flex-row flex-wrap">
-      {resort.hasAccomodations && (
+      {resort.hasAccommodations && (
         <div className="ml-1">
           <Badge
             variant="secondary"
             className="text-[10px] font-medium gap-1 px-2 py-0.5"
           >
             <Hotel className="w-3 h-3" />
-            Accomodations
+            Accommodations
           </Badge>
         </div>
       )}

@@ -26,17 +26,28 @@ export function FiltersProvider({ children }: { children: ReactNode }) {
   const [filters, setFilters] = useState<FilterState>({
     sortBy: "price",
     distanceRange: [0, 250],
-    activities: null,
+    activities: {
+      accommodations: false,
+      crosscountry: false,
+      lessons: false,
+      snowshoeing: false,
+      spa: false,
+      tubbing: false,
+    },
   });
 
   const filteredResorts = useMemo(() => {
     let result = allResorts.filter((resort) => {
       // Activities filter
-      if (filters.activities === "tubbing" && resort.hasTubing) {
-        return true;
-      } else if (filters.activities === "tubbing" && !resort.hasTubing) {
-        return false;
-      }
+      const { activities } = filters;
+
+      if (activities.accommodations && !resort.hasAccommodations) return false;
+      if (activities.crosscountry && !resort.hasCrossCountry) return false;
+      if (activities.lessons && !resort.hasLessons) return false;
+      if (activities.snowshoeing && !resort.hasSnowshoeing) return false;
+      if (activities.spa && !resort.hasSpa) return false;
+      if (activities.tubbing && !resort.hasTubing) return false;
+
       return true;
     });
 
@@ -60,7 +71,14 @@ export function FiltersProvider({ children }: { children: ReactNode }) {
     setFilters({
       sortBy: "price",
       distanceRange: [0, 250],
-      activities: null,
+      activities: {
+        accommodations: false,
+        crosscountry: false,
+        lessons: false,
+        snowshoeing: false,
+        spa: false,
+        tubbing: false,
+      },
     });
   };
 

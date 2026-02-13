@@ -35,7 +35,7 @@ function Toggle({ label, color, isActive, onClick }: DifficultyToggleProps) {
           : "bg-muted/30 text-muted-foreground hover:text-foreground hover:bg-muted/50"
       )}
     >
-      <span className={cn("w-2 h-2 rounded-full", colorClasses[color].dot)} />
+      {/* <span className={cn("w-2 h-2 rounded-full", colorClasses[color].dot)} /> */}
       {label}
     </button>
   );

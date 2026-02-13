@@ -17,7 +17,7 @@ export interface Resort {
   dayTicketPrice: number;
   email: string;
   googleMapsUrl: string;
-  hasAccomodations: boolean;
+  hasAccommodations: boolean;
   hasCrossCountry: boolean;
   hasLessons: boolean;
   hasSnowshoeing: boolean;
