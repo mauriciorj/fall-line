@@ -24,6 +24,7 @@
       "@/components/*": ["./src/features/common/components/*"],
       "@/context/*": ["./src/features/common/context/*"],
       "@/data/*": ["./src/data/*"],
+      "@/icons/*": ["./public/icons/*"],
       "@/hooks/*": ["./src/features/common/hooks/*"],
       "@/place/*": ["./src/features/place/*"],
       "@/utils/*": ["./src/features/common/utils/*"],

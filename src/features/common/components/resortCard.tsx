@@ -1,9 +1,14 @@
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { Resort } from "@/types/resort";
 import { RunBreakdown } from "./runBreakdown";
-import { Star, Ticket, Package } from "lucide-react";
+import { Star, CableCar } from "lucide-react";
+import { AmenitiesList } from "@/components/amenitiesList";
 import { cn } from "@/utils/utils";
-import { useRouter } from "next/navigation";
+
+import skiIcon from "@/icons/ski-svgrepo-com.svg";
+import snowboardIcon from "@/icons/snowboard-1-svgrepo-com.svg";
+import tubbingIcon from "@/icons/buoy-svgrepo-com.svg";
 
 interface ResortCardProps {
   resort: Resort;
@@ -49,9 +54,19 @@ export function ResortCard({
       {/* Content */}
       <div className="p-5 space-y-4">
         {/* Resort Name */}
-        <h3 className="font-serif text-xl font-medium text-foreground leading-tight">
-          {resort.name}
-        </h3>
+        <div className="w-full flex flex-row justify-between">
+          <h3 className="font-serif text-xl font-medium text-foreground leading-tight">
+            {resort.name}
+          </h3>
+          <div className="flex flex-row justify-center items-center">
+            <Star className="w-3.5 h-3.5" />
+            <p className="text-sm font-medium text-foreground ml-1">
+              {resort.rating}
+            </p>
+          </div>
+        </div>
+
+        <AmenitiesList resort={resort} />
 
         {/* Run Breakdown */}
         <RunBreakdown
@@ -62,9 +77,9 @@ export function ResortCard({
 
         {/* Stats Grid */}
         <div className="grid grid-cols-4 gap-3 pt-1">
-          <div className="space-y-1">
+          <div className="flex flex-col justify-between space-y-1">
             <div className="flex items-center gap-1 text-muted-foreground">
-              <Ticket className="w-3.5 h-3.5" />
+              <CableCar className="w-3.5 h-3.5" />
               <span className="text-[10px] uppercase tracking-wide">
                 Lift Pass
               </span>
@@ -73,9 +88,9 @@ export function ResortCard({
               ${resort.dayTicketPrice}
             </p>
           </div>
-          <div className="space-y-1">
+          <div className="flex flex-col justify-between space-y-1">
             <div className="flex items-center gap-1 text-muted-foreground">
-              <Package className="w-3.5 h-3.5" />
+              <Image alt="ski-icons" src={skiIcon} width={16} height={16} />
               <span className="text-[10px] uppercase tracking-wide">
                 Ski Rental
               </span>
@@ -84,9 +99,14 @@ export function ResortCard({
               ${resort.skiRentalPrice}
             </p>
           </div>
-          <div className="space-y-1 w-max">
+          <div className="flex flex-col justify-between space-y-1 w-max">
             <div className="flex items-center gap-1 text-muted-foreground">
-              <Package className="w-3.5 h-3.5" />
+              <Image
+                alt="ski-icons"
+                src={snowboardIcon}
+                width={14}
+                height={14}
+              />
               <span className="text-[10px] uppercase tracking-wide">
                 Snowboard Rental
               </span>
@@ -95,14 +115,24 @@ export function ResortCard({
               ${resort.snowBoardRentalPrice}
             </p>
           </div>
-          <div className="space-y-1 ml-12">
-            <div className="flex items-center gap-1 text-muted-foreground">
-              <Star className="w-3.5 h-3.5" />
+          {Boolean(resort?.tubbingPrice && resort?.tubbingPrice > 0) && (
+            <div className="flex flex-col justify-between space-y-1 ml-12">
+              <div className="flex items-center gap-1 text-muted-foreground">
+                <Image
+                  alt="ski-icons"
+                  src={tubbingIcon}
+                  width={14}
+                  height={14}
+                />
+                <span className="text-[10px] uppercase tracking-wide">
+                  Tubbing
+                </span>
+              </div>
+              <p className="text-sm font-medium text-foreground">
+                ${resort.tubbingPrice}
+              </p>
             </div>
-            <p className="text-sm font-medium text-foreground">
-              {resort.rating}
-            </p>
-          </div>
+          )}
         </div>
       </div>
     </article>

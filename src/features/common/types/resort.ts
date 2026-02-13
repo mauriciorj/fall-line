@@ -17,8 +17,13 @@ export interface Resort {
   dayTicketPrice: number;
   email: string;
   googleMapsUrl: string;
+  hasAccomodations: boolean;
+  hasCrossCountry: boolean;
   hasLessons: boolean;
+  hasSnowshoeing: boolean;
+  hasSpa: boolean;
   hasTubing: boolean;
+  hasZipline?: boolean;
   hoursOfOperation: {
     sunday: string;
     monday: string;
@@ -46,7 +51,7 @@ export interface Resort {
   trackConditions?: {
     name: string;
     condition: string;
-    difficulty: "black" | "blue" | "double-black" | "green";
+    difficulty: "black" | "blue" | "double-black" | "free-style" | "green";
   }[];
   trailMap: StaticImageData | string;
   tubbingPrice?: number;
