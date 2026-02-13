@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { useState } from "react";
 import { Resort } from "@/types/resort";
@@ -35,7 +37,7 @@ const difficultyLabel = {
   "double-black": "Expert",
 };
 
-export function TracksSection({ resort }: TracksSectionProps) {
+const TracksSection = ({ resort }: TracksSectionProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const getFileType = (url: string) => {
@@ -136,4 +138,6 @@ export function TracksSection({ resort }: TracksSectionProps) {
       </div>
     </section>
   );
-}
+};
+
+export default TracksSection;

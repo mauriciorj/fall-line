@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { Resort } from "@/types/resort";
-import { RunBreakdown } from "./runBreakdown";
+import TracksBreakdown from "./tracksBreakdown";
 import { Star, CableCar } from "lucide-react";
 import { ActivitiesList } from "@/src/features/common/components/activitiesList";
 import { cn } from "@/utils/utils";
@@ -69,15 +69,7 @@ export function ResortCard({
         <ActivitiesList resort={resort} />
 
         {/* Run Breakdown */}
-        <RunBreakdown
-          black={resort.runs.black}
-          blue={resort.runs.blue}
-          doubleBlack={resort.runs.doubleBlack}
-          freeStyle={resort.runs.freeStyle}
-          green={resort.runs.green}
-          name={resort.name}
-          trackConditions={resort.trackConditions}
-        />
+        <TracksBreakdown resort={resort} />
 
         {/* Stats Grid */}
         <div className="grid grid-cols-4 gap-3 pt-3 border-t border-border">

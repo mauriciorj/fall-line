@@ -1,15 +1,15 @@
+"use client";
+
 import { useState } from "react";
 import { Resort } from "@/types/resort";
 import {
+  ChevronDown,
   Clock,
+  Globe,
   Mail,
   Phone,
-  Globe,
   Star,
   StarHalf,
-  Snowflake,
-  Map,
-  ChevronDown,
 } from "lucide-react";
 import {
   Collapsible,
@@ -35,7 +35,7 @@ function StarRating({ rating }: { rating: number }) {
   );
 }
 
-export function ResortInfoSection({ resort }: ResortInfoSectionProps) {
+const InfoSection = ({ resort }: ResortInfoSectionProps) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <section className="space-y-4">
@@ -157,4 +157,6 @@ export function ResortInfoSection({ resort }: ResortInfoSectionProps) {
       </div>
     </section>
   );
-}
+};
+
+export default InfoSection;

@@ -1,86 +1,35 @@
 import { cn } from "@/utils/utils";
 import StatusBadge from "@/components/statusBadge";
+import { Resort } from "@/types/resort";
+import TrackStats from "@/utils/trackStats";
 
-interface RunBreakdownProps {
-  black: number;
-  blue: number;
-  className?: string;
-  doubleBlack?: number;
-  freeStyle?: number;
-  green: number;
-  name: string;
-  trackConditions?: {
-    name: string;
-    condition: string;
-    difficulty: "black" | "blue" | "double-black" | "free-style" | "green";
-  }[];
-  isToHideStatusBadge?: boolean;
-}
-
-export function RunBreakdown({
-  black,
-  blue,
+const TracksBreakdown = ({
   className,
-  doubleBlack,
-  freeStyle,
-  green,
-  name,
-  trackConditions,
   isToHideStatusBadge = false,
-}: RunBreakdownProps) {
-  const total = green + blue + black + (doubleBlack || 0) + (freeStyle || 0);
-  const greenPercent = (green / total) * 100;
-  const bluePercent = (blue / total) * 100;
-  const blackPercent = (black / total) * 100;
-  const doubleBlackPercent = ((doubleBlack || 0) / total) * 100;
-  const freeStylePercent = ((freeStyle || 0) / total) * 100;
-
-  const greenTracks = trackConditions
-    ? trackConditions.filter((item) => item.difficulty === "green")?.length
-    : 0;
-  const greenTracksOpen = trackConditions
-    ? trackConditions.filter(
-        (item) => item.difficulty === "green" && item.condition === "open"
-      )?.length
-    : 0;
-
-  const blueTracks = trackConditions
-    ? trackConditions.filter((item) => item.difficulty === "blue")?.length
-    : 0;
-  const blueTracksOpen = trackConditions
-    ? trackConditions.filter(
-        (item) => item.difficulty === "blue" && item.condition === "open"
-      )?.length
-    : 0;
-
-  const blackTracks = trackConditions
-    ? trackConditions.filter((item) => item.difficulty === "black")?.length
-    : 0;
-  const blackTracksOpen = trackConditions
-    ? trackConditions.filter(
-        (item) => item.difficulty === "black" && item.condition === "open"
-      )?.length
-    : 0;
-
-  const doubleBlackTracks = trackConditions
-    ? trackConditions.filter((item) => item.difficulty === "double-black")
-        ?.length
-    : 0;
-  const doubleBlackTracksOpen = trackConditions
-    ? trackConditions.filter(
-        (item) =>
-          item.difficulty === "double-black" && item.condition === "open"
-      )?.length
-    : 0;
-
-  const freeStyleTracks = trackConditions
-    ? trackConditions.filter((item) => item.difficulty === "free-style")?.length
-    : 0;
-  const freeStyleTracksOpen = trackConditions
-    ? trackConditions.filter(
-        (item) => item.difficulty === "free-style" && item.condition === "open"
-      )?.length
-    : 0;
+  resort,
+}: {
+  className?: string;
+  isToHideStatusBadge?: boolean;
+  resort: Resort;
+}) => {
+  const {
+    totalTracks,
+    greenTracks,
+    greenTracksOpen,
+    greenTracksPercent,
+    blueTracks,
+    blueTracksOpen,
+    blueTracksPercent,
+    blackTracks,
+    blackTracksOpen,
+    blackTracksPercent,
+    doubleBlackTracks,
+    doubleBlackTracksOpen,
+    doubleBlackTracksPercent,
+    freeStyleTracks,
+    freeStyleTracksOpen,
+    freeStyleTracksPercent,
+  } = TrackStats({ resort });
 
   // console.log("");
   // console.log(name);
@@ -95,68 +44,68 @@ export function RunBreakdown({
           <p className="text-xs text-muted-foreground">Tracks:</p>
         </div>
         <div className="flex items-center gap-3 text-xs text-muted-foreground">
-          {Boolean(green > 0) && (
+          {Boolean(greenTracks > 0) && (
             <span className="flex items-center gap-1.5">
               <span className="w-3 h-3 rounded-full bg-run-green" />
-              {green}
+              {greenTracks}
             </span>
           )}
-          {Boolean(blue > 0) && (
+          {Boolean(blueTracks > 0) && (
             <span className="flex items-center gap-1.5">
               <span className="w-3 h-3 rounded-full bg-run-blue" />
-              {blue}
+              {blueTracks}
             </span>
           )}
-          {Boolean(black > 0) && (
+          {Boolean(blackTracks > 0) && (
             <span className="flex items-center gap-1.5">
               <span className="w-3 h-3 rounded-full bg-run-black" />
-              {black}
+              {blackTracks}
             </span>
           )}
-          {Boolean(doubleBlack && doubleBlack > 0) && (
+          {Boolean(doubleBlackTracks && doubleBlackTracks > 0) && (
             <span className="flex items-center gap-1.5">
               <span className="w-3 h-3 rounded-full bg-run-double-black" />
               <span className="w-3 h-3 rounded-full bg-run-double-black" />
-              {doubleBlack}
+              {doubleBlackTracks}
             </span>
           )}
-          {Boolean(freeStyle && freeStyle > 0) && (
+          {Boolean(freeStyleTracks && freeStyleTracks > 0) && (
             <span className="flex items-center gap-1.5">
               <span className="w-3 h-3 rounded-full bg-run-free-style" />
-              {freeStyle}
+              {freeStyleTracks}
             </span>
           )}
         </div>
       </div>
       <div className="h-2.5 w-full flex rounded-full overflow-hidden bg-muted">
-        {Boolean(greenPercent > 0) && (
+        {Boolean(greenTracks > 0) && (
           <div
             className="h-full bg-run-green transition-all duration-300"
-            style={{ width: `${greenPercent}%` }}
+            style={{ width: `${greenTracksPercent}%` }}
           />
         )}
-        {Boolean(bluePercent > 0) && (
+        {Boolean(blueTracksPercent > 0) && (
           <div
             className="h-full bg-run-blue transition-all duration-300"
-            style={{ width: `${bluePercent}%` }}
+            style={{ width: `${blueTracksPercent}%` }}
           />
         )}
-        {Boolean(blackPercent > 0) && (
+        {Boolean(blackTracksPercent > 0) && (
           <div
             className="h-full bg-run-black transition-all duration-300"
-            style={{ width: `${blackPercent}%` }}
+            style={{ width: `${blackTracksPercent}%` }}
           />
         )}
-        {Boolean(doubleBlackPercent > 0) && (
+        {Boolean(doubleBlackTracksPercent > 0) && (
           <div
             className="h-full bg-run-double-black transition-all duration-300"
-            style={{ width: `${doubleBlackPercent}%` }}
+            style={{ width: `${doubleBlackTracksPercent}%` }}
           />
         )}
-        {Boolean(freeStylePercent > 0) && (
+        {Boolean(freeStyleTracksPercent > 0) && (
           <div
             className="h-full bg-run-free-style transition-all duration-300"
-            style={{ width: `${freeStylePercent}%` }}
+            style={{ width: `${freeStyleTracksPercent}%` }}
           />
         )}
       </div>
@@ -205,4 +154,5 @@ export function RunBreakdown({
       )}
     </div>
   );
-}
+};
+export default TracksBreakdown;
