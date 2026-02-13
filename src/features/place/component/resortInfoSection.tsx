@@ -62,49 +62,49 @@ export function ResortInfoSection({ resort }: ResortInfoSectionProps) {
           </CollapsibleTrigger>
           <CollapsibleContent>
             <div className="px-5 pb-4 space-y-2">
-              <div className="flex items-center justify-between py-2 px-3 rounded-md bg-muted/20">
+              <div className="flex items-center justify-between py-2 px-3 rounded-md">
                 <div className="flex items-center gap-2.5">
                   <span className="text-sm text-foreground">
                     Sunday: {resort.hoursOfOperation.sunday}
                   </span>
                 </div>
               </div>
-              <div className="flex items-center justify-between py-2 px-3 rounded-md bg-muted/20">
+              <div className="flex items-center justify-between py-2 px-3 rounded-md">
                 <div className="flex items-center gap-2.5">
                   <span className="text-sm text-foreground">
                     Monday: {resort.hoursOfOperation.monday}
                   </span>
                 </div>
               </div>
-              <div className="flex items-center justify-between py-2 px-3 rounded-md bg-muted/20">
+              <div className="flex items-center justify-between py-2 px-3 rounded-md">
                 <div className="flex items-center gap-2.5">
                   <span className="text-sm text-foreground">
                     Tuesday: {resort.hoursOfOperation.tuesday}
                   </span>
                 </div>
               </div>
-              <div className="flex items-center justify-between py-2 px-3 rounded-md bg-muted/20">
+              <div className="flex items-center justify-between py-2 px-3 rounded-md">
                 <div className="flex items-center gap-2.5">
                   <span className="text-sm text-foreground">
                     Wednesday: {resort.hoursOfOperation.wednesday}
                   </span>
                 </div>
               </div>
-              <div className="flex items-center justify-between py-2 px-3 rounded-md bg-muted/20">
+              <div className="flex items-center justify-between py-2 px-3 rounded-md">
                 <div className="flex items-center gap-2.5">
                   <span className="text-sm text-foreground">
                     Thursday: {resort.hoursOfOperation.thursday}
                   </span>
                 </div>
               </div>
-              <div className="flex items-center justify-between py-2 px-3 rounded-md bg-muted/20">
+              <div className="flex items-center justify-between py-2 px-3 rounded-md">
                 <div className="flex items-center gap-2.5">
                   <span className="text-sm text-foreground">
                     Friday: {resort.hoursOfOperation.friday}
                   </span>
                 </div>
               </div>
-              <div className="flex items-center justify-between py-2 px-3 rounded-md bg-muted/20">
+              <div className="flex items-center justify-between py-2 px-3 rounded-md">
                 <div className="flex items-center gap-2.5">
                   <span className="text-sm text-foreground">
                     Saturday: {resort.hoursOfOperation.saturday}

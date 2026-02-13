@@ -68,24 +68,39 @@ export function TracksSection({ resort }: TracksSectionProps) {
           </CollapsibleTrigger>
           <CollapsibleContent>
             <div className="px-5 pb-4 space-y-2">
-              {resort?.trackConditions?.map((track, i) => (
-                <div
-                  key={i}
-                  className="flex items-center justify-between py-2 px-3 rounded-md bg-muted/20"
-                >
-                  <div className="flex items-center gap-2.5">
-                    <span
-                      className={`w-2.5 h-2.5 rounded-full ${difficultyColor[track.difficulty]}`}
-                    />
-                    <span className="text-sm text-foreground">
-                      {track.name}
+              {[...(resort?.trackConditions || [])]
+                .sort((a, b) => {
+                  const difficultyOrder: Record<string, number> = {
+                    green: 1,
+                    blue: 2,
+                    black: 3,
+                    "double-black": 4,
+                    "free-style": 5,
+                  };
+                  const diff =
+                    (difficultyOrder[a.difficulty] || 99) -
+                    (difficultyOrder[b.difficulty] || 99);
+                  if (diff !== 0) return diff;
+                  return a.name.localeCompare(b.name);
+                })
+                .map((track, i) => (
+                  <div
+                    key={i}
+                    className="flex items-center justify-between py-2 px-3 rounded-md"
+                  >
+                    <div className="flex items-center gap-2.5">
+                      <span
+                        className={`w-2.5 h-2.5 rounded-full ${difficultyColor[track.difficulty]}`}
+                      />
+                      <span className="text-sm text-foreground">
+                        {track.name}
+                      </span>
+                    </div>
+                    <span className="text-xs text-muted-foreground">
+                      {track.condition}
                     </span>
                   </div>
-                  <span className="text-xs text-muted-foreground">
-                    {track.condition}
-                  </span>
-                </div>
-              ))}
+                ))}
             </div>
           </CollapsibleContent>
         </Collapsible>

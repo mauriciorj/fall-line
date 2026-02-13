@@ -10,13 +10,16 @@ import {
   GraduationCap,
   MapPin,
   Mountain,
-  Navigation,
-  Package,
   Ticket,
+  CableCar,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ResortInfoSection } from "@/place/component/resortInfoSection";
 import { TracksSection } from "@/place/component/tracksSection";
+
+import skiIcon from "@/icons/ski-svgrepo-com.svg";
+import snowboardIcon from "@/icons/snowboard-1-svgrepo-com.svg";
+import tubbingIcon from "@/icons/buoy-svgrepo-com.svg";
 
 const ResortDetail = () => {
   const { id } = useParams();
@@ -86,10 +89,10 @@ const ResortDetail = () => {
           </div>
         )}
         {/* Quick Stats */}
-        <section className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        {/* <section className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <div className="flex flex-col justify-between bg-card rounded-lg p-5 border border-border">
             <div className="flex items-center gap-2 text-muted-foreground mb-2">
-              <Ticket className="w-4 h-4" />
+              <CableCar className="w-3.5 h-3.5" />
               <span className="text-xs uppercase tracking-wide">Lift Pass</span>
             </div>
             <p className="text-2xl font-medium text-foreground">
@@ -98,7 +101,7 @@ const ResortDetail = () => {
           </div>
           <div className="flex flex-col justify-between  bg-card rounded-lg p-5 border border-border">
             <div className="flex items-center gap-2 text-muted-foreground mb-2">
-              <Package className="w-4 h-4" />
+              <Image alt="ski-icons" src={skiIcon} width={16} height={16} />
               <span className="text-xs uppercase tracking-wide">
                 Ski Rental
               </span>
@@ -109,7 +112,12 @@ const ResortDetail = () => {
           </div>
           <div className="flex flex-col justify-between  bg-card rounded-lg p-5 border border-border">
             <div className="flex items-center gap-2 text-muted-foreground mb-2">
-              <Navigation className="w-4 h-4" />
+              <Image
+                alt="ski-icons"
+                src={snowboardIcon}
+                width={14}
+                height={14}
+              />
               <span className="text-xs uppercase tracking-wide">
                 Snowboard Rental
               </span>
@@ -118,6 +126,22 @@ const ResortDetail = () => {
               ${resort.snowBoardRentalPrice}
             </p>
           </div>
+          {Boolean(resort?.tubbingPrice && resort?.tubbingPrice > 0) && (
+            <div className="flex flex-col justify-between  bg-card rounded-lg p-5 border border-border">
+              <div className="flex items-center gap-2 text-muted-foreground mb-2">
+                <Image
+                  alt="ski-icons"
+                  src={tubbingIcon}
+                  width={14}
+                  height={14}
+                />
+                <span className="text-xs uppercase tracking-wide">Tubbing</span>
+              </div>
+              <p className="text-2xl font-medium text-foreground">
+                ${resort.tubbingPrice}
+              </p>
+            </div>
+          )}
           <div className="flex flex-col justify-between  bg-card rounded-lg p-5 border border-border">
             <div className="flex items-center gap-2 text-muted-foreground mb-2">
               <Mountain className="w-4 h-4" />
@@ -127,7 +151,7 @@ const ResortDetail = () => {
             </div>
             <p className="text-2xl font-medium text-foreground">{totalRuns}</p>
           </div>
-        </section>
+        </section> */}
 
         {/* Main Info */}
         <ResortInfoSection resort={resort} />
