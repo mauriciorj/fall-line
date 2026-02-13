@@ -26,7 +26,7 @@ const TerrainSection = ({ resort }: { resort: Resort }) => {
       <div className="bg-card rounded-lg p-6 border border-border space-y-6">
         <TracksBreakdown resort={resort} isToHideStatusBadge={true} />
 
-        <div className="grid grid-cols-3 gap-4 pt-4 border-t border-border">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 pt-4 border-t border-border">
           <div className="text-center">
             <div className="flex items-center justify-center gap-2 mb-2">
               <span className="w-3 h-3 rounded-full bg-run-green" />
