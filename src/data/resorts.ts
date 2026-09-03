@@ -163,9 +163,9 @@ export const resorts: Resort[] = [
     address: "4098 Regional Road 9, Orono, ON L0B 1M0",
     coordinates: { lat: 44.06901178082853, lng: -78.5731371079196 },
     crawlerUrls: {
-      dayTicketPriceUrl: "https://brimacombe.ca/contact-us/",
+      dayTicketPriceUrl: "https://brimacombe.ca/plan-your-visit/lift-tickets/",
       equipmentRentalsUrl: "https://brimacombe.ca/plan-your-visit/rentals/",
-      hoursOfOperationUrl: "string",
+      hoursOfOperationUrl: "https://brimacombe.ca/contact-us/",
       lessonsUrl: "https://brimacombe.ca/snow-school/",
       trackConditionsUrl:
         "https://brimacombe.ca/at-the-brim/snow-conditions-and-trails/",

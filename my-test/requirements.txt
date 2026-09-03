@@ -1,0 +1,14 @@
+scrapy
+beautifulsoup4
+webdriver_manager
+selenium
+fake-useragent
+seletools
+undetected-chromedriver
+setuptools
+python-dotenv
+psycopg2-binary
+requests
+simple-term-menu
+Pillow
+chromedriver

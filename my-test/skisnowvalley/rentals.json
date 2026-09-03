@@ -1,0 +1,129 @@
+[
+  {
+    "title": "Full Day Ski & Board Rentals",
+    "items": [
+      {
+        "name": "Adult (18-64)",
+        "price": "$70",
+        "description": ""
+      },
+      {
+        "name": "Youth/Senior (6-17, 65+)",
+        "price": "$55",
+        "description": ""
+      },
+      {
+        "name": "Under 6 Years",
+        "price": "$40",
+        "description": ""
+      }
+    ],
+    "subtitle": "8:30AM-2:30PM Arrival Time"
+  },
+  {
+    "title": "Night Ski & Board Rentals",
+    "items": [
+      {
+        "name": "Adult (18-64)",
+        "price": "$56",
+        "description": ""
+      },
+      {
+        "name": "Youth/Senior (6-17, 65+)",
+        "price": "$45",
+        "description": ""
+      },
+      {
+        "name": "Under 6 Years",
+        "price": "$32",
+        "description": ""
+      }
+    ],
+    "subtitle": "2:30PM-7:30PM Arrival Time"
+  },
+  {
+    "title": "Rental Clothing",
+    "items": [
+      {
+        "name": "Winter Pants",
+        "price": "$22",
+        "description": ""
+      },
+      {
+        "name": "Winter Jacket",
+        "price": "$22",
+        "description": ""
+      },
+      {
+        "name": "Winter Jacket & Pant Combo",
+        "price": "$39",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "title": "Salomon High PerformanceSki & Board Rentals",
+    "items": [
+      {
+        "name": "Hourly High Performance Ski or Snowboard",
+        "price": "$15",
+        "description": ""
+      },
+      {
+        "name": "6HR High Performance Ski or Snowboard",
+        "price": "$60",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "title": "A la carte Ski or Board Rental",
+    "items": [
+      {
+        "name": "Adult",
+        "price": "$45",
+        "description": ""
+      },
+      {
+        "name": "Youth/Senior (6-17, 65+)",
+        "price": "$40",
+        "description": ""
+      },
+      {
+        "name": "Under 6",
+        "price": "$30",
+        "description": ""
+      },
+      {
+        "name": "Helmet",
+        "price": "$16",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "title": "A la carte Ski or Board Boot Rental",
+    "items": [
+      {
+        "name": "Adult",
+        "price": "$30",
+        "description": ""
+      },
+      {
+        "name": "Youth/Senior (6-17, 65+)",
+        "price": "$25",
+        "description": ""
+      },
+      {
+        "name": "Under 6",
+        "price": "$20",
+        "description": ""
+      },
+      {
+        "name": "Helmet",
+        "price": "$16",
+        "description": ""
+      }
+    ]
+  }
+]

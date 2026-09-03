@@ -1,0 +1,14 @@
+{
+  "Equipment Rental": [
+    {
+      "Rental": "Ski/Board",
+      "Weekday": "$48",
+      "Weekend & Holiday": "$53"
+    },
+    {
+      "Rental": "Tot* Ski/Board",
+      "Weekday": "$38",
+      "Weekend & Holiday": "$40"
+    }
+  ]
+}

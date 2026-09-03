@@ -1,0 +1,141 @@
+{
+  "Lifts": [
+    {
+      "letter": "A",
+      "name": "Big Daddy",
+      "status": "OPEN at 12pm"
+    },
+    {
+      "letter": "B",
+      "name": "Little Momma",
+      "status": "CLOSED"
+    },
+    {
+      "letter": "C",
+      "name": "East Magic Carpet",
+      "status": "OPEN"
+    },
+    {
+      "letter": "D",
+      "name": "Rendez-Vous",
+      "status": "OPEN"
+    },
+    {
+      "letter": "E",
+      "name": "West Magic Carpet",
+      "status": "CLOSED"
+    },
+    {
+      "letter": "F",
+      "name": "Favourite",
+      "status": "OPEN"
+    }
+  ],
+  "Runs": [
+    {
+      "difficulty": "Easy",
+      "name": "1. Park View",
+      "status": "OPEN"
+    },
+    {
+      "difficulty": "Terrain Park",
+      "name": "2. Puppy Pound",
+      "status": "OPEN"
+    },
+    {
+      "difficulty": "Terrain Park",
+      "name": "3. Dog Pound",
+      "status": "OPEN"
+    },
+    {
+      "difficulty": "Terrain Park",
+      "name": "4. Impound",
+      "status": "OPEN"
+    },
+    {
+      "difficulty": "Terrain Park",
+      "name": "5. Impound Jumpline",
+      "status": "OPEN"
+    },
+    {
+      "difficulty": "Terrain Park",
+      "name": "6. Compound Snow Zone",
+      "status": "OPEN"
+    },
+    {
+      "difficulty": "Terrain Park",
+      "name": "7. Compound",
+      "status": "OPEN"
+    },
+    {
+      "difficulty": "Difficult",
+      "name": "8. The Chute",
+      "status": "OPEN"
+    },
+    {
+      "difficulty": "Easy",
+      "name": "9. Little Momma",
+      "status": "OPEN"
+    },
+    {
+      "difficulty": "Easy",
+      "name": "10. Pony",
+      "status": "OPEN"
+    },
+    {
+      "difficulty": "Difficult",
+      "name": "11. Rendez Vous",
+      "status": "OPEN"
+    },
+    {
+      "difficulty": "More Difficult",
+      "name": "12. Bomber",
+      "status": "OPEN"
+    },
+    {
+      "difficulty": "Easy",
+      "name": "13. Upper Lovers Lane",
+      "status": "OPEN"
+    },
+    {
+      "difficulty": "Easy",
+      "name": "14. Lower Lovers Lane",
+      "status": "OPEN"
+    },
+    {
+      "difficulty": "Difficult",
+      "name": "15. Club House",
+      "status": "OPEN"
+    },
+    {
+      "difficulty": "Easy",
+      "name": "16. Favourite",
+      "status": "OPEN"
+    },
+    {
+      "difficulty": "Difficult",
+      "name": "17. Alleyway",
+      "status": "OPEN"
+    },
+    {
+      "difficulty": "Difficult",
+      "name": "18. Elbow",
+      "status": "OPEN"
+    },
+    {
+      "difficulty": "Most Difficult",
+      "name": "19. The Dagger",
+      "status": "OPEN"
+    },
+    {
+      "difficulty": "Most Difficult",
+      "name": "20. The Glades",
+      "status": "OPEN"
+    }
+  ],
+  "Daily Conditions": {
+    "Snow Base": "100cm",
+    "New Snow": "0cm",
+    "Conditions": "Machine Groomed"
+  }
+}

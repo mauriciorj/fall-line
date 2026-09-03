@@ -1,0 +1,179 @@
+{
+  "Skis, Boots and Poles Package": [
+    {
+      "Column_1": "ADULT",
+      "4 HOURS": "$41.36",
+      "3 HOURS (end of night)": "$39.84",
+      "2 HOURS (end of night)": "$27.12"
+    },
+    {
+      "Column_1": "CHILD / YOUTH / SR",
+      "4 HOURS": "$35.97",
+      "3 HOURS (end of night)": "$34.60",
+      "2 HOURS (end of night)": "$27.12"
+    }
+  ],
+  "Snowboard and Boots Package": [
+    {
+      "Column_1": "ADULT",
+      "4 HOURS": "$51.85",
+      "3 HOURS (end of night)": "$50.27",
+      "2 HOURS (end of night)": "$37.49"
+    },
+    {
+      "Column_1": "CHILD / YOUTH / SR.",
+      "4 HOURS": "$47.91",
+      "3 HOURS (end of night)": "$46.49",
+      "2 HOURS (end of night)": "$37.49"
+    }
+  ],
+  "Individual Items": [
+    {
+      "Column_1": "ADULT SNOWBOARD",
+      "4 HOURS": "$35.97",
+      "3 HOURS (end of night)": "$33.56",
+      "2 HOURS (end of night)": "$24.01"
+    },
+    {
+      "Column_1": "CHILD / YOUTH / SR. SNOWBOARD",
+      "4 HOURS": "$31.49",
+      "3 HOURS (end of night)": "$29.19",
+      "2 HOURS (end of night)": "$24.01"
+    },
+    {
+      "Column_1": "ADULT SNOWBOARD BOOTS",
+      "4 HOURS": "$28.21",
+      "3 HOURS (end of night)": "$26.80",
+      "2 HOURS (end of night)": "$21.83"
+    },
+    {
+      "Column_1": "CHILD / YOUTH / SR. SNOWBOARD BOOTS",
+      "4 HOURS": "$24.13",
+      "3 HOURS (end of night)": "$22.90",
+      "2 HOURS (end of night)": "$21.83"
+    },
+    {
+      "Column_1": "ADULT SKIS",
+      "4 HOURS": "$28.21",
+      "3 HOURS (end of night)": "$26.80",
+      "2 HOURS (end of night)": "$21.83"
+    },
+    {
+      "Column_1": "CHILD / YOUTH / SR. SKIS",
+      "4 HOURS": "$24.13",
+      "3 HOURS (end of night)": "$22.90",
+      "2 HOURS (end of night)": "$21.83"
+    },
+    {
+      "Column_1": "ADULT SKI BOOTS",
+      "4 HOURS": "$28.21",
+      "3 HOURS (end of night)": "$26.80",
+      "2 HOURS (end of night)": "$21.83"
+    },
+    {
+      "Column_1": "CHILD / YOUTH / SR. SKI BOOTS",
+      "4 HOURS": "$24.13",
+      "3 HOURS (end of night)": "$22.90",
+      "2 HOURS (end of night)": "$21.83"
+    },
+    {
+      "Column_1": "HELMET",
+      "4 HOURS": "$14.51",
+      "3 HOURS (end of night)": "$10.91",
+      "2 HOURS (end of night)": "$7.36"
+    },
+    {
+      "Column_1": "POLES",
+      "4 HOURS": "$7.48",
+      "3 HOURS (end of night)": "$6.27",
+      "2 HOURS (end of night)": "$5.46"
+    }
+  ],
+  "Skis, Boots, Poles and Helmet Package": [
+    {
+      "Time": "4 HOURS",
+      "ADULT": "$55.90",
+      "CHILD / YOUTH / SR.": "$50.49"
+    },
+    {
+      "Time": "3 HOURS (end of night)",
+      "ADULT": "$50.75",
+      "CHILD / YOUTH / SR.": "$45.54"
+    },
+    {
+      "Time": "2 HOURS (end of night)",
+      "ADULT": "$34.37",
+      "CHILD / YOUTH / SR.": "$34.37"
+    }
+  ],
+  "Snowboard, Boots and Helmet Package": [
+    {
+      "TIME": "4 HOURS",
+      "ADULT": "$66.40",
+      "CHILD / YOUTH / SR.": "$62.42"
+    },
+    {
+      "TIME": "3 HOURS (end of night)",
+      "ADULT": "$61.30",
+      "CHILD / YOUTH / SR.": "$57.38"
+    },
+    {
+      "TIME": "2 HOURS (end of night)",
+      "ADULT": "$44.83",
+      "CHILD / YOUTH / SR.": "$44.83"
+    }
+  ],
+  "Rental Packages for Lessons": [
+    {
+      "Column_1": "7 week package",
+      "Ski": "$216.96",
+      "Snowboard": "$299.92"
+    },
+    {
+      "Column_1": "7 week Ski & Helmet package",
+      "Ski": "$274.96",
+      "Snowboard": "N/A"
+    },
+    {
+      "Column_1": "7 week Snowboard & Helmet package",
+      "Ski": "N/A",
+      "Snowboard": "$358.80"
+    }
+  ],
+  "Rental – Winter Clothing": [
+    {
+      "Winter Clothing": "Men's Snowpant",
+      "4 Hours": "$20.45"
+    },
+    {
+      "Winter Clothing": "Men's Coat",
+      "4 Hours": "$20.45"
+    },
+    {
+      "Winter Clothing": "Woman's Snowpant",
+      "4 Hours": "$20.45"
+    },
+    {
+      "Winter Clothing": "Woman's Coat",
+      "4 Hours": "$20.45"
+    },
+    {
+      "Winter Clothing": "Child Snowpant",
+      "4 Hours": "$20.45"
+    },
+    {
+      "Winter Clothing": "Goggles",
+      "4 Hours": "$10.37"
+    }
+  ],
+  "Rentals Upgrades": [
+    {
+      "Column_1": "Skis, Boots and Poles",
+      "Rates": "$10.37 + HST"
+    },
+    {
+      "Column_1": "Snowboard and Boots",
+      "Rates": "$12.96 + HST"
+    }
+  ]
+}

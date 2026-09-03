@@ -1,0 +1,156 @@
+{
+  "conditions": {
+    "snow_condition": "Machine Groomed Granular",
+    "base_depth": "Base Depth",
+    "new_snow": "New Snow (Last 24 hours)",
+    "snowmaking": "Snowmaking (Last 24 hours)"
+  },
+  "lifts": [
+    {
+      "name": "GeneralLimestone ChairliftOpenRidge ChairliftOpenUpdraft ChairliftOpenThe GalaxyShuttle CarpetOpenWest Beginner AreaCaterpillar CarpetOpenCricket CarpetClosed",
+      "status": "Open"
+    },
+    {
+      "name": "GeneralLimestone ChairliftOpenRidge ChairliftOpenUpdraft ChairliftOpenThe GalaxyShuttle CarpetOpenWest Beginner AreaCaterpillar CarpetOpenCricket CarpetClosed",
+      "status": "Open"
+    }
+  ],
+  "trails": [
+    {
+      "name": "Open:5 lifts / 17 runs17Open RunsSki ConditionsMachine Groomed GranularBase Depth80cmNew Snow (last 24 hours)NoSnowmaking (last 24 hours)NoFri 6 Mar, 5:49 PM UTCRunsGeneralEscarpment RunOpenNight HawkOpenButternutOpenFalconOpenSidewinderOpenTwisterOpenBoomerangOpenChallengerOpenQuarry RunOpenScimitarOpenThe GalaxyCometOpenMilky WayOpenLittle DipperOpenShooting StarOpenWest Beginner AreaBumble BeeOpenGrasshopperOpenMonarchOpenLiftsGeneralLimestone ChairliftOpenRidge ChairliftOpenUpdraft ChairliftOpenThe GalaxyShuttle CarpetOpenWest Beginner AreaCaterpillar CarpetOpenCricket CarpetClosedEasyIntermediateDifficultTerrain ParkLive ViewAt Glen EdenToggleTrail Map & Slope ConditionsToggleSafety Awareness at Glen EdenToggleServicesToggleRFID CardsToggleMediaToggleCommunity ProgramsToggleCareer OpportunitiesToggleKey Dates & EventsTogglePlan Your VisitToggleSeason PassesToggleSnow SchoolToggleLift TicketToggleRentalsToggleSchool TripsToggleLive ViewToggleSeason PassesToggleSnow SchoolToggleGroup ProgramsTogglePrivate Lesson ProgramsToggleRegistration & Ability LevelsToggleGet Ready for Snow SchoolToggleLesson Meeting LocationsToggleTerms & ConditionsToggleToggle menuHomeLive ViewSearch for:SearchToggle search",
+      "status": "Open"
+    },
+    {
+      "name": "Open:5 lifts / 17 runs17Open RunsSki ConditionsMachine Groomed GranularBase Depth80cmNew Snow (last 24 hours)NoSnowmaking (last 24 hours)NoFri 6 Mar, 5:49 PM UTCRunsGeneralEscarpment RunOpenNight HawkOpenButternutOpenFalconOpenSidewinderOpenTwisterOpenBoomerangOpenChallengerOpenQuarry RunOpenScimitarOpenThe GalaxyCometOpenMilky WayOpenLittle DipperOpenShooting StarOpenWest Beginner AreaBumble BeeOpenGrasshopperOpenMonarchOpenLiftsGeneralLimestone ChairliftOpenRidge ChairliftOpenUpdraft ChairliftOpenThe GalaxyShuttle CarpetOpenWest Beginner AreaCaterpillar CarpetOpenCricket CarpetClosedEasyIntermediateDifficultTerrain ParkLive ViewAt Glen EdenToggleTrail Map & Slope ConditionsToggleSafety Awareness at Glen EdenToggleServicesToggleRFID CardsToggleMediaToggleCommunity ProgramsToggleCareer OpportunitiesToggleKey Dates & EventsTogglePlan Your VisitToggleSeason PassesToggleSnow SchoolToggleLift TicketToggleRentalsToggleSchool TripsToggleLive ViewToggleSeason PassesToggleSnow SchoolToggleGroup ProgramsTogglePrivate Lesson ProgramsToggleRegistration & Ability LevelsToggleGet Ready for Snow SchoolToggleLesson Meeting LocationsToggleTerms & ConditionsToggleToggle menu",
+      "status": "Open"
+    },
+    {
+      "name": "Home",
+      "status": "Unknown"
+    },
+    {
+      "name": "Live ViewSearch for:SearchToggle search",
+      "status": "Unknown"
+    },
+    {
+      "name": "17Open RunsSki ConditionsMachine Groomed GranularBase Depth80cmNew Snow (last 24 hours)NoSnowmaking (last 24 hours)NoFri 6 Mar, 5:49 PM UTCRunsGeneralEscarpment RunOpenNight HawkOpenButternutOpenFalconOpenSidewinderOpenTwisterOpenBoomerangOpenChallengerOpenQuarry RunOpenScimitarOpenThe GalaxyCometOpenMilky WayOpenLittle DipperOpenShooting StarOpenWest Beginner AreaBumble BeeOpenGrasshopperOpenMonarchOpenLiftsGeneralLimestone ChairliftOpenRidge ChairliftOpenUpdraft ChairliftOpenThe GalaxyShuttle CarpetOpenWest Beginner AreaCaterpillar CarpetOpenCricket CarpetClosedEasyIntermediateDifficultTerrain Park",
+      "status": "Open"
+    },
+    {
+      "name": "17Open RunsSki ConditionsMachine Groomed GranularBase Depth80cmNew Snow (last 24 hours)NoSnowmaking (last 24 hours)NoFri 6 Mar, 5:49 PM UTCRunsGeneralEscarpment RunOpenNight HawkOpenButternutOpenFalconOpenSidewinderOpenTwisterOpenBoomerangOpenChallengerOpenQuarry RunOpenScimitarOpenThe GalaxyCometOpenMilky WayOpenLittle DipperOpenShooting StarOpenWest Beginner AreaBumble BeeOpenGrasshopperOpenMonarchOpenLiftsGeneralLimestone ChairliftOpenRidge ChairliftOpenUpdraft ChairliftOpenThe GalaxyShuttle CarpetOpenWest Beginner AreaCaterpillar CarpetOpenCricket CarpetClosedEasyIntermediateDifficultTerrain Park",
+      "status": "Open"
+    },
+    {
+      "name": "17Open RunsSki ConditionsMachine Groomed GranularBase Depth80cmNew Snow (last 24 hours)NoSnowmaking (last 24 hours)NoFri 6 Mar, 5:49 PM UTC",
+      "status": "Open"
+    },
+    {
+      "name": "RunsGeneralEscarpment RunOpenNight HawkOpenButternutOpenFalconOpenSidewinderOpenTwisterOpenBoomerangOpenChallengerOpenQuarry RunOpenScimitarOpenThe GalaxyCometOpenMilky WayOpenLittle DipperOpenShooting StarOpenWest Beginner AreaBumble BeeOpenGrasshopperOpenMonarchOpenLiftsGeneralLimestone ChairliftOpenRidge ChairliftOpenUpdraft ChairliftOpenThe GalaxyShuttle CarpetOpenWest Beginner AreaCaterpillar CarpetOpenCricket CarpetClosedEasyIntermediateDifficultTerrain Park",
+      "status": "Open"
+    },
+    {
+      "name": "RunsGeneralEscarpment RunOpenNight HawkOpenButternutOpenFalconOpenSidewinderOpenTwisterOpenBoomerangOpenChallengerOpenQuarry RunOpenScimitarOpenThe GalaxyCometOpenMilky WayOpenLittle DipperOpenShooting StarOpenWest Beginner AreaBumble BeeOpenGrasshopperOpenMonarchOpenLiftsGeneralLimestone ChairliftOpenRidge ChairliftOpenUpdraft ChairliftOpenThe GalaxyShuttle CarpetOpenWest Beginner AreaCaterpillar CarpetOpenCricket CarpetClosed",
+      "status": "Open"
+    },
+    {
+      "name": "EasyIntermediateDifficultTerrain Park",
+      "status": "Unknown"
+    },
+    {
+      "name": "RunsGeneralEscarpment RunOpenNight HawkOpenButternutOpenFalconOpenSidewinderOpenTwisterOpenBoomerangOpenChallengerOpenQuarry RunOpenScimitarOpenThe GalaxyCometOpenMilky WayOpenLittle DipperOpenShooting StarOpenWest Beginner AreaBumble BeeOpenGrasshopperOpenMonarchOpen",
+      "status": "Open"
+    },
+    {
+      "name": "LiftsGeneralLimestone ChairliftOpenRidge ChairliftOpenUpdraft ChairliftOpenThe GalaxyShuttle CarpetOpenWest Beginner AreaCaterpillar CarpetOpenCricket CarpetClosed",
+      "status": "Open"
+    },
+    {
+      "name": "GeneralEscarpment RunOpenNight HawkOpenButternutOpenFalconOpenSidewinderOpenTwisterOpenBoomerangOpenChallengerOpenQuarry RunOpenScimitarOpenThe GalaxyCometOpenMilky WayOpenLittle DipperOpenShooting StarOpenWest Beginner AreaBumble BeeOpenGrasshopperOpenMonarchOpen",
+      "status": "Open"
+    },
+    {
+      "name": "Glen Eden Trail MapSlope ConditionsMachine Groomed GranularBase Depth90 cmNew Snow (Last 24 hours)NoSnowmaking (Last 24 hours)NoView Full Size Map",
+      "status": "Unknown"
+    },
+    {
+      "name": "RunsGeneralEscarpment RunOpenNight HawkOpenButternutOpenFalconOpenSidewinderOpenTwisterOpenBoomerangOpenChallengerOpenQuarry RunOpenScimitarOpenThe GalaxyCometOpenMilky WayOpenLittle DipperOpenShooting StarOpenWest Beginner AreaBumble BeeOpenGrasshopperOpenMonarchOpenLiftsGeneralLimestone ChairliftOpenRidge ChairliftOpenUpdraft ChairliftOpenThe GalaxyShuttle CarpetOpenWest Beginner AreaCaterpillar CarpetOpenCricket CarpetClosedEasyIntermediateDifficultTerrain Park",
+      "status": "Open"
+    },
+    {
+      "name": "Glen Eden Trail MapSlope ConditionsMachine Groomed GranularBase Depth90 cmNew Snow (Last 24 hours)NoSnowmaking (Last 24 hours)NoView Full Size Map",
+      "status": "Unknown"
+    },
+    {
+      "name": "Glen Eden Trail MapSlope ConditionsMachine Groomed GranularBase Depth90 cmNew Snow (Last 24 hours)NoSnowmaking (Last 24 hours)NoView Full Size Map",
+      "status": "Unknown"
+    },
+    {
+      "name": "Glen Eden Trail MapSlope ConditionsMachine Groomed GranularBase Depth90 cmNew Snow (Last 24 hours)NoSnowmaking (Last 24 hours)NoView Full Size Map",
+      "status": "Unknown"
+    },
+    {
+      "name": "Slope ConditionsMachine Groomed Granular",
+      "status": "Unknown"
+    },
+    {
+      "name": "Base Depth90 cm",
+      "status": "Unknown"
+    },
+    {
+      "name": "New Snow (Last 24 hours)No",
+      "status": "Unknown"
+    },
+    {
+      "name": "Snowmaking (Last 24 hours)No",
+      "status": "Unknown"
+    },
+    {
+      "name": "View Full Size Map",
+      "status": "Unknown"
+    },
+    {
+      "name": "RunsGeneralEscarpment RunOpenNight HawkOpenButternutOpenFalconOpenSidewinderOpenTwisterOpenBoomerangOpenChallengerOpenQuarry RunOpenScimitarOpenThe GalaxyCometOpenMilky WayOpenLittle DipperOpenShooting StarOpenWest Beginner AreaBumble BeeOpenGrasshopperOpenMonarchOpenLiftsGeneralLimestone ChairliftOpenRidge ChairliftOpenUpdraft ChairliftOpenThe GalaxyShuttle CarpetOpenWest Beginner AreaCaterpillar CarpetOpenCricket CarpetClosedEasyIntermediateDifficultTerrain Park",
+      "status": "Open"
+    },
+    {
+      "name": "RunsGeneralEscarpment RunOpenNight HawkOpenButternutOpenFalconOpenSidewinderOpenTwisterOpenBoomerangOpenChallengerOpenQuarry RunOpenScimitarOpenThe GalaxyCometOpenMilky WayOpenLittle DipperOpenShooting StarOpenWest Beginner AreaBumble BeeOpenGrasshopperOpenMonarchOpenLiftsGeneralLimestone ChairliftOpenRidge ChairliftOpenUpdraft ChairliftOpenThe GalaxyShuttle CarpetOpenWest Beginner AreaCaterpillar CarpetOpenCricket CarpetClosedEasyIntermediateDifficultTerrain Park",
+      "status": "Open"
+    },
+    {
+      "name": "RunsGeneralEscarpment RunOpenNight HawkOpenButternutOpenFalconOpenSidewinderOpenTwisterOpenBoomerangOpenChallengerOpenQuarry RunOpenScimitarOpenThe GalaxyCometOpenMilky WayOpenLittle DipperOpenShooting StarOpenWest Beginner AreaBumble BeeOpenGrasshopperOpenMonarchOpenLiftsGeneralLimestone ChairliftOpenRidge ChairliftOpenUpdraft ChairliftOpenThe GalaxyShuttle CarpetOpenWest Beginner AreaCaterpillar CarpetOpenCricket CarpetClosedEasyIntermediateDifficultTerrain Park",
+      "status": "Open"
+    },
+    {
+      "name": "RunsGeneralEscarpment RunOpenNight HawkOpenButternutOpenFalconOpenSidewinderOpenTwisterOpenBoomerangOpenChallengerOpenQuarry RunOpenScimitarOpenThe GalaxyCometOpenMilky WayOpenLittle DipperOpenShooting StarOpenWest Beginner AreaBumble BeeOpenGrasshopperOpenMonarchOpenLiftsGeneralLimestone ChairliftOpenRidge ChairliftOpenUpdraft ChairliftOpenThe GalaxyShuttle CarpetOpenWest Beginner AreaCaterpillar CarpetOpenCricket CarpetClosedEasyIntermediateDifficultTerrain Park",
+      "status": "Open"
+    },
+    {
+      "name": "RunsGeneralEscarpment RunOpenNight HawkOpenButternutOpenFalconOpenSidewinderOpenTwisterOpenBoomerangOpenChallengerOpenQuarry RunOpenScimitarOpenThe GalaxyCometOpenMilky WayOpenLittle DipperOpenShooting StarOpenWest Beginner AreaBumble BeeOpenGrasshopperOpenMonarchOpenLiftsGeneralLimestone ChairliftOpenRidge ChairliftOpenUpdraft ChairliftOpenThe GalaxyShuttle CarpetOpenWest Beginner AreaCaterpillar CarpetOpenCricket CarpetClosed",
+      "status": "Open"
+    },
+    {
+      "name": "EasyIntermediateDifficultTerrain Park",
+      "status": "Unknown"
+    },
+    {
+      "name": "RunsGeneralEscarpment RunOpenNight HawkOpenButternutOpenFalconOpenSidewinderOpenTwisterOpenBoomerangOpenChallengerOpenQuarry RunOpenScimitarOpenThe GalaxyCometOpenMilky WayOpenLittle DipperOpenShooting StarOpenWest Beginner AreaBumble BeeOpenGrasshopperOpenMonarchOpen",
+      "status": "Open"
+    },
+    {
+      "name": "LiftsGeneralLimestone ChairliftOpenRidge ChairliftOpenUpdraft ChairliftOpenThe GalaxyShuttle CarpetOpenWest Beginner AreaCaterpillar CarpetOpenCricket CarpetClosed",
+      "status": "Open"
+    },
+    {
+      "name": "GeneralEscarpment RunOpenNight HawkOpenButternutOpenFalconOpenSidewinderOpenTwisterOpenBoomerangOpenChallengerOpenQuarry RunOpenScimitarOpenThe GalaxyCometOpenMilky WayOpenLittle DipperOpenShooting StarOpenWest Beginner AreaBumble BeeOpenGrasshopperOpenMonarchOpen",
+      "status": "Open"
+    }
+  ],
+  "lifts_summary": {
+    "open": 2,
+    "total": 2
+  },
+  "trails_summary": {
+    "open": 19,
+    "total": 32
+  }
+}

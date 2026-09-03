@@ -1,0 +1,253 @@
+{
+  "conditions": {
+    "hours": "9AM-9PM",
+    "surface_conditions": "Machine Groomed Granular",
+    "base_depth": "100 cm",
+    "snowfall_24h": "0 cm"
+  },
+  "runs": {
+    "easy": [
+      {
+        "name": "Ponyback",
+        "day_status": "open",
+        "night_status": "open"
+      },
+      {
+        "name": "Pinto",
+        "day_status": "open",
+        "night_status": "open"
+      },
+      {
+        "name": "Hungry Hollow",
+        "day_status": "open",
+        "night_status": "open"
+      },
+      {
+        "name": "Roundup",
+        "day_status": "open",
+        "night_status": "open"
+      },
+      {
+        "name": "Donkey Serenade",
+        "day_status": "open",
+        "night_status": "open"
+      },
+      {
+        "name": "Pony Express",
+        "day_status": "open",
+        "night_status": "open"
+      },
+      {
+        "name": "Canter",
+        "day_status": "open",
+        "night_status": "open"
+      },
+      {
+        "name": "Mule Train",
+        "day_status": "open",
+        "night_status": "closed"
+      }
+    ],
+    "difficult": [
+      {
+        "name": "Steeplechase",
+        "day_status": "open",
+        "night_status": "open"
+      },
+      {
+        "name": "Flying Mare",
+        "day_status": "open",
+        "night_status": "open"
+      },
+      {
+        "name": "Pony Tail",
+        "day_status": "closed",
+        "night_status": "closed"
+      },
+      {
+        "name": "Ramey's Return",
+        "day_status": "closed",
+        "night_status": "closed"
+      },
+      {
+        "name": "Saddleback",
+        "day_status": "closed",
+        "night_status": "closed"
+      },
+      {
+        "name": "Stallion Slide",
+        "day_status": "open",
+        "night_status": "open"
+      },
+      {
+        "name": "Duster",
+        "day_status": "open",
+        "night_status": "open"
+      },
+      {
+        "name": "Nightmare Ride",
+        "day_status": "open",
+        "night_status": "open"
+      },
+      {
+        "name": "Stampede",
+        "day_status": "open",
+        "night_status": "open"
+      },
+      {
+        "name": "The Wave",
+        "day_status": "open",
+        "night_status": "open"
+      },
+      {
+        "name": "Shaggy Mane",
+        "day_status": "open",
+        "night_status": "open"
+      },
+      {
+        "name": "The Zipper",
+        "day_status": "open",
+        "night_status": "Not available"
+      },
+      {
+        "name": "Bushwacker",
+        "day_status": "open",
+        "night_status": "Not available"
+      },
+      {
+        "name": "Bronco",
+        "day_status": "open",
+        "night_status": "open"
+      },
+      {
+        "name": "Rodeo",
+        "day_status": "open",
+        "night_status": "open"
+      },
+      {
+        "name": "Race Hill",
+        "day_status": "open",
+        "night_status": "open"
+      },
+      {
+        "name": "Horsefeathers",
+        "day_status": "open",
+        "night_status": "open"
+      }
+    ],
+    "more_difficult": [],
+    "terrain_park": [
+      {
+        "name": "Horsefly Hop",
+        "day_status": "open",
+        "night_status": "open"
+      },
+      {
+        "name": "Bullpen",
+        "day_status": "open",
+        "night_status": "open"
+      }
+    ]
+  },
+  "lifts": [
+    {
+      "name": "Kimbles Carpet",
+      "day_status": "open",
+      "night_status": "open"
+    },
+    {
+      "name": "Snow School Express",
+      "day_status": "open",
+      "night_status": "closed"
+    },
+    {
+      "name": "Double Chair",
+      "day_status": "open",
+      "night_status": "open"
+    },
+    {
+      "name": "Copeland Express 6 Person Chair",
+      "day_status": "open",
+      "night_status": "open"
+    },
+    {
+      "name": "High Rider Quad",
+      "day_status": "open",
+      "night_status": "open"
+    },
+    {
+      "name": "Highland Express Quad",
+      "day_status": "open",
+      "night_status": "open"
+    }
+  ],
+  "cross_country": [
+    {
+      "trail": "5",
+      "distance": "2.0 km",
+      "open": "open",
+      "track_set": "open",
+      "groomed_today": "open"
+    },
+    {
+      "trail": "9",
+      "distance": "2.5 km",
+      "open": "open",
+      "track_set": "open",
+      "groomed_today": "open"
+    },
+    {
+      "trail": "6",
+      "distance": "5.0 km",
+      "open": "open",
+      "track_set": "open",
+      "groomed_today": "open"
+    },
+    {
+      "trail": "7",
+      "distance": "1.0 km",
+      "open": "open",
+      "track_set": "open",
+      "groomed_today": "open"
+    },
+    {
+      "trail": "8",
+      "distance": "6.0 km",
+      "open": "open",
+      "track_set": "open",
+      "groomed_today": "open"
+    },
+    {
+      "trail": "1",
+      "distance": "3.8 km",
+      "open": "open",
+      "track_set": "open",
+      "groomed_today": "open"
+    },
+    {
+      "trail": "2",
+      "distance": "2.4 km",
+      "open": "open",
+      "track_set": "open",
+      "groomed_today": "open"
+    },
+    {
+      "trail": "3",
+      "distance": "3.0 km",
+      "open": "open",
+      "track_set": "open",
+      "groomed_today": "open"
+    },
+    {
+      "trail": "10",
+      "distance": "5.0 km",
+      "open": "open",
+      "track_set": "open",
+      "groomed_today": "open"
+    }
+  ],
+  "tube_park": {
+    "hours": "Open 9AM-9PM  - Tuesday to Saturday",
+    "status": "open"
+  }
+}

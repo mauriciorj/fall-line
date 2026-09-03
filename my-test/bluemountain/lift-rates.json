@@ -1,0 +1,97 @@
+{
+  "Table_1": [
+    {
+      "Column_1": "Tyke (4 & Under)",
+      "In-Season Midweek MONDAY - THURSDAY ONLINE WALKUP": "From $27 19,85",
+      "In-Season Peak Times FRIDAY - SUNDAY ONLINE WALKUP": "From $36 26,47",
+      "Late Season MAR. 23 - 29 ONLINE WALKUP": "From $36 26,47",
+      "Column_5": "From $45 33,08",
+      "Column_6": "From $23 16,91",
+      "Column_7": "From $31 22,79"
+    },
+    {
+      "Column_1": "Youth (5 - 17)",
+      "In-Season Midweek MONDAY - THURSDAY ONLINE WALKUP": "From $74 54,40",
+      "In-Season Peak Times FRIDAY - SUNDAY ONLINE WALKUP": "From $98 72,04",
+      "Late Season MAR. 23 - 29 ONLINE WALKUP": "From $91 66,90",
+      "Column_5": "From $121 88,95",
+      "Column_6": "From $53 38,96",
+      "Column_7": "From $69 50,73"
+    },
+    {
+      "Column_1": "Adult (18 - 64)",
+      "In-Season Midweek MONDAY - THURSDAY ONLINE WALKUP": "From $85 62,49",
+      "In-Season Peak Times FRIDAY - SUNDAY ONLINE WALKUP": "From $114 83,81",
+      "Late Season MAR. 23 - 29 ONLINE WALKUP": "From $100 73,52",
+      "Column_5": "From $134 98,51",
+      "Column_6": "From $64 47,05",
+      "Column_7": "From $84 61,75"
+    },
+    {
+      "Column_1": "Senior (65+)",
+      "In-Season Midweek MONDAY - THURSDAY ONLINE WALKUP": "From $74 54,40",
+      "In-Season Peak Times FRIDAY - SUNDAY ONLINE WALKUP": "From $98 72,04",
+      "Late Season MAR. 23 - 29 ONLINE WALKUP": "From $91 66,90",
+      "Column_5": "From $121 88,95",
+      "Column_6": "From $53 38,96",
+      "Column_7": "From $69 50,73"
+    },
+    {
+      "Column_1": "",
+      "In-Season Midweek MONDAY - THURSDAY ONLINE WALKUP": "",
+      "In-Season Peak Times FRIDAY - SUNDAY ONLINE WALKUP": "",
+      "Late Season MAR. 23 - 29 ONLINE WALKUP": "Add a Reserve Day Ticket to your lift ticket for access to the Reserve Lounge and the Priority Lift Line. Starting From $100",
+      "Column_5": "",
+      "Column_6": ""
+    }
+  ],
+  "Table_2": [
+    {
+      "Column_1": "Youth (5 - 17)",
+      "In-Season Midweek MONDAY - THURSDAY ONLINE WALKUP": "From $44 32,35",
+      "In-Season Peak Times FRIDAY - SUNDAY ONLINE WALKUP": "From $62 45,58",
+      "Column_4": "From $58 42,64",
+      "Column_5": "From $70 51,46"
+    },
+    {
+      "Column_1": "Adult (18 - 64)",
+      "In-Season Midweek MONDAY - THURSDAY ONLINE WALKUP": "From $47 34,55",
+      "In-Season Peak Times FRIDAY - SUNDAY ONLINE WALKUP": "From $64 47,05",
+      "Column_4": "From $61 44,84",
+      "Column_5": "From $79 58,08"
+    },
+    {
+      "Column_1": "Senior (65+)",
+      "In-Season Midweek MONDAY - THURSDAY ONLINE WALKUP": "From $44 32,35",
+      "In-Season Peak Times FRIDAY - SUNDAY ONLINE WALKUP": "From $62 45,58",
+      "Column_4": "From $58 42,64",
+      "Column_5": "From $70 51,46"
+    }
+  ],
+  "Table_3": [
+    {
+      "Column_1": "Tyke (4 & Under)",
+      "2 OF 3 DAYS": "From $36 26,47",
+      "3 OF 4 DAYS": "From $54 39,70",
+      "4 OF 5 DAYS": "From $72 52,93"
+    },
+    {
+      "Column_1": "Youth (5 - 17)",
+      "2 OF 3 DAYS": "From $82 60,28",
+      "3 OF 4 DAYS": "From $123 90,42",
+      "4 OF 5 DAYS": "From $164 120,56"
+    },
+    {
+      "Column_1": "Adult (18 - 64)",
+      "2 OF 3 DAYS": "From $106 77,93",
+      "3 OF 4 DAYS": "From $159 116,89",
+      "4 OF 5 DAYS": "From $212 155,85"
+    },
+    {
+      "Column_1": "Senior (65+)",
+      "2 OF 3 DAYS": "From $82 60,28",
+      "3 OF 4 DAYS": "From $123 90,42",
+      "4 OF 5 DAYS": "From $164 120,56"
+    }
+  ]
+}

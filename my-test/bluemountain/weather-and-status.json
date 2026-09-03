@@ -1,0 +1,339 @@
+{
+  "conditions": {
+    "temperature": "15°C",
+    "last_updated": "Updated 4 minutes ago"
+  },
+  "lifts": [
+    {
+      "name": "Orchard Express",
+      "hours": "9:00 AM—9:00 PM",
+      "status": "Open"
+    },
+    {
+      "name": "Explorer",
+      "hours": "9:00 AM—9:00 PM",
+      "status": "Open"
+    },
+    {
+      "name": "Little Ripper",
+      "hours": "9:00 AM—4:30 PM",
+      "status": "Open"
+    },
+    {
+      "name": "Southern Comfort",
+      "hours": "9:00 AM—9:00 PM",
+      "status": "Open"
+    },
+    {
+      "name": "Voyageur",
+      "hours": "9:00 AM—9:00 PM",
+      "status": "Open"
+    },
+    {
+      "name": "Easy Rider",
+      "hours": "9:00 AM—9:00 PM",
+      "status": "Open"
+    },
+    {
+      "name": "Graduate",
+      "hours": "9:00 AM—9:00 PM",
+      "status": "Open"
+    },
+    {
+      "name": "Silver Bullet",
+      "hours": "9:00 AM—9:00 PM",
+      "status": "Open"
+    },
+    {
+      "name": "Undergrad",
+      "hours": "9:00 AM—9:00 PM",
+      "status": "Open"
+    },
+    {
+      "name": "Valley Express",
+      "hours": "9:00 AM—9:00 PM",
+      "status": "Open"
+    },
+    {
+      "name": "Weider Express",
+      "hours": "9:00 AM—4:30 PM",
+      "status": "Open"
+    }
+  ],
+  "trails": {
+    "orchard": [
+      {
+        "name": "'K Bye",
+        "status": "Open"
+      },
+      {
+        "name": "Badlands Terrain Park",
+        "status": "Open"
+      },
+      {
+        "name": "Butternut",
+        "status": "Open"
+      },
+      {
+        "name": "Finally",
+        "status": "Open"
+      },
+      {
+        "name": "Founders",
+        "status": "Open"
+      },
+      {
+        "name": "Gord's Groove",
+        "status": "Open"
+      },
+      {
+        "name": "Grove Terrain Park",
+        "status": "Open"
+      },
+      {
+        "name": "Juicer",
+        "status": "Open"
+      },
+      {
+        "name": "Lower Orchard Glades",
+        "status": "Open"
+      },
+      {
+        "name": "Southern Cross",
+        "status": "Open"
+      },
+      {
+        "name": "The Grind",
+        "status": "Open"
+      },
+      {
+        "name": "Upper Orchard Glades",
+        "status": "Open"
+      }
+    ],
+    "south": [
+      {
+        "name": "Bear Trail Glades",
+        "status": "Open"
+      },
+      {
+        "name": "Big Baby",
+        "status": "Open"
+      },
+      {
+        "name": "Crooked Oak",
+        "status": "Open"
+      },
+      {
+        "name": "Cruiser",
+        "status": "Open"
+      },
+      {
+        "name": "Dr. Doug",
+        "status": "Open"
+      },
+      {
+        "name": "Enchanted Forest",
+        "status": "Open"
+      },
+      {
+        "name": "Explorer",
+        "status": "Open"
+      },
+      {
+        "name": "Little Ripper",
+        "status": "Open"
+      },
+      {
+        "name": "Mary Jane's Lane",
+        "status": "Open"
+      },
+      {
+        "name": "Old South Glades",
+        "status": "Open"
+      },
+      {
+        "name": "Sunrise",
+        "status": "Open"
+      },
+      {
+        "name": "Waterfall",
+        "status": "Open"
+      }
+    ],
+    "village": [
+      {
+        "name": "Easy Rider",
+        "status": "Open"
+      },
+      {
+        "name": "Graduate",
+        "status": "Open"
+      },
+      {
+        "name": "L-Hill",
+        "status": "Open"
+      },
+      {
+        "name": "L-Park",
+        "status": "Open"
+      },
+      {
+        "name": "Memory Lane",
+        "status": "Open"
+      },
+      {
+        "name": "Rinus Run",
+        "status": "Open"
+      },
+      {
+        "name": "Showcase Glades",
+        "status": "Open"
+      },
+      {
+        "name": "Smart Alec",
+        "status": "Open"
+      },
+      {
+        "name": "Susan's Hideaway",
+        "status": "Open"
+      },
+      {
+        "name": "Tranquility",
+        "status": "Open"
+      },
+      {
+        "name": "Undergrad",
+        "status": "Open"
+      },
+      {
+        "name": "Village Glades",
+        "status": "Open"
+      },
+      {
+        "name": "Village Way",
+        "status": "Open"
+      },
+      {
+        "name": "Yahoo Terrain Park",
+        "status": "Open"
+      },
+      {
+        "name": "Yahoo Trail",
+        "status": "Open"
+      }
+    ],
+    "valley": [
+      {
+        "name": "Apple Bowl",
+        "status": "Open"
+      },
+      {
+        "name": "Burner",
+        "status": "Open"
+      },
+      {
+        "name": "Calamity Lane",
+        "status": "Open"
+      },
+      {
+        "name": "Due North",
+        "status": "Open"
+      },
+      {
+        "name": "Happy Valley",
+        "status": "Open"
+      },
+      {
+        "name": "Legacy",
+        "status": "Open"
+      },
+      {
+        "name": "Willy's",
+        "status": "Open"
+      }
+    ],
+    "north": [
+      {
+        "name": "1940",
+        "status": "Open"
+      },
+      {
+        "name": "Avalanche",
+        "status": "Open"
+      },
+      {
+        "name": "Dieppe",
+        "status": "Open"
+      },
+      {
+        "name": "Dog Sled",
+        "status": "Open"
+      },
+      {
+        "name": "Elevator Shaft",
+        "status": "Open"
+      },
+      {
+        "name": "Going South",
+        "status": "Open"
+      },
+      {
+        "name": "Going South Glades",
+        "status": "Open"
+      },
+      {
+        "name": "Hog's Back",
+        "status": "Open"
+      },
+      {
+        "name": "Kandahar",
+        "status": "Open"
+      },
+      {
+        "name": "Little Devil",
+        "status": "Open"
+      },
+      {
+        "name": "Lone Rider",
+        "status": "Closed"
+      },
+      {
+        "name": "North Glades",
+        "status": "Open"
+      },
+      {
+        "name": "Outer Limits",
+        "status": "Open"
+      },
+      {
+        "name": "Rabbits Run",
+        "status": "Open"
+      },
+      {
+        "name": "Schuss",
+        "status": "Open"
+      },
+      {
+        "name": "Senator / Larway",
+        "status": "Open"
+      },
+      {
+        "name": "Spectacular",
+        "status": "Open"
+      },
+      {
+        "name": "Starting Gate",
+        "status": "Open"
+      }
+    ]
+  },
+  "lifts_summary": {
+    "open": 11,
+    "total": 11
+  },
+  "trails_summary": {
+    "open": 63,
+    "total": 64
+  }
+}

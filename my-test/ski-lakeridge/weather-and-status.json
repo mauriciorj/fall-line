@@ -1,0 +1,112 @@
+[
+  {
+    "difficulty": "Black Diamond",
+    "name": "Sunnyside",
+    "status": "OPEN"
+  },
+  {
+    "difficulty": "Double Black Diamond",
+    "name": "Mogul Alley",
+    "status": "OPEN AS A RUN"
+  },
+  {
+    "difficulty": "Blue Square",
+    "name": "Main Street",
+    "status": "OPEN"
+  },
+  {
+    "difficulty": "Orange Oval",
+    "name": "Banked Slalom Run",
+    "status": "OPEN"
+  },
+  {
+    "difficulty": "Green Circle",
+    "name": "Short Cut",
+    "status": "OPEN"
+  },
+  {
+    "difficulty": "Green Circle",
+    "name": "Collectors",
+    "status": "OPEN"
+  },
+  {
+    "difficulty": "Green Circle",
+    "name": "One Way",
+    "status": "OPEN"
+  },
+  {
+    "difficulty": "Green Circle",
+    "name": "Beginners Area",
+    "status": "OPEN"
+  },
+  {
+    "difficulty": "Orange Oval",
+    "name": "Little Razors",
+    "status": "OPEN"
+  },
+  {
+    "difficulty": "Green Circle",
+    "name": "Highway",
+    "status": "OPEN"
+  },
+  {
+    "difficulty": "",
+    "name": "Snowcross",
+    "status": "OPEN"
+  },
+  {
+    "difficulty": "Orange Oval",
+    "name": "Razors Edge Terrain Park",
+    "status": "OPEN"
+  },
+  {
+    "difficulty": "Black Diamond",
+    "name": "Bail Out",
+    "status": "OPEN"
+  },
+  {
+    "difficulty": "Double Black Diamond",
+    "name": "Rieky's Run",
+    "status": "OPEN (HAS MOGULS)"
+  },
+  {
+    "difficulty": "Black Diamond",
+    "name": "Upper Chute",
+    "status": "OPEN"
+  },
+  {
+    "difficulty": "Black Diamond",
+    "name": "Lower Chute",
+    "status": "OPEN"
+  },
+  {
+    "difficulty": "Blue Square",
+    "name": "Valley Road",
+    "status": "OPEN"
+  },
+  {
+    "difficulty": "Black Diamond",
+    "name": "Freeway",
+    "status": "OPEN"
+  },
+  {
+    "difficulty": "Blue Square",
+    "name": "East Avenue",
+    "status": "OPEN"
+  },
+  {
+    "difficulty": "Blue Square",
+    "name": "Bridge-Trail",
+    "status": "OPEN"
+  },
+  {
+    "difficulty": "Green Circle",
+    "name": "Little Rogers",
+    "status": "OPEN"
+  },
+  {
+    "difficulty": "",
+    "name": "Tube Park - reservation only",
+    "status": "OPEN"
+  }
+]

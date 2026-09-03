@@ -1,0 +1,44 @@
+{
+  "rental_daily_packages": [
+    {
+      "item": "All Ages",
+      "price": "$52"
+    },
+    {
+      "item": "5 & Under",
+      "price": "$37"
+    }
+  ],
+  "rental_single_items": [
+    {
+      "item": "Helmet",
+      "price": "$20"
+    },
+    {
+      "item": "Poles",
+      "price": "$20"
+    },
+    {
+      "item": "Snowboard Boots",
+      "price": "$42"
+    },
+    {
+      "item": "Skis",
+      "price": "$42"
+    },
+    {
+      "item": "Snowboard",
+      "price": "$42"
+    }
+  ],
+  "rental_lesson_packages": [
+    {
+      "item": "Lesson Package – Ski",
+      "price": "$249"
+    },
+    {
+      "item": "Lesson Package – Snowboard",
+      "price": "$249"
+    }
+  ]
+}

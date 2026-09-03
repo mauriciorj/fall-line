@@ -1,0 +1,62 @@
+{
+  "8 Pack Value-Priced Lift Tickets": [
+    {
+      "Column_1": "Anytime Adults 18+ (8 x 4 Hour Tickets)",
+      "Price": "$477.88",
+      "Shop": "Buy Now!"
+    },
+    {
+      "Column_1": "Anytime Under 18/Sr 60+ (8 x 4 Hour Tickets)",
+      "Price": "$414.16",
+      "Shop": "Buy Now!"
+    },
+    {
+      "Column_1": "Nights ( 8 x 5 1/2 Hour Tickets 4-Close except Sun.)",
+      "Price": "$446.02",
+      "Shop": "Buy Now!"
+    }
+  ],
+  "Anytime Alpine Lift Tickets": [
+    {
+      "Time": "Up to 4 Hours Anytime",
+      "Adult 18+": "$66.37",
+      "Jr.6-17/Sr.60+": "$57.52"
+    },
+    {
+      "Time": "Full Day",
+      "Adult 18+": "$79.65",
+      "Jr.6-17/Sr.60+": "$70.80"
+    }
+  ],
+  "Special Late-Night After 6 and Last Call": [
+    {
+      "Column_1": "Special for All Ages",
+      "Column_2": ""
+    },
+    {
+      "Column_1": "After 6:00pm  Special Price(No Coupons)",
+      "Column_2": "$46.02"
+    },
+    {
+      "Column_1": "After 7:00 “Last Call” Special Price(No Coupons)",
+      "Column_2": "$37.17"
+    }
+  ],
+  "Magic Carpet Special for Beginners": [
+    {
+      "The Magic Carpet, like a moving sidewalk, beginners of all ages can learn comfortably, on gentle slopes!": "Ages 6 to Adult – up to 4 Hr(No Coupons)",
+      "Price": "$39.82"
+    },
+    {
+      "The Magic Carpet, like a moving sidewalk, beginners of all ages can learn comfortably, on gentle slopes!": "Under 5 years – up to 4 Hr(No Coupons)",
+      "Price": "$22.12"
+    }
+  ],
+  "Seniors 60+": [
+    {
+      "Midweek Special": "Wednesday – Friday (up to 4 Hrs.)",
+      "Ticket": "$38.94",
+      "W/ Ski Rental": "$74.34"
+    }
+  ]
+}

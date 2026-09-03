@@ -1,0 +1,205 @@
+{
+  "Lift Tickets": [
+    {
+      "title": "Buy Now & Save Rates",
+      "subtitle": "Rates for tickets and passes purchased online.",
+      "categories": [
+        {
+          "category": "Adult  |18-64| Lift Tickets",
+          "items": [
+            {
+              "name": "4 Hour Lift",
+              "price": "$65-$89",
+              "description": "Any 4hr Lift Access starting from Arrival"
+            },
+            {
+              "name": "6 Hour Lift",
+              "price": "$72-$99",
+              "description": "Any 6hr Lift Access starting from Arrival"
+            },
+            {
+              "name": "All Night Lift",
+              "price": "$50-$72",
+              "description": "Lift Access from 3:00PM -9PM Book in March and save $15"
+            },
+            {
+              "name": "Adventure Learning Centre",
+              "price": "$39-$55",
+              "description": "Valid Open to Close"
+            },
+            {
+              "name": "Under 6 Years",
+              "price": "$20",
+              "description": "Valid Open to Close"
+            }
+          ]
+        },
+        {
+          "category": "Youth |6-17| & Senior |65+| Lift Tickets",
+          "items": [
+            {
+              "name": "4 Hour Lift",
+              "price": "$50-$66",
+              "description": "Any 4hr Lift Access starting from Arrival"
+            },
+            {
+              "name": "6 Hour Lift",
+              "price": "$57-$79",
+              "description": "Any 6hr Lift Access starting from Arrival"
+            },
+            {
+              "name": "All Night Lift",
+              "price": "$44-$60",
+              "description": "Lift Access from 3:00PM -9PM Book in March and save $15"
+            },
+            {
+              "name": "Adventure Learning Centre",
+              "price": "$39-$55",
+              "description": "Valid Open to Close"
+            },
+            {
+              "name": "Under 6 Years",
+              "price": "$20",
+              "description": "Valid Open to Close"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Buy at Resort Rates",
+      "subtitle": "Rates for tickets and passes purchased at the resort.",
+      "categories": [
+        {
+          "category": "Adult  |18-64| Lift Tickets",
+          "items": [
+            {
+              "name": "4 Hour Lift",
+              "price": "$80-$104",
+              "description": "Any 4hr Lift Access starting from Arrival"
+            },
+            {
+              "name": "6 Hour Lift",
+              "price": "$87-$114",
+              "description": "Any 6hr Lift Access starting from Arrival"
+            },
+            {
+              "name": "All Night Lift",
+              "price": "$65-$87",
+              "description": "Lift Access from 3:00PM -9PM Save $15 in March"
+            },
+            {
+              "name": "Adventure Learning Centre",
+              "price": "$39-$55",
+              "description": "Valid Open to Close"
+            },
+            {
+              "name": "Under 6 Years",
+              "price": "$20",
+              "description": "Valid Open to Close"
+            }
+          ]
+        },
+        {
+          "category": "Youth |6-17| & Senior |65+| Lift Tickets",
+          "items": [
+            {
+              "name": "4 Hour Lift",
+              "price": "$65-$81",
+              "description": "Any 4hr Lift Access starting from Arrival"
+            },
+            {
+              "name": "6 Hour Lift",
+              "price": "$72-$94",
+              "description": "Any 6hr Lift Access starting from Arrival"
+            },
+            {
+              "name": "All Night Lift",
+              "price": "$59-$75",
+              "description": "Lift Access from 3:00PM -9PM Save $15 in March"
+            },
+            {
+              "name": "Adventure Learning Centre",
+              "price": "$39-$55",
+              "description": "Valid Open to Close"
+            },
+            {
+              "name": "Under 6 Years",
+              "price": "$20",
+              "description": "Valid Open to Close"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "Season Passes": [
+    {
+      "title": "Anytime Pass",
+      "subtitle": "",
+      "categories": [
+        {
+          "category": "Anytime Pass",
+          "items": [
+            {
+              "name": "Adult (18-64)",
+              "price": "$799",
+              "description": ""
+            },
+            {
+              "name": "Youth (6-17) **¹",
+              "price": "$759",
+              "description": ""
+            },
+            {
+              "name": "Senior (65+) ***¹",
+              "price": "$759",
+              "description": ""
+            },
+            {
+              "name": "Under 6 ²",
+              "price": "$99",
+              "description": ""
+            },
+            {
+              "name": "Family ‡",
+              "price": "$2599",
+              "description": "Add Additional Family Member - $649"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Almost Anytime Pass",
+      "subtitle": "",
+      "categories": [
+        {
+          "category": "Almost Anytime Pass",
+          "items": [
+            {
+              "name": "Adult (18-64) ¹",
+              "price": "$509",
+              "description": ""
+            },
+            {
+              "name": "Youth (6-17) **¹",
+              "price": "$469",
+              "description": ""
+            },
+            {
+              "name": "Senior (65+) ***¹",
+              "price": "$469",
+              "description": ""
+            },
+            {
+              "name": "Family ‡¹",
+              "price": "$1759",
+              "description": "Add Additional Family Member - $379"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

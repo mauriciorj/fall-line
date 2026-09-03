@@ -1,0 +1,66 @@
+{
+  "Equipment Rentals - Package": [
+    {
+      "Package Equipment Rentals All Ages": "Up to 4 Hours",
+      "Skis, Boots, & Poles": "$39.82",
+      "Boards & Boots": "$51.33"
+    },
+    {
+      "Package Equipment Rentals All Ages": "Full Day",
+      "Skis, Boots, & Poles": "$48.67",
+      "Boards & Boots": "$60.18"
+    },
+    {
+      "Package Equipment Rentals All Ages": "After 6:00pm & 7:00pm",
+      "Skis, Boots, & Poles": "$38.05",
+      "Boards & Boots": "$48.67"
+    },
+    {
+      "Package Equipment Rentals All Ages": "An upgrade is available at Customer Service to extend your visit $22.12.",
+      "Skis, Boots, & Poles": "",
+      "Boards & Boots": ""
+    },
+    {
+      "Package Equipment Rentals All Ages": "Seasons Rental",
+      "Skis, Boots, & Poles": "$274.34",
+      "Boards & Boots": "$302.65"
+    }
+  ],
+  "Equipment Rentals - Separate Items": [
+    {
+      "Separate Item Rentals – Full Day – All Ages": "Skis",
+      "Column_2": "$30.09",
+      "Column_3": ""
+    },
+    {
+      "Separate Item Rentals – Full Day – All Ages": "Snowboard",
+      "Column_2": "$38.94",
+      "Column_3": ""
+    },
+    {
+      "Separate Item Rentals – Full Day – All Ages": "Boots",
+      "Column_2": "$26.55",
+      "Column_3": ""
+    },
+    {
+      "Separate Item Rentals – Full Day – All Ages": "Poles",
+      "Column_2": "$13.27",
+      "Column_3": ""
+    },
+    {
+      "Separate Item Rentals – Full Day – All Ages": "Helmet Rental",
+      "Column_2": "$15.93",
+      "Column_3": ""
+    }
+  ],
+  "Lockers": [
+    {
+      "Lockers – MUST BE BOOKED IN ADVANCE – LIMITED SUPPLY": "Lockers/Large",
+      "Column_2": "$175.22 For the Season"
+    },
+    {
+      "Lockers – MUST BE BOOKED IN ADVANCE – LIMITED SUPPLY": "Daily Large Locker",
+      "Column_2": "$16.81 Daily"
+    }
+  ]
+}

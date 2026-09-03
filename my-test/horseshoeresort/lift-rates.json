@@ -1,0 +1,60 @@
+{
+  "lift_tickets": [
+    {
+      "ticket_type": "day_and_night",
+      "time_range": "9am – 9pm",
+      "age_group": "Adult",
+      "midweek_price": "$76",
+      "weekend_price": "$99"
+    },
+    {
+      "ticket_type": "day_and_night",
+      "time_range": "9am – 9pm",
+      "age_group": "JR (6-18) / SR (65+)",
+      "midweek_price": "$64",
+      "weekend_price": "$89"
+    },
+    {
+      "ticket_type": "day_and_night",
+      "time_range": "9am – 9pm",
+      "age_group": "Child (5 and under)",
+      "midweek_price": "$10",
+      "weekend_price": "$10"
+    },
+    {
+      "ticket_type": "day_and_night",
+      "time_range": "9am – 9pm",
+      "age_group": "Beginner (All ages)",
+      "midweek_price": "$39",
+      "weekend_price": "$54"
+    },
+    {
+      "ticket_type": "day",
+      "time_range": "9am – 4:30pm",
+      "age_group": "Adult",
+      "midweek_price": "$66",
+      "weekend_price": "$89"
+    },
+    {
+      "ticket_type": "day",
+      "time_range": "9am – 4:30pm",
+      "age_group": "JR (6-18) / SR (65+)",
+      "midweek_price": "$54 (Mondays only: $34 Senior Deal *Excludes holiday Mondays)",
+      "weekend_price": "$74"
+    },
+    {
+      "ticket_type": "night",
+      "time_range": "3:30pm – 9pm",
+      "age_group": "Adult",
+      "midweek_price": "$49",
+      "weekend_price": "$59"
+    },
+    {
+      "ticket_type": "night",
+      "time_range": "3:30pm – 9pm",
+      "age_group": "JR (6-18) / SR (65+)",
+      "midweek_price": "$39",
+      "weekend_price": "$49"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "snow_conditions": {
+    "surface": "CONDITIONSmachine groomed granular",
+    "base_depth": "Base100cm",
+    "new_snow": "New snow last 24h0cm"
+  },
+  "trails": [
+    {
+      "name": "Ice Rink",
+      "status": "closed"
+    },
+    {
+      "name": "Snowshoe/Hiking Trails",
+      "status": "closed"
+    }
+  ],
+  "lifts": [
+    {
+      "name": "CONDITIONSmachine groomed granular",
+      "status": "closed"
+    },
+    {
+      "name": "Base100cm",
+      "status": "closed"
+    },
+    {
+      "name": "New snow last 24h0cm",
+      "status": "closed"
+    },
+    {
+      "name": "Snow MakingNot in progress",
+      "status": "closed"
+    },
+    {
+      "name": "Lifts Open7",
+      "status": "open"
+    }
+  ],
+  "trails_summary": {
+    "open": 0,
+    "total": 2
+  },
+  "lifts_summary": {
+    "open": 1,
+    "total": 5
+  }
+}

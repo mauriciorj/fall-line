@@ -1,0 +1,68 @@
+{
+  "lifts": [
+    {
+      "name": "# Of Lifts Open:",
+      "status": "open"
+    }
+  ],
+  "trails": [
+    {
+      "name": "# Of Trails Open:",
+      "status": "open"
+    },
+    {
+      "name": "Status:",
+      "status": "open"
+    },
+    {
+      "name": "# Of Lifts :4 / 5",
+      "status": "open"
+    },
+    {
+      "name": "# Of Trails :13 / 13",
+      "status": "open"
+    },
+    {
+      "name": "Freestyle Park:",
+      "status": "closed"
+    },
+    {
+      "name": "Surface Lift #1Servicing:",
+      "status": "open"
+    },
+    {
+      "name": "Surface Lift #2Servicing:",
+      "status": "open"
+    },
+    {
+      "name": "Surface Lift #3Servicing:",
+      "status": "open"
+    },
+    {
+      "name": "Red ChairliftServicing:",
+      "status": "closed"
+    },
+    {
+      "name": "North ChairliftServicing:",
+      "status": "open"
+    },
+    {
+      "name": "Applebowl ChairliftServicing:",
+      "status": "closed"
+    }
+  ],
+  "terrain_parks": [],
+  "conditions": {},
+  "lifts_summary": {
+    "open": 1,
+    "total": 1
+  },
+  "trails_summary": {
+    "open": 8,
+    "total": 11
+  },
+  "parks_summary": {
+    "open": 0,
+    "total": 0
+  }
+}
