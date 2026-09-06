@@ -2,13 +2,13 @@
   "Equipment Rental": [
     {
       "Rental": "Ski/Board",
-      "Weekday": "$48",
-      "Weekend & Holiday": "$53"
+      "Weekday": "$50",
+      "Weekend & Holiday": "$55"
     },
     {
       "Rental": "Tot* Ski/Board",
-      "Weekday": "$38",
-      "Weekend & Holiday": "$40"
+      "Weekday": "$40",
+      "Weekend & Holiday": "$44"
     }
   ]
 }

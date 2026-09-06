@@ -3,7 +3,7 @@
     {
       "letter": "A",
       "name": "Big Daddy",
-      "status": "OPEN at 12pm"
+      "status": "CLOSED"
     },
     {
       "letter": "B",
@@ -13,12 +13,12 @@
     {
       "letter": "C",
       "name": "East Magic Carpet",
-      "status": "OPEN"
+      "status": "CLOSED"
     },
     {
       "letter": "D",
       "name": "Rendez-Vous",
-      "status": "OPEN"
+      "status": "CLOSED"
     },
     {
       "letter": "E",
@@ -28,114 +28,114 @@
     {
       "letter": "F",
       "name": "Favourite",
-      "status": "OPEN"
+      "status": "CLOSED"
     }
   ],
   "Runs": [
     {
       "difficulty": "Easy",
       "name": "1. Park View",
-      "status": "OPEN"
+      "status": "CLOSED"
     },
     {
       "difficulty": "Terrain Park",
       "name": "2. Puppy Pound",
-      "status": "OPEN"
+      "status": "CLOSED"
     },
     {
       "difficulty": "Terrain Park",
       "name": "3. Dog Pound",
-      "status": "OPEN"
+      "status": "CLOSED"
     },
     {
       "difficulty": "Terrain Park",
       "name": "4. Impound",
-      "status": "OPEN"
+      "status": "CLOSED"
     },
     {
       "difficulty": "Terrain Park",
       "name": "5. Impound Jumpline",
-      "status": "OPEN"
+      "status": "CLOSED"
     },
     {
       "difficulty": "Terrain Park",
       "name": "6. Compound Snow Zone",
-      "status": "OPEN"
+      "status": "CLOSED"
     },
     {
       "difficulty": "Terrain Park",
       "name": "7. Compound",
-      "status": "OPEN"
+      "status": "CLOSED"
     },
     {
       "difficulty": "Difficult",
       "name": "8. The Chute",
-      "status": "OPEN"
+      "status": "CLOSED"
     },
     {
       "difficulty": "Easy",
       "name": "9. Little Momma",
-      "status": "OPEN"
+      "status": "CLOSED"
     },
     {
       "difficulty": "Easy",
       "name": "10. Pony",
-      "status": "OPEN"
+      "status": "CLOSED"
     },
     {
       "difficulty": "Difficult",
       "name": "11. Rendez Vous",
-      "status": "OPEN"
+      "status": "CLOSED"
     },
     {
       "difficulty": "More Difficult",
       "name": "12. Bomber",
-      "status": "OPEN"
+      "status": "CLOSED"
     },
     {
       "difficulty": "Easy",
       "name": "13. Upper Lovers Lane",
-      "status": "OPEN"
+      "status": "CLOSED"
     },
     {
       "difficulty": "Easy",
       "name": "14. Lower Lovers Lane",
-      "status": "OPEN"
+      "status": "CLOSED"
     },
     {
       "difficulty": "Difficult",
       "name": "15. Club House",
-      "status": "OPEN"
+      "status": "CLOSED"
     },
     {
       "difficulty": "Easy",
       "name": "16. Favourite",
-      "status": "OPEN"
+      "status": "CLOSED"
     },
     {
       "difficulty": "Difficult",
       "name": "17. Alleyway",
-      "status": "OPEN"
+      "status": "CLOSED"
     },
     {
       "difficulty": "Difficult",
       "name": "18. Elbow",
-      "status": "OPEN"
+      "status": "CLOSED"
     },
     {
       "difficulty": "Most Difficult",
       "name": "19. The Dagger",
-      "status": "OPEN"
+      "status": "CLOSED"
     },
     {
       "difficulty": "Most Difficult",
       "name": "20. The Glades",
-      "status": "OPEN"
+      "status": "CLOSED"
     }
   ],
   "Daily Conditions": {
-    "Snow Base": "100cm",
+    "Snow Base": "70cm",
     "New Snow": "0cm",
-    "Conditions": "Machine Groomed"
+    "Conditions": "Not Available"
   }
 }

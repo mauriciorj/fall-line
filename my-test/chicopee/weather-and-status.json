@@ -12,14 +12,14 @@
     },
     {
       "name": "Status:",
+      "status": "closed"
+    },
+    {
+      "name": "# Of Lifts :0 / 5",
       "status": "open"
     },
     {
-      "name": "# Of Lifts :4 / 5",
-      "status": "open"
-    },
-    {
-      "name": "# Of Trails :13 / 13",
+      "name": "# Of Trails :0 / 13",
       "status": "open"
     },
     {
@@ -28,15 +28,15 @@
     },
     {
       "name": "Surface Lift #1Servicing:",
-      "status": "open"
+      "status": "closed"
     },
     {
       "name": "Surface Lift #2Servicing:",
-      "status": "open"
+      "status": "closed"
     },
     {
       "name": "Surface Lift #3Servicing:",
-      "status": "open"
+      "status": "closed"
     },
     {
       "name": "Red ChairliftServicing:",
@@ -44,7 +44,7 @@
     },
     {
       "name": "North ChairliftServicing:",
-      "status": "open"
+      "status": "closed"
     },
     {
       "name": "Applebowl ChairliftServicing:",
@@ -58,7 +58,7 @@
     "total": 1
   },
   "trails_summary": {
-    "open": 8,
+    "open": 3,
     "total": 11
   },
   "parks_summary": {

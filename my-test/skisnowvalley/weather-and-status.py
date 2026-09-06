@@ -1,8 +1,23 @@
+import json
+import os
+import re
+import sys
+import time
+
+import truststore
+
+truststore.inject_into_ssl()
+
 import requests
 from bs4 import BeautifulSoup
-import json
-import re
-import os
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from convex_client import push_weather_and_status
+
+
+RESORT_ID = "snow-valley-ski-resort"
+RESORT_NAME = "Ski Snow Valley"
+SOURCE_URL = "https://www.skisnowvalley.com/plan/weather-webcams/"
 
 
 def get_trails_status():
@@ -10,7 +25,7 @@ def get_trails_status():
     Crawl Snow Valley's weather/webcams page to extract snow conditions,
     lift status, trail status, and tubing conditions.
     """
-    url = "https://www.skisnowvalley.com/plan/weather-webcams/"
+    url = SOURCE_URL
     
     request_headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
@@ -158,6 +173,51 @@ def get_trails_status():
     return data
 
 
+def to_convex_weather(status):
+    report = status.get("snow_report", {})
+    field_map = {
+        "temperature": "temperature",
+        "base_depth": "baseDepth",
+        "new_snow": "newSnow",
+        "surface_conditions": "surfaceConditions",
+        "snowmaking": "snowmaking",
+        "last_updated": "lastUpdated",
+        "hours": "hours",
+    }
+    conditions = {
+        target: report[source]
+        for source, target in field_map.items()
+        if report.get(source) not in (None, "")
+    }
+
+    tubing = []
+    for zone in status.get("tubing_zones", []):
+        tubing_zone = {"status": zone.get("status", "")}
+        if zone.get("name"):
+            tubing_zone["name"] = zone["name"]
+        tubing.append(tubing_zone)
+
+    weather_data = {
+        "lifts": status.get("lifts", []),
+        "trails": status.get("runs", []),
+        "tubing": tubing,
+        "rawData": status,
+    }
+    if conditions:
+        weather_data["conditions"] = conditions
+
+    summaries = {
+        "runs_summary": "trailsSummary",
+        "lifts_summary": "liftsSummary",
+        "tubing_summary": "tubingSummary",
+    }
+    for source, target in summaries.items():
+        if status.get(source):
+            weather_data[target] = status[source]
+
+    return weather_data
+
+
 def main():
     print("Fetching Snow Valley trails and conditions status...")
     status = get_trails_status()
@@ -165,6 +225,17 @@ def main():
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(status, f, indent=2, ensure_ascii=False)
     print(f"Saved to {output_file}")
+
+    result = push_weather_and_status(
+        RESORT_ID,
+        RESORT_NAME,
+        SOURCE_URL,
+        to_convex_weather(status),
+        fetched_at_ms=int(time.time() * 1000),
+    )
+    if result is not None:
+        print("Pushed to Convex:", result)
+
     return status
 
 

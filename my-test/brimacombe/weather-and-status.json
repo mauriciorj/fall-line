@@ -4,84 +4,84 @@
       "number": "1",
       "name": "Park Avenue",
       "difficulty": "Easy",
-      "day": "Open",
-      "night": "Open"
+      "day": "Closed",
+      "night": "Closed"
     },
     {
       "number": "2",
       "name": "Pete’s Elbow",
       "difficulty": "Easy",
-      "day": "Open",
-      "night": "Open"
+      "day": "Closed",
+      "night": "Closed"
     },
     {
       "number": "3",
       "name": "Snow Bowl",
       "difficulty": "Easy",
-      "day": "Open",
-      "night": "Open"
+      "day": "Closed",
+      "night": "Closed"
     },
     {
       "number": "4",
       "name": "Standard",
       "difficulty": "Medium",
-      "day": "Open",
-      "night": "Open"
+      "day": "Closed",
+      "night": "Closed"
     },
     {
       "number": "5",
       "name": "Bambi",
       "difficulty": "Easy",
-      "day": "Open",
-      "night": "Open"
+      "day": "Closed",
+      "night": "Closed"
     },
     {
       "number": "6",
       "name": "Ladies Downhill",
       "difficulty": "Medium",
-      "day": "Open",
-      "night": "Open"
+      "day": "Closed",
+      "night": "Closed"
     },
     {
       "number": "7",
       "name": "Ben’s Bump",
       "difficulty": "Hard",
-      "day": "Open",
-      "night": "Open"
+      "day": "Closed",
+      "night": "Closed"
     },
     {
       "number": "8",
       "name": "Bowl",
       "difficulty": "Hard",
-      "day": "Open",
-      "night": "Open"
+      "day": "Closed",
+      "night": "Closed"
     },
     {
       "number": "9",
       "name": "Tower Run",
       "difficulty": "Hard",
-      "day": "Open",
-      "night": "Open"
+      "day": "Closed",
+      "night": "Closed"
     },
     {
       "number": "10",
       "name": "Timberline",
       "difficulty": "Hard",
-      "day": "Open",
-      "night": "Open"
+      "day": "Closed",
+      "night": "Closed"
     },
     {
       "number": "11",
       "name": "Flyer",
       "difficulty": "Medium",
-      "day": "Open",
-      "night": "Open"
+      "day": "Closed",
+      "night": "Closed"
     },
     {
       "number": "12",
       "name": "Promenade",
       "difficulty": "Easy",
-      "day": "Open",
+      "day": "Closed",
       "night": "N/A"
     },
     {
@@ -102,42 +102,42 @@
       "number": "15",
       "name": "Club House Run",
       "difficulty": "Medium",
-      "day": "Open",
+      "day": "Closed",
       "night": "N/A"
     },
     {
       "number": "16",
       "name": "West Ridge",
       "difficulty": "Hard",
-      "day": "Open",
+      "day": "Closed",
       "night": "N/A"
     },
     {
       "number": "17",
       "name": "Rutherford’s Cut",
       "difficulty": "Hard",
-      "day": "Open",
+      "day": "Closed",
       "night": "N/A"
     },
     {
       "number": "18",
       "name": "Richards’ Landing",
       "difficulty": "Hard",
-      "day": "Open",
+      "day": "Closed",
       "night": "N/A"
     },
     {
       "number": "19",
       "name": "Challenger",
       "difficulty": "Hard",
-      "day": "Open",
+      "day": "Closed",
       "night": "N/A"
     },
     {
       "number": "20",
       "name": "Whistler",
       "difficulty": "Medium",
-      "day": "Open",
+      "day": "Closed",
       "night": "N/A"
     },
     {
@@ -167,22 +167,22 @@
       "code": "SC",
       "name": "Snow Cross Course",
       "difficulty": "Advanced",
-      "day": "Open",
-      "night": "Open"
+      "day": "Closed",
+      "night": "Closed"
     },
     {
       "code": "TP-PB",
       "name": "Piggy Bank Terrain Park",
       "difficulty": "Advanced",
-      "day": "Open",
-      "night": "Open"
+      "day": "Closed",
+      "night": "Closed"
     },
     {
       "code": "TP-V",
       "name": "Vault Terrain Park",
       "difficulty": "Advanced",
-      "day": "Open",
-      "night": "Open"
+      "day": "Closed",
+      "night": "Closed"
     }
   ],
   "Lifts": [
@@ -195,20 +195,20 @@
     {
       "letter": "B",
       "name": "Main Street Chair",
-      "day": "Open",
-      "night": "Open"
+      "day": "Closed",
+      "night": "Closed"
     },
     {
       "letter": "C",
       "name": "Magic Carpet",
-      "day": "Open",
-      "night": "Open"
+      "day": "Closed",
+      "night": "Closed"
     },
     {
       "letter": "D",
       "name": "Bowl Chair",
-      "day": "Open",
-      "night": "Open"
+      "day": "Closed",
+      "night": "Closed"
     },
     {
       "letter": "E",
@@ -219,7 +219,7 @@
     {
       "letter": "F",
       "name": "West Chair",
-      "day": "Open",
+      "day": "Closed",
       "night": "N/A"
     },
     {

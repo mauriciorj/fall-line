@@ -1,8 +1,8 @@
 {
   "snow_conditions": {
-    "surface": "CONDITIONSmachine groomed granular",
-    "base_depth": "Base100cm",
-    "new_snow": "New snow last 24h0cm"
+    "surface": "CONDITIONSclosed",
+    "base_depth": "Basecm",
+    "new_snow": "New snow last 24hcm"
   },
   "trails": [
     {
@@ -16,15 +16,15 @@
   ],
   "lifts": [
     {
-      "name": "CONDITIONSmachine groomed granular",
+      "name": "CONDITIONSclosed",
       "status": "closed"
     },
     {
-      "name": "Base100cm",
+      "name": "Basecm",
       "status": "closed"
     },
     {
-      "name": "New snow last 24h0cm",
+      "name": "New snow last 24hcm",
       "status": "closed"
     },
     {
@@ -32,7 +32,7 @@
       "status": "closed"
     },
     {
-      "name": "Lifts Open7",
+      "name": "Lifts Open",
       "status": "open"
     }
   ],

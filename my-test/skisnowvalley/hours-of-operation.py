@@ -1,7 +1,53 @@
-import requests
-from bs4 import BeautifulSoup
 import json
 import os
+import sys
+import time
+
+import truststore
+
+truststore.inject_into_ssl()
+
+import requests
+from bs4 import BeautifulSoup
+
+# Allow importing the shared Convex client from the parent directory.
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from convex_client import push_resort_hours
+
+
+RESORT_ID = "snow-valley-ski-resort"
+RESORT_NAME = "Ski Snow Valley"
+SOURCE_URL = "https://www.skisnowvalley.com/about/"
+
+
+def to_convex_sections(hours_data):
+    """
+    Convert the nested hours dictionary into the normalized Convex sections shape.
+    """
+    sections = []
+    for section_name, section_value in hours_data.items():
+        if not section_value:
+            continue
+
+        first_val = next(iter(section_value.values()))
+
+        if isinstance(first_val, dict):
+            activities = []
+            for activity_name, days in section_value.items():
+                hours = [
+                    {"day": day_name, "time": time}
+                    for day_name, time in days.items()
+                ]
+                activities.append({"name": activity_name, "hours": hours})
+            sections.append({"name": section_name, "activities": activities})
+        else:
+            hours = [
+                {"day": day_name, "time": time}
+                for day_name, time in section_value.items()
+            ]
+            sections.append({"name": section_name, "hours": hours})
+
+    return sections
 
 
 def get_hours_of_operation():
@@ -14,7 +60,7 @@ def get_hours_of_operation():
     request_headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
     }
-    
+
     response = requests.get(url, headers=request_headers)
     response.raise_for_status()
     
@@ -94,6 +140,16 @@ def main():
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(hours, f, indent=2, ensure_ascii=False)
     print(f"Saved to {output_file}")
+
+    sections = to_convex_sections(hours)
+    fetched_at_ms = int(time.time() * 1000)
+    push_resort_hours(
+        RESORT_ID,
+        RESORT_NAME,
+        SOURCE_URL,
+        sections,
+        fetched_at_ms=fetched_at_ms,
+    )
     return hours
 
 

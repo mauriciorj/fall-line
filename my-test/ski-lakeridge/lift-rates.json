@@ -2,9 +2,9 @@
   "Beginner Area Ticket Prices (Magic Carpet Only)": [
     {
       "TIME": "Monday | Tuesday | Wednesday ONLINE pricing",
-      "ADULT (18-64)": "$38.25+HST",
-      "JUNIOR | SENIOR (6-17 | 65+)": "$38.25+HST",
-      "TYKE (AGE 5 AND UNDER)": "$21.25+HST"
+      "ADULT (18-64)": "$39.56+HST",
+      "JUNIOR | SENIOR (6-17 | 65+)": "$39.56+HST",
+      "TYKE (AGE 5 AND UNDER)": "$21.98+HST"
     },
     {
       "TIME": "Monday | Tuesday | Wednesday  ON SITE pricing",
@@ -14,9 +14,9 @@
     },
     {
       "TIME": "Thursday to Sunday ONLINE pricing",
-      "ADULT (18-64)": "$45.00+HST",
-      "JUNIOR | SENIOR (6-17 | 65+)": "$45.00+HST",
-      "TYKE (AGE 5 AND UNDER)": "$25.00+HST"
+      "ADULT (18-64)": "$46.53+HST",
+      "JUNIOR | SENIOR (6-17 | 65+)": "$46.53+HST",
+      "TYKE (AGE 5 AND UNDER)": "$25.85+HST"
     },
     {
       "TIME": "Thursday to Sunday ON SITE pricing",
@@ -34,9 +34,9 @@
   "Monday to Wednesday Lift Tickets (NOT VALID ON FAMILY DAY)": [
     {
       "Time": "4 Hours Anytime - ONLINE pricing",
-      "Adult (18-64)": "$57.35+HST",
-      "Junior | Senior (6-17 | 65+)": "$50.15+HST",
-      "Tyke (age 5 and under, must be accompanied by an adult with a valid lift ticket)": "$21.25+HST"
+      "Adult (18-64)": "$59.30+HST",
+      "Junior | Senior (6-17 | 65+)": "$51.86+HST",
+      "Tyke (age 5 and under, must be accompanied by an adult with a valid lift ticket)": "$21.98+HST"
     },
     {
       "Time": "4 Hours Anytime - ON SITE pricing",
@@ -46,9 +46,9 @@
     },
     {
       "Time": "3 hours (6:30pm to 9:30pm) ONLINE pricing",
-      "Adult (18-64)": "$53.58+HST",
-      "Junior | Senior (6-17 | 65+)": "$46.86+HST",
-      "Tyke (age 5 and under, must be accompanied by an adult with a valid lift ticket)": "$21.25+HST"
+      "Adult (18-64)": "$55.40+HST",
+      "Junior | Senior (6-17 | 65+)": "$48.46+HST",
+      "Tyke (age 5 and under, must be accompanied by an adult with a valid lift ticket)": "$21.98+HST"
     },
     {
       "Time": "3 hours (6:30pm to 9:30pm) ON SITE pricing",
@@ -58,9 +58,9 @@
     },
     {
       "Time": "2 hours (7:30pm to 9:30pm) ONLINE pricing",
-      "Adult (18-64)": "$31.45+HST",
-      "Junior | Senior (6-17 | 65+)": "$31.45+HST",
-      "Tyke (age 5 and under, must be accompanied by an adult with a valid lift ticket)": "$21.25+HST"
+      "Adult (18-64)": "$32.52+HST",
+      "Junior | Senior (6-17 | 65+)": "$32.52+HST",
+      "Tyke (age 5 and under, must be accompanied by an adult with a valid lift ticket)": "$21.98+HST"
     },
     {
       "Time": "2 hours (7:30pm to 9:30pm)    ON SITE pricing",
@@ -72,8 +72,8 @@
   "Thursday to Sunday Lift Tickets": [
     {
       "Time": "4 Hours Anytime - ONLINE pricing",
-      "Adult (18-64)": "$67.47+HST",
-      "Junior | Senior (6-17 | 65+)": "$59.00+HST",
+      "Adult (18-64)": "$69.77+HST",
+      "Junior | Senior (6-17 | 65+)": "$61.01+HST",
       "Tyke (age 5 and under, must be accompanied by an adult with a valid lift ticket)": "$25.00+HST"
     },
     {
@@ -84,8 +84,8 @@
     },
     {
       "Time": "3 hours (6:30pm to 9:30pm) ONLINE pricing",
-      "Adult (18-64)": "$63.04+HST",
-      "Junior | Senior (6-17 | 65+)": "$55.13+HST",
+      "Adult (18-64)": "$65.18+HST",
+      "Junior | Senior (6-17 | 65+)": "$57.00+HST",
       "Tyke (age 5 and under, must be accompanied by an adult with a valid lift ticket)": "$25.00+HST"
     },
     {
@@ -96,8 +96,8 @@
     },
     {
       "Time": "2 hours (7:30pm to 9:30pm)  ONLINE pricing",
-      "Adult (18-64)": "$37.00+HST",
-      "Junior | Senior (6-17 | 65+)": "$37.00+HST",
+      "Adult (18-64)": "$38.26+HST",
+      "Junior | Senior (6-17 | 65+)": "$38.26+HST",
       "Tyke (age 5 and under, must be accompanied by an adult with a valid lift ticket)": "$25.00+HST"
     },
     {

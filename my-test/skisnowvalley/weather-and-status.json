@@ -1,11 +1,11 @@
 {
   "snow_report": {
-    "report_date": "March 6, 2026",
-    "operating_day": "84",
+    "report_date": "March 28, 2026",
+    "operating_day": "0",
     "new_snow": "0cm",
-    "base_depth": "112cm",
-    "snow_surface": "Machine Groomed Granular",
-    "snowshoeing_trails": "900AM-400PM"
+    "base_depth": "0cm",
+    "snow_surface": "Closed for the Season",
+    "snowshoeing_trails": "Closed for the Season"
   },
   "runs": [
     {
@@ -130,15 +130,15 @@
     }
   ],
   "runs_summary": {
-    "open": 20,
+    "open": 0,
     "total": 21
   },
   "lifts_summary": {
-    "open": 6,
+    "open": 0,
     "total": 8
   },
   "tubing_summary": {
-    "open": 4,
+    "open": 0,
     "total": 4
   }
 }

@@ -2,18 +2,18 @@
   "Chicopee Lift Tickets": [
     {
       "Ticket": "All Lifts*",
-      "Weekday": "$60",
-      "Weekend & Holiday": "$65"
+      "Weekday": "$63",
+      "Weekend & Holiday": "$68"
     },
     {
       "Ticket": "Surface Lifts * ticket gives access to surface lifts ONLY!",
-      "Weekday": "$45",
-      "Weekend & Holiday": "$50"
+      "Weekday": "$50",
+      "Weekend & Holiday": "$55"
     },
     {
       "Ticket": "Tot*",
-      "Weekday": "$27",
-      "Weekend & Holiday": "$30"
+      "Weekday": "$29",
+      "Weekend & Holiday": "$32"
     },
     {
       "Ticket": "Night*",
@@ -22,13 +22,13 @@
     },
     {
       "Rental": "Ski/Board",
-      "Weekday": "$48",
-      "Weekend & Holiday": "$53"
+      "Weekday": "$50",
+      "Weekend & Holiday": "$55"
     },
     {
       "Rental": "Tot* Ski/Board",
-      "Weekday": "$38",
-      "Weekend & Holiday": "$40"
+      "Weekday": "$40",
+      "Weekend & Holiday": "$44"
     }
   ]
 }

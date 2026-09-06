@@ -1,7 +1,12 @@
-import requests
-from bs4 import BeautifulSoup
 import json
 import os
+
+import truststore
+
+truststore.inject_into_ssl()
+
+import requests
+from bs4 import BeautifulSoup
 
 URL = "https://www.skidagmar.com/alpine-rates/"
 HEADERS = {

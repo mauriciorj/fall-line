@@ -2,111 +2,111 @@
   {
     "difficulty": "Black Diamond",
     "name": "Sunnyside",
-    "status": "OPEN"
+    "status": "CLOSED"
   },
   {
     "difficulty": "Double Black Diamond",
     "name": "Mogul Alley",
-    "status": "OPEN AS A RUN"
+    "status": "CLOSED"
   },
   {
     "difficulty": "Blue Square",
     "name": "Main Street",
-    "status": "OPEN"
+    "status": "CLOSED"
   },
   {
     "difficulty": "Orange Oval",
     "name": "Banked Slalom Run",
-    "status": "OPEN"
+    "status": "CLOSED"
   },
   {
     "difficulty": "Green Circle",
     "name": "Short Cut",
-    "status": "OPEN"
+    "status": "CLOSED"
   },
   {
     "difficulty": "Green Circle",
     "name": "Collectors",
-    "status": "OPEN"
+    "status": "CLOSED"
   },
   {
     "difficulty": "Green Circle",
     "name": "One Way",
-    "status": "OPEN"
+    "status": "CLOSED"
   },
   {
     "difficulty": "Green Circle",
     "name": "Beginners Area",
-    "status": "OPEN"
+    "status": "CLOSED"
   },
   {
     "difficulty": "Orange Oval",
     "name": "Little Razors",
-    "status": "OPEN"
+    "status": "CLOSED"
   },
   {
     "difficulty": "Green Circle",
     "name": "Highway",
-    "status": "OPEN"
+    "status": "CLOSED"
   },
   {
     "difficulty": "",
     "name": "Snowcross",
-    "status": "OPEN"
+    "status": "CLOSED"
   },
   {
     "difficulty": "Orange Oval",
     "name": "Razors Edge Terrain Park",
-    "status": "OPEN"
+    "status": "CLOSED"
   },
   {
     "difficulty": "Black Diamond",
     "name": "Bail Out",
-    "status": "OPEN"
+    "status": "CLOSED"
   },
   {
     "difficulty": "Double Black Diamond",
     "name": "Rieky's Run",
-    "status": "OPEN (HAS MOGULS)"
+    "status": "CLOSED"
   },
   {
     "difficulty": "Black Diamond",
     "name": "Upper Chute",
-    "status": "OPEN"
+    "status": "CLOSED"
   },
   {
     "difficulty": "Black Diamond",
     "name": "Lower Chute",
-    "status": "OPEN"
+    "status": "CLOSED"
   },
   {
     "difficulty": "Blue Square",
     "name": "Valley Road",
-    "status": "OPEN"
+    "status": "CLOSED"
   },
   {
     "difficulty": "Black Diamond",
     "name": "Freeway",
-    "status": "OPEN"
+    "status": "CLOSED"
   },
   {
     "difficulty": "Blue Square",
     "name": "East Avenue",
-    "status": "OPEN"
+    "status": "CLOSED"
   },
   {
     "difficulty": "Blue Square",
     "name": "Bridge-Trail",
-    "status": "OPEN"
+    "status": "CLOSED"
   },
   {
     "difficulty": "Green Circle",
     "name": "Little Rogers",
-    "status": "OPEN"
+    "status": "CLOSED"
   },
   {
     "difficulty": "",
     "name": "Tube Park - reservation only",
-    "status": "OPEN"
+    "status": "CLOSED"
   }
 ]

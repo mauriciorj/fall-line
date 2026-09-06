@@ -1,32 +1,8 @@
 {
   "Hours of operation": [
     {
-      "Date of operation": "Monday March 9th",
-      "Hours of operation": "CLOSED"
-    },
-    {
-      "Date of operation": "Tuesday March 10th",
-      "Hours of operation": "CLOSED"
-    },
-    {
-      "Date of operation": "Wednesday March 11th",
-      "Hours of operation": "CLOSED"
-    },
-    {
-      "Date of operation": "Thursday March 12th",
-      "Hours of operation": "9:00am - 9:30pm"
-    },
-    {
-      "Date of operation": "Friday March 6th",
-      "Hours of operation": "9:00am - 9:30pm"
-    },
-    {
-      "Date of operation": "Saturday  March 7th",
-      "Hours of operation": "CLOSED"
-    },
-    {
-      "Date of operation": "Sunday March 8th",
-      "Hours of operation": "9:00am - 9:30pm"
+      "Date of operation": "",
+      "Hours of operation": "OPENING DATE TO BE DETERMINED"
     }
   ]
 }

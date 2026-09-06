@@ -1,44 +1,44 @@
 {
   "Winter Activities": {
     "SKI/SB": {
-      "Monday": "9:00am-4:00pm",
-      "Tuesday": "9:00am-9:00pm",
-      "Wednesday": "9:00am-9:00pm",
-      "Thursday": "9:00am-9:00pm",
-      "Friday": "9:00am-9:00pm",
-      "Saturday": "9:00am-9:00pm",
-      "Sunday": "9:00am-9:00pm"
+      "Monday": "Closed",
+      "Tuesday": "Closed",
+      "Wednesday": "Closed",
+      "Thursday": "Closed",
+      "Friday": "Closed",
+      "Saturday": "Closed",
+      "Sunday": "Closed"
     },
     "Tubing": {
-      "Monday": "9:00am-4:00pm",
-      "Tuesday": "9:00am-9:00pm",
-      "Wednesday": "9:00am-9:00pm",
-      "Thursday": "9:00am-9:00pm",
-      "Friday": "9:00am-9:00pm",
-      "Saturday": "9:00am-9:00pm",
-      "Sunday": "9:00am-9:00pm"
+      "Monday": "Closed",
+      "Tuesday": "Closed",
+      "Wednesday": "Closed",
+      "Thursday": "Closed",
+      "Friday": "Closed",
+      "Saturday": "Closed",
+      "Sunday": "Closed"
     },
     "Zipline": {
       "Monday": "Closed",
       "Tuesday": "Closed",
       "Wednesday": "Closed",
       "Thursday": "Closed",
-      "Friday": "4:00pm-9:00pm",
-      "Saturday": "11:00am-7:00pm",
-      "Sunday": "11:00am-7:00pm"
+      "Friday": "Closed",
+      "Saturday": "Closed",
+      "Sunday": "Closed"
     },
     "Snowshoeing": {
-      "Monday": "9:00am-4:00pm",
-      "Tuesday": "9:00am-4:00pm",
-      "Wednesday": "9:00am-4:00pm",
-      "Thursday": "9:00am-4:00pm",
-      "Friday": "9:00am-4:00pm",
-      "Saturday": "9:00am-4:00pm",
-      "Sunday": "9:00am-4:00pm"
+      "Monday": "Closed",
+      "Tuesday": "Closed",
+      "Wednesday": "Closed",
+      "Thursday": "Closed",
+      "Friday": "Closed",
+      "Saturday": "Closed",
+      "Sunday": "Closed"
     }
   },
   "Information Services": {
-    "Monday": "8:30AM - 4:00PM",
-    "Tuesday - Sunday": "8:30AM - 9:00PM"
+    "Monday - Thursday": "9:00AM - 4:00PM",
+    "Friday - Sunday": "Closed"
   }
 }

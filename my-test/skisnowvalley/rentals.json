@@ -46,17 +46,17 @@
     "items": [
       {
         "name": "Winter Pants",
-        "price": "$22",
+        "price": "$26",
         "description": ""
       },
       {
         "name": "Winter Jacket",
-        "price": "$22",
+        "price": "$26",
         "description": ""
       },
       {
         "name": "Winter Jacket & Pant Combo",
-        "price": "$39",
+        "price": "$46",
         "description": ""
       }
     ]
@@ -66,12 +66,12 @@
     "items": [
       {
         "name": "Hourly High Performance Ski or Snowboard",
-        "price": "$15",
+        "price": "$16",
         "description": ""
       },
       {
         "name": "6HR High Performance Ski or Snowboard",
-        "price": "$60",
+        "price": "$65",
         "description": ""
       }
     ]
@@ -121,7 +121,7 @@
       },
       {
         "name": "Helmet",
-        "price": "$16",
+        "price": "$17",
         "description": ""
       }
     ]
