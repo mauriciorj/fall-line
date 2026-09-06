@@ -3,13 +3,25 @@ Glen Eden Lift Rates Crawler
 Scrapes lift ticket rates from https://gleneden.on.ca/plan-your-visit/
 """
 
-import requests
-from bs4 import BeautifulSoup
+import json
+import os
+import re
+import sys
+import time
 from dataclasses import dataclass
 from typing import Optional
-import json
-import re
-import os
+
+import truststore
+
+truststore.inject_into_ssl()
+
+import requests
+from bs4 import BeautifulSoup
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+from convex_client import push_resort_rates
+from dtos import to_rates_dto
 
 
 @dataclass
@@ -20,6 +32,11 @@ class LiftTicketRate:
     peak_gate: Optional[str]
     off_peak_online: Optional[str]
     off_peak_gate: Optional[str]
+
+
+RESORT_ID = "glen-eden"
+RESORT_NAME = "Glen Eden"
+SOURCE_URL = "https://gleneden.on.ca/plan-your-visit/"
 
 
 def fetch_page(url: str) -> str:
@@ -123,6 +140,15 @@ if __name__ == "__main__":
         with open(output_file, "w", encoding="utf-8") as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
         print(f"Saved to {output_file}")
+        result = push_resort_rates(
+            RESORT_ID,
+            RESORT_NAME,
+            SOURCE_URL,
+            to_rates_dto(data),
+            fetched_at_ms=int(time.time() * 1000),
+        )
+        if result is not None:
+            print("Pushed to Convex:", result)
     except requests.RequestException as e:
         print(f"Error fetching page: {e}")
     except Exception as e:

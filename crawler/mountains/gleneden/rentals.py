@@ -3,11 +3,27 @@ Glen Eden Rentals Crawler
 Scrapes rental rates from https://gleneden.on.ca/plan-your-visit/
 """
 
+import json
+import os
+import re
+import sys
+import time
+
+import truststore
+
+truststore.inject_into_ssl()
+
 import requests
 from bs4 import BeautifulSoup
-import json
-import re
-import os
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+from convex_client import push_resort_rentals
+from dtos import to_rentals_dto
+
+RESORT_ID = "glen-eden"
+RESORT_NAME = "Glen Eden"
+SOURCE_URL = "https://gleneden.on.ca/plan-your-visit/"
 
 
 def fetch_page(url: str) -> str:
@@ -104,6 +120,15 @@ if __name__ == "__main__":
         with open(output_file, "w", encoding="utf-8") as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
         print(f"Saved to {output_file}")
+        result = push_resort_rentals(
+            RESORT_ID,
+            RESORT_NAME,
+            SOURCE_URL,
+            to_rentals_dto(data),
+            fetched_at_ms=int(time.time() * 1000),
+        )
+        if result is not None:
+            print("Pushed to Convex:", result)
     except requests.RequestException as e:
         print(f"Error fetching page: {e}")
     except Exception as e:
