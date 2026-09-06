@@ -23,6 +23,11 @@ const ResortDetail = () => {
   );
   const resort = toResort(dbResort);
 
+  console.log("")
+  console.log("dbResort => ", dbResort)
+  console.log("resort => ", resort)
+  console.log("")
+
   if (dbResort === undefined) {
     return (
       <div className="min-h-screen bg-background flex items-center justify-center">

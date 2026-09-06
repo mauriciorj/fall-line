@@ -1,6 +1,6 @@
 import { internalMutation, query } from "./_generated/server";
 import { v } from "convex/values";
-import { resortSeedData } from "./resortSeed";
+import { resortSeedData, trackConditionsSeed } from "./resortSeed";
 
 export const list = query({
   args: {},
@@ -28,6 +28,10 @@ export const seed = internalMutation({
     const ids = [];
 
     for (const resort of resortSeedData) {
+      const seedRecord = {
+        ...resort,
+        trackConditions: trackConditionsSeed[resort.id] ?? [],
+      };
       const existingById = await ctx.db
         .query("resort")
         .withIndex("by_resort_id", (q) => q.eq("id", resort.id))
@@ -40,10 +44,10 @@ export const seed = internalMutation({
           .first());
 
       if (existing) {
-        await ctx.db.replace(existing._id, resort);
+        await ctx.db.replace(existing._id, seedRecord);
         ids.push(existing._id);
       } else {
-        ids.push(await ctx.db.insert("resort", resort));
+        ids.push(await ctx.db.insert("resort", seedRecord));
       }
     }
 

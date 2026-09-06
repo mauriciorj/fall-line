@@ -394,3 +394,66 @@ export const resortSeedData = [
     runs: { black: 0, blue: 0, doubleBlack: 0, freeStyle: 27, green: 27 },
   },
 ] as const;
+
+type TrackCondition = {
+  name: string;
+  condition: string;
+  difficulty: string;
+};
+
+const tracks = (entries: Array<[string, string]>, condition = "open") =>
+  entries.map(([name, difficulty]) => ({ name, condition, difficulty }));
+
+export const trackConditionsSeed: Record<string, TrackCondition[]> = {
+  "lakeridge-ski-resort": tracks([
+    ["Sunnyside", "black"], ["Mogul Alley", "double-black"], ["Banked Slalom Run", "free-style"],
+    ["Short Cut", "green"], ["Collectors", "green"], ["One Way", "green"], ["Beginners Area", "green"],
+    ["Little Razors", "free-style"], ["Highway", "green"], ["Razors Edge Terrain Park", "free-style"],
+    ["Bail Out", "black"], ["Rieky's Run", "double-black"], ["Upper Chute", "black"], ["Lower Chute", "black"],
+    ["Valley Road", "blue"], ["Freeway", "black"], ["East Avenue", "blue"], ["Bridge-Trail", "blue"], ["Little Rogers", "green"],
+  ]),
+  "dagmar-ski-resort": tracks([
+    ["Park View", "green"], ["The Chute", "blue"], ["Little Momma", "green"], ["Pony", "green"],
+    ["Rendez Vous", "blue"], ["Bomber", "black"], ["Upper Lovers Lane", "green"], ["Lower Lovers Lane", "green"],
+    ["Club House", "blue"], ["Favourite", "green"], ["Alleyway", "blue"], ["Elbow", "blue"], ["The Dagger", "double-black"], ["The Glades", "double-black"],
+  ]),
+  brimacombe: tracks([
+    ["Park Avenue", "green"], ["Pete’s Elbow", "green"], ["Snow Bowl", "green"], ["Standard", "blue"], ["Bambi", "green"],
+    ["Ladies Downhill", "blue"], ["Ben’s Bump", "black"], ["Bowl", "black"], ["Tower Run", "black"], ["Timberline", "black"],
+    ["Flyer", "blue"], ["Cowpath", "green"], ["Kid’s Stuff", "green"], ["Club House Run", "blue"], ["West Ridge", "black"],
+    ["Rutherford’s Cut", "black"], ["Richards’ Landing", "black"], ["Challenger", "black"], ["Whistler", "blue"], ["Sunny Side", "blue"],
+    ["Nice and Easy", "green"], ["Farmer’s Field", "green"],
+  ]),
+  "snow-valley-ski-resort": tracks([
+    ["Garfield", "green"], ["Snoopy", "green"], ["Trudys Way", "blue"], ["Pennys", "black"], ["Schuss", "black"],
+    ["Highland Trail", "green"], ["Family", "green"], ["Racer", "black"], ["Hard Knox", "black"], ["Front", "blue"],
+    ["Whistler", "blue"], ["Recken Run", "green"], ["Vertigo", "double-black"], ["Huxtable", "blue"], ["Oh Chute", "black"], ["Kidz Village", "green"],
+  ]),
+  "horseshoe-valley-resort": tracks([
+    ["Ponyback", "green"], ["Pinto", "green"], ["Hungry Hollow", "green"], ["Roundup", "green"], ["Donkey Serenade", "green"],
+    ["Pony Express", "green"], ["Canter", "green"], ["Mule Train", "green"], ["Steeplechase", "blue"], ["Flying Mare", "blue"],
+    ["Pony Tail", "blue"], ["Ramey's Return", "blue"], ["Saddleback", "blue"], ["Stallion Slide", "blue"], ["Duster", "blue"],
+    ["Nightmare Ride", "blue"], ["Stampede", "blue"], ["The Wave", "blue"], ["Shaggy Mane", "blue"], ["The Zipper", "blue"],
+    ["Bushwacker", "blue"], ["Bronco", "blue"], ["Rodeo", "blue"], ["Race Hill", "black"], ["Horsefeathers", "black"],
+    ["Horsefly Hop", "free-style"], ["Bullpen", "free-style"],
+  ]),
+  "glen-eden": tracks([
+    ["Escarpment Run", "green"], ["Night Hawk", "green"], ["Butternut", "blue"], ["Falcon", "blue"], ["Sidewinder", "blue"],
+    ["Twister", "blue"], ["Boomerang", "black"], ["Challenger", "black"], ["Quarry Run", "free-style"], ["Scimitar", "free-style"],
+    ["Comet", "green"], ["Milky Way", "green"], ["Little Dipper", "free-style"], ["Shooting Star", "free-style"], ["Bumble Bee", "green"],
+    ["Grasshopper", "green"], ["Monarch", "green"],
+  ]),
+  "chicopee": tracks([
+    ["Discover", "green"], ["Adventure", "green"], ["Bridge", "blue"], ["Freedom", "blue"], ["Mount St. Louis Moonstone Way", "green"],
+    ["Wishbone", "blue"], ["Easy Rider", "black"], ["North", "blue"], ["Mic Mac", "black"], ["Chicane", "black"],
+    ["Roughshod", "black"], ["Applebowl", "black"], ["Racer's Alley", "blue"],
+  ]),
+  "caledon-ski-club": tracks([
+    ["Alley Way", "green"], ["Boughner's Boogie", "green"], ["Snow Park", "green"], ["Dodds' Dip", "green"], ["Eaton's Annex", "green"],
+    ["Harold's Headstander", "green"], ["Holden's Hwy", "green"], ["Kendall's Kandihar", "green"], ["Kenne's Kicker", "green"], ["Kids' Buel", "green"],
+    ["Knight Flight", "green"], ["Larry's Line", "green"], ["Lower Road", "green"], ["MacKenzie Trail", "green"], ["Moonbeam", "green"],
+    ["O.K. Ross Run", "green"], ["Philpott's Folly", "green"], ["Porter's Pipeline", "green"], ["Quick Link", "green"], ["Roadrunner", "green"],
+    ["Sidewinder", "green"], ["Snowy's Glade", "green"], ["Soules' Skyway", "green"], ["The Yeighway Highway", "green"], ["West Hill", "green"],
+    ["Wortley's Wiggle", "green"], ["Zoe's Line", "green"],
+  ]).map((track) => track.name === "Kids' Buel" ? { ...track, condition: "close" } : track),
+};
