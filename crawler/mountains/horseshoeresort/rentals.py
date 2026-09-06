@@ -1,6 +1,8 @@
 import json
 import re
 import os
+import sys
+import time
 
 import truststore
 
@@ -9,13 +11,22 @@ truststore.inject_into_ssl()
 import requests
 from bs4 import BeautifulSoup
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+from convex_client import push_resort_rentals
+from dtos import to_rentals_dto
+
+RESORT_ID = "horseshoe-valley-resort"
+RESORT_NAME = "Horseshoe Valley Resort"
+SOURCE_URL = "https://horseshoeresort.com/ski/lift-ticket-and-rentals-pricing/"
+
 
 def get_rentals():
     """
     Crawl Horseshoe Resort's rentals pricing page.
     Returns a dictionary with rental prices.
     """
-    url = "https://horseshoeresort.com/ski/lift-ticket-and-rentals-pricing/"
+    url = SOURCE_URL
     
     request_headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
@@ -83,6 +94,17 @@ def main():
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(rentals, f, indent=2, ensure_ascii=False)
     print(f"Saved to {output_file}")
+
+    result = push_resort_rentals(
+        RESORT_ID,
+        RESORT_NAME,
+        SOURCE_URL,
+        to_rentals_dto(rentals),
+        fetched_at_ms=int(time.time() * 1000),
+    )
+    if result is not None:
+        print("Pushed to Convex:", result)
+
     return rentals
 
 

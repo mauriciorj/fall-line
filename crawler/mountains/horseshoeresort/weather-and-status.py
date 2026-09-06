@@ -1,6 +1,8 @@
 import json
 import re
 import os
+import sys
+import time
 
 import truststore
 
@@ -8,6 +10,15 @@ truststore.inject_into_ssl()
 
 import requests
 from bs4 import BeautifulSoup
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+from convex_client import push_weather_and_status
+from dtos import to_weather_dto
+
+URL = "https://horseshoeresort.com/ski-report-trails/"
+RESORT_ID = "horseshoe-valley-resort"
+RESORT_NAME = "Horseshoe Valley Resort"
 
 
 def get_trail_status():
@@ -19,7 +30,7 @@ def get_trail_status():
     - Cross-country trails status
     - Tube park status
     """
-    url = "https://horseshoeresort.com/ski-report-trails/"
+    url = URL
     
     request_headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
@@ -180,6 +191,17 @@ def main():
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(status, f, indent=2, ensure_ascii=False)
     print(f"Saved to {output_file}")
+
+    result = push_weather_and_status(
+        RESORT_ID,
+        RESORT_NAME,
+        URL,
+        to_weather_dto(status),
+        fetched_at_ms=int(time.time() * 1000),
+    )
+    if result is not None:
+        print("Pushed to Convex:", result)
+
     return status
 
 
