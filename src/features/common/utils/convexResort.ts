@@ -38,7 +38,7 @@ export function toResort(value: unknown): Resort | null {
     id: document.id,
     name: document.name,
     address: document.address ?? document.location?.address ?? "",
-    coordinates: document.coordinates ?? { lat: 0, lng: 0 },
+    coordinates: document.coordinates,
     dayTicketPrice: document.dayTicketPrice ?? document.rate ?? 0,
     email: document.email ?? "",
     googleMapsUrl: document.googleMapsUrl ?? "",

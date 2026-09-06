@@ -91,17 +91,35 @@ export const resortRentalsFields = {
 
 export const resortFields = {
   id: v.optional(v.string()),
+  source: v.optional(v.string()),
+  sourceId: v.optional(v.string()),
   name: v.string(),
-  location: v.object({
+  location: v.optional(v.object({
     address: v.string(),
     city: v.string(),
     provinceOrState: v.string(),
     country: v.string(),
     postalCode: v.string(),
-  }),
-  rate: v.number(),
-  contact: v.string(),
-  website: v.string(),
+  })),
+  rate: v.optional(v.number()),
+  contact: v.optional(v.string()),
+  website: v.optional(v.string()),
+  directoryData: v.optional(v.object({
+    locationTrail: v.array(v.string()),
+    url: v.optional(v.string()),
+    rating: v.optional(v.number()),
+    altitudeDifference: v.optional(v.string()),
+    altitudeBase: v.optional(v.string()),
+    altitudeTop: v.optional(v.string()),
+    slopesTotal: v.optional(v.string()),
+    slopesEasy: v.optional(v.string()),
+    slopesIntermediate: v.optional(v.string()),
+    slopesDifficult: v.optional(v.string()),
+    skiPassPrice: v.optional(v.string()),
+    imageUrl: v.optional(v.string()),
+    fetchedAt: v.number(),
+    rawData: v.optional(v.any()),
+  })),
   address: v.optional(v.string()),
   coordinates: v.optional(
     v.object({

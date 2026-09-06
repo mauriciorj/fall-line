@@ -17,6 +17,8 @@ const TerrainSection = ({ resort }: { resort: Resort }) => {
     freeStyleTracks,
     freeStyleTracksOpen,
   } = TrackStats({ resort });
+  const trackPercentage = (count: number) =>
+    totalTracks > 0 ? Math.round((count / totalTracks) * 100) : 0;
 
   return (
     <section className="space-y-4">
@@ -44,7 +46,7 @@ const TerrainSection = ({ resort }: { resort: Resort }) => {
               )}
             </p>
             <p className="text-xs text-muted-foreground mt-1">
-              {Math.round((resort.runs.green / totalTracks) * 100)}% of terrain
+              {trackPercentage(resort.runs.green)}% of terrain
             </p>
           </div>
           <div className="text-center">
@@ -64,7 +66,7 @@ const TerrainSection = ({ resort }: { resort: Resort }) => {
               )}
             </p>
             <p className="text-xs text-muted-foreground mt-1">
-              {Math.round((resort.runs.blue / totalTracks) * 100)}% of terrain
+              {trackPercentage(resort.runs.blue)}% of terrain
             </p>
           </div>
           <div className="text-center">
@@ -84,7 +86,7 @@ const TerrainSection = ({ resort }: { resort: Resort }) => {
               )}
             </p>
             <p className="text-xs text-muted-foreground mt-1">
-              {Math.round((resort.runs.black / totalTracks) * 100)}% of terrain
+              {trackPercentage(resort.runs.black)}% of terrain
             </p>
           </div>
           <div className="text-center">
@@ -106,8 +108,7 @@ const TerrainSection = ({ resort }: { resort: Resort }) => {
               )}
             </p>
             <p className="text-xs text-muted-foreground mt-1">
-              {Math.round((resort.runs.doubleBlack / totalTracks) * 100)}% of
-              terrain
+              {trackPercentage(resort.runs.doubleBlack)}% of terrain
             </p>
           </div>
           <div className="text-center">
@@ -127,10 +128,7 @@ const TerrainSection = ({ resort }: { resort: Resort }) => {
               )}
             </p>
             <p className="text-xs text-muted-foreground mt-1">
-              {resort.runs.freeStyle
-                ? Math.round((resort.runs.freeStyle / totalTracks) * 100)
-                : 0}
-              % of terrain
+              {trackPercentage(resort.runs.freeStyle || 0)}% of terrain
             </p>
           </div>
         </div>

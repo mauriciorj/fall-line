@@ -193,3 +193,21 @@ def push_weather_and_status(
         args["fetchedAt"] = fetched_at_ms
 
     return _push(function_path, args)
+
+
+def push_ski_resorts(
+    records: list[dict[str, Any]],
+    *,
+    function_path: str = "resorts:saveMany",
+    batch_size: int = 100,
+) -> Any:
+    results = []
+    for start in range(0, len(records), batch_size):
+        batch = records[start : start + batch_size]
+        result = _push(function_path, {"resorts": batch})
+        if result is None:
+            return None
+        results.extend(result)
+        print(f"Pushed {min(start + batch_size, len(records))}/{len(records)} records to Convex")
+
+    return results

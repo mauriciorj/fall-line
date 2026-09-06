@@ -10,6 +10,37 @@ export const list = query({
   },
 });
 
+export const saveMany = internalMutation({
+  args: {
+    resorts: v.array(v.any()),
+  },
+  returns: v.array(v.id("resort")),
+  handler: async (ctx, args) => {
+    const ids = [];
+
+    for (const resort of args.resorts) {
+      const existing = await ctx.db
+        .query("resort")
+        .withIndex("by_resort_id", (q) => q.eq("id", resort.id))
+        .unique();
+      const document = {
+        ...resort,
+        source: resort.source ?? "skiresort.info",
+        sourceId: resort.sourceId ?? resort.id,
+      };
+
+      if (existing) {
+        await ctx.db.replace(existing._id, document);
+        ids.push(existing._id);
+      } else {
+        ids.push(await ctx.db.insert("resort", document));
+      }
+    }
+
+    return ids;
+  },
+});
+
 export const getById = query({
   args: { id: v.string() },
   returns: v.any(),

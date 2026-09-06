@@ -1,8 +1,20 @@
-import requests
-from bs4 import BeautifulSoup
 import json
 import os
+import sys
 import time
+
+import truststore
+
+truststore.inject_into_ssl()
+
+import requests
+from bs4 import BeautifulSoup
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+from convex_client import push_ski_resorts
+from dto import to_convex_records
+
 
 def fetch_ski_resorts(url="https://www.skiresort.info/ski-resorts/", debug=False):
     """Fetch ski resort data from a single page of skiresort.info"""
@@ -191,7 +203,7 @@ def extract_resort_info(panel):
     return resort if resort.get("name") else None
 
 
-def save_to_json(data, filename="ski_resorts.json"):
+def save_to_json(data, filename="ski-resorts-list.json"):
     """Save the scraped data to a JSON file"""
     
     script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -212,8 +224,8 @@ def main():
                         help="Number of pages to fetch (default: 1, use 0 for all pages)")
     parser.add_argument("--delay", type=float, default=1.0,
                         help="Delay between page requests in seconds (default: 1.0)")
-    parser.add_argument("--output", type=str, default="ski_resorts.json",
-                        help="Output JSON filename (default: ski_resorts.json)")
+    parser.add_argument("--output", type=str, default="ski-resorts-list.json",
+                        help="Output JSON filename (default: ski-resorts-list.json)")
     args = parser.parse_args()
     
     print("Fetching ski resort data from skiresort.info...")
@@ -231,10 +243,13 @@ def main():
         if resorts:
             print(f"\nTotal resorts collected: {len(resorts)}")
             filepath = save_to_json(resorts, args.output)
+            push_result = push_ski_resorts(to_convex_records(resorts))
+            if push_result is not None:
+                print(f"Pushed {len(resorts)} records to Convex")
             
             # Print sample of first resort
             print("\nSample resort data:")
-            print(json.dumps(resorts[0], indent=2, ensure_ascii=False))
+            print(json.dumps(resorts[0], indent=2, ensure_ascii=True))
         else:
             print("No resorts found. The page structure may have changed.")
             print("Please check the HTML structure and update the selectors.")

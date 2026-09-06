@@ -9,11 +9,13 @@ const TrackStats = ({ resort }: { resort: Resort }) => {
   const totalTracks =
     green + blue + black + (doubleBlack || 0) + (freeStyle || 0);
 
-  const greenTracksPercent = (green / totalTracks) * 100;
-  const blueTracksPercent = (blue / totalTracks) * 100;
-  const blackTracksPercent = (black / totalTracks) * 100;
-  const doubleBlackTracksPercent = ((doubleBlack || 0) / totalTracks) * 100;
-  const freeStyleTracksPercent = ((freeStyle || 0) / totalTracks) * 100;
+  const percentage = (count: number) =>
+    totalTracks > 0 ? (count / totalTracks) * 100 : 0;
+  const greenTracksPercent = percentage(green);
+  const blueTracksPercent = percentage(blue);
+  const blackTracksPercent = percentage(black);
+  const doubleBlackTracksPercent = percentage(doubleBlack || 0);
+  const freeStyleTracksPercent = percentage(freeStyle || 0);
 
   const greenTracks = trackConditions
     ? trackConditions.filter((item) => item.difficulty === "green")?.length

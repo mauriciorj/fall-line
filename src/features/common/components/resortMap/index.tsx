@@ -59,7 +59,7 @@ const ResortMap = ({
       zoom={8}
       options={options}
     >
-      {resorts.map((resort) => (
+      {resorts.filter((resort) => resort.coordinates).map((resort) => (
         <MarkerF
           icon={{
             path: "M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z",
@@ -77,7 +77,7 @@ const ResortMap = ({
           onClick={() => setSelectedResort(resort.id)}
           onMouseOver={() => setHoveredResort(resort.id)}
           onMouseOut={() => setHoveredResort(null)}
-          position={resort.coordinates}
+          position={resort.coordinates!}
           label={{
             text: resort.name,
             color: "#333",
