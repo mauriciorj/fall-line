@@ -5,6 +5,8 @@ Scrapes lift ticket rates from https://caledonskiclub.com/hours-lift-prices
 
 import json
 import os
+import sys
+import time
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
@@ -13,7 +15,14 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+from convex_client import push_resort_rates
+from dtos import to_rates_dto
+
 URL = "https://caledonskiclub.com/hours-lift-prices"
+RESORT_ID = "caledon-ski-club"
+RESORT_NAME = "Caledon Ski Club"
 
 
 def get_driver():
@@ -135,6 +144,16 @@ def main():
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(rates, f, indent=2, ensure_ascii=False)
     print(f"Saved to {output_file}")
+
+    result = push_resort_rates(
+        RESORT_ID,
+        RESORT_NAME,
+        URL,
+        to_rates_dto(rates),
+        fetched_at_ms=int(time.time() * 1000),
+    )
+    if result is not None:
+        print("Pushed to Convex:", result)
 
 
 if __name__ == "__main__":

@@ -2,6 +2,7 @@ import json
 import time
 import re
 import os
+import sys
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
@@ -9,13 +10,22 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+from convex_client import push_weather_and_status
+from dtos import to_weather_dto
+
+URL = "https://caledonskiclub.com/private-lessons"
+RESORT_ID = "caledon-ski-club"
+RESORT_NAME = "Caledon Ski Club"
+
 
 def get_trail_status():
     """
     Crawl Caledon Ski Club's private-lessons page to extract Snow Conditions and Trail Status.
     Uses Selenium because the page is rendered with JavaScript.
     """
-    url = "https://caledonskiclub.com/private-lessons"
+    url = URL
     
     options = Options()
     options.add_argument("--headless")
@@ -170,6 +180,17 @@ def main():
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(status, f, indent=2, ensure_ascii=False)
     print(f"Saved to {output_file}")
+
+    result = push_weather_and_status(
+        RESORT_ID,
+        RESORT_NAME,
+        URL,
+        to_weather_dto(status),
+        fetched_at_ms=int(time.time() * 1000),
+    )
+    if result is not None:
+        print("Pushed to Convex:", result)
+
     return status
 
 
