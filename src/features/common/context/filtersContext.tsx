@@ -1,8 +1,10 @@
 "use client";
 
 import { createContext, useContext, useState, useMemo, ReactNode } from "react";
+import { useQuery } from "convex/react";
+import { api } from "@/convex/_generated/api";
 import { FilterState } from "@/src/features/common/components/filter";
-import { resorts as allResorts } from "@/data/resorts";
+import { toResort } from "@/utils/convexResort";
 import { Resort } from "@/types/resort";
 
 interface FiltersContextType {
@@ -13,6 +15,7 @@ interface FiltersContextType {
   selectedResort: string | null;
   setSelectedResort: (id: string | null) => void;
   filteredResorts: Resort[];
+  isLoading: boolean;
   isFiltersActive: boolean;
   handleClearFilters: () => void;
 }
@@ -35,6 +38,12 @@ export function FiltersProvider({ children }: { children: ReactNode }) {
       tubbing: false,
     },
   });
+
+  const dbResorts = useQuery(api.resorts.list);
+  const allResorts = useMemo(
+    () => (dbResorts ?? []).map(toResort).filter((resort): resort is Resort => resort !== null),
+    [dbResorts],
+  );
 
   const filteredResorts = useMemo(() => {
     let result = allResorts.filter((resort) => {
@@ -60,8 +69,9 @@ export function FiltersProvider({ children }: { children: ReactNode }) {
     });
 
     return result;
-  }, [filters]);
+  }, [allResorts, filters]);
 
+  const isLoading = dbResorts === undefined;
   const isFiltersActive =
     filters.distanceRange[0] > 0 ||
     filters.distanceRange[1] < 250 ||
@@ -90,6 +100,7 @@ export function FiltersProvider({ children }: { children: ReactNode }) {
     selectedResort,
     setSelectedResort,
     filteredResorts,
+    isLoading,
     isFiltersActive,
     handleClearFilters,
   };

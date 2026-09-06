@@ -34,7 +34,7 @@ export interface Resort {
     saturday: string;
   };
   id: string;
-  image: StaticImageData;
+  image: StaticImageData | string;
   lessonsPrice: number;
   name: string;
   phone: string;

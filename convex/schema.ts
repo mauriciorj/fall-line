@@ -90,6 +90,7 @@ export const resortRentalsFields = {
 };
 
 export const resortFields = {
+  id: v.optional(v.string()),
   name: v.string(),
   location: v.object({
     address: v.string(),
@@ -101,10 +102,76 @@ export const resortFields = {
   rate: v.number(),
   contact: v.string(),
   website: v.string(),
+  address: v.optional(v.string()),
+  coordinates: v.optional(
+    v.object({
+      lat: v.number(),
+      lng: v.number(),
+    }),
+  ),
+  crawlerUrls: v.optional(
+    v.object({
+      dayTicketPriceUrl: v.optional(v.string()),
+      equipmentRentalsUrl: v.optional(v.string()),
+      hoursOfOperationUrl: v.optional(v.string()),
+      lessonsUrl: v.optional(v.string()),
+      trackConditionsUrl: v.optional(v.string()),
+      tubbing: v.optional(v.string()),
+    }),
+  ),
+  dayTicketPrice: v.optional(v.number()),
+  email: v.optional(v.string()),
+  googleMapsUrl: v.optional(v.string()),
+  hasAccommodations: v.optional(v.boolean()),
+  hasCrossCountry: v.optional(v.boolean()),
+  hasLessons: v.optional(v.boolean()),
+  hasSnowshoeing: v.optional(v.boolean()),
+  hasSpa: v.optional(v.boolean()),
+  hasTubing: v.optional(v.boolean()),
+  hasZipline: v.optional(v.boolean()),
+  hoursOfOperation: v.optional(
+    v.object({
+      sunday: v.optional(v.string()),
+      monday: v.optional(v.string()),
+      tuesday: v.optional(v.string()),
+      wednesday: v.optional(v.string()),
+      thursday: v.optional(v.string()),
+      friday: v.optional(v.string()),
+      saturday: v.optional(v.string()),
+    }),
+  ),
+  image: v.optional(v.string()),
+  lessonsPrice: v.optional(v.number()),
+  phone: v.optional(v.string()),
+  rating: v.optional(v.number()),
+  skiRentalPrice: v.optional(v.number()),
+  snowBoardRentalPrice: v.optional(v.number()),
+  runs: v.optional(
+    v.object({
+      black: v.optional(v.number()),
+      blue: v.optional(v.number()),
+      doubleBlack: v.optional(v.number()),
+      freeStyle: v.optional(v.number()),
+      green: v.optional(v.number()),
+    }),
+  ),
+  ticketUrl: v.optional(v.string()),
+  tollFree: v.optional(v.string()),
+  trackConditions: v.optional(
+    v.array(
+      v.object({
+        name: v.string(),
+        condition: v.string(),
+        difficulty: v.string(),
+      }),
+    ),
+  ),
+  trailMap: v.optional(v.string()),
+  tubbingPrice: v.optional(v.number()),
 };
 
 export default defineSchema({
-  resort: defineTable(resortFields),
+  resort: defineTable(resortFields).index("by_resort_id", ["id"]),
 
   weatherAndStatus: defineTable({
     resortId: v.string(),

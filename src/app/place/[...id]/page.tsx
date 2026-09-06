@@ -2,9 +2,11 @@
 
 import Image from "next/image";
 import { useRouter, useParams } from "next/navigation";
+import { useQuery } from "convex/react";
 import { ArrowLeft, Ticket } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { resorts } from "@/data/resorts";
+import { api } from "@/convex/_generated/api";
+import { toResort } from "@/utils/convexResort";
 import InfoSection from "@/src/features/place/component/infoSection";
 import LocationSection from "@/src/features/place/component/locationSection";
 import PricingSection from "@/src/features/place/component/pricingSection";
@@ -14,8 +16,20 @@ import TracksSection from "@/place/component/tracksSection";
 const ResortDetail = () => {
   const { id } = useParams();
   const router = useRouter();
+  const resortId = Array.isArray(id) ? id[0] : id;
+  const dbResort = useQuery(
+    api.resorts.getById,
+    resortId ? { id: resortId } : "skip",
+  );
+  const resort = toResort(dbResort);
 
-  const resort = resorts.find((r) => r.id === id?.[0]);
+  if (dbResort === undefined) {
+    return (
+      <div className="min-h-screen bg-background flex items-center justify-center">
+        <p className="text-muted-foreground">Loading resort...</p>
+      </div>
+    );
+  }
 
   if (!resort) {
     return (

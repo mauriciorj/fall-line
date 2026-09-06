@@ -15,6 +15,7 @@ const Index = () => {
 
   const {
     filteredResorts,
+    isLoading,
     hoveredResort,
     selectedResort,
     setHoveredResort,
@@ -41,6 +42,7 @@ const Index = () => {
                 hoveredResort={hoveredResort}
                 resorts={filteredResorts}
                 selectedResort={selectedResort}
+                isLoading={isLoading}
                 setHoveredResort={setHoveredResort}
               />
             </div>
@@ -53,6 +55,7 @@ const Index = () => {
               hoveredResort={hoveredResort}
               resorts={filteredResorts}
               selectedResort={selectedResort}
+              isLoading={isLoading}
               setHoveredResort={setHoveredResort}
             />
           </section>

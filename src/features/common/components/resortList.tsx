@@ -6,6 +6,7 @@ interface ResortListProps {
   hoveredResort: string | null;
   resorts: Resort[];
   selectedResort: string | null;
+  isLoading?: boolean;
   setHoveredResort: (id: string | null) => void;
 }
 
@@ -13,6 +14,7 @@ const ResortList = ({
   hoveredResort,
   resorts,
   selectedResort,
+  isLoading = false,
   setHoveredResort,
 }: ResortListProps) => {
   const itemRefs = useRef<Record<string, HTMLDivElement | null>>({});
@@ -25,6 +27,14 @@ const ResortList = ({
       });
     }
   }, [selectedResort]);
+
+  if (isLoading) {
+    return (
+      <div className="flex-1 flex items-center justify-center p-6">
+        <p className="text-muted-foreground text-sm">Loading resorts...</p>
+      </div>
+    );
+  }
 
   if (resorts.length === 0) {
     return (
