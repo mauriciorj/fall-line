@@ -1,5 +1,7 @@
 import json
 import os
+import sys
+import time
 
 import truststore
 
@@ -8,7 +10,14 @@ truststore.inject_into_ssl()
 import requests
 from bs4 import BeautifulSoup
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+from convex_client import push_resort_hours
+from dtos import to_hours_sections
+
 URL = "https://ski-lakeridge.com/skiing-snowboarding/hours-ticket-prices/"
+RESORT_ID = "lakeridge-ski-resort"
+RESORT_NAME = "Lakeridge Ski Resort"
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 }
@@ -66,6 +75,16 @@ def main():
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(result, f, indent=2, ensure_ascii=False)
     print(f"Saved to {output_file}")
+
+    push_result = push_resort_hours(
+        RESORT_ID,
+        RESORT_NAME,
+        URL,
+        to_hours_sections(result),
+        fetched_at_ms=int(time.time() * 1000),
+    )
+    if push_result is not None:
+        print("Pushed to Convex:", push_result)
 
 if __name__ == "__main__":
     main()
