@@ -11,7 +11,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # Allow importing the shared Convex client from the parent directory.
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 from convex_client import push_resort_hours
 
 

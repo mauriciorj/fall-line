@@ -9,6 +9,7 @@ setuptools
 python-dotenv
 psycopg2-binary
 requests
+truststore==0.10.4
 simple-term-menu
 Pillow
 chromedriver

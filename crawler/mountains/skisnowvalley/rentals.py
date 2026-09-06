@@ -10,7 +10,7 @@ truststore.inject_into_ssl()
 import requests
 from bs4 import BeautifulSoup
 
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 from convex_client import push_resort_rentals
 
 URL = "https://www.skisnowvalley.com/plan/ski-snowboard/equipment-rentals/"

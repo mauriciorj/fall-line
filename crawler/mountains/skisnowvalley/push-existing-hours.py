@@ -4,7 +4,7 @@ import sys
 import time
 
 # Allow importing the shared Convex client from the parent directory.
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 from convex_client import push_resort_hours
 
 RESORT_ID = "snow-valley-ski-resort"
