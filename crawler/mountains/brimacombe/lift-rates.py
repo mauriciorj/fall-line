@@ -1,12 +1,26 @@
-import requests
-from bs4 import BeautifulSoup
 import json
 import os
+import sys
+import time
+
+import truststore
+
+truststore.inject_into_ssl()
+
+import requests
+from bs4 import BeautifulSoup
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+from convex_client import push_resort_rates
+from dtos import to_rates_dto
 
 URL = "https://brimacombe.ca/plan-your-visit/lift-tickets/"
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 }
+RESORT_ID = "brimacombe"
+RESORT_NAME = "Brimacombe"
 
 
 def extract_table_data(table):
@@ -60,6 +74,16 @@ def main():
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(rates, f, indent=2, ensure_ascii=False)
     print(f"Saved to {output_file}")
+
+    result = push_resort_rates(
+        RESORT_ID,
+        RESORT_NAME,
+        URL,
+        to_rates_dto(rates),
+        fetched_at_ms=int(time.time() * 1000),
+    )
+    if result is not None:
+        print("Pushed to Convex:", result)
 
 
 if __name__ == "__main__":

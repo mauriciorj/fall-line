@@ -1,13 +1,27 @@
+import json
+import os
+import re
+import sys
+import time
+
+import truststore
+
+truststore.inject_into_ssl()
+
 import requests
 from bs4 import BeautifulSoup
-import json
-import re
-import os
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+from convex_client import push_resort_hours
+from dtos import to_hours_sections
 
 URL = "https://brimacombe.ca/contact-us/"
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 }
+RESORT_ID = "brimacombe"
+RESORT_NAME = "Brimacombe"
 
 DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 
@@ -19,13 +33,15 @@ def extract_hours(soup):
         return {}
 
     container = heading.find_parent("div")
-    p_tag = container.find("p")
-    if not p_tag:
+    paragraphs = container.find_all("p")
+    if not paragraphs:
         return {}
 
     # Split the <p> text by lines using get_text with \n separator
-    text = p_tag.get_text(separator="\n", strip=False)
-    lines = [line.strip() for line in text.split("\n") if line.strip()]
+    lines = []
+    for paragraph in paragraphs:
+        text = paragraph.get_text(separator="\n", strip=False)
+        lines.extend(line.strip() for line in text.split("\n") if line.strip())
 
     result = {}
     current_section = None
@@ -81,6 +97,16 @@ def main():
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(hours, f, indent=2, ensure_ascii=False)
     print(f"Saved to {output_file}")
+
+    result = push_resort_hours(
+        RESORT_ID,
+        RESORT_NAME,
+        URL,
+        to_hours_sections(hours),
+        fetched_at_ms=int(time.time() * 1000),
+    )
+    if result is not None:
+        print("Pushed to Convex:", result)
 
 
 if __name__ == "__main__":
