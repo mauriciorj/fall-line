@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { Mountain } from "lucide-react";
 import Filter from "@/components/filter";
 import LocationDropdown from "@/components/locationDropdown";
@@ -16,12 +17,16 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 bg-card border-b border-border">
       <div className="px-6 py-4 flex flex-row items-center justify-between">
-        <div className="flex items-center gap-2 text-primary">
+        <Link
+          href="/"
+          aria-label="Go to Ontario Ski Guide home"
+          className="flex items-center gap-2 text-primary"
+        >
           <Mountain className="w-10 h-10" />
           <span className="text-2xl pt-2 font-bold tracking-wide uppercase">
             {!isMobile && "Ontario Ski Guide"}
           </span>
-        </div>
+        </Link>
         {isMobile ? (
           <>
             <Filter
