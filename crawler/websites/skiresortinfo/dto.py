@@ -30,10 +30,12 @@ def to_convex_records(records: list[dict[str, Any]]) -> list[dict[str, Any]]:
             "rawData": record,
         }
         normalized = {
-            "id": f"{SOURCE.replace('.', '-')}-{source_id}",
             "source": SOURCE,
-            "sourceId": source_id,
+            "sourceId": f"{SOURCE.replace('.', '-')}-{source_id}",
             "name": record.get("name", ""),
+            "continent": location_trail[0] if len(location_trail) > 0 else None,
+            "country": location_trail[1] if len(location_trail) > 1 else None,
+            "region": location_trail[2] if len(location_trail) > 2 else None,
             "address": ", ".join(location_trail),
             "website": record.get("url"),
             "image": image_url,

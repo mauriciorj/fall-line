@@ -1,10 +1,11 @@
 import { Resort } from "@/types/resort";
 
 type DbResort = Partial<Resort> & {
-  id?: string;
-  location?: {
-    address?: string;
-  };
+  sourceId?: string;
+  source?: string;
+  continent?: string;
+  country?: string;
+  region?: string;
   rate?: number;
   contact?: string;
 };
@@ -31,13 +32,14 @@ export function toResort(value: unknown): Resort | null {
   if (!value || typeof value !== "object") return null;
 
   const document = value as DbResort;
-  if (!document.id || !document.name) return null;
+  if (!document.sourceId || !document.name) return null;
 
   return {
     ...document,
-    id: document.id,
+    sourceId: document.sourceId,
+    source: document.source,
     name: document.name,
-    address: document.address ?? document.location?.address ?? "",
+    address: document.address ?? "",
     coordinates: document.coordinates,
     dayTicketPrice: document.dayTicketPrice ?? document.rate ?? 0,
     email: document.email ?? "",

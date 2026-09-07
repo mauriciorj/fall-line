@@ -18,8 +18,8 @@ const ResortDetail = () => {
   const router = useRouter();
   const resortId = Array.isArray(id) ? id[0] : id;
   const dbResort = useQuery(
-    api.resorts.getById,
-    resortId ? { id: resortId } : "skip",
+    api.resorts.getBySourceId,
+    resortId ? { sourceId: resortId } : "skip",
   );
   const resort = toResort(dbResort);
 

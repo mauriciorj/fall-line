@@ -89,18 +89,13 @@ export const resortRentalsFields = {
   rentals: v.any(),
 };
 
-export const resortFields = {
-  id: v.optional(v.string()),
+export const resortsFields = {
   source: v.optional(v.string()),
   sourceId: v.optional(v.string()),
   name: v.string(),
-  location: v.optional(v.object({
-    address: v.string(),
-    city: v.string(),
-    provinceOrState: v.string(),
-    country: v.string(),
-    postalCode: v.string(),
-  })),
+  continent: v.optional(v.string()),
+  country: v.optional(v.string()),
+  region: v.optional(v.string()),
   rate: v.optional(v.number()),
   contact: v.optional(v.string()),
   website: v.optional(v.string()),
@@ -189,7 +184,7 @@ export const resortFields = {
 };
 
 export default defineSchema({
-  resort: defineTable(resortFields).index("by_resort_id", ["id"]),
+  resorts: defineTable(resortsFields).index("by_source_id", ["sourceId"]),
 
   weatherAndStatus: defineTable({
     resortId: v.string(),
