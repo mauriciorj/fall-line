@@ -14,6 +14,7 @@ import {
 import { useIsMobile } from "@/hooks/useMobile";
 import { SlidersHorizontal, X } from "lucide-react";
 import LocationDropdown from "../locationDropdown";
+import { LocationOption } from "@/types/location";
 
 import Toggle from "@/components/filter/toggle";
 
@@ -35,7 +36,9 @@ interface FilterProps {
   onChange: (filters: FilterState) => void;
   isActive: boolean;
   onClear: () => void;
-  setLocation: () => void;
+  locations: LocationOption[];
+  selectedLocation: LocationOption | null;
+  setLocation: (location: LocationOption) => void;
 }
 
 const Filter = ({
@@ -43,6 +46,8 @@ const Filter = ({
   onChange,
   isActive,
   onClear,
+  locations,
+  selectedLocation,
   setLocation,
 }: FilterProps) => {
   const isMobile = useIsMobile();
@@ -122,7 +127,11 @@ const Filter = ({
             <span className="text-xs font-medium text-foreground">
               Location
             </span>
-            <LocationDropdown setLocation={setLocation} />
+            <LocationDropdown
+              locations={locations}
+              selectedLocation={selectedLocation}
+              setLocation={setLocation}
+            />
           </div>
         )}
 

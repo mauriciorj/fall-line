@@ -103,6 +103,40 @@ def call_mutation(
     return payload
 
 
+def call_query(
+    path: str,
+    args: dict[str, Any],
+    *,
+    url: Optional[str] = None,
+    deploy_key: Optional[str] = None,
+) -> Any:
+    _load_env_files()
+
+    convex_url = url or _convex_url()
+    key = deploy_key or _convex_deploy_key()
+    if not convex_url or not key:
+        raise RuntimeError(
+            "Convex URL and deploy key are not configured. "
+            "Set CONVEX_URL and CONVEX_DEPLOY_KEY in your .env.local file."
+        )
+
+    response = requests.post(
+        f"{convex_url.rstrip('/')}/api/query",
+        headers={
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+            "Authorization": f"Convex {key}",
+        },
+        json={"path": path, "args": args, "format": "json"},
+        verify=os.getenv("REQUESTS_CA_BUNDLE") or os.getenv("CURL_CA_BUNDLE") or True,
+    )
+    response.raise_for_status()
+    payload = response.json()
+    if payload.get("status") == "error":
+        raise RuntimeError(f"Convex query {path} error: {payload.get('errorMessage')}")
+    return payload.get("value", payload)
+
+
 def _push(function_path: str, args: dict[str, Any]) -> Any:
     if not _has_convex_config():
         print("Convex not configured; skipping push.")
@@ -211,3 +245,11 @@ def push_ski_resorts(
         print(f"Pushed {min(start + batch_size, len(records))}/{len(records)} records to Convex")
 
     return results
+
+
+def push_locations(
+    locations: list[dict[str, str]],
+    *,
+    function_path: str = "locations:sync",
+) -> Any:
+    return _push(function_path, {"locations": locations})

@@ -11,8 +11,15 @@ import Menu from "@/components/menu";
 const Header = () => {
   const isMobile = useIsMobile();
 
-  const { filters, setFilters, isFiltersActive, handleClearFilters } =
-    useFiltersContext();
+  const {
+    filters,
+    setFilters,
+    isFiltersActive,
+    handleClearFilters,
+    locations,
+    selectedLocation,
+    setLocation,
+  } = useFiltersContext();
 
   return (
     <header className="sticky top-0 z-50 bg-card border-b border-border">
@@ -34,19 +41,27 @@ const Header = () => {
               onChange={setFilters}
               isActive={isFiltersActive}
               onClear={handleClearFilters}
-              setLocation={() => {}}
+              locations={locations}
+              selectedLocation={selectedLocation}
+              setLocation={setLocation}
             />
             <Menu />
           </>
         ) : (
           <div className="flex flex-row">
-            <LocationDropdown setLocation={() => {}} />
+            <LocationDropdown
+              locations={locations}
+              selectedLocation={selectedLocation}
+              setLocation={setLocation}
+            />
             <Filter
               filters={filters}
               onChange={setFilters}
               isActive={isFiltersActive}
               onClear={handleClearFilters}
-              setLocation={() => {}}
+              locations={locations}
+              selectedLocation={selectedLocation}
+              setLocation={setLocation}
             />
             <Menu />
           </div>

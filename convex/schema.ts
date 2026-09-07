@@ -184,7 +184,16 @@ export const resortsFields = {
 };
 
 export default defineSchema({
-  resorts: defineTable(resortsFields).index("by_source_id", ["sourceId"]),
+  resorts: defineTable(resortsFields)
+    .index("by_source_id", ["sourceId"])
+    .index("by_source", ["source"])
+    .index("by_location", ["continent", "country", "region"]),
+
+  locations: defineTable({
+    continent: v.string(),
+    country: v.string(),
+    region: v.string(),
+  }).index("by_location", ["continent", "country", "region"]),
 
   weatherAndStatus: defineTable({
     resortId: v.string(),

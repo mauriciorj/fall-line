@@ -19,6 +19,7 @@ const ResortMap = ({
   setSelectedResort,
 }: ResortMapProps) => {
   const { isLoaded, loadError } = useLoadScript({
+    id: "google-maps-script",
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_JAVASCRIPT_API!, // Will show in demo mode without key
   });
   const containerStyle = {

@@ -45,6 +45,12 @@ def to_convex_records(records: list[dict[str, Any]]) -> list[dict[str, Any]]:
                 if value is not None
             },
         }
-        output.append(normalized)
+        output.append(
+            {
+                key: value
+                for key, value in normalized.items()
+                if value is not None
+            }
+        )
 
     return output

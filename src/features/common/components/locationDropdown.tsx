@@ -3,18 +3,35 @@
 import {
   Select,
   SelectContent,
+  SelectGroup,
   SelectItem,
+  SelectLabel,
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
 import { useIsMobile } from "@/hooks/useMobile";
+import { LocationOption, locationKey } from "@/types/location";
 
 const LocationDropdown = ({
+  locations,
+  selectedLocation,
   setLocation,
 }: {
-  setLocation: (location: string) => void;
+  locations: LocationOption[];
+  selectedLocation: LocationOption | null;
+  setLocation: (location: LocationOption) => void;
 }) => {
   const isMobile = useIsMobile();
+  const selectedValue = selectedLocation ? locationKey(selectedLocation) : "";
+  const groupedLocations = locations.reduce<
+    Record<string, Record<string, LocationOption[]>>
+  >((groups, location) => {
+    groups[location.continent] ??= {};
+    groups[location.continent][location.country] ??= [];
+    groups[location.continent][location.country].push(location);
+    return groups;
+  }, {});
+
   return (
     <div className="flex flex-row items-center">
       {!isMobile && (
@@ -25,16 +42,39 @@ const LocationDropdown = ({
         </div>
       )}
       <Select
-        value="ontario"
-        onValueChange={(value: string) => setLocation(value)}
+        value={selectedValue}
+        onValueChange={(value) => {
+          const location = locations.find((item) => locationKey(item) === value);
+          if (location) setLocation(location);
+        }}
       >
         <SelectTrigger className="w-full bg-background min-w-[150px]">
           <SelectValue placeholder="Select your location" />
         </SelectTrigger>
         <SelectContent className="bg-background z-50">
-          <SelectItem value="ontario">Ontario</SelectItem>
-          {/* <SelectItem value="british-columbia">British Columbia</SelectItem>
-          <SelectItem value="quebec">Quebec</SelectItem> */}
+          {Object.entries(groupedLocations).map(([continent, countries]) => (
+            <SelectGroup key={continent}>
+              <SelectLabel className="font-semibold text-foreground">
+                {continent}
+              </SelectLabel>
+              {Object.entries(countries).map(([country, regions]) => (
+                <SelectGroup key={`${continent}-${country}`}>
+                  <SelectLabel className="pl-4 text-foreground">
+                    - {country}
+                  </SelectLabel>
+                  {regions.map((location) => (
+                    <SelectItem
+                      key={locationKey(location)}
+                      value={locationKey(location)}
+                      className="pl-8"
+                    >
+                      -- {location.region}
+                    </SelectItem>
+                  ))}
+                </SelectGroup>
+              ))}
+            </SelectGroup>
+          ))}
         </SelectContent>
       </Select>
     </div>
