@@ -1,0 +1,33 @@
+{
+  "rates": {
+    "items": [
+      {
+        "name": "Adult",
+        "prices": [
+          { "label": "closing_weekend", "value": "$35" }
+        ]
+      },
+      {
+        "name": "JR (6-18) / SR (65+)",
+        "prices": [
+          { "label": "closing_weekend", "value": "$35" }
+        ]
+      },
+      {
+        "name": "Child (5 and under)",
+        "prices": [
+          { "label": "closing_weekend", "value": "$10" }
+        ]
+      },
+      {
+        "name": "Beginner (All ages)",
+        "prices": [
+          { "label": "closing_weekend", "value": "$29" }
+        ]
+      }
+    ]
+  },
+  "resortId": "horseshoe-valley-resort",
+  "sourceUrl": "https://horseshoeresort.com/ski/lift-ticket-and-rentals-pricing/",
+  "updatedAt": 0
+}

@@ -1,0 +1,13 @@
+{
+  "hours": [
+    {
+      "name": "Lift Operations",
+      "hours": [
+        { "day": "Daily", "time": "8:30am to 4:00pm" }
+      ]
+    }
+  ],
+  "resortId": "caledon-ski-club",
+  "sourceUrl": "https://caledonskiclub.com/hours-lift-prices",
+  "updatedAt": 0
+}

@@ -1,0 +1,203 @@
+{
+  "resortId": "chicopee",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "resortId": "chicopee",
+        "address": "396 Morrison Road, Kitchener, ON N2A 2Z6",
+        "continent": "North America",
+        "country": "Canada",
+        "email": "guestservices@chicopee.ca",
+        "region": "Ontario",
+        "coordinates": { "lat": 43.50150295771778, "lng": -80.42101373098909 },
+        "googleMapsUrl": "https://maps.app.goo.gl/GSNWkGQzo5aHdWmf9",
+        "phone": "(519) 894-5610",
+        "rating": 4.2,
+        "website": "http://www.discoverchicopee.com/",
+        "name": "Chicopee",
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "tracksSummary": {
+          "black": 0,
+          "blue": 0,
+          "doubleBlack": 0,
+          "freeStyle": 0,
+          "green": 0
+        },
+        "dayTicketPrice": 68,
+        "skiRentalPrice": 55,
+        "snowBoardRentalPrice": 55
+      }
+    },
+    {
+      "table": "resortHours",
+      "content": {
+        "hours": [
+          {
+            "name": "Guest Services",
+            "hours": [
+              { "day": "Daily", "time": "Temporarily Closed" }
+            ]
+          },
+          {
+            "name": "Lift Hours",
+            "hours": [
+              { "day": "Daily", "time": "Temporarily Closed" }
+            ]
+          },
+          {
+            "name": "Food & Beverage Service",
+            "hours": [
+              { "day": "Daily", "time": "Temporarily Closed" }
+            ]
+          }
+        ],
+        "resortId": "chicopee",
+        "sourceUrl": "https://www.discoverchicopee.com/contact#hours",
+        "updatedAt": 0
+      }
+    },
+    {
+      "table": "resortRates",
+      "content": {
+        "rates": {
+          "items": [
+            {
+              "name": "All Lifts*",
+              "prices": [
+                { "label": "Weekday", "value": "$63" },
+                { "label": "Weekend & Holiday", "value": "$68" }
+              ]
+            },
+            {
+              "name": "Surface Lifts * ticket gives access to surface lifts ONLY!",
+              "prices": [
+                { "label": "Weekday", "value": "$50" },
+                { "label": "Weekend & Holiday", "value": "$55" }
+              ]
+            },
+            {
+              "name": "Tot*",
+              "prices": [
+                { "label": "Weekday", "value": "$29" },
+                { "label": "Weekend & Holiday", "value": "$32" }
+              ]
+            },
+            {
+              "name": "Night*",
+              "prices": [
+                { "label": "Weekday", "value": "$40" },
+                { "label": "Weekend & Holiday", "value": "$40" }
+              ]
+            },
+            {
+              "name": "Ski/Board",
+              "prices": [
+                { "label": "Weekday", "value": "$50" },
+                { "label": "Weekend & Holiday", "value": "$55" }
+              ]
+            },
+            {
+              "name": "Tot* Ski/Board",
+              "prices": [
+                { "label": "Weekday", "value": "$40" },
+                { "label": "Weekend & Holiday", "value": "$44" }
+              ]
+            }
+          ]
+        },
+        "resortId": "chicopee",
+        "sourceUrl": "https://www.discoverchicopee.com/plan-a-day",
+        "updatedAt": 0
+      }
+    },
+    {
+      "table": "resortRentals",
+      "content": {
+        "rentals": {
+          "sections": [
+            {
+              "name": "Equipment Rental",
+              "items": [
+                {
+                  "name": "Ski/Board",
+                  "prices": [
+                    { "label": "Weekday", "value": "$50" },
+                    { "label": "Weekend & Holiday", "value": "$55" }
+                  ]
+                },
+                {
+                  "name": "Tot* Ski/Board",
+                  "prices": [
+                    { "label": "Weekday", "value": "$40" },
+                    { "label": "Weekend & Holiday", "value": "$44" }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "resortId": "chicopee",
+        "sourceUrl": "https://www.discoverchicopee.com/plan-a-day",
+        "updatedAt": 0
+      }
+    },
+    {
+      "table": "weatherAndStatus",
+      "content": {
+        "lifts": [
+          { "name": "# Of Lifts Open:", "status": "open" }
+        ],
+        "trails": [
+          { "name": "# Of Trails Open:", "status": "open" },
+          { "name": "Status:", "status": "closed" },
+          { "name": "# Of Lifts :0 / 5", "status": "open" },
+          { "name": "# Of Trails :0 / 13", "status": "open" },
+          { "name": "Freestyle Park:", "status": "closed" },
+          { "name": "Surface Lift #1Servicing:", "status": "closed" },
+          { "name": "Surface Lift #2Servicing:", "status": "closed" },
+          { "name": "Surface Lift #3Servicing:", "status": "closed" },
+          { "name": "Red ChairliftServicing:", "status": "closed" },
+          { "name": "North ChairliftServicing:", "status": "closed" },
+          { "name": "Applebowl ChairliftServicing:", "status": "closed" }
+        ],
+        "terrainParks": [],
+        "conditions": {},
+        "liftsSummary": { "open": 1, "total": 1 },
+        "trailsSummary": { "open": 3, "total": 11 },
+        "rawData": {
+          "lifts": [
+            { "name": "# Of Lifts Open:", "status": "open" }
+          ],
+          "trails": [
+            { "name": "# Of Trails Open:", "status": "open" },
+            { "name": "Status:", "status": "closed" },
+            { "name": "# Of Lifts :0 / 5", "status": "open" },
+            { "name": "# Of Trails :0 / 13", "status": "open" },
+            { "name": "Freestyle Park:", "status": "closed" },
+            { "name": "Surface Lift #1Servicing:", "status": "closed" },
+            { "name": "Surface Lift #2Servicing:", "status": "closed" },
+            { "name": "Surface Lift #3Servicing:", "status": "closed" },
+            { "name": "Red ChairliftServicing:", "status": "closed" },
+            { "name": "North ChairliftServicing:", "status": "closed" },
+            { "name": "Applebowl ChairliftServicing:", "status": "closed" }
+          ],
+          "terrain_parks": [],
+          "conditions": {},
+          "lifts_summary": { "open": 1, "total": 1 },
+          "trails_summary": { "open": 3, "total": 11 },
+          "parks_summary": { "open": 0, "total": 0 }
+        },
+        "resortId": "chicopee",
+        "sourceUrl": "https://www.discoverchicopee.com/activity-report",
+        "updatedAt": 0
+      }
+    }
+  ]
+}

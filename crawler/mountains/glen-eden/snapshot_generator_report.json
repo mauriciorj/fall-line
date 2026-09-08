@@ -1,0 +1,34 @@
+{
+  "resortId": "glen-eden",
+  "tables": [
+    {
+      "table": "resorts",
+      "missingColumns": [
+        "ticketUrl",
+        "tollFree",
+        "tubbingPrice"
+      ]
+    },
+    {
+      "table": "resortHours",
+      "missingColumns": []
+    },
+    {
+      "table": "resortRates",
+      "missingColumns": []
+    },
+    {
+      "table": "resortRentals",
+      "missingColumns": []
+    },
+    {
+      "table": "weatherAndStatus",
+      "missingColumns": [
+        "terrainParks",
+        "crossCountry",
+        "tubing"
+      ]
+    }
+  ],
+  "missingColumnCount": 6
+}

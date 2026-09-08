@@ -1,0 +1,245 @@
+{
+  "resortId": "caledon-ski-club",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "resortId": "caledon-ski-club",
+        "address": "17431 Mississauga Road, Caledon, Ontario L7K 0E9",
+        "continent": "North America",
+        "country": "Canada",
+        "email": "admin@caledonskiclub.on.ca",
+        "region": "Ontario",
+        "coordinates": { "lat": 43.856306447577786, "lng": -80.00755054550318 },
+        "googleMapsUrl": "https://maps.app.goo.gl/nfzpbXydap2bfMP56",
+        "phone": "(519) 927-5221",
+        "tollFree": "1-800-363-7669",
+        "website": "https://caledonskiclub.com/",
+        "name": "Caledon Ski Club",
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "hasLessons": false,
+        "tracksSummary": {
+          "black": 0,
+          "blue": 0,
+          "doubleBlack": 0,
+          "freeStyle": 0,
+          "green": 0
+        },
+        "dayTicketPrice": 85,
+        "skiRentalPrice": 74.99,
+        "snowBoardRentalPrice": 74.99
+      }
+    },
+    {
+      "table": "resortHours",
+      "content": {
+        "hours": [
+          {
+            "name": "Lift Operations",
+            "hours": [
+              { "day": "Daily", "time": "8:30am to 4:00pm" }
+            ]
+          }
+        ],
+        "resortId": "caledon-ski-club",
+        "sourceUrl": "https://caledonskiclub.com/hours-lift-prices",
+        "updatedAt": 0
+      }
+    },
+    {
+      "table": "resortRates",
+      "content": {
+        "rates": {
+          "items": [
+            {
+              "name": "Adult",
+              "prices": [
+                { "label": "WEEKENDS & HOLIDAYS", "value": "$85.00" },
+                { "label": "MID WEEK FULL DAY", "value": "$75.00" },
+                { "label": "MID WEEK AFTER 1PM", "value": "$62.00" }
+              ]
+            },
+            {
+              "name": "Child 5 & under",
+              "prices": [
+                { "label": "WEEKENDS & HOLIDAYS", "value": "$21.00" },
+                { "label": "MID WEEK FULL DAY", "value": "$21.00" },
+                { "label": "MID WEEK AFTER 1PM", "value": "$21.00" }
+              ]
+            },
+            {
+              "name": "Child 6 - 12",
+              "prices": [
+                { "label": "WEEKENDS & HOLIDAYS", "value": "$64.00" },
+                { "label": "MID WEEK FULL DAY", "value": "$62.00" },
+                { "label": "MID WEEK AFTER 1PM", "value": "$54.00" }
+              ]
+            },
+            {
+              "name": "Student 13 - 18",
+              "prices": [
+                { "label": "WEEKENDS & HOLIDAYS", "value": "$72.00" },
+                { "label": "MID WEEK FULL DAY", "value": "$64.00" },
+                { "label": "MID WEEK AFTER 1PM", "value": "$56.00" }
+              ]
+            },
+            {
+              "name": "Senior 65+",
+              "prices": [
+                { "label": "WEEKENDS & HOLIDAYS", "value": "$72.00" },
+                { "label": "MID WEEK FULL DAY", "value": "$64.00" },
+                { "label": "MID WEEK AFTER 1PM", "value": "$56.00" }
+              ]
+            }
+          ]
+        },
+        "resortId": "caledon-ski-club",
+        "sourceUrl": "https://caledonskiclub.com/hours-lift-prices",
+        "updatedAt": 0
+      }
+    },
+    {
+      "table": "resortRentals",
+      "content": {
+        "rentals": {
+          "sections": [
+            {
+              "name": "PACKAGES - SKI / SNOWBOARD",
+              "items": [
+                {
+                  "name": "Adult",
+                  "prices": [
+                    { "label": "Full Day", "value": "$74.99" },
+                    { "label": "Half Day", "value": "$49.99" }
+                  ]
+                },
+                {
+                  "name": "Junior",
+                  "prices": [
+                    { "label": "Full Day", "value": "$54.99" },
+                    { "label": "Half Day", "value": "$39.99" }
+                  ]
+                },
+                {
+                  "name": "Child (skis under 91cm)",
+                  "prices": [
+                    { "label": "Full Day", "value": "$39.99" },
+                    { "label": "Half Day", "value": "NA" }
+                  ]
+                },
+                {
+                  "name": "With performance skis",
+                  "prices": [
+                    { "label": "Full Day", "value": "$89.99" },
+                    { "label": "Half Day", "value": "$69.99" }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "SINGLE ITEMS",
+              "items": [
+                {
+                  "name": "Skis / Snowboard",
+                  "prices": [
+                    { "label": "Full Day", "value": "$49.99" },
+                    { "label": "Half Day", "value": "$39.99" }
+                  ]
+                },
+                {
+                  "name": "Boots",
+                  "prices": [
+                    { "label": "Full Day", "value": "$49.99" },
+                    { "label": "Half Day", "value": "$39.99" }
+                  ]
+                },
+                {
+                  "name": "Poles / Helmet",
+                  "prices": [
+                    { "label": "Full Day", "value": "$19.99" },
+                    { "label": "Half Day", "value": "NA" }
+                  ]
+                },
+                {
+                  "name": "Snowshoes",
+                  "prices": [
+                    { "label": "Full Day", "value": "$39.99" },
+                    { "label": "Half Day", "value": "NA" }
+                  ]
+                },
+                {
+                  "name": "Crampons",
+                  "prices": [
+                    { "label": "Full Day", "value": "$19.99" },
+                    { "label": "Half Day", "value": "NA" }
+                  ]
+                },
+                {
+                  "name": "Demo Skis",
+                  "prices": [
+                    { "label": "Full Day", "value": "$59.99" },
+                    { "label": "Half Day", "value": "$49.99" }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "resortId": "caledon-ski-club",
+        "sourceUrl": "https://caledonskiclub.com/proshop",
+        "updatedAt": 0
+      }
+    },
+    {
+      "table": "weatherAndStatus",
+      "content": {
+        "lifts": [
+          { "name": "CONDITIONSclosed", "status": "closed" },
+          { "name": "Basecm", "status": "closed" },
+          { "name": "New snow last 24hcm", "status": "closed" },
+          { "name": "Snow MakingNot in progress", "status": "closed" },
+          { "name": "Lifts Open", "status": "open" }
+        ],
+        "trails": [
+          { "name": "Ice Rink", "status": "closed" },
+          { "name": "Snowshoe/Hiking Trails", "status": "closed" }
+        ],
+        "conditions": {
+          "surfaceConditions": "CONDITIONSclosed",
+          "baseDepth": "Basecm",
+          "newSnow": "New snow last 24hcm"
+        },
+        "liftsSummary": { "open": 1, "total": 5 },
+        "trailsSummary": { "open": 0, "total": 2 },
+        "rawData": {
+          "snow_conditions": {
+            "surface": "CONDITIONSclosed",
+            "base_depth": "Basecm",
+            "new_snow": "New snow last 24hcm"
+          },
+          "trails": [
+            { "name": "Ice Rink", "status": "closed" },
+            { "name": "Snowshoe/Hiking Trails", "status": "closed" }
+          ],
+          "lifts": [
+            { "name": "CONDITIONSclosed", "status": "closed" },
+            { "name": "Basecm", "status": "closed" },
+            { "name": "New snow last 24hcm", "status": "closed" },
+            { "name": "Snow MakingNot in progress", "status": "closed" },
+            { "name": "Lifts Open", "status": "open" }
+          ],
+          "trails_summary": { "open": 0, "total": 2 },
+          "lifts_summary": { "open": 1, "total": 5 }
+        },
+        "resortId": "caledon-ski-club",
+        "sourceUrl": "https://caledonskiclub.com/private-lessons",
+        "updatedAt": 0
+      }
+    }
+  ]
+}

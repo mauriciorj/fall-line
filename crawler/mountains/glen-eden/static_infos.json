@@ -1,0 +1,13 @@
+{
+  "resortId": "glen-eden",
+  "address": "5234 Kelso Rd, Milton, ON L9T 2X7",
+  "continent": "North America",
+  "country": "Canada",
+  "email": "gleneden@hrca.on.ca",
+  "region": "Ontario",
+  "coordinates": { "lat": 43.55418055900003, "lng": -79.93414693948958 },
+  "googleMapsUrl": "https://maps.app.goo.gl/B1FXSZ1VtYbVTsaXA",
+  "phone": "(905) 878-5011",
+  "rating": 4.2,
+  "website": "https://gleneden.on.ca/"
+}

@@ -1,0 +1,28 @@
+{
+  "rentals": {
+    "sections": [
+      {
+        "name": "Equipment Rental",
+        "items": [
+          {
+            "name": "Ski/Board",
+            "prices": [
+              { "label": "Weekday", "value": "$50" },
+              { "label": "Weekend & Holiday", "value": "$55" }
+            ]
+          },
+          {
+            "name": "Tot* Ski/Board",
+            "prices": [
+              { "label": "Weekday", "value": "$40" },
+              { "label": "Weekend & Holiday", "value": "$44" }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "resortId": "chicopee",
+  "sourceUrl": "https://www.discoverchicopee.com/plan-a-day",
+  "updatedAt": 0
+}

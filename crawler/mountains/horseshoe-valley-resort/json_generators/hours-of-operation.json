@@ -1,0 +1,13 @@
+{
+  "hours": [
+    {
+      "name": "Ski Operations",
+      "hours": [
+        { "day": "Daily", "time": "9AM – 9PM" }
+      ]
+    }
+  ],
+  "resortId": "horseshoe-valley-resort",
+  "sourceUrl": "https://horseshoeresort.com/ski/lift-ticket-and-rentals-pricing/",
+  "updatedAt": 0
+}

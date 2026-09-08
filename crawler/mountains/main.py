@@ -8,12 +8,11 @@ CRAWLER_DIR = Path(__file__).resolve().parent.parent
 MY_TEST_DIR = CRAWLER_DIR / "mountains"
 FAILURE_LOG = CRAWLER_DIR / "crawler-errors.log"
 RESORT_SCRIPTS = {
-    "skisnowvalley": (
-        "hours-of-operation.py",
-        "lift-rates.py",
-        "rentals.py",
-        "weather-and-status.py",
-        "push-existing-hours.py",
+    "snow-valley-ski-resort": (
+        "json_generators/hours-of-operation.py",
+        "json_generators/lift-rates.py",
+        "json_generators/rentals.py",
+        "json_generators/weather-and-status.py",
     ),
     # ERROR
     # "bluemountain": (
@@ -28,38 +27,41 @@ RESORT_SCRIPTS = {
         "json_generators/rentals.py",
         "json_generators/weather-and-status.py",
     ),
-    "caledon": (
-        "lift-rates.py",
-        "rentals.py",
-        "weather-and-status.py",
+    "caledon-ski-club": (
+        "json_generators/hours-of-operation.py",
+        "json_generators/lift-rates.py",
+        "json_generators/rentals.py",
+        "json_generators/weather-and-status.py",
     ),
     "chicopee": (
-        "hours-of-operation.py",
-        "rates.py",
-        "rentals.py",
-        "weather-and-status.py",
+        "json_generators/hours-of-operation.py",
+        "json_generators/lift-rates.py",
+        "json_generators/rentals.py",
+        "json_generators/weather-and-status.py",
     ),
-    "gleneden": (
-        "lift-rates.py",
-        "rentals.py",
-        "weather-and-status.py",
+    "glen-eden": (
+        "json_generators/hours-of-operation.py",
+        "json_generators/lift-rates.py",
+        "json_generators/rentals.py",
+        "json_generators/weather-and-status.py",
     ),
-    "horseshoeresort": (
-        "lift-rates.py",
-        "rentals.py",
-        "weather-and-status.py",
+    "horseshoe-valley-resort": (
+        "json_generators/hours-of-operation.py",
+        "json_generators/lift-rates.py",
+        "json_generators/rentals.py",
+        "json_generators/weather-and-status.py",
     ),
-    "ski-lakeridge": (
-        "hours-of-operation.py",
-        "lift-rates.py",
-        "rentals.py",
-        "weather-and-status.py",
+    "lakeridge-ski-resort": (
+        "json_generators/hours-of-operation.py",
+        "json_generators/lift-rates.py",
+        "json_generators/rentals.py",
+        "json_generators/weather-and-status.py",
     ),
-    "skidagmar": (
-        "hours-of-operation.py",
-        "lift-rates.py",
-        "rentals.py",
-        "weather-and-status.py",
+    "dagmar-ski-resort": (
+        "json_generators/hours-of-operation.py",
+        "json_generators/lift-rates.py",
+        "json_generators/rentals.py",
+        "json_generators/weather-and-status.py",
     ),
 }
 

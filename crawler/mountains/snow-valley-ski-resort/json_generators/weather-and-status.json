@@ -1,0 +1,49 @@
+{
+  "conditions": {
+    "newSnow": "0cm",
+    "baseDepth": "0cm",
+    "surfaceConditions": "Closed for the Season"
+  },
+  "lifts": [
+    { "name": "quad chair", "status": "open" },
+    { "name": "wide load chair", "status": "open" },
+    { "name": "triple chair", "status": "open" },
+    { "name": "snowflake express", "status": "open" }
+  ],
+  "trails": [
+    { "name": "garfield", "status": "open" },
+    { "name": "snoopy", "status": "open" },
+    { "name": "trudys way", "status": "open" },
+    { "name": "pennys", "status": "open" },
+    { "name": "schuss", "status": "open" },
+    { "name": "highland trail", "status": "open" },
+    { "name": "family", "status": "open" },
+    { "name": "racer", "status": "open" },
+    { "name": "hard knox", "status": "open" },
+    { "name": "front", "status": "open" },
+    { "name": "whistler", "status": "open" },
+    { "name": "recken run", "status": "open" },
+    { "name": "keith rolls", "status": "open" },
+    { "name": "vertigo", "status": "open" },
+    { "name": "huxtable", "status": "open" },
+    { "name": "oh chute", "status": "open" },
+    { "name": "easy does it", "status": "open" },
+    { "name": "alc 1", "status": "open" },
+    { "name": "alc 2", "status": "open" },
+    { "name": "alc 3", "status": "open" },
+    { "name": "kidz village", "status": "open" }
+  ],
+  "tubing": [
+    { "name": "summit zone", "status": "open" },
+    { "name": "valley zone", "status": "open" },
+    { "name": "peak zone", "status": "open" },
+    { "name": "kidz zone", "status": "open" }
+  ],
+  "trailsSummary": { "open": 0, "total": 21 },
+  "liftsSummary": { "open": 0, "total": 8 },
+  "tubingSummary": { "open": 0, "total": 4 },
+  "rawData": { "source": "skisnowvalley weather webcams" },
+  "resortId": "snow-valley-ski-resort",
+  "sourceUrl": "https://www.skisnowvalley.com/plan/weather-webcams/",
+  "updatedAt": 0
+}

@@ -1,0 +1,174 @@
+{
+  "resortId": "horseshoe-valley-resort",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "resortId": "horseshoe-valley-resort",
+        "address": "1101 Horseshoe Valley Rd W, Barrie, ON L4M 4Y8",
+        "continent": "North America",
+        "country": "Canada",
+        "email": "info@horseshoeresort.com",
+        "region": "Ontario",
+        "coordinates": { "lat": 44.59429988048484, "lng": -79.68125046375664 },
+        "googleMapsUrl": "https://maps.app.goo.gl/bzCpVSuKs9mPU3BNA",
+        "phone": "(705) 835-2790",
+        "rating": 4.1,
+        "hasAccommodations": true,
+        "hasCrossCountry": true,
+        "hasSnowshoeing": true,
+        "hasSpa": true,
+        "hasTubing": true,
+        "tubbingPrice": 39,
+        "ticketUrl": "https://shop.horseshoeresort.com/tickets",
+        "website": "http://horseshoeresort.com/",
+        "name": "Horseshoe Valley Resort",
+        "hasLessons": false,
+        "hasZipline": false,
+        "tracksSummary": {
+          "black": 0,
+          "blue": 17,
+          "doubleBlack": 0,
+          "freeStyle": 2,
+          "green": 8
+        },
+        "dayTicketPrice": 35,
+        "skiRentalPrice": 35,
+        "snowBoardRentalPrice": 35
+      }
+    },
+    {
+      "table": "resortHours",
+      "content": {
+        "hours": [
+          { "name": "Ski Operations", "hours": [{ "day": "Daily", "time": "9AM – 9PM" }] }
+        ],
+        "resortId": "horseshoe-valley-resort",
+        "sourceUrl": "https://horseshoeresort.com/ski/lift-ticket-and-rentals-pricing/",
+        "updatedAt": 0
+      }
+    },
+    {
+      "table": "resortRates",
+      "content": {
+        "rates": {
+          "items": [
+            { "name": "Adult", "prices": [{ "label": "closing_weekend", "value": "$35" }] },
+            { "name": "JR (6-18) / SR (65+)", "prices": [{ "label": "closing_weekend", "value": "$35" }] },
+            { "name": "Child (5 and under)", "prices": [{ "label": "closing_weekend", "value": "$10" }] },
+            { "name": "Beginner (All ages)", "prices": [{ "label": "closing_weekend", "value": "$29" }] }
+          ]
+        },
+        "resortId": "horseshoe-valley-resort",
+        "sourceUrl": "https://horseshoeresort.com/ski/lift-ticket-and-rentals-pricing/",
+        "updatedAt": 0
+      }
+    },
+    {
+      "table": "resortRentals",
+      "content": {
+        "rentals": {
+          "sections": [
+            {
+              "name": "Rental Packages",
+              "items": [
+                {
+                  "name": "Skiing or Snowboarding Package",
+                  "prices": [
+                    { "label": "Adult (19+)", "value": "$35" },
+                    { "label": "JR (6-18) / SR (65+)", "value": "$35" },
+                    { "label": "Child (5 and under)", "value": "$35" }
+                  ]
+                },
+                {
+                  "name": "Ski / Snowboard Rental",
+                  "prices": [
+                    { "label": "Adult (19+)", "value": "$35" },
+                    { "label": "JR (6-18) / SR (65+)", "value": "$35" }
+                  ]
+                },
+                { "name": "Boots", "prices": [{ "label": "All Ages", "value": "$34" }] },
+                { "name": "Poles", "prices": [{ "label": "All Ages", "value": "$18" }] },
+                { "name": "Helmet", "prices": [{ "label": "All Ages", "value": "$18" }] },
+                { "name": "Ice Skates", "prices": [{ "label": "All Ages", "value": "$15" }] },
+                { "name": "Rental Insurance", "prices": [{ "label": "All Ages", "value": "$15" }] }
+              ]
+            }
+          ]
+        },
+        "resortId": "horseshoe-valley-resort",
+        "sourceUrl": "https://horseshoeresort.com/ski/lift-ticket-and-rentals-pricing/",
+        "updatedAt": 0
+      }
+    },
+    {
+      "table": "weatherAndStatus",
+      "content": {
+        "conditions": {
+          "hours": "Closed for the season",
+          "surfaceConditions": "Base Depth",
+          "baseDepth": "Runs",
+          "newSnow": "0 cm"
+        },
+        "lifts": [
+          { "name": "Kimbles Carpet", "status": "closed", "dayStatus": "closed", "nightStatus": "closed" },
+          { "name": "Snow School Express", "status": "closed", "dayStatus": "closed", "nightStatus": "closed" },
+          { "name": "Double Chair", "status": "closed", "dayStatus": "closed", "nightStatus": "closed" },
+          { "name": "Copeland Express 6 Person Chair", "status": "closed", "dayStatus": "closed", "nightStatus": "closed" },
+          { "name": "High Rider Quad", "status": "closed", "dayStatus": "closed", "nightStatus": "closed" },
+          { "name": "Highland Express Quad", "status": "closed", "dayStatus": "closed", "nightStatus": "closed" }
+        ],
+        "trails": [
+          { "name": "Ponyback", "status": "closed", "difficulty": "easy", "dayStatus": "closed", "nightStatus": "closed" },
+          { "name": "Pinto", "status": "closed", "difficulty": "easy", "dayStatus": "closed", "nightStatus": "closed" },
+          { "name": "Hungry Hollow", "status": "closed", "difficulty": "easy", "dayStatus": "closed", "nightStatus": "closed" },
+          { "name": "Roundup", "status": "closed", "difficulty": "easy", "dayStatus": "closed", "nightStatus": "closed" },
+          { "name": "Donkey Serenade", "status": "closed", "difficulty": "easy", "dayStatus": "closed", "nightStatus": "closed" },
+          { "name": "Pony Express", "status": "closed", "difficulty": "easy", "dayStatus": "closed", "nightStatus": "closed" },
+          { "name": "Canter", "status": "closed", "difficulty": "easy", "dayStatus": "closed", "nightStatus": "closed" },
+          { "name": "Mule Train", "status": "closed", "difficulty": "easy", "dayStatus": "closed", "nightStatus": "closed" },
+          { "name": "Steeplechase", "status": "closed", "difficulty": "difficult", "dayStatus": "closed", "nightStatus": "closed" },
+          { "name": "Flying Mare", "status": "closed", "difficulty": "difficult", "dayStatus": "closed", "nightStatus": "closed" },
+          { "name": "Pony Tail", "status": "closed", "difficulty": "difficult", "dayStatus": "closed", "nightStatus": "closed" },
+          { "name": "Ramey's Return", "status": "closed", "difficulty": "difficult", "dayStatus": "closed", "nightStatus": "closed" },
+          { "name": "Saddleback", "status": "closed", "difficulty": "difficult", "dayStatus": "closed", "nightStatus": "closed" },
+          { "name": "Stallion Slide", "status": "closed", "difficulty": "difficult", "dayStatus": "closed", "nightStatus": "closed" },
+          { "name": "Duster", "status": "closed", "difficulty": "difficult", "dayStatus": "closed", "nightStatus": "closed" },
+          { "name": "Nightmare Ride", "status": "closed", "difficulty": "difficult", "dayStatus": "closed", "nightStatus": "closed" },
+          { "name": "Stampede", "status": "closed", "difficulty": "difficult", "dayStatus": "closed", "nightStatus": "closed" },
+          { "name": "The Wave", "status": "closed", "difficulty": "difficult", "dayStatus": "closed", "nightStatus": "closed" },
+          { "name": "Shaggy Mane", "status": "closed", "difficulty": "difficult", "dayStatus": "closed", "nightStatus": "closed" },
+          { "name": "The Zipper", "status": "closed", "difficulty": "difficult", "dayStatus": "closed", "nightStatus": "Not available" },
+          { "name": "Bushwacker", "status": "closed", "difficulty": "difficult", "dayStatus": "closed", "nightStatus": "Not available" },
+          { "name": "Bronco", "status": "closed", "difficulty": "difficult", "dayStatus": "closed", "nightStatus": "closed" },
+          { "name": "Rodeo", "status": "closed", "difficulty": "difficult", "dayStatus": "closed", "nightStatus": "closed" },
+          { "name": "Race Hill", "status": "closed", "difficulty": "difficult", "dayStatus": "closed", "nightStatus": "closed" },
+          { "name": "Horsefeathers", "status": "closed", "difficulty": "difficult", "dayStatus": "closed", "nightStatus": "closed" }
+        ],
+        "terrainParks": [
+          { "name": "Horsefly Hop", "status": "closed", "difficulty": "terrain_park", "dayStatus": "closed", "nightStatus": "closed" },
+          { "name": "Bullpen", "status": "closed", "difficulty": "terrain_park", "dayStatus": "closed", "nightStatus": "closed" }
+        ],
+        "crossCountry": [
+          { "trail": "5", "distance": "2.0 km", "status": "closed", "trackSet": "closed", "groomedToday": "closed" },
+          { "trail": "9", "distance": "2.5 km", "status": "closed", "trackSet": "closed", "groomedToday": "closed" }
+        ],
+        "tubing": [
+          { "name": "Tube Park", "status": "open", "hours": "Plan Your Overnight Stay: BOOK NOW" }
+        ],
+        "liftsSummary": { "open": 0, "total": 6 },
+        "trailsSummary": { "open": 0, "total": 27 },
+        "rawData": {
+          "conditions": {},
+          "runs": {},
+          "lifts": [],
+          "cross_country": [],
+          "tube_park": {}
+        },
+        "resortId": "horseshoe-valley-resort",
+        "sourceUrl": "https://horseshoeresort.com/ski-report-trails/",
+        "updatedAt": 0
+      }
+    }
+  ]
+}

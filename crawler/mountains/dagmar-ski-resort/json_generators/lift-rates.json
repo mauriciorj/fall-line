@@ -1,0 +1,15 @@
+{
+  "rates": {
+    "items": [
+      { "name": "8 Pack Value-Priced Lift Tickets | Up to 4 Hours Anytime", "prices": [{ "label": "Adult 18+", "value": "$69.91" }, { "label": "Jr.6-17/Sr.60+", "value": "$61.06" }] },
+      { "name": "8 Pack Value-Priced Lift Tickets | Full Day", "prices": [{ "label": "Adult 18+", "value": "$83.19" }, { "label": "Jr.6-17/Sr.60+", "value": "$74.34" }] },
+      { "name": "Anytime Alpine Lift Tickets | Ages 6 to Adult", "prices": [{ "label": "Price", "value": "$41.59" }] },
+      { "name": "Anytime Alpine Lift Tickets | Under 5 years", "prices": [{ "label": "Price", "value": "$23.01" }] },
+      { "name": "Special Late-Night After 6 and Last Call | Wednesday – Friday", "prices": [{ "label": "Ticket", "value": "$40.71" }, { "label": "W/ Ski Rental", "value": "$77.88" }] },
+      { "name": "Seniors 60+ | Up to 4 Hours", "prices": [{ "label": "Skis, Boots, & Poles", "value": "$41.59" }, { "label": "Boards & Boots", "value": "$53.98" }] }
+    ]
+  },
+  "resortId": "dagmar-ski-resort",
+  "sourceUrl": "https://www.skidagmar.com/alpine-rates/",
+  "updatedAt": 0
+}

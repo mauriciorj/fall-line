@@ -1,0 +1,34 @@
+{
+  "rentals": {
+    "sections": [
+      {
+        "name": "Rental Packages",
+        "items": [
+          {
+            "name": "Skiing or Snowboarding Package",
+            "prices": [
+              { "label": "Adult (19+)", "value": "$35" },
+              { "label": "JR (6-18) / SR (65+)", "value": "$35" },
+              { "label": "Child (5 and under)", "value": "$35" }
+            ]
+          },
+          {
+            "name": "Ski / Snowboard Rental",
+            "prices": [
+              { "label": "Adult (19+)", "value": "$35" },
+              { "label": "JR (6-18) / SR (65+)", "value": "$35" }
+            ]
+          },
+          { "name": "Boots", "prices": [{ "label": "All Ages", "value": "$34" }] },
+          { "name": "Poles", "prices": [{ "label": "All Ages", "value": "$18" }] },
+          { "name": "Helmet", "prices": [{ "label": "All Ages", "value": "$18" }] },
+          { "name": "Ice Skates", "prices": [{ "label": "All Ages", "value": "$15" }] },
+          { "name": "Rental Insurance", "prices": [{ "label": "All Ages", "value": "$15" }] }
+        ]
+      }
+    ]
+  },
+  "resortId": "horseshoe-valley-resort",
+  "sourceUrl": "https://horseshoeresort.com/ski/lift-ticket-and-rentals-pricing/",
+  "updatedAt": 0
+}

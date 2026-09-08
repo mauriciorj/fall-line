@@ -1,0 +1,29 @@
+{
+  "resortId": "lakeridge-ski-resort",
+  "tables": [
+    {
+      "table": "resorts",
+      "missingColumns": []
+    },
+    {
+      "table": "resortHours",
+      "missingColumns": []
+    },
+    {
+      "table": "resortRates",
+      "missingColumns": []
+    },
+    {
+      "table": "resortRentals",
+      "missingColumns": []
+    },
+    {
+      "table": "weatherAndStatus",
+      "missingColumns": [
+        "lifts",
+        "crossCountry"
+      ]
+    }
+  ],
+  "missingColumnCount": 2
+}

@@ -1,0 +1,132 @@
+{
+  "resortId": "lakeridge-ski-resort",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "resortId": "lakeridge-ski-resort",
+        "address": "790 Chalk Lake Rd, Uxbridge, ON L9P 1R4",
+        "continent": "North America",
+        "country": "Canada",
+        "email": "admin@lakeridgeresort.ca",
+        "region": "Ontario",
+        "coordinates": { "lat": 44.04597402067868, "lng": -79.06573258279116 },
+        "googleMapsUrl": "https://maps.app.goo.gl/3J7NiWbwWLPE2xJp9",
+        "phone": "(905) 649-2058",
+        "tollFree": "1-877-350-3640",
+        "rating": 4.3,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": true,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": true,
+        "hasZipline": false,
+        "lessonsPrice": 216.96,
+        "skiRentalPrice": 43.01,
+        "snowBoardRentalPrice": 51.85,
+        "tubbingPrice": 30,
+        "ticketUrl": "https://ski-lakeridge.resortstore.net/en/catalogue/categories/",
+        "website": "http://www.ski-lakeridge.com/",
+        "name": "Lakeridge Ski Resort",
+        "tracksSummary": { "black": 5, "blue": 4, "doubleBlack": 2, "freeStyle": 3, "green": 6 },
+        "dayTicketPrice": 69.77
+      }
+    },
+    {
+      "table": "resortHours",
+      "content": {
+        "hours": [{ "name": "Hours of operation", "hours": [{ "day": "", "time": "OPENING DATE TO BE DETERMINED" }] }],
+        "resortId": "lakeridge-ski-resort",
+        "sourceUrl": "https://ski-lakeridge.com/skiing-snowboarding/hours-ticket-prices/",
+        "updatedAt": 0
+      }
+    },
+    {
+      "table": "resortRates",
+      "content": {
+        "rates": {
+          "items": [
+            { "name": "Beginner Area Ticket Prices (Magic Carpet Only) | Monday | Tuesday | Wednesday ONLINE pricing", "prices": [{ "label": "ADULT (18-64)", "value": "$39.56+HST" }, { "label": "JUNIOR | SENIOR (6-17 | 65+)", "value": "$39.56+HST" }, { "label": "TYKE (AGE 5 AND UNDER)", "value": "$21.98+HST" }] },
+            { "name": "Beginner Area Ticket Prices (Magic Carpet Only) | Monday | Tuesday | Wednesday ON SITE pricing", "prices": [{ "label": "ADULT (18-64)", "value": "$42.08+HST" }, { "label": "JUNIOR | SENIOR (6-17 | 65+)", "value": "$42.08+HST" }, { "label": "TYKE (AGE 5 AND UNDER)", "value": "$23.38+HST" }] },
+            { "name": "Beginner Area Ticket Prices (Magic Carpet Only) | Thursday to Sunday ONLINE pricing", "prices": [{ "label": "ADULT (18-64)", "value": "$46.53+HST" }, { "label": "JUNIOR | SENIOR (6-17 | 65+)", "value": "$46.53+HST" }, { "label": "TYKE (AGE 5 AND UNDER)", "value": "$25.85+HST" }] },
+            { "name": "Monday to Wednesday Lift Tickets (NOT VALID ON FAMILY DAY) | 4 Hours Anytime - ONLINE pricing", "prices": [{ "label": "Adult (18-64)", "value": "$59.30+HST" }, { "label": "Junior | Senior (6-17)", "value": "$51.86+HST" }, { "label": "Tyke", "value": "$21.98+HST" }] },
+            { "name": "Thursday to Sunday Lift Tickets | 4 Hours Anytime - ONLINE pricing", "prices": [{ "label": "Adult (18-64)", "value": "$69.77+HST" }, { "label": "Junior | Senior (6-17)", "value": "$61.01+HST" }, { "label": "Tyke", "value": "$25.00+HST" }] },
+            { "name": "Thursday to Sunday Lift Tickets | 4 Hours Anytime - ON SITE pricing", "prices": [{ "label": "Adult (18-64)", "value": "$74.22+HST" }, { "label": "Junior | Senior (6-17)", "value": "$64.90+HST" }, { "label": "Tyke", "value": "$27.50+HST" }] }
+          ]
+        },
+        "resortId": "lakeridge-ski-resort",
+        "sourceUrl": "https://ski-lakeridge.com/skiing-snowboarding/hours-ticket-prices/",
+        "updatedAt": 0
+      }
+    },
+    {
+      "table": "resortRentals",
+      "content": {
+        "rentals": {
+          "sections": [
+            { "name": "Skis, Boots and Poles Package", "items": [
+              { "name": "ADULT", "prices": [{ "label": "4 HOURS", "value": "$43.01" }, { "label": "3 HOURS (end of night)", "value": "$38.70" }, { "label": "2 HOURS (end of night)", "value": "$28.20" }] },
+              { "name": "CHILD / YOUTH / SR", "prices": [{ "label": "4 HOURS", "value": "$37.41" }, { "label": "3 HOURS (end of night)", "value": "$33.67" }, { "label": "2 HOURS (end of night)", "value": "$28.20" }] }
+            ] },
+            { "name": "Snowboard and Boots Package", "items": [
+              { "name": "ADULT", "prices": [{ "label": "4 HOURS", "value": "$51.85" }, { "label": "3 HOURS (end of night)", "value": "$46.67" }, { "label": "2 HOURS (end of night)", "value": "$37.49" }] },
+              { "name": "CHILD / YOUTH / SR.", "prices": [{ "label": "4 HOURS", "value": "$47.91" }, { "label": "3 HOURS (end of night)", "value": "$43.12" }, { "label": "2 HOURS (end of night)", "value": "$37.49" }] }
+            ] },
+            { "name": "Rental Packages for Lessons", "items": [
+              { "name": "7 week package", "prices": [{ "label": "Ski", "value": "$216.96" }, { "label": "Snowboard", "value": "$299.92" }] },
+              { "name": "7 week Ski & Helmet package", "prices": [{ "label": "Ski", "value": "$285.96" }, { "label": "Snowboard", "value": "N/A" }] },
+              { "name": "7 week Snowboard & Helmet package", "prices": [{ "label": "Ski", "value": "N/A" }, { "label": "Snowboard", "value": "$358.80" }] }
+            ] },
+            { "name": "Individual Items", "items": [
+              { "name": "ADULT SNOWBOARD", "prices": [{ "label": "4 HOURS", "value": "$35.97" }] },
+              { "name": "ADULT SKIS", "prices": [{ "label": "4 HOURS", "value": "$29.34" }] },
+              { "name": "HELMET", "prices": [{ "label": "4 HOURS", "value": "$15.09" }] },
+              { "name": "POLES", "prices": [{ "label": "4 HOURS", "value": "$7.78" }] }
+            ] }
+          ]
+        },
+        "resortId": "lakeridge-ski-resort",
+        "sourceUrl": "https://ski-lakeridge.com/skiing-snowboarding/equipment-rentals/",
+        "updatedAt": 0
+      }
+    },
+    {
+      "table": "weatherAndStatus",
+      "content": {
+        "lifts": [],
+        "trails": [
+          { "name": "Sunnyside", "status": "CLOSED", "difficulty": "Black Diamond" },
+          { "name": "Mogul Alley", "status": "CLOSED", "difficulty": "Double Black Diamond" },
+          { "name": "Main Street", "status": "CLOSED", "difficulty": "Blue Square" },
+          { "name": "Banked Slalom Run", "status": "CLOSED", "difficulty": "Orange Oval" },
+          { "name": "Short Cut", "status": "CLOSED", "difficulty": "Green Circle" },
+          { "name": "Collectors", "status": "CLOSED", "difficulty": "Green Circle" },
+          { "name": "One Way", "status": "CLOSED", "difficulty": "Green Circle" },
+          { "name": "Beginners Area", "status": "CLOSED", "difficulty": "Green Circle" },
+          { "name": "Little Razors", "status": "CLOSED", "difficulty": "Orange Oval" },
+          { "name": "Highway", "status": "CLOSED", "difficulty": "Green Circle" },
+          { "name": "Bail Out", "status": "CLOSED", "difficulty": "Black Diamond" },
+          { "name": "Rieky's Run", "status": "CLOSED", "difficulty": "Double Black Diamond" },
+          { "name": "Upper Chute", "status": "CLOSED", "difficulty": "Black Diamond" },
+          { "name": "Lower Chute", "status": "CLOSED", "difficulty": "Black Diamond" },
+          { "name": "Valley Road", "status": "CLOSED", "difficulty": "Blue Square" },
+          { "name": "Freeway", "status": "CLOSED", "difficulty": "Black Diamond" },
+          { "name": "East Avenue", "status": "CLOSED", "difficulty": "Blue Square" },
+          { "name": "Bridge-Trail", "status": "CLOSED", "difficulty": "Blue Square" },
+          { "name": "Little Rogers", "status": "CLOSED", "difficulty": "Green Circle" }
+        ],
+        "terrainParks": [
+          { "name": "Snowcross", "status": "CLOSED" },
+          { "name": "Razors Edge Terrain Park", "status": "CLOSED", "difficulty": "Orange Oval" }
+        ],
+        "tubing": [{ "name": "Tube Park - reservation only", "status": "CLOSED" }],
+        "trailsSummary": { "open": 0, "total": 19 },
+        "rawData": { "source": "ski-lakeridge trail status" },
+        "resortId": "lakeridge-ski-resort",
+        "sourceUrl": "https://ski-lakeridge.com/skiing-snowboarding/trail-status/",
+        "updatedAt": 0
+      }
+    }
+  ]
+}

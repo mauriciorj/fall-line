@@ -1,0 +1,51 @@
+{
+  "rates": {
+    "items": [
+      {
+        "name": "All Lifts*",
+        "prices": [
+          { "label": "Weekday", "value": "$63" },
+          { "label": "Weekend & Holiday", "value": "$68" }
+        ]
+      },
+      {
+        "name": "Surface Lifts * ticket gives access to surface lifts ONLY!",
+        "prices": [
+          { "label": "Weekday", "value": "$50" },
+          { "label": "Weekend & Holiday", "value": "$55" }
+        ]
+      },
+      {
+        "name": "Tot*",
+        "prices": [
+          { "label": "Weekday", "value": "$29" },
+          { "label": "Weekend & Holiday", "value": "$32" }
+        ]
+      },
+      {
+        "name": "Night*",
+        "prices": [
+          { "label": "Weekday", "value": "$40" },
+          { "label": "Weekend & Holiday", "value": "$40" }
+        ]
+      },
+      {
+        "name": "Ski/Board",
+        "prices": [
+          { "label": "Weekday", "value": "$50" },
+          { "label": "Weekend & Holiday", "value": "$55" }
+        ]
+      },
+      {
+        "name": "Tot* Ski/Board",
+        "prices": [
+          { "label": "Weekday", "value": "$40" },
+          { "label": "Weekend & Holiday", "value": "$44" }
+        ]
+      }
+    ]
+  },
+  "resortId": "chicopee",
+  "sourceUrl": "https://www.discoverchicopee.com/plan-a-day",
+  "updatedAt": 0
+}

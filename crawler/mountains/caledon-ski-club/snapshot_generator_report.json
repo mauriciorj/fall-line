@@ -1,0 +1,35 @@
+{
+  "resortId": "caledon-ski-club",
+  "tables": [
+    {
+      "table": "resorts",
+      "missingColumns": [
+        "lessonsPrice",
+        "rating",
+        "ticketUrl",
+        "tubbingPrice"
+      ]
+    },
+    {
+      "table": "resortHours",
+      "missingColumns": []
+    },
+    {
+      "table": "resortRates",
+      "missingColumns": []
+    },
+    {
+      "table": "resortRentals",
+      "missingColumns": []
+    },
+    {
+      "table": "weatherAndStatus",
+      "missingColumns": [
+        "terrainParks",
+        "crossCountry",
+        "tubing"
+      ]
+    }
+  ],
+  "missingColumnCount": 7
+}

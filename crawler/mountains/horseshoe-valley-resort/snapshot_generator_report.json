@@ -1,0 +1,29 @@
+{
+  "resortId": "horseshoe-valley-resort",
+  "tables": [
+    {
+      "table": "resorts",
+      "missingColumns": [
+        "lessonsPrice",
+        "tollFree"
+      ]
+    },
+    {
+      "table": "resortHours",
+      "missingColumns": []
+    },
+    {
+      "table": "resortRates",
+      "missingColumns": []
+    },
+    {
+      "table": "resortRentals",
+      "missingColumns": []
+    },
+    {
+      "table": "weatherAndStatus",
+      "missingColumns": []
+    }
+  ],
+  "missingColumnCount": 2
+}

@@ -1,0 +1,67 @@
+"""Lake Ridge hours crawler."""
+
+import json
+import os
+import sys
+import time
+
+import truststore
+
+truststore.inject_into_ssl()
+
+import requests
+from bs4 import BeautifulSoup
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from dtos import to_hours
+
+URL = "https://ski-lakeridge.com/skiing-snowboarding/hours-ticket-prices/"
+RESORT_ID = "lakeridge-ski-resort"
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+}
+
+
+def extract_table_data(table):
+    rows = table.find_all("tr")
+    if not rows:
+        return []
+    first_row = rows[0]
+    headers = [cell.get_text(" ", strip=True) for cell in first_row.find_all(["th", "td"])]
+    result = []
+    for row in rows[1:]:
+        cells = row.find_all("td")
+        if not cells:
+            continue
+        values = [cell.get_text(" ", strip=True) for cell in cells]
+        values.extend([""] * max(0, len(headers) - len(values)))
+        result.append({headers[index] or f"Column_{index + 1}": values[index] for index in range(min(len(headers), len(values)))})
+    return result
+
+
+def get_hours():
+    response = requests.get(URL, headers=HEADERS, timeout=30)
+    response.raise_for_status()
+    soup = BeautifulSoup(response.content, "html.parser")
+    heading = soup.find("th", string=lambda text: text and "Date of operation" in text)
+    if not heading:
+        return {}
+    return {"Hours of operation": extract_table_data(heading.find_parent("table"))}
+
+
+def main():
+    payload = {
+        "hours": to_hours(get_hours()),
+        "resortId": RESORT_ID,
+        "sourceUrl": URL,
+        "updatedAt": int(time.time() * 1000),
+    }
+    output_file = os.path.join(os.path.dirname(__file__), "hours-of-operation.json")
+    with open(output_file, "w", encoding="utf-8") as output:
+        json.dump(payload, output, indent=2, ensure_ascii=False)
+    print(f"Saved to {output_file}")
+
+
+if __name__ == "__main__":
+    main()

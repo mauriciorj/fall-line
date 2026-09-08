@@ -1,0 +1,14 @@
+{
+  "rates": {
+    "items": [
+      { "name": "Lift Tickets | Buy Now & Save Rates | Adult |18-64| Lift Tickets | 4 Hour Lift", "prices": [{ "label": "price", "value": "$65-$89" }, { "label": "description", "value": "Any 4hr Lift Access starting from Arrival" }] },
+      { "name": "Lift Tickets | Buy Now & Save Rates | Adult |18-64| Lift Tickets | 6 Hour Lift", "prices": [{ "label": "price", "value": "$72-$99" }, { "label": "description", "value": "Any 6hr Lift Access starting from Arrival" }] },
+      { "name": "Lift Tickets | Buy Now & Save Rates | Youth |6-17| & Senior |65+| Lift Tickets | 4 Hour Lift", "prices": [{ "label": "price", "value": "$50-$67" }] },
+      { "name": "Season Passes | Anytime Pass | Adult (18-64)", "prices": [{ "label": "price", "value": "$825" }] },
+      { "name": "Season Passes | Almost Anytime Pass | Adult (18-64)", "prices": [{ "label": "price", "value": "$539" }] }
+    ]
+  },
+  "resortId": "snow-valley-ski-resort",
+  "sourceUrl": "https://www.skisnowvalley.com/plan/ski-snowboard/tickets-and-passes/",
+  "updatedAt": 0
+}

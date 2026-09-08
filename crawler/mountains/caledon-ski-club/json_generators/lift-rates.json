@@ -1,0 +1,49 @@
+{
+  "rates": {
+    "items": [
+      {
+        "name": "Adult",
+        "prices": [
+          { "label": "WEEKENDS & HOLIDAYS", "value": "$85.00" },
+          { "label": "MID WEEK FULL DAY", "value": "$75.00" },
+          { "label": "MID WEEK AFTER 1PM", "value": "$62.00" }
+        ]
+      },
+      {
+        "name": "Child 5 & under",
+        "prices": [
+          { "label": "WEEKENDS & HOLIDAYS", "value": "$21.00" },
+          { "label": "MID WEEK FULL DAY", "value": "$21.00" },
+          { "label": "MID WEEK AFTER 1PM", "value": "$21.00" }
+        ]
+      },
+      {
+        "name": "Child 6 - 12",
+        "prices": [
+          { "label": "WEEKENDS & HOLIDAYS", "value": "$64.00" },
+          { "label": "MID WEEK FULL DAY", "value": "$62.00" },
+          { "label": "MID WEEK AFTER 1PM", "value": "$54.00" }
+        ]
+      },
+      {
+        "name": "Student 13 - 18",
+        "prices": [
+          { "label": "WEEKENDS & HOLIDAYS", "value": "$72.00" },
+          { "label": "MID WEEK FULL DAY", "value": "$64.00" },
+          { "label": "MID WEEK AFTER 1PM", "value": "$56.00" }
+        ]
+      },
+      {
+        "name": "Senior 65+",
+        "prices": [
+          { "label": "WEEKENDS & HOLIDAYS", "value": "$72.00" },
+          { "label": "MID WEEK FULL DAY", "value": "$64.00" },
+          { "label": "MID WEEK AFTER 1PM", "value": "$56.00" }
+        ]
+      }
+    ]
+  },
+  "resortId": "caledon-ski-club",
+  "sourceUrl": "https://caledonskiclub.com/hours-lift-prices",
+  "updatedAt": 0
+}

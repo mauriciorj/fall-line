@@ -1,0 +1,13 @@
+{
+  "resortId": "caledon-ski-club",
+  "address": "17431 Mississauga Road, Caledon, Ontario L7K 0E9",
+  "continent": "North America",
+  "country": "Canada",
+  "email": "admin@caledonskiclub.on.ca",
+  "region": "Ontario",
+  "coordinates": { "lat": 43.856306447577786, "lng": -80.00755054550318 },
+  "googleMapsUrl": "https://maps.app.goo.gl/nfzpbXydap2bfMP56",
+  "phone": "(519) 927-5221",
+  "tollFree": "1-800-363-7669",
+  "website": "https://caledonskiclub.com/"
+}

@@ -1,0 +1,13 @@
+{
+  "hours": [
+    {
+      "name": "Hours of operation",
+      "hours": [
+        { "day": "Monday", "time": "10:00am to 4:00pm" }
+      ]
+    }
+  ],
+  "resortId": "dagmar-ski-resort",
+  "sourceUrl": "https://www.skidagmar.com/alpine-rates/",
+  "updatedAt": 0
+}

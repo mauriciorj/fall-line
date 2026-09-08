@@ -1,0 +1,66 @@
+{
+  "conditions": {
+    "hours": "Closed for the season",
+    "surfaceConditions": "Base Depth",
+    "baseDepth": "Runs",
+    "newSnow": "0 cm"
+  },
+  "lifts": [
+    { "name": "Kimbles Carpet", "status": "closed", "dayStatus": "closed", "nightStatus": "closed" },
+    { "name": "Snow School Express", "status": "closed", "dayStatus": "closed", "nightStatus": "closed" },
+    { "name": "Double Chair", "status": "closed", "dayStatus": "closed", "nightStatus": "closed" },
+    { "name": "Copeland Express 6 Person Chair", "status": "closed", "dayStatus": "closed", "nightStatus": "closed" },
+    { "name": "High Rider Quad", "status": "closed", "dayStatus": "closed", "nightStatus": "closed" },
+    { "name": "Highland Express Quad", "status": "closed", "dayStatus": "closed", "nightStatus": "closed" }
+  ],
+  "trails": [
+    { "name": "Ponyback", "status": "closed", "difficulty": "easy", "dayStatus": "closed", "nightStatus": "closed" },
+    { "name": "Pinto", "status": "closed", "difficulty": "easy", "dayStatus": "closed", "nightStatus": "closed" },
+    { "name": "Hungry Hollow", "status": "closed", "difficulty": "easy", "dayStatus": "closed", "nightStatus": "closed" },
+    { "name": "Roundup", "status": "closed", "difficulty": "easy", "dayStatus": "closed", "nightStatus": "closed" },
+    { "name": "Donkey Serenade", "status": "closed", "difficulty": "easy", "dayStatus": "closed", "nightStatus": "closed" },
+    { "name": "Pony Express", "status": "closed", "difficulty": "easy", "dayStatus": "closed", "nightStatus": "closed" },
+    { "name": "Canter", "status": "closed", "difficulty": "easy", "dayStatus": "closed", "nightStatus": "closed" },
+    { "name": "Mule Train", "status": "closed", "difficulty": "easy", "dayStatus": "closed", "nightStatus": "closed" },
+    { "name": "Steeplechase", "status": "closed", "difficulty": "difficult", "dayStatus": "closed", "nightStatus": "closed" },
+    { "name": "Flying Mare", "status": "closed", "difficulty": "difficult", "dayStatus": "closed", "nightStatus": "closed" },
+    { "name": "Pony Tail", "status": "closed", "difficulty": "difficult", "dayStatus": "closed", "nightStatus": "closed" },
+    { "name": "Ramey's Return", "status": "closed", "difficulty": "difficult", "dayStatus": "closed", "nightStatus": "closed" },
+    { "name": "Saddleback", "status": "closed", "difficulty": "difficult", "dayStatus": "closed", "nightStatus": "closed" },
+    { "name": "Stallion Slide", "status": "closed", "difficulty": "difficult", "dayStatus": "closed", "nightStatus": "closed" },
+    { "name": "Duster", "status": "closed", "difficulty": "difficult", "dayStatus": "closed", "nightStatus": "closed" },
+    { "name": "Nightmare Ride", "status": "closed", "difficulty": "difficult", "dayStatus": "closed", "nightStatus": "closed" },
+    { "name": "Stampede", "status": "closed", "difficulty": "difficult", "dayStatus": "closed", "nightStatus": "closed" },
+    { "name": "The Wave", "status": "closed", "difficulty": "difficult", "dayStatus": "closed", "nightStatus": "closed" },
+    { "name": "Shaggy Mane", "status": "closed", "difficulty": "difficult", "dayStatus": "closed", "nightStatus": "closed" },
+    { "name": "The Zipper", "status": "closed", "difficulty": "difficult", "dayStatus": "closed", "nightStatus": "Not available" },
+    { "name": "Bushwacker", "status": "closed", "difficulty": "difficult", "dayStatus": "closed", "nightStatus": "Not available" },
+    { "name": "Bronco", "status": "closed", "difficulty": "difficult", "dayStatus": "closed", "nightStatus": "closed" },
+    { "name": "Rodeo", "status": "closed", "difficulty": "difficult", "dayStatus": "closed", "nightStatus": "closed" },
+    { "name": "Race Hill", "status": "closed", "difficulty": "difficult", "dayStatus": "closed", "nightStatus": "closed" },
+    { "name": "Horsefeathers", "status": "closed", "difficulty": "difficult", "dayStatus": "closed", "nightStatus": "closed" }
+  ],
+  "terrainParks": [
+    { "name": "Horsefly Hop", "status": "closed", "difficulty": "terrain_park", "dayStatus": "closed", "nightStatus": "closed" },
+    { "name": "Bullpen", "status": "closed", "difficulty": "terrain_park", "dayStatus": "closed", "nightStatus": "closed" }
+  ],
+  "crossCountry": [
+    { "trail": "5", "distance": "2.0 km", "status": "closed", "trackSet": "closed", "groomedToday": "closed" },
+    { "trail": "9", "distance": "2.5 km", "status": "closed", "trackSet": "closed", "groomedToday": "closed" }
+  ],
+  "tubing": [
+    { "name": "Tube Park", "status": "open", "hours": "Plan Your Overnight Stay: BOOK NOW" }
+  ],
+  "liftsSummary": { "open": 0, "total": 6 },
+  "trailsSummary": { "open": 0, "total": 27 },
+  "rawData": {
+    "conditions": {},
+    "runs": {},
+    "lifts": [],
+    "cross_country": [],
+    "tube_park": {}
+  },
+  "resortId": "horseshoe-valley-resort",
+  "sourceUrl": "https://horseshoeresort.com/ski-report-trails/",
+  "updatedAt": 0
+}

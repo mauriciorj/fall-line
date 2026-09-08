@@ -1,0 +1,69 @@
+{
+  "rates": {
+    "items": [
+      {
+        "name": "New RFID card",
+        "prices": [
+          { "label": "age_range", "value": "N/A" },
+          { "label": "peak_online", "value": "$6.50" },
+          { "label": "peak_gate", "value": "$6.50" },
+          { "label": "off_peak_online", "value": "$6.50" },
+          { "label": "off_peak_gate", "value": "$6.50" }
+        ]
+      },
+      {
+        "name": "Beginner Centre(Carpet Lifts only)",
+        "prices": [
+          { "label": "age_range", "value": "All Ages" },
+          { "label": "peak_online", "value": "$47" },
+          { "label": "peak_gate", "value": "$52" },
+          { "label": "off_peak_online", "value": "$35" },
+          { "label": "off_peak_gate", "value": "$40" }
+        ]
+      },
+      {
+        "name": "5 & Under",
+        "prices": [
+          { "label": "age_range", "value": "0-5" },
+          { "label": "peak_online", "value": "$27" },
+          { "label": "peak_gate", "value": "$32" },
+          { "label": "off_peak_online", "value": "$20" },
+          { "label": "off_peak_gate", "value": "$25" }
+        ]
+      },
+      {
+        "name": "Junior/Teen",
+        "prices": [
+          { "label": "age_range", "value": "6-17" },
+          { "label": "peak_online", "value": "$60" },
+          { "label": "peak_gate", "value": "$65" },
+          { "label": "off_peak_online", "value": "$48" },
+          { "label": "off_peak_gate", "value": "$53" }
+        ]
+      },
+      {
+        "name": "Adult",
+        "prices": [
+          { "label": "age_range", "value": "18-64" },
+          { "label": "peak_online", "value": "$65" },
+          { "label": "peak_gate", "value": "$70" },
+          { "label": "off_peak_online", "value": "$50" },
+          { "label": "off_peak_gate", "value": "$55" }
+        ]
+      },
+      {
+        "name": "Senior",
+        "prices": [
+          { "label": "age_range", "value": "65+" },
+          { "label": "peak_online", "value": "$60" },
+          { "label": "peak_gate", "value": "$65" },
+          { "label": "off_peak_online", "value": "$48" },
+          { "label": "off_peak_gate", "value": "$53" }
+        ]
+      }
+    ]
+  },
+  "resortId": "glen-eden",
+  "sourceUrl": "https://gleneden.on.ca/plan-your-visit/",
+  "updatedAt": 0
+}

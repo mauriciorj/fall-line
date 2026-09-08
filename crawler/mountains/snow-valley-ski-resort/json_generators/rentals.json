@@ -1,0 +1,31 @@
+{
+  "rentals": {
+    "sections": [
+      {
+        "name": "Full Day Ski & Board Rentals",
+        "items": [
+          { "name": "Adult (18-64)", "prices": [{ "label": "price", "value": "$70" }] },
+          { "name": "Youth/Senior (6-17, 65+)", "prices": [{ "label": "price", "value": "$55" }] },
+          { "name": "Under 6 Years", "prices": [{ "label": "price", "value": "$40" }] }
+        ]
+      },
+      {
+        "name": "Night Ski & Board Rentals",
+        "items": [
+          { "name": "Adult (18-64)", "prices": [{ "label": "price", "value": "$56" }] },
+          { "name": "Youth/Senior (6-17, 65+)", "prices": [{ "label": "price", "value": "$45" }] }
+        ]
+      },
+      {
+        "name": "Rental Clothing",
+        "items": [
+          { "name": "Winter Pants", "prices": [{ "label": "price", "value": "$26" }] },
+          { "name": "Winter Jacket", "prices": [{ "label": "price", "value": "$26" }] }
+        ]
+      }
+    ]
+  },
+  "resortId": "snow-valley-ski-resort",
+  "sourceUrl": "https://www.skisnowvalley.com/plan/ski-snowboard/equipment-rentals/",
+  "updatedAt": 0
+}

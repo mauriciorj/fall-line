@@ -1,0 +1,36 @@
+{
+  "lifts": [],
+  "trails": [
+    { "name": "Sunnyside", "status": "CLOSED", "difficulty": "Black Diamond" },
+    { "name": "Mogul Alley", "status": "CLOSED", "difficulty": "Double Black Diamond" },
+    { "name": "Main Street", "status": "CLOSED", "difficulty": "Blue Square" },
+    { "name": "Banked Slalom Run", "status": "CLOSED", "difficulty": "Orange Oval" },
+    { "name": "Short Cut", "status": "CLOSED", "difficulty": "Green Circle" },
+    { "name": "Collectors", "status": "CLOSED", "difficulty": "Green Circle" },
+    { "name": "One Way", "status": "CLOSED", "difficulty": "Green Circle" },
+    { "name": "Beginners Area", "status": "CLOSED", "difficulty": "Green Circle" },
+    { "name": "Little Razors", "status": "CLOSED", "difficulty": "Orange Oval" },
+    { "name": "Highway", "status": "CLOSED", "difficulty": "Green Circle" },
+    { "name": "Bail Out", "status": "CLOSED", "difficulty": "Black Diamond" },
+    { "name": "Rieky's Run", "status": "CLOSED", "difficulty": "Double Black Diamond" },
+    { "name": "Upper Chute", "status": "CLOSED", "difficulty": "Black Diamond" },
+    { "name": "Lower Chute", "status": "CLOSED", "difficulty": "Black Diamond" },
+    { "name": "Valley Road", "status": "CLOSED", "difficulty": "Blue Square" },
+    { "name": "Freeway", "status": "CLOSED", "difficulty": "Black Diamond" },
+    { "name": "East Avenue", "status": "CLOSED", "difficulty": "Blue Square" },
+    { "name": "Bridge-Trail", "status": "CLOSED", "difficulty": "Blue Square" },
+    { "name": "Little Rogers", "status": "CLOSED", "difficulty": "Green Circle" }
+  ],
+  "terrainParks": [
+    { "name": "Snowcross", "status": "CLOSED" },
+    { "name": "Razors Edge Terrain Park", "status": "CLOSED", "difficulty": "Orange Oval" }
+  ],
+  "tubing": [
+    { "name": "Tube Park - reservation only", "status": "CLOSED" }
+  ],
+  "trailsSummary": { "open": 0, "total": 19 },
+  "rawData": { "source": "ski-lakeridge trail status" },
+  "resortId": "lakeridge-ski-resort",
+  "sourceUrl": "https://ski-lakeridge.com/skiing-snowboarding/trail-status/",
+  "updatedAt": 0
+}

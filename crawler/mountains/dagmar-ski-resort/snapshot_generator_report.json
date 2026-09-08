@@ -1,0 +1,32 @@
+{
+  "resortId": "dagmar-ski-resort",
+  "tables": [
+    {
+      "table": "resorts",
+      "missingColumns": [
+        "ticketUrl",
+        "tollFree"
+      ]
+    },
+    {
+      "table": "resortHours",
+      "missingColumns": []
+    },
+    {
+      "table": "resortRates",
+      "missingColumns": []
+    },
+    {
+      "table": "resortRentals",
+      "missingColumns": []
+    },
+    {
+      "table": "weatherAndStatus",
+      "missingColumns": [
+        "crossCountry",
+        "tubing"
+      ]
+    }
+  ],
+  "missingColumnCount": 4
+}

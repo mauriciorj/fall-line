@@ -1,0 +1,15 @@
+{
+  "rates": {
+    "items": [
+      { "name": "Beginner Area Ticket Prices (Magic Carpet Only) | Monday | Tuesday | Wednesday ONLINE pricing", "prices": [{ "label": "ADULT (18-64)", "value": "$39.56+HST" }, { "label": "JUNIOR | SENIOR (6-17 | 65+)", "value": "$39.56+HST" }, { "label": "TYKE (AGE 5 AND UNDER)", "value": "$21.98+HST" }] },
+      { "name": "Beginner Area Ticket Prices (Magic Carpet Only) | Monday | Tuesday | Wednesday ON SITE pricing", "prices": [{ "label": "ADULT (18-64)", "value": "$42.08+HST" }, { "label": "JUNIOR | SENIOR (6-17 | 65+)", "value": "$42.08+HST" }, { "label": "TYKE (AGE 5 AND UNDER)", "value": "$23.38+HST" }] },
+      { "name": "Beginner Area Ticket Prices (Magic Carpet Only) | Thursday to Sunday ONLINE pricing", "prices": [{ "label": "ADULT (18-64)", "value": "$46.53+HST" }, { "label": "JUNIOR | SENIOR (6-17 | 65+)", "value": "$46.53+HST" }, { "label": "TYKE (AGE 5 AND UNDER)", "value": "$25.85+HST" }] },
+      { "name": "Monday to Wednesday Lift Tickets (NOT VALID ON FAMILY DAY) | 4 Hours Anytime - ONLINE pricing", "prices": [{ "label": "Adult (18-64)", "value": "$59.30+HST" }, { "label": "Junior | Senior (6-17)", "value": "$51.86+HST" }, { "label": "Tyke", "value": "$21.98+HST" }] },
+      { "name": "Thursday to Sunday Lift Tickets | 4 Hours Anytime - ONLINE pricing", "prices": [{ "label": "Adult (18-64)", "value": "$69.77+HST" }, { "label": "Junior | Senior (6-17)", "value": "$61.01+HST" }, { "label": "Tyke", "value": "$25.00+HST" }] },
+      { "name": "Thursday to Sunday Lift Tickets | 4 Hours Anytime - ON SITE pricing", "prices": [{ "label": "Adult (18-64)", "value": "$74.22+HST" }, { "label": "Junior | Senior (6-17)", "value": "$64.90+HST" }, { "label": "Tyke", "value": "$27.50+HST" }] }
+    ]
+  },
+  "resortId": "lakeridge-ski-resort",
+  "sourceUrl": "https://ski-lakeridge.com/skiing-snowboarding/hours-ticket-prices/",
+  "updatedAt": 0
+}

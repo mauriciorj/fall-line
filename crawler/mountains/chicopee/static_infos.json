@@ -1,0 +1,13 @@
+{
+  "resortId": "chicopee",
+  "address": "396 Morrison Road, Kitchener, ON N2A 2Z6",
+  "continent": "North America",
+  "country": "Canada",
+  "email": "guestservices@chicopee.ca",
+  "region": "Ontario",
+  "coordinates": { "lat": 43.50150295771778, "lng": -80.42101373098909 },
+  "googleMapsUrl": "https://maps.app.goo.gl/GSNWkGQzo5aHdWmf9",
+  "phone": "(519) 894-5610",
+  "rating": 4.2,
+  "website": "http://www.discoverchicopee.com/"
+}
