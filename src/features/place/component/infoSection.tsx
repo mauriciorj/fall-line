@@ -53,9 +53,6 @@ const InfoSection = ({ resort, resortHours }: ResortInfoSectionProps) => {
                 <p className="text-sm font-medium text-foreground">
                   Hours of Operation
                 </p>
-                <p className="text-xs text-muted-foreground mt-0.5">
-                  {resort.trackConditions?.length ?? 0} tracks
-                </p>
               </div>
             </div>
             <ChevronDown

@@ -13,7 +13,6 @@ const TracksBreakdown = ({
   resort: Resort;
 }) => {
   const {
-    totalTracks,
     greenTracks,
     greenTracksOpen,
     greenTracksPercent,
@@ -30,12 +29,8 @@ const TracksBreakdown = ({
     freeStyleTracksOpen,
     freeStyleTracksPercent,
   } = TrackStats({ resort });
+  const hasTrackConditions = Boolean(resort.trackConditions?.length);
 
-  // console.log("");
-  // console.log(name);
-  // console.log(
-  //   `{ black: ${blackTracks}, blue: ${blueTracks}, doubleBlack: ${doubleBlackTracks}, freeStyle: ${freeStyleTracks}, green: ${greenTracks} }`
-  // );
 
   return (
     <div className={cn("space-y-2", className)}>
@@ -109,7 +104,7 @@ const TracksBreakdown = ({
           />
         )}
       </div>
-      {!isToHideStatusBadge && (
+      {!isToHideStatusBadge && hasTrackConditions && (
         <div className="flex items-center text-xs text-muted-foreground">
           {Boolean(greenTracks > 0) && (
             <StatusBadge

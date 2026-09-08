@@ -22,6 +22,14 @@ interface TracksSectionProps {
   resort: Resort;
 }
 
+type TrackDifficulty = NonNullable<Resort["trackConditions"]>[number]["difficulty"];
+
+type TrackSummary = {
+  name: string;
+  difficulty: TrackDifficulty;
+  count: number;
+};
+
 const difficultyColor = {
   green: "bg-run-green",
   blue: "bg-run-blue",
@@ -35,16 +43,43 @@ const difficultyLabel = {
   blue: "Intermediate",
   black: "Advanced",
   "double-black": "Expert",
+  "free-style": "Freestyle",
 };
 
 const TracksSection = ({ resort }: TracksSectionProps) => {
   const [isOpen, setIsOpen] = useState(false);
-
-  const getFileType = (url: string) => {
-    if (/\.(jpg|jpeg|png|gif|webp|svg)$/i.test(url)) return "image";
-    if (/\.pdf$/i.test(url)) return "pdf";
-    return null;
-  };
+  const trackConditions = resort.trackConditions ?? [];
+  const summaryTracks: TrackSummary[] = [
+    {
+      name: difficultyLabel.green,
+      difficulty: "green" as const,
+      count: resort.runs.green,
+    },
+    {
+      name: difficultyLabel.blue,
+      difficulty: "blue" as const,
+      count: resort.runs.blue,
+    },
+    {
+      name: difficultyLabel.black,
+      difficulty: "black" as const,
+      count: resort.runs.black,
+    },
+    {
+      name: difficultyLabel["double-black"],
+      difficulty: "double-black" as const,
+      count: resort.runs.doubleBlack,
+    },
+    {
+      name: difficultyLabel["free-style"],
+      difficulty: "free-style" as const,
+      count: resort.runs.freeStyle ?? 0,
+    },
+  ].filter((track) => track.count > 0);
+  const trackCount = trackConditions.length || summaryTracks.reduce(
+    (total, track) => total + track.count,
+    0,
+  );
 
   return (
     <section className="space-y-4">
@@ -60,7 +95,7 @@ const TracksSection = ({ resort }: TracksSectionProps) => {
                   Track Conditions
                 </p>
                 <p className="text-xs text-muted-foreground mt-0.5">
-                  {resort?.trackConditions?.length} tracks
+                  {trackCount} tracks
                 </p>
               </div>
             </div>
@@ -70,39 +105,58 @@ const TracksSection = ({ resort }: TracksSectionProps) => {
           </CollapsibleTrigger>
           <CollapsibleContent>
             <div className="px-5 pb-4 space-y-2">
-              {[...(resort?.trackConditions || [])]
-                .sort((a, b) => {
-                  const difficultyOrder: Record<string, number> = {
-                    green: 1,
-                    blue: 2,
-                    black: 3,
-                    "double-black": 4,
-                    "free-style": 5,
-                  };
-                  const diff =
-                    (difficultyOrder[a.difficulty] || 99) -
-                    (difficultyOrder[b.difficulty] || 99);
-                  if (diff !== 0) return diff;
-                  return a.name.localeCompare(b.name);
-                })
-                .map((track, i) => (
-                  <div
-                    key={i}
-                    className="flex items-center justify-between py-2 px-3 rounded-md"
-                  >
-                    <div className="flex items-center gap-2.5">
-                      <span
-                        className={`w-2.5 h-2.5 rounded-full ${difficultyColor[track.difficulty]}`}
-                      />
-                      <span className="text-sm text-foreground">
-                        {track.name}
+              {trackConditions.length > 0
+                ? [...trackConditions]
+                    .sort((a, b) => {
+                      const difficultyOrder: Record<string, number> = {
+                        green: 1,
+                        blue: 2,
+                        black: 3,
+                        "double-black": 4,
+                        "free-style": 5,
+                      };
+                      const diff =
+                        (difficultyOrder[a.difficulty] || 99) -
+                        (difficultyOrder[b.difficulty] || 99);
+                      if (diff !== 0) return diff;
+                      return a.name.localeCompare(b.name);
+                    })
+                    .map((track, i) => (
+                      <div
+                        key={i}
+                        className="flex items-center justify-between py-2 px-3 rounded-md"
+                      >
+                        <div className="flex items-center gap-2.5">
+                          <span
+                            className={`w-2.5 h-2.5 rounded-full ${difficultyColor[track.difficulty]}`}
+                          />
+                          <span className="text-sm text-foreground">
+                            {track.name}
+                          </span>
+                        </div>
+                        <span className="text-xs text-muted-foreground">
+                          {track.condition}
+                        </span>
+                      </div>
+                    ))
+                : summaryTracks.map((track) => (
+                    <div
+                      key={track.difficulty}
+                      className="flex items-center justify-between py-2 px-3 rounded-md"
+                    >
+                      <div className="flex items-center gap-2.5">
+                        <span
+                          className={`w-2.5 h-2.5 rounded-full ${difficultyColor[track.difficulty]}`}
+                        />
+                        <span className="text-sm text-foreground">
+                          {track.name}
+                        </span>
+                      </div>
+                      <span className="text-xs text-muted-foreground">
+                        {track.count} tracks
                       </span>
                     </div>
-                    <span className="text-xs text-muted-foreground">
-                      {track.condition}
-                    </span>
-                  </div>
-                ))}
+                  ))}
             </div>
           </CollapsibleContent>
         </Collapsible>
@@ -119,7 +173,7 @@ const TracksSection = ({ resort }: TracksSectionProps) => {
                 View Map
               </Button>
             </DialogTrigger>
-            <DialogContent className="max-w-3xl max-h-[85vh] overflow-auto">
+            <DialogContent className="w-full max-h-[85vh] overflow-auto">
               <DialogHeader>
                 <DialogTitle className="font-serif">
                   {resort.name} — Trail Map
@@ -129,7 +183,9 @@ const TracksSection = ({ resort }: TracksSectionProps) => {
                 <Image
                   src={resort.trailMap}
                   alt={`${resort.name} trail map`}
-                  className="w-full rounded-md"
+                  width={1200}
+                  height={800}
+                  className="w-full h-auto rounded-md"
                 />
               </div>
             </DialogContent>

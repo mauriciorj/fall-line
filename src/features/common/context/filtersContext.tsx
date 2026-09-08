@@ -191,7 +191,7 @@ export function FiltersProvider({ children }: { children: ReactNode }) {
   const allResorts = useMemo(
     () =>
       (dbResorts ?? [])
-        .map(toResort)
+        .map((resort) => toResort(resort))
         .filter((resort): resort is Resort => resort !== null),
     [dbResorts],
   );

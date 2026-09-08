@@ -1,4 +1,4 @@
-import { internalMutation } from "./_generated/server";
+import { internalMutation, query } from "./_generated/server";
 import { v } from "convex/values";
 import { ensureResort } from "./resorts";
 
@@ -87,5 +87,16 @@ export const save = internalMutation({
     }
 
     return await ctx.db.insert("weatherAndStatus", doc);
+  },
+});
+
+export const getByResort = query({
+  args: { resortId: v.string() },
+  returns: v.any(),
+  handler: async (ctx, args) => {
+    return await ctx.db
+      .query("weatherAndStatus")
+      .withIndex("by_resort", (q) => q.eq("resortId", args.resortId))
+      .unique();
   },
 });

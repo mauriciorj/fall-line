@@ -6,7 +6,10 @@ import { useQuery } from "convex/react";
 import { ArrowLeft, Ticket } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { api } from "@/convex/_generated/api";
-import { toResort } from "@/utils/convexResort";
+import {
+  toResort,
+  toTrackConditions,
+} from "@/utils/convexResort";
 import InfoSection from "@/src/features/place/component/infoSection";
 import LocationSection from "@/src/features/place/component/locationSection";
 import PricingSection from "@/src/features/place/component/pricingSection";
@@ -25,12 +28,13 @@ const ResortDetail = () => {
     api.resortHours.getByResort,
     resortId ? { resortId } : "skip",
   );
-  const resort = toResort(dbResort);
-
-  console.log("")
-  console.log("dbResort => ", dbResort)
-  console.log("resort => ", resort)
-  console.log("")
+  const dbWeatherAndStatus = useQuery(
+    api.weatherAndStatus.getByResort,
+    resortId ? { resortId } : "skip",
+  );
+  const resort = toResort(dbResort, {
+    trackConditions: toTrackConditions(dbWeatherAndStatus),
+  });
 
   if (dbResort === undefined) {
     return (
