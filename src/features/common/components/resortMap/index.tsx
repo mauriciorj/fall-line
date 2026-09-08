@@ -65,18 +65,18 @@ const ResortMap = ({
           icon={{
             path: "M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z",
             fillColor:
-              hoveredResort === resort.sourceId || selectedResort === resort.sourceId
+              hoveredResort === resort.resortId || selectedResort === resort.resortId
                 ? "#4A6FA5"
                 : "#6B7280",
             fillOpacity: 1,
             strokeColor: "#ffffff",
             strokeWeight: 2,
-            scale: hoveredResort === resort.sourceId ? 1.8 : 1.4,
+            scale: hoveredResort === resort.resortId ? 1.8 : 1.4,
             anchor: { x: 12, y: 24 } as google.maps.Point,
           }}
-          key={resort.sourceId}
-          onClick={() => setSelectedResort(resort.sourceId)}
-          onMouseOver={() => setHoveredResort(resort.sourceId)}
+          key={resort.resortId}
+          onClick={() => setSelectedResort(resort.resortId)}
+          onMouseOver={() => setHoveredResort(resort.resortId)}
           onMouseOut={() => setHoveredResort(null)}
           position={resort.coordinates!}
           label={{

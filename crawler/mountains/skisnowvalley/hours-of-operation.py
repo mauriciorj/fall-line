@@ -16,15 +16,14 @@ from convex_client import push_resort_hours
 
 
 RESORT_ID = "snow-valley-ski-resort"
-RESORT_NAME = "Ski Snow Valley"
 SOURCE_URL = "https://www.skisnowvalley.com/about/"
 
 
-def to_convex_sections(hours_data):
+def to_hours(hours_data):
     """
-    Convert the nested hours dictionary into the normalized Convex sections shape.
+    Convert the nested hours dictionary into the normalized Convex hours shape.
     """
-    sections = []
+    normalized_hours = []
     for section_name, section_value in hours_data.items():
         if not section_value:
             continue
@@ -39,15 +38,15 @@ def to_convex_sections(hours_data):
                     for day_name, time in days.items()
                 ]
                 activities.append({"name": activity_name, "hours": hours})
-            sections.append({"name": section_name, "activities": activities})
+            normalized_hours.append({"name": section_name, "activities": activities})
         else:
             hours = [
                 {"day": day_name, "time": time}
                 for day_name, time in section_value.items()
             ]
-            sections.append({"name": section_name, "hours": hours})
+            normalized_hours.append({"name": section_name, "hours": hours})
 
-    return sections
+    return normalized_hours
 
 
 def get_hours_of_operation():
@@ -141,14 +140,13 @@ def main():
         json.dump(hours, f, indent=2, ensure_ascii=False)
     print(f"Saved to {output_file}")
 
-    sections = to_convex_sections(hours)
-    fetched_at_ms = int(time.time() * 1000)
+    hours = to_hours(hours)
+    updated_at_ms = int(time.time() * 1000)
     push_resort_hours(
         RESORT_ID,
-        RESORT_NAME,
         SOURCE_URL,
-        sections,
-        fetched_at_ms=fetched_at_ms,
+        hours,
+        updated_at_ms=updated_at_ms,
     )
     return hours
 

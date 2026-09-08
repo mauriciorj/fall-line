@@ -56,9 +56,9 @@ const ResortList = ({
       <div className="p-6 space-y-5">
         {resorts.map((resort, index) => (
           <div
-            key={resort.sourceId}
+            key={resort.resortId}
             ref={(el) => {
-              if (el) itemRefs.current[resort.sourceId] = el;
+              if (el) itemRefs.current[resort.resortId] = el;
             }}
             className="animate-fade-in scroll-mt-7"
             style={{ animationDelay: `${index * 50}ms` }}
@@ -66,7 +66,7 @@ const ResortList = ({
             <ResortCard
               resort={resort}
               isResortHoveredOrSelected={
-                hoveredResort === resort.sourceId || selectedResort === resort.sourceId
+                hoveredResort === resort.resortId || selectedResort === resort.resortId
               }
               setHoveredResort={setHoveredResort}
             />

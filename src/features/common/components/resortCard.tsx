@@ -24,7 +24,7 @@ const ResortCard = ({
   const router = useRouter();
 
   const handleClick = () => {
-    router.push(`/place/${resort.sourceId}`);
+    router.push(`/place/${resort.resortId}`);
   };
 
   return (
@@ -35,7 +35,7 @@ const ResortCard = ({
         isResortHoveredOrSelected &&
           "shadow-md shadow-primary ring-1 ring-primary"
       )}
-      onMouseEnter={() => setHoveredResort(resort.sourceId)}
+      onMouseEnter={() => setHoveredResort(resort.resortId)}
       onMouseLeave={() => setHoveredResort(null)}
       onClick={handleClick}
     >

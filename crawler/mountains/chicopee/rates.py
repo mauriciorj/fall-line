@@ -17,7 +17,6 @@ from dtos import to_rates_dto
 
 URL = "https://www.discoverchicopee.com/plan-a-day"
 RESORT_ID = "chicopee"
-RESORT_NAME = "Chicopee"
 
 
 def get_driver():
@@ -123,10 +122,9 @@ def main():
 
     result = push_resort_rates(
         RESORT_ID,
-        RESORT_NAME,
         URL,
         to_rates_dto(rates),
-        fetched_at_ms=int(time.time() * 1000),
+        updated_at_ms=int(time.time() * 1000),
     )
     if result is not None:
         print("Pushed to Convex:", result)

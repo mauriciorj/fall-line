@@ -67,69 +67,38 @@ export const hoursSectionSchema = v.object({
 
 export const resortHoursFields = {
   resortId: v.string(),
-  resortName: v.string(),
   sourceUrl: v.string(),
-  fetchedAt: v.number(),
-  sections: v.array(hoursSectionSchema),
+  updatedAt: v.number(),
+  hours: v.array(hoursSectionSchema),
 };
 
 export const resortRatesFields = {
   resortId: v.string(),
-  resortName: v.string(),
   sourceUrl: v.string(),
-  fetchedAt: v.number(),
+  updatedAt: v.number(),
   rates: v.any(),
 };
 
 export const resortRentalsFields = {
   resortId: v.string(),
-  resortName: v.string(),
   sourceUrl: v.string(),
-  fetchedAt: v.number(),
+  updatedAt: v.number(),
   rentals: v.any(),
 };
 
 export const resortsFields = {
-  source: v.optional(v.string()),
-  sourceId: v.optional(v.string()),
-  name: v.string(),
+  resortId: v.string(),
+  name: v.optional(v.string()),
   continent: v.optional(v.string()),
   country: v.optional(v.string()),
   region: v.optional(v.string()),
-  rate: v.optional(v.number()),
   contact: v.optional(v.string()),
   website: v.optional(v.string()),
-  directoryData: v.optional(v.object({
-    locationTrail: v.array(v.string()),
-    url: v.optional(v.string()),
-    rating: v.optional(v.number()),
-    altitudeDifference: v.optional(v.string()),
-    altitudeBase: v.optional(v.string()),
-    altitudeTop: v.optional(v.string()),
-    slopesTotal: v.optional(v.string()),
-    slopesEasy: v.optional(v.string()),
-    slopesIntermediate: v.optional(v.string()),
-    slopesDifficult: v.optional(v.string()),
-    skiPassPrice: v.optional(v.string()),
-    imageUrl: v.optional(v.string()),
-    fetchedAt: v.number(),
-    rawData: v.optional(v.any()),
-  })),
   address: v.optional(v.string()),
   coordinates: v.optional(
     v.object({
       lat: v.number(),
       lng: v.number(),
-    }),
-  ),
-  crawlerUrls: v.optional(
-    v.object({
-      dayTicketPriceUrl: v.optional(v.string()),
-      equipmentRentalsUrl: v.optional(v.string()),
-      hoursOfOperationUrl: v.optional(v.string()),
-      lessonsUrl: v.optional(v.string()),
-      trackConditionsUrl: v.optional(v.string()),
-      tubbing: v.optional(v.string()),
     }),
   ),
   dayTicketPrice: v.optional(v.number()),
@@ -142,17 +111,6 @@ export const resortsFields = {
   hasSpa: v.optional(v.boolean()),
   hasTubing: v.optional(v.boolean()),
   hasZipline: v.optional(v.boolean()),
-  hoursOfOperation: v.optional(
-    v.object({
-      sunday: v.optional(v.string()),
-      monday: v.optional(v.string()),
-      tuesday: v.optional(v.string()),
-      wednesday: v.optional(v.string()),
-      thursday: v.optional(v.string()),
-      friday: v.optional(v.string()),
-      saturday: v.optional(v.string()),
-    }),
-  ),
   image: v.optional(v.string()),
   lessonsPrice: v.optional(v.number()),
   phone: v.optional(v.string()),
@@ -185,8 +143,7 @@ export const resortsFields = {
 
 export default defineSchema({
   resorts: defineTable(resortsFields)
-    .index("by_source_id", ["sourceId"])
-    .index("by_source", ["source"])
+    .index("by_resort_id", ["resortId"])
     .index("by_location", ["continent", "country", "region"]),
 
   locations: defineTable({
@@ -197,9 +154,8 @@ export default defineSchema({
 
   weatherAndStatus: defineTable({
     resortId: v.string(),
-    resortName: v.string(),
     sourceUrl: v.optional(v.string()),
-    fetchedAt: v.number(),
+    updatedAt: v.number(),
 
     conditions: v.optional(conditionsSchema),
 
@@ -215,17 +171,17 @@ export default defineSchema({
     rawData: v.optional(v.any()),
   })
     .index("by_resort", ["resortId"])
-    .index("by_fetched", ["fetchedAt"]),
+    .index("by_updated", ["updatedAt"]),
 
   resortHours: defineTable(resortHoursFields)
     .index("by_resort", ["resortId"])
-    .index("by_fetched", ["fetchedAt"]),
+    .index("by_updated", ["updatedAt"]),
 
   resortRates: defineTable(resortRatesFields)
-    .index("by_resort", ["resortName"])
-    .index("by_fetched", ["fetchedAt"]),
+    .index("by_resort", ["resortId"])
+    .index("by_updated", ["updatedAt"]),
 
   resortRentals: defineTable(resortRentalsFields)
-    .index("by_resort", ["resortName"])
-    .index("by_fetched", ["fetchedAt"]),
+    .index("by_resort", ["resortId"])
+    .index("by_updated", ["updatedAt"]),
 });

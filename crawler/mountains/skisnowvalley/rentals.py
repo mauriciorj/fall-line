@@ -18,7 +18,6 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 }
 RESORT_ID = "snow-valley-ski-resort"
-RESORT_NAME = "Ski Snow Valley"
 
 
 def parse_price_list(widget):
@@ -96,10 +95,9 @@ def main():
 
     result = push_resort_rentals(
         RESORT_ID,
-        RESORT_NAME,
         URL,
         rentals,
-        fetched_at_ms=int(time.time() * 1000),
+        updated_at_ms=int(time.time() * 1000),
     )
     if result is not None:
         print("Pushed to Convex:", result)

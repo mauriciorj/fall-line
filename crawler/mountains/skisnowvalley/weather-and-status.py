@@ -16,7 +16,6 @@ from convex_client import push_weather_and_status
 
 
 RESORT_ID = "snow-valley-ski-resort"
-RESORT_NAME = "Ski Snow Valley"
 SOURCE_URL = "https://www.skisnowvalley.com/plan/weather-webcams/"
 
 
@@ -228,10 +227,9 @@ def main():
 
     result = push_weather_and_status(
         RESORT_ID,
-        RESORT_NAME,
         SOURCE_URL,
         to_convex_weather(status),
-        fetched_at_ms=int(time.time() * 1000),
+        updated_at_ms=int(time.time() * 1000),
     )
     if result is not None:
         print("Pushed to Convex:", result)

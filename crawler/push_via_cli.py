@@ -9,8 +9,8 @@ CWD = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(CWD)
 
 
-def to_convex_sections(hours_data):
-    sections = []
+def to_hours(hours_data):
+    hours = []
     for section_name, section_value in hours_data.items():
         if not section_value:
             continue
@@ -23,14 +23,14 @@ def to_convex_sections(hours_data):
                     for day_name, time_val in days.items()
                 ]
                 activities.append({"name": activity_name, "hours": hours})
-            sections.append({"name": section_name, "activities": activities})
+            hours.append({"name": section_name, "activities": activities})
         else:
             hours = [
                 {"day": day_name, "time": time_val}
                 for day_name, time_val in section_value.items()
             ]
-            sections.append({"name": section_name, "hours": hours})
-    return sections
+            hours.append({"name": section_name, "hours": hours})
+    return hours
 
 
 def main():
@@ -42,13 +42,12 @@ def main():
     with open(json_path, "r", encoding="utf-8") as f:
         hours_data = json.load(f)
 
-    sections = to_convex_sections(hours_data)
+    hours = to_hours(hours_data)
     args = {
         "resortId": "snow-valley-ski-resort",
-        "resortName": "Ski Snow Valley",
         "sourceUrl": "https://www.skisnowvalley.com/about/",
-        "sections": sections,
-        "fetchedAt": int(time.time() * 1000),
+        "hours": hours,
+        "updatedAt": int(time.time() * 1000),
     }
     args_str = json.dumps(args, separators=(",", ":"))
 

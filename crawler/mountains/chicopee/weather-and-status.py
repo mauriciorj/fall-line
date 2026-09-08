@@ -16,7 +16,6 @@ from dtos import to_weather_dto
 
 URL = "https://www.discoverchicopee.com/activity-report"
 RESORT_ID = "chicopee"
-RESORT_NAME = "Chicopee"
 
 
 def get_trail_status():
@@ -191,10 +190,9 @@ def main():
 
     result = push_weather_and_status(
         RESORT_ID,
-        RESORT_NAME,
         URL,
         to_weather_dto(status),
-        fetched_at_ms=int(time.time() * 1000),
+        updated_at_ms=int(time.time() * 1000),
     )
     if result is not None:
         print("Pushed to Convex:", result)

@@ -1,7 +1,7 @@
 from typing import Any
 
 
-def to_hours_sections(hours_data: dict[str, dict[str, str]]) -> list[dict[str, Any]]:
+def to_hours(hours_data: dict[str, dict[str, str]]) -> list[dict[str, Any]]:
     return [
         {
             "name": section_name,

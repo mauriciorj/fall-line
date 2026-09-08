@@ -255,10 +255,12 @@ def main():
             print("Please check the HTML structure and update the selectors.")
             
     except requests.RequestException as e:
-        print(f"Error fetching data: {e}")
+        print(f"Error fetching data: {e}", file=sys.stderr)
+        return 1
     except Exception as e:
-        print(f"An error occurred: {e}")
+        print(f"An error occurred: {e}", file=sys.stderr)
+        return 1
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

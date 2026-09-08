@@ -17,7 +17,6 @@ from convex_client import push_resort_rates
 from dtos import to_rates_dto
 
 RESORT_ID = "horseshoe-valley-resort"
-RESORT_NAME = "Horseshoe Valley Resort"
 SOURCE_URL = "https://horseshoeresort.com/ski/lift-ticket-and-rentals-pricing/"
 
 
@@ -107,10 +106,9 @@ def main():
 
     result = push_resort_rates(
         RESORT_ID,
-        RESORT_NAME,
         SOURCE_URL,
         to_rates_dto(rates),
-        fetched_at_ms=int(time.time() * 1000),
+        updated_at_ms=int(time.time() * 1000),
     )
     if result is not None:
         print("Pushed to Convex:", result)

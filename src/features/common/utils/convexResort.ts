@@ -1,23 +1,11 @@
 import { Resort } from "@/types/resort";
 
 type DbResort = Partial<Resort> & {
-  sourceId?: string;
-  source?: string;
+  resortId?: string;
   continent?: string;
   country?: string;
   region?: string;
-  rate?: number;
   contact?: string;
-};
-
-const emptyHours = {
-  sunday: "",
-  monday: "",
-  tuesday: "",
-  wednesday: "",
-  thursday: "",
-  friday: "",
-  saturday: "",
 };
 
 const emptyRuns = {
@@ -32,16 +20,15 @@ export function toResort(value: unknown): Resort | null {
   if (!value || typeof value !== "object") return null;
 
   const document = value as DbResort;
-  if (!document.sourceId || !document.name) return null;
+  if (!document.resortId) return null;
 
   return {
     ...document,
-    sourceId: document.sourceId,
-    source: document.source,
-    name: document.name,
+    resortId: document.resortId,
+    name: document.name ?? "",
     address: document.address ?? "",
     coordinates: document.coordinates,
-    dayTicketPrice: document.dayTicketPrice ?? document.rate ?? 0,
+    dayTicketPrice: document.dayTicketPrice ?? 0,
     email: document.email ?? "",
     googleMapsUrl: document.googleMapsUrl ?? "",
     hasAccommodations: document.hasAccommodations ?? false,
@@ -50,7 +37,6 @@ export function toResort(value: unknown): Resort | null {
     hasSnowshoeing: document.hasSnowshoeing ?? false,
     hasSpa: document.hasSpa ?? false,
     hasTubing: document.hasTubing ?? false,
-    hoursOfOperation: document.hoursOfOperation ?? emptyHours,
     image: document.image ?? "/assets/lakeridge-ski-resort.webp",
     lessonsPrice: document.lessonsPrice ?? 0,
     phone: document.phone ?? document.contact ?? "",

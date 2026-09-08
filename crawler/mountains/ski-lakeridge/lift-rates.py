@@ -17,7 +17,6 @@ from dtos import to_rates_dto
 
 URL = "https://ski-lakeridge.com/skiing-snowboarding/hours-ticket-prices/"
 RESORT_ID = "lakeridge-ski-resort"
-RESORT_NAME = "Lakeridge Ski Resort"
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 }
@@ -82,10 +81,9 @@ def main():
 
     push_result = push_resort_rates(
         RESORT_ID,
-        RESORT_NAME,
         URL,
         to_rates_dto(result),
-        fetched_at_ms=int(time.time() * 1000),
+        updated_at_ms=int(time.time() * 1000),
     )
     if push_result is not None:
         print("Pushed to Convex:", push_result)

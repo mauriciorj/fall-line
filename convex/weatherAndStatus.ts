@@ -1,5 +1,6 @@
 import { internalMutation } from "./_generated/server";
 import { v } from "convex/values";
+import { ensureResort } from "./resorts";
 
 const conditionsSchema = v.object({
   temperature: v.optional(v.string()),
@@ -52,9 +53,8 @@ const crossCountrySchema = v.object({
 export const save = internalMutation({
   args: {
     resortId: v.string(),
-    resortName: v.string(),
     sourceUrl: v.optional(v.string()),
-    fetchedAt: v.optional(v.number()),
+    updatedAt: v.optional(v.number()),
     conditions: v.optional(conditionsSchema),
     lifts: v.array(liftSchema),
     trails: v.array(trailSchema),
@@ -68,9 +68,13 @@ export const save = internalMutation({
   },
   returns: v.id("weatherAndStatus"),
   handler: async (ctx, args) => {
-    const { fetchedAt: fetchedAtArg, ...docFields } = args;
-    const fetchedAt = fetchedAtArg ?? Date.now();
-    const doc = { ...docFields, fetchedAt };
+    const { updatedAt: updatedAtArg, ...docFields } = args;
+    const updatedAt = updatedAtArg ?? Date.now();
+    await ensureResort(ctx, {
+      resortId: args.resortId,
+      website: args.sourceUrl,
+    });
+    const doc = { ...docFields, updatedAt };
 
     const existing = await ctx.db
       .query("weatherAndStatus")

@@ -21,7 +21,7 @@ def _row_to_item(row: Any) -> dict[str, Any]:
     return {"name": str(row), "prices": []}
 
 
-def to_hours_sections(hours: dict[str, str]) -> list[dict[str, Any]]:
+def to_hours(hours: dict[str, str]) -> list[dict[str, Any]]:
     return [
         {
             "name": "Hours of operation",

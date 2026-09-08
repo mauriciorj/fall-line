@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Resort } from "@/types/resort";
+import { Resort, ResortHourSection } from "@/types/resort";
 import {
   ChevronDown,
   Clock,
@@ -19,6 +19,7 @@ import {
 
 interface ResortInfoSectionProps {
   resort: Resort;
+  resortHours: ResortHourSection[];
 }
 
 function StarRating({ rating }: { rating: number }) {
@@ -35,8 +36,9 @@ function StarRating({ rating }: { rating: number }) {
   );
 }
 
-const InfoSection = ({ resort }: ResortInfoSectionProps) => {
+const InfoSection = ({ resort, resortHours }: ResortInfoSectionProps) => {
   const [isOpen, setIsOpen] = useState(false);
+
   return (
     <section className="space-y-4">
       <h2 className="font-serif text-xl font-medium text-foreground">
@@ -52,7 +54,7 @@ const InfoSection = ({ resort }: ResortInfoSectionProps) => {
                   Hours of Operation
                 </p>
                 <p className="text-xs text-muted-foreground mt-0.5">
-                  {resort?.trackConditions?.length} tracks
+                  {resort.trackConditions?.length ?? 0} tracks
                 </p>
               </div>
             </div>
@@ -61,56 +63,43 @@ const InfoSection = ({ resort }: ResortInfoSectionProps) => {
             />
           </CollapsibleTrigger>
           <CollapsibleContent>
-            <div className="px-5 pb-4 space-y-2">
-              <div className="flex items-center justify-between py-2 px-3 rounded-md">
-                <div className="flex items-center gap-2.5">
-                  <span className="text-sm text-foreground">
-                    Sunday: {resort.hoursOfOperation.sunday}
-                  </span>
-                </div>
-              </div>
-              <div className="flex items-center justify-between py-2 px-3 rounded-md">
-                <div className="flex items-center gap-2.5">
-                  <span className="text-sm text-foreground">
-                    Monday: {resort.hoursOfOperation.monday}
-                  </span>
-                </div>
-              </div>
-              <div className="flex items-center justify-between py-2 px-3 rounded-md">
-                <div className="flex items-center gap-2.5">
-                  <span className="text-sm text-foreground">
-                    Tuesday: {resort.hoursOfOperation.tuesday}
-                  </span>
-                </div>
-              </div>
-              <div className="flex items-center justify-between py-2 px-3 rounded-md">
-                <div className="flex items-center gap-2.5">
-                  <span className="text-sm text-foreground">
-                    Wednesday: {resort.hoursOfOperation.wednesday}
-                  </span>
-                </div>
-              </div>
-              <div className="flex items-center justify-between py-2 px-3 rounded-md">
-                <div className="flex items-center gap-2.5">
-                  <span className="text-sm text-foreground">
-                    Thursday: {resort.hoursOfOperation.thursday}
-                  </span>
-                </div>
-              </div>
-              <div className="flex items-center justify-between py-2 px-3 rounded-md">
-                <div className="flex items-center gap-2.5">
-                  <span className="text-sm text-foreground">
-                    Friday: {resort.hoursOfOperation.friday}
-                  </span>
-                </div>
-              </div>
-              <div className="flex items-center justify-between py-2 px-3 rounded-md">
-                <div className="flex items-center gap-2.5">
-                  <span className="text-sm text-foreground">
-                    Saturday: {resort.hoursOfOperation.saturday}
-                  </span>
-                </div>
-              </div>
+            <div className="px-5 pb-4 space-y-4">
+              {resortHours.length > 0 ? (
+                resortHours.map((section) => (
+                  <div key={section.name} className="space-y-2">
+                    <p className="text-sm font-medium text-foreground">
+                      {section.name}
+                    </p>
+                    {section.hours?.map((row) => (
+                      <p
+                        key={`${section.name}-${row.day}`}
+                        className="text-sm text-foreground"
+                      >
+                        {row.day}: {row.time}
+                      </p>
+                    ))}
+                    {section.activities?.map((activity) => (
+                      <div key={`${section.name}-${activity.name}`} className="space-y-1">
+                        <p className="text-sm text-muted-foreground">
+                          {activity.name}
+                        </p>
+                        {activity.hours.map((row) => (
+                          <p
+                            key={`${section.name}-${activity.name}-${row.day}`}
+                            className="pl-3 text-sm text-foreground"
+                          >
+                            {row.day}: {row.time}
+                          </p>
+                        ))}
+                      </div>
+                    ))}
+                  </div>
+                ))
+              ) : (
+                <p className="text-sm text-muted-foreground">
+                  Hours not available
+                </p>
+              )}
             </div>
           </CollapsibleContent>
         </Collapsible>

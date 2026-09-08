@@ -4,9 +4,11 @@ from datetime import datetime
 from pathlib import Path
 
 
-MY_TEST_DIR = Path(__file__).resolve().parent / "mountains"
-FAILURE_LOG = MY_TEST_DIR / "crawler-errors.log"
+CRAWLER_DIR = Path(__file__).resolve().parent
+MY_TEST_DIR = CRAWLER_DIR / "mountains"
+FAILURE_LOG = CRAWLER_DIR / "crawler-errors.log"
 RESORT_SCRIPTS = {
+    # "skiresortinfo": ("ski-resorts-list.py",),
     "skisnowvalley": (
         "hours-of-operation.py",
         "lift-rates.py",
@@ -62,15 +64,25 @@ RESORT_SCRIPTS = {
     ),
 }
 
+SCRIPT_DIRECTORIES = {
+    "skiresortinfo": CRAWLER_DIR / "websites" / "skiresortinfo",
+}
+
 
 def run_script(resort_name, script_name):
-    script_path = MY_TEST_DIR / resort_name / script_name
+    script_directory = SCRIPT_DIRECTORIES.get(
+        resort_name,
+        MY_TEST_DIR / resort_name,
+    )
+    script_path = script_directory / script_name
     command = [sys.executable, str(script_path)]
+    if resort_name == "skiresortinfo":
+        command.extend(["--pages", "0"])
 
     print(f"\n=== Running {resort_name}/{script_name} ===", flush=True)
     result = subprocess.run(
         command,
-        cwd=MY_TEST_DIR,
+        cwd=script_directory,
         capture_output=True,
         text=True,
         encoding="utf-8",

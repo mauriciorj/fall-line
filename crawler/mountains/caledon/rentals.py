@@ -23,7 +23,6 @@ from dtos import to_rentals_dto
 
 URL = "https://caledonskiclub.com/proshop"
 RESORT_ID = "caledon-ski-club"
-RESORT_NAME = "Caledon Ski Club"
 
 
 def get_driver():
@@ -193,10 +192,9 @@ def main():
 
     result = push_resort_rentals(
         RESORT_ID,
-        RESORT_NAME,
         URL,
         to_rentals_dto(rates),
-        fetched_at_ms=int(time.time() * 1000),
+        updated_at_ms=int(time.time() * 1000),
     )
     if result is not None:
         print("Pushed to Convex:", result)

@@ -18,7 +18,6 @@ from dtos import to_weather_dto
 
 URL = "https://horseshoeresort.com/ski-report-trails/"
 RESORT_ID = "horseshoe-valley-resort"
-RESORT_NAME = "Horseshoe Valley Resort"
 
 
 def get_trail_status():
@@ -194,10 +193,9 @@ def main():
 
     result = push_weather_and_status(
         RESORT_ID,
-        RESORT_NAME,
         URL,
         to_weather_dto(status),
-        fetched_at_ms=int(time.time() * 1000),
+        updated_at_ms=int(time.time() * 1000),
     )
     if result is not None:
         print("Pushed to Convex:", result)

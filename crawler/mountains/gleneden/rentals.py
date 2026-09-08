@@ -22,7 +22,6 @@ from convex_client import push_resort_rentals
 from dtos import to_rentals_dto
 
 RESORT_ID = "glen-eden"
-RESORT_NAME = "Glen Eden"
 SOURCE_URL = "https://gleneden.on.ca/plan-your-visit/"
 
 
@@ -122,10 +121,9 @@ if __name__ == "__main__":
         print(f"Saved to {output_file}")
         result = push_resort_rentals(
             RESORT_ID,
-            RESORT_NAME,
-            SOURCE_URL,
+                SOURCE_URL,
             to_rentals_dto(data),
-            fetched_at_ms=int(time.time() * 1000),
+            updated_at_ms=int(time.time() * 1000),
         )
         if result is not None:
             print("Pushed to Convex:", result)

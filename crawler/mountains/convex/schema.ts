@@ -58,8 +58,7 @@ const crossCountrySchema = v.object({
 export default defineSchema({
   weatherAndStatus: defineTable({
     resortId: v.string(),
-    resortName: v.string(),
-    fetchedAt: v.number(),
+    updatedAt: v.number(),
 
     conditions: v.optional(conditionsSchema),
 
@@ -74,5 +73,5 @@ export default defineSchema({
     tubingSummary: v.optional(summarySchema),
   })
     .index("by_resort", ["resortId"])
-    .index("by_fetched", ["fetchedAt"]),
+    .index("by_updated", ["updatedAt"]),
 });

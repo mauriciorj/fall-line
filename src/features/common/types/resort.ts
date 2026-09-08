@@ -1,18 +1,26 @@
 import { StaticImageData } from "next/image";
 
+export interface ResortHourRow {
+  day: string;
+  time: string;
+}
+
+export interface ResortHourActivity {
+  name: string;
+  hours: ResortHourRow[];
+}
+
+export interface ResortHourSection {
+  name: string;
+  activities?: ResortHourActivity[];
+  hours?: ResortHourRow[];
+}
+
 export interface Resort {
   address: string;
   coordinates?: {
     lat: number;
     lng: number;
-  };
-  crawlerUrls?: {
-    dayTicketPriceUrl?: string;
-    equipmentRentalsUrl?: string;
-    hoursOfOperationUrl?: string;
-    lessonsUrl?: string;
-    trackConditionsUrl?: string;
-    tubbing?: string;
   };
   dayTicketPrice: number;
   email: string;
@@ -24,17 +32,7 @@ export interface Resort {
   hasSpa: boolean;
   hasTubing: boolean;
   hasZipline?: boolean;
-  hoursOfOperation: {
-    sunday: string;
-    monday: string;
-    tuesday: string;
-    wednesday: string;
-    thursday: string;
-    friday: string;
-    saturday: string;
-  };
-  sourceId: string;
-  source?: string;
+  resortId: string;
   continent?: string;
   country?: string;
   region?: string;

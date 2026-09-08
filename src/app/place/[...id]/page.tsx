@@ -18,8 +18,12 @@ const ResortDetail = () => {
   const router = useRouter();
   const resortId = Array.isArray(id) ? id[0] : id;
   const dbResort = useQuery(
-    api.resorts.getBySourceId,
-    resortId ? { sourceId: resortId } : "skip",
+    api.resorts.getByResortId,
+    resortId ? { resortId } : "skip",
+  );
+  const dbResortHours = useQuery(
+    api.resortHours.getByResort,
+    resortId ? { resortId } : "skip",
   );
   const resort = toResort(dbResort);
 
@@ -93,7 +97,10 @@ const ResortDetail = () => {
         )}
 
         {/* Main Info */}
-        <InfoSection resort={resort} />
+        <InfoSection
+          resort={resort}
+          resortHours={dbResortHours?.hours ?? []}
+        />
 
         {/* Tracks */}
         <TracksSection resort={resort} />

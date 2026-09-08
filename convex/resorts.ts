@@ -1,6 +1,8 @@
 import { internalMutation, query } from "./_generated/server";
+import type { MutationCtx } from "./_generated/server";
+import type { Doc } from "./_generated/dataModel";
 import { v } from "convex/values";
-import { resortSeedData, trackConditionsSeed } from "./resortSeed";
+import { resortSeedData } from "./resortSeed";
 
 const locationFields = v.object({
   continent: v.optional(v.string()),
@@ -8,11 +10,83 @@ const locationFields = v.object({
   region: v.optional(v.string()),
 });
 
-function isCanonical(record: { source?: string; sourceId?: string }) {
-  return (
-    record.source !== "skiresort.info" ||
-    record.sourceId?.startsWith("skiresort-info-")
+const resortFieldNames = [
+  "resortId",
+  "name",
+  "continent",
+  "country",
+  "region",
+  "contact",
+  "website",
+  "address",
+  "coordinates",
+  "dayTicketPrice",
+  "email",
+  "googleMapsUrl",
+  "hasAccommodations",
+  "hasCrossCountry",
+  "hasLessons",
+  "hasSnowshoeing",
+  "hasSpa",
+  "hasTubing",
+  "hasZipline",
+  "image",
+  "lessonsPrice",
+  "phone",
+  "rating",
+  "skiRentalPrice",
+  "snowBoardRentalPrice",
+  "runs",
+  "ticketUrl",
+  "tollFree",
+  "trackConditions",
+  "trailMap",
+  "tubbingPrice",
+] as const;
+
+type ResortDocument = Omit<Doc<"resorts">, "_id" | "_creationTime">;
+
+function selectResortFields(
+  input: Record<string, unknown>,
+  resortId: string,
+): ResortDocument {
+  return {
+    ...Object.fromEntries(
+      resortFieldNames
+        .filter((fieldName) => input[fieldName] !== undefined)
+        .map((fieldName) => [fieldName, input[fieldName]]),
+    ),
+    resortId,
+  } as ResortDocument;
+}
+
+export async function ensureResort(
+  ctx: MutationCtx,
+  identity: { resortId: string; website?: string },
+) {
+  const existing = await ctx.db
+    .query("resorts")
+    .withIndex("by_resort_id", (q) => q.eq("resortId", identity.resortId))
+    .unique();
+
+  if (existing) {
+    if (!existing.website && identity.website) {
+      await ctx.db.patch(existing._id, { website: identity.website });
+    }
+    return existing._id;
+  }
+
+  const seededResort = resortSeedData.find(
+    (resort) => resort.resortId === identity.resortId,
   );
+  if (seededResort) {
+    return await ctx.db.insert("resorts", seededResort);
+  }
+
+  return await ctx.db.insert("resorts", {
+    resortId: identity.resortId,
+    ...(identity.website ? { website: identity.website } : {}),
+  });
 }
 
 export const list = query({
@@ -23,7 +97,7 @@ export const list = query({
   },
   returns: v.array(v.any()),
   handler: async (ctx, args) => {
-    const resorts = await ctx.db
+    return await ctx.db
       .query("resorts")
       .withIndex("by_location", (q) =>
         q
@@ -32,7 +106,6 @@ export const list = query({
           .eq("region", args.region),
       )
       .collect();
-    return resorts.filter(isCanonical);
   },
 });
 
@@ -41,7 +114,7 @@ export const listLocations = query({
   returns: v.array(locationFields),
   handler: async (ctx) => {
     const resorts = await ctx.db.query("resorts").collect();
-    return resorts.filter(isCanonical).map(({ continent, country, region }) => ({
+    return resorts.map(({ continent, country, region }) => ({
       continent,
       country,
       region,
@@ -57,19 +130,27 @@ export const saveMany = internalMutation({
   handler: async (ctx, args) => {
     const ids = [];
 
-    for (const resort of args.resorts) {
+    for (const rawResort of args.resorts) {
+      if (!rawResort || typeof rawResort !== "object" || Array.isArray(rawResort)) {
+        throw new Error("Each resort must be an object");
+      }
+
+      const resort = rawResort as Record<string, unknown>;
+      if (typeof resort.resortId !== "string" || !resort.resortId) {
+        throw new Error("Each resort must include a resortId");
+      }
+
+      const document = selectResortFields(
+        resort,
+        resort.resortId as string,
+      );
       const existing = await ctx.db
         .query("resorts")
-        .withIndex("by_source_id", (q) => q.eq("sourceId", resort.sourceId))
+        .withIndex("by_resort_id", (q) => q.eq("resortId", resort.resortId as string))
         .unique();
-      const document = {
-        ...resort,
-        source: resort.source ?? "skiresort.info",
-        sourceId: resort.sourceId,
-      };
 
       if (existing) {
-        await ctx.db.replace(existing._id, document);
+        await ctx.db.patch(existing._id, document);
         ids.push(existing._id);
       } else {
         ids.push(await ctx.db.insert("resorts", document));
@@ -80,13 +161,13 @@ export const saveMany = internalMutation({
   },
 });
 
-export const getBySourceId = query({
-  args: { sourceId: v.string() },
+export const getByResortId = query({
+  args: { resortId: v.string() },
   returns: v.any(),
   handler: async (ctx, args) => {
     return await ctx.db
       .query("resorts")
-      .withIndex("by_source_id", (q) => q.eq("sourceId", args.sourceId))
+      .withIndex("by_resort_id", (q) => q.eq("resortId", args.resortId))
       .unique();
   },
 });
@@ -98,31 +179,23 @@ export const seed = internalMutation({
     const ids = [];
 
     for (const resort of resortSeedData) {
-      const seedRecord = {
-        ...resort,
-        source: "curated",
-        trackConditions: trackConditionsSeed[resort.sourceId] ?? [],
-      };
-      const existingBySourceId = await ctx.db
+      const document = selectResortFields(
+        resort as unknown as Record<string, unknown>,
+        resort.resortId,
+      );
+      const existing = await ctx.db
         .query("resorts")
-        .withIndex("by_source_id", (q) => q.eq("sourceId", resort.sourceId))
+        .withIndex("by_resort_id", (q) => q.eq("resortId", resort.resortId))
         .unique();
-      const existing =
-        existingBySourceId ??
-        (await ctx.db
-          .query("resorts")
-          .filter((q) => q.eq(q.field("name"), resort.name))
-          .first());
 
       if (existing) {
-        await ctx.db.replace(existing._id, seedRecord);
+        await ctx.db.patch(existing._id, document);
         ids.push(existing._id);
       } else {
-        ids.push(await ctx.db.insert("resorts", seedRecord));
+        ids.push(await ctx.db.insert("resorts", document));
       }
     }
 
     return ids;
   },
 });
-
