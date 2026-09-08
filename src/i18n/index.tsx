@@ -1,0 +1,304 @@
+"use client";
+
+import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
+
+export type Locale = "en" | "fr" | "es";
+
+const LOCALE_STORAGE_KEY = "preferred-locale";
+const supportedLocales: Locale[] = ["en", "fr", "es"];
+
+const translations: Record<Locale, Record<string, string>> = {
+  en: {
+    appName: "Ontario Ski Guide",
+    menu: "Menu",
+    contactUs: "Contact Us",
+    terms: "Terms of Service",
+    privacy: "Privacy Policy",
+    language: "Language",
+    english: "English",
+    french: "Français",
+    spanish: "Español",
+    backHome: "Back to Ontario Ski Guide",
+    filters: "Filters",
+    filterResorts: "Filter Resorts",
+    location: "Location",
+    selectLocation: "Select your location",
+    sortBy: "Sort by",
+    liftPrice: "Lift Price",
+    rating: "Rating",
+    activities: "Activities",
+    accommodations: "Accommodations",
+    crossCountry: "Cross Country",
+    lessons: "Lessons",
+    snowshoeing: "Snowshoeing",
+    spa: "Spa",
+    tubbing: "Tubbing",
+    clearAll: "Clear all",
+    apply: "Apply",
+    pricesUpdated: "Prices last updated Feb 2026",
+    loadingResorts: "Loading resorts...",
+    noResorts: "No resorts match your filters",
+    adjustCriteria: "Try adjusting your criteria",
+    loadingResort: "Loading resort...",
+    loadingMap: "Loading map...",
+    unableLoadMap: "Unable to load map",
+    resortNotFound: "Resort not found",
+    backAllResorts: "Back to all resorts",
+    buyTickets: "Buy Tickets",
+    from: "from",
+    mainInfo: "Main Info",
+    hoursOperation: "Hours of Operation",
+    hoursUnavailable: "Hours not available",
+    contact: "Contact",
+    website: "Website",
+    pricing: "Pricing",
+    liftPass: "Lift Pass",
+    skiRental: "Ski Rental",
+    snowboardRental: "Snowboard Rental",
+    trackLabel: "Tracks:",
+    tracks: "Tracks",
+    trackConditions: "Track Conditions",
+    trackCount: "tracks",
+    totalRuns: "Total Runs",
+    trailMap: "Trail Map",
+    viewMap: "View Map",
+    terrainBreakdown: "Terrain Breakdown",
+    green: "Green",
+    blue: "Blue",
+    black: "Black",
+    doubleBlack: "Double Black",
+    freeStyle: "Free Style",
+    runs: "runs",
+    percentTerrain: "of terrain",
+    address: "Address",
+    getDirections: "Get directions",
+    beginner: "Beginner",
+    intermediate: "Intermediate",
+    advanced: "Advanced",
+    expert: "Expert",
+    freestyle: "Freestyle",
+    open: "open",
+    previous: "Previous",
+    next: "Next",
+    contactDescription: "Questions, feedback, or support.",
+    getInTouch: "Get in touch",
+    contactBody: "Contact us about resort information, corrections, feedback, or help using Ontario Ski Guide.",
+    lastUpdated: "Last updated: September 8, 2026",
+    termsTitle: "Terms of Service",
+    privacyTitle: "Privacy Policy",
+  },
+  fr: {
+    appName: "Guide de ski de l’Ontario",
+    menu: "Menu",
+    contactUs: "Nous contacter",
+    terms: "Conditions d’utilisation",
+    privacy: "Politique de confidentialité",
+    language: "Langue",
+    english: "English",
+    french: "Français",
+    spanish: "Español",
+    backHome: "Retour au Guide de ski de l’Ontario",
+    filters: "Filtres",
+    filterResorts: "Filtrer les stations",
+    location: "Emplacement",
+    selectLocation: "Choisir votre emplacement",
+    sortBy: "Trier par",
+    liftPrice: "Prix du billet",
+    rating: "Évaluation",
+    activities: "Activités",
+    accommodations: "Hébergement",
+    crossCountry: "Ski de fond",
+    lessons: "Cours",
+    snowshoeing: "Raquette",
+    spa: "Spa",
+    tubbing: "Glissade sur tube",
+    clearAll: "Tout effacer",
+    apply: "Appliquer",
+    pricesUpdated: "Prix mis à jour en février 2026",
+    loadingResorts: "Chargement des stations...",
+    noResorts: "Aucune station ne correspond à vos filtres",
+    adjustCriteria: "Essayez de modifier vos critères",
+    loadingResort: "Chargement de la station...",
+    loadingMap: "Chargement de la carte...",
+    unableLoadMap: "Impossible de charger la carte",
+    resortNotFound: "Station introuvable",
+    backAllResorts: "Retour à toutes les stations",
+    buyTickets: "Acheter des billets",
+    from: "à partir de",
+    mainInfo: "Informations principales",
+    hoursOperation: "Heures d’ouverture",
+    hoursUnavailable: "Heures non disponibles",
+    contact: "Contact",
+    website: "Site Web",
+    pricing: "Tarifs",
+    liftPass: "Billet de remontée",
+    skiRental: "Location de skis",
+    snowboardRental: "Location de planche",
+    trackLabel: "Pistes :",
+    tracks: "Pistes",
+    trackConditions: "État des pistes",
+    trackCount: "pistes",
+    totalRuns: "Total des pistes",
+    trailMap: "Plan des pistes",
+    viewMap: "Voir le plan",
+    terrainBreakdown: "Répartition du terrain",
+    green: "Vert",
+    blue: "Bleu",
+    black: "Noir",
+    doubleBlack: "Double noir",
+    freeStyle: "Style libre",
+    runs: "pistes",
+    percentTerrain: "du terrain",
+    address: "Adresse",
+    getDirections: "Itinéraire",
+    beginner: "Débutant",
+    intermediate: "Intermédiaire",
+    advanced: "Avancé",
+    expert: "Expert",
+    freestyle: "Style libre",
+    open: "ouvertes",
+    previous: "Précédent",
+    next: "Suivant",
+    contactDescription: "Questions, commentaires ou assistance.",
+    getInTouch: "Nous contacter",
+    contactBody: "Contactez-nous pour toute question sur les stations, correction, commentaire ou aide concernant le Guide de ski de l’Ontario.",
+    lastUpdated: "Dernière mise à jour : 8 septembre 2026",
+    termsTitle: "Conditions d’utilisation",
+    privacyTitle: "Politique de confidentialité",
+  },
+  es: {
+    appName: "Guía de esquí de Ontario",
+    menu: "Menú",
+    contactUs: "Contáctenos",
+    terms: "Términos de servicio",
+    privacy: "Política de privacidad",
+    language: "Idioma",
+    english: "English",
+    french: "Français",
+    spanish: "Español",
+    backHome: "Volver a la Guía de esquí de Ontario",
+    filters: "Filtros",
+    filterResorts: "Filtrar estaciones",
+    location: "Ubicación",
+    selectLocation: "Seleccione su ubicación",
+    sortBy: "Ordenar por",
+    liftPrice: "Precio del pase",
+    rating: "Calificación",
+    activities: "Actividades",
+    accommodations: "Alojamiento",
+    crossCountry: "Esquí de fondo",
+    lessons: "Clases",
+    snowshoeing: "Raquetas de nieve",
+    spa: "Spa",
+    tubbing: "Tubing",
+    clearAll: "Borrar todo",
+    apply: "Aplicar",
+    pricesUpdated: "Precios actualizados en febrero de 2026",
+    loadingResorts: "Cargando estaciones...",
+    noResorts: "Ninguna estación coincide con sus filtros",
+    adjustCriteria: "Intente ajustar sus criterios",
+    loadingResort: "Cargando estación...",
+    loadingMap: "Cargando mapa...",
+    unableLoadMap: "No se pudo cargar el mapa",
+    resortNotFound: "Estación no encontrada",
+    backAllResorts: "Volver a todas las estaciones",
+    buyTickets: "Comprar boletos",
+    from: "desde",
+    mainInfo: "Información principal",
+    hoursOperation: "Horario de operación",
+    hoursUnavailable: "Horario no disponible",
+    contact: "Contacto",
+    website: "Sitio web",
+    pricing: "Precios",
+    liftPass: "Pase de esquí",
+    skiRental: "Alquiler de esquís",
+    snowboardRental: "Alquiler de snowboard",
+    trackLabel: "Pistas:",
+    tracks: "Pistas",
+    trackConditions: "Estado de las pistas",
+    trackCount: "pistas",
+    totalRuns: "Total de pistas",
+    trailMap: "Mapa de pistas",
+    viewMap: "Ver mapa",
+    terrainBreakdown: "Distribución del terreno",
+    green: "Verde",
+    blue: "Azul",
+    black: "Negro",
+    doubleBlack: "Doble negro",
+    freeStyle: "Estilo libre",
+    runs: "pistas",
+    percentTerrain: "del terreno",
+    address: "Dirección",
+    getDirections: "Cómo llegar",
+    beginner: "Principiante",
+    intermediate: "Intermedio",
+    advanced: "Avanzado",
+    expert: "Experto",
+    freestyle: "Estilo libre",
+    open: "abiertas",
+    previous: "Anterior",
+    next: "Siguiente",
+    contactDescription: "Preguntas, comentarios o asistencia.",
+    getInTouch: "Contáctenos",
+    contactBody: "Contáctenos sobre información de estaciones, correcciones, comentarios o ayuda con la Guía de esquí de Ontario.",
+    lastUpdated: "Última actualización: 8 de septiembre de 2026",
+    termsTitle: "Términos de servicio",
+    privacyTitle: "Política de privacidad",
+  },
+};
+
+interface LanguageContextValue {
+  locale: Locale;
+  setLocale: (locale: Locale) => void;
+  t: (key: string) => string;
+}
+
+const LanguageContext = createContext<LanguageContextValue | null>(null);
+
+function detectLocale(): Locale {
+  const browserLocales = navigator.languages?.length ? navigator.languages : [navigator.language];
+  const match = browserLocales.find((value) => supportedLocales.includes(value.slice(0, 2) as Locale));
+  return (match?.slice(0, 2) as Locale | undefined) ?? "en";
+}
+
+export function LanguageProvider({ children }: { children: ReactNode }) {
+  const [locale, setLocaleState] = useState<Locale>("en");
+
+  useEffect(() => {
+    const savedLocale = window.localStorage.getItem(LOCALE_STORAGE_KEY) as Locale | null;
+    const nextLocale = savedLocale && supportedLocales.includes(savedLocale) ? savedLocale : detectLocale();
+    const timer = window.setTimeout(() => setLocaleState(nextLocale), 0);
+    return () => window.clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    document.documentElement.lang = locale;
+  }, [locale]);
+
+  const setLocale = (nextLocale: Locale) => {
+    setLocaleState(nextLocale);
+    window.localStorage.setItem(LOCALE_STORAGE_KEY, nextLocale);
+  };
+
+  const value = useMemo<LanguageContextValue>(() => ({
+    locale,
+    setLocale,
+    t: (key) => translations[locale][key] ?? translations.en[key] ?? key,
+  }), [locale]);
+
+  return <LanguageContext.Provider value={value}>{children}</LanguageContext.Provider>;
+}
+
+export function useLanguage() {
+  const context = useContext(LanguageContext);
+  if (!context) {
+    throw new Error("useLanguage must be used within LanguageProvider");
+  }
+  return context;
+}
+
+export const localeOptions: Array<{ value: Locale; labelKey: string }> = [
+  { value: "en", labelKey: "english" },
+  { value: "fr", labelKey: "french" },
+  { value: "es", labelKey: "spanish" },
+];

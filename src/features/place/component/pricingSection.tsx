@@ -1,17 +1,22 @@
+"use client";
+
 import { CircleDot, GraduationCap } from "lucide-react";
+import { useLanguage } from "@/src/i18n";
 import { Resort } from "@/types/resort";
 
 const PricingSection = ({ resort }: { resort: Resort }) => {
+  const { t } = useLanguage();
+
   return (
     <section className="space-y-4">
       <h2 className="font-serif text-xl font-medium text-foreground">
-        Pricing
+        {t("pricing")}
       </h2>
       <div className="bg-card rounded-lg border border-border divide-y divide-border">
         {resort?.dayTicketPrice && (
           <div className="flex items-center justify-between p-5">
             <div>
-              <p className="font-medium text-foreground">Lift Pass</p>
+              <p className="font-medium text-foreground">{t("liftPass")}</p>
             </div>
             <p className="text-xl font-medium text-foreground">
               ${resort.dayTicketPrice}
@@ -21,7 +26,7 @@ const PricingSection = ({ resort }: { resort: Resort }) => {
         {resort?.skiRentalPrice && (
           <div className="flex items-center justify-between p-5">
             <div>
-              <p className="font-medium text-foreground">Ski Rental</p>
+              <p className="font-medium text-foreground">{t("skiRental")}</p>
               {/* <p className="text-sm text-muted-foreground">Skis with boots</p> */}
             </div>
             <p className="text-xl font-medium text-foreground">
@@ -32,7 +37,7 @@ const PricingSection = ({ resort }: { resort: Resort }) => {
         {resort?.snowBoardRentalPrice && (
           <div className="flex items-center justify-between p-5">
             <div>
-              <p className="font-medium text-foreground">Snowboard Rental</p>
+              <p className="font-medium text-foreground">{t("snowboardRental")}</p>
             </div>
             <p className="text-xl font-medium text-foreground">
               ${resort.snowBoardRentalPrice}
@@ -44,7 +49,7 @@ const PricingSection = ({ resort }: { resort: Resort }) => {
             <div className="flex items-center gap-2">
               <GraduationCap className="w-4 h-4 text-muted-foreground" />
               <div>
-                <p className="font-medium text-foreground">Lessons</p>
+                <p className="font-medium text-foreground">{t("lessons")}</p>
               </div>
             </div>
             <p className="text-xl font-medium text-foreground">
@@ -57,7 +62,7 @@ const PricingSection = ({ resort }: { resort: Resort }) => {
             <div className="flex items-center gap-2">
               <CircleDot className="w-4 h-4 text-muted-foreground" />
               <div>
-                <p className="font-medium text-foreground">Tubing</p>
+                <p className="font-medium text-foreground">{t("tubbing")}</p>
               </div>
             </div>
             <p className="text-xl font-medium text-foreground">

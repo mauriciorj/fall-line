@@ -17,6 +17,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/src/i18n";
 
 interface TracksSectionProps {
   resort: Resort;
@@ -38,40 +39,33 @@ const difficultyColor = {
   "free-style": "bg-run-free-style",
 };
 
-const difficultyLabel = {
-  green: "Beginner",
-  blue: "Intermediate",
-  black: "Advanced",
-  "double-black": "Expert",
-  "free-style": "Freestyle",
-};
-
 const TracksSection = ({ resort }: TracksSectionProps) => {
+  const { t } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
   const trackConditions = resort.trackConditions ?? [];
   const summaryTracks: TrackSummary[] = [
     {
-      name: difficultyLabel.green,
+      name: t("beginner"),
       difficulty: "green" as const,
       count: resort.runs.green,
     },
     {
-      name: difficultyLabel.blue,
+      name: t("intermediate"),
       difficulty: "blue" as const,
       count: resort.runs.blue,
     },
     {
-      name: difficultyLabel.black,
+      name: t("advanced"),
       difficulty: "black" as const,
       count: resort.runs.black,
     },
     {
-      name: difficultyLabel["double-black"],
+      name: t("expert"),
       difficulty: "double-black" as const,
       count: resort.runs.doubleBlack,
     },
     {
-      name: difficultyLabel["free-style"],
+      name: t("freestyle"),
       difficulty: "free-style" as const,
       count: resort.runs.freeStyle ?? 0,
     },
@@ -83,7 +77,7 @@ const TracksSection = ({ resort }: TracksSectionProps) => {
 
   return (
     <section className="space-y-4">
-      <h2 className="font-serif text-xl font-medium text-foreground">Tracks</h2>
+      <h2 className="font-serif text-xl font-medium text-foreground">{t("tracks")}</h2>
       <div className="bg-card rounded-lg border border-border divide-y divide-border">
         {/* Track Conditions - Collapsible */}
         <Collapsible open={isOpen} onOpenChange={setIsOpen}>
@@ -92,10 +86,10 @@ const TracksSection = ({ resort }: TracksSectionProps) => {
               <Snowflake className="w-4 h-4 text-muted-foreground shrink-0" />
               <div className="text-left">
                 <p className="text-sm font-medium text-foreground">
-                  Track Conditions
+                  {t("trackConditions")}
                 </p>
                 <p className="text-xs text-muted-foreground mt-0.5">
-                  {trackCount} tracks
+                  {trackCount} {t("trackCount")}
                 </p>
               </div>
             </div>
@@ -165,18 +159,18 @@ const TracksSection = ({ resort }: TracksSectionProps) => {
         <div className="flex items-center justify-between p-5">
           <div className="flex items-center gap-4">
             <Map className="w-4 h-4 text-muted-foreground shrink-0" />
-            <p className="text-sm font-medium text-foreground">Trail Map</p>
+            <p className="text-sm font-medium text-foreground">{t("trailMap")}</p>
           </div>
           <Dialog>
             <DialogTrigger asChild>
               <Button variant="outline" size="sm">
-                View Map
+                {t("viewMap")}
               </Button>
             </DialogTrigger>
             <DialogContent className="w-full max-h-[85vh] overflow-auto">
               <DialogHeader>
                 <DialogTitle className="font-serif">
-                  {resort.name} — Trail Map
+                  {resort.name} — {t("trailMap")}
                 </DialogTitle>
               </DialogHeader>
               <div className="mt-2">

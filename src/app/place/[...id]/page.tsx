@@ -16,8 +16,10 @@ import LocationSection from "@/src/features/place/component/locationSection";
 import PricingSection from "@/src/features/place/component/pricingSection";
 import TerrainSection from "@/src/features/place/component/terrainSection";
 import TracksSection from "@/place/component/tracksSection";
+import { useLanguage } from "@/src/i18n";
 
 const ResortDetail = () => {
+  const { t } = useLanguage();
   const { id } = useParams();
   const router = useRouter();
   const resortId = Array.isArray(id) ? id[0] : id;
@@ -40,7 +42,7 @@ const ResortDetail = () => {
   if (dbResort === undefined) {
     return (
       <div className="min-h-screen bg-background flex items-center justify-center">
-        <p className="text-muted-foreground">Loading resort...</p>
+        <p className="text-muted-foreground">{t("loadingResort")}</p>
       </div>
     );
   }
@@ -50,11 +52,11 @@ const ResortDetail = () => {
       <div className="min-h-screen bg-background flex items-center justify-center">
         <div className="text-center space-y-4">
           <h1 className="text-2xl font-serif text-foreground">
-            Resort not found
+            {t("resortNotFound")}
           </h1>
           <Button variant="ghost" onClick={() => router.push("/")}>
             <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to all resorts
+            {t("backAllResorts")}
           </Button>
         </div>
       </div>
@@ -95,7 +97,7 @@ const ResortDetail = () => {
                 size="lg"
               >
                 <Ticket className="w-5 h-5 mr-2" />
-                Buy Tickets — from ${resort.dayTicketPrice}
+                {t("buyTickets")} — {t("from")} ${resort.dayTicketPrice}
               </Button>
             </a>
           </div>

@@ -1,11 +1,16 @@
+"use client";
+
 import { ArrowLeft, MapPin } from "lucide-react";
+import { useLanguage } from "@/src/i18n";
 import { Resort } from "@/types/resort";
 
 const LocationSection = ({ resort }: { resort: Resort }) => {
+  const { t } = useLanguage();
+
   return (
     <section className="space-y-4">
       <h2 className="font-serif text-xl font-medium text-foreground">
-        Location
+        {t("location")}
       </h2>
       <div className="bg-card rounded-lg p-6 border border-border">
         <div className="flex items-start gap-4">
@@ -14,7 +19,7 @@ const LocationSection = ({ resort }: { resort: Resort }) => {
           </div>
           <div className="space-y-1">
             <p className="font-medium text-foreground">
-              Address: {resort.address}
+              {t("address")}: {resort.address}
             </p>
             <a
               href={resort.googleMapsUrl}
@@ -22,7 +27,7 @@ const LocationSection = ({ resort }: { resort: Resort }) => {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 text-sm text-primary hover:underline mt-2"
             >
-              Get directions
+              {t("getDirections")}
               <ArrowLeft className="w-3 h-3 rotate-[135deg]" />
             </a>
           </div>

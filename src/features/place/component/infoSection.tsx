@@ -11,6 +11,7 @@ import {
   Star,
   StarHalf,
 } from "lucide-react";
+import { useLanguage } from "@/src/i18n";
 import {
   Collapsible,
   CollapsibleContent,
@@ -37,12 +38,13 @@ function StarRating({ rating }: { rating: number }) {
 }
 
 const InfoSection = ({ resort, resortHours }: ResortInfoSectionProps) => {
+  const { t } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <section className="space-y-4">
       <h2 className="font-serif text-xl font-medium text-foreground">
-        Main Info
+        {t("mainInfo")}
       </h2>
       <div className="bg-card rounded-lg border border-border divide-y divide-border">
         <Collapsible open={isOpen} onOpenChange={setIsOpen}>
@@ -51,7 +53,7 @@ const InfoSection = ({ resort, resortHours }: ResortInfoSectionProps) => {
               <Clock className="w-4 h-4 mt-0.5 text-muted-foreground shrink-0" />
               <div className="text-left">
                 <p className="text-sm font-medium text-foreground">
-                  Hours of Operation
+                  {t("hoursOperation")}
                 </p>
               </div>
             </div>
@@ -94,7 +96,7 @@ const InfoSection = ({ resort, resortHours }: ResortInfoSectionProps) => {
                 ))
               ) : (
                 <p className="text-sm text-muted-foreground">
-                  Hours not available
+                  {t("hoursUnavailable")}
                 </p>
               )}
             </div>
@@ -103,7 +105,7 @@ const InfoSection = ({ resort, resortHours }: ResortInfoSectionProps) => {
         <div className="flex items-start gap-4 p-5">
           <Mail className="w-4 h-4 mt-0.5 text-muted-foreground shrink-0" />
           <div className="space-y-1">
-            <p className="text-sm font-medium text-foreground">Contact</p>
+            <p className="text-sm font-medium text-foreground">{t("contact")}</p>
             <a
               href={`mailto:${resort.email}`}
               className="text-sm text-primary hover:underline block"
@@ -122,14 +124,14 @@ const InfoSection = ({ resort, resortHours }: ResortInfoSectionProps) => {
         <div className="flex items-start gap-4 p-5">
           <Star className="w-4 h-4 mt-0.5 text-muted-foreground shrink-0" />
           <div>
-            <p className="text-sm font-medium text-foreground mb-1">Rating</p>
+            <p className="text-sm font-medium text-foreground mb-1">{t("rating")}</p>
             <StarRating rating={resort.rating} />
           </div>
         </div>
         <div className="flex items-start gap-4 p-5">
           <Globe className="w-4 h-4 mt-0.5 text-muted-foreground shrink-0" />
           <div>
-            <p className="text-sm font-medium text-foreground">Website</p>
+            <p className="text-sm font-medium text-foreground">{t("website")}</p>
             <a
               href={resort.website}
               target="_blank"

@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { Star, CableCar } from "lucide-react";
@@ -6,6 +8,7 @@ import ActivitiesList from "@/components/activitiesList";
 import { Resort } from "@/types/resort";
 import { getResortHeroImage } from "@/utils/convexResort";
 import { cn } from "@/utils/utils";
+import { useLanguage } from "@/src/i18n";
 
 import skiIcon from "@/icons/ski-svgrepo-com.svg";
 import snowboardIcon from "@/icons/snowboard-1-svgrepo-com.svg";
@@ -22,6 +25,7 @@ const ResortCard = ({
   resort,
   setHoveredResort,
 }: ResortCardProps) => {
+  const { t } = useLanguage();
   const router = useRouter();
 
   const handleClick = () => {
@@ -78,7 +82,7 @@ const ResortCard = ({
             <div className="flex items-center gap-1 text-muted-foreground h-[30px]">
               <CableCar className="w-3.5 h-3.5" />
               <span className="text-[10px] font-bold uppercase tracking-wide">
-                Lift Pass
+                {t("liftPass")}
               </span>
             </div>
             <p className="text-sm font-medium text-foreground">
@@ -89,7 +93,7 @@ const ResortCard = ({
             <div className="flex items-center gap-1 text-muted-foreground h-[30px]">
               <Image alt="ski-icons" src={skiIcon} width={16} height={16} />
               <span className="text-[10px] font-bold uppercase tracking-wide">
-                Ski Rental
+                {t("skiRental")}
               </span>
             </div>
             <p className="text-sm font-medium text-foreground">
@@ -105,7 +109,7 @@ const ResortCard = ({
                 height={14}
               />
               <span className="text-[10px] font-bold uppercase tracking-wide">
-                Snowboard Rental
+                {t("snowboardRental")}
               </span>
             </div>
             <p className="text-sm font-medium text-foreground">
@@ -122,7 +126,7 @@ const ResortCard = ({
                   height={14}
                 />
                 <span className="text-[10px] font-bold uppercase tracking-wide">
-                  Tubbing
+                  {t("tubbing")}
                 </span>
               </div>
               <p className="text-sm font-medium text-foreground">

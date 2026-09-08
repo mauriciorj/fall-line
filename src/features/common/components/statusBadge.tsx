@@ -1,4 +1,7 @@
+"use client";
+
 import { cn } from "@/utils/utils";
+import { useLanguage } from "@/src/i18n";
 
 interface TrackStatus {
   className?: string;
@@ -8,6 +11,8 @@ interface TrackStatus {
 }
 
 const StatusBadge = ({ open, total, type, className }: TrackStatus) => {
+  const { t } = useLanguage();
+
   return (
     <span
       className={cn(
@@ -22,7 +27,7 @@ const StatusBadge = ({ open, total, type, className }: TrackStatus) => {
           "border border-run-free-style text-run-free-style"
       )}
     >
-      {open}/{total} open
+      {open}/{total} {t("open")}
     </span>
   );
 };

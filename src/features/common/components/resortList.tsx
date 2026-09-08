@@ -1,6 +1,9 @@
+"use client";
+
 import { useEffect, useRef } from "react";
 import { Resort } from "@/types/resort";
 import ResortCard from "@/components/resortCard";
+import { useLanguage } from "@/src/i18n";
 
 interface ResortListProps {
   hoveredResort: string | null;
@@ -17,6 +20,7 @@ const ResortList = ({
   isLoading = false,
   setHoveredResort,
 }: ResortListProps) => {
+  const { t } = useLanguage();
   const itemRefs = useRef<Record<string, HTMLDivElement | null>>({});
 
   useEffect(() => {
@@ -31,7 +35,7 @@ const ResortList = ({
   if (isLoading) {
     return (
       <div className="flex-1 flex items-center justify-center p-6">
-        <p className="text-muted-foreground text-sm">Loading resorts...</p>
+        <p className="text-muted-foreground text-sm">{t("loadingResorts")}</p>
       </div>
     );
   }
@@ -41,10 +45,10 @@ const ResortList = ({
       <div className="flex-1 flex items-center justify-center p-6">
         <div className="text-center space-y-2">
           <p className="text-muted-foreground text-sm">
-            No resorts match your filters
+            {t("noResorts")}
           </p>
           <p className="text-xs text-muted-foreground/70">
-            Try adjusting your criteria
+            {t("adjustCriteria")}
           </p>
         </div>
       </div>

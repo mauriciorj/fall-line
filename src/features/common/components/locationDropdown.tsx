@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/select";
 import { useIsMobile } from "@/hooks/useMobile";
 import { LocationOption, locationKey } from "@/types/location";
+import { useLanguage } from "@/src/i18n";
 
 const LocationDropdown = ({
   locations,
@@ -21,6 +22,7 @@ const LocationDropdown = ({
   selectedLocation: LocationOption | null;
   setLocation: (location: LocationOption) => void;
 }) => {
+  const { t } = useLanguage();
   const isMobile = useIsMobile();
   const selectedValue = selectedLocation ? locationKey(selectedLocation) : "";
   const groupedLocations = locations.reduce<
@@ -37,7 +39,7 @@ const LocationDropdown = ({
       {!isMobile && (
         <div>
           <span className="whitespace-nowrap text-foreground mr-2">
-            Location
+            {t("location")}
           </span>
         </div>
       )}
@@ -49,7 +51,7 @@ const LocationDropdown = ({
         }}
       >
         <SelectTrigger className="w-full bg-background min-w-[150px]">
-          <SelectValue placeholder="Select your location" />
+          <SelectValue placeholder={t("selectLocation")} />
         </SelectTrigger>
         <SelectContent className="bg-background z-50">
           {Object.entries(groupedLocations).map(([continent, countries]) => (

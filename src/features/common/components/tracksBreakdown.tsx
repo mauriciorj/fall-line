@@ -1,4 +1,7 @@
+"use client";
+
 import { cn } from "@/utils/utils";
+import { useLanguage } from "@/src/i18n";
 import StatusBadge from "@/components/statusBadge";
 import { Resort } from "@/types/resort";
 import TrackStats from "@/utils/trackStats";
@@ -12,6 +15,7 @@ const TracksBreakdown = ({
   isToHideStatusBadge?: boolean;
   resort: Resort;
 }) => {
+  const { t } = useLanguage();
   const {
     greenTracks,
     greenTracksOpen,
@@ -36,7 +40,7 @@ const TracksBreakdown = ({
     <div className={cn("space-y-2", className)}>
       <div className="flex items-center gap-3">
         <div>
-          <p className="text-xs text-muted-foreground">Tracks:</p>
+          <p className="text-xs text-muted-foreground">{t("trackLabel")}</p>
         </div>
         <div className="flex items-center gap-3 text-xs text-muted-foreground">
           {Boolean(greenTracks > 0) && (

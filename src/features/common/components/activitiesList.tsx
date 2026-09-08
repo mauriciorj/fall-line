@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Footprints,
   GraduationCap,
@@ -7,12 +9,15 @@ import {
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Resort } from "@/types/resort";
+import { useLanguage } from "@/src/i18n";
 
 interface ActivitiesListProps {
   resort: Resort;
 }
 
 const ActivitiesList = ({ resort }: ActivitiesListProps) => {
+  const { t } = useLanguage();
+
   return (
     <div className="flex flex-row flex-wrap gap-1">
       {resort.hasAccommodations && (
@@ -22,7 +27,7 @@ const ActivitiesList = ({ resort }: ActivitiesListProps) => {
             className="text-[12px] font-medium gap-1 px-2 py-0.5"
           >
             <Hotel className="w-4 h-4" />
-            Accommodations
+            {t("accommodations")}
           </Badge>
         </div>
       )}
@@ -33,7 +38,7 @@ const ActivitiesList = ({ resort }: ActivitiesListProps) => {
             className="text-[12px] font-medium gap-1 px-2 py-0.5"
           >
             <Trees className="w-4 h-4" />
-            Cross Country
+            {t("crossCountry")}
           </Badge>
         </div>
       )}
@@ -44,7 +49,7 @@ const ActivitiesList = ({ resort }: ActivitiesListProps) => {
             className="text-[12px] font-medium gap-1 px-2 py-0.5"
           >
             <GraduationCap className="w-4 h-4" />
-            Lessons
+            {t("lessons")}
           </Badge>
         </div>
       )}
@@ -55,7 +60,7 @@ const ActivitiesList = ({ resort }: ActivitiesListProps) => {
             className="text-[12px] font-medium gap-1 px-2 py-0.5"
           >
             <Footprints className="w-4 h-4" />
-            Snowshoeing
+            {t("snowshoeing")}
           </Badge>
         </div>
       )}
@@ -66,7 +71,7 @@ const ActivitiesList = ({ resort }: ActivitiesListProps) => {
             className="text-[12px] font-medium gap-1 px-2 py-0.5"
           >
             <Sparkles className="w-4 h-4" />
-            Spa
+            {t("spa")}
           </Badge>
         </div>
       )}

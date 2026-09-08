@@ -1,6 +1,9 @@
+"use client";
+
 import { useMemo } from "react";
 import { GoogleMap, useLoadScript, MarkerF } from "@react-google-maps/api";
 import MapPlaceholder from "@/components/resortMap/mapPlaceholder";
+import { useLanguage } from "@/src/i18n";
 import { Resort } from "@/types/resort";
 
 interface ResortMapProps {
@@ -18,6 +21,7 @@ const ResortMap = ({
   setHoveredResort,
   setSelectedResort,
 }: ResortMapProps) => {
+  const { t } = useLanguage();
   const { isLoaded, loadError } = useLoadScript({
     id: "google-maps-script",
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_JAVASCRIPT_API!, // Will show in demo mode without key
@@ -46,11 +50,11 @@ const ResortMap = ({
   );
 
   if (loadError) {
-    return <MapPlaceholder message="Unable to load map" />;
+    return <MapPlaceholder message={t("unableLoadMap")} />;
   }
 
   if (!isLoaded) {
-    return <MapPlaceholder message="Loading map..." />;
+    return <MapPlaceholder message={t("loadingMap")} />;
   }
 
   return (

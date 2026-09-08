@@ -7,8 +7,10 @@ import LocationDropdown from "@/components/locationDropdown";
 import { useFiltersContext } from "@/context/filtersContext";
 import { useIsMobile } from "@/hooks/useMobile";
 import Menu from "@/components/menu";
+import { useLanguage } from "@/src/i18n";
 
 const Header = () => {
+  const { t } = useLanguage();
   const isMobile = useIsMobile();
 
   const {
@@ -26,12 +28,12 @@ const Header = () => {
       <div className="px-6 py-4 flex flex-row items-center justify-between">
         <Link
           href="/"
-          aria-label="Go to Ontario Ski Guide home"
+          aria-label={t("backHome")}
           className="flex items-center gap-2 text-primary"
         >
           <Mountain className="w-10 h-10" />
           <span className="text-2xl pt-2 font-bold tracking-wide uppercase">
-            {!isMobile && "Ontario Ski Guide"}
+            {!isMobile && t("appName")}
           </span>
         </Link>
         {isMobile ? (

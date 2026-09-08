@@ -15,6 +15,7 @@ import { useIsMobile } from "@/hooks/useMobile";
 import { SlidersHorizontal, X } from "lucide-react";
 import LocationDropdown from "../locationDropdown";
 import { LocationOption } from "@/types/location";
+import { useLanguage } from "@/src/i18n";
 
 import Toggle from "@/components/filter/toggle";
 
@@ -50,6 +51,7 @@ const Filter = ({
   selectedLocation,
   setLocation,
 }: FilterProps) => {
+  const { t } = useLanguage();
   const isMobile = useIsMobile();
 
   const [open, setOpen] = useState(false);
@@ -109,7 +111,7 @@ const Filter = ({
           )}
         >
           <SlidersHorizontal className="w-4 h-4" />
-          Filters
+          {t("filters")}
           {isActive && (
             <span className="w-1.5 h-1.5 rounded-full bg-primary-foreground" />
           )}
@@ -118,14 +120,14 @@ const Filter = ({
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
           <DialogTitle className="font-serif text-xl">
-            Filter Resorts
+            {t("filterResorts")}
           </DialogTitle>
         </DialogHeader>
 
         {isMobile && (
           <div className="space-y-3">
             <span className="text-xs font-medium text-foreground">
-              Location
+              {t("location")}
             </span>
             <LocationDropdown
               locations={locations}
@@ -138,7 +140,7 @@ const Filter = ({
         <div className="space-y-6 py-4">
           {/* Sort by */}
           <div className="space-y-3">
-            <span className="text-xs font-medium text-foreground">Sort by</span>
+            <span className="text-xs font-medium text-foreground">{t("sortBy")}</span>
             <div className="flex items-center gap-2">
               <button
                 onClick={() => updateLocalFilter("sortBy", "price")}
@@ -149,7 +151,7 @@ const Filter = ({
                     : "bg-muted/50 text-muted-foreground hover:text-foreground hover:bg-muted"
                 )}
               >
-                Lift Price
+                {t("liftPrice")}
               </button>
               <button
                 onClick={() => updateLocalFilter("sortBy", "rating")}
@@ -160,7 +162,7 @@ const Filter = ({
                     : "bg-muted/50 text-muted-foreground hover:text-foreground hover:bg-muted"
                 )}
               >
-                Rating
+                {t("rating")}
               </button>
             </div>
           </div>
@@ -190,11 +192,11 @@ const Filter = ({
 
           <div className="space-y-3">
             <span className="text-xs font-medium text-foreground">
-              Activities
+              {t("activities")}
             </span>
             <div className="flex flex-wrap gap-2">
               <Toggle
-                label="Accommodations"
+                label={t("accommodations")}
                 color="green"
                 isActive={localFilters.activities.accommodations}
                 onClick={() =>
@@ -205,7 +207,7 @@ const Filter = ({
                 }
               />
               <Toggle
-                label="Cross Country"
+                label={t("crossCountry")}
                 color="green"
                 isActive={localFilters.activities.crosscountry}
                 onClick={() =>
@@ -216,7 +218,7 @@ const Filter = ({
                 }
               />
               <Toggle
-                label="Lessons"
+                label={t("lessons")}
                 color="green"
                 isActive={localFilters.activities.lessons}
                 onClick={() =>
@@ -227,7 +229,7 @@ const Filter = ({
                 }
               />
               <Toggle
-                label="Snowshoeing"
+                label={t("snowshoeing")}
                 color="green"
                 isActive={localFilters.activities.snowshoeing}
                 onClick={() =>
@@ -238,7 +240,7 @@ const Filter = ({
                 }
               />
               <Toggle
-                label="Spa"
+                label={t("spa")}
                 color="green"
                 isActive={localFilters.activities.spa}
                 onClick={() =>
@@ -249,7 +251,7 @@ const Filter = ({
                 }
               />
               <Toggle
-                label="Tubbing"
+                label={t("tubbing")}
                 color="green"
                 isActive={localFilters.activities.tubbing}
                 onClick={() =>
@@ -265,7 +267,7 @@ const Filter = ({
           {/* Timestamp */}
           <div className="pt-2 border-t border-border">
             <span className="text-[10px] text-muted-foreground/50">
-              Prices last updated Feb 2026
+              {t("pricesUpdated")}
             </span>
           </div>
         </div>
@@ -280,12 +282,12 @@ const Filter = ({
               className="text-muted-foreground"
             >
               <X className="w-3.5 h-3.5 mr-1.5" />
-              Clear all
+              {t("clearAll")}
             </Button>
           )}
           <div className="flex-1" />
           <Button onClick={handleApply} className="px-6">
-            Apply
+            {t("apply")}
           </Button>
         </div>
       </DialogContent>
