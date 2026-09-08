@@ -1,0 +1,128 @@
+{
+  "rates": {
+    "items": [
+      {
+        "name": "Beginner 1",
+        "prices": [
+          {
+            "label": "Monday to Thursday (Closed Most Tuesdays) Valid up to 4 Hours",
+            "value": "$39"
+          },
+          {
+            "label": "Friday to Sunday & Holidays Valid up to 4 Hours",
+            "value": "$39"
+          },
+          {
+            "label": "Late Night (Not Available Sundays & Tuesdays) Valid 7:30 p.m. to 9:30 p.m.",
+            "value": "$39"
+          }
+        ]
+      },
+      {
+        "name": "5 & Under",
+        "prices": [
+          {
+            "label": "Monday to Thursday (Closed Most Tuesdays) Valid up to 4 Hours",
+            "value": "$25"
+          },
+          {
+            "label": "Friday to Sunday & Holidays Valid up to 4 Hours",
+            "value": "$25"
+          },
+          {
+            "label": "Late Night (Not Available Sundays & Tuesdays) Valid 7:30 p.m. to 9:30 p.m.",
+            "value": "$25"
+          }
+        ]
+      },
+      {
+        "name": "13 & Under",
+        "prices": [
+          {
+            "label": "Monday to Thursday (Closed Most Tuesdays) Valid up to 4 Hours",
+            "value": "$55"
+          },
+          {
+            "label": "Friday to Sunday & Holidays Valid up to 4 Hours",
+            "value": "$60"
+          },
+          {
+            "label": "Late Night (Not Available Sundays & Tuesdays) Valid 7:30 p.m. to 9:30 p.m.",
+            "value": "$39.99"
+          }
+        ]
+      },
+      {
+        "name": "Student 2",
+        "prices": [
+          {
+            "label": "Monday to Thursday (Closed Most Tuesdays) Valid up to 4 Hours",
+            "value": "$60"
+          },
+          {
+            "label": "Friday to Sunday & Holidays Valid up to 4 Hours",
+            "value": "$65"
+          },
+          {
+            "label": "Late Night (Not Available Sundays & Tuesdays) Valid 7:30 p.m. to 9:30 p.m.",
+            "value": "$39.99"
+          }
+        ]
+      },
+      {
+        "name": "Senior (65+)",
+        "prices": [
+          {
+            "label": "Monday to Thursday (Closed Most Tuesdays) Valid up to 4 Hours",
+            "value": "$60"
+          },
+          {
+            "label": "Friday to Sunday & Holidays Valid up to 4 Hours",
+            "value": "$65"
+          },
+          {
+            "label": "Late Night (Not Available Sundays & Tuesdays) Valid 7:30 p.m. to 9:30 p.m.",
+            "value": "$39.99"
+          }
+        ]
+      },
+      {
+        "name": "Adult (18+)",
+        "prices": [
+          {
+            "label": "Monday to Thursday (Closed Most Tuesdays) Valid up to 4 Hours",
+            "value": "$65"
+          },
+          {
+            "label": "Friday to Sunday & Holidays Valid up to 4 Hours",
+            "value": "$70"
+          },
+          {
+            "label": "Late Night (Not Available Sundays & Tuesdays) Valid 7:30 p.m. to 9:30 p.m.",
+            "value": "$39.99"
+          }
+        ]
+      },
+      {
+        "name": "EXTEND YOUR LIFT TICKET! Stay until close by upgrading your lift ticket",
+        "prices": [
+          {
+            "label": "Monday to Thursday (Closed Most Tuesdays) Valid up to 4 Hours",
+            "value": ""
+          },
+          {
+            "label": "Friday to Sunday & Holidays Valid up to 4 Hours",
+            "value": "+$20 /lift ticket +$15 /lift ticket for 5 & Under"
+          },
+          {
+            "label": "Late Night (Not Available Sundays & Tuesdays) Valid 7:30 p.m. to 9:30 p.m.",
+            "value": ""
+          }
+        ]
+      }
+    ]
+  },
+  "resortId": "brimacombe",
+  "sourceUrl": "https://brimacombe.ca/plan-your-visit/lift-tickets/",
+  "updatedAt": 1788839918147
+}

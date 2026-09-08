@@ -1,21 +1,6 @@
 import { defineSchema, defineTable } from "convex/server";
 import { v } from "convex/values";
 
-const conditionsSchema = v.object({
-  temperature: v.optional(v.string()),
-  baseDepth: v.optional(v.string()),
-  newSnow: v.optional(v.string()),
-  surfaceConditions: v.optional(v.string()),
-  snowmaking: v.optional(v.string()),
-  lastUpdated: v.optional(v.string()),
-  hours: v.optional(v.string()),
-});
-
-const summarySchema = v.object({
-  open: v.number(),
-  total: v.number(),
-});
-
 const liftSchema = v.object({
   name: v.string(),
   status: v.string(),
@@ -92,7 +77,6 @@ export const resortsFields = {
   continent: v.optional(v.string()),
   country: v.optional(v.string()),
   region: v.optional(v.string()),
-  contact: v.optional(v.string()),
   website: v.optional(v.string()),
   address: v.optional(v.string()),
   coordinates: v.optional(
@@ -111,13 +95,12 @@ export const resortsFields = {
   hasSpa: v.optional(v.boolean()),
   hasTubing: v.optional(v.boolean()),
   hasZipline: v.optional(v.boolean()),
-  image: v.optional(v.string()),
   lessonsPrice: v.optional(v.number()),
   phone: v.optional(v.string()),
   rating: v.optional(v.number()),
   skiRentalPrice: v.optional(v.number()),
   snowBoardRentalPrice: v.optional(v.number()),
-  runs: v.optional(
+  tracksSummary: v.optional(
     v.object({
       black: v.optional(v.number()),
       blue: v.optional(v.number()),
@@ -128,16 +111,6 @@ export const resortsFields = {
   ),
   ticketUrl: v.optional(v.string()),
   tollFree: v.optional(v.string()),
-  trackConditions: v.optional(
-    v.array(
-      v.object({
-        name: v.string(),
-        condition: v.string(),
-        difficulty: v.string(),
-      }),
-    ),
-  ),
-  trailMap: v.optional(v.string()),
   tubbingPrice: v.optional(v.number()),
 };
 
@@ -157,17 +130,12 @@ export default defineSchema({
     sourceUrl: v.optional(v.string()),
     updatedAt: v.number(),
 
-    conditions: v.optional(conditionsSchema),
-
     lifts: v.array(liftSchema),
     trails: v.array(trailSchema),
     terrainParks: v.optional(v.array(trailSchema)),
     crossCountry: v.optional(v.array(crossCountrySchema)),
     tubing: v.optional(v.array(tubingSchema)),
-
-    liftsSummary: v.optional(summarySchema),
-    trailsSummary: v.optional(summarySchema),
-    tubingSummary: v.optional(summarySchema),
+  
     rawData: v.optional(v.any()),
   })
     .index("by_resort", ["resortId"])

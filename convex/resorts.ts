@@ -2,7 +2,6 @@ import { internalMutation, query } from "./_generated/server";
 import type { MutationCtx } from "./_generated/server";
 import type { Doc } from "./_generated/dataModel";
 import { v } from "convex/values";
-import { resortSeedData } from "./resortSeed";
 
 const locationFields = v.object({
   continent: v.optional(v.string()),
@@ -36,6 +35,7 @@ const resortFieldNames = [
   "rating",
   "skiRentalPrice",
   "snowBoardRentalPrice",
+  "tracksSummary",
   "runs",
   "ticketUrl",
   "tollFree",
@@ -74,13 +74,6 @@ export async function ensureResort(
       await ctx.db.patch(existing._id, { website: identity.website });
     }
     return existing._id;
-  }
-
-  const seededResort = resortSeedData.find(
-    (resort) => resort.resortId === identity.resortId,
-  );
-  if (seededResort) {
-    return await ctx.db.insert("resorts", seededResort);
   }
 
   return await ctx.db.insert("resorts", {

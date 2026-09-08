@@ -1,0 +1,73 @@
+{
+  "hours": [
+    {
+      "name": "Guest & Member Services",
+      "hours": [
+        {
+          "day": "Monday",
+          "time": "9:00 a.m. to 4:00 p.m."
+        },
+        {
+          "day": "Tuesday",
+          "time": "9:00 a.m. to 4:00 p.m."
+        },
+        {
+          "day": "Wednesday",
+          "time": "9:00 a.m. to 4:00 p.m."
+        },
+        {
+          "day": "Thursday",
+          "time": "9:00 a.m. to 4:00 p.m."
+        },
+        {
+          "day": "Friday",
+          "time": "9:00 a.m. to 4:00 p.m."
+        },
+        {
+          "day": "Saturday",
+          "time": "CLOSED"
+        },
+        {
+          "day": "Sunday",
+          "time": "CLOSED"
+        }
+      ]
+    },
+    {
+      "name": "Slopeside Skis & Boards Retail Store",
+      "hours": [
+        {
+          "day": "Monday",
+          "time": "CLOSED"
+        },
+        {
+          "day": "Tuesday",
+          "time": "CLOSED"
+        },
+        {
+          "day": "Wednesday",
+          "time": "CLOSED"
+        },
+        {
+          "day": "Thursday",
+          "time": "CLOSED"
+        },
+        {
+          "day": "Friday",
+          "time": "CLOSED"
+        },
+        {
+          "day": "Saturday",
+          "time": "CLOSED"
+        },
+        {
+          "day": "Sunday",
+          "time": "CLOSED"
+        }
+      ]
+    }
+  ],
+  "resortId": "brimacombe",
+  "sourceUrl": "https://brimacombe.ca/contact-us/",
+  "updatedAt": 1788839917637
+}

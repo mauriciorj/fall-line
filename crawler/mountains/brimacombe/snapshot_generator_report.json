@@ -1,0 +1,33 @@
+{
+  "resortId": "brimacombe",
+  "tables": [
+    {
+      "table": "resorts",
+      "missingColumns": [
+        "rating",
+        "ticketUrl",
+        "tubbingPrice"
+      ]
+    },
+    {
+      "table": "resortHours",
+      "missingColumns": []
+    },
+    {
+      "table": "resortRates",
+      "missingColumns": []
+    },
+    {
+      "table": "resortRentals",
+      "missingColumns": []
+    },
+    {
+      "table": "weatherAndStatus",
+      "missingColumns": [
+        "crossCountry",
+        "tubing"
+      ]
+    }
+  ],
+  "missingColumnCount": 5
+}

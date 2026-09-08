@@ -12,8 +12,6 @@ import requests
 from bs4 import BeautifulSoup
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-from convex_client import push_resort_hours
 from dtos import to_hours
 
 URL = "https://brimacombe.ca/contact-us/"
@@ -117,20 +115,16 @@ def get_hours():
 
 
 def main():
-    hours = get_hours()
+    payload = {
+        "hours": to_hours(get_hours()),
+        "resortId": RESORT_ID,
+        "sourceUrl": URL,
+        "updatedAt": int(time.time() * 1000),
+    }
     output_file = os.path.join(os.path.dirname(__file__), "hours-of-operation.json")
     with open(output_file, "w", encoding="utf-8") as f:
-        json.dump(hours, f, indent=2, ensure_ascii=False)
+        json.dump(payload, f, indent=2, ensure_ascii=False)
     print(f"Saved to {output_file}")
-
-    result = push_resort_hours(
-        RESORT_ID,
-        URL,
-        to_hours(hours),
-        updated_at_ms=int(time.time() * 1000),
-    )
-    if result is not None:
-        print("Pushed to Convex:", result)
 
 
 if __name__ == "__main__":

@@ -23,10 +23,10 @@ RESORT_SCRIPTS = {
         # "weather-and-status.py",
     # ),
     "brimacombe": (
-        "hours-of-operation.py",
-        "lift-rates.py",
-        "rentals.py",
-        "weather-and-status.py",
+        "json_generators/hours-of-operation.py",
+        "json_generators/lift-rates.py",
+        "json_generators/rentals.py",
+        "json_generators/weather-and-status.py",
     ),
     "caledon": (
         "lift-rates.py",

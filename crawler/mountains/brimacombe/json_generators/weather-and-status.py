@@ -11,8 +11,6 @@ import requests
 from bs4 import BeautifulSoup
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-from convex_client import push_weather_and_status
 from dtos import to_weather_dto
 
 URL = "https://brimacombe.ca/at-the-brim/snow-conditions-and-trails/"
@@ -97,20 +95,17 @@ def get_trail_status():
 
 
 def main():
-    status = get_trail_status()
+    weather_data = to_weather_dto(get_trail_status())
+    payload = {
+        **weather_data,
+        "resortId": RESORT_ID,
+        "sourceUrl": URL,
+        "updatedAt": int(time.time() * 1000),
+    }
     output_file = os.path.join(os.path.dirname(__file__), "weather-and-status.json")
     with open(output_file, "w", encoding="utf-8") as f:
-        json.dump(status, f, indent=2, ensure_ascii=False)
+        json.dump(payload, f, indent=2, ensure_ascii=False)
     print(f"Saved to {output_file}")
-
-    result = push_weather_and_status(
-        RESORT_ID,
-        URL,
-        to_weather_dto(status),
-        updated_at_ms=int(time.time() * 1000),
-    )
-    if result is not None:
-        print("Pushed to Convex:", result)
 
 
 if __name__ == "__main__":

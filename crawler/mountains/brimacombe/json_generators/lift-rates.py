@@ -11,8 +11,6 @@ import requests
 from bs4 import BeautifulSoup
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-from convex_client import push_resort_rates
 from dtos import to_rates_dto
 
 URL = "https://brimacombe.ca/plan-your-visit/lift-tickets/"
@@ -68,20 +66,16 @@ def get_lift_rates():
 
 
 def main():
-    rates = get_lift_rates()
+    payload = {
+        "rates": to_rates_dto(get_lift_rates()),
+        "resortId": RESORT_ID,
+        "sourceUrl": URL,
+        "updatedAt": int(time.time() * 1000),
+    }
     output_file = os.path.join(os.path.dirname(__file__), "lift-rates.json")
     with open(output_file, "w", encoding="utf-8") as f:
-        json.dump(rates, f, indent=2, ensure_ascii=False)
+        json.dump(payload, f, indent=2, ensure_ascii=False)
     print(f"Saved to {output_file}")
-
-    result = push_resort_rates(
-        RESORT_ID,
-        URL,
-        to_rates_dto(rates),
-        updated_at_ms=int(time.time() * 1000),
-    )
-    if result is not None:
-        print("Pushed to Convex:", result)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,121 @@
+{
+  "rentals": {
+    "sections": [
+      {
+        "name": "Individual Rental Packages",
+        "items": [
+          {
+            "name": "Tot (Under 5) Ski or Riglet Board Package",
+            "prices": [
+              {
+                "label": "Cost",
+                "value": "$25.00"
+              }
+            ]
+          },
+          {
+            "name": "(13 & Under) Ski or Snowboard Package",
+            "prices": [
+              {
+                "label": "Cost",
+                "value": "$44.00"
+              }
+            ]
+          },
+          {
+            "name": "(Ages 14+ ) Ski or Snowboard Package",
+            "prices": [
+              {
+                "label": "Cost",
+                "value": "$54.00"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Individual Rental Items",
+        "items": [
+          {
+            "name": "Helmet",
+            "prices": [
+              {
+                "label": "13 & Under",
+                "value": "$15.00"
+              },
+              {
+                "label": "Ages 14+",
+                "value": "$15.00"
+              }
+            ]
+          },
+          {
+            "name": "Skis or Snowboard",
+            "prices": [
+              {
+                "label": "13 & Under",
+                "value": "$31.00"
+              },
+              {
+                "label": "Ages 14+",
+                "value": "$31.00"
+              }
+            ]
+          },
+          {
+            "name": "Boots (Ski or Snowboard)",
+            "prices": [
+              {
+                "label": "13 & Under",
+                "value": "$31.00"
+              },
+              {
+                "label": "Ages 14+",
+                "value": "$31.00"
+              }
+            ]
+          },
+          {
+            "name": "Poles",
+            "prices": [
+              {
+                "label": "13 & Under",
+                "value": "$12.00"
+              },
+              {
+                "label": "Ages 14+",
+                "value": "$12.00"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "7-Week Program Lesson Rentals",
+        "items": [
+          {
+            "name": "7-Week Snow School Program Ski or Snowboard Rental Package (Skis, Boots and Poles or Snowboard and Boots)",
+            "prices": [
+              {
+                "label": "Cost",
+                "value": "$259.00"
+              }
+            ]
+          },
+          {
+            "name": "7-Week Tot Ski or Snowboard Rental Package (Includes Helmet)",
+            "prices": [
+              {
+                "label": "Cost",
+                "value": "$139.00"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "resortId": "brimacombe",
+  "sourceUrl": "https://brimacombe.ca/plan-your-visit/rentals/",
+  "updatedAt": 1788839918670
+}

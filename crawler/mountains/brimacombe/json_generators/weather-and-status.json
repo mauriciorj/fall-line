@@ -1,0 +1,500 @@
+{
+  "lifts": [
+    {
+      "name": "Boulevard Chair",
+      "status": "Closed",
+      "dayStatus": "Closed",
+      "nightStatus": "Closed",
+      "identifier": "A"
+    },
+    {
+      "name": "Main Street Chair",
+      "status": "Closed",
+      "dayStatus": "Closed",
+      "nightStatus": "Closed",
+      "identifier": "B"
+    },
+    {
+      "name": "Magic Carpet",
+      "status": "Closed",
+      "dayStatus": "Closed",
+      "nightStatus": "Closed",
+      "identifier": "C"
+    },
+    {
+      "name": "Bowl Chair",
+      "status": "Closed",
+      "dayStatus": "Closed",
+      "nightStatus": "Closed",
+      "identifier": "D"
+    },
+    {
+      "name": "T-Bar 5",
+      "status": "Closed",
+      "dayStatus": "Closed",
+      "nightStatus": "N/A",
+      "identifier": "E"
+    },
+    {
+      "name": "West Chair",
+      "status": "Closed",
+      "dayStatus": "Closed",
+      "nightStatus": "N/A",
+      "identifier": "F"
+    },
+    {
+      "name": "T-Bar 8",
+      "status": "Closed",
+      "dayStatus": "Closed",
+      "nightStatus": "N/A",
+      "identifier": "G"
+    }
+  ],
+  "trails": [
+    {
+      "name": "Park Avenue",
+      "status": "Closed",
+      "difficulty": "Easy",
+      "dayStatus": "Closed",
+      "nightStatus": "Closed",
+      "number": "1"
+    },
+    {
+      "name": "Pete’s Elbow",
+      "status": "Closed",
+      "difficulty": "Easy",
+      "dayStatus": "Closed",
+      "nightStatus": "Closed",
+      "number": "2"
+    },
+    {
+      "name": "Snow Bowl",
+      "status": "Closed",
+      "difficulty": "Easy",
+      "dayStatus": "Closed",
+      "nightStatus": "Closed",
+      "number": "3"
+    },
+    {
+      "name": "Standard",
+      "status": "Closed",
+      "difficulty": "Medium",
+      "dayStatus": "Closed",
+      "nightStatus": "Closed",
+      "number": "4"
+    },
+    {
+      "name": "Bambi",
+      "status": "Closed",
+      "difficulty": "Easy",
+      "dayStatus": "Closed",
+      "nightStatus": "Closed",
+      "number": "5"
+    },
+    {
+      "name": "Ladies Downhill",
+      "status": "Closed",
+      "difficulty": "Medium",
+      "dayStatus": "Closed",
+      "nightStatus": "Closed",
+      "number": "6"
+    },
+    {
+      "name": "Ben’s Bump",
+      "status": "Closed",
+      "difficulty": "Hard",
+      "dayStatus": "Closed",
+      "nightStatus": "Closed",
+      "number": "7"
+    },
+    {
+      "name": "Bowl",
+      "status": "Closed",
+      "difficulty": "Hard",
+      "dayStatus": "Closed",
+      "nightStatus": "Closed",
+      "number": "8"
+    },
+    {
+      "name": "Tower Run",
+      "status": "Closed",
+      "difficulty": "Hard",
+      "dayStatus": "Closed",
+      "nightStatus": "Closed",
+      "number": "9"
+    },
+    {
+      "name": "Timberline",
+      "status": "Closed",
+      "difficulty": "Hard",
+      "dayStatus": "Closed",
+      "nightStatus": "Closed",
+      "number": "10"
+    },
+    {
+      "name": "Flyer",
+      "status": "Closed",
+      "difficulty": "Medium",
+      "dayStatus": "Closed",
+      "nightStatus": "Closed",
+      "number": "11"
+    },
+    {
+      "name": "Promenade",
+      "status": "Closed",
+      "difficulty": "Easy",
+      "dayStatus": "Closed",
+      "nightStatus": "N/A",
+      "number": "12"
+    },
+    {
+      "name": "Cowpath",
+      "status": "Closed",
+      "difficulty": "Easy",
+      "dayStatus": "Closed",
+      "nightStatus": "N/A",
+      "number": "13"
+    },
+    {
+      "name": "Kid’s Stuff",
+      "status": "Closed",
+      "difficulty": "Easy",
+      "dayStatus": "Closed",
+      "nightStatus": "N/A",
+      "number": "14"
+    },
+    {
+      "name": "Club House Run",
+      "status": "Closed",
+      "difficulty": "Medium",
+      "dayStatus": "Closed",
+      "nightStatus": "N/A",
+      "number": "15"
+    },
+    {
+      "name": "West Ridge",
+      "status": "Closed",
+      "difficulty": "Hard",
+      "dayStatus": "Closed",
+      "nightStatus": "N/A",
+      "number": "16"
+    },
+    {
+      "name": "Rutherford’s Cut",
+      "status": "Closed",
+      "difficulty": "Hard",
+      "dayStatus": "Closed",
+      "nightStatus": "N/A",
+      "number": "17"
+    },
+    {
+      "name": "Richards’ Landing",
+      "status": "Closed",
+      "difficulty": "Hard",
+      "dayStatus": "Closed",
+      "nightStatus": "N/A",
+      "number": "18"
+    },
+    {
+      "name": "Challenger",
+      "status": "Closed",
+      "difficulty": "Hard",
+      "dayStatus": "Closed",
+      "nightStatus": "N/A",
+      "number": "19"
+    },
+    {
+      "name": "Whistler",
+      "status": "Closed",
+      "difficulty": "Medium",
+      "dayStatus": "Closed",
+      "nightStatus": "N/A",
+      "number": "20"
+    },
+    {
+      "name": "Sunny Side",
+      "status": "Closed",
+      "difficulty": "Medium",
+      "dayStatus": "Closed",
+      "nightStatus": "N/A",
+      "number": "21"
+    },
+    {
+      "name": "Nice and Easy",
+      "status": "Closed",
+      "difficulty": "Easy",
+      "dayStatus": "Closed",
+      "nightStatus": "N/A",
+      "number": "22"
+    },
+    {
+      "name": "Farmer’s Field",
+      "status": "Closed",
+      "difficulty": "Easy",
+      "dayStatus": "Closed",
+      "nightStatus": "N/A",
+      "number": "23"
+    }
+  ],
+  "rawData": {
+    "Trails": [
+      {
+        "number": "1",
+        "name": "Park Avenue",
+        "difficulty": "Easy",
+        "day": "Closed",
+        "night": "Closed"
+      },
+      {
+        "number": "2",
+        "name": "Pete’s Elbow",
+        "difficulty": "Easy",
+        "day": "Closed",
+        "night": "Closed"
+      },
+      {
+        "number": "3",
+        "name": "Snow Bowl",
+        "difficulty": "Easy",
+        "day": "Closed",
+        "night": "Closed"
+      },
+      {
+        "number": "4",
+        "name": "Standard",
+        "difficulty": "Medium",
+        "day": "Closed",
+        "night": "Closed"
+      },
+      {
+        "number": "5",
+        "name": "Bambi",
+        "difficulty": "Easy",
+        "day": "Closed",
+        "night": "Closed"
+      },
+      {
+        "number": "6",
+        "name": "Ladies Downhill",
+        "difficulty": "Medium",
+        "day": "Closed",
+        "night": "Closed"
+      },
+      {
+        "number": "7",
+        "name": "Ben’s Bump",
+        "difficulty": "Hard",
+        "day": "Closed",
+        "night": "Closed"
+      },
+      {
+        "number": "8",
+        "name": "Bowl",
+        "difficulty": "Hard",
+        "day": "Closed",
+        "night": "Closed"
+      },
+      {
+        "number": "9",
+        "name": "Tower Run",
+        "difficulty": "Hard",
+        "day": "Closed",
+        "night": "Closed"
+      },
+      {
+        "number": "10",
+        "name": "Timberline",
+        "difficulty": "Hard",
+        "day": "Closed",
+        "night": "Closed"
+      },
+      {
+        "number": "11",
+        "name": "Flyer",
+        "difficulty": "Medium",
+        "day": "Closed",
+        "night": "Closed"
+      },
+      {
+        "number": "12",
+        "name": "Promenade",
+        "difficulty": "Easy",
+        "day": "Closed",
+        "night": "N/A"
+      },
+      {
+        "number": "13",
+        "name": "Cowpath",
+        "difficulty": "Easy",
+        "day": "Closed",
+        "night": "N/A"
+      },
+      {
+        "number": "14",
+        "name": "Kid’s Stuff",
+        "difficulty": "Easy",
+        "day": "Closed",
+        "night": "N/A"
+      },
+      {
+        "number": "15",
+        "name": "Club House Run",
+        "difficulty": "Medium",
+        "day": "Closed",
+        "night": "N/A"
+      },
+      {
+        "number": "16",
+        "name": "West Ridge",
+        "difficulty": "Hard",
+        "day": "Closed",
+        "night": "N/A"
+      },
+      {
+        "number": "17",
+        "name": "Rutherford’s Cut",
+        "difficulty": "Hard",
+        "day": "Closed",
+        "night": "N/A"
+      },
+      {
+        "number": "18",
+        "name": "Richards’ Landing",
+        "difficulty": "Hard",
+        "day": "Closed",
+        "night": "N/A"
+      },
+      {
+        "number": "19",
+        "name": "Challenger",
+        "difficulty": "Hard",
+        "day": "Closed",
+        "night": "N/A"
+      },
+      {
+        "number": "20",
+        "name": "Whistler",
+        "difficulty": "Medium",
+        "day": "Closed",
+        "night": "N/A"
+      },
+      {
+        "number": "21",
+        "name": "Sunny Side",
+        "difficulty": "Medium",
+        "day": "Closed",
+        "night": "N/A"
+      },
+      {
+        "number": "22",
+        "name": "Nice and Easy",
+        "difficulty": "Easy",
+        "day": "Closed",
+        "night": "N/A"
+      },
+      {
+        "number": "23",
+        "name": "Farmer’s Field",
+        "difficulty": "Easy",
+        "day": "Closed",
+        "night": "N/A"
+      }
+    ],
+    "Parks": [
+      {
+        "code": "SC",
+        "name": "Snow Cross Course",
+        "difficulty": "Advanced",
+        "day": "Closed",
+        "night": "Closed"
+      },
+      {
+        "code": "TP-PB",
+        "name": "Piggy Bank Terrain Park",
+        "difficulty": "Advanced",
+        "day": "Closed",
+        "night": "Closed"
+      },
+      {
+        "code": "TP-V",
+        "name": "Vault Terrain Park",
+        "difficulty": "Advanced",
+        "day": "Closed",
+        "night": "Closed"
+      }
+    ],
+    "Lifts": [
+      {
+        "letter": "A",
+        "name": "Boulevard Chair",
+        "day": "Closed",
+        "night": "Closed"
+      },
+      {
+        "letter": "B",
+        "name": "Main Street Chair",
+        "day": "Closed",
+        "night": "Closed"
+      },
+      {
+        "letter": "C",
+        "name": "Magic Carpet",
+        "day": "Closed",
+        "night": "Closed"
+      },
+      {
+        "letter": "D",
+        "name": "Bowl Chair",
+        "day": "Closed",
+        "night": "Closed"
+      },
+      {
+        "letter": "E",
+        "name": "T-Bar 5",
+        "day": "Closed",
+        "night": "N/A"
+      },
+      {
+        "letter": "F",
+        "name": "West Chair",
+        "day": "Closed",
+        "night": "N/A"
+      },
+      {
+        "letter": "G",
+        "name": "T-Bar 8",
+        "day": "Closed",
+        "night": "N/A"
+      }
+    ]
+  },
+  "terrainParks": [
+    {
+      "name": "Snow Cross Course",
+      "status": "Closed",
+      "difficulty": "Advanced",
+      "dayStatus": "Closed",
+      "nightStatus": "Closed",
+      "number": "SC"
+    },
+    {
+      "name": "Piggy Bank Terrain Park",
+      "status": "Closed",
+      "difficulty": "Advanced",
+      "dayStatus": "Closed",
+      "nightStatus": "Closed",
+      "number": "TP-PB"
+    },
+    {
+      "name": "Vault Terrain Park",
+      "status": "Closed",
+      "difficulty": "Advanced",
+      "dayStatus": "Closed",
+      "nightStatus": "Closed",
+      "number": "TP-V"
+    }
+  ],
+  "resortId": "brimacombe",
+  "sourceUrl": "https://brimacombe.ca/at-the-brim/snow-conditions-and-trails/",
+  "updatedAt": 1788839919153
+}

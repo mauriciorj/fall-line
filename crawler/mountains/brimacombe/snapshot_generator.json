@@ -1,0 +1,877 @@
+{
+  "resortId": "brimacombe",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "resortId": "brimacombe",
+        "address": "4098 Regional Road 9, Orono, ON L0B 1M0",
+        "continent": "North America",
+        "country": "Canada",
+        "email": "info@brimacombe.ca",
+        "region": "Ontario",
+        "coordinates": {
+          "lat": 44.06901178082853,
+          "lng": -78.5731371079196
+        },
+        "googleMapsUrl": "https://maps.app.goo.gl/y2c4XGM9iTEwzmh76",
+        "phone": "(905) 983-5983",
+        "tollFree": "1 877 672 2582",
+        "website": "http://brimacombe.ca/",
+        "name": "Brimacombe",
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "tracksSummary": {
+          "black": 8,
+          "blue": 6,
+          "doubleBlack": 0,
+          "freeStyle": 0,
+          "green": 9
+        },
+        "dayTicketPrice": 70,
+        "lessonsPrice": 259,
+        "skiRentalPrice": 54,
+        "snowBoardRentalPrice": 54,
+        "hasLessons": true
+      }
+    },
+    {
+      "table": "resortHours",
+      "content": {
+        "hours": [
+          {
+            "name": "Guest & Member Services",
+            "hours": [
+              {
+                "day": "Monday",
+                "time": "9:00 a.m. to 4:00 p.m."
+              },
+              {
+                "day": "Tuesday",
+                "time": "9:00 a.m. to 4:00 p.m."
+              },
+              {
+                "day": "Wednesday",
+                "time": "9:00 a.m. to 4:00 p.m."
+              },
+              {
+                "day": "Thursday",
+                "time": "9:00 a.m. to 4:00 p.m."
+              },
+              {
+                "day": "Friday",
+                "time": "9:00 a.m. to 4:00 p.m."
+              },
+              {
+                "day": "Saturday",
+                "time": "CLOSED"
+              },
+              {
+                "day": "Sunday",
+                "time": "CLOSED"
+              }
+            ]
+          },
+          {
+            "name": "Slopeside Skis & Boards Retail Store",
+            "hours": [
+              {
+                "day": "Monday",
+                "time": "CLOSED"
+              },
+              {
+                "day": "Tuesday",
+                "time": "CLOSED"
+              },
+              {
+                "day": "Wednesday",
+                "time": "CLOSED"
+              },
+              {
+                "day": "Thursday",
+                "time": "CLOSED"
+              },
+              {
+                "day": "Friday",
+                "time": "CLOSED"
+              },
+              {
+                "day": "Saturday",
+                "time": "CLOSED"
+              },
+              {
+                "day": "Sunday",
+                "time": "CLOSED"
+              }
+            ]
+          }
+        ],
+        "resortId": "brimacombe",
+        "sourceUrl": "https://brimacombe.ca/contact-us/",
+        "updatedAt": 1788839917637
+      }
+    },
+    {
+      "table": "resortRates",
+      "content": {
+        "rates": {
+          "items": [
+            {
+              "name": "Beginner 1",
+              "prices": [
+                {
+                  "label": "Monday to Thursday (Closed Most Tuesdays) Valid up to 4 Hours",
+                  "value": "$39"
+                },
+                {
+                  "label": "Friday to Sunday & Holidays Valid up to 4 Hours",
+                  "value": "$39"
+                },
+                {
+                  "label": "Late Night (Not Available Sundays & Tuesdays) Valid 7:30 p.m. to 9:30 p.m.",
+                  "value": "$39"
+                }
+              ]
+            },
+            {
+              "name": "5 & Under",
+              "prices": [
+                {
+                  "label": "Monday to Thursday (Closed Most Tuesdays) Valid up to 4 Hours",
+                  "value": "$25"
+                },
+                {
+                  "label": "Friday to Sunday & Holidays Valid up to 4 Hours",
+                  "value": "$25"
+                },
+                {
+                  "label": "Late Night (Not Available Sundays & Tuesdays) Valid 7:30 p.m. to 9:30 p.m.",
+                  "value": "$25"
+                }
+              ]
+            },
+            {
+              "name": "13 & Under",
+              "prices": [
+                {
+                  "label": "Monday to Thursday (Closed Most Tuesdays) Valid up to 4 Hours",
+                  "value": "$55"
+                },
+                {
+                  "label": "Friday to Sunday & Holidays Valid up to 4 Hours",
+                  "value": "$60"
+                },
+                {
+                  "label": "Late Night (Not Available Sundays & Tuesdays) Valid 7:30 p.m. to 9:30 p.m.",
+                  "value": "$39.99"
+                }
+              ]
+            },
+            {
+              "name": "Student 2",
+              "prices": [
+                {
+                  "label": "Monday to Thursday (Closed Most Tuesdays) Valid up to 4 Hours",
+                  "value": "$60"
+                },
+                {
+                  "label": "Friday to Sunday & Holidays Valid up to 4 Hours",
+                  "value": "$65"
+                },
+                {
+                  "label": "Late Night (Not Available Sundays & Tuesdays) Valid 7:30 p.m. to 9:30 p.m.",
+                  "value": "$39.99"
+                }
+              ]
+            },
+            {
+              "name": "Senior (65+)",
+              "prices": [
+                {
+                  "label": "Monday to Thursday (Closed Most Tuesdays) Valid up to 4 Hours",
+                  "value": "$60"
+                },
+                {
+                  "label": "Friday to Sunday & Holidays Valid up to 4 Hours",
+                  "value": "$65"
+                },
+                {
+                  "label": "Late Night (Not Available Sundays & Tuesdays) Valid 7:30 p.m. to 9:30 p.m.",
+                  "value": "$39.99"
+                }
+              ]
+            },
+            {
+              "name": "Adult (18+)",
+              "prices": [
+                {
+                  "label": "Monday to Thursday (Closed Most Tuesdays) Valid up to 4 Hours",
+                  "value": "$65"
+                },
+                {
+                  "label": "Friday to Sunday & Holidays Valid up to 4 Hours",
+                  "value": "$70"
+                },
+                {
+                  "label": "Late Night (Not Available Sundays & Tuesdays) Valid 7:30 p.m. to 9:30 p.m.",
+                  "value": "$39.99"
+                }
+              ]
+            },
+            {
+              "name": "EXTEND YOUR LIFT TICKET! Stay until close by upgrading your lift ticket",
+              "prices": [
+                {
+                  "label": "Monday to Thursday (Closed Most Tuesdays) Valid up to 4 Hours",
+                  "value": ""
+                },
+                {
+                  "label": "Friday to Sunday & Holidays Valid up to 4 Hours",
+                  "value": "+$20 /lift ticket +$15 /lift ticket for 5 & Under"
+                },
+                {
+                  "label": "Late Night (Not Available Sundays & Tuesdays) Valid 7:30 p.m. to 9:30 p.m.",
+                  "value": ""
+                }
+              ]
+            }
+          ]
+        },
+        "resortId": "brimacombe",
+        "sourceUrl": "https://brimacombe.ca/plan-your-visit/lift-tickets/",
+        "updatedAt": 1788839918147
+      }
+    },
+    {
+      "table": "resortRentals",
+      "content": {
+        "rentals": {
+          "sections": [
+            {
+              "name": "Individual Rental Packages",
+              "items": [
+                {
+                  "name": "Tot (Under 5) Ski or Riglet Board Package",
+                  "prices": [
+                    {
+                      "label": "Cost",
+                      "value": "$25.00"
+                    }
+                  ]
+                },
+                {
+                  "name": "(13 & Under) Ski or Snowboard Package",
+                  "prices": [
+                    {
+                      "label": "Cost",
+                      "value": "$44.00"
+                    }
+                  ]
+                },
+                {
+                  "name": "(Ages 14+ ) Ski or Snowboard Package",
+                  "prices": [
+                    {
+                      "label": "Cost",
+                      "value": "$54.00"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Individual Rental Items",
+              "items": [
+                {
+                  "name": "Helmet",
+                  "prices": [
+                    {
+                      "label": "13 & Under",
+                      "value": "$15.00"
+                    },
+                    {
+                      "label": "Ages 14+",
+                      "value": "$15.00"
+                    }
+                  ]
+                },
+                {
+                  "name": "Skis or Snowboard",
+                  "prices": [
+                    {
+                      "label": "13 & Under",
+                      "value": "$31.00"
+                    },
+                    {
+                      "label": "Ages 14+",
+                      "value": "$31.00"
+                    }
+                  ]
+                },
+                {
+                  "name": "Boots (Ski or Snowboard)",
+                  "prices": [
+                    {
+                      "label": "13 & Under",
+                      "value": "$31.00"
+                    },
+                    {
+                      "label": "Ages 14+",
+                      "value": "$31.00"
+                    }
+                  ]
+                },
+                {
+                  "name": "Poles",
+                  "prices": [
+                    {
+                      "label": "13 & Under",
+                      "value": "$12.00"
+                    },
+                    {
+                      "label": "Ages 14+",
+                      "value": "$12.00"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "7-Week Program Lesson Rentals",
+              "items": [
+                {
+                  "name": "7-Week Snow School Program Ski or Snowboard Rental Package (Skis, Boots and Poles or Snowboard and Boots)",
+                  "prices": [
+                    {
+                      "label": "Cost",
+                      "value": "$259.00"
+                    }
+                  ]
+                },
+                {
+                  "name": "7-Week Tot Ski or Snowboard Rental Package (Includes Helmet)",
+                  "prices": [
+                    {
+                      "label": "Cost",
+                      "value": "$139.00"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "resortId": "brimacombe",
+        "sourceUrl": "https://brimacombe.ca/plan-your-visit/rentals/",
+        "updatedAt": 1788839918670
+      }
+    },
+    {
+      "table": "weatherAndStatus",
+      "content": {
+        "lifts": [
+          {
+            "name": "Boulevard Chair",
+            "status": "Closed",
+            "dayStatus": "Closed",
+            "nightStatus": "Closed",
+            "identifier": "A"
+          },
+          {
+            "name": "Main Street Chair",
+            "status": "Closed",
+            "dayStatus": "Closed",
+            "nightStatus": "Closed",
+            "identifier": "B"
+          },
+          {
+            "name": "Magic Carpet",
+            "status": "Closed",
+            "dayStatus": "Closed",
+            "nightStatus": "Closed",
+            "identifier": "C"
+          },
+          {
+            "name": "Bowl Chair",
+            "status": "Closed",
+            "dayStatus": "Closed",
+            "nightStatus": "Closed",
+            "identifier": "D"
+          },
+          {
+            "name": "T-Bar 5",
+            "status": "Closed",
+            "dayStatus": "Closed",
+            "nightStatus": "N/A",
+            "identifier": "E"
+          },
+          {
+            "name": "West Chair",
+            "status": "Closed",
+            "dayStatus": "Closed",
+            "nightStatus": "N/A",
+            "identifier": "F"
+          },
+          {
+            "name": "T-Bar 8",
+            "status": "Closed",
+            "dayStatus": "Closed",
+            "nightStatus": "N/A",
+            "identifier": "G"
+          }
+        ],
+        "trails": [
+          {
+            "name": "Park Avenue",
+            "status": "Closed",
+            "difficulty": "Easy",
+            "dayStatus": "Closed",
+            "nightStatus": "Closed",
+            "number": "1"
+          },
+          {
+            "name": "Pete’s Elbow",
+            "status": "Closed",
+            "difficulty": "Easy",
+            "dayStatus": "Closed",
+            "nightStatus": "Closed",
+            "number": "2"
+          },
+          {
+            "name": "Snow Bowl",
+            "status": "Closed",
+            "difficulty": "Easy",
+            "dayStatus": "Closed",
+            "nightStatus": "Closed",
+            "number": "3"
+          },
+          {
+            "name": "Standard",
+            "status": "Closed",
+            "difficulty": "Medium",
+            "dayStatus": "Closed",
+            "nightStatus": "Closed",
+            "number": "4"
+          },
+          {
+            "name": "Bambi",
+            "status": "Closed",
+            "difficulty": "Easy",
+            "dayStatus": "Closed",
+            "nightStatus": "Closed",
+            "number": "5"
+          },
+          {
+            "name": "Ladies Downhill",
+            "status": "Closed",
+            "difficulty": "Medium",
+            "dayStatus": "Closed",
+            "nightStatus": "Closed",
+            "number": "6"
+          },
+          {
+            "name": "Ben’s Bump",
+            "status": "Closed",
+            "difficulty": "Hard",
+            "dayStatus": "Closed",
+            "nightStatus": "Closed",
+            "number": "7"
+          },
+          {
+            "name": "Bowl",
+            "status": "Closed",
+            "difficulty": "Hard",
+            "dayStatus": "Closed",
+            "nightStatus": "Closed",
+            "number": "8"
+          },
+          {
+            "name": "Tower Run",
+            "status": "Closed",
+            "difficulty": "Hard",
+            "dayStatus": "Closed",
+            "nightStatus": "Closed",
+            "number": "9"
+          },
+          {
+            "name": "Timberline",
+            "status": "Closed",
+            "difficulty": "Hard",
+            "dayStatus": "Closed",
+            "nightStatus": "Closed",
+            "number": "10"
+          },
+          {
+            "name": "Flyer",
+            "status": "Closed",
+            "difficulty": "Medium",
+            "dayStatus": "Closed",
+            "nightStatus": "Closed",
+            "number": "11"
+          },
+          {
+            "name": "Promenade",
+            "status": "Closed",
+            "difficulty": "Easy",
+            "dayStatus": "Closed",
+            "nightStatus": "N/A",
+            "number": "12"
+          },
+          {
+            "name": "Cowpath",
+            "status": "Closed",
+            "difficulty": "Easy",
+            "dayStatus": "Closed",
+            "nightStatus": "N/A",
+            "number": "13"
+          },
+          {
+            "name": "Kid’s Stuff",
+            "status": "Closed",
+            "difficulty": "Easy",
+            "dayStatus": "Closed",
+            "nightStatus": "N/A",
+            "number": "14"
+          },
+          {
+            "name": "Club House Run",
+            "status": "Closed",
+            "difficulty": "Medium",
+            "dayStatus": "Closed",
+            "nightStatus": "N/A",
+            "number": "15"
+          },
+          {
+            "name": "West Ridge",
+            "status": "Closed",
+            "difficulty": "Hard",
+            "dayStatus": "Closed",
+            "nightStatus": "N/A",
+            "number": "16"
+          },
+          {
+            "name": "Rutherford’s Cut",
+            "status": "Closed",
+            "difficulty": "Hard",
+            "dayStatus": "Closed",
+            "nightStatus": "N/A",
+            "number": "17"
+          },
+          {
+            "name": "Richards’ Landing",
+            "status": "Closed",
+            "difficulty": "Hard",
+            "dayStatus": "Closed",
+            "nightStatus": "N/A",
+            "number": "18"
+          },
+          {
+            "name": "Challenger",
+            "status": "Closed",
+            "difficulty": "Hard",
+            "dayStatus": "Closed",
+            "nightStatus": "N/A",
+            "number": "19"
+          },
+          {
+            "name": "Whistler",
+            "status": "Closed",
+            "difficulty": "Medium",
+            "dayStatus": "Closed",
+            "nightStatus": "N/A",
+            "number": "20"
+          },
+          {
+            "name": "Sunny Side",
+            "status": "Closed",
+            "difficulty": "Medium",
+            "dayStatus": "Closed",
+            "nightStatus": "N/A",
+            "number": "21"
+          },
+          {
+            "name": "Nice and Easy",
+            "status": "Closed",
+            "difficulty": "Easy",
+            "dayStatus": "Closed",
+            "nightStatus": "N/A",
+            "number": "22"
+          },
+          {
+            "name": "Farmer’s Field",
+            "status": "Closed",
+            "difficulty": "Easy",
+            "dayStatus": "Closed",
+            "nightStatus": "N/A",
+            "number": "23"
+          }
+        ],
+        "rawData": {
+          "Trails": [
+            {
+              "number": "1",
+              "name": "Park Avenue",
+              "difficulty": "Easy",
+              "day": "Closed",
+              "night": "Closed"
+            },
+            {
+              "number": "2",
+              "name": "Pete’s Elbow",
+              "difficulty": "Easy",
+              "day": "Closed",
+              "night": "Closed"
+            },
+            {
+              "number": "3",
+              "name": "Snow Bowl",
+              "difficulty": "Easy",
+              "day": "Closed",
+              "night": "Closed"
+            },
+            {
+              "number": "4",
+              "name": "Standard",
+              "difficulty": "Medium",
+              "day": "Closed",
+              "night": "Closed"
+            },
+            {
+              "number": "5",
+              "name": "Bambi",
+              "difficulty": "Easy",
+              "day": "Closed",
+              "night": "Closed"
+            },
+            {
+              "number": "6",
+              "name": "Ladies Downhill",
+              "difficulty": "Medium",
+              "day": "Closed",
+              "night": "Closed"
+            },
+            {
+              "number": "7",
+              "name": "Ben’s Bump",
+              "difficulty": "Hard",
+              "day": "Closed",
+              "night": "Closed"
+            },
+            {
+              "number": "8",
+              "name": "Bowl",
+              "difficulty": "Hard",
+              "day": "Closed",
+              "night": "Closed"
+            },
+            {
+              "number": "9",
+              "name": "Tower Run",
+              "difficulty": "Hard",
+              "day": "Closed",
+              "night": "Closed"
+            },
+            {
+              "number": "10",
+              "name": "Timberline",
+              "difficulty": "Hard",
+              "day": "Closed",
+              "night": "Closed"
+            },
+            {
+              "number": "11",
+              "name": "Flyer",
+              "difficulty": "Medium",
+              "day": "Closed",
+              "night": "Closed"
+            },
+            {
+              "number": "12",
+              "name": "Promenade",
+              "difficulty": "Easy",
+              "day": "Closed",
+              "night": "N/A"
+            },
+            {
+              "number": "13",
+              "name": "Cowpath",
+              "difficulty": "Easy",
+              "day": "Closed",
+              "night": "N/A"
+            },
+            {
+              "number": "14",
+              "name": "Kid’s Stuff",
+              "difficulty": "Easy",
+              "day": "Closed",
+              "night": "N/A"
+            },
+            {
+              "number": "15",
+              "name": "Club House Run",
+              "difficulty": "Medium",
+              "day": "Closed",
+              "night": "N/A"
+            },
+            {
+              "number": "16",
+              "name": "West Ridge",
+              "difficulty": "Hard",
+              "day": "Closed",
+              "night": "N/A"
+            },
+            {
+              "number": "17",
+              "name": "Rutherford’s Cut",
+              "difficulty": "Hard",
+              "day": "Closed",
+              "night": "N/A"
+            },
+            {
+              "number": "18",
+              "name": "Richards’ Landing",
+              "difficulty": "Hard",
+              "day": "Closed",
+              "night": "N/A"
+            },
+            {
+              "number": "19",
+              "name": "Challenger",
+              "difficulty": "Hard",
+              "day": "Closed",
+              "night": "N/A"
+            },
+            {
+              "number": "20",
+              "name": "Whistler",
+              "difficulty": "Medium",
+              "day": "Closed",
+              "night": "N/A"
+            },
+            {
+              "number": "21",
+              "name": "Sunny Side",
+              "difficulty": "Medium",
+              "day": "Closed",
+              "night": "N/A"
+            },
+            {
+              "number": "22",
+              "name": "Nice and Easy",
+              "difficulty": "Easy",
+              "day": "Closed",
+              "night": "N/A"
+            },
+            {
+              "number": "23",
+              "name": "Farmer’s Field",
+              "difficulty": "Easy",
+              "day": "Closed",
+              "night": "N/A"
+            }
+          ],
+          "Parks": [
+            {
+              "code": "SC",
+              "name": "Snow Cross Course",
+              "difficulty": "Advanced",
+              "day": "Closed",
+              "night": "Closed"
+            },
+            {
+              "code": "TP-PB",
+              "name": "Piggy Bank Terrain Park",
+              "difficulty": "Advanced",
+              "day": "Closed",
+              "night": "Closed"
+            },
+            {
+              "code": "TP-V",
+              "name": "Vault Terrain Park",
+              "difficulty": "Advanced",
+              "day": "Closed",
+              "night": "Closed"
+            }
+          ],
+          "Lifts": [
+            {
+              "letter": "A",
+              "name": "Boulevard Chair",
+              "day": "Closed",
+              "night": "Closed"
+            },
+            {
+              "letter": "B",
+              "name": "Main Street Chair",
+              "day": "Closed",
+              "night": "Closed"
+            },
+            {
+              "letter": "C",
+              "name": "Magic Carpet",
+              "day": "Closed",
+              "night": "Closed"
+            },
+            {
+              "letter": "D",
+              "name": "Bowl Chair",
+              "day": "Closed",
+              "night": "Closed"
+            },
+            {
+              "letter": "E",
+              "name": "T-Bar 5",
+              "day": "Closed",
+              "night": "N/A"
+            },
+            {
+              "letter": "F",
+              "name": "West Chair",
+              "day": "Closed",
+              "night": "N/A"
+            },
+            {
+              "letter": "G",
+              "name": "T-Bar 8",
+              "day": "Closed",
+              "night": "N/A"
+            }
+          ]
+        },
+        "terrainParks": [
+          {
+            "name": "Snow Cross Course",
+            "status": "Closed",
+            "difficulty": "Advanced",
+            "dayStatus": "Closed",
+            "nightStatus": "Closed",
+            "number": "SC"
+          },
+          {
+            "name": "Piggy Bank Terrain Park",
+            "status": "Closed",
+            "difficulty": "Advanced",
+            "dayStatus": "Closed",
+            "nightStatus": "Closed",
+            "number": "TP-PB"
+          },
+          {
+            "name": "Vault Terrain Park",
+            "status": "Closed",
+            "difficulty": "Advanced",
+            "dayStatus": "Closed",
+            "nightStatus": "Closed",
+            "number": "TP-V"
+          }
+        ],
+        "resortId": "brimacombe",
+        "sourceUrl": "https://brimacombe.ca/at-the-brim/snow-conditions-and-trails/",
+        "updatedAt": 1788839919153
+      }
+    }
+  ]
+}
