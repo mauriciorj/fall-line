@@ -2,8 +2,9 @@ import {
   FileText,
   Mail,
   Menu as MenuIcon,
-  MessageCircle,
+  ShieldCheck,
 } from "lucide-react";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -26,27 +27,27 @@ const Menu = () => {
           <SheetTitle className="text-left">Menu</SheetTitle>
         </SheetHeader>
         <nav className="mt-6 flex flex-col gap-1">
-          <a
-            href="mailto:support@ontarioskiguide.com"
+          <Link
+            href="/contact"
             className="flex items-center gap-3 rounded-md px-3 py-2.5 text-sm font-medium text-foreground hover:bg-accent transition-colors"
           >
             <Mail className="h-4 w-4 text-muted-foreground" />
             Contact Us
-          </a>
-          <a
-            href="#feedback"
-            className="flex items-center gap-3 rounded-md px-3 py-2.5 text-sm font-medium text-foreground hover:bg-accent transition-colors"
-          >
-            <MessageCircle className="h-4 w-4 text-muted-foreground" />
-            Feedback
-          </a>
-          <a
-            href="#terms"
+          </Link>
+          <Link
+            href="/terms"
             className="flex items-center gap-3 rounded-md px-3 py-2.5 text-sm font-medium text-foreground hover:bg-accent transition-colors"
           >
             <FileText className="h-4 w-4 text-muted-foreground" />
-            Terms & Privacy
-          </a>
+            Terms of Service
+          </Link>
+          <Link
+            href="/privacy"
+            className="flex items-center gap-3 rounded-md px-3 py-2.5 text-sm font-medium text-foreground hover:bg-accent transition-colors"
+          >
+            <ShieldCheck className="h-4 w-4 text-muted-foreground" />
+            Privacy Policy
+          </Link>
         </nav>
       </SheetContent>
     </Sheet>
