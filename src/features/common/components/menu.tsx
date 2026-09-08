@@ -1,6 +1,5 @@
 import {
   FileText,
-  HelpCircle,
   Mail,
   Menu as MenuIcon,
   MessageCircle,
@@ -33,13 +32,6 @@ const Menu = () => {
           >
             <Mail className="h-4 w-4 text-muted-foreground" />
             Contact Us
-          </a>
-          <a
-            href="#support"
-            className="flex items-center gap-3 rounded-md px-3 py-2.5 text-sm font-medium text-foreground hover:bg-accent transition-colors"
-          >
-            <HelpCircle className="h-4 w-4 text-muted-foreground" />
-            Support
           </a>
           <a
             href="#feedback"
