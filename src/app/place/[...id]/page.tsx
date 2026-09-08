@@ -7,6 +7,7 @@ import { ArrowLeft, Ticket } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { api } from "@/convex/_generated/api";
 import {
+  getResortHeroImage,
   toResort,
   toTrackConditions,
 } from "@/utils/convexResort";
@@ -65,7 +66,7 @@ const ResortDetail = () => {
       {/* Hero Image */}
       <div className="relative h-[40vh] md:h-[50vh] overflow-hidden">
         <Image
-          src={resort.image}
+          src={getResortHeroImage(resort.resortId)}
           alt={resort.name}
           fill
           className="object-cover"

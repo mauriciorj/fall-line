@@ -1,5 +1,17 @@
 import { Resort } from "@/types/resort";
 
+const heroImageExtensions: Record<string, "jpg" | "webp"> = {
+  "glen-eden": "webp",
+  "horseshoe-valley-resort": "webp",
+  "lakeridge-ski-resort": "webp",
+  "snow-valley-ski-resort": "webp",
+};
+
+export function getResortHeroImage(resortId: string) {
+  const extension = heroImageExtensions[resortId] ?? "jpg";
+  return `/assets/${resortId}/hero.${extension}`;
+}
+
 type DbResort = Partial<Resort> & {
   resortId?: string;
   continent?: string;
@@ -82,7 +94,7 @@ export function toResort(
     hasSnowshoeing: document.hasSnowshoeing ?? false,
     hasSpa: document.hasSpa ?? false,
     hasTubing: document.hasTubing ?? false,
-    image: document.image ?? "/assets/lakeridge-ski-resort.webp",
+    image: document.image ?? getResortHeroImage(document.resortId),
     lessonsPrice: document.lessonsPrice ?? 0,
     phone: document.phone ?? document.contact ?? "",
     rating: document.rating ?? 0,

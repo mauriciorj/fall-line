@@ -4,6 +4,7 @@ import { Star, CableCar } from "lucide-react";
 import TracksBreakdown from "@/components/tracksBreakdown";
 import ActivitiesList from "@/components/activitiesList";
 import { Resort } from "@/types/resort";
+import { getResortHeroImage } from "@/utils/convexResort";
 import { cn } from "@/utils/utils";
 
 import skiIcon from "@/icons/ski-svgrepo-com.svg";
@@ -42,7 +43,7 @@ const ResortCard = ({
       {/* Hero Image */}
       <div className="relative aspect-[16/9] overflow-hidden">
         <Image
-          src={resort.image}
+          src={getResortHeroImage(resort.resortId)}
           alt={resort.name}
           width={500}
           height={500}
