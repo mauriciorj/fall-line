@@ -4,11 +4,10 @@ from datetime import datetime
 from pathlib import Path
 
 
-CRAWLER_DIR = Path(__file__).resolve().parent
+CRAWLER_DIR = Path(__file__).resolve().parent.parent
 MY_TEST_DIR = CRAWLER_DIR / "mountains"
 FAILURE_LOG = CRAWLER_DIR / "crawler-errors.log"
 RESORT_SCRIPTS = {
-    # "skiresortinfo": ("ski-resorts-list.py",),
     "skisnowvalley": (
         "hours-of-operation.py",
         "lift-rates.py",

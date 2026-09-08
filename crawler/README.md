@@ -26,7 +26,7 @@
 
 ### Now it's ready to run any crawler
 
-#### python3 ./main.py
+#### python3 ./mountains/main.py
 
 ### Stop the virtual environment
 
