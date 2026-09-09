@@ -11,6 +11,7 @@ ADULT_RENTAL_NAME = "adult"
 TABLE_COLUMNS = {
     "resorts": [
         "resortId",
+        "published",
         "name",
         "continent",
         "country",

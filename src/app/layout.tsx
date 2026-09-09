@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ClerkProvider } from "@clerk/nextjs";
 import { Geist, Geist_Mono } from "next/font/google";
 import Header from "@/components/header";
 import ConvexClientProvider from "./ConvexClientProvider";
@@ -32,16 +33,18 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <LanguageProvider>
+        <ClerkProvider>
           <ConvexClientProvider>
-            <FiltersProvider>
-              <div className="min-h-screen bg-background">
-                <Header />
-                {children}
-              </div>
-            </FiltersProvider>
+            <LanguageProvider>
+              <FiltersProvider>
+                <div className="min-h-screen bg-background">
+                  <Header />
+                  {children}
+                </div>
+              </FiltersProvider>
+            </LanguageProvider>
           </ConvexClientProvider>
-        </LanguageProvider>
+        </ClerkProvider>
       </body>
     </html>
   );

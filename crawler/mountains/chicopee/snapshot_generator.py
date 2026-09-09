@@ -11,6 +11,7 @@ RENTAL_ITEM_NAME = "ski/board"
 TABLE_COLUMNS = {
     "resorts": [
         "resortId",
+        "published",
         "name",
         "continent",
         "country",

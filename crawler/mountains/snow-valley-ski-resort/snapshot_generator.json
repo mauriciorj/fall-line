@@ -5,6 +5,7 @@
       "table": "resorts",
       "content": {
         "resortId": "snow-valley-ski-resort",
+        "published": true,
         "address": "2632 Vespra Valley Rd, Minesing ON L9X 0G8",
         "continent": "North America",
         "country": "Canada",

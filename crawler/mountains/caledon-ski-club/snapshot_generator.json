@@ -5,6 +5,7 @@
       "table": "resorts",
       "content": {
         "resortId": "caledon-ski-club",
+        "published": true,
         "address": "17431 Mississauga Road, Caledon, Ontario L7K 0E9",
         "continent": "North America",
         "country": "Canada",

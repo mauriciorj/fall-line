@@ -144,3 +144,5 @@ vite.config.ts.timestamp-*
 
 #venv
 **/venv/*
+# clerk configuration (can include secrets)
+/.clerk/

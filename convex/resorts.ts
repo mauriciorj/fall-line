@@ -2,6 +2,7 @@ import { internalMutation, query } from "./_generated/server";
 import type { MutationCtx } from "./_generated/server";
 import type { Doc } from "./_generated/dataModel";
 import { v } from "convex/values";
+import { resortSeedData } from "../crawler/mountains/resortSeed";
 
 const locationFields = v.object({
   continent: v.optional(v.string()),
@@ -11,6 +12,7 @@ const locationFields = v.object({
 
 const resortFieldNames = [
   "resortId",
+  "published",
   "name",
   "continent",
   "country",
@@ -90,7 +92,7 @@ export const list = query({
   },
   returns: v.array(v.any()),
   handler: async (ctx, args) => {
-    return await ctx.db
+    const resorts = await ctx.db
       .query("resorts")
       .withIndex("by_location", (q) =>
         q
@@ -99,6 +101,8 @@ export const list = query({
           .eq("region", args.region),
       )
       .collect();
+
+    return resorts.filter((resort) => resort.published === true);
   },
 });
 
@@ -107,7 +111,7 @@ export const listLocations = query({
   returns: v.array(locationFields),
   handler: async (ctx) => {
     const resorts = await ctx.db.query("resorts").collect();
-    return resorts.map(({ continent, country, region }) => ({
+    return resorts.filter((resort) => resort.published === true).map(({ continent, country, region }) => ({
       continent,
       country,
       region,

@@ -7,7 +7,7 @@ from pathlib import Path
 RESORT_ID = "snow-valley-ski-resort"
 RESORT_NAME = "Snow Valley Ski Resort"
 TABLE_COLUMNS = {
-    "resorts": ["resortId", "name", "continent", "country", "region", "website", "address", "coordinates", "dayTicketPrice", "email", "googleMapsUrl", "hasAccommodations", "hasCrossCountry", "hasLessons", "hasSnowshoeing", "hasSpa", "hasTubing", "hasZipline", "lessonsPrice", "phone", "rating", "skiRentalPrice", "snowBoardRentalPrice", "tracksSummary", "ticketUrl", "tollFree", "tubbingPrice"],
+    "resorts": ["resortId", "published", "name", "continent", "country", "region", "website", "address", "coordinates", "dayTicketPrice", "email", "googleMapsUrl", "hasAccommodations", "hasCrossCountry", "hasLessons", "hasSnowshoeing", "hasSpa", "hasTubing", "hasZipline", "lessonsPrice", "phone", "rating", "skiRentalPrice", "snowBoardRentalPrice", "tracksSummary", "ticketUrl", "tollFree", "tubbingPrice"],
     "resortHours": ["resortId", "sourceUrl", "updatedAt", "hours"],
     "resortRates": ["resortId", "sourceUrl", "updatedAt", "rates"],
     "resortRentals": ["resortId", "sourceUrl", "updatedAt", "rentals"],

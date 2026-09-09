@@ -9,6 +9,7 @@ RESORT_NAME = "Glen Eden"
 TABLE_COLUMNS = {
     "resorts": [
         "resortId",
+        "published",
         "name",
         "continent",
         "country",

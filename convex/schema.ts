@@ -73,6 +73,7 @@ export const resortRentalsFields = {
 
 export const resortsFields = {
   resortId: v.string(),
+  published: v.optional(v.boolean()),
   name: v.optional(v.string()),
   continent: v.optional(v.string()),
   country: v.optional(v.string()),
@@ -167,4 +168,10 @@ export default defineSchema({
   })
     .index("by_slug", ["slug"])
     .index("by_published", ["published", "publishedAt"]),
+
+  adminEmails: defineTable({
+    email: v.string(),
+    enabled: v.boolean(),
+    createdAt: v.number(),
+  }).index("by_email", ["email"]),
 });

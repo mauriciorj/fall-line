@@ -3,12 +3,16 @@
 import {
   FileText,
   List,
+  LogOut,
   Mail,
   Menu as MenuIcon,
   Newspaper,
   ShieldCheck,
 } from "lucide-react";
+import { useClerk, useUser } from "@clerk/nextjs";
+import { useQuery } from "convex/react";
 import Link from "next/link";
+import { api } from "@/convex/_generated/api";
 import { Button } from "@/components/ui/button";
 import { localeOptions, useLanguage } from "@/src/i18n";
 import {
@@ -21,6 +25,9 @@ import {
 
 const Menu = () => {
   const { locale, setLocale, t } = useLanguage();
+  const { signOut } = useClerk();
+  const { isSignedIn } = useUser();
+  const adminStatus = useQuery(api.admin.isAdmin);
 
   return (
     <Sheet>
@@ -86,6 +93,16 @@ const Menu = () => {
             <ShieldCheck className="h-4 w-4 text-muted-foreground" />
             {t("privacy")}
           </Link>
+          {isSignedIn && adminStatus?.isAdmin && (
+            <button
+              type="button"
+              onClick={() => signOut({ redirectUrl: "/" })}
+              className="flex items-center gap-3 rounded-md px-3 py-2.5 text-left text-sm font-medium text-foreground hover:bg-accent transition-colors"
+            >
+              <LogOut className="h-4 w-4 text-muted-foreground" />
+              {t("signOut")}
+            </button>
+          )}
         </nav>
       </SheetContent>
     </Sheet>

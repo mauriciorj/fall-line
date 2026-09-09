@@ -8,7 +8,7 @@ RESORT_ID = "horseshoe-valley-resort"
 RESORT_NAME = "Horseshoe Valley Resort"
 TABLE_COLUMNS = {
     "resorts": [
-        "resortId", "name", "continent", "country", "region", "website",
+        "resortId", "published", "name", "continent", "country", "region", "website",
         "address", "coordinates", "dayTicketPrice", "email", "googleMapsUrl",
         "hasAccommodations", "hasCrossCountry", "hasLessons", "hasSnowshoeing",
         "hasSpa", "hasTubing", "hasZipline", "lessonsPrice", "phone", "rating",

@@ -11,6 +11,7 @@ ADULT_RENTAL_NAME = "(Ages 14+ ) Ski or Snowboard Package"
 TABLE_COLUMNS = {
     "resorts": [
         "resortId",
+        "published",
         "name",
         "continent",
         "country",
