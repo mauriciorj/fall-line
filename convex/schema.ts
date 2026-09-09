@@ -152,4 +152,19 @@ export default defineSchema({
   resortRentals: defineTable(resortRentalsFields)
     .index("by_resort", ["resortId"])
     .index("by_updated", ["updatedAt"]),
+
+  articles: defineTable({
+    slug: v.string(),
+    title: v.string(),
+    description: v.string(),
+    body: v.array(v.any()),
+    tags: v.array(v.string()),
+    published: v.boolean(),
+    publishedAt: v.number(),
+    heroImageId: v.id("_storage"),
+    createdAt: v.number(),
+    updatedAt: v.number(),
+  })
+    .index("by_slug", ["slug"])
+    .index("by_published", ["published", "publishedAt"]),
 });

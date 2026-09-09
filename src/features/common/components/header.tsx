@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { Mountain } from "lucide-react";
+import { ArrowLeft, Mountain } from "lucide-react";
+import { usePathname } from "next/navigation";
 import Filter from "@/components/filter";
 import LocationDropdown from "@/components/locationDropdown";
 import { useFiltersContext } from "@/context/filtersContext";
@@ -11,8 +12,8 @@ import { useLanguage } from "@/src/i18n";
 
 const Header = () => {
   const { t } = useLanguage();
+  const pathname = usePathname();
   const isMobile = useIsMobile();
-
   const {
     filters,
     setFilters,
@@ -22,6 +23,29 @@ const Header = () => {
     selectedLocation,
     setLocation,
   } = useFiltersContext();
+
+  if (pathname.startsWith("/blog")) {
+    return (
+      <header className="sticky top-0 z-50 bg-card border-b border-border">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+          <Link href="/blog" className="flex items-center gap-3 text-primary">
+            <Mountain className="h-8 w-8" />
+            <span className="font-serif text-2xl font-semibold">{t("blog")}</span>
+          </Link>
+          <div className="flex items-center gap-3">
+            <Link
+              href="/"
+              className="inline-flex items-center gap-2 rounded-md border border-border px-3 py-2 text-sm font-medium text-foreground hover:bg-accent"
+            >
+              <ArrowLeft className="h-4 w-4" />
+              {t("backToResorts")}
+            </Link>
+            <Menu />
+          </div>
+        </div>
+      </header>
+    );
+  }
 
   return (
     <header className="sticky top-0 z-50 bg-card border-b border-border">

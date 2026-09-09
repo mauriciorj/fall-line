@@ -2,8 +2,10 @@
 
 import {
   FileText,
+  List,
   Mail,
   Menu as MenuIcon,
+  Newspaper,
   ShieldCheck,
 } from "lucide-react";
 import Link from "next/link";
@@ -49,6 +51,20 @@ const Menu = () => {
           </select>
         </div>
         <nav className="mt-6 flex flex-col gap-1">
+          <Link
+            href="/"
+            className="flex items-center gap-3 rounded-md px-3 py-2.5 text-sm font-medium text-foreground hover:bg-accent transition-colors"
+          >
+            <List className="h-4 w-4 text-muted-foreground" />
+            {t("resortList")}
+          </Link>
+          <Link
+            href="/blog"
+            className="flex items-center gap-3 rounded-md px-3 py-2.5 text-sm font-medium text-foreground hover:bg-accent transition-colors"
+          >
+            <Newspaper className="h-4 w-4 text-muted-foreground" />
+            {t("blog")}
+          </Link>
           <Link
             href="/contact"
             className="flex items-center gap-3 rounded-md px-3 py-2.5 text-sm font-medium text-foreground hover:bg-accent transition-colors"
