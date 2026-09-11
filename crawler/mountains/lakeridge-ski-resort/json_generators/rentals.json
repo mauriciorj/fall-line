@@ -4,37 +4,399 @@
       {
         "name": "Skis, Boots and Poles Package",
         "items": [
-          { "name": "ADULT", "prices": [{ "label": "4 HOURS", "value": "$43.01" }, { "label": "3 HOURS (end of night)", "value": "$38.70" }, { "label": "2 HOURS (end of night)", "value": "$28.20" }] },
-          { "name": "CHILD / YOUTH / SR", "prices": [{ "label": "4 HOURS", "value": "$37.41" }, { "label": "3 HOURS (end of night)", "value": "$33.67" }, { "label": "2 HOURS (end of night)", "value": "$28.20" }] }
+          {
+            "name": "ADULT",
+            "prices": [
+              {
+                "label": "$43.01",
+                "value": "$43.01"
+              },
+              {
+                "label": "$38.70",
+                "value": "$38.70"
+              },
+              {
+                "label": "$28.20",
+                "value": "$28.20"
+              }
+            ]
+          },
+          {
+            "name": "CHILD / YOUTH / SR",
+            "prices": [
+              {
+                "label": "$43.01",
+                "value": "$37.41"
+              },
+              {
+                "label": "$38.70",
+                "value": "$33.67"
+              },
+              {
+                "label": "$28.20",
+                "value": "$28.20"
+              }
+            ]
+          }
         ]
       },
       {
-        "name": "Snowboard and Boots Package",
+        "name": "Snowboard and Boots Package",
         "items": [
-          { "name": "ADULT", "prices": [{ "label": "4 HOURS", "value": "$51.85" }, { "label": "3 HOURS (end of night)", "value": "$46.67" }, { "label": "2 HOURS (end of night)", "value": "$37.49" }] },
-          { "name": "CHILD / YOUTH / SR.", "prices": [{ "label": "4 HOURS", "value": "$47.91" }, { "label": "3 HOURS (end of night)", "value": "$43.12" }, { "label": "2 HOURS (end of night)", "value": "$37.49" }] }
-        ]
-      },
-      {
-        "name": "Rental Packages for Lessons",
-        "items": [
-          { "name": "7 week package", "prices": [{ "label": "Ski", "value": "$216.96" }, { "label": "Snowboard", "value": "$299.92" }] },
-          { "name": "7 week Ski & Helmet package", "prices": [{ "label": "Ski", "value": "$285.96" }, { "label": "Snowboard", "value": "N/A" }] },
-          { "name": "7 week Snowboard & Helmet package", "prices": [{ "label": "Ski", "value": "N/A" }, { "label": "Snowboard", "value": "$358.80" }] }
+          {
+            "name": "ADULT",
+            "prices": [
+              {
+                "label": "$51.85",
+                "value": "$51.85"
+              },
+              {
+                "label": "$46.67",
+                "value": "$46.67"
+              },
+              {
+                "label": "$37.49",
+                "value": "$37.49"
+              }
+            ]
+          },
+          {
+            "name": "CHILD / YOUTH / SR.",
+            "prices": [
+              {
+                "label": "$51.85",
+                "value": "$47.91"
+              },
+              {
+                "label": "$46.67",
+                "value": "$43.12"
+              },
+              {
+                "label": "$37.49",
+                "value": "$37.49"
+              }
+            ]
+          }
         ]
       },
       {
         "name": "Individual Items",
         "items": [
-          { "name": "ADULT SNOWBOARD", "prices": [{ "label": "4 HOURS", "value": "$35.97" }] },
-          { "name": "ADULT SKIS", "prices": [{ "label": "4 HOURS", "value": "$29.34" }] },
-          { "name": "HELMET", "prices": [{ "label": "4 HOURS", "value": "$15.09" }] },
-          { "name": "POLES", "prices": [{ "label": "4 HOURS", "value": "$7.78" }] }
+          {
+            "name": "CHILD / YOUTH / SR. SNOWBOARD",
+            "prices": [
+              {
+                "label": "$35.97",
+                "value": "$31.49"
+              },
+              {
+                "label": "$32.37",
+                "value": "$28.34"
+              },
+              {
+                "label": "$24.01",
+                "value": "$24.01"
+              }
+            ]
+          },
+          {
+            "name": "ADULT SNOWBOARD BOOTS",
+            "prices": [
+              {
+                "label": "$35.97",
+                "value": "$29.34"
+              },
+              {
+                "label": "$32.37",
+                "value": "$26.40"
+              },
+              {
+                "label": "$24.01",
+                "value": "$22.70"
+              }
+            ]
+          },
+          {
+            "name": "CHILD / YOUTH / SR. SNOWBOARD BOOTS",
+            "prices": [
+              {
+                "label": "$35.97",
+                "value": "$25.08"
+              },
+              {
+                "label": "$32.37",
+                "value": "$22.58"
+              },
+              {
+                "label": "$24.01",
+                "value": "$22.70"
+              }
+            ]
+          },
+          {
+            "name": "ADULT SKIS",
+            "prices": [
+              {
+                "label": "$35.97",
+                "value": "$29.34"
+              },
+              {
+                "label": "$32.37",
+                "value": "$26.40"
+              },
+              {
+                "label": "$24.01",
+                "value": "$22.70"
+              }
+            ]
+          },
+          {
+            "name": "CHILD / YOUTH / SR. SKIS",
+            "prices": [
+              {
+                "label": "$35.97",
+                "value": "$25.08"
+              },
+              {
+                "label": "$32.37",
+                "value": "$22.58"
+              },
+              {
+                "label": "$24.01",
+                "value": "$22.70"
+              }
+            ]
+          },
+          {
+            "name": "ADULT SKI BOOTS",
+            "prices": [
+              {
+                "label": "$35.97",
+                "value": "$29.34"
+              },
+              {
+                "label": "$32.37",
+                "value": "$26.40"
+              },
+              {
+                "label": "$24.01",
+                "value": "$22.70"
+              }
+            ]
+          },
+          {
+            "name": "CHILD / YOUTH / SR. SKI BOOTS",
+            "prices": [
+              {
+                "label": "$35.97",
+                "value": "$25.08"
+              },
+              {
+                "label": "$32.37",
+                "value": "$22.58"
+              },
+              {
+                "label": "$24.01",
+                "value": "$22.70"
+              }
+            ]
+          },
+          {
+            "name": "HELMET",
+            "prices": [
+              {
+                "label": "$35.97",
+                "value": "$15.09"
+              },
+              {
+                "label": "$32.37",
+                "value": "$13.58"
+              },
+              {
+                "label": "$24.01",
+                "value": "$7.65"
+              }
+            ]
+          },
+          {
+            "name": "POLES",
+            "prices": [
+              {
+                "label": "$35.97",
+                "value": "$7.78"
+              },
+              {
+                "label": "$32.37",
+                "value": "$7.00"
+              },
+              {
+                "label": "$24.01",
+                "value": "$5.68"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Skis, Boots, Poles and Helmet Package",
+        "items": [
+          {
+            "name": "3 HOURS (end of night)",
+            "prices": [
+              {
+                "label": "$58.14",
+                "value": "$52.32"
+              },
+              {
+                "label": "$52.51",
+                "value": "$47.26"
+              }
+            ]
+          },
+          {
+            "name": "2 HOURS (end of night)",
+            "prices": [
+              {
+                "label": "$58.14",
+                "value": "$35.74"
+              },
+              {
+                "label": "$52.51",
+                "value": "$35.74"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Snowboard, Boots and Helmet Package",
+        "items": [
+          {
+            "name": "3 HOURS (end of night)",
+            "prices": [
+              {
+                "label": "$66.40",
+                "value": "$59.76"
+              },
+              {
+                "label": "$62.42",
+                "value": "$56.18"
+              }
+            ]
+          },
+          {
+            "name": "2 HOURS (end of night)",
+            "prices": [
+              {
+                "label": "$66.40",
+                "value": "$44.83"
+              },
+              {
+                "label": "$62.42",
+                "value": "$44.83"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Rental Packages for Lessons",
+        "items": [
+          {
+            "name": "7 week Ski & Helmet package",
+            "prices": [
+              {
+                "label": "$216.96",
+                "value": "$285.96"
+              },
+              {
+                "label": "$299.92",
+                "value": "N/A"
+              }
+            ]
+          },
+          {
+            "name": "7 week Snowboard & Helmet package",
+            "prices": [
+              {
+                "label": "$216.96",
+                "value": "N/A"
+              },
+              {
+                "label": "$299.92",
+                "value": "$358.80"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Rental – Winter Clothing",
+        "items": [
+          {
+            "name": "Men's Coat",
+            "prices": [
+              {
+                "label": "$21.28",
+                "value": "$21.28"
+              }
+            ]
+          },
+          {
+            "name": "Woman's Snowpant",
+            "prices": [
+              {
+                "label": "$21.28",
+                "value": "$21.28"
+              }
+            ]
+          },
+          {
+            "name": "Woman's Coat",
+            "prices": [
+              {
+                "label": "$21.28",
+                "value": "$21.28"
+              }
+            ]
+          },
+          {
+            "name": "Child Snowpant",
+            "prices": [
+              {
+                "label": "$21.28",
+                "value": "$21.28"
+              }
+            ]
+          },
+          {
+            "name": "Goggles",
+            "prices": [
+              {
+                "label": "$21.28",
+                "value": "$10.58"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Rentals Upgrades",
+        "items": [
+          {
+            "name": "Snowboard and Boots",
+            "prices": [
+              {
+                "label": "$10.78 + HST",
+                "value": "$13.48 + HST"
+              }
+            ]
+          }
         ]
       }
     ]
   },
   "resortId": "lakeridge-ski-resort",
   "sourceUrl": "https://ski-lakeridge.com/skiing-snowboarding/equipment-rentals/",
-  "updatedAt": 0
+  "updatedAt": 1789144233484
 }

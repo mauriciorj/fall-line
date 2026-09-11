@@ -1,0 +1,55 @@
+{
+  "rates": {
+    "items": [
+      {
+        "name": "Table_1 | Tyke (4 & Under)",
+        "prices": [
+          { "label": "In-Season Midweek MONDAY - THURSDAY ONLINE WALKUP", "value": "From $27 19,85" },
+          { "label": "In-Season Peak Times FRIDAY - SUNDAY ONLINE WALKUP", "value": "From $36 26,47" },
+          { "label": "Late Season MAR. 23 - 29 ONLINE WALKUP", "value": "From $36 26,47" }
+        ]
+      },
+      {
+        "name": "Table_1 | Youth (5 - 17)",
+        "prices": [
+          { "label": "In-Season Midweek MONDAY - THURSDAY ONLINE WALKUP", "value": "From $74 54,40" },
+          { "label": "In-Season Peak Times FRIDAY - SUNDAY ONLINE WALKUP", "value": "From $98 72,04" }
+        ]
+      },
+      {
+        "name": "Table_1 | Adult (18 - 64)",
+        "prices": [
+          { "label": "In-Season Midweek MONDAY - THURSDAY ONLINE WALKUP", "value": "From $85 62,49" },
+          { "label": "In-Season Peak Times FRIDAY - SUNDAY ONLINE WALKUP", "value": "From $114 83,81" },
+          { "label": "Late Season MAR. 23 - 29 ONLINE WALKUP", "value": "From $100 73,52" }
+        ]
+      },
+      {
+        "name": "Table_1 | Senior (65+)",
+        "prices": [
+          { "label": "In-Season Midweek MONDAY - THURSDAY ONLINE WALKUP", "value": "From $74 54,40" },
+          { "label": "In-Season Peak Times FRIDAY - SUNDAY ONLINE WALKUP", "value": "From $98 72,04" }
+        ]
+      },
+      {
+        "name": "Table_2 | Youth (5 - 17)",
+        "prices": [{ "label": "In-Season Midweek ONLINE WALKUP", "value": "From $44 32,35" }]
+      },
+      {
+        "name": "Table_2 | Adult (18 - 64)",
+        "prices": [{ "label": "In-Season Midweek ONLINE WALKUP", "value": "From $47 34,55" }]
+      },
+      {
+        "name": "Table_3 | Adult (18 - 64)",
+        "prices": [
+          { "label": "2 OF 3 DAYS", "value": "From $106 77,93" },
+          { "label": "3 OF 4 DAYS", "value": "From $159 116,89" },
+          { "label": "4 OF 5 DAYS", "value": "From $212 155,85" }
+        ]
+      }
+    ]
+  },
+  "resortId": "blue-mountain",
+  "sourceUrl": "https://www.bluemountain.ca/plan-your-trip/day-tickets/winter-lift-tickets",
+  "updatedAt": 0
+}

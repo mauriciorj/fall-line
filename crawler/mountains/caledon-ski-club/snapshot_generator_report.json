@@ -5,8 +5,6 @@
       "table": "resorts",
       "missingColumns": [
         "lessonsPrice",
-        "rating",
-        "ticketUrl",
         "tubbingPrice"
       ]
     },
@@ -25,11 +23,12 @@
     {
       "table": "weatherAndStatus",
       "missingColumns": [
+        "lifts",
         "terrainParks",
         "crossCountry",
         "tubing"
       ]
     }
   ],
-  "missingColumnCount": 7
+  "missingColumnCount": 6
 }

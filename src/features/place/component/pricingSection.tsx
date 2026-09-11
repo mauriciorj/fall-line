@@ -13,7 +13,7 @@ const PricingSection = ({ resort }: { resort: Resort }) => {
         {t("pricing")}
       </h2>
       <div className="bg-card rounded-lg border border-border divide-y divide-border">
-        {resort?.dayTicketPrice && (
+        {Boolean(resort?.dayTicketPrice && resort.dayTicketPrice > 0) && (
           <div className="flex items-center justify-between p-5">
             <div>
               <p className="font-medium text-foreground">{t("liftPass")}</p>
@@ -23,7 +23,7 @@ const PricingSection = ({ resort }: { resort: Resort }) => {
             </p>
           </div>
         )}
-        {resort?.skiRentalPrice && (
+        {Boolean(resort?.skiRentalPrice && resort.skiRentalPrice > 0) && (
           <div className="flex items-center justify-between p-5">
             <div>
               <p className="font-medium text-foreground">{t("skiRental")}</p>
@@ -34,7 +34,9 @@ const PricingSection = ({ resort }: { resort: Resort }) => {
             </p>
           </div>
         )}
-        {resort?.snowBoardRentalPrice && (
+        {Boolean(
+          resort?.snowBoardRentalPrice && resort.snowBoardRentalPrice > 0,
+        ) && (
           <div className="flex items-center justify-between p-5">
             <div>
               <p className="font-medium text-foreground">{t("snowboardRental")}</p>
@@ -44,7 +46,7 @@ const PricingSection = ({ resort }: { resort: Resort }) => {
             </p>
           </div>
         )}
-        {resort?.lessonsPrice && (
+        {Boolean(resort?.lessonsPrice && resort.lessonsPrice > 0) && (
           <div className="flex items-center justify-between p-5">
             <div className="flex items-center gap-2">
               <GraduationCap className="w-4 h-4 text-muted-foreground" />
@@ -57,7 +59,7 @@ const PricingSection = ({ resort }: { resort: Resort }) => {
             </p>
           </div>
         )}
-        {resort?.tubbingPrice && (
+        {Boolean(resort?.tubbingPrice && resort.tubbingPrice > 0) && (
           <div className="flex items-center justify-between p-5">
             <div className="flex items-center gap-2">
               <CircleDot className="w-4 h-4 text-muted-foreground" />

@@ -1,43 +1,269 @@
 {
-  "lifts": [
-    { "name": "CONDITIONSclosed", "status": "closed" },
-    { "name": "Basecm", "status": "closed" },
-    { "name": "New snow last 24hcm", "status": "closed" },
-    { "name": "Snow MakingNot in progress", "status": "closed" },
-    { "name": "Lifts Open", "status": "open" }
-  ],
+  "lifts": [],
   "trails": [
-    { "name": "Ice Rink", "status": "closed" },
-    { "name": "Snowshoe/Hiking Trails", "status": "closed" }
+    {
+      "name": "Alley Way",
+      "status": "closed"
+    },
+    {
+      "name": "Boughner's Boogie",
+      "status": "closed"
+    },
+    {
+      "name": "Carson's Run / Simon's Snow Park",
+      "status": "closed"
+    },
+    {
+      "name": "Dodds' Dip",
+      "status": "closed"
+    },
+    {
+      "name": "Eaton's Annex",
+      "status": "closed"
+    },
+    {
+      "name": "Harold's Headstander",
+      "status": "closed"
+    },
+    {
+      "name": "Holden's Hwy",
+      "status": "closed"
+    },
+    {
+      "name": "Kendall's Kandihar",
+      "status": "closed"
+    },
+    {
+      "name": "Kenne's Kicker",
+      "status": "closed"
+    },
+    {
+      "name": "Kids' Buel",
+      "status": "closed"
+    },
+    {
+      "name": "Knight Flight",
+      "status": "closed"
+    },
+    {
+      "name": "Larry's Line",
+      "status": "closed"
+    },
+    {
+      "name": "Lower Road",
+      "status": "closed"
+    },
+    {
+      "name": "MacKenzie Trail",
+      "status": "closed"
+    },
+    {
+      "name": "Moonbeam",
+      "status": "closed"
+    },
+    {
+      "name": "O.K. Ross Run",
+      "status": "closed"
+    },
+    {
+      "name": "Philpott's Folly",
+      "status": "closed"
+    },
+    {
+      "name": "Porter's Pipeline",
+      "status": "closed"
+    },
+    {
+      "name": "Quick Link",
+      "status": "closed"
+    },
+    {
+      "name": "Roadrunner",
+      "status": "closed"
+    },
+    {
+      "name": "Sidewinder",
+      "status": "closed"
+    },
+    {
+      "name": "Snowy's Glade",
+      "status": "closed"
+    },
+    {
+      "name": "Soules' Skyway",
+      "status": "closed"
+    },
+    {
+      "name": "The Yeighway Highway",
+      "status": "closed"
+    },
+    {
+      "name": "West Hill",
+      "status": "closed"
+    },
+    {
+      "name": "Wortley's Wiggle",
+      "status": "closed"
+    },
+    {
+      "name": "Zoe's Line",
+      "status": "closed"
+    },
+    {
+      "name": "Ice Rink",
+      "status": "closed"
+    },
+    {
+      "name": "Snowshoe/Hiking Trails",
+      "status": "open"
+    }
   ],
-  "conditions": {
-    "surfaceConditions": "CONDITIONSclosed",
-    "baseDepth": "Basecm",
-    "newSnow": "New snow last 24hcm"
-  },
-  "liftsSummary": { "open": 1, "total": 5 },
-  "trailsSummary": { "open": 0, "total": 2 },
   "rawData": {
     "snow_conditions": {
-      "surface": "CONDITIONSclosed",
-      "base_depth": "Basecm",
-      "new_snow": "New snow last 24hcm"
+      "snowmaking": "Not in progress",
+      "surface": "The West Lodge's fall office hours are Monday to Friday, 9am until 4pm.   Just a reminder that dryland training begins at the West Lodge this coming Sunday.  Please continue to watch our weekly e-carvers as we continue update everyone on the season ahead!"
     },
     "trails": [
-      { "name": "Ice Rink", "status": "closed" },
-      { "name": "Snowshoe/Hiking Trails", "status": "closed" }
+      {
+        "name": "Alley Way",
+        "status": "closed"
+      },
+      {
+        "name": "Boughner's Boogie",
+        "status": "closed"
+      },
+      {
+        "name": "Carson's Run / Simon's Snow Park",
+        "status": "closed"
+      },
+      {
+        "name": "Dodds' Dip",
+        "status": "closed"
+      },
+      {
+        "name": "Eaton's Annex",
+        "status": "closed"
+      },
+      {
+        "name": "Harold's Headstander",
+        "status": "closed"
+      },
+      {
+        "name": "Holden's Hwy",
+        "status": "closed"
+      },
+      {
+        "name": "Kendall's Kandihar",
+        "status": "closed"
+      },
+      {
+        "name": "Kenne's Kicker",
+        "status": "closed"
+      },
+      {
+        "name": "Kids' Buel",
+        "status": "closed"
+      },
+      {
+        "name": "Knight Flight",
+        "status": "closed"
+      },
+      {
+        "name": "Larry's Line",
+        "status": "closed"
+      },
+      {
+        "name": "Lower Road",
+        "status": "closed"
+      },
+      {
+        "name": "MacKenzie Trail",
+        "status": "closed"
+      },
+      {
+        "name": "Moonbeam",
+        "status": "closed"
+      },
+      {
+        "name": "O.K. Ross Run",
+        "status": "closed"
+      },
+      {
+        "name": "Philpott's Folly",
+        "status": "closed"
+      },
+      {
+        "name": "Porter's Pipeline",
+        "status": "closed"
+      },
+      {
+        "name": "Quick Link",
+        "status": "closed"
+      },
+      {
+        "name": "Roadrunner",
+        "status": "closed"
+      },
+      {
+        "name": "Sidewinder",
+        "status": "closed"
+      },
+      {
+        "name": "Snowy's Glade",
+        "status": "closed"
+      },
+      {
+        "name": "Soules' Skyway",
+        "status": "closed"
+      },
+      {
+        "name": "The Yeighway Highway",
+        "status": "closed"
+      },
+      {
+        "name": "West Hill",
+        "status": "closed"
+      },
+      {
+        "name": "Wortley's Wiggle",
+        "status": "closed"
+      },
+      {
+        "name": "Zoe's Line",
+        "status": "closed"
+      },
+      {
+        "name": "Ice Rink",
+        "status": "closed"
+      },
+      {
+        "name": "Snowshoe/Hiking Trails",
+        "status": "open"
+      }
     ],
-    "lifts": [
-      { "name": "CONDITIONSclosed", "status": "closed" },
-      { "name": "Basecm", "status": "closed" },
-      { "name": "New snow last 24hcm", "status": "closed" },
-      { "name": "Snow MakingNot in progress", "status": "closed" },
-      { "name": "Lifts Open", "status": "open" }
-    ],
-    "trails_summary": { "open": 0, "total": 2 },
-    "lifts_summary": { "open": 1, "total": 5 }
+    "lifts": [],
+    "trails_summary": {
+      "open": 1,
+      "total": 29
+    },
+    "lifts_summary": {
+      "open": 0,
+      "total": 0
+    }
+  },
+  "conditions": {
+    "surfaceConditions": "The West Lodge's fall office hours are Monday to Friday, 9am until 4pm.   Just a reminder that dryland training begins at the West Lodge this coming Sunday.  Please continue to watch our weekly e-carvers as we continue update everyone on the season ahead!",
+    "snowmaking": "Not in progress"
+  },
+  "trailsSummary": {
+    "open": 1,
+    "total": 29
+  },
+  "liftsSummary": {
+    "open": 0,
+    "total": 0
   },
   "resortId": "caledon-ski-club",
   "sourceUrl": "https://caledonskiclub.com/private-lessons",
-  "updatedAt": 0
+  "updatedAt": 1789140599033
 }

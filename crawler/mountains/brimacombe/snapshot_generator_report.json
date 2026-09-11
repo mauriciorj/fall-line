@@ -4,8 +4,6 @@
     {
       "table": "resorts",
       "missingColumns": [
-        "rating",
-        "ticketUrl",
         "tubbingPrice"
       ]
     },
@@ -29,5 +27,5 @@
       ]
     }
   ],
-  "missingColumnCount": 5
+  "missingColumnCount": 3
 }

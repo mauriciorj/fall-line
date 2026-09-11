@@ -1,0 +1,85 @@
+{
+  "rentals": {
+    "sections": [
+      {
+        "name": "adult_ski",
+        "items": [
+          {
+            "name": "adult_ski",
+            "prices": [
+              {
+                "label": "url",
+                "value": "https://www.bluemountain.ca/plan-your-trip/rentals/adult-ski"
+              },
+              {
+                "label": "title",
+                "value": "Standard Adult Ski Rental"
+              },
+              {
+                "label": "description",
+                "value": "No gear? No problem! Blue Mountain Rentals has the largest fleet in the area, featuring top snow sports brands like Rossignol skis."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "adult_snowboard",
+        "items": [
+          {
+            "name": "adult_snowboard",
+            "prices": [
+              {
+                "label": "url",
+                "value": "https://www.bluemountain.ca/plan-your-trip/rentals/adult-snowboard"
+              },
+              {
+                "label": "note",
+                "value": "Dynamic pricing requires date selection on website"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "youth_ski",
+        "items": [
+          {
+            "name": "youth_ski",
+            "prices": [
+              {
+                "label": "url",
+                "value": "https://www.bluemountain.ca/plan-your-trip/rentals/youth-ski"
+              },
+              {
+                "label": "note",
+                "value": "Dynamic pricing requires date selection on website"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "youth_snowboard",
+        "items": [
+          {
+            "name": "youth_snowboard",
+            "prices": [
+              {
+                "label": "url",
+                "value": "https://www.bluemountain.ca/plan-your-trip/rentals/youth-snowboard"
+              },
+              {
+                "label": "note",
+                "value": "Dynamic pricing requires date selection on website"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "resortId": "blue-mountain",
+  "sourceUrl": "https://www.bluemountain.ca/plan-your-trip/rentals/adult-ski",
+  "updatedAt": 1789146468252
+}

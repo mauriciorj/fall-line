@@ -4,30 +4,123 @@
       {
         "name": "Equipment Rentals - Package",
         "items": [
-          { "name": "Skis", "prices": [{ "label": "Column_2", "value": "$31.86" }] },
-          { "name": "Snowboard", "prices": [{ "label": "Column_2", "value": "$40.71" }] },
-          { "name": "Boots", "prices": [{ "label": "Column_2", "value": "$28.32" }] },
-          { "name": "Poles", "prices": [{ "label": "Column_2", "value": "$14.16" }] },
-          { "name": "Helmet Rental", "prices": [{ "label": "Column_2", "value": "$16.81" }] }
+          {
+            "name": "Skis",
+            "prices": [
+              {
+                "label": "Column_2",
+                "value": "$31.86"
+              }
+            ]
+          },
+          {
+            "name": "Snowboard",
+            "prices": [
+              {
+                "label": "Column_2",
+                "value": "$40.71"
+              }
+            ]
+          },
+          {
+            "name": "Boots",
+            "prices": [
+              {
+                "label": "Column_2",
+                "value": "$28.32"
+              }
+            ]
+          },
+          {
+            "name": "Poles",
+            "prices": [
+              {
+                "label": "Column_2",
+                "value": "$14.16"
+              }
+            ]
+          },
+          {
+            "name": "Helmet Rental",
+            "prices": [
+              {
+                "label": "Column_2",
+                "value": "$16.81"
+              }
+            ]
+          }
         ]
       },
       {
         "name": "Equipment Rentals - Separate Items",
         "items": [
-          { "name": "Lockers/Large", "prices": [{ "label": "Column_2", "value": "$184.07 For the Season" }] },
-          { "name": "Daily Large Locker", "prices": [{ "label": "Column_2", "value": "$16.81 Daily" }] }
+          {
+            "name": "Lockers/Large",
+            "prices": [
+              {
+                "label": "Column_2",
+                "value": "$184.07 For the Season"
+              }
+            ]
+          },
+          {
+            "name": "Daily Large Locker",
+            "prices": [
+              {
+                "label": "Column_2",
+                "value": "$16.81 Daily"
+              }
+            ]
+          }
         ]
       },
       {
         "name": "Lockers",
         "items": [
-          { "name": "Anytime Adults 18+ (8 x 4 Hour Tickets)", "prices": [{ "label": "Price", "value": "$503.54" }] },
-          { "name": "Anytime Under 18/Sr 60+ (8 x 4 Hour Tickets)", "prices": [{ "label": "Price", "value": "$439.82" }] }
+          {
+            "name": "Anytime Adults 18+ (8 x 4 Hour Tickets)",
+            "prices": [
+              {
+                "label": "Price",
+                "value": "$503.54"
+              },
+              {
+                "label": "Shop",
+                "value": "Buy Now!"
+              }
+            ]
+          },
+          {
+            "name": "Anytime Under 18/Sr 60+ (8 x 4 Hour Tickets)",
+            "prices": [
+              {
+                "label": "Price",
+                "value": "$439.82"
+              },
+              {
+                "label": "Shop",
+                "value": "Buy Now!"
+              }
+            ]
+          },
+          {
+            "name": "Nights ( 8 x 5 1/2 Hour Tickets 4-Close)",
+            "prices": [
+              {
+                "label": "Price",
+                "value": "$471.68"
+              },
+              {
+                "label": "Shop",
+                "value": "Buy Now!"
+              }
+            ]
+          }
         ]
       }
     ]
   },
   "resortId": "dagmar-ski-resort",
   "sourceUrl": "https://www.skidagmar.com/alpine-rates/",
-  "updatedAt": 0
+  "updatedAt": 1789141326805
 }

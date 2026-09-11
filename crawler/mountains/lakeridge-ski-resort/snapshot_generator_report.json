@@ -3,7 +3,11 @@
   "tables": [
     {
       "table": "resorts",
-      "missingColumns": []
+      "missingColumns": [
+        "dayTicketPrice",
+        "lessonsPrice",
+        "tubbingPrice"
+      ]
     },
     {
       "table": "resortHours",
@@ -25,5 +29,5 @@
       ]
     }
   ],
-  "missingColumnCount": 2
+  "missingColumnCount": 5
 }

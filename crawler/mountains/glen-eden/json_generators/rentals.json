@@ -7,13 +7,19 @@
           {
             "name": "All Ages",
             "prices": [
-              { "label": "price", "value": "$52" }
+              {
+                "label": "price",
+                "value": "$52"
+              }
             ]
           },
           {
             "name": "5 & Under",
             "prices": [
-              { "label": "price", "value": "$37" }
+              {
+                "label": "price",
+                "value": "$37"
+              }
             ]
           }
         ]
@@ -21,23 +27,79 @@
       {
         "name": "rental_single_items",
         "items": [
-          { "name": "Helmet", "prices": [{ "label": "price", "value": "$20" }] },
-          { "name": "Poles", "prices": [{ "label": "price", "value": "$20" }] },
-          { "name": "Snowboard Boots", "prices": [{ "label": "price", "value": "$42" }] },
-          { "name": "Skis", "prices": [{ "label": "price", "value": "$42" }] },
-          { "name": "Snowboard", "prices": [{ "label": "price", "value": "$42" }] }
+          {
+            "name": "Helmet",
+            "prices": [
+              {
+                "label": "price",
+                "value": "$20"
+              }
+            ]
+          },
+          {
+            "name": "Poles",
+            "prices": [
+              {
+                "label": "price",
+                "value": "$20"
+              }
+            ]
+          },
+          {
+            "name": "Snowboard Boots",
+            "prices": [
+              {
+                "label": "price",
+                "value": "$42"
+              }
+            ]
+          },
+          {
+            "name": "Skis",
+            "prices": [
+              {
+                "label": "price",
+                "value": "$42"
+              }
+            ]
+          },
+          {
+            "name": "Snowboard",
+            "prices": [
+              {
+                "label": "price",
+                "value": "$42"
+              }
+            ]
+          }
         ]
       },
       {
         "name": "rental_lesson_packages",
         "items": [
-          { "name": "Lesson Package – Ski", "prices": [{ "label": "price", "value": "$249" }] },
-          { "name": "Lesson Package – Snowboard", "prices": [{ "label": "price", "value": "$249" }] }
+          {
+            "name": "Lesson Package – Ski",
+            "prices": [
+              {
+                "label": "price",
+                "value": "$249"
+              }
+            ]
+          },
+          {
+            "name": "Lesson Package – Snowboard",
+            "prices": [
+              {
+                "label": "price",
+                "value": "$249"
+              }
+            ]
+          }
         ]
       }
     ]
   },
   "resortId": "glen-eden",
   "sourceUrl": "https://gleneden.on.ca/plan-your-visit/",
-  "updatedAt": 0
+  "updatedAt": 1789141581832
 }

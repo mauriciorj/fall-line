@@ -71,7 +71,8 @@ def get_rate_price(rates, section_match, price_label):
 
 def get_rental_price(rentals, section_match, item_match, label_match):
     for section in rentals.get("rentals", {}).get("sections", []):
-        if section_match not in section.get("name", "").lower():
+        section_name = " ".join(section.get("name", "").lower().split())
+        if section_match not in section_name:
             continue
         for item in section.get("items", []):
             if item_match not in item.get("name", "").lower():
@@ -79,6 +80,20 @@ def get_rental_price(rentals, section_match, item_match, label_match):
             for price in item.get("prices", []):
                 if label_match in price.get("label", "").lower():
                     return parse_price(price.get("value"))
+    return None
+
+
+def get_first_rental_price(rentals, section_match, item_match):
+    for section in rentals.get("rentals", {}).get("sections", []):
+        section_name = " ".join(section.get("name", "").lower().split())
+        if section_match not in section_name:
+            continue
+        for item in section.get("items", []):
+            if item_match not in item.get("name", "").lower():
+                continue
+            prices = item.get("prices", [])
+            if prices:
+                return parse_price(prices[0].get("value"))
     return None
 
 
@@ -94,8 +109,8 @@ def build_resort(static_info, rates, rentals, weather):
 
     prices = {
         "dayTicketPrice": get_rate_price(rates, "thursday to sunday lift tickets", "adult"),
-        "skiRentalPrice": get_rental_price(rentals, "skis, boots and poles", "adult", "4 hours"),
-        "snowBoardRentalPrice": get_rental_price(rentals, "snowboard and boots package", "adult", "4 hours"),
+        "skiRentalPrice": get_first_rental_price(rentals, "skis, boots and poles", "adult"),
+        "snowBoardRentalPrice": get_first_rental_price(rentals, "snowboard and boots package", "adult"),
         "lessonsPrice": get_rental_price(rentals, "rental packages for lessons", "7 week package", "ski"),
     }
     for field, value in prices.items():

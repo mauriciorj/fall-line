@@ -1,21 +1,6 @@
 {
-  "conditions": {
-    "surfaceConditions": "Machine Groomed Granular",
-    "baseDepth": "Base Depth",
-    "newSnow": "New Snow (Last 24 hours)",
-    "snowmaking": "Snowmaking (Last 24 hours)"
-  },
-  "lifts": [
-    { "name": "GeneralLimestone ChairliftClosedRidge ChairliftClosedUpdraft ChairliftClosedThe GalaxyShuttle CarpetClosedWest Beginner AreaCaterpillar CarpetClosedCricket CarpetClosed", "status": "Closed" }
-  ],
-  "trails": [
-    { "name": "Open:0 lifts / 0 runs0Open RunsSki ConditionsMachine Groomed GranularBase Depth40cmNew Snow (last 24 hours)YesSnowmaking (last 24 hours)NoMon 7 Sep, 11:18 PM UTCRunsGeneralEscarpment RunClosedNight HawkClosedButternutClosedFalconClosedScimitarClosedSidewinderClosedTwisterClosedBoomerangClosedChallengerClosedQuarry RunClosedThe GalaxyCometClosedLittle DipperClosedMilky WayClosedShooting StarClosedWest Beginner AreaBumble BeeClosedGrasshopperClosedMonarch Closed", "status": "Open" },
-    { "name": "RunsGeneralEscarpment RunClosedNight HawkClosedButternutClosedFalconClosedScimitarClosedSidewinderClosedTwisterClosedBoomerangClosedChallengerClosedQuarry RunClosedThe GalaxyCometClosedLittle DipperClosedMilky WayClosedShooting StarClosedWest Beginner AreaBumble BeeClosedGrasshopperClosedMonarchClosed", "status": "Closed" },
-    { "name": "LiftsGeneralLimestone ChairliftClosedRidge ChairliftClosedUpdraft ChairliftClosedThe GalaxyShuttle CarpetClosedWest Beginner AreaCaterpillar CarpetClosedCricket CarpetClosed", "status": "Closed" },
-    { "name": "Slope ConditionsMachine Groomed Granular", "status": "Unknown" }
-  ],
-  "liftsSummary": { "open": 0, "total": 1 },
-  "trailsSummary": { "open": 1, "total": 4 },
+  "lifts": [],
+  "trails": [],
   "rawData": {
     "conditions": {
       "snow_condition": "Machine Groomed Granular",
@@ -23,19 +8,32 @@
       "new_snow": "New Snow (Last 24 hours)",
       "snowmaking": "Snowmaking (Last 24 hours)"
     },
-    "lifts": [
-      { "name": "GeneralLimestone ChairliftClosedRidge ChairliftClosedUpdraft ChairliftClosedThe GalaxyShuttle CarpetClosedWest Beginner AreaCaterpillar CarpetClosedCricket CarpetClosed", "status": "Closed" }
-    ],
-    "trails": [
-      { "name": "Open:0 lifts / 0 runs0Open RunsSki ConditionsMachine Groomed GranularBase Depth40cmNew Snow (last 24 hours)YesSnowmaking (last 24 hours)NoMon 7 Sep, 11:18 PM UTCRunsGeneralEscarpment RunClosedNight HawkClosedButternutClosedFalconClosedScimitarClosedSidewinderClosedTwisterClosedBoomerangClosedChallengerClosedQuarry RunClosedThe GalaxyCometClosedLittle DipperClosedMilky WayClosedShooting StarClosedWest Beginner AreaBumble BeeClosedGrasshopperClosedMonarch Closed", "status": "Open" },
-      { "name": "RunsGeneralEscarpment RunClosedNight HawkClosedButternutClosedFalconClosedScimitarClosedSidewinderClosedTwisterClosedBoomerangClosedChallengerClosedQuarry RunClosedThe GalaxyCometClosedLittle DipperClosedMilky WayClosedShooting StarClosedWest Beginner AreaBumble BeeClosedGrasshopperClosedMonarchClosed", "status": "Closed" },
-      { "name": "LiftsGeneralLimestone ChairliftClosedRidge ChairliftClosedUpdraft ChairliftClosedThe GalaxyShuttle CarpetClosedWest Beginner AreaCaterpillar CarpetClosedCricket CarpetClosed", "status": "Closed" },
-      { "name": "Slope ConditionsMachine Groomed Granular", "status": "Unknown" }
-    ],
-    "lifts_summary": { "open": 0, "total": 2 },
-    "trails_summary": { "open": 5, "total": 32 }
+    "lifts": [],
+    "trails": [],
+    "lifts_summary": {
+      "open": 0,
+      "total": 0
+    },
+    "trails_summary": {
+      "open": 0,
+      "total": 0
+    }
+  },
+  "conditions": {
+    "baseDepth": "Base Depth",
+    "newSnow": "New Snow (Last 24 hours)",
+    "surfaceConditions": "Machine Groomed Granular",
+    "snowmaking": "Snowmaking (Last 24 hours)"
+  },
+  "liftsSummary": {
+    "open": 0,
+    "total": 0
+  },
+  "trailsSummary": {
+    "open": 0,
+    "total": 0
   },
   "resortId": "glen-eden",
   "sourceUrl": "https://gleneden.on.ca/at-glen-eden/slope-conditions/",
-  "updatedAt": 0
+  "updatedAt": 1789141589300
 }

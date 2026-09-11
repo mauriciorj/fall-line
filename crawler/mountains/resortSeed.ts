@@ -89,7 +89,7 @@ export const resortSeedData = [
     country: "Canada",
     region: "Ontario",
     coordinates: { lat: 43.856306447577786, lng: -80.00755054550318 },
-    googleMapsUrl: "https://maps.app.goo.gl/UqTeQ1vjSiSMV1CK7",
+    googleMapsUrl: "https://maps.app.goo.gl/nfzpbXydap2bfMP56",
     website: "http://caledonskiclub.com/",
   },
 ] as const;

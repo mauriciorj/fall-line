@@ -3,7 +3,10 @@
   "tables": [
     {
       "table": "resorts",
-      "missingColumns": []
+      "missingColumns": [
+        "lessonsPrice",
+        "tubbingPrice"
+      ]
     },
     {
       "table": "resortHours",
@@ -20,10 +23,13 @@
     {
       "table": "weatherAndStatus",
       "missingColumns": [
+        "lifts",
+        "trails",
         "terrainParks",
-        "crossCountry"
+        "crossCountry",
+        "tubing"
       ]
     }
   ],
-  "missingColumnCount": 2
+  "missingColumnCount": 7
 }

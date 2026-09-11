@@ -2,12 +2,10 @@
   "hours": [
     {
       "name": "Hours of operation",
-      "hours": [
-        { "day": "", "time": "OPENING DATE TO BE DETERMINED" }
-      ]
+      "hours": []
     }
   ],
   "resortId": "lakeridge-ski-resort",
   "sourceUrl": "https://ski-lakeridge.com/skiing-snowboarding/hours-ticket-prices/",
-  "updatedAt": 0
+  "updatedAt": 1789144232143
 }

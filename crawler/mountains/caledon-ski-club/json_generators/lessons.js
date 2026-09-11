@@ -1,0 +1,1 @@
+URL = "https://caledonskiclub.com/private-lessons"

@@ -1,0 +1,125 @@
+{
+  "hours": [
+    {
+      "name": "Dining Hours | Brunch",
+      "hours": [
+        {
+          "day": "DAILY",
+          "time": "7:30AM - 12PM"
+        }
+      ]
+    },
+    {
+      "name": "Dining Hours | Dinner",
+      "hours": [
+        {
+          "day": "SUN. - THURS.",
+          "time": "CLOSED"
+        },
+        {
+          "day": "FRI. & SAT.",
+          "time": "5PM - 9PM"
+        }
+      ]
+    },
+    {
+      "name": "Dining Hours | Blue Mountain Inn | As Of June 27",
+      "hours": [
+        {
+          "day": "DAILY",
+          "time": "11AM - 9PM"
+        }
+      ]
+    },
+    {
+      "name": "Dining Hours | Grand Central Lodge | As Of Sep. 8",
+      "hours": [
+        {
+          "day": "DAILY",
+          "time": "11AM - 5PM"
+        },
+        {
+          "day": "MON. - FRI.",
+          "time": "CLOSED"
+        },
+        {
+          "day": "SAT. & SUN.",
+          "time": "11AM - 5PM"
+        }
+      ]
+    },
+    {
+      "name": "Dining Hours | Blue Mountain Village",
+      "hours": [
+        {
+          "day": "SUN. - THURS.",
+          "time": "7:30AM - 7:30PM"
+        },
+        {
+          "day": "FRI. & SAT.",
+          "time": "7:30AM - 9PM"
+        }
+      ]
+    },
+    {
+      "name": "Dining Hours | Golf | As Of May 16",
+      "hours": [
+        {
+          "day": "DAILY",
+          "time": "8AM - 7PM"
+        }
+      ]
+    },
+    {
+      "name": "Shopping Hours | Blue Mountain Supply Co.",
+      "hours": [
+        {
+          "day": "SUN. - THURS.",
+          "time": "10AM - 6PM"
+        },
+        {
+          "day": "FRI. & SAT.",
+          "time": "10AM - 7PM"
+        }
+      ]
+    },
+    {
+      "name": "Shopping Hours | The North Face",
+      "hours": [
+        {
+          "day": "SUN. - THURS.",
+          "time": "10AM - 6PM"
+        },
+        {
+          "day": "FRI. & SAT.",
+          "time": "10AM - 7PM"
+        }
+      ]
+    },
+    {
+      "name": "Shopping Hours | Red Devil Sports",
+      "hours": [
+        {
+          "day": "SUN. - THURS.",
+          "time": "10AM - 6PM"
+        },
+        {
+          "day": "FRI. & SAT.",
+          "time": "10AM - 7PM"
+        }
+      ]
+    },
+    {
+      "name": "Guest Services | Hiking Trails | As Of May 15",
+      "hours": [
+        {
+          "day": "DAILY",
+          "time": "9AM - 9PM"
+        }
+      ]
+    }
+  ],
+  "resortId": "blue-mountain",
+  "sourceUrl": "https://www.bluemountain.ca/mountain/hours",
+  "updatedAt": 1789146368917
+}

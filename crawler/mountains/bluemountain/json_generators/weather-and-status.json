@@ -1,0 +1,220 @@
+{
+  "lifts": [
+    {
+      "name": "Open-Air Gondola",
+      "status": "Open",
+      "hours": "9:00 AM—9:00 PM"
+    }
+  ],
+  "trails": [
+    {
+      "name": "[A] The Grind",
+      "status": "Closed",
+      "area": "orchard"
+    },
+    {
+      "name": "[C] Early Exit",
+      "status": "Open",
+      "area": "orchard"
+    },
+    {
+      "name": "[D] Back At It",
+      "status": "Open",
+      "area": "orchard"
+    },
+    {
+      "name": "[G] Up & Over",
+      "status": "Closed",
+      "area": "orchard"
+    },
+    {
+      "name": "[J] Buttered Up",
+      "status": "Closed",
+      "area": "orchard"
+    },
+    {
+      "name": "Cascade",
+      "status": "Open",
+      "area": "south"
+    },
+    {
+      "name": "Green World",
+      "status": "Open for Multi Use",
+      "area": "south"
+    },
+    {
+      "name": "Lower Green",
+      "status": "Open",
+      "area": "village"
+    },
+    {
+      "name": "Memory Lane",
+      "status": "Open",
+      "area": "village"
+    },
+    {
+      "name": "R-Shore",
+      "status": "Closed",
+      "area": "village"
+    },
+    {
+      "name": "Route 66",
+      "status": "Open",
+      "area": "village"
+    },
+    {
+      "name": "Sticks & Stones",
+      "status": "Open",
+      "area": "village"
+    },
+    {
+      "name": "Time Line",
+      "status": "Open",
+      "area": "village"
+    },
+    {
+      "name": "Village Way",
+      "status": "Open",
+      "area": "village"
+    },
+    {
+      "name": "Apple Bowl Lookout",
+      "status": "Open",
+      "area": "valley"
+    },
+    {
+      "name": "Pathway to Village",
+      "status": "Open",
+      "area": "valley"
+    },
+    {
+      "name": "1940",
+      "status": "Open",
+      "area": "north"
+    },
+    {
+      "name": "Cagey",
+      "status": "Open for Hiking",
+      "area": "north"
+    },
+    {
+      "name": "Happy Haul",
+      "status": "Open",
+      "area": "north"
+    },
+    {
+      "name": "Outer Limits",
+      "status": "Open for Hiking",
+      "area": "north"
+    }
+  ],
+  "terrainParks": [],
+  "rawData": {
+    "conditions": {
+      "temperature": "25°C",
+      "last_updated": "Updated 5 minutes ago"
+    },
+    "lifts": [
+      {
+        "name": "Open-Air Gondola",
+        "hours": "9:00 AM—9:00 PM",
+        "status": "Open"
+      }
+    ],
+    "trails": {
+      "orchard": [
+        {
+          "name": "[A] The Grind",
+          "status": "Closed"
+        },
+        {
+          "name": "[C] Early Exit",
+          "status": "Open"
+        },
+        {
+          "name": "[D] Back At It",
+          "status": "Open"
+        },
+        {
+          "name": "[G] Up & Over",
+          "status": "Closed"
+        },
+        {
+          "name": "[J] Buttered Up",
+          "status": "Closed"
+        }
+      ],
+      "south": [
+        {
+          "name": "Cascade",
+          "status": "Open"
+        },
+        {
+          "name": "Green World",
+          "status": "Open for Multi Use"
+        }
+      ],
+      "village": [
+        {
+          "name": "Lower Green",
+          "status": "Open"
+        },
+        {
+          "name": "Memory Lane",
+          "status": "Open"
+        },
+        {
+          "name": "R-Shore",
+          "status": "Closed"
+        },
+        {
+          "name": "Route 66",
+          "status": "Open"
+        },
+        {
+          "name": "Sticks & Stones",
+          "status": "Open"
+        },
+        {
+          "name": "Time Line",
+          "status": "Open"
+        },
+        {
+          "name": "Village Way",
+          "status": "Open"
+        }
+      ],
+      "valley": [
+        {
+          "name": "Apple Bowl Lookout",
+          "status": "Open"
+        },
+        {
+          "name": "Pathway to Village",
+          "status": "Open"
+        }
+      ],
+      "north": [
+        {
+          "name": "1940",
+          "status": "Open"
+        },
+        {
+          "name": "Cagey",
+          "status": "Open for Hiking"
+        },
+        {
+          "name": "Happy Haul",
+          "status": "Open"
+        },
+        {
+          "name": "Outer Limits",
+          "status": "Open for Hiking"
+        }
+      ]
+    }
+  },
+  "resortId": "blue-mountain",
+  "sourceUrl": "https://www.bluemountain.ca/mountain/mountain-report",
+  "updatedAt": 1789146481013
+}

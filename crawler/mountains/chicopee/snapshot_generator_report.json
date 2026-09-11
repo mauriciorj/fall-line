@@ -5,14 +5,15 @@
       "table": "resorts",
       "missingColumns": [
         "lessonsPrice",
-        "ticketUrl",
         "tollFree",
         "tubbingPrice"
       ]
     },
     {
       "table": "resortHours",
-      "missingColumns": []
+      "missingColumns": [
+        "hours"
+      ]
     },
     {
       "table": "resortRates",

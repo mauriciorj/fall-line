@@ -1,41 +1,295 @@
 {
   "lifts": [
-    { "name": "Big Daddy", "status": "CLOSED", "identifier": "A" },
-    { "name": "Little Momma", "status": "CLOSED", "identifier": "B" },
-    { "name": "East Magic Carpet", "status": "CLOSED", "identifier": "C" },
-    { "name": "Rendez-Vous", "status": "CLOSED", "identifier": "D" },
-    { "name": "West Magic Carpet", "status": "CLOSED", "identifier": "E" },
-    { "name": "Favourite", "status": "CLOSED", "identifier": "F" }
+    {
+      "name": "Big Daddy",
+      "status": "CLOSED",
+      "identifier": "A"
+    },
+    {
+      "name": "Little Momma",
+      "status": "CLOSED",
+      "identifier": "B"
+    },
+    {
+      "name": "East Magic Carpet",
+      "status": "CLOSED",
+      "identifier": "C"
+    },
+    {
+      "name": "Rendez-Vous",
+      "status": "CLOSED",
+      "identifier": "D"
+    },
+    {
+      "name": "West Magic Carpet",
+      "status": "CLOSED",
+      "identifier": "E"
+    },
+    {
+      "name": "Favourite",
+      "status": "CLOSED",
+      "identifier": "F"
+    }
   ],
   "trails": [
-    { "name": "1. Park View", "status": "CLOSED", "difficulty": "Easy" },
-    { "name": "8. The Chute", "status": "CLOSED", "difficulty": "Difficult" },
-    { "name": "9. Little Momma", "status": "CLOSED", "difficulty": "Easy" },
-    { "name": "10. Pony", "status": "CLOSED", "difficulty": "Easy" },
-    { "name": "11. Rendez Vous", "status": "CLOSED", "difficulty": "Difficult" },
-    { "name": "12. Bomber", "status": "CLOSED", "difficulty": "More Difficult" },
-    { "name": "13. Upper Lovers Lane", "status": "CLOSED", "difficulty": "Easy" },
-    { "name": "14. Lower Lovers Lane", "status": "CLOSED", "difficulty": "Easy" },
-    { "name": "15. Club House", "status": "CLOSED", "difficulty": "Difficult" },
-    { "name": "16. Favourite", "status": "CLOSED", "difficulty": "Easy" },
-    { "name": "17. Alleyway", "status": "CLOSED", "difficulty": "Difficult" },
-    { "name": "18. Elbow", "status": "CLOSED", "difficulty": "Difficult" },
-    { "name": "19. The Dagger", "status": "CLOSED", "difficulty": "Most Difficult" },
-    { "name": "20. The Glades", "status": "CLOSED", "difficulty": "Most Difficult" }
+    {
+      "name": "1. Park View",
+      "status": "CLOSED",
+      "difficulty": "Easy"
+    },
+    {
+      "name": "8. The Chute",
+      "status": "CLOSED",
+      "difficulty": "Difficult"
+    },
+    {
+      "name": "9. Little Momma",
+      "status": "CLOSED",
+      "difficulty": "Easy"
+    },
+    {
+      "name": "10. Pony",
+      "status": "CLOSED",
+      "difficulty": "Easy"
+    },
+    {
+      "name": "11. Rendez Vous",
+      "status": "CLOSED",
+      "difficulty": "Difficult"
+    },
+    {
+      "name": "12. Bomber",
+      "status": "CLOSED",
+      "difficulty": "More Difficult"
+    },
+    {
+      "name": "13. Upper Lovers Lane",
+      "status": "CLOSED",
+      "difficulty": "Easy"
+    },
+    {
+      "name": "14. Lower Lovers Lane",
+      "status": "CLOSED",
+      "difficulty": "Easy"
+    },
+    {
+      "name": "15. Club House",
+      "status": "CLOSED",
+      "difficulty": "Difficult"
+    },
+    {
+      "name": "16. Favourite",
+      "status": "CLOSED",
+      "difficulty": "Easy"
+    },
+    {
+      "name": "17. Alleyway",
+      "status": "CLOSED",
+      "difficulty": "Difficult"
+    },
+    {
+      "name": "18. Elbow",
+      "status": "CLOSED",
+      "difficulty": "Difficult"
+    },
+    {
+      "name": "19. The Dagger",
+      "status": "CLOSED",
+      "difficulty": "Most Difficult"
+    },
+    {
+      "name": "20. The Glades",
+      "status": "CLOSED",
+      "difficulty": "Most Difficult"
+    }
   ],
+  "rawData": {
+    "Lifts": [
+      {
+        "letter": "A",
+        "name": "Big Daddy",
+        "status": "CLOSED"
+      },
+      {
+        "letter": "B",
+        "name": "Little Momma",
+        "status": "CLOSED"
+      },
+      {
+        "letter": "C",
+        "name": "East Magic Carpet",
+        "status": "CLOSED"
+      },
+      {
+        "letter": "D",
+        "name": "Rendez-Vous",
+        "status": "CLOSED"
+      },
+      {
+        "letter": "E",
+        "name": "West Magic Carpet",
+        "status": "CLOSED"
+      },
+      {
+        "letter": "F",
+        "name": "Favourite",
+        "status": "CLOSED"
+      }
+    ],
+    "Runs": [
+      {
+        "difficulty": "Easy",
+        "name": "1. Park View",
+        "status": "CLOSED"
+      },
+      {
+        "difficulty": "Terrain Park",
+        "name": "2. Puppy Pound",
+        "status": "CLOSED"
+      },
+      {
+        "difficulty": "Terrain Park",
+        "name": "3. Dog Pound",
+        "status": "CLOSED"
+      },
+      {
+        "difficulty": "Terrain Park",
+        "name": "4. Impound",
+        "status": "CLOSED"
+      },
+      {
+        "difficulty": "Terrain Park",
+        "name": "5. Impound Jumpline",
+        "status": "CLOSED"
+      },
+      {
+        "difficulty": "Terrain Park",
+        "name": "6. Compound Snow Zone",
+        "status": "CLOSED"
+      },
+      {
+        "difficulty": "Terrain Park",
+        "name": "7. Compound",
+        "status": "CLOSED"
+      },
+      {
+        "difficulty": "Difficult",
+        "name": "8. The Chute",
+        "status": "CLOSED"
+      },
+      {
+        "difficulty": "Easy",
+        "name": "9. Little Momma",
+        "status": "CLOSED"
+      },
+      {
+        "difficulty": "Easy",
+        "name": "10. Pony",
+        "status": "CLOSED"
+      },
+      {
+        "difficulty": "Difficult",
+        "name": "11. Rendez Vous",
+        "status": "CLOSED"
+      },
+      {
+        "difficulty": "More Difficult",
+        "name": "12. Bomber",
+        "status": "CLOSED"
+      },
+      {
+        "difficulty": "Easy",
+        "name": "13. Upper Lovers Lane",
+        "status": "CLOSED"
+      },
+      {
+        "difficulty": "Easy",
+        "name": "14. Lower Lovers Lane",
+        "status": "CLOSED"
+      },
+      {
+        "difficulty": "Difficult",
+        "name": "15. Club House",
+        "status": "CLOSED"
+      },
+      {
+        "difficulty": "Easy",
+        "name": "16. Favourite",
+        "status": "CLOSED"
+      },
+      {
+        "difficulty": "Difficult",
+        "name": "17. Alleyway",
+        "status": "CLOSED"
+      },
+      {
+        "difficulty": "Difficult",
+        "name": "18. Elbow",
+        "status": "CLOSED"
+      },
+      {
+        "difficulty": "Most Difficult",
+        "name": "19. The Dagger",
+        "status": "CLOSED"
+      },
+      {
+        "difficulty": "Most Difficult",
+        "name": "20. The Glades",
+        "status": "CLOSED"
+      }
+    ],
+    "Daily Conditions": {
+      "Snow Base": "70cm",
+      "New Snow": "0cm",
+      "Conditions": "Not Available"
+    }
+  },
+  "trailsSummary": {
+    "open": 0,
+    "total": 14
+  },
+  "liftsSummary": {
+    "open": 0,
+    "total": 6
+  },
+  "conditions": {
+    "baseDepth": "70cm",
+    "newSnow": "0cm",
+    "surfaceConditions": "Not Available"
+  },
   "terrainParks": [
-    { "name": "2. Puppy Pound", "status": "CLOSED", "difficulty": "Terrain Park" },
-    { "name": "3. Dog Pound", "status": "CLOSED", "difficulty": "Terrain Park" },
-    { "name": "4. Impound", "status": "CLOSED", "difficulty": "Terrain Park" },
-    { "name": "5. Impound Jumpline", "status": "CLOSED", "difficulty": "Terrain Park" },
-    { "name": "6. Compound Snow Zone", "status": "CLOSED", "difficulty": "Terrain Park" },
-    { "name": "7. Compound", "status": "CLOSED", "difficulty": "Terrain Park" }
+    {
+      "name": "2. Puppy Pound",
+      "status": "CLOSED",
+      "difficulty": "Terrain Park"
+    },
+    {
+      "name": "3. Dog Pound",
+      "status": "CLOSED",
+      "difficulty": "Terrain Park"
+    },
+    {
+      "name": "4. Impound",
+      "status": "CLOSED",
+      "difficulty": "Terrain Park"
+    },
+    {
+      "name": "5. Impound Jumpline",
+      "status": "CLOSED",
+      "difficulty": "Terrain Park"
+    },
+    {
+      "name": "6. Compound Snow Zone",
+      "status": "CLOSED",
+      "difficulty": "Terrain Park"
+    },
+    {
+      "name": "7. Compound",
+      "status": "CLOSED",
+      "difficulty": "Terrain Park"
+    }
   ],
-  "conditions": { "baseDepth": "70cm", "newSnow": "0cm", "surfaceConditions": "Not Available" },
-  "trailsSummary": { "open": 0, "total": 14 },
-  "liftsSummary": { "open": 0, "total": 6 },
-  "rawData": { "source": "skidagmar trail map" },
   "resortId": "dagmar-ski-resort",
   "sourceUrl": "https://www.skidagmar.com/trailmap/",
-  "updatedAt": 0
+  "updatedAt": 1789141328446
 }

@@ -2,22 +2,52 @@
   "hours": [
     {
       "name": "Winter Activities",
-      "activities": [
-        { "name": "SKI/SB", "hours": [{ "day": "Monday", "time": "Closed" }] },
-        { "name": "Tubing", "hours": [{ "day": "Monday", "time": "Closed" }] },
-        { "name": "Zipline", "hours": [{ "day": "Monday", "time": "Closed" }] },
-        { "name": "Snowshoeing", "hours": [{ "day": "Monday", "time": "Closed" }] }
+      "hours": [
+        {
+          "day": "Monday",
+          "time": "Closed"
+        },
+        {
+          "day": "Tuesday",
+          "time": "Closed"
+        },
+        {
+          "day": "Wednesday",
+          "time": "Closed"
+        },
+        {
+          "day": "Thursday",
+          "time": "Closed"
+        },
+        {
+          "day": "Friday",
+          "time": "Closed"
+        },
+        {
+          "day": "Saturday",
+          "time": "Closed"
+        },
+        {
+          "day": "Sunday",
+          "time": "Closed"
+        }
       ]
     },
     {
       "name": "Information Services",
       "hours": [
-        { "day": "Monday - Thursday", "time": "9:00AM - 4:00PM" },
-        { "day": "Friday - Sunday", "time": "Closed" }
+        {
+          "day": "Monday - Thursday",
+          "time": "9:00AM - 4:00PM"
+        },
+        {
+          "day": "Friday - Sunday",
+          "time": "Closed"
+        }
       ]
     }
   ],
   "resortId": "snow-valley-ski-resort",
   "sourceUrl": "https://www.skisnowvalley.com/about/",
-  "updatedAt": 0
+  "updatedAt": 1789144483222
 }

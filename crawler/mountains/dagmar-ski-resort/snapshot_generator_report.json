@@ -4,8 +4,9 @@
     {
       "table": "resorts",
       "missingColumns": [
-        "ticketUrl",
-        "tollFree"
+        "lessonsPrice",
+        "tollFree",
+        "tubbingPrice"
       ]
     },
     {
@@ -28,5 +29,5 @@
       ]
     }
   ],
-  "missingColumnCount": 4
+  "missingColumnCount": 5
 }

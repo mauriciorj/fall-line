@@ -7,29 +7,53 @@
           {
             "name": "Adult",
             "prices": [
-              { "label": "Full Day", "value": "$74.99" },
-              { "label": "Half Day", "value": "$49.99" }
+              {
+                "label": "Full Day",
+                "value": "$74.99"
+              },
+              {
+                "label": "Half Day",
+                "value": "$49.99"
+              }
             ]
           },
           {
             "name": "Junior",
             "prices": [
-              { "label": "Full Day", "value": "$54.99" },
-              { "label": "Half Day", "value": "$39.99" }
+              {
+                "label": "Full Day",
+                "value": "$54.99"
+              },
+              {
+                "label": "Half Day",
+                "value": "$39.99"
+              }
             ]
           },
           {
             "name": "Child (skis under 91cm)",
             "prices": [
-              { "label": "Full Day", "value": "$39.99" },
-              { "label": "Half Day", "value": "NA" }
+              {
+                "label": "Full Day",
+                "value": "$39.99"
+              },
+              {
+                "label": "Half Day",
+                "value": "NA"
+              }
             ]
           },
           {
             "name": "With performance skis",
             "prices": [
-              { "label": "Full Day", "value": "$89.99" },
-              { "label": "Half Day", "value": "$69.99" }
+              {
+                "label": "Full Day",
+                "value": "$89.99"
+              },
+              {
+                "label": "Half Day",
+                "value": "$69.99"
+              }
             ]
           }
         ]
@@ -40,43 +64,79 @@
           {
             "name": "Skis / Snowboard",
             "prices": [
-              { "label": "Full Day", "value": "$49.99" },
-              { "label": "Half Day", "value": "$39.99" }
+              {
+                "label": "Full Day",
+                "value": "$49.99"
+              },
+              {
+                "label": "Half Day",
+                "value": "$39.99"
+              }
             ]
           },
           {
             "name": "Boots",
             "prices": [
-              { "label": "Full Day", "value": "$49.99" },
-              { "label": "Half Day", "value": "$39.99" }
+              {
+                "label": "Full Day",
+                "value": "$49.99"
+              },
+              {
+                "label": "Half Day",
+                "value": "$39.99"
+              }
             ]
           },
           {
             "name": "Poles / Helmet",
             "prices": [
-              { "label": "Full Day", "value": "$19.99" },
-              { "label": "Half Day", "value": "NA" }
+              {
+                "label": "Full Day",
+                "value": "$19.99"
+              },
+              {
+                "label": "Half Day",
+                "value": "NA"
+              }
             ]
           },
           {
             "name": "Snowshoes",
             "prices": [
-              { "label": "Full Day", "value": "$39.99" },
-              { "label": "Half Day", "value": "NA" }
+              {
+                "label": "Full Day",
+                "value": "$39.99"
+              },
+              {
+                "label": "Half Day",
+                "value": "NA"
+              }
             ]
           },
           {
             "name": "Crampons",
             "prices": [
-              { "label": "Full Day", "value": "$19.99" },
-              { "label": "Half Day", "value": "NA" }
+              {
+                "label": "Full Day",
+                "value": "$19.99"
+              },
+              {
+                "label": "Half Day",
+                "value": "NA"
+              }
             ]
           },
           {
             "name": "Demo Skis",
             "prices": [
-              { "label": "Full Day", "value": "$59.99" },
-              { "label": "Half Day", "value": "$49.99" }
+              {
+                "label": "Full Day",
+                "value": "$59.99"
+              },
+              {
+                "label": "Half Day",
+                "value": "$49.99"
+              }
             ]
           }
         ]
@@ -85,5 +145,5 @@
   },
   "resortId": "caledon-ski-club",
   "sourceUrl": "https://caledonskiclub.com/proshop",
-  "updatedAt": 0
+  "updatedAt": 1789140594287
 }

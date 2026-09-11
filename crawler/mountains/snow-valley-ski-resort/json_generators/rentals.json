@@ -4,28 +4,283 @@
       {
         "name": "Full Day Ski & Board Rentals",
         "items": [
-          { "name": "Adult (18-64)", "prices": [{ "label": "price", "value": "$70" }] },
-          { "name": "Youth/Senior (6-17, 65+)", "prices": [{ "label": "price", "value": "$55" }] },
-          { "name": "Under 6 Years", "prices": [{ "label": "price", "value": "$40" }] }
+          {
+            "name": "Adult (18-64)",
+            "prices": [
+              {
+                "label": "price",
+                "value": "$70"
+              },
+              {
+                "label": "description",
+                "value": ""
+              }
+            ]
+          },
+          {
+            "name": "Youth/Senior (6-17, 65+)",
+            "prices": [
+              {
+                "label": "price",
+                "value": "$55"
+              },
+              {
+                "label": "description",
+                "value": ""
+              }
+            ]
+          },
+          {
+            "name": "Under 6 Years",
+            "prices": [
+              {
+                "label": "price",
+                "value": "$40"
+              },
+              {
+                "label": "description",
+                "value": ""
+              }
+            ]
+          }
         ]
       },
       {
         "name": "Night Ski & Board Rentals",
         "items": [
-          { "name": "Adult (18-64)", "prices": [{ "label": "price", "value": "$56" }] },
-          { "name": "Youth/Senior (6-17, 65+)", "prices": [{ "label": "price", "value": "$45" }] }
+          {
+            "name": "Adult (18-64)",
+            "prices": [
+              {
+                "label": "price",
+                "value": "$56"
+              },
+              {
+                "label": "description",
+                "value": ""
+              }
+            ]
+          },
+          {
+            "name": "Youth/Senior (6-17, 65+)",
+            "prices": [
+              {
+                "label": "price",
+                "value": "$45"
+              },
+              {
+                "label": "description",
+                "value": ""
+              }
+            ]
+          },
+          {
+            "name": "Under 6 Years",
+            "prices": [
+              {
+                "label": "price",
+                "value": "$32"
+              },
+              {
+                "label": "description",
+                "value": ""
+              }
+            ]
+          }
         ]
       },
       {
         "name": "Rental Clothing",
         "items": [
-          { "name": "Winter Pants", "prices": [{ "label": "price", "value": "$26" }] },
-          { "name": "Winter Jacket", "prices": [{ "label": "price", "value": "$26" }] }
+          {
+            "name": "Winter Pants",
+            "prices": [
+              {
+                "label": "price",
+                "value": "$26"
+              },
+              {
+                "label": "description",
+                "value": ""
+              }
+            ]
+          },
+          {
+            "name": "Winter Jacket",
+            "prices": [
+              {
+                "label": "price",
+                "value": "$26"
+              },
+              {
+                "label": "description",
+                "value": ""
+              }
+            ]
+          },
+          {
+            "name": "Winter Jacket & Pant Combo",
+            "prices": [
+              {
+                "label": "price",
+                "value": "$46"
+              },
+              {
+                "label": "description",
+                "value": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Salomon High PerformanceSki & Board Rentals",
+        "items": [
+          {
+            "name": "Hourly High Performance Ski or Snowboard",
+            "prices": [
+              {
+                "label": "price",
+                "value": "$16"
+              },
+              {
+                "label": "description",
+                "value": ""
+              }
+            ]
+          },
+          {
+            "name": "6HR High Performance Ski or Snowboard",
+            "prices": [
+              {
+                "label": "price",
+                "value": "$65"
+              },
+              {
+                "label": "description",
+                "value": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "A la carte Ski or Board Rental",
+        "items": [
+          {
+            "name": "Adult",
+            "prices": [
+              {
+                "label": "price",
+                "value": "$45"
+              },
+              {
+                "label": "description",
+                "value": ""
+              }
+            ]
+          },
+          {
+            "name": "Youth/Senior (6-17, 65+)",
+            "prices": [
+              {
+                "label": "price",
+                "value": "$40"
+              },
+              {
+                "label": "description",
+                "value": ""
+              }
+            ]
+          },
+          {
+            "name": "Under 6",
+            "prices": [
+              {
+                "label": "price",
+                "value": "$30"
+              },
+              {
+                "label": "description",
+                "value": ""
+              }
+            ]
+          },
+          {
+            "name": "Helmet",
+            "prices": [
+              {
+                "label": "price",
+                "value": "$16"
+              },
+              {
+                "label": "description",
+                "value": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "A la carte Ski or Board Boot Rental",
+        "items": [
+          {
+            "name": "Adult",
+            "prices": [
+              {
+                "label": "price",
+                "value": "$30"
+              },
+              {
+                "label": "description",
+                "value": ""
+              }
+            ]
+          },
+          {
+            "name": "Youth/Senior (6-17, 65+)",
+            "prices": [
+              {
+                "label": "price",
+                "value": "$25"
+              },
+              {
+                "label": "description",
+                "value": ""
+              }
+            ]
+          },
+          {
+            "name": "Under 6",
+            "prices": [
+              {
+                "label": "price",
+                "value": "$20"
+              },
+              {
+                "label": "description",
+                "value": ""
+              }
+            ]
+          },
+          {
+            "name": "Helmet",
+            "prices": [
+              {
+                "label": "price",
+                "value": "$17"
+              },
+              {
+                "label": "description",
+                "value": ""
+              }
+            ]
+          }
         ]
       }
     ]
   },
   "resortId": "snow-valley-ski-resort",
   "sourceUrl": "https://www.skisnowvalley.com/plan/ski-snowboard/equipment-rentals/",
-  "updatedAt": 0
+  "updatedAt": 1789144485495
 }

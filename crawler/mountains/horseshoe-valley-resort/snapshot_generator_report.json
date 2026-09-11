@@ -5,7 +5,10 @@
       "table": "resorts",
       "missingColumns": [
         "lessonsPrice",
-        "tollFree"
+        "skiRentalPrice",
+        "snowBoardRentalPrice",
+        "tollFree",
+        "tubbingPrice"
       ]
     },
     {
@@ -22,8 +25,11 @@
     },
     {
       "table": "weatherAndStatus",
-      "missingColumns": []
+      "missingColumns": [
+        "lifts",
+        "tubing"
+      ]
     }
   ],
-  "missingColumnCount": 2
+  "missingColumnCount": 7
 }

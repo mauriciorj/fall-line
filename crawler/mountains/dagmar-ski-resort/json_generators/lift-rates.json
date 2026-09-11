@@ -1,15 +1,144 @@
 {
   "rates": {
     "items": [
-      { "name": "8 Pack Value-Priced Lift Tickets | Up to 4 Hours Anytime", "prices": [{ "label": "Adult 18+", "value": "$69.91" }, { "label": "Jr.6-17/Sr.60+", "value": "$61.06" }] },
-      { "name": "8 Pack Value-Priced Lift Tickets | Full Day", "prices": [{ "label": "Adult 18+", "value": "$83.19" }, { "label": "Jr.6-17/Sr.60+", "value": "$74.34" }] },
-      { "name": "Anytime Alpine Lift Tickets | Ages 6 to Adult", "prices": [{ "label": "Price", "value": "$41.59" }] },
-      { "name": "Anytime Alpine Lift Tickets | Under 5 years", "prices": [{ "label": "Price", "value": "$23.01" }] },
-      { "name": "Special Late-Night After 6 and Last Call | Wednesday – Friday", "prices": [{ "label": "Ticket", "value": "$40.71" }, { "label": "W/ Ski Rental", "value": "$77.88" }] },
-      { "name": "Seniors 60+ | Up to 4 Hours", "prices": [{ "label": "Skis, Boots, & Poles", "value": "$41.59" }, { "label": "Boards & Boots", "value": "$53.98" }] }
+      {
+        "name": "8 Pack Value-Priced Lift Tickets | Up to 4 Hours Anytime",
+        "prices": [
+          {
+            "label": "Adult 18+",
+            "value": "$69.91"
+          },
+          {
+            "label": "Jr.6-17/Sr.60+",
+            "value": "$61.06"
+          }
+        ]
+      },
+      {
+        "name": "8 Pack Value-Priced Lift Tickets | Full Day",
+        "prices": [
+          {
+            "label": "Adult 18+",
+            "value": "$83.19"
+          },
+          {
+            "label": "Jr.6-17/Sr.60+",
+            "value": "$74.34"
+          }
+        ]
+      },
+      {
+        "name": "Anytime Alpine Lift Tickets | Ages 6 to Adult – up to 4 Hr (No Coupons)",
+        "prices": [
+          {
+            "label": "Price",
+            "value": "$41.59"
+          }
+        ]
+      },
+      {
+        "name": "Anytime Alpine Lift Tickets | Under 5 years – up to 4 Hr (No Coupons)",
+        "prices": [
+          {
+            "label": "Price",
+            "value": "$23.01"
+          }
+        ]
+      },
+      {
+        "name": "Special Late-Night After 6 and Last Call | $40.71",
+        "prices": [
+          {
+            "label": "Midweek Special",
+            "value": "Wednesday – Friday (up to 4 Hrs.)"
+          },
+          {
+            "label": "W/ Ski Rental",
+            "value": "$77.88"
+          }
+        ]
+      },
+      {
+        "name": "Magic Carpet Special for Beginners | Special for All Ages",
+        "prices": []
+      },
+      {
+        "name": "Magic Carpet Special for Beginners | After 6:00pm  Special Price (No Coupons)",
+        "prices": [
+          {
+            "label": "Column_2",
+            "value": "$48.67"
+          }
+        ]
+      },
+      {
+        "name": "Magic Carpet Special for Beginners | After 7:00 “Last Call” Special Price (No Coupons)",
+        "prices": [
+          {
+            "label": "Column_2",
+            "value": "$38.94"
+          }
+        ]
+      },
+      {
+        "name": "Seniors 60+ | Up to 4 Hours",
+        "prices": [
+          {
+            "label": "Skis, Boots, & Poles",
+            "value": "$41.59"
+          },
+          {
+            "label": "Boards & Boots",
+            "value": "$53.98"
+          }
+        ]
+      },
+      {
+        "name": "Seniors 60+ | Full Day",
+        "prices": [
+          {
+            "label": "Skis, Boots, & Poles",
+            "value": "$50.44"
+          },
+          {
+            "label": "Boards & Boots",
+            "value": "$62.83"
+          }
+        ]
+      },
+      {
+        "name": "Seniors 60+ | After 6:00pm & 7:00pm",
+        "prices": [
+          {
+            "label": "Skis, Boots, & Poles",
+            "value": "$40.71"
+          },
+          {
+            "label": "Boards & Boots",
+            "value": "$51.33"
+          }
+        ]
+      },
+      {
+        "name": "Seniors 60+ | An upgrade is available at Customer Service to extend your visit $23.01",
+        "prices": []
+      },
+      {
+        "name": "Seniors 60+ | Seasons Rental",
+        "prices": [
+          {
+            "label": "Skis, Boots, & Poles",
+            "value": "$287.61"
+          },
+          {
+            "label": "Boards & Boots",
+            "value": "$317.70"
+          }
+        ]
+      }
     ]
   },
   "resortId": "dagmar-ski-resort",
   "sourceUrl": "https://www.skidagmar.com/alpine-rates/",
-  "updatedAt": 0
+  "updatedAt": 1789141324909
 }

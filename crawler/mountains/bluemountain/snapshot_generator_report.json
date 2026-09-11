@@ -1,0 +1,35 @@
+{
+  "resortId": "blue-mountain",
+  "tables": [
+    {
+      "table": "resorts",
+      "missingColumns": [
+        "lessonsPrice",
+        "skiRentalPrice",
+        "snowBoardRentalPrice",
+        "tubbingPrice"
+      ]
+    },
+    {
+      "table": "resortHours",
+      "missingColumns": []
+    },
+    {
+      "table": "resortRates",
+      "missingColumns": []
+    },
+    {
+      "table": "resortRentals",
+      "missingColumns": []
+    },
+    {
+      "table": "weatherAndStatus",
+      "missingColumns": [
+        "terrainParks",
+        "crossCountry",
+        "tubing"
+      ]
+    }
+  ],
+  "missingColumnCount": 7
+}

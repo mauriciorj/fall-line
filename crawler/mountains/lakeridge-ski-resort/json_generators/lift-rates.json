@@ -1,15 +1,231 @@
 {
   "rates": {
     "items": [
-      { "name": "Beginner Area Ticket Prices (Magic Carpet Only) | Monday | Tuesday | Wednesday ONLINE pricing", "prices": [{ "label": "ADULT (18-64)", "value": "$39.56+HST" }, { "label": "JUNIOR | SENIOR (6-17 | 65+)", "value": "$39.56+HST" }, { "label": "TYKE (AGE 5 AND UNDER)", "value": "$21.98+HST" }] },
-      { "name": "Beginner Area Ticket Prices (Magic Carpet Only) | Monday | Tuesday | Wednesday ON SITE pricing", "prices": [{ "label": "ADULT (18-64)", "value": "$42.08+HST" }, { "label": "JUNIOR | SENIOR (6-17 | 65+)", "value": "$42.08+HST" }, { "label": "TYKE (AGE 5 AND UNDER)", "value": "$23.38+HST" }] },
-      { "name": "Beginner Area Ticket Prices (Magic Carpet Only) | Thursday to Sunday ONLINE pricing", "prices": [{ "label": "ADULT (18-64)", "value": "$46.53+HST" }, { "label": "JUNIOR | SENIOR (6-17 | 65+)", "value": "$46.53+HST" }, { "label": "TYKE (AGE 5 AND UNDER)", "value": "$25.85+HST" }] },
-      { "name": "Monday to Wednesday Lift Tickets (NOT VALID ON FAMILY DAY) | 4 Hours Anytime - ONLINE pricing", "prices": [{ "label": "Adult (18-64)", "value": "$59.30+HST" }, { "label": "Junior | Senior (6-17)", "value": "$51.86+HST" }, { "label": "Tyke", "value": "$21.98+HST" }] },
-      { "name": "Thursday to Sunday Lift Tickets | 4 Hours Anytime - ONLINE pricing", "prices": [{ "label": "Adult (18-64)", "value": "$69.77+HST" }, { "label": "Junior | Senior (6-17)", "value": "$61.01+HST" }, { "label": "Tyke", "value": "$25.00+HST" }] },
-      { "name": "Thursday to Sunday Lift Tickets | 4 Hours Anytime - ON SITE pricing", "prices": [{ "label": "Adult (18-64)", "value": "$74.22+HST" }, { "label": "Junior | Senior (6-17)", "value": "$64.90+HST" }, { "label": "Tyke", "value": "$27.50+HST" }] }
+      {
+        "name": "Beginner Area Ticket Prices | Monday | Tuesday | Wednesday  ON SITE pricing",
+        "prices": [
+          {
+            "label": "$39.56+HST",
+            "value": "$42.08+HST"
+          },
+          {
+            "label": "$21.98+HST",
+            "value": "$23.38+HST"
+          }
+        ]
+      },
+      {
+        "name": "Beginner Area Ticket Prices | Thursday to Sunday ONLINE pricing",
+        "prices": [
+          {
+            "label": "$39.56+HST",
+            "value": "$46.53+HST"
+          },
+          {
+            "label": "$21.98+HST",
+            "value": "$25.85+HST"
+          }
+        ]
+      },
+      {
+        "name": "Beginner Area Ticket Prices | Thursday to Sunday ON SITE pricing",
+        "prices": [
+          {
+            "label": "$39.56+HST",
+            "value": "$49.50+HST"
+          },
+          {
+            "label": "$21.98+HST",
+            "value": "$27.50+HST"
+          }
+        ]
+      },
+      {
+        "name": "Beginner Area Ticket Prices | Upgrade to Chair Lift",
+        "prices": [
+          {
+            "label": "$39.56+HST",
+            "value": "2-hour: $14.86+HST"
+          },
+          {
+            "label": "$21.98+HST",
+            "value": "3-hour: $22.29+HST"
+          }
+        ]
+      },
+      {
+        "name": "Monday to Wednesday Lift Tickets | 4 Hours Anytime - ON SITE pricing",
+        "prices": [
+          {
+            "label": "$59.30+HST",
+            "value": "$63.09+HST"
+          },
+          {
+            "label": "$51.86+HST",
+            "value": "$55.17+HST"
+          },
+          {
+            "label": "$21.98+HST",
+            "value": "$23.38+HST"
+          }
+        ]
+      },
+      {
+        "name": "Monday to Wednesday Lift Tickets | 3 hours (6:30pm to 9:30pm) ONLINE pricing",
+        "prices": [
+          {
+            "label": "$59.30+HST",
+            "value": "$55.40+HST"
+          },
+          {
+            "label": "$51.86+HST",
+            "value": "$48.46+HST"
+          },
+          {
+            "label": "$21.98+HST",
+            "value": "$21.98+HST"
+          }
+        ]
+      },
+      {
+        "name": "Monday to Wednesday Lift Tickets | 3 hours (6:30pm to 9:30pm) ON SITE pricing",
+        "prices": [
+          {
+            "label": "$59.30+HST",
+            "value": "$58.94+HST"
+          },
+          {
+            "label": "$51.86+HST",
+            "value": "$51.55+HST"
+          },
+          {
+            "label": "$21.98+HST",
+            "value": "$23.38+HST"
+          }
+        ]
+      },
+      {
+        "name": "Monday to Wednesday Lift Tickets | 2 hours (7:30pm to 9:30pm) ONLINE pricing",
+        "prices": [
+          {
+            "label": "$59.30+HST",
+            "value": "$32.52+HST"
+          },
+          {
+            "label": "$51.86+HST",
+            "value": "$32.52+HST"
+          },
+          {
+            "label": "$21.98+HST",
+            "value": "$21.98+HST"
+          }
+        ]
+      },
+      {
+        "name": "Monday to Wednesday Lift Tickets | 2 hours (7:30pm to 9:30pm)    ON SITE pricing",
+        "prices": [
+          {
+            "label": "$59.30+HST",
+            "value": "$34.60+HST"
+          },
+          {
+            "label": "$51.86+HST",
+            "value": "$34.60+HST"
+          },
+          {
+            "label": "$21.98+HST",
+            "value": "$23.38+HST"
+          }
+        ]
+      },
+      {
+        "name": "Thursday to Sunday Lift Tickets | 4 Hours Anytime - ON SITE pricing",
+        "prices": [
+          {
+            "label": "$69.77+HST",
+            "value": "$74.22+HST"
+          },
+          {
+            "label": "$61.01+HST",
+            "value": "$64.90+HST"
+          },
+          {
+            "label": "$25.00+HST",
+            "value": "$27.50+HST"
+          }
+        ]
+      },
+      {
+        "name": "Thursday to Sunday Lift Tickets | 3 hours (6:30pm to 9:30pm) ONLINE pricing",
+        "prices": [
+          {
+            "label": "$69.77+HST",
+            "value": "$65.18+HST"
+          },
+          {
+            "label": "$61.01+HST",
+            "value": "$57.00+HST"
+          },
+          {
+            "label": "$25.00+HST",
+            "value": "$25.00+HST"
+          }
+        ]
+      },
+      {
+        "name": "Thursday to Sunday Lift Tickets | 3 hours (6:30pm to 9:30pm) ON SITE pricing",
+        "prices": [
+          {
+            "label": "$69.77+HST",
+            "value": "$69.34+HST"
+          },
+          {
+            "label": "$61.01+HST",
+            "value": "$60.64+HST"
+          },
+          {
+            "label": "$25.00+HST",
+            "value": "$27.50+HST"
+          }
+        ]
+      },
+      {
+        "name": "Thursday to Sunday Lift Tickets | 2 hours (7:30pm to 9:30pm)  ONLINE pricing",
+        "prices": [
+          {
+            "label": "$69.77+HST",
+            "value": "$38.26+HST"
+          },
+          {
+            "label": "$61.01+HST",
+            "value": "$38.26+HST"
+          },
+          {
+            "label": "$25.00+HST",
+            "value": "$25.00+HST"
+          }
+        ]
+      },
+      {
+        "name": "Thursday to Sunday Lift Tickets | 2 hours (7:30pm to 9:30pm)  ON SITE pricing",
+        "prices": [
+          {
+            "label": "$69.77+HST",
+            "value": "$40.70+HST"
+          },
+          {
+            "label": "$61.01+HST",
+            "value": "$40.70+HST"
+          },
+          {
+            "label": "$25.00+HST",
+            "value": "$27.50+HST"
+          }
+        ]
+      }
     ]
   },
   "resortId": "lakeridge-ski-resort",
   "sourceUrl": "https://ski-lakeridge.com/skiing-snowboarding/hours-ticket-prices/",
-  "updatedAt": 0
+  "updatedAt": 1789144232736
 }

@@ -1,25 +1,6 @@
 {
-  "hours": [
-    {
-      "name": "Guest Services",
-      "hours": [
-        { "day": "Daily", "time": "Temporarily Closed" }
-      ]
-    },
-    {
-      "name": "Lift Hours",
-      "hours": [
-        { "day": "Daily", "time": "Temporarily Closed" }
-      ]
-    },
-    {
-      "name": "Food & Beverage Service",
-      "hours": [
-        { "day": "Daily", "time": "Temporarily Closed" }
-      ]
-    }
-  ],
+  "hours": [],
   "resortId": "chicopee",
   "sourceUrl": "https://www.discoverchicopee.com/contact#hours",
-  "updatedAt": 0
+  "updatedAt": 1789140909064
 }

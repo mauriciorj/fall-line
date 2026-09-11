@@ -23,11 +23,12 @@ HEADERS = {
 }
 
 
-def extract_table_data(table):
+def extract_table_data(table, include_adult=False):
     rows = table.find_all("tr")
     if not rows:
         return []
     headers = [cell.get_text(" ", strip=True) for cell in rows[0].find_all(["th", "td"])]
+    headers = [header or f"Column_{index + 1}" for index, header in enumerate(headers)]
     result = []
     for row in rows[1:]:
         cells = row.find_all("td")
@@ -35,7 +36,19 @@ def extract_table_data(table):
             continue
         values = [cell.get_text(" ", strip=True) for cell in cells]
         values.extend([""] * max(0, len(headers) - len(values)))
-        result.append({headers[index] or f"Column_{index + 1}": values[index] for index in range(min(len(headers), len(values)))})
+        result.append({headers[index]: values[index] for index in range(min(len(headers), len(values)))})
+    if include_adult and result:
+        name_key = next(
+            (
+                key
+                for key in result[0]
+                if key.lower() in {"name", "item", "category", "description", "time"}
+            ),
+            next(iter(result[0]), "name"),
+        )
+        adult = {name_key: "ADULT"}
+        adult.update({header: header for header in headers if header != name_key})
+        result.insert(0, adult)
     return result
 
 
@@ -44,10 +57,15 @@ def get_rentals():
     response.raise_for_status()
     soup = BeautifulSoup(response.content, "html.parser")
     result = {}
+    adult_package_sections = {
+        "skis, boots and poles package",
+        "snowboard and boots package",
+    }
     for index, table in enumerate(soup.find_all("table"), 1):
         heading = table.find_previous(["h2", "h3", "h4"])
         section_name = heading.get_text(" ", strip=True) if heading else f"Rentals_{index}"
-        rows = extract_table_data(table)
+        normalized_name = " ".join(section_name.split()).lower()
+        rows = extract_table_data(table, normalized_name in adult_package_sections)
         if rows:
             result[section_name] = rows
     return result

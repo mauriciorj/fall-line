@@ -34,6 +34,21 @@ const crossCountrySchema = v.object({
   groomedToday: v.optional(v.string()),
 });
 
+const conditionsSchema = v.object({
+  temperature: v.optional(v.string()),
+  baseDepth: v.optional(v.string()),
+  newSnow: v.optional(v.string()),
+  surfaceConditions: v.optional(v.string()),
+  snowmaking: v.optional(v.string()),
+  lastUpdated: v.optional(v.string()),
+  hours: v.optional(v.string()),
+});
+
+const summarySchema = v.object({
+  open: v.number(),
+  total: v.number(),
+});
+
 export const hoursRowSchema = v.object({
   day: v.string(),
   time: v.string(),
@@ -130,13 +145,16 @@ export default defineSchema({
     resortId: v.string(),
     sourceUrl: v.optional(v.string()),
     updatedAt: v.number(),
+    conditions: v.optional(conditionsSchema),
 
     lifts: v.array(liftSchema),
     trails: v.array(trailSchema),
     terrainParks: v.optional(v.array(trailSchema)),
     crossCountry: v.optional(v.array(crossCountrySchema)),
     tubing: v.optional(v.array(tubingSchema)),
-  
+    liftsSummary: v.optional(summarySchema),
+    trailsSummary: v.optional(summarySchema),
+
     rawData: v.optional(v.any()),
   })
     .index("by_resort", ["resortId"])

@@ -1,0 +1,23 @@
+{
+  "address": "190 Gord Canning Drive Blue Mountains, Ontario, Canada L9Y 1C2",
+  "continent": "North America",
+  "coordinates": { "lat": 44.55091707586931, "lng": -80.31056434810445 },
+  "country": "Canada",
+  "email": "mail@bluemountain.ca",
+  "googleMapsUrl": "https://maps.app.goo.gl/mX4YUs7faBFud9sX8",
+  "hasAccommodations": true,
+  "hasCrossCountry": false,
+  "hasLessons": true,
+  "hasSnowshoeing": true,
+  "hasSpa": true,
+  "hasTubing": true,
+  "hasZipline": false,
+  "phone": "1-833-583-2583",
+  "published": true,
+  "rating": 4.4,
+  "region": "Ontario",
+  "resortId": "blue-mountain",
+  "ticketUrl": "https://www.bluemountain.ca/plan-your-trip/day-tickets/winter-lift-tickets",
+  "tollFree": "1-833-583-2583",
+  "website": "https://www.bluemountain.ca/"
+}

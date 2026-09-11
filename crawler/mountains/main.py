@@ -14,13 +14,12 @@ RESORT_SCRIPTS = {
         "json_generators/rentals.py",
         "json_generators/weather-and-status.py",
     ),
-    # ERROR
-    # "bluemountain": (
-        # "hours-of-operation.py",
-        # "lift-rates.py",
-        # "rentals.py",
-        # "weather-and-status.py",
-    # ),
+    "bluemountain": (
+        "json_generators/hours-of-operation.py",
+        "json_generators/lift-rates.py",
+        "json_generators/rentals.py",
+        "json_generators/weather-and-status.py",
+    ),
     "brimacombe": (
         "json_generators/hours-of-operation.py",
         "json_generators/lift-rates.py",

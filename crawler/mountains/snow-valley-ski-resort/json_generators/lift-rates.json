@@ -1,14 +1,386 @@
 {
   "rates": {
     "items": [
-      { "name": "Lift Tickets | Buy Now & Save Rates | Adult |18-64| Lift Tickets | 4 Hour Lift", "prices": [{ "label": "price", "value": "$65-$89" }, { "label": "description", "value": "Any 4hr Lift Access starting from Arrival" }] },
-      { "name": "Lift Tickets | Buy Now & Save Rates | Adult |18-64| Lift Tickets | 6 Hour Lift", "prices": [{ "label": "price", "value": "$72-$99" }, { "label": "description", "value": "Any 6hr Lift Access starting from Arrival" }] },
-      { "name": "Lift Tickets | Buy Now & Save Rates | Youth |6-17| & Senior |65+| Lift Tickets | 4 Hour Lift", "prices": [{ "label": "price", "value": "$50-$67" }] },
-      { "name": "Season Passes | Anytime Pass | Adult (18-64)", "prices": [{ "label": "price", "value": "$825" }] },
-      { "name": "Season Passes | Almost Anytime Pass | Adult (18-64)", "prices": [{ "label": "price", "value": "$539" }] }
+      {
+        "name": "Lift Tickets | Adult  |18-64| Lift Tickets | 4 Hour Lift",
+        "prices": [
+          {
+            "label": "price",
+            "value": "$80-$104"
+          },
+          {
+            "label": "description",
+            "value": "Any 4hr Lift Access starting from Arrival"
+          }
+        ]
+      },
+      {
+        "name": "Lift Tickets | Adult  |18-64| Lift Tickets | 6 Hour Lift",
+        "prices": [
+          {
+            "label": "price",
+            "value": "$87-$114"
+          },
+          {
+            "label": "description",
+            "value": "Any 6hr Lift Access starting from Arrival"
+          }
+        ]
+      },
+      {
+        "name": "Lift Tickets | Adult  |18-64| Lift Tickets | All Night Lift",
+        "prices": [
+          {
+            "label": "price",
+            "value": "$67-$82"
+          },
+          {
+            "label": "description",
+            "value": "Lift Access from 3:00PM - 9:00PM"
+          }
+        ]
+      },
+      {
+        "name": "Lift Tickets | Adult  |18-64| Lift Tickets | Adventure Learning Centre",
+        "prices": [
+          {
+            "label": "price",
+            "value": "$41-$58"
+          },
+          {
+            "label": "description",
+            "value": "Valid Open to Close"
+          }
+        ]
+      },
+      {
+        "name": "Lift Tickets | Adult  |18-64| Lift Tickets | Under 6 Years",
+        "prices": [
+          {
+            "label": "price",
+            "value": "$22"
+          },
+          {
+            "label": "description",
+            "value": "Valid Open to Close"
+          }
+        ]
+      },
+      {
+        "name": "Lift Tickets | Youth |6-17| & Senior |65+| Lift Tickets | 4 Hour Lift",
+        "prices": [
+          {
+            "label": "price",
+            "value": "$65-$82"
+          },
+          {
+            "label": "description",
+            "value": "Any 4hr Lift Access starting from Arrival"
+          }
+        ]
+      },
+      {
+        "name": "Lift Tickets | Youth |6-17| & Senior |65+| Lift Tickets | 6 Hour Lift",
+        "prices": [
+          {
+            "label": "price",
+            "value": "$72-$94"
+          },
+          {
+            "label": "description",
+            "value": "Any 6hr Lift Access starting from Arrival"
+          }
+        ]
+      },
+      {
+        "name": "Lift Tickets | Youth |6-17| & Senior |65+| Lift Tickets | All Night Lift",
+        "prices": [
+          {
+            "label": "price",
+            "value": "$61-$71"
+          },
+          {
+            "label": "description",
+            "value": "Lift Access from 3:00PM - 9:00PM"
+          }
+        ]
+      },
+      {
+        "name": "Lift Tickets | Youth |6-17| & Senior |65+| Lift Tickets | Adventure Learning Centre",
+        "prices": [
+          {
+            "label": "price",
+            "value": "$41-$58"
+          },
+          {
+            "label": "description",
+            "value": "Valid Open to Close"
+          }
+        ]
+      },
+      {
+        "name": "Lift Tickets | Youth |6-17| & Senior |65+| Lift Tickets | Under 6 Years",
+        "prices": [
+          {
+            "label": "price",
+            "value": "$22"
+          },
+          {
+            "label": "description",
+            "value": "Valid Open to Close"
+          }
+        ]
+      },
+      {
+        "name": "Lift Tickets | Adult  |18-64| Lift Tickets | 4 Hour Lift",
+        "prices": [
+          {
+            "label": "price",
+            "value": "$65-$89"
+          },
+          {
+            "label": "description",
+            "value": "Any 4hr Lift Access starting from Arrival"
+          }
+        ]
+      },
+      {
+        "name": "Lift Tickets | Adult  |18-64| Lift Tickets | 6 Hour Lift",
+        "prices": [
+          {
+            "label": "price",
+            "value": "$72-$99"
+          },
+          {
+            "label": "description",
+            "value": "Any 6hr Lift Access starting from Arrival"
+          }
+        ]
+      },
+      {
+        "name": "Lift Tickets | Adult  |18-64| Lift Tickets | All Night Lift",
+        "prices": [
+          {
+            "label": "price",
+            "value": "$52-$67"
+          },
+          {
+            "label": "description",
+            "value": "Lift Access from 3:00PM - 9:00PM"
+          }
+        ]
+      },
+      {
+        "name": "Lift Tickets | Adult  |18-64| Lift Tickets | Adventure Learning Centre",
+        "prices": [
+          {
+            "label": "price",
+            "value": "$41-$58"
+          },
+          {
+            "label": "description",
+            "value": "Valid Open to Close"
+          }
+        ]
+      },
+      {
+        "name": "Lift Tickets | Adult  |18-64| Lift Tickets | Under 6 Years",
+        "prices": [
+          {
+            "label": "price",
+            "value": "$22"
+          },
+          {
+            "label": "description",
+            "value": "Valid Open to Close"
+          }
+        ]
+      },
+      {
+        "name": "Lift Tickets | Youth |6-17| & Senior |65+| Lift Tickets | 4 Hour Lift",
+        "prices": [
+          {
+            "label": "price",
+            "value": "$50-$67"
+          },
+          {
+            "label": "description",
+            "value": "Any 4hr Lift Access starting from Arrival"
+          }
+        ]
+      },
+      {
+        "name": "Lift Tickets | Youth |6-17| & Senior |65+| Lift Tickets | 6 Hour Lift",
+        "prices": [
+          {
+            "label": "price",
+            "value": "$57-$79"
+          },
+          {
+            "label": "description",
+            "value": "Any 6hr Lift Access starting from Arrival"
+          }
+        ]
+      },
+      {
+        "name": "Lift Tickets | Youth |6-17| & Senior |65+| Lift Tickets | All Night Lift",
+        "prices": [
+          {
+            "label": "price",
+            "value": "$46-$56"
+          },
+          {
+            "label": "description",
+            "value": "Lift Access from 3:00PM - 9:00PM"
+          }
+        ]
+      },
+      {
+        "name": "Lift Tickets | Youth |6-17| & Senior |65+| Lift Tickets | Adventure Learning Centre",
+        "prices": [
+          {
+            "label": "price",
+            "value": "$41-$58"
+          },
+          {
+            "label": "description",
+            "value": "Valid Open to Close"
+          }
+        ]
+      },
+      {
+        "name": "Lift Tickets | Youth |6-17| & Senior |65+| Lift Tickets | Under 6 Years",
+        "prices": [
+          {
+            "label": "price",
+            "value": "$22"
+          },
+          {
+            "label": "description",
+            "value": "Valid Open to Close"
+          }
+        ]
+      },
+      {
+        "name": "Season Passes | Anytime Pass | Adult (18-64)",
+        "prices": [
+          {
+            "label": "price",
+            "value": "$825"
+          },
+          {
+            "label": "description",
+            "value": ""
+          }
+        ]
+      },
+      {
+        "name": "Season Passes | Anytime Pass | Youth (6-17) **¹",
+        "prices": [
+          {
+            "label": "price",
+            "value": "$789"
+          },
+          {
+            "label": "description",
+            "value": ""
+          }
+        ]
+      },
+      {
+        "name": "Season Passes | Anytime Pass | Senior (65+) ***¹",
+        "prices": [
+          {
+            "label": "price",
+            "value": "$789"
+          },
+          {
+            "label": "description",
+            "value": ""
+          }
+        ]
+      },
+      {
+        "name": "Season Passes | Anytime Pass | Under 6 ²",
+        "prices": [
+          {
+            "label": "price",
+            "value": "$109"
+          },
+          {
+            "label": "description",
+            "value": ""
+          }
+        ]
+      },
+      {
+        "name": "Season Passes | Anytime Pass | Family ‡",
+        "prices": [
+          {
+            "label": "price",
+            "value": "2699"
+          },
+          {
+            "label": "description",
+            "value": "Add Additional Family Member - $679"
+          }
+        ]
+      },
+      {
+        "name": "Season Passes | Almost Anytime Pass | Adult (18-64) ¹",
+        "prices": [
+          {
+            "label": "price",
+            "value": "$539"
+          },
+          {
+            "label": "description",
+            "value": ""
+          }
+        ]
+      },
+      {
+        "name": "Season Passes | Almost Anytime Pass | Youth (6-17) **¹",
+        "prices": [
+          {
+            "label": "price",
+            "value": "$495"
+          },
+          {
+            "label": "description",
+            "value": ""
+          }
+        ]
+      },
+      {
+        "name": "Season Passes | Almost Anytime Pass | Senior (65+) ***¹",
+        "prices": [
+          {
+            "label": "price",
+            "value": "$495"
+          },
+          {
+            "label": "description",
+            "value": ""
+          }
+        ]
+      },
+      {
+        "name": "Season Passes | Almost Anytime Pass | Family ‡¹",
+        "prices": [
+          {
+            "label": "price",
+            "value": "$1869"
+          },
+          {
+            "label": "description",
+            "value": "Add Additional Family Member - $399"
+          }
+        ]
+      }
     ]
   },
   "resortId": "snow-valley-ski-resort",
   "sourceUrl": "https://www.skisnowvalley.com/plan/ski-snowboard/tickets-and-passes/",
-  "updatedAt": 0
+  "updatedAt": 1789144484684
 }

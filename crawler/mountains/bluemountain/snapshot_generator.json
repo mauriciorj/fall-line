@@ -1,0 +1,589 @@
+{
+  "resortId": "blue-mountain",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "address": "190 Gord Canning Drive Blue Mountains, Ontario, Canada L9Y 1C2",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 44.55091707586931,
+          "lng": -80.31056434810445
+        },
+        "country": "Canada",
+        "email": "mail@bluemountain.ca",
+        "googleMapsUrl": "https://maps.app.goo.gl/mX4YUs7faBFud9sX8",
+        "hasAccommodations": true,
+        "hasCrossCountry": false,
+        "hasLessons": true,
+        "hasSnowshoeing": true,
+        "hasSpa": true,
+        "hasTubing": true,
+        "hasZipline": false,
+        "phone": "1-833-583-2583",
+        "published": true,
+        "rating": 4.4,
+        "region": "Ontario",
+        "resortId": "blue-mountain",
+        "ticketUrl": "https://www.bluemountain.ca/plan-your-trip/day-tickets/winter-lift-tickets",
+        "tollFree": "1-833-583-2583",
+        "website": "https://www.bluemountain.ca/",
+        "name": "Blue Mountain",
+        "tracksSummary": {
+          "black": 0,
+          "blue": 0,
+          "doubleBlack": 0,
+          "freeStyle": 0,
+          "green": 0
+        },
+        "dayTicketPrice": 85
+      }
+    },
+    {
+      "table": "resortHours",
+      "content": {
+        "hours": [
+          {
+            "name": "Dining Hours | Brunch",
+            "hours": [
+              {
+                "day": "DAILY",
+                "time": "7:30AM - 12PM"
+              }
+            ]
+          },
+          {
+            "name": "Dining Hours | Dinner",
+            "hours": [
+              {
+                "day": "SUN. - THURS.",
+                "time": "CLOSED"
+              },
+              {
+                "day": "FRI. & SAT.",
+                "time": "5PM - 9PM"
+              }
+            ]
+          },
+          {
+            "name": "Dining Hours | Blue Mountain Inn | As Of June 27",
+            "hours": [
+              {
+                "day": "DAILY",
+                "time": "11AM - 9PM"
+              }
+            ]
+          },
+          {
+            "name": "Dining Hours | Grand Central Lodge | As Of Sep. 8",
+            "hours": [
+              {
+                "day": "DAILY",
+                "time": "11AM - 5PM"
+              },
+              {
+                "day": "MON. - FRI.",
+                "time": "CLOSED"
+              },
+              {
+                "day": "SAT. & SUN.",
+                "time": "11AM - 5PM"
+              }
+            ]
+          },
+          {
+            "name": "Dining Hours | Blue Mountain Village",
+            "hours": [
+              {
+                "day": "SUN. - THURS.",
+                "time": "7:30AM - 7:30PM"
+              },
+              {
+                "day": "FRI. & SAT.",
+                "time": "7:30AM - 9PM"
+              }
+            ]
+          },
+          {
+            "name": "Dining Hours | Golf | As Of May 16",
+            "hours": [
+              {
+                "day": "DAILY",
+                "time": "8AM - 7PM"
+              }
+            ]
+          },
+          {
+            "name": "Shopping Hours | Blue Mountain Supply Co.",
+            "hours": [
+              {
+                "day": "SUN. - THURS.",
+                "time": "10AM - 6PM"
+              },
+              {
+                "day": "FRI. & SAT.",
+                "time": "10AM - 7PM"
+              }
+            ]
+          },
+          {
+            "name": "Shopping Hours | The North Face",
+            "hours": [
+              {
+                "day": "SUN. - THURS.",
+                "time": "10AM - 6PM"
+              },
+              {
+                "day": "FRI. & SAT.",
+                "time": "10AM - 7PM"
+              }
+            ]
+          },
+          {
+            "name": "Shopping Hours | Red Devil Sports",
+            "hours": [
+              {
+                "day": "SUN. - THURS.",
+                "time": "10AM - 6PM"
+              },
+              {
+                "day": "FRI. & SAT.",
+                "time": "10AM - 7PM"
+              }
+            ]
+          },
+          {
+            "name": "Guest Services | Hiking Trails | As Of May 15",
+            "hours": [
+              {
+                "day": "DAILY",
+                "time": "9AM - 9PM"
+              }
+            ]
+          }
+        ],
+        "resortId": "blue-mountain",
+        "sourceUrl": "https://www.bluemountain.ca/mountain/hours",
+        "updatedAt": 1789146368917
+      }
+    },
+    {
+      "table": "resortRates",
+      "content": {
+        "rates": {
+          "items": [
+            {
+              "name": "Table_1 | Tyke (4 & Under)",
+              "prices": [
+                {
+                  "label": "In-Season Midweek MONDAY - THURSDAY ONLINE WALKUP",
+                  "value": "From $27 19,85"
+                },
+                {
+                  "label": "In-Season Peak Times FRIDAY - SUNDAY ONLINE WALKUP",
+                  "value": "From $36 26,47"
+                },
+                {
+                  "label": "Late Season MAR. 23 - 29 ONLINE WALKUP",
+                  "value": "From $36 26,47"
+                }
+              ]
+            },
+            {
+              "name": "Table_1 | Youth (5 - 17)",
+              "prices": [
+                {
+                  "label": "In-Season Midweek MONDAY - THURSDAY ONLINE WALKUP",
+                  "value": "From $74 54,40"
+                },
+                {
+                  "label": "In-Season Peak Times FRIDAY - SUNDAY ONLINE WALKUP",
+                  "value": "From $98 72,04"
+                }
+              ]
+            },
+            {
+              "name": "Table_1 | Adult (18 - 64)",
+              "prices": [
+                {
+                  "label": "In-Season Midweek MONDAY - THURSDAY ONLINE WALKUP",
+                  "value": "From $85 62,49"
+                },
+                {
+                  "label": "In-Season Peak Times FRIDAY - SUNDAY ONLINE WALKUP",
+                  "value": "From $114 83,81"
+                },
+                {
+                  "label": "Late Season MAR. 23 - 29 ONLINE WALKUP",
+                  "value": "From $100 73,52"
+                }
+              ]
+            },
+            {
+              "name": "Table_1 | Senior (65+)",
+              "prices": [
+                {
+                  "label": "In-Season Midweek MONDAY - THURSDAY ONLINE WALKUP",
+                  "value": "From $74 54,40"
+                },
+                {
+                  "label": "In-Season Peak Times FRIDAY - SUNDAY ONLINE WALKUP",
+                  "value": "From $98 72,04"
+                }
+              ]
+            },
+            {
+              "name": "Table_2 | Youth (5 - 17)",
+              "prices": [
+                {
+                  "label": "In-Season Midweek ONLINE WALKUP",
+                  "value": "From $44 32,35"
+                }
+              ]
+            },
+            {
+              "name": "Table_2 | Adult (18 - 64)",
+              "prices": [
+                {
+                  "label": "In-Season Midweek ONLINE WALKUP",
+                  "value": "From $47 34,55"
+                }
+              ]
+            },
+            {
+              "name": "Table_3 | Adult (18 - 64)",
+              "prices": [
+                {
+                  "label": "2 OF 3 DAYS",
+                  "value": "From $106 77,93"
+                },
+                {
+                  "label": "3 OF 4 DAYS",
+                  "value": "From $159 116,89"
+                },
+                {
+                  "label": "4 OF 5 DAYS",
+                  "value": "From $212 155,85"
+                }
+              ]
+            }
+          ]
+        },
+        "resortId": "blue-mountain",
+        "sourceUrl": "https://www.bluemountain.ca/plan-your-trip/day-tickets/winter-lift-tickets",
+        "updatedAt": 0
+      }
+    },
+    {
+      "table": "resortRentals",
+      "content": {
+        "rentals": {
+          "sections": [
+            {
+              "name": "adult_ski",
+              "items": [
+                {
+                  "name": "adult_ski",
+                  "prices": [
+                    {
+                      "label": "url",
+                      "value": "https://www.bluemountain.ca/plan-your-trip/rentals/adult-ski"
+                    },
+                    {
+                      "label": "title",
+                      "value": "Standard Adult Ski Rental"
+                    },
+                    {
+                      "label": "description",
+                      "value": "No gear? No problem! Blue Mountain Rentals has the largest fleet in the area, featuring top snow sports brands like Rossignol skis."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "adult_snowboard",
+              "items": [
+                {
+                  "name": "adult_snowboard",
+                  "prices": [
+                    {
+                      "label": "url",
+                      "value": "https://www.bluemountain.ca/plan-your-trip/rentals/adult-snowboard"
+                    },
+                    {
+                      "label": "note",
+                      "value": "Dynamic pricing requires date selection on website"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "youth_ski",
+              "items": [
+                {
+                  "name": "youth_ski",
+                  "prices": [
+                    {
+                      "label": "url",
+                      "value": "https://www.bluemountain.ca/plan-your-trip/rentals/youth-ski"
+                    },
+                    {
+                      "label": "note",
+                      "value": "Dynamic pricing requires date selection on website"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "youth_snowboard",
+              "items": [
+                {
+                  "name": "youth_snowboard",
+                  "prices": [
+                    {
+                      "label": "url",
+                      "value": "https://www.bluemountain.ca/plan-your-trip/rentals/youth-snowboard"
+                    },
+                    {
+                      "label": "note",
+                      "value": "Dynamic pricing requires date selection on website"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "resortId": "blue-mountain",
+        "sourceUrl": "https://www.bluemountain.ca/plan-your-trip/rentals/adult-ski",
+        "updatedAt": 1789146468252
+      }
+    },
+    {
+      "table": "weatherAndStatus",
+      "content": {
+        "lifts": [
+          {
+            "name": "Open-Air Gondola",
+            "status": "Open",
+            "hours": "9:00 AM—9:00 PM"
+          }
+        ],
+        "trails": [
+          {
+            "name": "[A] The Grind",
+            "status": "Closed",
+            "area": "orchard"
+          },
+          {
+            "name": "[C] Early Exit",
+            "status": "Open",
+            "area": "orchard"
+          },
+          {
+            "name": "[D] Back At It",
+            "status": "Open",
+            "area": "orchard"
+          },
+          {
+            "name": "[G] Up & Over",
+            "status": "Closed",
+            "area": "orchard"
+          },
+          {
+            "name": "[J] Buttered Up",
+            "status": "Closed",
+            "area": "orchard"
+          },
+          {
+            "name": "Cascade",
+            "status": "Open",
+            "area": "south"
+          },
+          {
+            "name": "Green World",
+            "status": "Open for Multi Use",
+            "area": "south"
+          },
+          {
+            "name": "Lower Green",
+            "status": "Open",
+            "area": "village"
+          },
+          {
+            "name": "Memory Lane",
+            "status": "Open",
+            "area": "village"
+          },
+          {
+            "name": "R-Shore",
+            "status": "Closed",
+            "area": "village"
+          },
+          {
+            "name": "Route 66",
+            "status": "Open",
+            "area": "village"
+          },
+          {
+            "name": "Sticks & Stones",
+            "status": "Open",
+            "area": "village"
+          },
+          {
+            "name": "Time Line",
+            "status": "Open",
+            "area": "village"
+          },
+          {
+            "name": "Village Way",
+            "status": "Open",
+            "area": "village"
+          },
+          {
+            "name": "Apple Bowl Lookout",
+            "status": "Open",
+            "area": "valley"
+          },
+          {
+            "name": "Pathway to Village",
+            "status": "Open",
+            "area": "valley"
+          },
+          {
+            "name": "1940",
+            "status": "Open",
+            "area": "north"
+          },
+          {
+            "name": "Cagey",
+            "status": "Open for Hiking",
+            "area": "north"
+          },
+          {
+            "name": "Happy Haul",
+            "status": "Open",
+            "area": "north"
+          },
+          {
+            "name": "Outer Limits",
+            "status": "Open for Hiking",
+            "area": "north"
+          }
+        ],
+        "terrainParks": [],
+        "rawData": {
+          "conditions": {
+            "temperature": "25°C",
+            "last_updated": "Updated 5 minutes ago"
+          },
+          "lifts": [
+            {
+              "name": "Open-Air Gondola",
+              "hours": "9:00 AM—9:00 PM",
+              "status": "Open"
+            }
+          ],
+          "trails": {
+            "orchard": [
+              {
+                "name": "[A] The Grind",
+                "status": "Closed"
+              },
+              {
+                "name": "[C] Early Exit",
+                "status": "Open"
+              },
+              {
+                "name": "[D] Back At It",
+                "status": "Open"
+              },
+              {
+                "name": "[G] Up & Over",
+                "status": "Closed"
+              },
+              {
+                "name": "[J] Buttered Up",
+                "status": "Closed"
+              }
+            ],
+            "south": [
+              {
+                "name": "Cascade",
+                "status": "Open"
+              },
+              {
+                "name": "Green World",
+                "status": "Open for Multi Use"
+              }
+            ],
+            "village": [
+              {
+                "name": "Lower Green",
+                "status": "Open"
+              },
+              {
+                "name": "Memory Lane",
+                "status": "Open"
+              },
+              {
+                "name": "R-Shore",
+                "status": "Closed"
+              },
+              {
+                "name": "Route 66",
+                "status": "Open"
+              },
+              {
+                "name": "Sticks & Stones",
+                "status": "Open"
+              },
+              {
+                "name": "Time Line",
+                "status": "Open"
+              },
+              {
+                "name": "Village Way",
+                "status": "Open"
+              }
+            ],
+            "valley": [
+              {
+                "name": "Apple Bowl Lookout",
+                "status": "Open"
+              },
+              {
+                "name": "Pathway to Village",
+                "status": "Open"
+              }
+            ],
+            "north": [
+              {
+                "name": "1940",
+                "status": "Open"
+              },
+              {
+                "name": "Cagey",
+                "status": "Open for Hiking"
+              },
+              {
+                "name": "Happy Haul",
+                "status": "Open"
+              },
+              {
+                "name": "Outer Limits",
+                "status": "Open for Hiking"
+              }
+            ]
+          }
+        },
+        "resortId": "blue-mountain",
+        "sourceUrl": "https://www.bluemountain.ca/mountain/mountain-report",
+        "updatedAt": 1789146481013
+      }
+    }
+  ]
+}
