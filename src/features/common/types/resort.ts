@@ -16,12 +16,14 @@ export interface ResortHourSection {
   hours?: ResortHourRow[];
 }
 
+export interface Coordinates {
+  lat: number;
+  lng: number;
+}
+
 export interface Resort {
   address: string;
-  coordinates?: {
-    lat: number;
-    lng: number;
-  };
+  coordinates?: Coordinates;
   dayTicketPrice: number;
   email: string;
   googleMapsUrl: string;

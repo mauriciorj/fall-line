@@ -20,7 +20,7 @@ import { useLanguage } from "@/src/i18n";
 import Toggle from "@/components/filter/toggle";
 
 export interface FilterState {
-  sortBy: "price" | "rating";
+  sortBy: "price" | "rating" | "distance";
   distanceRange: [number, number];
   activities: {
     accommodations: boolean;
@@ -40,6 +40,7 @@ interface FilterProps {
   locations: LocationOption[];
   selectedLocation: LocationOption | null;
   setLocation: (location: LocationOption) => void;
+  canSortByDistance: boolean;
 }
 
 const Filter = ({
@@ -50,6 +51,7 @@ const Filter = ({
   locations,
   selectedLocation,
   setLocation,
+  canSortByDistance,
 }: FilterProps) => {
   const { t } = useLanguage();
   const isMobile = useIsMobile();
@@ -164,6 +166,19 @@ const Filter = ({
               >
                 {t("rating")}
               </button>
+              {canSortByDistance && (
+                <button
+                  onClick={() => updateLocalFilter("sortBy", "distance")}
+                  className={cn(
+                    "flex-1 px-4 py-2.5 text-sm font-medium rounded-lg transition-all duration-200",
+                    localFilters.sortBy === "distance"
+                      ? "bg-primary text-primary-foreground shadow-sm"
+                      : "bg-muted/50 text-muted-foreground hover:text-foreground hover:bg-muted"
+                  )}
+                >
+                  {t("distance")}
+                </button>
+              )}
             </div>
           </div>
 

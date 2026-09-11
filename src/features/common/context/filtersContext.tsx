@@ -15,7 +15,8 @@ import { api } from "@/convex/_generated/api";
 import { FilterState } from "@/src/features/common/components/filter";
 import { toResort } from "@/utils/convexResort";
 import { LocationOption, locationKey } from "@/types/location";
-import { Resort } from "@/types/resort";
+import { Coordinates, Resort } from "@/types/resort";
+import { calculateDistanceKm } from "@/src/features/common/utils/distance";
 
 interface FiltersContextType {
   filters: FilterState;
@@ -27,6 +28,7 @@ interface FiltersContextType {
   locations: LocationOption[];
   selectedLocation: LocationOption | null;
   setLocation: (location: LocationOption) => void;
+  userCoordinates: Coordinates | null;
   filteredResorts: Resort[];
   isLoading: boolean;
   isFiltersActive: boolean;
@@ -70,6 +72,9 @@ export function FiltersProvider({ children }: { children: ReactNode }) {
   const [selectedResort, setSelectedResort] = useState<string | null>(null);
   const [selectedLocation, setSelectedLocation] =
     useState<LocationOption | null>(null);
+  const [userCoordinates, setUserCoordinates] = useState<Coordinates | null>(
+    null,
+  );
   const locationInitialized = useRef(false);
 
   const [filters, setFilters] = useState<FilterState>({
@@ -103,6 +108,11 @@ export function FiltersProvider({ children }: { children: ReactNode }) {
     const savedLocation = locations.find(
       (location) => locationKey(location) === savedKey,
     );
+    const fallbackLocation =
+      locations.find(
+        (location) =>
+          location.country === "Canada" && location.region === "Ontario",
+      ) ?? locations[0];
     const commitLocation = (location: LocationOption) => {
       locationInitialized.current = true;
       window.localStorage.setItem(
@@ -111,42 +121,42 @@ export function FiltersProvider({ children }: { children: ReactNode }) {
       );
       window.setTimeout(() => setSelectedLocation(location), 0);
     };
+    const hasSavedLocation = Boolean(savedLocation);
 
     if (savedLocation) {
       commitLocation(savedLocation);
-      return;
-    }
-
-    const fallbackLocation =
-      locations.find(
-        (location) =>
-          location.country === "Canada" && location.region === "Ontario",
-      ) ?? locations[0];
-
-    const selectLocation = commitLocation;
-
-    if (
-      !isGoogleMapsKeyAvailable ||
-      googleMapsLoadError ||
-      !isGoogleMapsLoaded
-    ) {
-      if (!isGoogleMapsKeyAvailable || googleMapsLoadError) {
-        selectLocation(fallbackLocation);
-      }
-      return;
     }
 
     if (!navigator.geolocation) {
-      selectLocation(fallbackLocation);
+      if (!hasSavedLocation) {
+        commitLocation(fallbackLocation);
+      }
       return;
     }
 
     navigator.geolocation.getCurrentPosition(
       ({ coords }) => {
+        const coordinates = {
+          lat: coords.latitude,
+          lng: coords.longitude,
+        };
+        setUserCoordinates(coordinates);
+
+        if (hasSavedLocation) {
+          return;
+        }
+
+        if (!isGoogleMapsKeyAvailable || googleMapsLoadError) {
+          commitLocation(fallbackLocation);
+          return;
+        }
+
+        if (!isGoogleMapsLoaded) {
+          return;
+        }
+
         new google.maps.Geocoder().geocode(
-          {
-            location: { lat: coords.latitude, lng: coords.longitude },
-          },
+          { location: coordinates },
           (results, status) => {
             if (status === "OK" && results?.[0]) {
               const components = results[0].address_components;
@@ -160,14 +170,18 @@ export function FiltersProvider({ children }: { children: ReactNode }) {
                 country && region
                   ? findLocation(locations, country, region)
                   : undefined;
-              selectLocation(detected ?? fallbackLocation);
+              commitLocation(detected ?? fallbackLocation);
               return;
             }
-            selectLocation(fallbackLocation);
+            commitLocation(fallbackLocation);
           },
         );
       },
-      () => selectLocation(fallbackLocation),
+      () => {
+        if (!hasSavedLocation) {
+          commitLocation(fallbackLocation);
+        }
+      },
       { enableHighAccuracy: false, maximumAge: 300000, timeout: 10000 },
     );
   }, [
@@ -216,11 +230,22 @@ export function FiltersProvider({ children }: { children: ReactNode }) {
       if (filters.sortBy === "rating") {
         return b.rating - a.rating;
       }
+
+      if (filters.sortBy === "distance" && userCoordinates) {
+        const distanceA = a.coordinates
+          ? calculateDistanceKm(userCoordinates, a.coordinates)
+          : Number.POSITIVE_INFINITY;
+        const distanceB = b.coordinates
+          ? calculateDistanceKm(userCoordinates, b.coordinates)
+          : Number.POSITIVE_INFINITY;
+        return distanceA - distanceB;
+      }
+
       return a.dayTicketPrice - b.dayTicketPrice;
     });
 
     return result;
-  }, [allResorts, filters]);
+  }, [allResorts, filters, userCoordinates]);
 
   const isLoading =
     dbLocations === undefined ||
@@ -262,6 +287,7 @@ export function FiltersProvider({ children }: { children: ReactNode }) {
         locationKey(location),
       );
     },
+    userCoordinates,
     filteredResorts,
     isLoading,
     isFiltersActive,

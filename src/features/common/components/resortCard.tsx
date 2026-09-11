@@ -2,13 +2,15 @@
 
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { Star, CableCar } from "lucide-react";
+import { Star, CableCar, MapPin } from "lucide-react";
 import TracksBreakdown from "@/components/tracksBreakdown";
 import ActivitiesList from "@/components/activitiesList";
 import { Resort } from "@/types/resort";
 import { getResortHeroImage } from "@/utils/convexResort";
 import { cn } from "@/utils/utils";
 import { useLanguage } from "@/src/i18n";
+import { useFiltersContext } from "@/context/filtersContext";
+import { calculateDistanceKm } from "@/src/features/common/utils/distance";
 
 import skiIcon from "@/icons/ski-svgrepo-com.svg";
 import snowboardIcon from "@/icons/snowboard-1-svgrepo-com.svg";
@@ -26,7 +28,12 @@ const ResortCard = ({
   setHoveredResort,
 }: ResortCardProps) => {
   const { t } = useLanguage();
+  const { userCoordinates } = useFiltersContext();
   const router = useRouter();
+  const distance =
+    userCoordinates && resort.coordinates
+      ? calculateDistanceKm(userCoordinates, resort.coordinates)
+      : null;
 
   const handleClick = () => {
     router.push(`/place/${resort.resortId}`);
@@ -59,11 +66,19 @@ const ResortCard = ({
       {/* Content */}
       <div className="p-5 space-y-4">
         {/* Resort Name */}
-        <div className="w-full flex flex-row justify-between">
-          <h3 className="font-serif text-xl font-medium text-foreground leading-tight">
-            {resort.name}
-          </h3>
-          <div className="flex flex-row justify-center items-center">
+        <div className="w-full flex flex-row justify-between gap-3">
+          <div className="min-w-0">
+            <h3 className="font-serif text-xl font-medium text-foreground leading-tight">
+              {resort.name}
+            </h3>
+            {distance !== null && (
+              <p className="mt-1 flex items-center gap-1 text-xs text-muted-foreground">
+                <MapPin className="h-3 w-3" />
+                {distance.toFixed(1)} {t("distanceAway")}
+              </p>
+            )}
+          </div>
+          <div className="flex shrink-0 flex-row justify-center items-center">
             <Star className="w-3.5 h-3.5" />
             <p className="text-sm font-medium text-foreground ml-1">
               {resort.rating}

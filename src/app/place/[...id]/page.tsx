@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useRouter, useParams } from "next/navigation";
 import { useQuery } from "convex/react";
-import { ArrowLeft, Ticket } from "lucide-react";
+import { ArrowLeft, MapPin, Ticket } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { api } from "@/convex/_generated/api";
 import {
@@ -17,9 +17,12 @@ import PricingSection from "@/src/features/place/component/pricingSection";
 import TerrainSection from "@/src/features/place/component/terrainSection";
 import TracksSection from "@/place/component/tracksSection";
 import { useLanguage } from "@/src/i18n";
+import { useFiltersContext } from "@/context/filtersContext";
+import { calculateDistanceKm } from "@/src/features/common/utils/distance";
 
 const ResortDetail = () => {
   const { t } = useLanguage();
+  const { userCoordinates } = useFiltersContext();
   const { id } = useParams();
   const router = useRouter();
   const resortId = Array.isArray(id) ? id[0] : id;
@@ -38,6 +41,10 @@ const ResortDetail = () => {
   const resort = toResort(dbResort, {
     trackConditions: toTrackConditions(dbWeatherAndStatus),
   });
+  const distance =
+    userCoordinates && resort?.coordinates
+      ? calculateDistanceKm(userCoordinates, resort.coordinates)
+      : null;
 
   if (dbResort === undefined) {
     return (
@@ -78,6 +85,12 @@ const ResortDetail = () => {
           <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground">
             {resort.name}
           </h1>
+          {distance !== null && (
+            <p className="mt-2 flex items-center gap-1 text-sm text-foreground/80">
+              <MapPin className="h-4 w-4" />
+              {distance.toFixed(1)} {t("distanceAway")}
+            </p>
+          )}
         </div>
       </div>
 

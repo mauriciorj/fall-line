@@ -4,10 +4,11 @@ import { useMemo } from "react";
 import { GoogleMap, useLoadScript, MarkerF } from "@react-google-maps/api";
 import MapPlaceholder from "@/components/resortMap/mapPlaceholder";
 import { useLanguage } from "@/src/i18n";
-import { Resort } from "@/types/resort";
+import { Coordinates, Resort } from "@/types/resort";
 
 interface ResortMapProps {
   hoveredResort: string | null;
+  userCoordinates: Coordinates | null;
   resorts: Resort[];
   selectedResort: string | null;
   setHoveredResort: (id: string | null) => void;
@@ -16,6 +17,7 @@ interface ResortMapProps {
 
 const ResortMap = ({
   hoveredResort,
+  userCoordinates,
   resorts,
   selectedResort,
   setHoveredResort,
@@ -60,10 +62,24 @@ const ResortMap = ({
   return (
     <GoogleMap
       mapContainerStyle={containerStyle}
-      center={defaultCenter}
+      center={userCoordinates ?? defaultCenter}
       zoom={8}
       options={options}
     >
+      {userCoordinates && (
+        <MarkerF
+          position={userCoordinates}
+          title={t("yourLocation")}
+          icon={{
+            path: google.maps.SymbolPath.CIRCLE,
+            fillColor: "#2563eb",
+            fillOpacity: 1,
+            strokeColor: "#ffffff",
+            strokeWeight: 2,
+            scale: 8,
+          }}
+        />
+      )}
       {resorts.filter((resort) => resort.coordinates).map((resort) => (
         <MarkerF
           icon={{

@@ -18,6 +18,7 @@ const Index = () => {
     isLoading,
     hoveredResort,
     selectedResort,
+    userCoordinates,
     setHoveredResort,
     setSelectedResort,
   } = useFiltersContext();
@@ -30,6 +31,7 @@ const Index = () => {
             <ResortMap
               hoveredResort={hoveredResort}
               selectedResort={selectedResort}
+              userCoordinates={userCoordinates}
               setHoveredResort={setHoveredResort}
               setSelectedResort={setSelectedResort}
               resorts={filteredResorts}
@@ -65,6 +67,7 @@ const Index = () => {
               hoveredResort={hoveredResort}
               resorts={filteredResorts}
               selectedResort={selectedResort}
+              userCoordinates={userCoordinates}
               setHoveredResort={setHoveredResort}
               setSelectedResort={setSelectedResort}
             />

@@ -22,6 +22,7 @@ const Header = () => {
     locations,
     selectedLocation,
     setLocation,
+    userCoordinates,
   } = useFiltersContext();
 
   if (isMobile === undefined) {
@@ -84,6 +85,7 @@ const Header = () => {
               locations={locations}
               selectedLocation={selectedLocation}
               setLocation={setLocation}
+              canSortByDistance={Boolean(userCoordinates)}
             />
             <Menu />
           </div>
@@ -102,6 +104,7 @@ const Header = () => {
               locations={locations}
               selectedLocation={selectedLocation}
               setLocation={setLocation}
+              canSortByDistance={Boolean(userCoordinates)}
             />
             <Menu />
           </div>
