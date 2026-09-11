@@ -22,6 +22,14 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { Es, Fr, Us } from "react-flags-select";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 const Menu = () => {
   const { locale, setLocale, t } = useLanguage();
@@ -32,7 +40,11 @@ const Menu = () => {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="default" size="icon" className="h-9 w-9 ml-5">
+        <Button
+          variant="default"
+          size="icon"
+          className="h-9 w-9 shrink-0 md:ml-5"
+        >
           <MenuIcon className="h-4 w-4" />
         </Button>
       </SheetTrigger>
@@ -40,22 +52,38 @@ const Menu = () => {
         <SheetHeader>
           <SheetTitle className="text-left">{t("menu")}</SheetTitle>
         </SheetHeader>
-        <div className="mt-6 space-y-2">
-          <label htmlFor="language-select" className="text-xs font-medium text-muted-foreground">
+        <div className="mx-4 mt-2 space-y-2">
+          <label
+            htmlFor="language-select"
+            className="text-xs font-medium text-foreground"
+          >
             {t("language")}
           </label>
-          <select
-            id="language-select"
+          <Select
             value={locale}
-            onChange={(event) => setLocale(event.target.value as "en" | "fr" | "es")}
-            className="w-full rounded-md border border-border bg-background px-3 py-2 text-sm text-foreground"
+            onValueChange={(value) => setLocale(value as "en" | "fr" | "es")}
           >
-            {localeOptions.map((option) => (
-              <option key={option.value} value={option.value}>
-                {t(option.labelKey)}
-              </option>
-            ))}
-          </select>
+            <SelectTrigger
+              id="language-select"
+              className="w-full bg-background text-foreground"
+            >
+              <SelectValue />
+            </SelectTrigger>
+            <SelectContent className="bg-background">
+              {localeOptions.map((option) => (
+                <SelectItem key={option.value} value={option.value}>
+                  {option.value === "en" ? (
+                    <Us />
+                  ) : option.value === "fr" ? (
+                    <Fr />
+                  ) : (
+                    <Es />
+                  )}
+                  {t(option.labelKey)}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
         </div>
         <nav className="mt-6 flex flex-col gap-1">
           <Link

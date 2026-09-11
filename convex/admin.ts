@@ -34,13 +34,6 @@ export const isAdmin = query({
   returns: v.object({ email: v.optional(v.string()), isAdmin: v.boolean() }),
   handler: async (ctx) => {
     const email = identityEmail(await ctx.auth.getUserIdentity());
-    console.log('')
-    console.log('')
-    console.log('')
-    console.log("await ctx.auth.getUserIdentity() => ", await ctx.auth.getUserIdentity())
-    console.log('email => ', email)
-    console.log('')
-    console.log('')
     if (!email) return { email: undefined, isAdmin: false };
     const admins = await ctx.db.query("adminEmails").collect();
     const admin = admins.find((record) => record.email.trim().toLowerCase() === email);

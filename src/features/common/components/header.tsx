@@ -24,13 +24,27 @@ const Header = () => {
     setLocation,
   } = useFiltersContext();
 
+  if (isMobile === undefined) {
+    return (
+      <header className="sticky top-0 z-50 bg-card border-b border-border">
+        <div className="px-6 py-4 flex items-center">
+          <Link href="/" aria-label={t("backHome")} className="text-primary">
+            <Mountain className="w-10 h-10" />
+          </Link>
+        </div>
+      </header>
+    );
+  }
+
   if (pathname.startsWith("/blog")) {
     return (
       <header className="sticky top-0 z-50 bg-card border-b border-border">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <Link href="/blog" className="flex items-center gap-3 text-primary">
             <Mountain className="h-8 w-8" />
-            <span className="font-serif text-2xl font-semibold">{t("blog")}</span>
+            <span className="font-serif text-2xl font-semibold">
+              {t("blog")}
+            </span>
           </Link>
           <div className="flex items-center gap-3">
             <Link
@@ -61,7 +75,7 @@ const Header = () => {
           </span>
         </Link>
         {isMobile ? (
-          <>
+          <div className="flex min-w-0 items-center gap-2">
             <Filter
               filters={filters}
               onChange={setFilters}
@@ -72,7 +86,7 @@ const Header = () => {
               setLocation={setLocation}
             />
             <Menu />
-          </>
+          </div>
         ) : (
           <div className="flex flex-row">
             <LocationDropdown

@@ -99,7 +99,7 @@ const Filter = ({
         asChild
         className={
           isMobile
-            ? "fixed top-4 left-[40%] z-50"
+            ? "relative z-50"
             : "xs:relative md:fixed top-4 left-[calc(50%-20px)] z-50"
         }
       >

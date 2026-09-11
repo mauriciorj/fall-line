@@ -1,6 +1,13 @@
 "use client";
 
-import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
+import {
+  createContext,
+  useContext,
+  useEffect,
+  useMemo,
+  useState,
+  type ReactNode,
+} from "react";
 
 export type Locale = "en" | "fr" | "es";
 
@@ -16,8 +23,8 @@ const translations: Record<Locale, Record<string, string>> = {
     privacy: "Privacy Policy",
     language: "Language",
     english: "English",
-    french: "Français",
-    spanish: "Español",
+    french: "French",
+    spanish: "Spanish",
     backHome: "Back to Ontario Ski Guide",
     filters: "Filters and Sort",
     filterResorts: "Filter Resorts",
@@ -82,13 +89,15 @@ const translations: Record<Locale, Record<string, string>> = {
     next: "Next",
     contactDescription: "Questions, feedback, or support.",
     getInTouch: "Get in touch",
-    contactBody: "Contact us about resort information, corrections, feedback, or help using Ontario Ski Guide.",
+    contactBody:
+      "Contact us about resort information, corrections, feedback, or help using Ontario Ski Guide.",
     lastUpdated: "Last updated: September 8, 2026",
     termsTitle: "Terms of Service",
     privacyTitle: "Privacy Policy",
     blog: "Blog",
     blogTitle: "Ski stories and mountain news",
-    blogDescription: "Guides, updates, and stories from Ontario’s ski community.",
+    blogDescription:
+      "Guides, updates, and stories from Ontario’s ski community.",
     backToResorts: "Back to resorts",
     resortList: "Resort list",
     signOut: "Sign out",
@@ -104,9 +113,9 @@ const translations: Record<Locale, Record<string, string>> = {
     terms: "Conditions d’utilisation",
     privacy: "Politique de confidentialité",
     language: "Langue",
-    english: "English",
+    english: "Anglais",
     french: "Français",
-    spanish: "Español",
+    spanish: "Espagnol",
     backHome: "Retour au Guide de ski de l’Ontario",
     filters: "Filtres et tri",
     filterResorts: "Filtrer les stations",
@@ -171,13 +180,15 @@ const translations: Record<Locale, Record<string, string>> = {
     next: "Suivant",
     contactDescription: "Questions, commentaires ou assistance.",
     getInTouch: "Nous contacter",
-    contactBody: "Contactez-nous pour toute question sur les stations, correction, commentaire ou aide concernant le Guide de ski de l’Ontario.",
+    contactBody:
+      "Contactez-nous pour toute question sur les stations, correction, commentaire ou aide concernant le Guide de ski de l’Ontario.",
     lastUpdated: "Dernière mise à jour : 8 septembre 2026",
     termsTitle: "Conditions d’utilisation",
     privacyTitle: "Politique de confidentialité",
     blog: "Blogue",
     blogTitle: "Histoires de ski et nouvelles de la montagne",
-    blogDescription: "Guides, nouvelles et récits de la communauté de ski de l’Ontario.",
+    blogDescription:
+      "Guides, nouvelles et récits de la communauté de ski de l’Ontario.",
     backToResorts: "Retour aux stations",
     resortList: "Liste des stations",
     signOut: "Se déconnecter",
@@ -193,8 +204,8 @@ const translations: Record<Locale, Record<string, string>> = {
     terms: "Términos de servicio",
     privacy: "Política de privacidad",
     language: "Idioma",
-    english: "English",
-    french: "Français",
+    english: "Inglés",
+    french: "Francés",
     spanish: "Español",
     backHome: "Volver a la Guía de esquí de Ontario",
     filters: "Filtros y ordenación",
@@ -260,13 +271,15 @@ const translations: Record<Locale, Record<string, string>> = {
     next: "Siguiente",
     contactDescription: "Preguntas, comentarios o asistencia.",
     getInTouch: "Contáctenos",
-    contactBody: "Contáctenos sobre información de estaciones, correcciones, comentarios o ayuda con la Guía de esquí de Ontario.",
+    contactBody:
+      "Contáctenos sobre información de estaciones, correcciones, comentarios o ayuda con la Guía de esquí de Ontario.",
     lastUpdated: "Última actualización: 8 de septiembre de 2026",
     termsTitle: "Términos de servicio",
     privacyTitle: "Política de privacidad",
     blog: "Blog",
     blogTitle: "Historias de esquí y noticias de montaña",
-    blogDescription: "Guías, novedades e historias de la comunidad de esquí de Ontario.",
+    blogDescription:
+      "Guías, novedades e historias de la comunidad de esquí de Ontario.",
     backToResorts: "Volver a las estaciones",
     resortList: "Lista de estaciones",
     signOut: "Cerrar sesión",
@@ -286,8 +299,12 @@ interface LanguageContextValue {
 const LanguageContext = createContext<LanguageContextValue | null>(null);
 
 function detectLocale(): Locale {
-  const browserLocales = navigator.languages?.length ? navigator.languages : [navigator.language];
-  const match = browserLocales.find((value) => supportedLocales.includes(value.slice(0, 2) as Locale));
+  const browserLocales = navigator.languages?.length
+    ? navigator.languages
+    : [navigator.language];
+  const match = browserLocales.find((value) =>
+    supportedLocales.includes(value.slice(0, 2) as Locale),
+  );
   return (match?.slice(0, 2) as Locale | undefined) ?? "en";
 }
 
@@ -295,8 +312,13 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   const [locale, setLocaleState] = useState<Locale>("en");
 
   useEffect(() => {
-    const savedLocale = window.localStorage.getItem(LOCALE_STORAGE_KEY) as Locale | null;
-    const nextLocale = savedLocale && supportedLocales.includes(savedLocale) ? savedLocale : detectLocale();
+    const savedLocale = window.localStorage.getItem(
+      LOCALE_STORAGE_KEY,
+    ) as Locale | null;
+    const nextLocale =
+      savedLocale && supportedLocales.includes(savedLocale)
+        ? savedLocale
+        : detectLocale();
     const timer = window.setTimeout(() => setLocaleState(nextLocale), 0);
     return () => window.clearTimeout(timer);
   }, []);
@@ -310,13 +332,20 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     window.localStorage.setItem(LOCALE_STORAGE_KEY, nextLocale);
   };
 
-  const value = useMemo<LanguageContextValue>(() => ({
-    locale,
-    setLocale,
-    t: (key) => translations[locale][key] ?? translations.en[key] ?? key,
-  }), [locale]);
+  const value = useMemo<LanguageContextValue>(
+    () => ({
+      locale,
+      setLocale,
+      t: (key) => translations[locale][key] ?? translations.en[key] ?? key,
+    }),
+    [locale],
+  );
 
-  return <LanguageContext.Provider value={value}>{children}</LanguageContext.Provider>;
+  return (
+    <LanguageContext.Provider value={value}>
+      {children}
+    </LanguageContext.Provider>
+  );
 }
 
 export function useLanguage() {
@@ -327,8 +356,12 @@ export function useLanguage() {
   return context;
 }
 
-export const localeOptions: Array<{ value: Locale; labelKey: string }> = [
-  { value: "en", labelKey: "english" },
-  { value: "fr", labelKey: "french" },
-  { value: "es", labelKey: "spanish" },
+export const localeOptions: Array<{
+  value: Locale;
+  labelKey: string;
+  flag: string;
+}> = [
+  { value: "en", labelKey: "english", flag: "US" },
+  { value: "fr", labelKey: "french", flag: "FR" },
+  { value: "es", labelKey: "spanish", flag: "ES" },
 ];

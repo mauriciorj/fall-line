@@ -61,6 +61,7 @@
     "react": "19.2.1",
     "react-day-picker": "^9.13.0",
     "react-dom": "19.2.1",
+    "react-flags-select": "^2.5.0",
     "react-hook-form": "^7.71.1",
     "react-resizable-panels": "^2.1.9",
     "react-scan": "^0.4.3",
