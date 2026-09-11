@@ -13,6 +13,7 @@ import {
 } from "@/utils/convexResort";
 import InfoSection from "@/src/features/place/component/infoSection";
 import LocationSection from "@/src/features/place/component/locationSection";
+import LocationMap from "@/src/features/place/component/locationMap";
 import PricingSection from "@/src/features/place/component/pricingSection";
 import TerrainSection from "@/src/features/place/component/terrainSection";
 import TracksSection from "@/place/component/tracksSection";
@@ -133,6 +134,7 @@ const ResortDetail = () => {
 
         {/* Location */}
         <LocationSection resort={resort} />
+        <LocationMap resort={resort} />
       </main>
     </div>
   );
