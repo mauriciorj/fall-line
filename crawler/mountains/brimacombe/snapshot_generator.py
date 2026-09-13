@@ -107,7 +107,15 @@ def get_day_ticket_price(rates):
 
 
 def get_rental_price(rentals, section_name, item_name):
-    for section in rentals.get("rentals", {}).get("sections", []):
+    structured_rentals = rentals.get("rentals", {})
+    if section_name == "Individual Rental Packages" and item_name == ADULT_RENTAL_NAME:
+        value = structured_rentals.get("ski", {}).get("adults")
+        if value is not None:
+            value = value.replace("$", "").replace(",", "").strip()
+            amount = float(value)
+            return int(amount) if amount.is_integer() else amount
+
+    for section in structured_rentals.get("sections", []):
         if section.get("name") != section_name:
             continue
         for item in section.get("items", []):

@@ -3,7 +3,6 @@
 import json
 import os
 import re
-import sys
 import time
 
 import truststore
@@ -13,15 +12,21 @@ truststore.inject_into_ssl()
 import requests
 from bs4 import BeautifulSoup
 
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from dtos import to_rentals_dto
-
 RESORT_ID = "horseshoe-valley-resort"
 SOURCE_URL = "https://horseshoeresort.com/ski/lift-ticket-and-rentals-pricing/"
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36"
 }
+
+
+def parse_price(value):
+    if value in (None, ""):
+        return None
+    match = re.search(r"\$?\s*(\d+(?:[.,]\d+)?)", str(value))
+    if not match:
+        return None
+    amount = float(match.group(1).replace(",", "."))
+    return f"${int(amount) if amount.is_integer() else amount:g}"
 
 
 def get_rentals():
@@ -39,8 +44,7 @@ def get_rentals():
         header_text = " ".join(headers)
         if "rental" not in heading_text.lower() and "rental" not in header_text.lower():
             continue
-        section_name = heading_text or f"rental_table_{index}"
-        section = result.setdefault(section_name, [])
+        section = result.setdefault(heading_text or f"rental_table_{index}", [])
         for row in rows[1:]:
             cells = [cell.get_text(" ", strip=True) for cell in row.find_all(["td", "th"])]
             if len(cells) < 2 or not cells[0] or not any(re.search(r"\$\d+", cell) for cell in cells):
@@ -56,9 +60,70 @@ def get_rentals():
     return result
 
 
+def normalize_rentals(rentals):
+    result = {
+        "ski": {},
+        "snowboard": {},
+        "items": {},
+    }
+    package_prices = {}
+
+    for rows in rentals.values():
+        for row in rows:
+            name = row.get("item", "")
+            normalized_name = name.lower()
+            price = next(
+                (
+                    parse_price(row.get(field))
+                    for field in ("closing_weekend", "weekend_price", "price")
+                    if parse_price(row.get(field)) is not None
+                ),
+                None,
+            )
+            if price is None:
+                continue
+
+            age_group = row.get("age_group", "").lower()
+            if "ski" in normalized_name and "snowboard" in normalized_name:
+                if "adult" in age_group:
+                    package_prices["adults"] = price
+                elif "jr" in age_group or "sr" in age_group:
+                    package_prices["youth"] = price
+                continue
+
+            if "boot" in normalized_name:
+                result["items"]["boots"] = price
+            elif "ice skate" in normalized_name or "skate" in normalized_name:
+                result["items"]["ice-skates"] = price
+            elif "pole" in normalized_name:
+                result["items"]["poles"] = price
+            elif "helmet" in normalized_name:
+                result["items"]["helmet"] = price
+
+    if "youth" in package_prices and "adults" in package_prices:
+        result["ski"] = dict(package_prices)
+        result["snowboard"] = dict(package_prices)
+        result["items"]["skis"] = package_prices["adults"]
+        result["items"]["snowboard"] = package_prices["adults"]
+
+    missing = [
+        f"{section}.{age_group}"
+        for section in ("ski", "snowboard")
+        for age_group in ("youth", "adults")
+        if age_group not in result.get(section, {})
+    ]
+    if missing:
+        print(f"Missing rental values: {', '.join(missing)}")
+        return None
+    return result
+
+
 def main():
+    rentals = normalize_rentals(get_rentals())
+    if rentals is None:
+        return
     payload = {
-        "rentals": to_rentals_dto(get_rentals()),
+        "rentals": rentals,
         "resortId": RESORT_ID,
         "sourceUrl": SOURCE_URL,
         "updatedAt": int(time.time() * 1000),

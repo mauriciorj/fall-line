@@ -115,6 +115,10 @@ def get_day_ticket_price(rates):
 
 
 def get_rental_price(rentals, section_match, item_match):
+    structured_price = rentals.get("rentals", {}).get("ski", {}).get("adults")
+    if structured_price is not None:
+        return parse_price(structured_price)
+
     for section in rentals.get("rentals", {}).get("sections", []):
         if section_match not in section.get("name", "").lower():
             continue

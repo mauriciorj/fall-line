@@ -10,8 +10,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
-from dtos import to_rentals_dto
-
 RESORT_ID = "blue-mountain"
 URLS = {
     "adult_ski": "https://www.bluemountain.ca/plan-your-trip/rentals/adult-ski",
@@ -130,11 +128,36 @@ def get_rentals():
         driver.quit()
 
 
+def parse_price(value):
+    match = re.search(r"\$\s*(\d+(?:[.,]\d+)?)", str(value))
+    if not match:
+        return None
+    amount = float(match.group(1).replace(",", "."))
+    return f"${int(amount) if amount.is_integer() else amount:g}"
+
+
+def normalize_rentals(rentals):
+    adult_ski = rentals.get("adult_ski", {})
+    candidates = []
+    for product in adult_ski.get("products", []):
+        candidates.append(product.get("price"))
+    for card in adult_ski.get("pricing", []):
+        candidates.append(card.get("price"))
+    price = next((parse_price(value) for value in candidates if parse_price(value)), None)
+    if price is None:
+        print("Missing adult ski rental price; keeping the existing rentals snapshot.")
+        return None
+    return {"ski": {"adults": price}}
+
+
 def main():
+    rentals = normalize_rentals(get_rentals())
+    if rentals is None:
+        return
     payload = {
-        "rentals": to_rentals_dto(get_rentals()),
+        "rentals": rentals,
         "resortId": RESORT_ID,
-        "sourceUrl": next(iter(URLS.values())),
+        "sourceUrl": URLS["adult_ski"],
         "updatedAt": int(time.time() * 1000),
     }
     output_file = os.path.join(os.path.dirname(__file__), "rentals.json")

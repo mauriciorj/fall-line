@@ -71,7 +71,16 @@ def get_rate_price(rates, section_match, label_match):
 
 
 def get_rental_price(rentals, section_match, item_match, label_match):
-    for section in rentals.get("rentals", {}).get("sections", []):
+    structured_rentals = rentals.get("rentals", {})
+    if section_match == "equipment rentals - package":
+        if item_match == "skis":
+            value = structured_rentals.get("ski", {}).get("adults")
+        else:
+            value = structured_rentals.get("snowboard", {}).get("adults")
+        if value is not None:
+            return parse_price(value)
+
+    for section in structured_rentals.get("sections", []):
         if section_match not in section.get("name", "").lower():
             continue
         for item in section.get("items", []):

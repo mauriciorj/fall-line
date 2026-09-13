@@ -51,7 +51,12 @@ def get_rate_price(rates):
 
 
 def get_rental_price(rentals):
-    for section in rentals.get("rentals", {}).get("sections", []):
+    structured_rentals = rentals.get("rentals", {})
+    adult_price = structured_rentals.get("ski", {}).get("adults")
+    if adult_price is not None:
+        return parse_price(adult_price)
+
+    for section in structured_rentals.get("sections", []):
         if "full day" not in section.get("name", "").lower():
             continue
         for item in section.get("items", []):

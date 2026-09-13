@@ -102,7 +102,13 @@ def get_rate_price(rates, item_name, label):
 
 
 def get_rental_price(rentals, section_name, item_name):
-    for section in rentals.get("rentals", {}).get("sections", []):
+    structured_rentals = rentals.get("rentals", {})
+    if section_name == "rental_daily_packages" and item_name == "all ages":
+        value = structured_rentals.get("ski", {}).get("adults")
+        if value is not None:
+            return parse_price(value)
+
+    for section in structured_rentals.get("sections", []):
         if section.get("name", "").lower() != section_name:
             continue
         for item in section.get("items", []):
