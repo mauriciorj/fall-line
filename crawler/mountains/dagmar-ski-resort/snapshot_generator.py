@@ -56,7 +56,12 @@ def build_tracks_summary(weather):
 
 
 def get_rate_price(rates, section_match, label_match):
-    for item in rates.get("rates", {}).get("items", []):
+    structured_rates = rates.get("rates", {})
+    adult_day_rate = structured_rates.get("day-weekend", {}).get("adults")
+    if adult_day_rate is not None:
+        return parse_price(adult_day_rate)
+
+    for item in structured_rates.get("items", []):
         if section_match not in item.get("name", "").lower():
             continue
         for price in item.get("prices", []):

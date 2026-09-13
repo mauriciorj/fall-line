@@ -1,11 +1,8 @@
-"""
-Chicopee lift rates crawler.
-Scrapes lift ticket tables from https://www.discoverchicopee.com/plan-a-day.
-"""
+"""Chicopee lift rates crawler."""
 
 import json
 import os
-import sys
+import re
 import time
 
 from bs4 import BeautifulSoup
@@ -16,11 +13,10 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from dtos import to_rates_dto
-
 URL = "https://www.discoverchicopee.com/plan-a-day"
 RESORT_ID = "chicopee"
+RATE_KEYS = ("night-week", "night-weekend", "day-week", "day-weekend")
+AGE_GROUPS = ("youth", "adults", "seniors")
 
 
 def get_driver():
@@ -30,8 +26,7 @@ def get_driver():
     options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--disable-gpu")
     options.add_argument(
-        "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+        "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36"
     )
     return webdriver.Chrome(service=Service(), options=options)
 
@@ -60,16 +55,82 @@ def extract_table_data(table):
         values = [cell.get_text(separator=" ", strip=True) for cell in cells]
         if not values or not any(values) or values == headers:
             continue
-        if headers:
-            rows.append(
-                {
-                    headers[index] if index < len(headers) and headers[index] else f"Column_{index + 1}": value
-                    for index, value in enumerate(values)
-                }
-            )
-        else:
-            rows.append(values)
+        rows.append(
+            {
+                headers[index]
+                if index < len(headers) and headers[index]
+                else f"Column_{index + 1}": value
+                for index, value in enumerate(values)
+            }
+        )
     return rows
+
+
+def parse_price(value):
+    if value in (None, ""):
+        return None
+    match = re.search(r"\$?\s*(\d+(?:[.,]\d+)?)", str(value))
+    if not match:
+        return None
+    amount = float(match.group(1).replace(",", "."))
+    return f"${int(amount) if amount.is_integer() else amount:g}"
+
+
+def get_ticket_name(row):
+    return " ".join(str(value) for value in row.values()).lower()
+
+
+def get_period_value(row, period):
+    for label, value in row.items():
+        normalized_label = re.sub(r"[^a-z]+", " ", label.lower()).strip()
+        if period in normalized_label:
+            parsed = parse_price(value)
+            if parsed is not None:
+                return parsed
+    return None
+
+
+def normalize_lift_rates(rates):
+    normalized = {rate_key: {} for rate_key in RATE_KEYS}
+    rows = [row for section_rows in rates.values() for row in section_rows]
+
+    for row in rows:
+        ticket_name = get_ticket_name(row)
+        if "surface lifts" in ticket_name or "tot" in ticket_name:
+            continue
+        if "all lifts" in ticket_name:
+            day_week = get_period_value(row, "weekday")
+            day_weekend = get_period_value(row, "weekend")
+            if day_week is not None:
+                normalized["day-week"] = {
+                    age_group: day_week for age_group in AGE_GROUPS
+                }
+            if day_weekend is not None:
+                normalized["day-weekend"] = {
+                    age_group: day_weekend for age_group in AGE_GROUPS
+                }
+        elif "night" in ticket_name:
+            night_week = get_period_value(row, "weekday")
+            night_weekend = get_period_value(row, "weekend")
+            if night_week is not None:
+                normalized["night-week"] = {
+                    age_group: night_week for age_group in AGE_GROUPS
+                }
+            if night_weekend is not None:
+                normalized["night-weekend"] = {
+                    age_group: night_weekend for age_group in AGE_GROUPS
+                }
+
+    missing = [
+        f"{rate_key}.{age_group}"
+        for rate_key in RATE_KEYS
+        for age_group in AGE_GROUPS
+        if age_group not in normalized[rate_key]
+    ]
+    if missing:
+        print(f"Missing lift-rate values: {', '.join(missing)}")
+        return None
+    return normalized
 
 
 def get_rates():
@@ -88,11 +149,7 @@ def get_rates():
                 continue
             section_title = heading.get_text(" ", strip=True)
             tables = section.find_all("table", recursive=False) or section.find_all("table")
-            rows = [
-                row
-                for table in tables
-                for row in extract_table_data(table)
-            ]
+            rows = [row for table in tables for row in extract_table_data(table)]
             if rows and section_title not in result:
                 result[section_title] = rows
 
@@ -107,8 +164,11 @@ def get_rates():
 
 
 def main():
+    rates = normalize_lift_rates(get_rates())
+    if rates is None:
+        return
     payload = {
-        "rates": to_rates_dto(get_rates()),
+        "rates": rates,
         "resortId": RESORT_ID,
         "sourceUrl": URL,
         "updatedAt": int(time.time() * 1000),

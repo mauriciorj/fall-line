@@ -85,7 +85,14 @@ def build_tracks_summary(weather):
 
 
 def get_day_ticket_price(rates):
-    for item in rates.get("rates", {}).get("items", []):
+    structured_rates = rates.get("rates", {})
+    adult_day_rate = structured_rates.get("day-weekend", {}).get("adults")
+    if adult_day_rate is not None:
+        value = adult_day_rate.replace("$", "").replace(",", "").strip()
+        amount = float(value)
+        return int(amount) if amount.is_integer() else amount
+
+    for item in structured_rates.get("items", []):
         if item.get("name") != "Adult (18+)":
             continue
         for price in item.get("prices", []):
