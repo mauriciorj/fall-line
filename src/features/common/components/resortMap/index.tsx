@@ -87,9 +87,9 @@ const ResortMap = ({
             fillColor:
               hoveredResort === resort.resortId || selectedResort === resort.resortId
                 ? "#4A6FA5"
-                : "#6B7280",
+                : "#8fb7f2",
             fillOpacity: 1,
-            strokeColor: "#ffffff",
+            strokeColor: "#086bfc",
             strokeWeight: 2,
             scale: hoveredResort === resort.resortId ? 1.8 : 1.4,
             anchor: { x: 12, y: 24 } as google.maps.Point,
