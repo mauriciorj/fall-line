@@ -1,0 +1,128 @@
+{
+  "lifts": [
+    {
+      "name": "Limestone Chairlift",
+      "status": "closed"
+    },
+    {
+      "name": "Ridge Chairlift",
+      "status": "closed"
+    },
+    {
+      "name": "Updraft Chairlift",
+      "status": "closed"
+    },
+    {
+      "area": "The Galaxy",
+      "name": "Shuttle Carpet",
+      "status": "closed"
+    },
+    {
+      "area": "West Beginner Area",
+      "name": "Caterpillar Carpet",
+      "status": "closed"
+    },
+    {
+      "area": "West Beginner Area",
+      "name": "Cricket Carpet",
+      "status": "closed"
+    }
+  ],
+  "tracks": [
+    {
+      "difficulty": "green",
+      "name": "Escarpment Run",
+      "status": "closed"
+    },
+    {
+      "difficulty": "green",
+      "name": "Night Hawk",
+      "status": "closed"
+    },
+    {
+      "difficulty": "blue",
+      "name": "Butternut",
+      "status": "closed"
+    },
+    {
+      "difficulty": "blue",
+      "name": "Falcon",
+      "status": "closed"
+    },
+    {
+      "difficulty": "blue",
+      "name": "Scimitar",
+      "status": "closed"
+    },
+    {
+      "difficulty": "blue",
+      "name": "Sidewinder",
+      "status": "closed"
+    },
+    {
+      "difficulty": "blue",
+      "name": "Twister",
+      "status": "closed"
+    },
+    {
+      "difficulty": "black",
+      "name": "Boomerang",
+      "status": "closed"
+    },
+    {
+      "difficulty": "black",
+      "name": "Challenger",
+      "status": "closed"
+    },
+    {
+      "difficulty": "freestyle",
+      "name": "Quarry Run",
+      "status": "closed"
+    },
+    {
+      "area": "The Galaxy",
+      "difficulty": "green",
+      "name": "Comet",
+      "status": "closed"
+    },
+    {
+      "area": "The Galaxy",
+      "difficulty": "green",
+      "name": "Little Dipper",
+      "status": "closed"
+    },
+    {
+      "area": "The Galaxy",
+      "difficulty": "green",
+      "name": "Milky Way",
+      "status": "closed"
+    },
+    {
+      "area": "The Galaxy",
+      "difficulty": "green",
+      "name": "Shooting Star",
+      "status": "closed"
+    },
+    {
+      "area": "West Beginner Area",
+      "difficulty": "green",
+      "name": "Bumble Bee",
+      "status": "closed"
+    },
+    {
+      "area": "West Beginner Area",
+      "difficulty": "green",
+      "name": "Grasshopper",
+      "status": "closed"
+    },
+    {
+      "area": "West Beginner Area",
+      "difficulty": "green",
+      "name": "Monarch",
+      "status": "closed"
+    }
+  ],
+  "resortId": "glen-eden",
+  "sourceUrl": "https://gleneden.on.ca/at-glen-eden/slope-conditions/",
+  "updatedAt": 1789406613092
+}

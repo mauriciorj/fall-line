@@ -1,17 +1,17 @@
 {
   "rentals": {
     "ski": {
-      "youth": "$54.99",
-      "adults": "$74.99"
+      "adults": "$74.99",
+      "youth": "$54.99"
     },
     "snowboard": {
-      "youth": "$54.99",
-      "adults": "$74.99"
+      "adults": "$74.99",
+      "youth": "$54.99"
     },
     "items": {
       "boots": "$49.99",
       "ice skate": "$",
-      "skis": "$49.99",
+      "skis": "$59.99",
       "snowboard": "$49.99",
       "poles": "$19.99",
       "helmet": "$19.99"
@@ -19,5 +19,5 @@
   },
   "resortId": "caledon-ski-club",
   "sourceUrl": "https://caledonskiclub.com/proshop",
-  "updatedAt": 1789140589639
+  "updatedAt": 1789400795730
 }

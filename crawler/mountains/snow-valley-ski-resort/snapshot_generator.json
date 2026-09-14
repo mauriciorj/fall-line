@@ -30,13 +30,13 @@
         "website": "http://www.skisnowvalley.com/",
         "name": "Snow Valley Ski Resort",
         "tracksSummary": {
-          "black": 0,
-          "blue": 0,
-          "doubleBlack": 0,
-          "freeStyle": 0,
-          "green": 0
+          "black": 6,
+          "blue": 4,
+          "doubleBlack": 1,
+          "freeStyle": 1,
+          "green": 9
         },
-        "dayTicketPrice": 80,
+        "dayTicketPrice": 72,
         "skiRentalPrice": 70,
         "snowBoardRentalPrice": 70
       }
@@ -44,780 +44,221 @@
     {
       "table": "resortHours",
       "content": {
-        "hours": [
-          {
-            "name": "Winter Activities",
-            "hours": [
-              {
-                "day": "Monday",
-                "time": "Closed"
-              },
-              {
-                "day": "Tuesday",
-                "time": "Closed"
-              },
-              {
-                "day": "Wednesday",
-                "time": "Closed"
-              },
-              {
-                "day": "Thursday",
-                "time": "Closed"
-              },
-              {
-                "day": "Friday",
-                "time": "Closed"
-              },
-              {
-                "day": "Saturday",
-                "time": "Closed"
-              },
-              {
-                "day": "Sunday",
-                "time": "Closed"
-              }
-            ]
-          },
-          {
-            "name": "Information Services",
-            "hours": [
-              {
-                "day": "Monday - Thursday",
-                "time": "9:00AM - 4:00PM"
-              },
-              {
-                "day": "Friday - Sunday",
-                "time": "Closed"
-              }
-            ]
-          }
-        ],
+        "hours": {
+          "sunday": "closed",
+          "monday": "closed",
+          "tuesday": "closed",
+          "wednesday": "closed",
+          "thursday": "closed",
+          "friday": "closed",
+          "saturday": "closed"
+        },
         "resortId": "snow-valley-ski-resort",
         "sourceUrl": "https://www.skisnowvalley.com/about/",
-        "updatedAt": 1789144483222
+        "updatedAt": 1789407345317
       }
     },
     {
       "table": "resortRates",
       "content": {
         "rates": {
-          "items": [
-            {
-              "name": "Lift Tickets | Adult  |18-64| Lift Tickets | 4 Hour Lift",
-              "prices": [
-                {
-                  "label": "price",
-                  "value": "$80-$104"
-                },
-                {
-                  "label": "description",
-                  "value": "Any 4hr Lift Access starting from Arrival"
-                }
-              ]
-            },
-            {
-              "name": "Lift Tickets | Adult  |18-64| Lift Tickets | 6 Hour Lift",
-              "prices": [
-                {
-                  "label": "price",
-                  "value": "$87-$114"
-                },
-                {
-                  "label": "description",
-                  "value": "Any 6hr Lift Access starting from Arrival"
-                }
-              ]
-            },
-            {
-              "name": "Lift Tickets | Adult  |18-64| Lift Tickets | All Night Lift",
-              "prices": [
-                {
-                  "label": "price",
-                  "value": "$67-$82"
-                },
-                {
-                  "label": "description",
-                  "value": "Lift Access from 3:00PM - 9:00PM"
-                }
-              ]
-            },
-            {
-              "name": "Lift Tickets | Adult  |18-64| Lift Tickets | Adventure Learning Centre",
-              "prices": [
-                {
-                  "label": "price",
-                  "value": "$41-$58"
-                },
-                {
-                  "label": "description",
-                  "value": "Valid Open to Close"
-                }
-              ]
-            },
-            {
-              "name": "Lift Tickets | Adult  |18-64| Lift Tickets | Under 6 Years",
-              "prices": [
-                {
-                  "label": "price",
-                  "value": "$22"
-                },
-                {
-                  "label": "description",
-                  "value": "Valid Open to Close"
-                }
-              ]
-            },
-            {
-              "name": "Lift Tickets | Youth |6-17| & Senior |65+| Lift Tickets | 4 Hour Lift",
-              "prices": [
-                {
-                  "label": "price",
-                  "value": "$65-$82"
-                },
-                {
-                  "label": "description",
-                  "value": "Any 4hr Lift Access starting from Arrival"
-                }
-              ]
-            },
-            {
-              "name": "Lift Tickets | Youth |6-17| & Senior |65+| Lift Tickets | 6 Hour Lift",
-              "prices": [
-                {
-                  "label": "price",
-                  "value": "$72-$94"
-                },
-                {
-                  "label": "description",
-                  "value": "Any 6hr Lift Access starting from Arrival"
-                }
-              ]
-            },
-            {
-              "name": "Lift Tickets | Youth |6-17| & Senior |65+| Lift Tickets | All Night Lift",
-              "prices": [
-                {
-                  "label": "price",
-                  "value": "$61-$71"
-                },
-                {
-                  "label": "description",
-                  "value": "Lift Access from 3:00PM - 9:00PM"
-                }
-              ]
-            },
-            {
-              "name": "Lift Tickets | Youth |6-17| & Senior |65+| Lift Tickets | Adventure Learning Centre",
-              "prices": [
-                {
-                  "label": "price",
-                  "value": "$41-$58"
-                },
-                {
-                  "label": "description",
-                  "value": "Valid Open to Close"
-                }
-              ]
-            },
-            {
-              "name": "Lift Tickets | Youth |6-17| & Senior |65+| Lift Tickets | Under 6 Years",
-              "prices": [
-                {
-                  "label": "price",
-                  "value": "$22"
-                },
-                {
-                  "label": "description",
-                  "value": "Valid Open to Close"
-                }
-              ]
-            },
-            {
-              "name": "Lift Tickets | Adult  |18-64| Lift Tickets | 4 Hour Lift",
-              "prices": [
-                {
-                  "label": "price",
-                  "value": "$65-$89"
-                },
-                {
-                  "label": "description",
-                  "value": "Any 4hr Lift Access starting from Arrival"
-                }
-              ]
-            },
-            {
-              "name": "Lift Tickets | Adult  |18-64| Lift Tickets | 6 Hour Lift",
-              "prices": [
-                {
-                  "label": "price",
-                  "value": "$72-$99"
-                },
-                {
-                  "label": "description",
-                  "value": "Any 6hr Lift Access starting from Arrival"
-                }
-              ]
-            },
-            {
-              "name": "Lift Tickets | Adult  |18-64| Lift Tickets | All Night Lift",
-              "prices": [
-                {
-                  "label": "price",
-                  "value": "$52-$67"
-                },
-                {
-                  "label": "description",
-                  "value": "Lift Access from 3:00PM - 9:00PM"
-                }
-              ]
-            },
-            {
-              "name": "Lift Tickets | Adult  |18-64| Lift Tickets | Adventure Learning Centre",
-              "prices": [
-                {
-                  "label": "price",
-                  "value": "$41-$58"
-                },
-                {
-                  "label": "description",
-                  "value": "Valid Open to Close"
-                }
-              ]
-            },
-            {
-              "name": "Lift Tickets | Adult  |18-64| Lift Tickets | Under 6 Years",
-              "prices": [
-                {
-                  "label": "price",
-                  "value": "$22"
-                },
-                {
-                  "label": "description",
-                  "value": "Valid Open to Close"
-                }
-              ]
-            },
-            {
-              "name": "Lift Tickets | Youth |6-17| & Senior |65+| Lift Tickets | 4 Hour Lift",
-              "prices": [
-                {
-                  "label": "price",
-                  "value": "$50-$67"
-                },
-                {
-                  "label": "description",
-                  "value": "Any 4hr Lift Access starting from Arrival"
-                }
-              ]
-            },
-            {
-              "name": "Lift Tickets | Youth |6-17| & Senior |65+| Lift Tickets | 6 Hour Lift",
-              "prices": [
-                {
-                  "label": "price",
-                  "value": "$57-$79"
-                },
-                {
-                  "label": "description",
-                  "value": "Any 6hr Lift Access starting from Arrival"
-                }
-              ]
-            },
-            {
-              "name": "Lift Tickets | Youth |6-17| & Senior |65+| Lift Tickets | All Night Lift",
-              "prices": [
-                {
-                  "label": "price",
-                  "value": "$46-$56"
-                },
-                {
-                  "label": "description",
-                  "value": "Lift Access from 3:00PM - 9:00PM"
-                }
-              ]
-            },
-            {
-              "name": "Lift Tickets | Youth |6-17| & Senior |65+| Lift Tickets | Adventure Learning Centre",
-              "prices": [
-                {
-                  "label": "price",
-                  "value": "$41-$58"
-                },
-                {
-                  "label": "description",
-                  "value": "Valid Open to Close"
-                }
-              ]
-            },
-            {
-              "name": "Lift Tickets | Youth |6-17| & Senior |65+| Lift Tickets | Under 6 Years",
-              "prices": [
-                {
-                  "label": "price",
-                  "value": "$22"
-                },
-                {
-                  "label": "description",
-                  "value": "Valid Open to Close"
-                }
-              ]
-            },
-            {
-              "name": "Season Passes | Anytime Pass | Adult (18-64)",
-              "prices": [
-                {
-                  "label": "price",
-                  "value": "$825"
-                },
-                {
-                  "label": "description",
-                  "value": ""
-                }
-              ]
-            },
-            {
-              "name": "Season Passes | Anytime Pass | Youth (6-17) **¹",
-              "prices": [
-                {
-                  "label": "price",
-                  "value": "$789"
-                },
-                {
-                  "label": "description",
-                  "value": ""
-                }
-              ]
-            },
-            {
-              "name": "Season Passes | Anytime Pass | Senior (65+) ***¹",
-              "prices": [
-                {
-                  "label": "price",
-                  "value": "$789"
-                },
-                {
-                  "label": "description",
-                  "value": ""
-                }
-              ]
-            },
-            {
-              "name": "Season Passes | Anytime Pass | Under 6 ²",
-              "prices": [
-                {
-                  "label": "price",
-                  "value": "$109"
-                },
-                {
-                  "label": "description",
-                  "value": ""
-                }
-              ]
-            },
-            {
-              "name": "Season Passes | Anytime Pass | Family ‡",
-              "prices": [
-                {
-                  "label": "price",
-                  "value": "2699"
-                },
-                {
-                  "label": "description",
-                  "value": "Add Additional Family Member - $679"
-                }
-              ]
-            },
-            {
-              "name": "Season Passes | Almost Anytime Pass | Adult (18-64) ¹",
-              "prices": [
-                {
-                  "label": "price",
-                  "value": "$539"
-                },
-                {
-                  "label": "description",
-                  "value": ""
-                }
-              ]
-            },
-            {
-              "name": "Season Passes | Almost Anytime Pass | Youth (6-17) **¹",
-              "prices": [
-                {
-                  "label": "price",
-                  "value": "$495"
-                },
-                {
-                  "label": "description",
-                  "value": ""
-                }
-              ]
-            },
-            {
-              "name": "Season Passes | Almost Anytime Pass | Senior (65+) ***¹",
-              "prices": [
-                {
-                  "label": "price",
-                  "value": "$495"
-                },
-                {
-                  "label": "description",
-                  "value": ""
-                }
-              ]
-            },
-            {
-              "name": "Season Passes | Almost Anytime Pass | Family ‡¹",
-              "prices": [
-                {
-                  "label": "price",
-                  "value": "$1869"
-                },
-                {
-                  "label": "description",
-                  "value": "Add Additional Family Member - $399"
-                }
-              ]
-            }
-          ]
+          "night-week": {
+            "adults": "$52",
+            "youth": "$46",
+            "seniors": "$46"
+          },
+          "night-weekend": {
+            "adults": "$67",
+            "youth": "$56",
+            "seniors": "$56"
+          },
+          "day-week": {
+            "adults": "$72",
+            "youth": "$57",
+            "seniors": "$57"
+          },
+          "day-weekend": {
+            "adults": "$99",
+            "youth": "$79",
+            "seniors": "$79"
+          }
         },
         "resortId": "snow-valley-ski-resort",
         "sourceUrl": "https://www.skisnowvalley.com/plan/ski-snowboard/tickets-and-passes/",
-        "updatedAt": 1789144484684
+        "updatedAt": 1789407345981
       }
     },
     {
       "table": "resortRentals",
       "content": {
         "rentals": {
-          "sections": [
-            {
-              "name": "Full Day Ski & Board Rentals",
-              "items": [
-                {
-                  "name": "Adult (18-64)",
-                  "prices": [
-                    {
-                      "label": "price",
-                      "value": "$70"
-                    },
-                    {
-                      "label": "description",
-                      "value": ""
-                    }
-                  ]
-                },
-                {
-                  "name": "Youth/Senior (6-17, 65+)",
-                  "prices": [
-                    {
-                      "label": "price",
-                      "value": "$55"
-                    },
-                    {
-                      "label": "description",
-                      "value": ""
-                    }
-                  ]
-                },
-                {
-                  "name": "Under 6 Years",
-                  "prices": [
-                    {
-                      "label": "price",
-                      "value": "$40"
-                    },
-                    {
-                      "label": "description",
-                      "value": ""
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Night Ski & Board Rentals",
-              "items": [
-                {
-                  "name": "Adult (18-64)",
-                  "prices": [
-                    {
-                      "label": "price",
-                      "value": "$56"
-                    },
-                    {
-                      "label": "description",
-                      "value": ""
-                    }
-                  ]
-                },
-                {
-                  "name": "Youth/Senior (6-17, 65+)",
-                  "prices": [
-                    {
-                      "label": "price",
-                      "value": "$45"
-                    },
-                    {
-                      "label": "description",
-                      "value": ""
-                    }
-                  ]
-                },
-                {
-                  "name": "Under 6 Years",
-                  "prices": [
-                    {
-                      "label": "price",
-                      "value": "$32"
-                    },
-                    {
-                      "label": "description",
-                      "value": ""
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Rental Clothing",
-              "items": [
-                {
-                  "name": "Winter Pants",
-                  "prices": [
-                    {
-                      "label": "price",
-                      "value": "$26"
-                    },
-                    {
-                      "label": "description",
-                      "value": ""
-                    }
-                  ]
-                },
-                {
-                  "name": "Winter Jacket",
-                  "prices": [
-                    {
-                      "label": "price",
-                      "value": "$26"
-                    },
-                    {
-                      "label": "description",
-                      "value": ""
-                    }
-                  ]
-                },
-                {
-                  "name": "Winter Jacket & Pant Combo",
-                  "prices": [
-                    {
-                      "label": "price",
-                      "value": "$46"
-                    },
-                    {
-                      "label": "description",
-                      "value": ""
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Salomon High PerformanceSki & Board Rentals",
-              "items": [
-                {
-                  "name": "Hourly High Performance Ski or Snowboard",
-                  "prices": [
-                    {
-                      "label": "price",
-                      "value": "$16"
-                    },
-                    {
-                      "label": "description",
-                      "value": ""
-                    }
-                  ]
-                },
-                {
-                  "name": "6HR High Performance Ski or Snowboard",
-                  "prices": [
-                    {
-                      "label": "price",
-                      "value": "$65"
-                    },
-                    {
-                      "label": "description",
-                      "value": ""
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "A la carte Ski or Board Rental",
-              "items": [
-                {
-                  "name": "Adult",
-                  "prices": [
-                    {
-                      "label": "price",
-                      "value": "$45"
-                    },
-                    {
-                      "label": "description",
-                      "value": ""
-                    }
-                  ]
-                },
-                {
-                  "name": "Youth/Senior (6-17, 65+)",
-                  "prices": [
-                    {
-                      "label": "price",
-                      "value": "$40"
-                    },
-                    {
-                      "label": "description",
-                      "value": ""
-                    }
-                  ]
-                },
-                {
-                  "name": "Under 6",
-                  "prices": [
-                    {
-                      "label": "price",
-                      "value": "$30"
-                    },
-                    {
-                      "label": "description",
-                      "value": ""
-                    }
-                  ]
-                },
-                {
-                  "name": "Helmet",
-                  "prices": [
-                    {
-                      "label": "price",
-                      "value": "$16"
-                    },
-                    {
-                      "label": "description",
-                      "value": ""
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "A la carte Ski or Board Boot Rental",
-              "items": [
-                {
-                  "name": "Adult",
-                  "prices": [
-                    {
-                      "label": "price",
-                      "value": "$30"
-                    },
-                    {
-                      "label": "description",
-                      "value": ""
-                    }
-                  ]
-                },
-                {
-                  "name": "Youth/Senior (6-17, 65+)",
-                  "prices": [
-                    {
-                      "label": "price",
-                      "value": "$25"
-                    },
-                    {
-                      "label": "description",
-                      "value": ""
-                    }
-                  ]
-                },
-                {
-                  "name": "Under 6",
-                  "prices": [
-                    {
-                      "label": "price",
-                      "value": "$20"
-                    },
-                    {
-                      "label": "description",
-                      "value": ""
-                    }
-                  ]
-                },
-                {
-                  "name": "Helmet",
-                  "prices": [
-                    {
-                      "label": "price",
-                      "value": "$17"
-                    },
-                    {
-                      "label": "description",
-                      "value": ""
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
+          "ski": {
+            "adults": "$70",
+            "youth": "$55"
+          },
+          "snowboard": {
+            "adults": "$70",
+            "youth": "$55"
+          },
+          "items": {
+            "skis": "$45",
+            "snowboard": "$45",
+            "helmet": "$16",
+            "boots": "$30"
+          }
         },
         "resortId": "snow-valley-ski-resort",
         "sourceUrl": "https://www.skisnowvalley.com/plan/ski-snowboard/equipment-rentals/",
-        "updatedAt": 1789144485495
+        "updatedAt": 1789407346681
       }
     },
     {
       "table": "weatherAndStatus",
       "content": {
-        "lifts": [],
-        "trails": [],
-        "tubing": [],
-        "rawData": {
-          "snow_report": {
-            "report_date": "March 28, 2026",
-            "operating_day": "0",
-            "new_snow": "0cm",
-            "base_depth": "0cm",
-            "snow_surface": "Closed for the Season",
-            "snowshoeing_trails": "Closed for the Season"
+        "lifts": [
+          {
+            "name": "quad chair",
+            "status": "closed"
           },
-          "runs": [],
-          "lifts": [],
-          "tubing_zones": [],
-          "runs_summary": {
-            "open": 0,
-            "total": 21
+          {
+            "name": "wide load chair",
+            "status": "closed"
           },
-          "lifts_summary": {
-            "open": 0,
-            "total": 8
+          {
+            "name": "triple chair",
+            "status": "closed"
+          },
+          {
+            "name": "snowflake express",
+            "status": "closed"
+          },
+          {
+            "name": "wonderland express",
+            "status": "closed"
+          },
+          {
+            "name": "polar express",
+            "status": "closed"
+          },
+          {
+            "name": "magic carpet",
+            "status": "closed"
+          },
+          {
+            "name": "kidz village express",
+            "status": "closed"
           }
-        },
-        "conditions": {
-          "baseDepth": "0cm",
-          "newSnow": "0cm",
-          "surfaceConditions": "Closed for the Season"
-        },
-        "trailsSummary": {
-          "open": 0,
-          "total": 21
-        },
-        "liftsSummary": {
-          "open": 0,
-          "total": 8
-        },
+        ],
+        "tracks": [
+          {
+            "difficulty": "green",
+            "name": "garfield",
+            "status": "closed"
+          },
+          {
+            "difficulty": "green",
+            "name": "snoopy",
+            "status": "closed"
+          },
+          {
+            "difficulty": "blue",
+            "name": "trudys way",
+            "status": "closed"
+          },
+          {
+            "difficulty": "black",
+            "name": "pennys",
+            "status": "closed"
+          },
+          {
+            "difficulty": "black",
+            "name": "schuss",
+            "status": "closed"
+          },
+          {
+            "difficulty": "green",
+            "name": "highland trail",
+            "status": "closed"
+          },
+          {
+            "difficulty": "green",
+            "name": "family",
+            "status": "closed"
+          },
+          {
+            "difficulty": "black",
+            "name": "racer",
+            "status": "closed"
+          },
+          {
+            "difficulty": "black",
+            "name": "hard knox",
+            "status": "closed"
+          },
+          {
+            "difficulty": "blue",
+            "name": "front",
+            "status": "closed"
+          },
+          {
+            "difficulty": "blue",
+            "name": "whistler",
+            "status": "closed"
+          },
+          {
+            "difficulty": "green",
+            "name": "recken run",
+            "status": "closed"
+          },
+          {
+            "difficulty": "blue",
+            "name": "keith rolls",
+            "status": "closed"
+          },
+          {
+            "difficulty": "doubleBlack",
+            "name": "vertigo",
+            "status": "closed"
+          },
+          {
+            "difficulty": "black",
+            "name": "huxtable",
+            "status": "closed"
+          },
+          {
+            "difficulty": "black",
+            "name": "oh chute",
+            "status": "closed"
+          },
+          {
+            "difficulty": "freeStyle",
+            "name": "easy does it",
+            "status": "closed"
+          },
+          {
+            "difficulty": "green",
+            "name": "alc 1",
+            "status": "closed"
+          },
+          {
+            "difficulty": "green",
+            "name": "alc 2",
+            "status": "closed"
+          },
+          {
+            "difficulty": "green",
+            "name": "alc 3",
+            "status": "closed"
+          },
+          {
+            "difficulty": "green",
+            "name": "kidz village",
+            "status": "closed"
+          }
+        ],
         "resortId": "snow-valley-ski-resort",
         "sourceUrl": "https://www.skisnowvalley.com/plan/weather-webcams/",
-        "updatedAt": 1789144486170
+        "updatedAt": 1789407346750
       }
     }
   ]

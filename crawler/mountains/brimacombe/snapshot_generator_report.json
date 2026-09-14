@@ -4,6 +4,7 @@
     {
       "table": "resorts",
       "missingColumns": [
+        "lessonsPrice",
         "tubbingPrice"
       ]
     },
@@ -21,11 +22,8 @@
     },
     {
       "table": "weatherAndStatus",
-      "missingColumns": [
-        "crossCountry",
-        "tubing"
-      ]
+      "missingColumns": []
     }
   ],
-  "missingColumnCount": 3
+  "missingColumnCount": 2
 }

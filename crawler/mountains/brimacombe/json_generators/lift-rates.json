@@ -2,26 +2,26 @@
   "rates": {
     "night-week": {
       "youth": "$39.99",
-      "adults": "$39.99",
-      "seniors": "$39.99"
+      "seniors": "$39.99",
+      "adults": "$39.99"
     },
     "night-weekend": {
       "youth": "$39.99",
-      "adults": "$39.99",
-      "seniors": "$39.99"
+      "seniors": "$39.99",
+      "adults": "$39.99"
     },
     "day-week": {
       "youth": "$55",
-      "adults": "$65",
-      "seniors": "$60"
+      "seniors": "$60",
+      "adults": "$65"
     },
     "day-weekend": {
       "youth": "$60",
-      "adults": "$70",
-      "seniors": "$65"
+      "seniors": "$65",
+      "adults": "$70"
     }
   },
   "resortId": "brimacombe",
   "sourceUrl": "https://brimacombe.ca/plan-your-visit/lift-tickets/",
-  "updatedAt": 1789139313946
+  "updatedAt": 1789399282804
 }

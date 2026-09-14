@@ -29,719 +29,244 @@
         "hasLessons": false,
         "hasZipline": false,
         "tracksSummary": {
-          "black": 0,
-          "blue": 17,
+          "black": 2,
+          "blue": 14,
           "doubleBlack": 0,
           "freeStyle": 2,
           "green": 8
         },
-        "dayTicketPrice": 35
+        "dayTicketPrice": 35,
+        "skiRentalPrice": 35,
+        "snowBoardRentalPrice": 35
       }
     },
     {
       "table": "resortHours",
       "content": {
-        "hours": [
-          {
-            "name": "Ski Operations",
-            "hours": [
-              {
-                "day": "Daily",
-                "time": "9AM – 9PM"
-              }
-            ]
-          }
-        ],
+        "hours": {
+          "sunday": "closed",
+          "monday": "closed",
+          "tuesday": "closed",
+          "wednesday": "closed",
+          "thursday": "closed",
+          "friday": "closed",
+          "saturday": "closed"
+        },
         "resortId": "horseshoe-valley-resort",
-        "sourceUrl": "https://horseshoeresort.com/ski/lift-ticket-and-rentals-pricing/",
-        "updatedAt": 1789142879938
+        "sourceUrl": "https://horseshoeresort.com/hours-of-operation/",
+        "updatedAt": 1789406836837
       }
     },
     {
       "table": "resortRates",
       "content": {
         "rates": {
-          "items": [
-            {
-              "name": "Adult",
-              "prices": [
-                {
-                  "label": "closing_weekend",
-                  "value": "$35"
-                }
-              ]
-            },
-            {
-              "name": "JR (6-18) / SR (65+)",
-              "prices": [
-                {
-                  "label": "closing_weekend",
-                  "value": "$35"
-                }
-              ]
-            },
-            {
-              "name": "Child (5 and under)",
-              "prices": [
-                {
-                  "label": "closing_weekend",
-                  "value": "$10"
-                }
-              ]
-            },
-            {
-              "name": "Beginner (All ages)",
-              "prices": [
-                {
-                  "label": "closing_weekend",
-                  "value": "$29"
-                }
-              ]
-            }
-          ]
+          "day-week": {
+            "youth": "$35",
+            "adults": "$35",
+            "seniors": "$35"
+          },
+          "day-weekend": {
+            "youth": "$35",
+            "adults": "$35",
+            "seniors": "$35"
+          }
         },
         "resortId": "horseshoe-valley-resort",
         "sourceUrl": "https://horseshoeresort.com/ski/lift-ticket-and-rentals-pricing/",
-        "updatedAt": 1789142880834
+        "updatedAt": 1789140000000
       }
     },
     {
       "table": "resortRentals",
       "content": {
         "rentals": {
-          "sections": [
-            {
-              "name": "Top-Quality Rentals for Your Snow Adventures",
-              "items": [
-                {
-                  "name": "Skiing or Snowboarding Package",
-                  "prices": [
-                    {
-                      "label": "age_group",
-                      "value": "Adult (19+)"
-                    },
-                    {
-                      "label": "closing_weekend",
-                      "value": "$35"
-                    }
-                  ]
-                },
-                {
-                  "name": "Skiing or Snowboarding Package",
-                  "prices": [
-                    {
-                      "label": "age_group",
-                      "value": "JR (6-18) / SR (65+)"
-                    },
-                    {
-                      "label": "closing_weekend",
-                      "value": "$35"
-                    }
-                  ]
-                },
-                {
-                  "name": "Skiing or Snowboarding Package",
-                  "prices": [
-                    {
-                      "label": "age_group",
-                      "value": "Child  (5 and under)"
-                    },
-                    {
-                      "label": "closing_weekend",
-                      "value": "$35"
-                    }
-                  ]
-                },
-                {
-                  "name": "Ski / Snowboard Rental",
-                  "prices": [
-                    {
-                      "label": "age_group",
-                      "value": "Adult (19+)"
-                    },
-                    {
-                      "label": "closing_weekend",
-                      "value": "$35"
-                    }
-                  ]
-                },
-                {
-                  "name": "Ski / Snowboard Rental",
-                  "prices": [
-                    {
-                      "label": "age_group",
-                      "value": "JR (6-18) / SR (65+)"
-                    },
-                    {
-                      "label": "closing_weekend",
-                      "value": "$35"
-                    }
-                  ]
-                },
-                {
-                  "name": "Boots",
-                  "prices": [
-                    {
-                      "label": "age_group",
-                      "value": "All Ages"
-                    },
-                    {
-                      "label": "closing_weekend",
-                      "value": "$34"
-                    }
-                  ]
-                },
-                {
-                  "name": "Poles",
-                  "prices": [
-                    {
-                      "label": "age_group",
-                      "value": "All Ages"
-                    },
-                    {
-                      "label": "closing_weekend",
-                      "value": "$18"
-                    }
-                  ]
-                },
-                {
-                  "name": "Helmet",
-                  "prices": [
-                    {
-                      "label": "age_group",
-                      "value": "All Ages"
-                    },
-                    {
-                      "label": "closing_weekend",
-                      "value": "$18"
-                    }
-                  ]
-                },
-                {
-                  "name": "Ice Skates",
-                  "prices": [
-                    {
-                      "label": "age_group",
-                      "value": "All Ages"
-                    },
-                    {
-                      "label": "closing_weekend",
-                      "value": "$15"
-                    }
-                  ]
-                },
-                {
-                  "name": "Rental Insurance",
-                  "prices": [
-                    {
-                      "label": "age_group",
-                      "value": "All Ages"
-                    },
-                    {
-                      "label": "closing_weekend",
-                      "value": "$15"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
+          "ski": {
+            "adults": "$35",
+            "youth": "$35"
+          },
+          "snowboard": {
+            "adults": "$35",
+            "youth": "$35"
+          },
+          "items": {
+            "boots": "$34",
+            "poles": "$18",
+            "helmet": "$18",
+            "ice-skates": "$15",
+            "skis": "$35",
+            "snowboard": "$35"
+          }
         },
         "resortId": "horseshoe-valley-resort",
         "sourceUrl": "https://horseshoeresort.com/ski/lift-ticket-and-rentals-pricing/",
-        "updatedAt": 1789142881803
+        "updatedAt": 1789406838494
       }
     },
     {
       "table": "weatherAndStatus",
       "content": {
-        "lifts": [],
-        "trails": [
+        "lifts": [
           {
+            "name": "Kimbles Carpet",
+            "status": "closed"
+          },
+          {
+            "name": "Snow School Express",
+            "status": "closed"
+          },
+          {
+            "name": "Double Chair",
+            "status": "closed"
+          },
+          {
+            "name": "Copeland Express 6 Person Chair",
+            "status": "closed"
+          },
+          {
+            "name": "High Rider Quad",
+            "status": "closed"
+          },
+          {
+            "name": "Highland Express Quad",
+            "status": "closed"
+          }
+        ],
+        "tracks": [
+          {
+            "difficulty": "green",
             "name": "Ponyback",
-            "status": "closed",
-            "difficulty": "easy",
-            "dayStatus": "closed",
-            "nightStatus": "closed"
+            "status": "closed"
           },
           {
+            "difficulty": "green",
             "name": "Pinto",
-            "status": "closed",
-            "difficulty": "easy",
-            "dayStatus": "closed",
-            "nightStatus": "closed"
+            "status": "closed"
           },
           {
+            "difficulty": "green",
             "name": "Hungry Hollow",
-            "status": "closed",
-            "difficulty": "easy",
-            "dayStatus": "closed",
-            "nightStatus": "closed"
+            "status": "closed"
           },
           {
+            "difficulty": "green",
             "name": "Roundup",
-            "status": "closed",
-            "difficulty": "easy",
-            "dayStatus": "closed",
-            "nightStatus": "closed"
+            "status": "closed"
           },
           {
+            "difficulty": "green",
             "name": "Donkey Serenade",
-            "status": "closed",
-            "difficulty": "easy",
-            "dayStatus": "closed",
-            "nightStatus": "closed"
+            "status": "closed"
           },
           {
+            "difficulty": "green",
             "name": "Pony Express",
-            "status": "closed",
-            "difficulty": "easy",
-            "dayStatus": "closed",
-            "nightStatus": "closed"
+            "status": "closed"
           },
           {
+            "difficulty": "green",
             "name": "Canter",
-            "status": "closed",
-            "difficulty": "easy",
-            "dayStatus": "closed",
-            "nightStatus": "closed"
+            "status": "closed"
           },
           {
+            "difficulty": "green",
             "name": "Mule Train",
-            "status": "closed",
-            "difficulty": "easy",
-            "dayStatus": "closed",
-            "nightStatus": "closed"
+            "status": "closed"
           },
           {
+            "difficulty": "blue",
             "name": "Steeplechase",
-            "status": "closed",
-            "difficulty": "difficult",
-            "dayStatus": "closed",
-            "nightStatus": "closed"
+            "status": "closed"
           },
           {
+            "difficulty": "blue",
             "name": "Flying Mare",
-            "status": "closed",
-            "difficulty": "difficult",
-            "dayStatus": "closed",
-            "nightStatus": "closed"
+            "status": "closed"
           },
           {
+            "difficulty": "blue",
             "name": "Pony Tail",
-            "status": "closed",
-            "difficulty": "difficult",
-            "dayStatus": "closed",
-            "nightStatus": "closed"
+            "status": "closed"
           },
           {
+            "difficulty": "blue",
             "name": "Ramey's Return",
-            "status": "closed",
-            "difficulty": "difficult",
-            "dayStatus": "closed",
-            "nightStatus": "closed"
+            "status": "closed"
           },
           {
+            "difficulty": "blue",
             "name": "Saddleback",
-            "status": "closed",
-            "difficulty": "difficult",
-            "dayStatus": "closed",
-            "nightStatus": "closed"
+            "status": "closed"
           },
           {
+            "difficulty": "blue",
             "name": "Stallion Slide",
-            "status": "closed",
-            "difficulty": "difficult",
-            "dayStatus": "closed",
-            "nightStatus": "closed"
+            "status": "closed"
           },
           {
+            "difficulty": "blue",
             "name": "Duster",
-            "status": "closed",
-            "difficulty": "difficult",
-            "dayStatus": "closed",
-            "nightStatus": "closed"
+            "status": "closed"
           },
           {
+            "difficulty": "blue",
             "name": "Nightmare Ride",
-            "status": "closed",
-            "difficulty": "difficult",
-            "dayStatus": "closed",
-            "nightStatus": "closed"
+            "status": "closed"
           },
           {
+            "difficulty": "blue",
             "name": "Stampede",
-            "status": "closed",
-            "difficulty": "difficult",
-            "dayStatus": "closed",
-            "nightStatus": "closed"
+            "status": "closed"
           },
           {
+            "difficulty": "blue",
             "name": "The Wave",
-            "status": "closed",
-            "difficulty": "difficult",
-            "dayStatus": "closed",
-            "nightStatus": "closed"
+            "status": "closed"
           },
           {
+            "difficulty": "blue",
             "name": "Shaggy Mane",
-            "status": "closed",
-            "difficulty": "difficult",
-            "dayStatus": "closed",
-            "nightStatus": "closed"
+            "status": "closed"
           },
           {
+            "difficulty": "blue",
             "name": "The Zipper",
-            "status": "closed",
-            "difficulty": "difficult",
-            "dayStatus": "closed",
-            "nightStatus": "Not available"
+            "status": "closed"
           },
           {
+            "difficulty": "blue",
             "name": "Bushwacker",
-            "status": "closed",
-            "difficulty": "difficult",
-            "dayStatus": "closed",
-            "nightStatus": "Not available"
+            "status": "closed"
           },
           {
+            "difficulty": "blue",
             "name": "Bronco",
-            "status": "closed",
-            "difficulty": "difficult",
-            "dayStatus": "closed",
-            "nightStatus": "closed"
+            "status": "closed"
           },
           {
-            "name": "Rodeo",
-            "status": "closed",
-            "difficulty": "difficult",
-            "dayStatus": "closed",
-            "nightStatus": "closed"
-          },
-          {
+            "difficulty": "black",
             "name": "Race Hill",
-            "status": "closed",
-            "difficulty": "difficult",
-            "dayStatus": "closed",
-            "nightStatus": "closed"
+            "status": "closed"
           },
           {
+            "difficulty": "black",
             "name": "Horsefeathers",
-            "status": "closed",
-            "difficulty": "difficult",
-            "dayStatus": "closed",
-            "nightStatus": "closed"
-          }
-        ],
-        "rawData": {
-          "conditions": {
-            "hours": "Closed for the season",
-            "surface_conditions": "°C",
-            "base_depth": "Runs",
-            "snowfall_24h": "0 cm"
+            "status": "closed"
           },
-          "runs": {
-            "easy": [
-              {
-                "name": "Ponyback",
-                "day_status": "closed",
-                "night_status": "closed"
-              },
-              {
-                "name": "Pinto",
-                "day_status": "closed",
-                "night_status": "closed"
-              },
-              {
-                "name": "Hungry Hollow",
-                "day_status": "closed",
-                "night_status": "closed"
-              },
-              {
-                "name": "Roundup",
-                "day_status": "closed",
-                "night_status": "closed"
-              },
-              {
-                "name": "Donkey Serenade",
-                "day_status": "closed",
-                "night_status": "closed"
-              },
-              {
-                "name": "Pony Express",
-                "day_status": "closed",
-                "night_status": "closed"
-              },
-              {
-                "name": "Canter",
-                "day_status": "closed",
-                "night_status": "closed"
-              },
-              {
-                "name": "Mule Train",
-                "day_status": "closed",
-                "night_status": "closed"
-              }
-            ],
-            "difficult": [
-              {
-                "name": "Steeplechase",
-                "day_status": "closed",
-                "night_status": "closed"
-              },
-              {
-                "name": "Flying Mare",
-                "day_status": "closed",
-                "night_status": "closed"
-              },
-              {
-                "name": "Pony Tail",
-                "day_status": "closed",
-                "night_status": "closed"
-              },
-              {
-                "name": "Ramey's Return",
-                "day_status": "closed",
-                "night_status": "closed"
-              },
-              {
-                "name": "Saddleback",
-                "day_status": "closed",
-                "night_status": "closed"
-              },
-              {
-                "name": "Stallion Slide",
-                "day_status": "closed",
-                "night_status": "closed"
-              },
-              {
-                "name": "Duster",
-                "day_status": "closed",
-                "night_status": "closed"
-              },
-              {
-                "name": "Nightmare Ride",
-                "day_status": "closed",
-                "night_status": "closed"
-              },
-              {
-                "name": "Stampede",
-                "day_status": "closed",
-                "night_status": "closed"
-              },
-              {
-                "name": "The Wave",
-                "day_status": "closed",
-                "night_status": "closed"
-              },
-              {
-                "name": "Shaggy Mane",
-                "day_status": "closed",
-                "night_status": "closed"
-              },
-              {
-                "name": "The Zipper",
-                "day_status": "closed",
-                "night_status": "Not available"
-              },
-              {
-                "name": "Bushwacker",
-                "day_status": "closed",
-                "night_status": "Not available"
-              },
-              {
-                "name": "Bronco",
-                "day_status": "closed",
-                "night_status": "closed"
-              },
-              {
-                "name": "Rodeo",
-                "day_status": "closed",
-                "night_status": "closed"
-              },
-              {
-                "name": "Race Hill",
-                "day_status": "closed",
-                "night_status": "closed"
-              },
-              {
-                "name": "Horsefeathers",
-                "day_status": "closed",
-                "night_status": "closed"
-              }
-            ],
-            "more_difficult": [],
-            "terrain_park": [
-              {
-                "name": "Horsefly Hop",
-                "day_status": "closed",
-                "night_status": "closed"
-              },
-              {
-                "name": "Bullpen",
-                "day_status": "closed",
-                "night_status": "closed"
-              }
-            ]
-          },
-          "lifts": [],
-          "cross_country": [
-            {
-              "trail": "5",
-              "distance": "2.0 km",
-              "open": "closed",
-              "track_set": "closed",
-              "groomed_today": "closed"
-            },
-            {
-              "trail": "9",
-              "distance": "2.5 km",
-              "open": "closed",
-              "track_set": "closed",
-              "groomed_today": "closed"
-            },
-            {
-              "trail": "6",
-              "distance": "5.0 km",
-              "open": "closed",
-              "track_set": "closed",
-              "groomed_today": "closed"
-            },
-            {
-              "trail": "7",
-              "distance": "1.0 km",
-              "open": "closed",
-              "track_set": "closed",
-              "groomed_today": "closed"
-            },
-            {
-              "trail": "8",
-              "distance": "6.0 km",
-              "open": "closed",
-              "track_set": "closed",
-              "groomed_today": "closed"
-            },
-            {
-              "trail": "1",
-              "distance": "3.8 km",
-              "open": "closed",
-              "track_set": "closed",
-              "groomed_today": "closed"
-            },
-            {
-              "trail": "2",
-              "distance": "2.4 km",
-              "open": "closed",
-              "track_set": "closed",
-              "groomed_today": "closed"
-            },
-            {
-              "trail": "3",
-              "distance": "3.0 km",
-              "open": "closed",
-              "track_set": "closed",
-              "groomed_today": "closed"
-            },
-            {
-              "trail": "10",
-              "distance": "5.0 km",
-              "open": "closed",
-              "track_set": "closed",
-              "groomed_today": "closed"
-            }
-          ],
-          "tube_park": {}
-        },
-        "conditions": {
-          "baseDepth": "Runs",
-          "newSnow": "0 cm",
-          "surfaceConditions": "°C",
-          "hours": "Closed for the season"
-        },
-        "terrainParks": [
           {
+            "difficulty": "freeStyle",
             "name": "Horsefly Hop",
-            "status": "closed",
-            "difficulty": "terrain_park",
-            "dayStatus": "closed",
-            "nightStatus": "closed"
+            "status": "closed"
           },
           {
+            "difficulty": "freeStyle",
             "name": "Bullpen",
-            "status": "closed",
-            "difficulty": "terrain_park",
-            "dayStatus": "closed",
-            "nightStatus": "closed"
-          }
-        ],
-        "crossCountry": [
-          {
-            "trail": "5",
-            "distance": "2.0 km",
-            "status": "closed",
-            "trackSet": "closed",
-            "groomedToday": "closed"
-          },
-          {
-            "trail": "9",
-            "distance": "2.5 km",
-            "status": "closed",
-            "trackSet": "closed",
-            "groomedToday": "closed"
-          },
-          {
-            "trail": "6",
-            "distance": "5.0 km",
-            "status": "closed",
-            "trackSet": "closed",
-            "groomedToday": "closed"
-          },
-          {
-            "trail": "7",
-            "distance": "1.0 km",
-            "status": "closed",
-            "trackSet": "closed",
-            "groomedToday": "closed"
-          },
-          {
-            "trail": "8",
-            "distance": "6.0 km",
-            "status": "closed",
-            "trackSet": "closed",
-            "groomedToday": "closed"
-          },
-          {
-            "trail": "1",
-            "distance": "3.8 km",
-            "status": "closed",
-            "trackSet": "closed",
-            "groomedToday": "closed"
-          },
-          {
-            "trail": "2",
-            "distance": "2.4 km",
-            "status": "closed",
-            "trackSet": "closed",
-            "groomedToday": "closed"
-          },
-          {
-            "trail": "3",
-            "distance": "3.0 km",
-            "status": "closed",
-            "trackSet": "closed",
-            "groomedToday": "closed"
-          },
-          {
-            "trail": "10",
-            "distance": "5.0 km",
-            "status": "closed",
-            "trackSet": "closed",
-            "groomedToday": "closed"
+            "status": "closed"
           }
         ],
         "resortId": "horseshoe-valley-resort",
         "sourceUrl": "https://horseshoeresort.com/ski-report-trails/",
-        "updatedAt": 1789142882940
+        "updatedAt": 1789406838568
       }
     }
   ]

@@ -1,0 +1,159 @@
+{
+  "lifts": [
+    {
+      "area": "A",
+      "name": "Big Daddy",
+      "status": "CLOSED"
+    },
+    {
+      "area": "B",
+      "name": "Little Momma",
+      "status": "CLOSED"
+    },
+    {
+      "area": "C",
+      "name": "East Magic Carpet",
+      "status": "CLOSED"
+    },
+    {
+      "area": "D",
+      "name": "Rendez-Vous",
+      "status": "CLOSED"
+    },
+    {
+      "area": "E",
+      "name": "West Magic Carpet",
+      "status": "CLOSED"
+    },
+    {
+      "area": "F",
+      "name": "Favourite",
+      "status": "CLOSED"
+    }
+  ],
+  "tracks": [
+    {
+      "area": "1",
+      "difficulty": "green",
+      "name": "Park View",
+      "status": "closed"
+    },
+    {
+      "area": "2",
+      "difficulty": "freeStyle",
+      "name": "Puppy Pound",
+      "status": "closed"
+    },
+    {
+      "area": "3",
+      "difficulty": "freeStyle",
+      "name": "Dog Pound",
+      "status": "closed"
+    },
+    {
+      "area": "4",
+      "difficulty": "freeStyle",
+      "name": "Impound",
+      "status": "closed"
+    },
+    {
+      "area": "5",
+      "difficulty": "freeStyle",
+      "name": "Impound Jumpline",
+      "status": "closed"
+    },
+    {
+      "area": "6",
+      "difficulty": "freeStyle",
+      "name": "Compound Snow Zone",
+      "status": "closed"
+    },
+    {
+      "area": "7",
+      "difficulty": "freeStyle",
+      "name": "Compound",
+      "status": "closed"
+    },
+    {
+      "area": "8",
+      "difficulty": "blue",
+      "name": "The Chute",
+      "status": "closed"
+    },
+    {
+      "area": "9",
+      "difficulty": "green",
+      "name": "Little Momma",
+      "status": "closed"
+    },
+    {
+      "area": "10",
+      "difficulty": "green",
+      "name": "Pony",
+      "status": "closed"
+    },
+    {
+      "area": "11",
+      "difficulty": "blue",
+      "name": "Rendez Vous",
+      "status": "closed"
+    },
+    {
+      "area": "12",
+      "difficulty": "black",
+      "name": "Bomber",
+      "status": "closed"
+    },
+    {
+      "area": "13",
+      "difficulty": "green",
+      "name": "Upper Lovers Lane",
+      "status": "closed"
+    },
+    {
+      "area": "14",
+      "difficulty": "green",
+      "name": "Lower Lovers Lane",
+      "status": "closed"
+    },
+    {
+      "area": "15",
+      "difficulty": "blue",
+      "name": "Club House",
+      "status": "closed"
+    },
+    {
+      "area": "16",
+      "difficulty": "green",
+      "name": "Favourite",
+      "status": "closed"
+    },
+    {
+      "area": "17",
+      "difficulty": "blue",
+      "name": "Alleyway",
+      "status": "closed"
+    },
+    {
+      "area": "18",
+      "difficulty": "blue",
+      "name": "Elbow",
+      "status": "closed"
+    },
+    {
+      "area": "19",
+      "difficulty": "doubleBlack",
+      "name": "The Dagger",
+      "status": "closed"
+    },
+    {
+      "area": "20",
+      "difficulty": "doubleBlack",
+      "name": "The Glades",
+      "status": "closed"
+    }
+  ],
+  "resortId": "dagmar-ski-resort",
+  "sourceUrl": "https://www.skidagmar.com/trailmap/",
+  "updatedAt": 1789406006232
+}

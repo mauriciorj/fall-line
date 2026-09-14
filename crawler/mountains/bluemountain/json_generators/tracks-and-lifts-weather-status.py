@@ -10,6 +10,7 @@ from selenium.webdriver.chrome.options import Options
 URL = "https://www.bluemountain.ca/mountain/mountain-report"
 RESORT_ID = "blue-mountain"
 DEFAULT_TRACK_AREA = "Multi-Use (Bike/Hike) Trails"
+DEFAULT_TRACK_DIFFICULTY = "green"
 DIFFICULTY_FIELDS = {
     "easy": "green",
     "medium": "blue",
@@ -18,6 +19,11 @@ DIFFICULTY_FIELDS = {
     "freestyle": "freeStyle",
     "free style": "freeStyle",
 }
+
+
+def normalize_difficulty(value):
+    normalized = " ".join(value.lower().split())
+    return DIFFICULTY_FIELDS.get(normalized)
 
 
 def get_driver():
@@ -68,7 +74,17 @@ def get_status():
                         }
                     )
 
-        return {"lifts": raw_trails, "tracks": raw_lifts}
+        tracks = [
+            {
+                "area": DEFAULT_TRACK_AREA,
+                "difficulty": normalize_difficulty(row.get("difficulty", ""))
+                or DEFAULT_TRACK_DIFFICULTY,
+                "name": row["name"],
+                "status": row["status"],
+            }
+            for row in raw_lifts
+        ]
+        return {"lifts": raw_trails, "tracks": tracks}
     finally:
         driver.quit()
 

@@ -1,0 +1,132 @@
+{
+  "tracks": [
+    {
+      "difficulty": "blue",
+      "name": "Alley Way",
+      "status": "closed"
+    },
+    {
+      "difficulty": "blue",
+      "name": "Boughner's Boogie",
+      "status": "closed"
+    },
+    {
+      "difficulty": "freestyle",
+      "name": "Carson's Run / Simon's Snow Park",
+      "status": "closed"
+    },
+    {
+      "difficulty": "blue",
+      "name": "Dodds' Dip",
+      "status": "closed"
+    },
+    {
+      "difficulty": "green",
+      "name": "Eaton's Annex",
+      "status": "closed"
+    },
+    {
+      "difficulty": "black",
+      "name": "Harold's Headstander",
+      "status": "closed"
+    },
+    {
+      "difficulty": "freestyle",
+      "name": "Holden's Hwy",
+      "status": "closed"
+    },
+    {
+      "difficulty": "green",
+      "name": "Kendall's Kandihar",
+      "status": "closed"
+    },
+    {
+      "difficulty": "black",
+      "name": "Kenne's Kicker",
+      "status": "closed"
+    },
+    {
+      "difficulty": "green",
+      "name": "Kids' Buel",
+      "status": "closed"
+    },
+    {
+      "difficulty": "black",
+      "name": "Knight Flight",
+      "status": "closed"
+    },
+    {
+      "difficulty": "blue",
+      "name": "Larry's Line",
+      "status": "closed"
+    },
+    {
+      "difficulty": "green",
+      "name": "Lower Road",
+      "status": "closed"
+    },
+    {
+      "difficulty": "blue",
+      "name": "MacKenzie Trail",
+      "status": "closed"
+    },
+    {
+      "difficulty": "freestyle",
+      "name": "Moonbeam",
+      "status": "closed"
+    },
+    {
+      "difficulty": "blue",
+      "name": "O.K. Ross Run",
+      "status": "closed"
+    },
+    {
+      "difficulty": "blue",
+      "name": "Philpott's Folly",
+      "status": "closed"
+    },
+    {
+      "difficulty": "double-black",
+      "name": "Porter's Pipeline",
+      "status": "closed"
+    },
+    {
+      "difficulty": "blue",
+      "name": "Quick Link",
+      "status": "closed"
+    },
+    {
+      "difficulty": "freestyle",
+      "name": "Roadrunner",
+      "status": "closed"
+    },
+    {
+      "difficulty": "green",
+      "name": "Sidewinder",
+      "status": "closed"
+    },
+    {
+      "difficulty": "black",
+      "name": "Snowy's Glade",
+      "status": "closed"
+    },
+    {
+      "difficulty": "blue",
+      "name": "Soules' Skyway",
+      "status": "closed"
+    },
+    {
+      "difficulty": "green",
+      "name": "West Hill",
+      "status": "closed"
+    },
+    {
+      "difficulty": "black",
+      "name": "Wortley's Wiggle",
+      "status": "closed"
+    }
+  ],
+  "resortId": "caledon-ski-club",
+  "sourceUrl": "https://caledonskiclub.com/private-lessons",
+  "updatedAt": 1789400799884
+}

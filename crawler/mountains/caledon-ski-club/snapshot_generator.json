@@ -30,13 +30,13 @@
         "website": "https://caledonskiclub.com/",
         "name": "Caledon Ski Club",
         "tracksSummary": {
-          "black": 0,
-          "blue": 0,
-          "doubleBlack": 0,
-          "freeStyle": 0,
-          "green": 0
+          "black": 5,
+          "blue": 9,
+          "doubleBlack": 1,
+          "freeStyle": 4,
+          "green": 6
         },
-        "dayTicketPrice": 85,
+        "dayTicketPrice": 75,
         "skiRentalPrice": 74.99,
         "snowBoardRentalPrice": 74.99
       }
@@ -44,541 +44,199 @@
     {
       "table": "resortHours",
       "content": {
-        "hours": [
-          {
-            "name": "Lift Operations",
-            "hours": [
-              {
-                "day": "Daily",
-                "time": "8:30am to 4:00pm"
-              }
-            ]
-          }
-        ],
+        "hours": {
+          "sunday": "8:30am to 4:00pm",
+          "monday": "8:30am to 4:00pm",
+          "tuesday": "8:30am to 4:00pm",
+          "wednesday": "8:30am to 4:00pm",
+          "thursday": "8:30am to 4:00pm",
+          "friday": "8:30am to 4:00pm",
+          "saturday": "8:30am to 4:00pm"
+        },
         "resortId": "caledon-ski-club",
         "sourceUrl": "https://caledonskiclub.com/hours-lift-prices",
-        "updatedAt": 1789140585143
+        "updatedAt": 1789400787101
       }
     },
     {
       "table": "resortRates",
       "content": {
         "rates": {
-          "items": [
-            {
-              "name": "Adult",
-              "prices": [
-                {
-                  "label": "WEEKENDS & HOLIDAYS",
-                  "value": "$85.00"
-                },
-                {
-                  "label": "MID WEEK FULL DAY",
-                  "value": "$75.00"
-                },
-                {
-                  "label": "MID WEEK AFTER 1PM",
-                  "value": "$62.00"
-                }
-              ]
-            },
-            {
-              "name": "Child 5 & under",
-              "prices": [
-                {
-                  "label": "WEEKENDS & HOLIDAYS",
-                  "value": "$21.00"
-                },
-                {
-                  "label": "MID WEEK FULL DAY",
-                  "value": "$21.00"
-                },
-                {
-                  "label": "MID WEEK AFTER 1PM",
-                  "value": "$21.00"
-                }
-              ]
-            },
-            {
-              "name": "Child 6 - 12",
-              "prices": [
-                {
-                  "label": "WEEKENDS & HOLIDAYS",
-                  "value": "$64.00"
-                },
-                {
-                  "label": "MID WEEK FULL DAY",
-                  "value": "$62.00"
-                },
-                {
-                  "label": "MID WEEK AFTER 1PM",
-                  "value": "$54.00"
-                }
-              ]
-            },
-            {
-              "name": "Student 13 - 18",
-              "prices": [
-                {
-                  "label": "WEEKENDS & HOLIDAYS",
-                  "value": "$72.00"
-                },
-                {
-                  "label": "MID WEEK FULL DAY",
-                  "value": "$64.00"
-                },
-                {
-                  "label": "MID WEEK AFTER 1PM",
-                  "value": "$56.00"
-                }
-              ]
-            },
-            {
-              "name": "Senior 65+",
-              "prices": [
-                {
-                  "label": "WEEKENDS & HOLIDAYS",
-                  "value": "$72.00"
-                },
-                {
-                  "label": "MID WEEK FULL DAY",
-                  "value": "$64.00"
-                },
-                {
-                  "label": "MID WEEK AFTER 1PM",
-                  "value": "$56.00"
-                }
-              ]
-            }
-          ]
+          "day-week": {
+            "adults": "$75",
+            "youth": "$62",
+            "seniors": "$64"
+          },
+          "day-weekend": {
+            "adults": "$85",
+            "youth": "$64",
+            "seniors": "$72"
+          }
         },
         "resortId": "caledon-ski-club",
         "sourceUrl": "https://caledonskiclub.com/hours-lift-prices",
-        "updatedAt": 1789140589639
+        "updatedAt": 1789400791514
       }
     },
     {
       "table": "resortRentals",
       "content": {
         "rentals": {
-          "sections": [
-            {
-              "name": "PACKAGES - SKI / SNOWBOARD",
-              "items": [
-                {
-                  "name": "Adult",
-                  "prices": [
-                    {
-                      "label": "Full Day",
-                      "value": "$74.99"
-                    },
-                    {
-                      "label": "Half Day",
-                      "value": "$49.99"
-                    }
-                  ]
-                },
-                {
-                  "name": "Junior",
-                  "prices": [
-                    {
-                      "label": "Full Day",
-                      "value": "$54.99"
-                    },
-                    {
-                      "label": "Half Day",
-                      "value": "$39.99"
-                    }
-                  ]
-                },
-                {
-                  "name": "Child (skis under 91cm)",
-                  "prices": [
-                    {
-                      "label": "Full Day",
-                      "value": "$39.99"
-                    },
-                    {
-                      "label": "Half Day",
-                      "value": "NA"
-                    }
-                  ]
-                },
-                {
-                  "name": "With performance skis",
-                  "prices": [
-                    {
-                      "label": "Full Day",
-                      "value": "$89.99"
-                    },
-                    {
-                      "label": "Half Day",
-                      "value": "$69.99"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "SINGLE ITEMS",
-              "items": [
-                {
-                  "name": "Skis / Snowboard",
-                  "prices": [
-                    {
-                      "label": "Full Day",
-                      "value": "$49.99"
-                    },
-                    {
-                      "label": "Half Day",
-                      "value": "$39.99"
-                    }
-                  ]
-                },
-                {
-                  "name": "Boots",
-                  "prices": [
-                    {
-                      "label": "Full Day",
-                      "value": "$49.99"
-                    },
-                    {
-                      "label": "Half Day",
-                      "value": "$39.99"
-                    }
-                  ]
-                },
-                {
-                  "name": "Poles / Helmet",
-                  "prices": [
-                    {
-                      "label": "Full Day",
-                      "value": "$19.99"
-                    },
-                    {
-                      "label": "Half Day",
-                      "value": "NA"
-                    }
-                  ]
-                },
-                {
-                  "name": "Snowshoes",
-                  "prices": [
-                    {
-                      "label": "Full Day",
-                      "value": "$39.99"
-                    },
-                    {
-                      "label": "Half Day",
-                      "value": "NA"
-                    }
-                  ]
-                },
-                {
-                  "name": "Crampons",
-                  "prices": [
-                    {
-                      "label": "Full Day",
-                      "value": "$19.99"
-                    },
-                    {
-                      "label": "Half Day",
-                      "value": "NA"
-                    }
-                  ]
-                },
-                {
-                  "name": "Demo Skis",
-                  "prices": [
-                    {
-                      "label": "Full Day",
-                      "value": "$59.99"
-                    },
-                    {
-                      "label": "Half Day",
-                      "value": "$49.99"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
+          "ski": {
+            "adults": "$74.99",
+            "youth": "$54.99"
+          },
+          "snowboard": {
+            "adults": "$74.99",
+            "youth": "$54.99"
+          },
+          "items": {
+            "boots": "$49.99",
+            "ice skate": "$",
+            "skis": "$59.99",
+            "snowboard": "$49.99",
+            "poles": "$19.99",
+            "helmet": "$19.99"
+          }
         },
         "resortId": "caledon-ski-club",
         "sourceUrl": "https://caledonskiclub.com/proshop",
-        "updatedAt": 1789140594287
+        "updatedAt": 1789400795730
       }
     },
     {
       "table": "weatherAndStatus",
       "content": {
-        "lifts": [],
-        "trails": [
+        "tracks": [
           {
+            "difficulty": "blue",
             "name": "Alley Way",
             "status": "closed"
           },
           {
+            "difficulty": "blue",
             "name": "Boughner's Boogie",
             "status": "closed"
           },
           {
+            "difficulty": "freestyle",
             "name": "Carson's Run / Simon's Snow Park",
             "status": "closed"
           },
           {
+            "difficulty": "blue",
             "name": "Dodds' Dip",
             "status": "closed"
           },
           {
+            "difficulty": "green",
             "name": "Eaton's Annex",
             "status": "closed"
           },
           {
+            "difficulty": "black",
             "name": "Harold's Headstander",
             "status": "closed"
           },
           {
+            "difficulty": "freestyle",
             "name": "Holden's Hwy",
             "status": "closed"
           },
           {
+            "difficulty": "green",
             "name": "Kendall's Kandihar",
             "status": "closed"
           },
           {
+            "difficulty": "black",
             "name": "Kenne's Kicker",
             "status": "closed"
           },
           {
+            "difficulty": "green",
             "name": "Kids' Buel",
             "status": "closed"
           },
           {
+            "difficulty": "black",
             "name": "Knight Flight",
             "status": "closed"
           },
           {
+            "difficulty": "blue",
             "name": "Larry's Line",
             "status": "closed"
           },
           {
+            "difficulty": "green",
             "name": "Lower Road",
             "status": "closed"
           },
           {
+            "difficulty": "blue",
             "name": "MacKenzie Trail",
             "status": "closed"
           },
           {
+            "difficulty": "freestyle",
             "name": "Moonbeam",
             "status": "closed"
           },
           {
+            "difficulty": "blue",
             "name": "O.K. Ross Run",
             "status": "closed"
           },
           {
+            "difficulty": "blue",
             "name": "Philpott's Folly",
             "status": "closed"
           },
           {
+            "difficulty": "double-black",
             "name": "Porter's Pipeline",
             "status": "closed"
           },
           {
+            "difficulty": "blue",
             "name": "Quick Link",
             "status": "closed"
           },
           {
+            "difficulty": "freestyle",
             "name": "Roadrunner",
             "status": "closed"
           },
           {
+            "difficulty": "green",
             "name": "Sidewinder",
             "status": "closed"
           },
           {
+            "difficulty": "black",
             "name": "Snowy's Glade",
             "status": "closed"
           },
           {
+            "difficulty": "blue",
             "name": "Soules' Skyway",
             "status": "closed"
           },
           {
-            "name": "The Yeighway Highway",
-            "status": "closed"
-          },
-          {
+            "difficulty": "green",
             "name": "West Hill",
             "status": "closed"
           },
           {
+            "difficulty": "black",
             "name": "Wortley's Wiggle",
             "status": "closed"
-          },
-          {
-            "name": "Zoe's Line",
-            "status": "closed"
-          },
-          {
-            "name": "Ice Rink",
-            "status": "closed"
-          },
-          {
-            "name": "Snowshoe/Hiking Trails",
-            "status": "open"
           }
         ],
-        "rawData": {
-          "snow_conditions": {
-            "snowmaking": "Not in progress",
-            "surface": "The West Lodge's fall office hours are Monday to Friday, 9am until 4pm.   Just a reminder that dryland training begins at the West Lodge this coming Sunday.  Please continue to watch our weekly e-carvers as we continue update everyone on the season ahead!"
-          },
-          "trails": [
-            {
-              "name": "Alley Way",
-              "status": "closed"
-            },
-            {
-              "name": "Boughner's Boogie",
-              "status": "closed"
-            },
-            {
-              "name": "Carson's Run / Simon's Snow Park",
-              "status": "closed"
-            },
-            {
-              "name": "Dodds' Dip",
-              "status": "closed"
-            },
-            {
-              "name": "Eaton's Annex",
-              "status": "closed"
-            },
-            {
-              "name": "Harold's Headstander",
-              "status": "closed"
-            },
-            {
-              "name": "Holden's Hwy",
-              "status": "closed"
-            },
-            {
-              "name": "Kendall's Kandihar",
-              "status": "closed"
-            },
-            {
-              "name": "Kenne's Kicker",
-              "status": "closed"
-            },
-            {
-              "name": "Kids' Buel",
-              "status": "closed"
-            },
-            {
-              "name": "Knight Flight",
-              "status": "closed"
-            },
-            {
-              "name": "Larry's Line",
-              "status": "closed"
-            },
-            {
-              "name": "Lower Road",
-              "status": "closed"
-            },
-            {
-              "name": "MacKenzie Trail",
-              "status": "closed"
-            },
-            {
-              "name": "Moonbeam",
-              "status": "closed"
-            },
-            {
-              "name": "O.K. Ross Run",
-              "status": "closed"
-            },
-            {
-              "name": "Philpott's Folly",
-              "status": "closed"
-            },
-            {
-              "name": "Porter's Pipeline",
-              "status": "closed"
-            },
-            {
-              "name": "Quick Link",
-              "status": "closed"
-            },
-            {
-              "name": "Roadrunner",
-              "status": "closed"
-            },
-            {
-              "name": "Sidewinder",
-              "status": "closed"
-            },
-            {
-              "name": "Snowy's Glade",
-              "status": "closed"
-            },
-            {
-              "name": "Soules' Skyway",
-              "status": "closed"
-            },
-            {
-              "name": "The Yeighway Highway",
-              "status": "closed"
-            },
-            {
-              "name": "West Hill",
-              "status": "closed"
-            },
-            {
-              "name": "Wortley's Wiggle",
-              "status": "closed"
-            },
-            {
-              "name": "Zoe's Line",
-              "status": "closed"
-            },
-            {
-              "name": "Ice Rink",
-              "status": "closed"
-            },
-            {
-              "name": "Snowshoe/Hiking Trails",
-              "status": "open"
-            }
-          ],
-          "lifts": [],
-          "trails_summary": {
-            "open": 1,
-            "total": 29
-          },
-          "lifts_summary": {
-            "open": 0,
-            "total": 0
-          }
-        },
-        "conditions": {
-          "surfaceConditions": "The West Lodge's fall office hours are Monday to Friday, 9am until 4pm.   Just a reminder that dryland training begins at the West Lodge this coming Sunday.  Please continue to watch our weekly e-carvers as we continue update everyone on the season ahead!",
-          "snowmaking": "Not in progress"
-        },
-        "trailsSummary": {
-          "open": 1,
-          "total": 29
-        },
-        "liftsSummary": {
-          "open": 0,
-          "total": 0
-        },
         "resortId": "caledon-ski-club",
         "sourceUrl": "https://caledonskiclub.com/private-lessons",
-        "updatedAt": 1789140599033
+        "updatedAt": 1789400799884
       }
     }
   ]

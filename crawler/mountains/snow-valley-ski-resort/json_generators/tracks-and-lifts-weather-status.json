@@ -1,0 +1,146 @@
+{
+  "lifts": [
+    {
+      "name": "quad chair",
+      "status": "closed"
+    },
+    {
+      "name": "wide load chair",
+      "status": "closed"
+    },
+    {
+      "name": "triple chair",
+      "status": "closed"
+    },
+    {
+      "name": "snowflake express",
+      "status": "closed"
+    },
+    {
+      "name": "wonderland express",
+      "status": "closed"
+    },
+    {
+      "name": "polar express",
+      "status": "closed"
+    },
+    {
+      "name": "magic carpet",
+      "status": "closed"
+    },
+    {
+      "name": "kidz village express",
+      "status": "closed"
+    }
+  ],
+  "tracks": [
+    {
+      "difficulty": "green",
+      "name": "garfield",
+      "status": "closed"
+    },
+    {
+      "difficulty": "green",
+      "name": "snoopy",
+      "status": "closed"
+    },
+    {
+      "difficulty": "blue",
+      "name": "trudys way",
+      "status": "closed"
+    },
+    {
+      "difficulty": "black",
+      "name": "pennys",
+      "status": "closed"
+    },
+    {
+      "difficulty": "black",
+      "name": "schuss",
+      "status": "closed"
+    },
+    {
+      "difficulty": "green",
+      "name": "highland trail",
+      "status": "closed"
+    },
+    {
+      "difficulty": "green",
+      "name": "family",
+      "status": "closed"
+    },
+    {
+      "difficulty": "black",
+      "name": "racer",
+      "status": "closed"
+    },
+    {
+      "difficulty": "black",
+      "name": "hard knox",
+      "status": "closed"
+    },
+    {
+      "difficulty": "blue",
+      "name": "front",
+      "status": "closed"
+    },
+    {
+      "difficulty": "blue",
+      "name": "whistler",
+      "status": "closed"
+    },
+    {
+      "difficulty": "green",
+      "name": "recken run",
+      "status": "closed"
+    },
+    {
+      "difficulty": "blue",
+      "name": "keith rolls",
+      "status": "closed"
+    },
+    {
+      "difficulty": "doubleBlack",
+      "name": "vertigo",
+      "status": "closed"
+    },
+    {
+      "difficulty": "black",
+      "name": "huxtable",
+      "status": "closed"
+    },
+    {
+      "difficulty": "black",
+      "name": "oh chute",
+      "status": "closed"
+    },
+    {
+      "difficulty": "freeStyle",
+      "name": "easy does it",
+      "status": "closed"
+    },
+    {
+      "difficulty": "green",
+      "name": "alc 1",
+      "status": "closed"
+    },
+    {
+      "difficulty": "green",
+      "name": "alc 2",
+      "status": "closed"
+    },
+    {
+      "difficulty": "green",
+      "name": "alc 3",
+      "status": "closed"
+    },
+    {
+      "difficulty": "green",
+      "name": "kidz village",
+      "status": "closed"
+    }
+  ],
+  "resortId": "snow-valley-ski-resort",
+  "sourceUrl": "https://www.skisnowvalley.com/plan/weather-webcams/",
+  "updatedAt": 1789407346750
+}

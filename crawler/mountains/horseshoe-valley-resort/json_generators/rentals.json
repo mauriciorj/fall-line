@@ -1,23 +1,23 @@
 {
   "rentals": {
     "ski": {
-      "youth": "$35",
-      "adults": "$35"
+      "adults": "$35",
+      "youth": "$35"
     },
     "snowboard": {
-      "youth": "$35",
-      "adults": "$35"
+      "adults": "$35",
+      "youth": "$35"
     },
     "items": {
       "boots": "$34",
+      "poles": "$18",
       "helmet": "$18",
       "ice-skates": "$15",
-      "poles": "$18",
       "skis": "$35",
       "snowboard": "$35"
     }
   },
   "resortId": "horseshoe-valley-resort",
   "sourceUrl": "https://horseshoeresort.com/ski/lift-ticket-and-rentals-pricing/",
-  "updatedAt": 1789142881803
+  "updatedAt": 1789406838494
 }

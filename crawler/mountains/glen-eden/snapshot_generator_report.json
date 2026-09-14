@@ -4,6 +4,7 @@
     {
       "table": "resorts",
       "missingColumns": [
+        "lessonsPrice",
         "tollFree",
         "tubbingPrice"
       ]
@@ -22,14 +23,8 @@
     },
     {
       "table": "weatherAndStatus",
-      "missingColumns": [
-        "lifts",
-        "trails",
-        "terrainParks",
-        "crossCountry",
-        "tubing"
-      ]
+      "missingColumns": []
     }
   ],
-  "missingColumnCount": 7
+  "missingColumnCount": 3
 }

@@ -118,6 +118,18 @@ def push_snapshot(snapshot):
             }
         ]
 
+    weather_data = {
+        key: value
+        for key, value in weather.items()
+        if key not in METADATA_FIELDS
+    }
+    if "tracks" in weather_data:
+        weather_data["trails"] = weather_data.pop("tracks")
+    weather_data["lifts"] = [
+        {key: value for key, value in lift.items() if key != "area"}
+        for lift in weather_data.get("lifts", [])
+    ]
+
     return {
         "resorts": push_ski_resorts([contents["resorts"]]),
         "resortHours": push_resort_hours(
@@ -141,11 +153,7 @@ def push_snapshot(snapshot):
         "weatherAndStatus": push_weather_and_status(
             weather_resort_id,
             weather_source_url,
-            {
-                key: value
-                for key, value in weather.items()
-                if key not in METADATA_FIELDS
-            },
+            weather_data,
             updated_at_ms=weather_updated_at,
         ),
     }

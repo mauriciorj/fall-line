@@ -1,27 +1,27 @@
 {
   "rates": {
     "night-week": {
-      "youth": "$46",
       "adults": "$52",
+      "youth": "$46",
       "seniors": "$46"
     },
     "night-weekend": {
-      "youth": "$56",
       "adults": "$67",
+      "youth": "$56",
       "seniors": "$56"
     },
     "day-week": {
-      "youth": "$57",
       "adults": "$72",
+      "youth": "$57",
       "seniors": "$57"
     },
     "day-weekend": {
-      "youth": "$79",
       "adults": "$99",
+      "youth": "$79",
       "seniors": "$79"
     }
   },
   "resortId": "snow-valley-ski-resort",
   "sourceUrl": "https://www.skisnowvalley.com/plan/ski-snowboard/tickets-and-passes/",
-  "updatedAt": 1789140000000
+  "updatedAt": 1789407345981
 }

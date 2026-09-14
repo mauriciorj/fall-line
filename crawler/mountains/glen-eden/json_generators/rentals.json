@@ -9,14 +9,14 @@
       "adults": "$52"
     },
     "items": {
+      "helmet": "$20",
+      "poles": "$20",
       "boots": "$42",
       "skis": "$42",
-      "snowboard": "$42",
-      "poles": "$20",
-      "helmet": "$20"
+      "snowboard": "$42"
     }
   },
   "resortId": "glen-eden",
   "sourceUrl": "https://gleneden.on.ca/plan-your-visit/",
-  "updatedAt": 1789140000000
+  "updatedAt": 1789406613021
 }

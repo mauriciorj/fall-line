@@ -1,17 +1,17 @@
 {
   "rates": {
     "day-week": {
-      "youth": "$62",
       "adults": "$75",
-      "seniors": "$40"
+      "youth": "$62",
+      "seniors": "$64"
     },
     "day-weekend": {
-      "youth": "$64",
       "adults": "$85",
+      "youth": "$64",
       "seniors": "$72"
     }
   },
   "resortId": "caledon-ski-club",
   "sourceUrl": "https://caledonskiclub.com/hours-lift-prices",
-  "updatedAt": 1789140589639
+  "updatedAt": 1789400791514
 }

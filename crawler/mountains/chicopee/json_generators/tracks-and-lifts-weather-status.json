@@ -1,0 +1,103 @@
+{
+  "lifts": [
+    {
+      "name": "Surface Lift #1",
+      "status": "closed"
+    },
+    {
+      "name": "Surface Lift #2",
+      "status": "closed"
+    },
+    {
+      "name": "Surface Lift #3",
+      "status": "closed"
+    },
+    {
+      "name": "Red Chairlift",
+      "status": "closed"
+    },
+    {
+      "name": "North Chairlift",
+      "status": "closed"
+    },
+    {
+      "name": "Applebowl Chairlift",
+      "status": "closed"
+    }
+  ],
+  "tracks": [
+    {
+      "difficulty": "green",
+      "name": "Discover",
+      "status": "closed"
+    },
+    {
+      "difficulty": "green",
+      "name": "Adventure",
+      "status": "closed"
+    },
+    {
+      "difficulty": "blue",
+      "name": "Bridge",
+      "status": "closed"
+    },
+    {
+      "difficulty": "blue",
+      "name": "Freedom",
+      "status": "closed"
+    },
+    {
+      "difficulty": "green",
+      "name": "Mount St. Louis Moonstone Way",
+      "status": "closed"
+    },
+    {
+      "difficulty": "blue",
+      "name": "Wishbone",
+      "status": "closed"
+    },
+    {
+      "difficulty": "black",
+      "name": "Easy Rider",
+      "status": "closed"
+    },
+    {
+      "difficulty": "blue",
+      "name": "North",
+      "status": "closed"
+    },
+    {
+      "difficulty": "black",
+      "name": "Mic Mac",
+      "status": "closed"
+    },
+    {
+      "difficulty": "black",
+      "name": "Chicane",
+      "status": "closed"
+    },
+    {
+      "difficulty": "black",
+      "name": "Roughshod",
+      "status": "closed"
+    },
+    {
+      "difficulty": "black",
+      "name": "Applebowl",
+      "status": "closed"
+    },
+    {
+      "difficulty": "blue",
+      "name": "Racer's Alley",
+      "status": "closed"
+    },
+    {
+      "difficulty": "freeStyle",
+      "name": "The Park",
+      "status": "closed"
+    }
+  ],
+  "resortId": "chicopee",
+  "sourceUrl": "https://www.discoverchicopee.com/activity-report",
+  "updatedAt": 1789402182330
+}

@@ -29,13 +29,13 @@
         "website": "http://www.discoverchicopee.com/",
         "name": "Chicopee",
         "tracksSummary": {
-          "black": 0,
-          "blue": 0,
+          "black": 5,
+          "blue": 5,
           "doubleBlack": 0,
-          "freeStyle": 0,
-          "green": 0
+          "freeStyle": 1,
+          "green": 3
         },
-        "dayTicketPrice": 68,
+        "dayTicketPrice": 63,
         "skiRentalPrice": 55,
         "snowBoardRentalPrice": 55
       }
@@ -43,143 +43,66 @@
     {
       "table": "resortHours",
       "content": {
-        "hours": [],
+        "hours": {
+          "sunday": "closed",
+          "monday": "closed",
+          "tuesday": "closed",
+          "wednesday": "closed",
+          "thursday": "closed",
+          "friday": "closed",
+          "saturday": "closed"
+        },
         "resortId": "chicopee",
         "sourceUrl": "https://www.discoverchicopee.com/contact#hours",
-        "updatedAt": 1789140909064
+        "updatedAt": 1789402170296
       }
     },
     {
       "table": "resortRates",
       "content": {
         "rates": {
-          "items": [
-            {
-              "name": "All Lifts*",
-              "prices": [
-                {
-                  "label": "Weekday",
-                  "value": "$63"
-                },
-                {
-                  "label": "Weekend & Holiday",
-                  "value": "$68"
-                }
-              ]
-            },
-            {
-              "name": "Surface Lifts * ticket gives access to surface lifts ONLY!",
-              "prices": [
-                {
-                  "label": "Weekday",
-                  "value": "$50"
-                },
-                {
-                  "label": "Weekend & Holiday",
-                  "value": "$55"
-                }
-              ]
-            },
-            {
-              "name": "Tot*",
-              "prices": [
-                {
-                  "label": "Weekday",
-                  "value": "$29"
-                },
-                {
-                  "label": "Weekend & Holiday",
-                  "value": "$32"
-                }
-              ]
-            },
-            {
-              "name": "Night*",
-              "prices": [
-                {
-                  "label": "Weekday",
-                  "value": "$40"
-                },
-                {
-                  "label": "Weekend & Holiday",
-                  "value": "$40"
-                }
-              ]
-            },
-            {
-              "name": "Ski/Board",
-              "prices": [
-                {
-                  "label": "Weekday",
-                  "value": "$50"
-                },
-                {
-                  "label": "Weekend & Holiday",
-                  "value": "$55"
-                }
-              ]
-            },
-            {
-              "name": "Tot* Ski/Board",
-              "prices": [
-                {
-                  "label": "Weekday",
-                  "value": "$40"
-                },
-                {
-                  "label": "Weekend & Holiday",
-                  "value": "$44"
-                }
-              ]
-            }
-          ]
+          "night-week": {
+            "youth": "$40",
+            "adults": "$40",
+            "seniors": "$40"
+          },
+          "night-weekend": {
+            "youth": "$40",
+            "adults": "$40",
+            "seniors": "$40"
+          },
+          "day-week": {
+            "youth": "$63",
+            "adults": "$63",
+            "seniors": "$63"
+          },
+          "day-weekend": {
+            "youth": "$68",
+            "adults": "$68",
+            "seniors": "$68"
+          }
         },
         "resortId": "chicopee",
         "sourceUrl": "https://www.discoverchicopee.com/plan-a-day",
-        "updatedAt": 1789140914624
+        "updatedAt": 1789402174357
       }
     },
     {
       "table": "resortRentals",
       "content": {
         "rentals": {
-          "sections": [
-            {
-              "name": "Equipment Rental",
-              "items": [
-                {
-                  "name": "Ski/Board",
-                  "prices": [
-                    {
-                      "label": "Weekday",
-                      "value": "$50"
-                    },
-                    {
-                      "label": "Weekend & Holiday",
-                      "value": "$55"
-                    }
-                  ]
-                },
-                {
-                  "name": "Tot* Ski/Board",
-                  "prices": [
-                    {
-                      "label": "Weekday",
-                      "value": "$40"
-                    },
-                    {
-                      "label": "Weekend & Holiday",
-                      "value": "$44"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
+          "ski": {
+            "adults": "$55",
+            "youth": "$44"
+          },
+          "snowboard": {
+            "adults": "$55",
+            "youth": "$44"
+          }
         },
         "resortId": "chicopee",
         "sourceUrl": "https://www.discoverchicopee.com/plan-a-day",
-        "updatedAt": 1789140920098
+        "updatedAt": 1789402178286
       }
     },
     {
@@ -187,56 +110,105 @@
       "content": {
         "lifts": [
           {
-            "name": "# Of Lifts Open:",
-            "status": "open"
-          }
-        ],
-        "trails": [
+            "name": "Surface Lift #1",
+            "status": "closed"
+          },
           {
-            "name": "# Of Trails Open:",
-            "status": "open"
+            "name": "Surface Lift #2",
+            "status": "closed"
+          },
+          {
+            "name": "Surface Lift #3",
+            "status": "closed"
+          },
+          {
+            "name": "Red Chairlift",
+            "status": "closed"
+          },
+          {
+            "name": "North Chairlift",
+            "status": "closed"
+          },
+          {
+            "name": "Applebowl Chairlift",
+            "status": "closed"
           }
         ],
-        "rawData": {
-          "lifts": [
-            {
-              "name": "# Of Lifts Open:",
-              "status": "open"
-            }
-          ],
-          "trails": [
-            {
-              "name": "# Of Trails Open:",
-              "status": "open"
-            }
-          ],
-          "terrain_parks": [],
-          "conditions": {},
-          "lifts_summary": {
-            "open": 1,
-            "total": 1
+        "tracks": [
+          {
+            "difficulty": "green",
+            "name": "Discover",
+            "status": "closed"
           },
-          "trails_summary": {
-            "open": 1,
-            "total": 1
+          {
+            "difficulty": "green",
+            "name": "Adventure",
+            "status": "closed"
           },
-          "parks_summary": {
-            "open": 0,
-            "total": 0
+          {
+            "difficulty": "blue",
+            "name": "Bridge",
+            "status": "closed"
+          },
+          {
+            "difficulty": "blue",
+            "name": "Freedom",
+            "status": "closed"
+          },
+          {
+            "difficulty": "green",
+            "name": "Mount St. Louis Moonstone Way",
+            "status": "closed"
+          },
+          {
+            "difficulty": "blue",
+            "name": "Wishbone",
+            "status": "closed"
+          },
+          {
+            "difficulty": "black",
+            "name": "Easy Rider",
+            "status": "closed"
+          },
+          {
+            "difficulty": "blue",
+            "name": "North",
+            "status": "closed"
+          },
+          {
+            "difficulty": "black",
+            "name": "Mic Mac",
+            "status": "closed"
+          },
+          {
+            "difficulty": "black",
+            "name": "Chicane",
+            "status": "closed"
+          },
+          {
+            "difficulty": "black",
+            "name": "Roughshod",
+            "status": "closed"
+          },
+          {
+            "difficulty": "black",
+            "name": "Applebowl",
+            "status": "closed"
+          },
+          {
+            "difficulty": "blue",
+            "name": "Racer's Alley",
+            "status": "closed"
+          },
+          {
+            "difficulty": "freeStyle",
+            "name": "The Park",
+            "status": "closed"
           }
-        },
-        "terrainParks": [],
-        "trailsSummary": {
-          "open": 1,
-          "total": 1
-        },
-        "liftsSummary": {
-          "open": 1,
-          "total": 1
-        },
+        ],
         "resortId": "chicopee",
         "sourceUrl": "https://www.discoverchicopee.com/activity-report",
-        "updatedAt": 1789140925444
+        "updatedAt": 1789402182330
       }
     }
   ]

@@ -15,7 +15,7 @@
         "googleMapsUrl": "https://maps.app.goo.gl/B1FXSZ1VtYbVTsaXA",
         "hasAccommodations": false,
         "hasCrossCountry": false,
-        "hasLessons": true,
+        "hasLessons": false,
         "hasSnowshoeing": false,
         "hasSpa": false,
         "hasTubing": false,
@@ -29,356 +29,208 @@
         "website": "https://gleneden.on.ca/",
         "name": "Glen Eden",
         "tracksSummary": {
-          "black": 0,
-          "blue": 0,
+          "black": 2,
+          "blue": 5,
           "doubleBlack": 0,
-          "freeStyle": 0,
-          "green": 0
+          "freeStyle": 1,
+          "green": 9
         },
-        "dayTicketPrice": 65,
+        "dayTicketPrice": 50,
         "skiRentalPrice": 52,
-        "lessonsPrice": 249,
         "snowBoardRentalPrice": 52
       }
     },
     {
       "table": "resortHours",
       "content": {
-        "hours": [
-          {
-            "name": "Regular Hours",
-            "hours": [
-              {
-                "day": "Daily",
-                "time": "8:30 am – 9:30 pm Daily"
-              }
-            ]
-          },
-          {
-            "name": "Holiday Hours",
-            "hours": [
-              {
-                "day": "Holiday periods",
-                "time": "Closed Christmas Day (December 25) and open from 8:30 am–4:30 pm Christmas Eve (December 24) and New Year’s Eve (December 31)"
-              }
-            ]
-          }
-        ],
+        "hours": {
+          "sunday": "8:30am - 9:30pm",
+          "monday": "8:30am - 9:30pm",
+          "tuesday": "8:30am - 9:30pm",
+          "wednesday": "8:30am - 9:30pm",
+          "thursday": "8:30am - 9:30pm",
+          "friday": "8:30am - 9:30pm",
+          "saturday": "8:30am - 9:30pm"
+        },
         "resortId": "glen-eden",
         "sourceUrl": "https://gleneden.on.ca/plan-your-visit/",
-        "updatedAt": 1789141579397
+        "updatedAt": 1789406611805
       }
     },
     {
       "table": "resortRates",
       "content": {
         "rates": {
-          "items": [
-            {
-              "name": "New RFID card",
-              "prices": [
-                {
-                  "label": "age_range",
-                  "value": "N/A"
-                },
-                {
-                  "label": "peak_online",
-                  "value": "$6.50"
-                },
-                {
-                  "label": "peak_gate",
-                  "value": "$6.50"
-                },
-                {
-                  "label": "off_peak_online",
-                  "value": "$6.50"
-                },
-                {
-                  "label": "off_peak_gate",
-                  "value": "$6.50"
-                }
-              ]
-            },
-            {
-              "name": "Beginner Centre (Carpet Lifts only)",
-              "prices": [
-                {
-                  "label": "age_range",
-                  "value": "All Ages"
-                },
-                {
-                  "label": "peak_online",
-                  "value": "$47"
-                },
-                {
-                  "label": "peak_gate",
-                  "value": "$52"
-                },
-                {
-                  "label": "off_peak_online",
-                  "value": "$35"
-                },
-                {
-                  "label": "off_peak_gate",
-                  "value": "$40"
-                }
-              ]
-            },
-            {
-              "name": "5 & Under",
-              "prices": [
-                {
-                  "label": "age_range",
-                  "value": "0-5"
-                },
-                {
-                  "label": "peak_online",
-                  "value": "$27"
-                },
-                {
-                  "label": "peak_gate",
-                  "value": "$32"
-                },
-                {
-                  "label": "off_peak_online",
-                  "value": "$20"
-                },
-                {
-                  "label": "off_peak_gate",
-                  "value": "$25"
-                }
-              ]
-            },
-            {
-              "name": "Junior/Teen",
-              "prices": [
-                {
-                  "label": "age_range",
-                  "value": "6-17"
-                },
-                {
-                  "label": "peak_online",
-                  "value": "$60"
-                },
-                {
-                  "label": "peak_gate",
-                  "value": "$65"
-                },
-                {
-                  "label": "off_peak_online",
-                  "value": "$48"
-                },
-                {
-                  "label": "off_peak_gate",
-                  "value": "$53"
-                }
-              ]
-            },
-            {
-              "name": "Adult",
-              "prices": [
-                {
-                  "label": "age_range",
-                  "value": "18-64"
-                },
-                {
-                  "label": "peak_online",
-                  "value": "$65"
-                },
-                {
-                  "label": "peak_gate",
-                  "value": "$70"
-                },
-                {
-                  "label": "off_peak_online",
-                  "value": "$50"
-                },
-                {
-                  "label": "off_peak_gate",
-                  "value": "$55"
-                }
-              ]
-            },
-            {
-              "name": "Senior",
-              "prices": [
-                {
-                  "label": "age_range",
-                  "value": "65+"
-                },
-                {
-                  "label": "peak_online",
-                  "value": "$60"
-                },
-                {
-                  "label": "peak_gate",
-                  "value": "$65"
-                },
-                {
-                  "label": "off_peak_online",
-                  "value": "$48"
-                },
-                {
-                  "label": "off_peak_gate",
-                  "value": "$53"
-                }
-              ]
-            }
-          ]
+          "day-week": {
+            "youth": "$48",
+            "adults": "$50",
+            "seniors": "$48"
+          },
+          "day-weekend": {
+            "youth": "$60",
+            "adults": "$65",
+            "seniors": "$60"
+          }
         },
         "resortId": "glen-eden",
         "sourceUrl": "https://gleneden.on.ca/plan-your-visit/",
-        "updatedAt": 1789141580653
+        "updatedAt": 1789406612428
       }
     },
     {
       "table": "resortRentals",
       "content": {
         "rentals": {
-          "sections": [
-            {
-              "name": "rental_daily_packages",
-              "items": [
-                {
-                  "name": "All Ages",
-                  "prices": [
-                    {
-                      "label": "price",
-                      "value": "$52"
-                    }
-                  ]
-                },
-                {
-                  "name": "5 & Under",
-                  "prices": [
-                    {
-                      "label": "price",
-                      "value": "$37"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "rental_single_items",
-              "items": [
-                {
-                  "name": "Helmet",
-                  "prices": [
-                    {
-                      "label": "price",
-                      "value": "$20"
-                    }
-                  ]
-                },
-                {
-                  "name": "Poles",
-                  "prices": [
-                    {
-                      "label": "price",
-                      "value": "$20"
-                    }
-                  ]
-                },
-                {
-                  "name": "Snowboard Boots",
-                  "prices": [
-                    {
-                      "label": "price",
-                      "value": "$42"
-                    }
-                  ]
-                },
-                {
-                  "name": "Skis",
-                  "prices": [
-                    {
-                      "label": "price",
-                      "value": "$42"
-                    }
-                  ]
-                },
-                {
-                  "name": "Snowboard",
-                  "prices": [
-                    {
-                      "label": "price",
-                      "value": "$42"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "rental_lesson_packages",
-              "items": [
-                {
-                  "name": "Lesson Package – Ski",
-                  "prices": [
-                    {
-                      "label": "price",
-                      "value": "$249"
-                    }
-                  ]
-                },
-                {
-                  "name": "Lesson Package – Snowboard",
-                  "prices": [
-                    {
-                      "label": "price",
-                      "value": "$249"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
+          "ski": {
+            "youth": "$52",
+            "adults": "$52"
+          },
+          "snowboard": {
+            "youth": "$52",
+            "adults": "$52"
+          },
+          "items": {
+            "helmet": "$20",
+            "poles": "$20",
+            "boots": "$42",
+            "skis": "$42",
+            "snowboard": "$42"
+          }
         },
         "resortId": "glen-eden",
         "sourceUrl": "https://gleneden.on.ca/plan-your-visit/",
-        "updatedAt": 1789141581832
+        "updatedAt": 1789406613021
       }
     },
     {
       "table": "weatherAndStatus",
       "content": {
-        "lifts": [],
-        "trails": [],
-        "rawData": {
-          "conditions": {
-            "snow_condition": "Machine Groomed Granular",
-            "base_depth": "Base Depth",
-            "new_snow": "New Snow (Last 24 hours)",
-            "snowmaking": "Snowmaking (Last 24 hours)"
+        "lifts": [
+          {
+            "name": "Limestone Chairlift",
+            "status": "closed"
           },
-          "lifts": [],
-          "trails": [],
-          "lifts_summary": {
-            "open": 0,
-            "total": 0
+          {
+            "name": "Ridge Chairlift",
+            "status": "closed"
           },
-          "trails_summary": {
-            "open": 0,
-            "total": 0
+          {
+            "name": "Updraft Chairlift",
+            "status": "closed"
+          },
+          {
+            "area": "The Galaxy",
+            "name": "Shuttle Carpet",
+            "status": "closed"
+          },
+          {
+            "area": "West Beginner Area",
+            "name": "Caterpillar Carpet",
+            "status": "closed"
+          },
+          {
+            "area": "West Beginner Area",
+            "name": "Cricket Carpet",
+            "status": "closed"
           }
-        },
-        "conditions": {
-          "baseDepth": "Base Depth",
-          "newSnow": "New Snow (Last 24 hours)",
-          "surfaceConditions": "Machine Groomed Granular",
-          "snowmaking": "Snowmaking (Last 24 hours)"
-        },
-        "liftsSummary": {
-          "open": 0,
-          "total": 0
-        },
-        "trailsSummary": {
-          "open": 0,
-          "total": 0
-        },
+        ],
+        "tracks": [
+          {
+            "difficulty": "green",
+            "name": "Escarpment Run",
+            "status": "closed"
+          },
+          {
+            "difficulty": "green",
+            "name": "Night Hawk",
+            "status": "closed"
+          },
+          {
+            "difficulty": "blue",
+            "name": "Butternut",
+            "status": "closed"
+          },
+          {
+            "difficulty": "blue",
+            "name": "Falcon",
+            "status": "closed"
+          },
+          {
+            "difficulty": "blue",
+            "name": "Scimitar",
+            "status": "closed"
+          },
+          {
+            "difficulty": "blue",
+            "name": "Sidewinder",
+            "status": "closed"
+          },
+          {
+            "difficulty": "blue",
+            "name": "Twister",
+            "status": "closed"
+          },
+          {
+            "difficulty": "black",
+            "name": "Boomerang",
+            "status": "closed"
+          },
+          {
+            "difficulty": "black",
+            "name": "Challenger",
+            "status": "closed"
+          },
+          {
+            "difficulty": "freestyle",
+            "name": "Quarry Run",
+            "status": "closed"
+          },
+          {
+            "area": "The Galaxy",
+            "difficulty": "green",
+            "name": "Comet",
+            "status": "closed"
+          },
+          {
+            "area": "The Galaxy",
+            "difficulty": "green",
+            "name": "Little Dipper",
+            "status": "closed"
+          },
+          {
+            "area": "The Galaxy",
+            "difficulty": "green",
+            "name": "Milky Way",
+            "status": "closed"
+          },
+          {
+            "area": "The Galaxy",
+            "difficulty": "green",
+            "name": "Shooting Star",
+            "status": "closed"
+          },
+          {
+            "area": "West Beginner Area",
+            "difficulty": "green",
+            "name": "Bumble Bee",
+            "status": "closed"
+          },
+          {
+            "area": "West Beginner Area",
+            "difficulty": "green",
+            "name": "Grasshopper",
+            "status": "closed"
+          },
+          {
+            "area": "West Beginner Area",
+            "difficulty": "green",
+            "name": "Monarch",
+            "status": "closed"
+          }
+        ],
         "resortId": "glen-eden",
         "sourceUrl": "https://gleneden.on.ca/at-glen-eden/slope-conditions/",
-        "updatedAt": 1789141589300
+        "updatedAt": 1789406613092
       }
     }
   ]

@@ -22,13 +22,8 @@
     },
     {
       "table": "weatherAndStatus",
-      "missingColumns": [
-        "lifts",
-        "terrainParks",
-        "crossCountry",
-        "tubing"
-      ]
+      "missingColumns": []
     }
   ],
-  "missingColumnCount": 6
+  "missingColumnCount": 2
 }

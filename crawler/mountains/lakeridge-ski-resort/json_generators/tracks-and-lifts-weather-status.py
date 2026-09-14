@@ -1,8 +1,6 @@
-"""Lake Ridge trail-status crawler."""
-
 import json
 import os
-import sys
+import re
 import time
 
 import truststore
@@ -12,14 +10,17 @@ truststore.inject_into_ssl()
 import requests
 from bs4 import BeautifulSoup
 
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from dtos import to_weather_dto
-
 URL = "https://ski-lakeridge.com/skiing-snowboarding/trail-status/"
 RESORT_ID = "lakeridge-ski-resort"
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36"
+}
+DIFFICULTY_FIELDS = {
+    "black diamond": "black",
+    "double black diamond": "doubleBlack",
+    "blue square": "blue",
+    "green circle": "green",
+    "orange oval": "freeStyle",
 }
 
 
@@ -43,6 +44,10 @@ def parse_difficulty(cell):
     return ""
 
 
+def normalize_difficulty(value):
+    return DIFFICULTY_FIELDS.get(" ".join(value.lower().split()))
+
+
 def get_trail_status():
     response = requests.get(URL, headers=HEADERS, timeout=30)
     response.raise_for_status()
@@ -50,29 +55,31 @@ def get_trail_status():
     table = soup.find("table")
     if not table:
         return []
-    trails = []
+    tracks = []
     for row in table.find_all("tr"):
         cells = row.find_all("td")
         if len(cells) < 3:
             continue
-        trails.append(
+        tracks.append(
             {
-                "difficulty": parse_difficulty(cells[0]),
+                "difficulty": normalize_difficulty(parse_difficulty(cells[0])) or "green",
                 "name": cells[1].get_text(" ", strip=True),
                 "status": cells[2].get_text(" ", strip=True),
             }
         )
-    return trails
+    return tracks
 
 
 def main():
     payload = {
-        **to_weather_dto(get_trail_status()),
+        "tracks": get_trail_status(),
         "resortId": RESORT_ID,
         "sourceUrl": URL,
         "updatedAt": int(time.time() * 1000),
     }
-    output_file = os.path.join(os.path.dirname(__file__), "weather-and-status.json")
+    output_file = os.path.join(
+        os.path.dirname(__file__), "tracks-and-lifts-weather-status.json"
+    )
     with open(output_file, "w", encoding="utf-8") as output:
         json.dump(payload, output, indent=2, ensure_ascii=False)
     print(f"Saved to {output_file}")

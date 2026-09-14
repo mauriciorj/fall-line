@@ -1,0 +1,182 @@
+{
+  "lifts": [
+    {
+      "area": "A",
+      "name": "Boulevard Chair",
+      "status": "Closed"
+    },
+    {
+      "area": "B",
+      "name": "Main Street Chair",
+      "status": "Closed"
+    },
+    {
+      "area": "C",
+      "name": "Magic Carpet",
+      "status": "Closed"
+    },
+    {
+      "area": "D",
+      "name": "Bowl Chair",
+      "status": "Closed"
+    },
+    {
+      "area": "E",
+      "name": "T-Bar 5",
+      "status": "Closed"
+    },
+    {
+      "area": "F",
+      "name": "West Chair",
+      "status": "Closed"
+    },
+    {
+      "area": "G",
+      "name": "T-Bar 8",
+      "status": "Closed"
+    }
+  ],
+  "tracks": [
+    {
+      "area": "1",
+      "difficulty": "easy",
+      "name": "Park Avenue",
+      "status": "Closed"
+    },
+    {
+      "area": "2",
+      "difficulty": "easy",
+      "name": "Pete’s Elbow",
+      "status": "Closed"
+    },
+    {
+      "area": "3",
+      "difficulty": "easy",
+      "name": "Snow Bowl",
+      "status": "Closed"
+    },
+    {
+      "area": "4",
+      "difficulty": "medium",
+      "name": "Standard",
+      "status": "Closed"
+    },
+    {
+      "area": "5",
+      "difficulty": "easy",
+      "name": "Bambi",
+      "status": "Closed"
+    },
+    {
+      "area": "6",
+      "difficulty": "medium",
+      "name": "Ladies Downhill",
+      "status": "Closed"
+    },
+    {
+      "area": "7",
+      "difficulty": "hard",
+      "name": "Ben’s Bump",
+      "status": "Closed"
+    },
+    {
+      "area": "8",
+      "difficulty": "hard",
+      "name": "Bowl",
+      "status": "Closed"
+    },
+    {
+      "area": "9",
+      "difficulty": "hard",
+      "name": "Tower Run",
+      "status": "Closed"
+    },
+    {
+      "area": "10",
+      "difficulty": "hard",
+      "name": "Timberline",
+      "status": "Closed"
+    },
+    {
+      "area": "11",
+      "difficulty": "medium",
+      "name": "Flyer",
+      "status": "Closed"
+    },
+    {
+      "area": "12",
+      "difficulty": "easy",
+      "name": "Promenade",
+      "status": "Closed"
+    },
+    {
+      "area": "13",
+      "difficulty": "easy",
+      "name": "Cowpath",
+      "status": "Closed"
+    },
+    {
+      "area": "14",
+      "difficulty": "easy",
+      "name": "Kid’s Stuff",
+      "status": "Closed"
+    },
+    {
+      "area": "15",
+      "difficulty": "medium",
+      "name": "Club House Run",
+      "status": "Closed"
+    },
+    {
+      "area": "16",
+      "difficulty": "hard",
+      "name": "West Ridge",
+      "status": "Closed"
+    },
+    {
+      "area": "17",
+      "difficulty": "hard",
+      "name": "Rutherford’s Cut",
+      "status": "Closed"
+    },
+    {
+      "area": "18",
+      "difficulty": "hard",
+      "name": "Richards’ Landing",
+      "status": "Closed"
+    },
+    {
+      "area": "19",
+      "difficulty": "hard",
+      "name": "Challenger",
+      "status": "Closed"
+    },
+    {
+      "area": "20",
+      "difficulty": "medium",
+      "name": "Whistler",
+      "status": "Closed"
+    },
+    {
+      "area": "21",
+      "difficulty": "medium",
+      "name": "Sunny Side",
+      "status": "Closed"
+    },
+    {
+      "area": "22",
+      "difficulty": "easy",
+      "name": "Nice and Easy",
+      "status": "Closed"
+    },
+    {
+      "area": "23",
+      "difficulty": "easy",
+      "name": "Farmer’s Field",
+      "status": "Closed"
+    }
+  ],
+  "resortId": "brimacombe",
+  "sourceUrl": "https://brimacombe.ca/at-the-brim/snow-conditions-and-trails/",
+  "updatedAt": 1789399284985
+}

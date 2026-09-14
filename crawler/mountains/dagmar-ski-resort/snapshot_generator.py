@@ -18,16 +18,20 @@ TABLE_COLUMNS = {
     "resortRates": ["resortId", "sourceUrl", "updatedAt", "rates"],
     "resortRentals": ["resortId", "sourceUrl", "updatedAt", "rentals"],
     "weatherAndStatus": [
-        "resortId", "sourceUrl", "updatedAt", "lifts", "trails", "terrainParks",
-        "crossCountry", "tubing", "rawData",
+        "resortId", "sourceUrl", "updatedAt", "lifts", "tracks",
     ],
 }
 DIFFICULTY_FIELDS = {
     "easy": "green",
+    "green": "green",
     "difficult": "blue",
+    "blue": "blue",
     "more difficult": "black",
+    "black": "black",
     "most difficult": "doubleBlack",
+    "doubleblack": "doubleBlack",
     "terrain park": "freeStyle",
+    "freestyle": "freeStyle",
 }
 
 
@@ -48,7 +52,7 @@ def parse_price(value):
 
 def build_tracks_summary(weather):
     summary = {field: 0 for field in ["black", "blue", "doubleBlack", "freeStyle", "green"]}
-    for trail in weather.get("trails", []) + weather.get("terrainParks", []):
+    for trail in weather.get("tracks", []):
         field = DIFFICULTY_FIELDS.get(trail.get("difficulty", "").lower())
         if field:
             summary[field] += 1
@@ -57,7 +61,7 @@ def build_tracks_summary(weather):
 
 def get_rate_price(rates, section_match, label_match):
     structured_rates = rates.get("rates", {})
-    adult_day_rate = structured_rates.get("day-weekend", {}).get("adults")
+    adult_day_rate = structured_rates.get("day-week", {}).get("adults")
     if adult_day_rate is not None:
         return parse_price(adult_day_rate)
 
@@ -125,7 +129,7 @@ def build_snapshot(directory=None):
     hours = load_json(json_generators / "hours-of-operation.json")
     rates = load_json(json_generators / "lift-rates.json")
     rentals = load_json(json_generators / "rentals.json")
-    weather = load_json(json_generators / "weather-and-status.json")
+    weather = load_json(json_generators / "tracks-and-lifts-weather-status.json")
     static_info = load_json(directory / "static_infos.json")
     return {
         "resortId": RESORT_ID,

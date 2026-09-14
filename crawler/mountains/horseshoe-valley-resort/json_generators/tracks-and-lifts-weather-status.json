@@ -1,0 +1,163 @@
+{
+  "lifts": [
+    {
+      "name": "Kimbles Carpet",
+      "status": "closed"
+    },
+    {
+      "name": "Snow School Express",
+      "status": "closed"
+    },
+    {
+      "name": "Double Chair",
+      "status": "closed"
+    },
+    {
+      "name": "Copeland Express 6 Person Chair",
+      "status": "closed"
+    },
+    {
+      "name": "High Rider Quad",
+      "status": "closed"
+    },
+    {
+      "name": "Highland Express Quad",
+      "status": "closed"
+    }
+  ],
+  "tracks": [
+    {
+      "difficulty": "green",
+      "name": "Ponyback",
+      "status": "closed"
+    },
+    {
+      "difficulty": "green",
+      "name": "Pinto",
+      "status": "closed"
+    },
+    {
+      "difficulty": "green",
+      "name": "Hungry Hollow",
+      "status": "closed"
+    },
+    {
+      "difficulty": "green",
+      "name": "Roundup",
+      "status": "closed"
+    },
+    {
+      "difficulty": "green",
+      "name": "Donkey Serenade",
+      "status": "closed"
+    },
+    {
+      "difficulty": "green",
+      "name": "Pony Express",
+      "status": "closed"
+    },
+    {
+      "difficulty": "green",
+      "name": "Canter",
+      "status": "closed"
+    },
+    {
+      "difficulty": "green",
+      "name": "Mule Train",
+      "status": "closed"
+    },
+    {
+      "difficulty": "blue",
+      "name": "Steeplechase",
+      "status": "closed"
+    },
+    {
+      "difficulty": "blue",
+      "name": "Flying Mare",
+      "status": "closed"
+    },
+    {
+      "difficulty": "blue",
+      "name": "Pony Tail",
+      "status": "closed"
+    },
+    {
+      "difficulty": "blue",
+      "name": "Ramey's Return",
+      "status": "closed"
+    },
+    {
+      "difficulty": "blue",
+      "name": "Saddleback",
+      "status": "closed"
+    },
+    {
+      "difficulty": "blue",
+      "name": "Stallion Slide",
+      "status": "closed"
+    },
+    {
+      "difficulty": "blue",
+      "name": "Duster",
+      "status": "closed"
+    },
+    {
+      "difficulty": "blue",
+      "name": "Nightmare Ride",
+      "status": "closed"
+    },
+    {
+      "difficulty": "blue",
+      "name": "Stampede",
+      "status": "closed"
+    },
+    {
+      "difficulty": "blue",
+      "name": "The Wave",
+      "status": "closed"
+    },
+    {
+      "difficulty": "blue",
+      "name": "Shaggy Mane",
+      "status": "closed"
+    },
+    {
+      "difficulty": "blue",
+      "name": "The Zipper",
+      "status": "closed"
+    },
+    {
+      "difficulty": "blue",
+      "name": "Bushwacker",
+      "status": "closed"
+    },
+    {
+      "difficulty": "blue",
+      "name": "Bronco",
+      "status": "closed"
+    },
+    {
+      "difficulty": "black",
+      "name": "Race Hill",
+      "status": "closed"
+    },
+    {
+      "difficulty": "black",
+      "name": "Horsefeathers",
+      "status": "closed"
+    },
+    {
+      "difficulty": "freeStyle",
+      "name": "Horsefly Hop",
+      "status": "closed"
+    },
+    {
+      "difficulty": "freeStyle",
+      "name": "Bullpen",
+      "status": "closed"
+    }
+  ],
+  "resortId": "horseshoe-valley-resort",
+  "sourceUrl": "https://horseshoeresort.com/ski-report-trails/",
+  "updatedAt": 1789406838568
+}

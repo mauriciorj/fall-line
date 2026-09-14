@@ -34,8 +34,9 @@
           "blue": 4,
           "doubleBlack": 2,
           "freeStyle": 3,
-          "green": 6
+          "green": 8
         },
+        "dayTicketPrice": 59.3,
         "skiRentalPrice": 43.01,
         "snowBoardRentalPrice": 51.85
       }
@@ -43,245 +44,44 @@
     {
       "table": "resortHours",
       "content": {
-        "hours": [
-          {
-            "name": "Hours of operation",
-            "hours": []
-          }
-        ],
+        "hours": {
+          "sunday": "closed",
+          "monday": "closed",
+          "tuesday": "closed",
+          "wednesday": "closed",
+          "thursday": "closed",
+          "friday": "closed",
+          "saturday": "closed"
+        },
         "resortId": "lakeridge-ski-resort",
         "sourceUrl": "https://ski-lakeridge.com/skiing-snowboarding/hours-ticket-prices/",
-        "updatedAt": 1789144232143
+        "updatedAt": 1789407008020
       }
     },
     {
       "table": "resortRates",
       "content": {
         "rates": {
-          "items": [
-            {
-              "name": "Beginner Area Ticket Prices | Monday | Tuesday | Wednesday  ON SITE pricing",
-              "prices": [
-                {
-                  "label": "$39.56+HST",
-                  "value": "$42.08+HST"
-                },
-                {
-                  "label": "$21.98+HST",
-                  "value": "$23.38+HST"
-                }
-              ]
-            },
-            {
-              "name": "Beginner Area Ticket Prices | Thursday to Sunday ONLINE pricing",
-              "prices": [
-                {
-                  "label": "$39.56+HST",
-                  "value": "$46.53+HST"
-                },
-                {
-                  "label": "$21.98+HST",
-                  "value": "$25.85+HST"
-                }
-              ]
-            },
-            {
-              "name": "Beginner Area Ticket Prices | Thursday to Sunday ON SITE pricing",
-              "prices": [
-                {
-                  "label": "$39.56+HST",
-                  "value": "$49.50+HST"
-                },
-                {
-                  "label": "$21.98+HST",
-                  "value": "$27.50+HST"
-                }
-              ]
-            },
-            {
-              "name": "Beginner Area Ticket Prices | Upgrade to Chair Lift",
-              "prices": [
-                {
-                  "label": "$39.56+HST",
-                  "value": "2-hour: $14.86+HST"
-                },
-                {
-                  "label": "$21.98+HST",
-                  "value": "3-hour: $22.29+HST"
-                }
-              ]
-            },
-            {
-              "name": "Monday to Wednesday Lift Tickets | 4 Hours Anytime - ON SITE pricing",
-              "prices": [
-                {
-                  "label": "$59.30+HST",
-                  "value": "$63.09+HST"
-                },
-                {
-                  "label": "$51.86+HST",
-                  "value": "$55.17+HST"
-                },
-                {
-                  "label": "$21.98+HST",
-                  "value": "$23.38+HST"
-                }
-              ]
-            },
-            {
-              "name": "Monday to Wednesday Lift Tickets | 3 hours (6:30pm to 9:30pm) ONLINE pricing",
-              "prices": [
-                {
-                  "label": "$59.30+HST",
-                  "value": "$55.40+HST"
-                },
-                {
-                  "label": "$51.86+HST",
-                  "value": "$48.46+HST"
-                },
-                {
-                  "label": "$21.98+HST",
-                  "value": "$21.98+HST"
-                }
-              ]
-            },
-            {
-              "name": "Monday to Wednesday Lift Tickets | 3 hours (6:30pm to 9:30pm) ON SITE pricing",
-              "prices": [
-                {
-                  "label": "$59.30+HST",
-                  "value": "$58.94+HST"
-                },
-                {
-                  "label": "$51.86+HST",
-                  "value": "$51.55+HST"
-                },
-                {
-                  "label": "$21.98+HST",
-                  "value": "$23.38+HST"
-                }
-              ]
-            },
-            {
-              "name": "Monday to Wednesday Lift Tickets | 2 hours (7:30pm to 9:30pm) ONLINE pricing",
-              "prices": [
-                {
-                  "label": "$59.30+HST",
-                  "value": "$32.52+HST"
-                },
-                {
-                  "label": "$51.86+HST",
-                  "value": "$32.52+HST"
-                },
-                {
-                  "label": "$21.98+HST",
-                  "value": "$21.98+HST"
-                }
-              ]
-            },
-            {
-              "name": "Monday to Wednesday Lift Tickets | 2 hours (7:30pm to 9:30pm)    ON SITE pricing",
-              "prices": [
-                {
-                  "label": "$59.30+HST",
-                  "value": "$34.60+HST"
-                },
-                {
-                  "label": "$51.86+HST",
-                  "value": "$34.60+HST"
-                },
-                {
-                  "label": "$21.98+HST",
-                  "value": "$23.38+HST"
-                }
-              ]
-            },
-            {
-              "name": "Thursday to Sunday Lift Tickets | 4 Hours Anytime - ON SITE pricing",
-              "prices": [
-                {
-                  "label": "$69.77+HST",
-                  "value": "$74.22+HST"
-                },
-                {
-                  "label": "$61.01+HST",
-                  "value": "$64.90+HST"
-                },
-                {
-                  "label": "$25.00+HST",
-                  "value": "$27.50+HST"
-                }
-              ]
-            },
-            {
-              "name": "Thursday to Sunday Lift Tickets | 3 hours (6:30pm to 9:30pm) ONLINE pricing",
-              "prices": [
-                {
-                  "label": "$69.77+HST",
-                  "value": "$65.18+HST"
-                },
-                {
-                  "label": "$61.01+HST",
-                  "value": "$57.00+HST"
-                },
-                {
-                  "label": "$25.00+HST",
-                  "value": "$25.00+HST"
-                }
-              ]
-            },
-            {
-              "name": "Thursday to Sunday Lift Tickets | 3 hours (6:30pm to 9:30pm) ON SITE pricing",
-              "prices": [
-                {
-                  "label": "$69.77+HST",
-                  "value": "$69.34+HST"
-                },
-                {
-                  "label": "$61.01+HST",
-                  "value": "$60.64+HST"
-                },
-                {
-                  "label": "$25.00+HST",
-                  "value": "$27.50+HST"
-                }
-              ]
-            },
-            {
-              "name": "Thursday to Sunday Lift Tickets | 2 hours (7:30pm to 9:30pm)  ONLINE pricing",
-              "prices": [
-                {
-                  "label": "$69.77+HST",
-                  "value": "$38.26+HST"
-                },
-                {
-                  "label": "$61.01+HST",
-                  "value": "$38.26+HST"
-                },
-                {
-                  "label": "$25.00+HST",
-                  "value": "$25.00+HST"
-                }
-              ]
-            },
-            {
-              "name": "Thursday to Sunday Lift Tickets | 2 hours (7:30pm to 9:30pm)  ON SITE pricing",
-              "prices": [
-                {
-                  "label": "$69.77+HST",
-                  "value": "$40.70+HST"
-                },
-                {
-                  "label": "$61.01+HST",
-                  "value": "$40.70+HST"
-                },
-                {
-                  "label": "$25.00+HST",
-                  "value": "$27.50+HST"
-                }
-              ]
-            }
-          ]
+          "night-week": {
+            "youth": "$48.46",
+            "adults": "$55.40",
+            "seniors": "$48.46"
+          },
+          "night-weekend": {
+            "youth": "$57",
+            "adults": "$65.18",
+            "seniors": "$57"
+          },
+          "day-week": {
+            "youth": "$51.86",
+            "adults": "$59.30",
+            "seniors": "$51.86"
+          },
+          "day-weekend": {
+            "youth": "$61.01",
+            "adults": "$69.77",
+            "seniors": "$61.01"
+          }
         },
         "resortId": "lakeridge-ski-resort",
         "sourceUrl": "https://ski-lakeridge.com/skiing-snowboarding/hours-ticket-prices/",
@@ -292,401 +92,22 @@
       "table": "resortRentals",
       "content": {
         "rentals": {
-          "sections": [
-            {
-              "name": "Skis, Boots and Poles Package",
-              "items": [
-                {
-                  "name": "ADULT",
-                  "prices": [
-                    {
-                      "label": "$43.01",
-                      "value": "$43.01"
-                    },
-                    {
-                      "label": "$38.70",
-                      "value": "$38.70"
-                    },
-                    {
-                      "label": "$28.20",
-                      "value": "$28.20"
-                    }
-                  ]
-                },
-                {
-                  "name": "CHILD / YOUTH / SR",
-                  "prices": [
-                    {
-                      "label": "$43.01",
-                      "value": "$37.41"
-                    },
-                    {
-                      "label": "$38.70",
-                      "value": "$33.67"
-                    },
-                    {
-                      "label": "$28.20",
-                      "value": "$28.20"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Snowboard and Boots Package",
-              "items": [
-                {
-                  "name": "ADULT",
-                  "prices": [
-                    {
-                      "label": "$51.85",
-                      "value": "$51.85"
-                    },
-                    {
-                      "label": "$46.67",
-                      "value": "$46.67"
-                    },
-                    {
-                      "label": "$37.49",
-                      "value": "$37.49"
-                    }
-                  ]
-                },
-                {
-                  "name": "CHILD / YOUTH / SR.",
-                  "prices": [
-                    {
-                      "label": "$51.85",
-                      "value": "$47.91"
-                    },
-                    {
-                      "label": "$46.67",
-                      "value": "$43.12"
-                    },
-                    {
-                      "label": "$37.49",
-                      "value": "$37.49"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Individual Items",
-              "items": [
-                {
-                  "name": "CHILD / YOUTH / SR. SNOWBOARD",
-                  "prices": [
-                    {
-                      "label": "$35.97",
-                      "value": "$31.49"
-                    },
-                    {
-                      "label": "$32.37",
-                      "value": "$28.34"
-                    },
-                    {
-                      "label": "$24.01",
-                      "value": "$24.01"
-                    }
-                  ]
-                },
-                {
-                  "name": "ADULT SNOWBOARD BOOTS",
-                  "prices": [
-                    {
-                      "label": "$35.97",
-                      "value": "$29.34"
-                    },
-                    {
-                      "label": "$32.37",
-                      "value": "$26.40"
-                    },
-                    {
-                      "label": "$24.01",
-                      "value": "$22.70"
-                    }
-                  ]
-                },
-                {
-                  "name": "CHILD / YOUTH / SR. SNOWBOARD BOOTS",
-                  "prices": [
-                    {
-                      "label": "$35.97",
-                      "value": "$25.08"
-                    },
-                    {
-                      "label": "$32.37",
-                      "value": "$22.58"
-                    },
-                    {
-                      "label": "$24.01",
-                      "value": "$22.70"
-                    }
-                  ]
-                },
-                {
-                  "name": "ADULT SKIS",
-                  "prices": [
-                    {
-                      "label": "$35.97",
-                      "value": "$29.34"
-                    },
-                    {
-                      "label": "$32.37",
-                      "value": "$26.40"
-                    },
-                    {
-                      "label": "$24.01",
-                      "value": "$22.70"
-                    }
-                  ]
-                },
-                {
-                  "name": "CHILD / YOUTH / SR. SKIS",
-                  "prices": [
-                    {
-                      "label": "$35.97",
-                      "value": "$25.08"
-                    },
-                    {
-                      "label": "$32.37",
-                      "value": "$22.58"
-                    },
-                    {
-                      "label": "$24.01",
-                      "value": "$22.70"
-                    }
-                  ]
-                },
-                {
-                  "name": "ADULT SKI BOOTS",
-                  "prices": [
-                    {
-                      "label": "$35.97",
-                      "value": "$29.34"
-                    },
-                    {
-                      "label": "$32.37",
-                      "value": "$26.40"
-                    },
-                    {
-                      "label": "$24.01",
-                      "value": "$22.70"
-                    }
-                  ]
-                },
-                {
-                  "name": "CHILD / YOUTH / SR. SKI BOOTS",
-                  "prices": [
-                    {
-                      "label": "$35.97",
-                      "value": "$25.08"
-                    },
-                    {
-                      "label": "$32.37",
-                      "value": "$22.58"
-                    },
-                    {
-                      "label": "$24.01",
-                      "value": "$22.70"
-                    }
-                  ]
-                },
-                {
-                  "name": "HELMET",
-                  "prices": [
-                    {
-                      "label": "$35.97",
-                      "value": "$15.09"
-                    },
-                    {
-                      "label": "$32.37",
-                      "value": "$13.58"
-                    },
-                    {
-                      "label": "$24.01",
-                      "value": "$7.65"
-                    }
-                  ]
-                },
-                {
-                  "name": "POLES",
-                  "prices": [
-                    {
-                      "label": "$35.97",
-                      "value": "$7.78"
-                    },
-                    {
-                      "label": "$32.37",
-                      "value": "$7.00"
-                    },
-                    {
-                      "label": "$24.01",
-                      "value": "$5.68"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Skis, Boots, Poles and Helmet Package",
-              "items": [
-                {
-                  "name": "3 HOURS (end of night)",
-                  "prices": [
-                    {
-                      "label": "$58.14",
-                      "value": "$52.32"
-                    },
-                    {
-                      "label": "$52.51",
-                      "value": "$47.26"
-                    }
-                  ]
-                },
-                {
-                  "name": "2 HOURS (end of night)",
-                  "prices": [
-                    {
-                      "label": "$58.14",
-                      "value": "$35.74"
-                    },
-                    {
-                      "label": "$52.51",
-                      "value": "$35.74"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Snowboard, Boots and Helmet Package",
-              "items": [
-                {
-                  "name": "3 HOURS (end of night)",
-                  "prices": [
-                    {
-                      "label": "$66.40",
-                      "value": "$59.76"
-                    },
-                    {
-                      "label": "$62.42",
-                      "value": "$56.18"
-                    }
-                  ]
-                },
-                {
-                  "name": "2 HOURS (end of night)",
-                  "prices": [
-                    {
-                      "label": "$66.40",
-                      "value": "$44.83"
-                    },
-                    {
-                      "label": "$62.42",
-                      "value": "$44.83"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Rental Packages for Lessons",
-              "items": [
-                {
-                  "name": "7 week Ski & Helmet package",
-                  "prices": [
-                    {
-                      "label": "$216.96",
-                      "value": "$285.96"
-                    },
-                    {
-                      "label": "$299.92",
-                      "value": "N/A"
-                    }
-                  ]
-                },
-                {
-                  "name": "7 week Snowboard & Helmet package",
-                  "prices": [
-                    {
-                      "label": "$216.96",
-                      "value": "N/A"
-                    },
-                    {
-                      "label": "$299.92",
-                      "value": "$358.80"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Rental – Winter Clothing",
-              "items": [
-                {
-                  "name": "Men's Coat",
-                  "prices": [
-                    {
-                      "label": "$21.28",
-                      "value": "$21.28"
-                    }
-                  ]
-                },
-                {
-                  "name": "Woman's Snowpant",
-                  "prices": [
-                    {
-                      "label": "$21.28",
-                      "value": "$21.28"
-                    }
-                  ]
-                },
-                {
-                  "name": "Woman's Coat",
-                  "prices": [
-                    {
-                      "label": "$21.28",
-                      "value": "$21.28"
-                    }
-                  ]
-                },
-                {
-                  "name": "Child Snowpant",
-                  "prices": [
-                    {
-                      "label": "$21.28",
-                      "value": "$21.28"
-                    }
-                  ]
-                },
-                {
-                  "name": "Goggles",
-                  "prices": [
-                    {
-                      "label": "$21.28",
-                      "value": "$10.58"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Rentals Upgrades",
-              "items": [
-                {
-                  "name": "Snowboard and Boots",
-                  "prices": [
-                    {
-                      "label": "$10.78 + HST",
-                      "value": "$13.48 + HST"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
+          "ski": {
+            "youth": "$37.41",
+            "adults": "$43.01"
+          },
+          "snowboard": {
+            "youth": "$47.91",
+            "adults": "$51.85"
+          },
+          "items": {
+            "boots": "$29.34",
+            "helmet": "$15.09",
+            "ice-skates": "$",
+            "poles": "$7.78",
+            "skis": "$29.34",
+            "snowboard": "$35.97"
+          }
         },
         "resortId": "lakeridge-ski-resort",
         "sourceUrl": "https://ski-lakeridge.com/skiing-snowboarding/equipment-rentals/",
@@ -696,240 +117,121 @@
     {
       "table": "weatherAndStatus",
       "content": {
-        "lifts": [],
-        "trails": [
+        "tracks": [
           {
-            "name": "Sunnyside",
-            "status": "CLOSED",
-            "difficulty": "Black Diamond"
-          },
-          {
-            "name": "Mogul Alley",
-            "status": "CLOSED",
-            "difficulty": "Double Black Diamond"
-          },
-          {
-            "name": "Main Street",
-            "status": "CLOSED",
-            "difficulty": "Blue Square"
-          },
-          {
-            "name": "Banked Slalom Run",
-            "status": "CLOSED",
-            "difficulty": "Orange Oval"
-          },
-          {
-            "name": "Short Cut",
-            "status": "CLOSED",
-            "difficulty": "Green Circle"
-          },
-          {
-            "name": "Collectors",
-            "status": "CLOSED",
-            "difficulty": "Green Circle"
-          },
-          {
-            "name": "One Way",
-            "status": "CLOSED",
-            "difficulty": "Green Circle"
-          },
-          {
-            "name": "Beginners Area",
-            "status": "CLOSED",
-            "difficulty": "Green Circle"
-          },
-          {
-            "name": "Little Razors",
-            "status": "CLOSED",
-            "difficulty": "Orange Oval"
-          },
-          {
-            "name": "Highway",
-            "status": "CLOSED",
-            "difficulty": "Green Circle"
-          },
-          {
-            "name": "Bail Out",
-            "status": "CLOSED",
-            "difficulty": "Black Diamond"
-          },
-          {
-            "name": "Rieky's Run",
-            "status": "CLOSED",
-            "difficulty": "Double Black Diamond"
-          },
-          {
-            "name": "Upper Chute",
-            "status": "CLOSED",
-            "difficulty": "Black Diamond"
-          },
-          {
-            "name": "Lower Chute",
-            "status": "CLOSED",
-            "difficulty": "Black Diamond"
-          },
-          {
-            "name": "Valley Road",
-            "status": "CLOSED",
-            "difficulty": "Blue Square"
-          },
-          {
-            "name": "Freeway",
-            "status": "CLOSED",
-            "difficulty": "Black Diamond"
-          },
-          {
-            "name": "East Avenue",
-            "status": "CLOSED",
-            "difficulty": "Blue Square"
-          },
-          {
-            "name": "Bridge-Trail",
-            "status": "CLOSED",
-            "difficulty": "Blue Square"
-          },
-          {
-            "name": "Little Rogers",
-            "status": "CLOSED",
-            "difficulty": "Green Circle"
-          }
-        ],
-        "terrainParks": [
-          {
-            "name": "Snowcross",
-            "status": "CLOSED"
-          },
-          {
-            "name": "Razors Edge Terrain Park",
-            "status": "CLOSED",
-            "difficulty": "Orange Oval"
-          }
-        ],
-        "tubing": [
-          {
-            "name": "Tube Park - reservation only",
-            "status": "CLOSED"
-          }
-        ],
-        "trailsSummary": {
-          "open": 0,
-          "total": 19
-        },
-        "rawData": [
-          {
-            "difficulty": "Black Diamond",
+            "difficulty": "black",
             "name": "Sunnyside",
             "status": "CLOSED"
           },
           {
-            "difficulty": "Double Black Diamond",
+            "difficulty": "doubleBlack",
             "name": "Mogul Alley",
             "status": "CLOSED"
           },
           {
-            "difficulty": "Blue Square",
+            "difficulty": "blue",
             "name": "Main Street",
             "status": "CLOSED"
           },
           {
-            "difficulty": "Orange Oval",
+            "difficulty": "freeStyle",
             "name": "Banked Slalom Run",
             "status": "CLOSED"
           },
           {
-            "difficulty": "Green Circle",
+            "difficulty": "green",
             "name": "Short Cut",
             "status": "CLOSED"
           },
           {
-            "difficulty": "Green Circle",
+            "difficulty": "green",
             "name": "Collectors",
             "status": "CLOSED"
           },
           {
-            "difficulty": "Green Circle",
+            "difficulty": "green",
             "name": "One Way",
             "status": "CLOSED"
           },
           {
-            "difficulty": "Green Circle",
+            "difficulty": "green",
             "name": "Beginners Area",
             "status": "CLOSED"
           },
           {
-            "difficulty": "Orange Oval",
+            "difficulty": "freeStyle",
             "name": "Little Razors",
             "status": "CLOSED"
           },
           {
-            "difficulty": "Green Circle",
+            "difficulty": "green",
             "name": "Highway",
             "status": "CLOSED"
           },
           {
-            "difficulty": "",
+            "difficulty": "green",
             "name": "Snowcross",
             "status": "CLOSED"
           },
           {
-            "difficulty": "Orange Oval",
+            "difficulty": "freeStyle",
             "name": "Razors Edge Terrain Park",
             "status": "CLOSED"
           },
           {
-            "difficulty": "Black Diamond",
+            "difficulty": "black",
             "name": "Bail Out",
             "status": "CLOSED"
           },
           {
-            "difficulty": "Double Black Diamond",
+            "difficulty": "doubleBlack",
             "name": "Rieky's Run",
             "status": "CLOSED"
           },
           {
-            "difficulty": "Black Diamond",
+            "difficulty": "black",
             "name": "Upper Chute",
             "status": "CLOSED"
           },
           {
-            "difficulty": "Black Diamond",
+            "difficulty": "black",
             "name": "Lower Chute",
             "status": "CLOSED"
           },
           {
-            "difficulty": "Blue Square",
+            "difficulty": "blue",
             "name": "Valley Road",
             "status": "CLOSED"
           },
           {
-            "difficulty": "Black Diamond",
+            "difficulty": "black",
             "name": "Freeway",
             "status": "CLOSED"
           },
           {
-            "difficulty": "Blue Square",
+            "difficulty": "blue",
             "name": "East Avenue",
             "status": "CLOSED"
           },
           {
-            "difficulty": "Blue Square",
+            "difficulty": "blue",
             "name": "Bridge-Trail",
             "status": "CLOSED"
           },
           {
-            "difficulty": "Green Circle",
+            "difficulty": "green",
             "name": "Little Rogers",
             "status": "CLOSED"
           },
           {
-            "difficulty": "",
+            "difficulty": "green",
             "name": "Tube Park - reservation only",
             "status": "CLOSED"
           }
         ],
         "resortId": "lakeridge-ski-resort",
         "sourceUrl": "https://ski-lakeridge.com/skiing-snowboarding/trail-status/",
-        "updatedAt": 1789144234135
+        "updatedAt": 1789407010068
       }
     }
   ]

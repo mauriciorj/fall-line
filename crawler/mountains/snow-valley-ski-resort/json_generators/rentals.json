@@ -1,21 +1,21 @@
 {
   "rentals": {
     "ski": {
-      "youth": "$70",
-      "adults": "$55"
+      "adults": "$70",
+      "youth": "$55"
     },
     "snowboard": {
-      "youth": "$70",
-      "adults": "$55"
+      "adults": "$70",
+      "youth": "$55"
     },
     "items": {
-      "boots": "$30",
+      "skis": "$45",
+      "snowboard": "$45",
       "helmet": "$16",
-      "skis": "$40",
-      "snowboard": "$40"
+      "boots": "$30"
     }
   },
   "resortId": "snow-valley-ski-resort",
   "sourceUrl": "https://www.skisnowvalley.com/plan/ski-snowboard/equipment-rentals/",
-  "updatedAt": 1789144485495
+  "updatedAt": 1789407346681
 }

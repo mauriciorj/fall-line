@@ -35,171 +35,52 @@
           "freeStyle": 6,
           "green": 6
         },
-        "dayTicketPrice": 69.91,
-        "skiRentalPrice": 31.86,
-        "snowBoardRentalPrice": 40.71
+        "dayTicketPrice": 83.19,
+        "skiRentalPrice": 50.44,
+        "snowBoardRentalPrice": 50.44
       }
     },
     {
       "table": "resortHours",
       "content": {
-        "hours": [
-          {
-            "name": "Hours of operation",
-            "hours": [
-              {
-                "day": "Monday",
-                "time": "10:00am to 4:00pm"
-              }
-            ]
-          }
-        ],
+        "hours": {
+          "sunday": "closed",
+          "monday": "10am - 4pm",
+          "tuesday": "10am - 4pm",
+          "wednesday": "10am - 4pm",
+          "thursday": "9am - 4pm",
+          "friday": "10am - 4pm",
+          "saturday": "closed"
+        },
         "resortId": "dagmar-ski-resort",
         "sourceUrl": "https://www.skidagmar.com/alpine-rates/",
-        "updatedAt": 1789141323019
+        "updatedAt": 1789406001867
       }
     },
     {
       "table": "resortRates",
       "content": {
         "rates": {
-          "items": [
-            {
-              "name": "8 Pack Value-Priced Lift Tickets | Up to 4 Hours Anytime",
-              "prices": [
-                {
-                  "label": "Adult 18+",
-                  "value": "$69.91"
-                },
-                {
-                  "label": "Jr.6-17/Sr.60+",
-                  "value": "$61.06"
-                }
-              ]
-            },
-            {
-              "name": "8 Pack Value-Priced Lift Tickets | Full Day",
-              "prices": [
-                {
-                  "label": "Adult 18+",
-                  "value": "$83.19"
-                },
-                {
-                  "label": "Jr.6-17/Sr.60+",
-                  "value": "$74.34"
-                }
-              ]
-            },
-            {
-              "name": "Anytime Alpine Lift Tickets | Ages 6 to Adult – up to 4 Hr (No Coupons)",
-              "prices": [
-                {
-                  "label": "Price",
-                  "value": "$41.59"
-                }
-              ]
-            },
-            {
-              "name": "Anytime Alpine Lift Tickets | Under 5 years – up to 4 Hr (No Coupons)",
-              "prices": [
-                {
-                  "label": "Price",
-                  "value": "$23.01"
-                }
-              ]
-            },
-            {
-              "name": "Special Late-Night After 6 and Last Call | $40.71",
-              "prices": [
-                {
-                  "label": "Midweek Special",
-                  "value": "Wednesday – Friday (up to 4 Hrs.)"
-                },
-                {
-                  "label": "W/ Ski Rental",
-                  "value": "$77.88"
-                }
-              ]
-            },
-            {
-              "name": "Magic Carpet Special for Beginners | Special for All Ages",
-              "prices": []
-            },
-            {
-              "name": "Magic Carpet Special for Beginners | After 6:00pm  Special Price (No Coupons)",
-              "prices": [
-                {
-                  "label": "Column_2",
-                  "value": "$48.67"
-                }
-              ]
-            },
-            {
-              "name": "Magic Carpet Special for Beginners | After 7:00 “Last Call” Special Price (No Coupons)",
-              "prices": [
-                {
-                  "label": "Column_2",
-                  "value": "$38.94"
-                }
-              ]
-            },
-            {
-              "name": "Seniors 60+ | Up to 4 Hours",
-              "prices": [
-                {
-                  "label": "Skis, Boots, & Poles",
-                  "value": "$41.59"
-                },
-                {
-                  "label": "Boards & Boots",
-                  "value": "$53.98"
-                }
-              ]
-            },
-            {
-              "name": "Seniors 60+ | Full Day",
-              "prices": [
-                {
-                  "label": "Skis, Boots, & Poles",
-                  "value": "$50.44"
-                },
-                {
-                  "label": "Boards & Boots",
-                  "value": "$62.83"
-                }
-              ]
-            },
-            {
-              "name": "Seniors 60+ | After 6:00pm & 7:00pm",
-              "prices": [
-                {
-                  "label": "Skis, Boots, & Poles",
-                  "value": "$40.71"
-                },
-                {
-                  "label": "Boards & Boots",
-                  "value": "$51.33"
-                }
-              ]
-            },
-            {
-              "name": "Seniors 60+ | An upgrade is available at Customer Service to extend your visit $23.01",
-              "prices": []
-            },
-            {
-              "name": "Seniors 60+ | Seasons Rental",
-              "prices": [
-                {
-                  "label": "Skis, Boots, & Poles",
-                  "value": "$287.61"
-                },
-                {
-                  "label": "Boards & Boots",
-                  "value": "$317.70"
-                }
-              ]
-            }
-          ]
+          "night-week": {
+            "youth": "$48.67",
+            "adults": "$48.67",
+            "seniors": "$48.67"
+          },
+          "night-weekend": {
+            "youth": "$48.67",
+            "adults": "$48.67",
+            "seniors": "$48.67"
+          },
+          "day-week": {
+            "youth": "$83.19",
+            "adults": "$83.19",
+            "seniors": "$74.34"
+          },
+          "day-weekend": {
+            "youth": "$83.19",
+            "adults": "$83.19",
+            "seniors": "$74.34"
+          }
         },
         "resortId": "dagmar-ski-resort",
         "sourceUrl": "https://www.skidagmar.com/alpine-rates/",
@@ -210,125 +91,21 @@
       "table": "resortRentals",
       "content": {
         "rentals": {
-          "sections": [
-            {
-              "name": "Equipment Rentals - Package",
-              "items": [
-                {
-                  "name": "Skis",
-                  "prices": [
-                    {
-                      "label": "Column_2",
-                      "value": "$31.86"
-                    }
-                  ]
-                },
-                {
-                  "name": "Snowboard",
-                  "prices": [
-                    {
-                      "label": "Column_2",
-                      "value": "$40.71"
-                    }
-                  ]
-                },
-                {
-                  "name": "Boots",
-                  "prices": [
-                    {
-                      "label": "Column_2",
-                      "value": "$28.32"
-                    }
-                  ]
-                },
-                {
-                  "name": "Poles",
-                  "prices": [
-                    {
-                      "label": "Column_2",
-                      "value": "$14.16"
-                    }
-                  ]
-                },
-                {
-                  "name": "Helmet Rental",
-                  "prices": [
-                    {
-                      "label": "Column_2",
-                      "value": "$16.81"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Equipment Rentals - Separate Items",
-              "items": [
-                {
-                  "name": "Lockers/Large",
-                  "prices": [
-                    {
-                      "label": "Column_2",
-                      "value": "$184.07 For the Season"
-                    }
-                  ]
-                },
-                {
-                  "name": "Daily Large Locker",
-                  "prices": [
-                    {
-                      "label": "Column_2",
-                      "value": "$16.81 Daily"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Lockers",
-              "items": [
-                {
-                  "name": "Anytime Adults 18+ (8 x 4 Hour Tickets)",
-                  "prices": [
-                    {
-                      "label": "Price",
-                      "value": "$503.54"
-                    },
-                    {
-                      "label": "Shop",
-                      "value": "Buy Now!"
-                    }
-                  ]
-                },
-                {
-                  "name": "Anytime Under 18/Sr 60+ (8 x 4 Hour Tickets)",
-                  "prices": [
-                    {
-                      "label": "Price",
-                      "value": "$439.82"
-                    },
-                    {
-                      "label": "Shop",
-                      "value": "Buy Now!"
-                    }
-                  ]
-                },
-                {
-                  "name": "Nights ( 8 x 5 1/2 Hour Tickets 4-Close)",
-                  "prices": [
-                    {
-                      "label": "Price",
-                      "value": "$471.68"
-                    },
-                    {
-                      "label": "Shop",
-                      "value": "Buy Now!"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
+          "ski": {
+            "youth": "$50.44",
+            "adults": "$50.44"
+          },
+          "snowboard": {
+            "youth": "$50.44",
+            "adults": "$50.44"
+          },
+          "items": {
+            "boots": "$16.81",
+            "skis": "$31.86",
+            "snowboard": "$40.71",
+            "poles": "$14.16",
+            "helmet": "$16.81"
+          }
         },
         "resortId": "dagmar-ski-resort",
         "sourceUrl": "https://www.skidagmar.com/alpine-rates/",
@@ -340,297 +117,161 @@
       "content": {
         "lifts": [
           {
+            "area": "A",
             "name": "Big Daddy",
-            "status": "CLOSED",
-            "identifier": "A"
+            "status": "CLOSED"
           },
           {
+            "area": "B",
             "name": "Little Momma",
-            "status": "CLOSED",
-            "identifier": "B"
+            "status": "CLOSED"
           },
           {
+            "area": "C",
             "name": "East Magic Carpet",
-            "status": "CLOSED",
-            "identifier": "C"
+            "status": "CLOSED"
           },
           {
+            "area": "D",
             "name": "Rendez-Vous",
-            "status": "CLOSED",
-            "identifier": "D"
+            "status": "CLOSED"
           },
           {
+            "area": "E",
             "name": "West Magic Carpet",
-            "status": "CLOSED",
-            "identifier": "E"
+            "status": "CLOSED"
           },
           {
+            "area": "F",
             "name": "Favourite",
-            "status": "CLOSED",
-            "identifier": "F"
+            "status": "CLOSED"
           }
         ],
-        "trails": [
+        "tracks": [
           {
-            "name": "1. Park View",
-            "status": "CLOSED",
-            "difficulty": "Easy"
+            "area": "1",
+            "difficulty": "green",
+            "name": "Park View",
+            "status": "closed"
           },
           {
-            "name": "8. The Chute",
-            "status": "CLOSED",
-            "difficulty": "Difficult"
+            "area": "2",
+            "difficulty": "freeStyle",
+            "name": "Puppy Pound",
+            "status": "closed"
           },
           {
-            "name": "9. Little Momma",
-            "status": "CLOSED",
-            "difficulty": "Easy"
+            "area": "3",
+            "difficulty": "freeStyle",
+            "name": "Dog Pound",
+            "status": "closed"
           },
           {
-            "name": "10. Pony",
-            "status": "CLOSED",
-            "difficulty": "Easy"
+            "area": "4",
+            "difficulty": "freeStyle",
+            "name": "Impound",
+            "status": "closed"
           },
           {
-            "name": "11. Rendez Vous",
-            "status": "CLOSED",
-            "difficulty": "Difficult"
+            "area": "5",
+            "difficulty": "freeStyle",
+            "name": "Impound Jumpline",
+            "status": "closed"
           },
           {
-            "name": "12. Bomber",
-            "status": "CLOSED",
-            "difficulty": "More Difficult"
+            "area": "6",
+            "difficulty": "freeStyle",
+            "name": "Compound Snow Zone",
+            "status": "closed"
           },
           {
-            "name": "13. Upper Lovers Lane",
-            "status": "CLOSED",
-            "difficulty": "Easy"
+            "area": "7",
+            "difficulty": "freeStyle",
+            "name": "Compound",
+            "status": "closed"
           },
           {
-            "name": "14. Lower Lovers Lane",
-            "status": "CLOSED",
-            "difficulty": "Easy"
+            "area": "8",
+            "difficulty": "blue",
+            "name": "The Chute",
+            "status": "closed"
           },
           {
-            "name": "15. Club House",
-            "status": "CLOSED",
-            "difficulty": "Difficult"
+            "area": "9",
+            "difficulty": "green",
+            "name": "Little Momma",
+            "status": "closed"
           },
           {
-            "name": "16. Favourite",
-            "status": "CLOSED",
-            "difficulty": "Easy"
+            "area": "10",
+            "difficulty": "green",
+            "name": "Pony",
+            "status": "closed"
           },
           {
-            "name": "17. Alleyway",
-            "status": "CLOSED",
-            "difficulty": "Difficult"
+            "area": "11",
+            "difficulty": "blue",
+            "name": "Rendez Vous",
+            "status": "closed"
           },
           {
-            "name": "18. Elbow",
-            "status": "CLOSED",
-            "difficulty": "Difficult"
+            "area": "12",
+            "difficulty": "black",
+            "name": "Bomber",
+            "status": "closed"
           },
           {
-            "name": "19. The Dagger",
-            "status": "CLOSED",
-            "difficulty": "Most Difficult"
+            "area": "13",
+            "difficulty": "green",
+            "name": "Upper Lovers Lane",
+            "status": "closed"
           },
           {
-            "name": "20. The Glades",
-            "status": "CLOSED",
-            "difficulty": "Most Difficult"
-          }
-        ],
-        "rawData": {
-          "Lifts": [
-            {
-              "letter": "A",
-              "name": "Big Daddy",
-              "status": "CLOSED"
-            },
-            {
-              "letter": "B",
-              "name": "Little Momma",
-              "status": "CLOSED"
-            },
-            {
-              "letter": "C",
-              "name": "East Magic Carpet",
-              "status": "CLOSED"
-            },
-            {
-              "letter": "D",
-              "name": "Rendez-Vous",
-              "status": "CLOSED"
-            },
-            {
-              "letter": "E",
-              "name": "West Magic Carpet",
-              "status": "CLOSED"
-            },
-            {
-              "letter": "F",
-              "name": "Favourite",
-              "status": "CLOSED"
-            }
-          ],
-          "Runs": [
-            {
-              "difficulty": "Easy",
-              "name": "1. Park View",
-              "status": "CLOSED"
-            },
-            {
-              "difficulty": "Terrain Park",
-              "name": "2. Puppy Pound",
-              "status": "CLOSED"
-            },
-            {
-              "difficulty": "Terrain Park",
-              "name": "3. Dog Pound",
-              "status": "CLOSED"
-            },
-            {
-              "difficulty": "Terrain Park",
-              "name": "4. Impound",
-              "status": "CLOSED"
-            },
-            {
-              "difficulty": "Terrain Park",
-              "name": "5. Impound Jumpline",
-              "status": "CLOSED"
-            },
-            {
-              "difficulty": "Terrain Park",
-              "name": "6. Compound Snow Zone",
-              "status": "CLOSED"
-            },
-            {
-              "difficulty": "Terrain Park",
-              "name": "7. Compound",
-              "status": "CLOSED"
-            },
-            {
-              "difficulty": "Difficult",
-              "name": "8. The Chute",
-              "status": "CLOSED"
-            },
-            {
-              "difficulty": "Easy",
-              "name": "9. Little Momma",
-              "status": "CLOSED"
-            },
-            {
-              "difficulty": "Easy",
-              "name": "10. Pony",
-              "status": "CLOSED"
-            },
-            {
-              "difficulty": "Difficult",
-              "name": "11. Rendez Vous",
-              "status": "CLOSED"
-            },
-            {
-              "difficulty": "More Difficult",
-              "name": "12. Bomber",
-              "status": "CLOSED"
-            },
-            {
-              "difficulty": "Easy",
-              "name": "13. Upper Lovers Lane",
-              "status": "CLOSED"
-            },
-            {
-              "difficulty": "Easy",
-              "name": "14. Lower Lovers Lane",
-              "status": "CLOSED"
-            },
-            {
-              "difficulty": "Difficult",
-              "name": "15. Club House",
-              "status": "CLOSED"
-            },
-            {
-              "difficulty": "Easy",
-              "name": "16. Favourite",
-              "status": "CLOSED"
-            },
-            {
-              "difficulty": "Difficult",
-              "name": "17. Alleyway",
-              "status": "CLOSED"
-            },
-            {
-              "difficulty": "Difficult",
-              "name": "18. Elbow",
-              "status": "CLOSED"
-            },
-            {
-              "difficulty": "Most Difficult",
-              "name": "19. The Dagger",
-              "status": "CLOSED"
-            },
-            {
-              "difficulty": "Most Difficult",
-              "name": "20. The Glades",
-              "status": "CLOSED"
-            }
-          ],
-          "Daily Conditions": {
-            "Snow Base": "70cm",
-            "New Snow": "0cm",
-            "Conditions": "Not Available"
-          }
-        },
-        "trailsSummary": {
-          "open": 0,
-          "total": 14
-        },
-        "liftsSummary": {
-          "open": 0,
-          "total": 6
-        },
-        "conditions": {
-          "baseDepth": "70cm",
-          "newSnow": "0cm",
-          "surfaceConditions": "Not Available"
-        },
-        "terrainParks": [
-          {
-            "name": "2. Puppy Pound",
-            "status": "CLOSED",
-            "difficulty": "Terrain Park"
+            "area": "14",
+            "difficulty": "green",
+            "name": "Lower Lovers Lane",
+            "status": "closed"
           },
           {
-            "name": "3. Dog Pound",
-            "status": "CLOSED",
-            "difficulty": "Terrain Park"
+            "area": "15",
+            "difficulty": "blue",
+            "name": "Club House",
+            "status": "closed"
           },
           {
-            "name": "4. Impound",
-            "status": "CLOSED",
-            "difficulty": "Terrain Park"
+            "area": "16",
+            "difficulty": "green",
+            "name": "Favourite",
+            "status": "closed"
           },
           {
-            "name": "5. Impound Jumpline",
-            "status": "CLOSED",
-            "difficulty": "Terrain Park"
+            "area": "17",
+            "difficulty": "blue",
+            "name": "Alleyway",
+            "status": "closed"
           },
           {
-            "name": "6. Compound Snow Zone",
-            "status": "CLOSED",
-            "difficulty": "Terrain Park"
+            "area": "18",
+            "difficulty": "blue",
+            "name": "Elbow",
+            "status": "closed"
           },
           {
-            "name": "7. Compound",
-            "status": "CLOSED",
-            "difficulty": "Terrain Park"
+            "area": "19",
+            "difficulty": "doubleBlack",
+            "name": "The Dagger",
+            "status": "closed"
+          },
+          {
+            "area": "20",
+            "difficulty": "doubleBlack",
+            "name": "The Glades",
+            "status": "closed"
           }
         ],
         "resortId": "dagmar-ski-resort",
         "sourceUrl": "https://www.skidagmar.com/trailmap/",
-        "updatedAt": 1789141328446
+        "updatedAt": 1789406006232
       }
     }
   ]

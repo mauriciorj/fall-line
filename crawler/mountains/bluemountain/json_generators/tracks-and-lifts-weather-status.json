@@ -2,7 +2,6 @@
   "lifts": [
     {
       "area": "Up Hill Bike Trails",
-      "difficulty": "easy",
       "name": "The Grind",
       "status": "closed"
     }
@@ -10,6 +9,7 @@
   "tracks": [
     {
       "area": "Multi-Use (Bike/Hike) Trails",
+      "difficulty": "green",
       "name": "Open-Air-Gondola",
       "status": "Scheduled"
     }

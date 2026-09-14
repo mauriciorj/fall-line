@@ -23,11 +23,8 @@
     },
     {
       "table": "weatherAndStatus",
-      "missingColumns": [
-        "crossCountry",
-        "tubing"
-      ]
+      "missingColumns": []
     }
   ],
-  "missingColumnCount": 5
+  "missingColumnCount": 3
 }

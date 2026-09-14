@@ -50,6 +50,17 @@ def require_metadata(content, table_name):
     return content["resortId"], content["sourceUrl"], content["updatedAt"]
 
 
+def normalize_weather_data(weather):
+    weather_data = {
+        key: value
+        for key, value in weather.items()
+        if key not in METADATA_FIELDS
+    }
+    if "tracks" in weather_data:
+        weather_data["trails"] = weather_data.pop("tracks")
+    return weather_data
+
+
 def push_snapshot(snapshot):
     contents = get_table_contents(snapshot)
     resort_id = contents["resorts"].get("resortId")
@@ -80,7 +91,7 @@ def push_snapshot(snapshot):
         "resortHours": push_resort_hours(hours_id, hours_url, hours_data, updated_at_ms=hours_time),
         "resortRates": push_resort_rates(rates_id, rates_url, rates["rates"], updated_at_ms=rates_time),
         "resortRentals": push_resort_rentals(rentals_id, rentals_url, rentals["rentals"], updated_at_ms=rentals_time),
-        "weatherAndStatus": push_weather_and_status(weather_id, weather_url, {key: value for key, value in weather.items() if key not in METADATA_FIELDS}, updated_at_ms=weather_time),
+        "weatherAndStatus": push_weather_and_status(weather_id, weather_url, normalize_weather_data(weather), updated_at_ms=weather_time),
     }
 
 

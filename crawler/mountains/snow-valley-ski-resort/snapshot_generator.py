@@ -11,7 +11,16 @@ TABLE_COLUMNS = {
     "resortHours": ["resortId", "sourceUrl", "updatedAt", "hours"],
     "resortRates": ["resortId", "sourceUrl", "updatedAt", "rates"],
     "resortRentals": ["resortId", "sourceUrl", "updatedAt", "rentals"],
-    "weatherAndStatus": ["resortId", "sourceUrl", "updatedAt", "lifts", "trails", "terrainParks", "crossCountry", "tubing", "rawData"],
+    "weatherAndStatus": ["resortId", "sourceUrl", "updatedAt", "lifts", "tracks"],
+}
+DIFFICULTY_FIELDS = {
+    "black": "black",
+    "blue": "blue",
+    "doubleblack": "doubleBlack",
+    "double black": "doubleBlack",
+    "freestyle": "freeStyle",
+    "free style": "freeStyle",
+    "green": "green",
 }
 
 
@@ -31,12 +40,17 @@ def parse_price(value):
 
 
 def build_tracks_summary(weather):
-    return {"black": 0, "blue": 0, "doubleBlack": 0, "freeStyle": 0, "green": 0}
+    summary = {field: 0 for field in ["black", "blue", "doubleBlack", "freeStyle", "green"]}
+    for track in weather.get("tracks", []):
+        field = DIFFICULTY_FIELDS.get(track.get("difficulty", "").lower())
+        if field:
+            summary[field] += 1
+    return summary
 
 
 def get_rate_price(rates):
     structured_rates = rates.get("rates", {})
-    adult_day_rate = structured_rates.get("day-weekend", {}).get("adults")
+    adult_day_rate = structured_rates.get("day-week", {}).get("adults")
     if adult_day_rate is not None:
         return parse_price(adult_day_rate)
 
@@ -97,7 +111,7 @@ def build_snapshot(directory=None):
     hours = load_json(json_generators / "hours-of-operation.json")
     rates = load_json(json_generators / "lift-rates.json")
     rentals = load_json(json_generators / "rentals.json")
-    weather = load_json(json_generators / "weather-and-status.json")
+    weather = load_json(json_generators / "tracks-and-lifts-weather-status.json")
     static_info = load_json(directory / "static_infos.json")
     return {"resortId": RESORT_ID, "tables": [
         {"table": "resorts", "content": build_resort(static_info, rates, rentals, weather)},

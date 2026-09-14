@@ -1,0 +1,117 @@
+{
+  "tracks": [
+    {
+      "difficulty": "black",
+      "name": "Sunnyside",
+      "status": "CLOSED"
+    },
+    {
+      "difficulty": "doubleBlack",
+      "name": "Mogul Alley",
+      "status": "CLOSED"
+    },
+    {
+      "difficulty": "blue",
+      "name": "Main Street",
+      "status": "CLOSED"
+    },
+    {
+      "difficulty": "freeStyle",
+      "name": "Banked Slalom Run",
+      "status": "CLOSED"
+    },
+    {
+      "difficulty": "green",
+      "name": "Short Cut",
+      "status": "CLOSED"
+    },
+    {
+      "difficulty": "green",
+      "name": "Collectors",
+      "status": "CLOSED"
+    },
+    {
+      "difficulty": "green",
+      "name": "One Way",
+      "status": "CLOSED"
+    },
+    {
+      "difficulty": "green",
+      "name": "Beginners Area",
+      "status": "CLOSED"
+    },
+    {
+      "difficulty": "freeStyle",
+      "name": "Little Razors",
+      "status": "CLOSED"
+    },
+    {
+      "difficulty": "green",
+      "name": "Highway",
+      "status": "CLOSED"
+    },
+    {
+      "difficulty": "green",
+      "name": "Snowcross",
+      "status": "CLOSED"
+    },
+    {
+      "difficulty": "freeStyle",
+      "name": "Razors Edge Terrain Park",
+      "status": "CLOSED"
+    },
+    {
+      "difficulty": "black",
+      "name": "Bail Out",
+      "status": "CLOSED"
+    },
+    {
+      "difficulty": "doubleBlack",
+      "name": "Rieky's Run",
+      "status": "CLOSED"
+    },
+    {
+      "difficulty": "black",
+      "name": "Upper Chute",
+      "status": "CLOSED"
+    },
+    {
+      "difficulty": "black",
+      "name": "Lower Chute",
+      "status": "CLOSED"
+    },
+    {
+      "difficulty": "blue",
+      "name": "Valley Road",
+      "status": "CLOSED"
+    },
+    {
+      "difficulty": "black",
+      "name": "Freeway",
+      "status": "CLOSED"
+    },
+    {
+      "difficulty": "blue",
+      "name": "East Avenue",
+      "status": "CLOSED"
+    },
+    {
+      "difficulty": "blue",
+      "name": "Bridge-Trail",
+      "status": "CLOSED"
+    },
+    {
+      "difficulty": "green",
+      "name": "Little Rogers",
+      "status": "CLOSED"
+    },
+    {
+      "difficulty": "green",
+      "name": "Tube Park - reservation only",
+      "status": "CLOSED"
+    }
+  ],
+  "resortId": "lakeridge-ski-resort",
+  "sourceUrl": "https://ski-lakeridge.com/skiing-snowboarding/trail-status/",
+  "updatedAt": 1789407010068
+}

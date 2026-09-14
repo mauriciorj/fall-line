@@ -53,6 +53,7 @@ DIFFICULTY_FIELDS = {
     "black diamond": "black",
     "blue": "blue",
     "blue square": "blue",
+    "doubleblack": "doubleBlack",
     "double-black": "doubleBlack",
     "double black": "doubleBlack",
     "double black diamond": "doubleBlack",
@@ -87,7 +88,7 @@ def build_tracks_summary(weather):
         "freeStyle": 0,
         "green": 0,
     }
-    for trail in weather.get("lifts", []):
+    for trail in weather.get("tracks", []):
         field = DIFFICULTY_FIELDS.get(trail.get("difficulty", "").lower())
         if field:
             summary[field] += 1

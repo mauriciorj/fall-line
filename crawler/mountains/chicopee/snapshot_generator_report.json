@@ -11,9 +11,7 @@
     },
     {
       "table": "resortHours",
-      "missingColumns": [
-        "hours"
-      ]
+      "missingColumns": []
     },
     {
       "table": "resortRates",
@@ -25,12 +23,8 @@
     },
     {
       "table": "weatherAndStatus",
-      "missingColumns": [
-        "terrainParks",
-        "crossCountry",
-        "tubing"
-      ]
+      "missingColumns": []
     }
   ],
-  "missingColumnCount": 7
+  "missingColumnCount": 3
 }
