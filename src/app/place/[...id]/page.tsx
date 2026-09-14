@@ -12,6 +12,7 @@ import {
   toTrackConditions,
 } from "@/utils/convexResort";
 import InfoSection from "@/src/features/place/component/infoSection";
+import AccommodationsSection from "@/src/features/place/component/accommodationsSection";
 import LocationSection from "@/src/features/place/component/locationSection";
 import LocationMap from "@/src/features/place/component/locationMap";
 import PricingSection from "@/src/features/place/component/pricingSection";
@@ -122,6 +123,7 @@ const ResortDetail = () => {
           resort={resort}
           resortHours={dbResortHours?.hours ?? []}
         />
+        <AccommodationsSection resort={resort} />
 
         {/* Tracks */}
         <TracksSection resort={resort} />

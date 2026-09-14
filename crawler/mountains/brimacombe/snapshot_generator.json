@@ -13,7 +13,6 @@
         "country": "Canada",
         "email": "info@brimacombe.ca",
         "googleMapsUrl": "https://maps.app.goo.gl/y2c4XGM9iTEwzmh76",
-        "hasAccommodations": false,
         "hasCrossCountry": false,
         "hasLessons": true,
         "hasSnowshoeing": false,
@@ -29,6 +28,16 @@
         "tollFree": "1 877 672 2582 / (877) 672-2582",
         "website": "http://brimacombe.ca/",
         "name": "Brimacombe",
+        "elevation": "218 m - 310 m",
+        "height": "92m",
+        "tracksGreenLength": "4km",
+        "tracksGreenProportion": "40",
+        "tracksBlueLength": "3.2km",
+        "tracksBlueProportion": "32",
+        "tracksBlackLength": "2.8km",
+        "tracksBlackProportion": "28",
+        "tracksTotalLength": "10km",
+        "hasAccommodations": false,
         "tracksSummary": {
           "black": 8,
           "blue": 6,
@@ -55,7 +64,7 @@
         },
         "resortId": "brimacombe",
         "sourceUrl": "https://brimacombe.ca/contact-us/",
-        "updatedAt": 1789399281714
+        "updatedAt": 1789425887430
       }
     },
     {
@@ -85,7 +94,7 @@
         },
         "resortId": "brimacombe",
         "sourceUrl": "https://brimacombe.ca/plan-your-visit/lift-tickets/",
-        "updatedAt": 1789399282804
+        "updatedAt": 1789425888394
       }
     },
     {
@@ -111,7 +120,7 @@
         },
         "resortId": "brimacombe",
         "sourceUrl": "https://brimacombe.ca/plan-your-visit/rentals/",
-        "updatedAt": 1789399284018
+        "updatedAt": 1789425889596
       }
     },
     {
@@ -296,7 +305,7 @@
         ],
         "resortId": "brimacombe",
         "sourceUrl": "https://brimacombe.ca/at-the-brim/snow-conditions-and-trails/",
-        "updatedAt": 1789399284985
+        "updatedAt": 1789425892332
       }
     }
   ]

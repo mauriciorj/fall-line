@@ -38,11 +38,21 @@ export interface Resort {
   continent?: string;
   country?: string;
   region?: string;
+  resort_accommodations?: string;
   image: StaticImageData | string;
   lessonsPrice: number;
   name: string;
   phone: string;
   rating: number;
+  elevation?: string;
+  height?: string;
+  tracksGreenLength?: string;
+  tracksGreenProportion?: string;
+  tracksBlueLength?: string;
+  tracksBlueProportion?: string;
+  tracksBlackLength?: string;
+  tracksBlackProportion?: string;
+  tracksTotalLength?: string;
   snowBoardRentalPrice: number;
   skiRentalPrice: number;
   runs: {

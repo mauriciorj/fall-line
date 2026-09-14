@@ -11,6 +11,11 @@ TABLE_NAMES = (
     "resorts", "resortHours", "resortRates", "resortRentals", "weatherAndStatus",
 )
 METADATA_FIELDS = {"resortId", "sourceUrl", "updatedAt"}
+RESORT_INFO_FIELDS = (
+    "elevation", "height", "tracksGreenLength", "tracksGreenProportion",
+    "tracksBlueLength", "tracksBlueProportion", "tracksBlackLength",
+    "tracksBlackProportion", "tracksTotalLength",
+)
 
 sys.path.insert(0, str(CRAWLER_DIR))
 from convex_client import (
@@ -77,6 +82,12 @@ def push_snapshot(snapshot):
         raise ValueError("Missing resortId in resorts")
     if snapshot.get("resortId") != resort_id:
         raise ValueError(f"Snapshot resort ID mismatch: {snapshot.get('resortId')} != {resort_id}")
+    missing_resort_info = [
+        field for field in RESORT_INFO_FIELDS
+        if contents["resorts"].get(field) in (None, "")
+    ]
+    if missing_resort_info:
+        raise ValueError(f"Missing ski resort information: {sorted(missing_resort_info)}")
     metadata = {
         name: require_metadata(contents[name], name)
         for name in TABLE_NAMES[1:]

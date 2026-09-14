@@ -4,85 +4,17 @@ from datetime import datetime
 from pathlib import Path
 
 
-CRAWLER_DIR = Path(__file__).resolve().parent.parent
-MY_TEST_DIR = CRAWLER_DIR / "mountains"
+MOUNTAINS_DIR = Path(__file__).resolve().parent
+CRAWLER_DIR = MOUNTAINS_DIR.parent
 FAILURE_LOG = CRAWLER_DIR / "crawler-errors.log"
-RESORT_SCRIPTS = {
-    "snow-valley-ski-resort": (
-        "json_generators/hours-of-operation.py",
-        "json_generators/lift-rates.py",
-        "json_generators/rentals.py",
-        "json_generators/weather-and-status.py",
-    ),
-    "bluemountain": (
-        "json_generators/hours-of-operation.py",
-        "json_generators/lift-rates.py",
-        "json_generators/rentals.py",
-        "json_generators/weather-and-status.py",
-    ),
-    "brimacombe": (
-        "json_generators/hours-of-operation.py",
-        "json_generators/lift-rates.py",
-        "json_generators/rentals.py",
-        "json_generators/weather-and-status.py",
-    ),
-    "caledon-ski-club": (
-        "json_generators/hours-of-operation.py",
-        "json_generators/lift-rates.py",
-        "json_generators/rentals.py",
-        "json_generators/weather-and-status.py",
-    ),
-    "chicopee": (
-        "json_generators/hours-of-operation.py",
-        "json_generators/lift-rates.py",
-        "json_generators/rentals.py",
-        "json_generators/weather-and-status.py",
-    ),
-    "glen-eden": (
-        "json_generators/hours-of-operation.py",
-        "json_generators/lift-rates.py",
-        "json_generators/rentals.py",
-        "json_generators/weather-and-status.py",
-    ),
-    "horseshoe-valley-resort": (
-        "json_generators/hours-of-operation.py",
-        "json_generators/lift-rates.py",
-        "json_generators/rentals.py",
-        "json_generators/weather-and-status.py",
-    ),
-    "lakeridge-ski-resort": (
-        "json_generators/hours-of-operation.py",
-        "json_generators/lift-rates.py",
-        "json_generators/rentals.py",
-        "json_generators/weather-and-status.py",
-    ),
-    "dagmar-ski-resort": (
-        "json_generators/hours-of-operation.py",
-        "json_generators/lift-rates.py",
-        "json_generators/rentals.py",
-        "json_generators/weather-and-status.py",
-    ),
-}
-
-SCRIPT_DIRECTORIES = {
-    "skiresortinfo": CRAWLER_DIR / "websites" / "skiresortinfo",
-}
+RESORT_MAIN_FILES = tuple(sorted(MOUNTAINS_DIR.glob("*/main.py")))
 
 
-def run_script(resort_name, script_name):
-    script_directory = SCRIPT_DIRECTORIES.get(
-        resort_name,
-        MY_TEST_DIR / resort_name,
-    )
-    script_path = script_directory / script_name
-    command = [sys.executable, str(script_path)]
-    if resort_name == "skiresortinfo":
-        command.extend(["--pages", "0"])
-
-    print(f"\n=== Running {resort_name}/{script_name} ===", flush=True)
+def run_main(script_path):
+    print(f"\n=== Running {script_path.parent.name}/main.py ===", flush=True)
     result = subprocess.run(
-        command,
-        cwd=script_directory,
+        [sys.executable, str(script_path)],
+        cwd=script_path.parent,
         capture_output=True,
         text=True,
         encoding="utf-8",
@@ -100,10 +32,10 @@ def run_script(resort_name, script_name):
 def write_failure_log(failures):
     timestamp = datetime.now().astimezone().isoformat()
     with FAILURE_LOG.open("a", encoding="utf-8") as log:
-        log.write(f"\n[{timestamp}] Crawler failures\n")
-        for resort_name, script_name, result in failures:
-            log.write(f"\nResort: {resort_name}\n")
-            log.write(f"Script: {script_name}\n")
+        log.write(f"\n[{timestamp}] Mountain main failures\n")
+        for script_path, result in failures:
+            log.write(f"\nResort: {script_path.parent.name}\n")
+            log.write(f"Script: {script_path.name}\n")
             log.write(f"Exit code: {result.returncode}\n")
             log.write("--- stdout ---\n")
             log.write(result.stdout or "")
@@ -114,20 +46,18 @@ def write_failure_log(failures):
 
 def main():
     failures = []
-    total_scripts = sum(len(scripts) for scripts in RESORT_SCRIPTS.values())
 
-    for resort_name, scripts in RESORT_SCRIPTS.items():
-        for script_name in scripts:
-            result = run_script(resort_name, script_name)
-            if result.returncode != 0:
-                failures.append((resort_name, script_name, result))
+    for script_path in RESORT_MAIN_FILES:
+        result = run_main(script_path)
+        if result.returncode != 0:
+            failures.append((script_path, result))
 
     if failures:
         write_failure_log(failures)
         print(f"\nFailed scripts logged to {FAILURE_LOG}", file=sys.stderr)
         return 1
 
-    print(f"\nAll {total_scripts} crawler scripts completed successfully.")
+    print(f"\nAll {len(RESORT_MAIN_FILES)} mountain main scripts completed successfully.")
     return 0
 
 

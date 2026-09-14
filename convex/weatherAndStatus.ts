@@ -20,6 +20,7 @@ const summarySchema = v.object({
 const liftSchema = v.object({
   name: v.string(),
   status: v.string(),
+  area: v.optional(v.string()),
   hours: v.optional(v.string()),
   dayStatus: v.optional(v.string()),
   nightStatus: v.optional(v.string()),

@@ -13,9 +13,8 @@
         "country": "Canada",
         "email": "admin@caledonskiclub.on.ca",
         "googleMapsUrl": "https://maps.app.goo.gl/nfzpbXydap2bfMP56",
-        "hasAccommodations": false,
         "hasCrossCountry": false,
-        "hasLessons": false,
+        "hasLessons": true,
         "hasSnowshoeing": false,
         "hasSpa": false,
         "hasTubing": false,
@@ -29,6 +28,16 @@
         "tollFree": "1-800-363-7669",
         "website": "https://caledonskiclub.com/",
         "name": "Caledon Ski Club",
+        "elevation": "334 m - 414 m",
+        "height": "80m",
+        "tracksGreenLength": "2km",
+        "tracksGreenProportion": "31",
+        "tracksBlueLength": "2.5km",
+        "tracksBlueProportion": "38",
+        "tracksBlackLength": "2km",
+        "tracksBlackProportion": "31",
+        "tracksTotalLength": "6.5km",
+        "hasAccommodations": false,
         "tracksSummary": {
           "black": 5,
           "blue": 9,
@@ -55,7 +64,7 @@
         },
         "resortId": "caledon-ski-club",
         "sourceUrl": "https://caledonskiclub.com/hours-lift-prices",
-        "updatedAt": 1789400787101
+        "updatedAt": 1789425897871
       }
     },
     {
@@ -75,7 +84,7 @@
         },
         "resortId": "caledon-ski-club",
         "sourceUrl": "https://caledonskiclub.com/hours-lift-prices",
-        "updatedAt": 1789400791514
+        "updatedAt": 1789425903841
       }
     },
     {
@@ -101,7 +110,7 @@
         },
         "resortId": "caledon-ski-club",
         "sourceUrl": "https://caledonskiclub.com/proshop",
-        "updatedAt": 1789400795730
+        "updatedAt": 1789425910522
       }
     },
     {
@@ -236,7 +245,7 @@
         ],
         "resortId": "caledon-ski-club",
         "sourceUrl": "https://caledonskiclub.com/private-lessons",
-        "updatedAt": 1789400799884
+        "updatedAt": 1789425918417
       }
     }
   ]

@@ -74,7 +74,6 @@ const TracksSection = ({ resort }: TracksSectionProps) => {
     (total, track) => total + track.count,
     0,
   );
-
   return (
     <section className="space-y-4">
       <h2 className="font-serif text-xl font-medium text-foreground">{t("tracks")}</h2>

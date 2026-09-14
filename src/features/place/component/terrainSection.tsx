@@ -52,6 +52,11 @@ const TerrainSection = ({ resort }: { resort: Resort }) => {
             <p className="text-xs text-muted-foreground mt-1">
               {trackPercentage(resort.runs.green)}% {t("percentTerrain")}
             </p>
+            {resort.tracksGreenLength && (
+              <p className="text-xs text-muted-foreground mt-1">
+                {resort.tracksGreenLength}
+              </p>
+            )}
           </div>
           <div className="text-center">
             <div className="flex items-center justify-center gap-2 mb-2">
@@ -72,6 +77,11 @@ const TerrainSection = ({ resort }: { resort: Resort }) => {
             <p className="text-xs text-muted-foreground mt-1">
               {trackPercentage(resort.runs.blue)}% {t("percentTerrain")}
             </p>
+            {resort.tracksBlueLength && (
+              <p className="text-xs text-muted-foreground mt-1">
+                {resort.tracksBlueLength}
+              </p>
+            )}
           </div>
           <div className="text-center">
             <div className="flex items-center justify-center gap-2 mb-2">
@@ -92,6 +102,11 @@ const TerrainSection = ({ resort }: { resort: Resort }) => {
             <p className="text-xs text-muted-foreground mt-1">
               {trackPercentage(resort.runs.black)}% {t("percentTerrain")}
             </p>
+            {resort.tracksBlackLength && (
+              <p className="text-xs text-muted-foreground mt-1">
+                {resort.tracksBlackLength}
+              </p>
+            )}
           </div>
           <div className="text-center">
             <div className="flex items-center justify-center gap-2 mb-2">

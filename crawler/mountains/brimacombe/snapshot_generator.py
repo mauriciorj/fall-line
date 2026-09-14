@@ -1,11 +1,11 @@
 import json
+import re
 import subprocess
 import sys
 from pathlib import Path
 
 RESORT_ID = "brimacombe"
 RESORT_NAME = "Brimacombe"
-DAY_TICKET_PRICE_LABEL = "Friday to Sunday & Holidays Valid up to 4 Hours"
 LESSON_RENTAL_NAME = "7-Week Snow School Program Ski or Snowboard Rental Package (Skis, Boots and Poles or Snowboard and Boots)"
 ADULT_RENTAL_NAME = "(Ages 14+ ) Ski or Snowboard Package"
 TABLE_COLUMNS = {
@@ -35,6 +35,15 @@ TABLE_COLUMNS = {
         "skiRentalPrice",
         "snowBoardRentalPrice",
         "tracksSummary",
+        "elevation",
+        "height",
+        "tracksGreenLength",
+        "tracksGreenProportion",
+        "tracksBlueLength",
+        "tracksBlueProportion",
+        "tracksBlackLength",
+        "tracksBlackProportion",
+        "tracksTotalLength",
         "ticketUrl",
         "tollFree",
         "tubbingPrice",
@@ -49,6 +58,17 @@ TABLE_COLUMNS = {
         "lifts",
         "tracks",
     ],
+}
+SKI_RESORT_FIELDS = {
+    "elevation": "elevation",
+    "height": "height",
+    "tracks-green-length": "tracksGreenLength",
+    "tracks-green-proportion": "tracksGreenProportion",
+    "tracks-blue-length": "tracksBlueLength",
+    "tracks-blue-proportion": "tracksBlueProportion",
+    "tracks-black-length": "tracksBlackLength",
+    "tracks-black-proportion": "tracksBlackProportion",
+    "tracks-total-length": "tracksTotalLength",
 }
 DIFFICULTY_FIELDS = {
     "easy": "green",
@@ -69,7 +89,17 @@ def load_json(path):
         return json.load(source)
 
 
-def build_tracks_summary(weather):
+def parse_price(value):
+    if value in (None, ""):
+        return None
+    match = re.search(r"\d[\d,.]*", str(value))
+    if not match:
+        return None
+    amount = float(match.group().replace(",", ""))
+    return int(amount) if amount.is_integer() else amount
+
+
+def build_tracks_summary(tracks):
     summary = {
         "black": 0,
         "blue": 0,
@@ -77,33 +107,24 @@ def build_tracks_summary(weather):
         "freeStyle": 0,
         "green": 0,
     }
-    for trail in weather.get("tracks", []):
-        field = DIFFICULTY_FIELDS.get(trail.get("difficulty", "").lower())
+    if isinstance(tracks, dict):
+        tracks = tracks.get("tracks", [])
+    if not isinstance(tracks, list):
+        return summary
+    for trail in tracks:
+        if not isinstance(trail, dict):
+            continue
+        difficulty = trail.get("difficulty")
+        if not isinstance(difficulty, str):
+            continue
+        field = DIFFICULTY_FIELDS.get(difficulty.strip().lower())
         if field:
             summary[field] += 1
     return summary
 
 
 def get_day_ticket_price(rates):
-    structured_rates = rates.get("rates", {})
-    adult_day_rate = structured_rates.get("day-week", {}).get("adults")
-    if adult_day_rate is not None:
-        value = adult_day_rate.replace("$", "").replace(",", "").strip()
-        amount = float(value)
-        return int(amount) if amount.is_integer() else amount
-
-    for item in structured_rates.get("items", []):
-        if item.get("name") != "Adult (18+)":
-            continue
-        for price in item.get("prices", []):
-            if price.get("label") != DAY_TICKET_PRICE_LABEL:
-                continue
-            value = price.get("value", "").replace("$", "").replace(",", "").strip()
-            if not value:
-                return None
-            amount = float(value)
-            return int(amount) if amount.is_integer() else amount
-    return None
+    return parse_price(rates.get("rates", {}).get("day-week", {}).get("adults"))
 
 
 def get_rental_price(rentals, section_name, item_name):
@@ -132,20 +153,15 @@ def get_rental_price(rentals, section_name, item_name):
     return None
 
 
-def build_resort(static_info, rates, rentals, weather):
+def build_resort(static_info, rates, rentals, weather, ski_resort_info=None):
     resort = dict(static_info)
     resort["name"] = RESORT_NAME
-    resort.update(
-        {
-            "hasAccommodations": False,
-            "hasCrossCountry": False,
-            "hasSnowshoeing": False,
-            "hasSpa": False,
-            "hasTubing": False,
-            "hasZipline": False,
-        }
-    )
-    resort["tracksSummary"] = build_tracks_summary(weather)
+    for source_field, resort_field in SKI_RESORT_FIELDS.items():
+        value = (ski_resort_info or {}).get(source_field)
+        if value not in (None, ""):
+            resort[resort_field] = value
+    resort["hasAccommodations"] = bool(static_info.get("resort_accommodations"))
+    resort["tracksSummary"] = build_tracks_summary(weather.get("tracks", []))
     prices = {
         "dayTicketPrice": get_day_ticket_price(rates),
         "lessonsPrice": get_rental_price(
@@ -161,8 +177,6 @@ def build_resort(static_info, rates, rentals, weather):
     for field, value in prices.items():
         if value is not None:
             resort[field] = value
-    if prices["lessonsPrice"] is not None:
-        resort["hasLessons"] = True
     return resort
 
 
@@ -188,6 +202,7 @@ def build_snapshot(directory=None):
     weather = load_json(
         json_generators / "tracks-and-lifts-weather-status.json"
     )
+    ski_resort_info = load_json(json_generators / "skiresort.json")
     static_info = load_json(directory / "static_infos.json")
 
     return {
@@ -195,7 +210,9 @@ def build_snapshot(directory=None):
         "tables": [
             {
                 "table": "resorts",
-                "content": build_resort(static_info, rates, rentals, weather),
+                "content": build_resort(
+                    static_info, rates, rentals, weather, ski_resort_info
+                ),
             },
             {
                 "table": "resortHours",

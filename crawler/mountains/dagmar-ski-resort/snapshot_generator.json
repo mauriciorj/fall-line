@@ -13,7 +13,6 @@
         "country": "Canada",
         "email": "info@skidagmar.com",
         "googleMapsUrl": "https://maps.app.goo.gl/m7aFQ1mktoy449cC6",
-        "hasAccommodations": false,
         "hasCrossCountry": false,
         "hasLessons": true,
         "hasSnowshoeing": false,
@@ -28,6 +27,16 @@
         "ticketUrl": "https://brimacombe.ca/plan-your-visit/lift-tickets/",
         "website": "http://www.skidagmar.com/",
         "name": "Dagmar Ski Resort",
+        "elevation": "120 m - 199 m",
+        "height": "79m",
+        "tracksGreenLength": "1.7km",
+        "tracksGreenProportion": "57",
+        "tracksBlueLength": "1km",
+        "tracksBlueProportion": "33",
+        "tracksBlackLength": "0.3km",
+        "tracksBlackProportion": "10",
+        "tracksTotalLength": "3km",
+        "hasAccommodations": false,
         "tracksSummary": {
           "black": 1,
           "blue": 5,
@@ -54,7 +63,7 @@
         },
         "resortId": "dagmar-ski-resort",
         "sourceUrl": "https://www.skidagmar.com/alpine-rates/",
-        "updatedAt": 1789406001867
+        "updatedAt": 1789425954396
       }
     },
     {
@@ -271,7 +280,7 @@
         ],
         "resortId": "dagmar-ski-resort",
         "sourceUrl": "https://www.skidagmar.com/trailmap/",
-        "updatedAt": 1789406006232
+        "updatedAt": 1789425962552
       }
     }
   ]

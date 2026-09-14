@@ -9,6 +9,11 @@ SNAPSHOT_GENERATOR = DAGMAR_DIR / "snapshot_generator.py"
 SNAPSHOT_FILE = DAGMAR_DIR / "snapshot_generator.json"
 TABLE_NAMES = ("resorts", "resortHours", "resortRates", "resortRentals", "weatherAndStatus")
 METADATA_FIELDS = {"resortId", "sourceUrl", "updatedAt"}
+RESORT_INFO_FIELDS = (
+    "elevation", "height", "tracksGreenLength", "tracksGreenProportion",
+    "tracksBlueLength", "tracksBlueProportion", "tracksBlackLength",
+    "tracksBlackProportion", "tracksTotalLength",
+)
 
 sys.path.insert(0, str(CRAWLER_DIR))
 from convex_client import push_resort_hours, push_resort_rates, push_resort_rentals, push_ski_resorts, push_weather_and_status
@@ -81,6 +86,12 @@ def push_snapshot(snapshot):
     resort_id = contents["resorts"].get("resortId")
     if not isinstance(resort_id, str) or not resort_id or snapshot.get("resortId") != resort_id:
         raise ValueError("Snapshot resort ID mismatch")
+    missing_resort_info = [
+        field for field in RESORT_INFO_FIELDS
+        if contents["resorts"].get(field) in (None, "")
+    ]
+    if missing_resort_info:
+        raise ValueError(f"Missing ski resort information: {sorted(missing_resort_info)}")
     metadata = {name: require_metadata(contents[name], name) for name in TABLE_NAMES[1:]}
     for name, (table_resort_id, _, _) in metadata.items():
         if table_resort_id != resort_id:

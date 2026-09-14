@@ -7,6 +7,7 @@ import {
   Clock,
   Globe,
   Mail,
+  Mountain,
   Phone,
   Star,
   StarHalf,
@@ -128,6 +129,24 @@ const InfoSection = ({ resort, resortHours }: ResortInfoSectionProps) => {
             <StarRating rating={resort.rating} />
           </div>
         </div>
+        {(resort.elevation || resort.height) && (
+          <div className="flex items-start gap-4 p-5">
+            <Mountain className="w-4 h-4 mt-0.5 text-muted-foreground shrink-0" />
+            <div>
+              <p className="text-sm font-medium text-foreground mb-1">
+                {t("elevation")}
+              </p>
+              {resort.elevation && (
+                <p className="text-sm text-foreground">{resort.elevation}</p>
+              )}
+              {resort.height && (
+                <p className="text-sm text-muted-foreground">
+                  {t("height")}: {resort.height}
+                </p>
+              )}
+            </div>
+          </div>
+        )}
         <div className="flex items-start gap-4 p-5">
           <Globe className="w-4 h-4 mt-0.5 text-muted-foreground shrink-0" />
           <div>

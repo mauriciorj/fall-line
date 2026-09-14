@@ -14,6 +14,7 @@ TABLE_COLUMNS = {
         "continent",
         "country",
         "region",
+        "resort_accommodations",
         "website",
         "address",
         "coordinates",
@@ -33,6 +34,15 @@ TABLE_COLUMNS = {
         "skiRentalPrice",
         "snowBoardRentalPrice",
         "tracksSummary",
+        "elevation",
+        "height",
+        "tracksGreenLength",
+        "tracksGreenProportion",
+        "tracksBlueLength",
+        "tracksBlueProportion",
+        "tracksBlackLength",
+        "tracksBlackProportion",
+        "tracksTotalLength",
         "ticketUrl",
         "tollFree",
         "tubbingPrice",
@@ -47,6 +57,17 @@ TABLE_COLUMNS = {
         "lifts",
         "tracks",
     ],
+}
+SKI_RESORT_FIELDS = {
+    "elevation": "elevation",
+    "height": "height",
+    "tracks-green-length": "tracksGreenLength",
+    "tracks-green-proportion": "tracksGreenProportion",
+    "tracks-blue-length": "tracksBlueLength",
+    "tracks-blue-proportion": "tracksBlueProportion",
+    "tracks-black-length": "tracksBlackLength",
+    "tracks-black-proportion": "tracksBlackProportion",
+    "tracks-total-length": "tracksTotalLength",
 }
 DIFFICULTY_FIELDS = {
     "black": "black",
@@ -80,7 +101,7 @@ def parse_price(value):
     return int(amount) if amount.is_integer() else amount
 
 
-def build_tracks_summary(weather):
+def build_tracks_summary(tracks):
     summary = {
         "black": 0,
         "blue": 0,
@@ -88,27 +109,24 @@ def build_tracks_summary(weather):
         "freeStyle": 0,
         "green": 0,
     }
-    for trail in weather.get("tracks", []):
-        field = DIFFICULTY_FIELDS.get(trail.get("difficulty", "").lower())
+    if isinstance(tracks, dict):
+        tracks = tracks.get("tracks", [])
+    if not isinstance(tracks, list):
+        return summary
+    for trail in tracks:
+        if not isinstance(trail, dict):
+            continue
+        difficulty = trail.get("difficulty")
+        if not isinstance(difficulty, str):
+            continue
+        field = DIFFICULTY_FIELDS.get(difficulty.strip().lower())
         if field:
             summary[field] += 1
     return summary
 
 
 def get_day_ticket_price(rates):
-    structured_rates = rates.get("rates", {})
-    adult_day_rate = structured_rates.get("day-week", {}).get("adults")
-    if adult_day_rate is not None:
-        return parse_price(adult_day_rate)
-
-    for item in structured_rates.get("items", []):
-        if "adult" not in item.get("name", "").lower():
-            continue
-        for price in item.get("prices", []):
-            value = parse_price(price.get("value"))
-            if value is not None:
-                return value
-    return None
+    return parse_price(rates.get("rates", {}).get("day-week", {}).get("adults"))
 
 
 def get_rental_price(rentals, section_match, item_match):
@@ -132,20 +150,15 @@ def get_rental_price(rentals, section_match, item_match):
     return None
 
 
-def build_resort(static_info, rates, rentals, weather):
+def build_resort(static_info, rates, rentals, weather, ski_resort_info=None):
     resort = dict(static_info)
     resort["name"] = RESORT_NAME
-    for field in [
-        "hasAccommodations",
-        "hasCrossCountry",
-        "hasLessons",
-        "hasSnowshoeing",
-        "hasSpa",
-        "hasTubing",
-        "hasZipline",
-    ]:
-        resort.setdefault(field, False)
-    resort["tracksSummary"] = build_tracks_summary(weather)
+    for source_field, resort_field in SKI_RESORT_FIELDS.items():
+        value = (ski_resort_info or {}).get(source_field)
+        if value not in (None, ""):
+            resort[resort_field] = value
+    resort["hasAccommodations"] = bool(static_info.get("resort_accommodations"))
+    resort["tracksSummary"] = build_tracks_summary(weather.get("tracks", []))
 
     prices = {
         "dayTicketPrice": get_day_ticket_price(rates),
@@ -182,12 +195,18 @@ def build_snapshot(directory=None):
     weather = load_json(
         json_generators / "tracks-and-lifts-weather-status.json"
     )
+    ski_resort_info = load_json(json_generators / "skiresort.json")
     static_info = load_json(directory / "static_infos.json")
 
     return {
         "resortId": RESORT_ID,
         "tables": [
-            {"table": "resorts", "content": build_resort(static_info, rates, rentals, weather)},
+            {
+                "table": "resorts",
+                "content": build_resort(
+                    static_info, rates, rentals, weather, ski_resort_info
+                ),
+            },
             {"table": "resortHours", "content": hours},
             {"table": "resortRates", "content": rates},
             {"table": "resortRentals", "content": rentals},

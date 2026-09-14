@@ -35,6 +35,15 @@ TABLE_COLUMNS = {
         "skiRentalPrice",
         "snowBoardRentalPrice",
         "tracksSummary",
+        "elevation",
+        "height",
+        "tracksGreenLength",
+        "tracksGreenProportion",
+        "tracksBlueLength",
+        "tracksBlueProportion",
+        "tracksBlackLength",
+        "tracksBlackProportion",
+        "tracksTotalLength",
         "ticketUrl",
         "tollFree",
         "tubbingPrice",
@@ -48,6 +57,17 @@ TABLE_COLUMNS = {
         "updatedAt",
         "tracks",
     ],
+}
+SKI_RESORT_FIELDS = {
+    "elevation": "elevation",
+    "height": "height",
+    "tracks-green-length": "tracksGreenLength",
+    "tracks-green-proportion": "tracksGreenProportion",
+    "tracks-blue-length": "tracksBlueLength",
+    "tracks-blue-proportion": "tracksBlueProportion",
+    "tracks-black-length": "tracksBlackLength",
+    "tracks-black-proportion": "tracksBlackProportion",
+    "tracks-total-length": "tracksTotalLength",
 }
 DIFFICULTY_FIELDS = {
     "easy": "green",
@@ -126,21 +146,15 @@ def get_rental_price(rentals, section_match, item_match, price_label):
     return None
 
 
-def build_resort(static_info, rates, rentals, weather):
+def build_resort(static_info, rates, rentals, weather, ski_resort_info=None):
     resort = dict(static_info)
     resort["name"] = RESORT_NAME
-    resort.update(
-        {
-            "hasAccommodations": False,
-            "hasCrossCountry": False,
-            "hasSnowshoeing": False,
-            "hasSpa": False,
-            "hasTubing": False,
-            "hasZipline": False,
-            "hasLessons": False,
-            "tracksSummary": build_tracks_summary(weather),
-        }
-    )
+    for source_field, resort_field in SKI_RESORT_FIELDS.items():
+        value = (ski_resort_info or {}).get(source_field)
+        if value not in (None, ""):
+            resort[resort_field] = value
+    resort["hasAccommodations"] = bool(static_info.get("resort_accommodations"))
+    resort["tracksSummary"] = build_tracks_summary(weather)
     prices = {
         "dayTicketPrice": get_day_ticket_price(rates),
         "skiRentalPrice": get_rental_price(
@@ -155,7 +169,6 @@ def build_resort(static_info, rates, rentals, weather):
     lessons_price = get_rental_price(rentals, "lesson", "", "cost")
     if lessons_price is not None:
         resort["lessonsPrice"] = lessons_price
-        resort["hasLessons"] = True
     return resort
 
 
@@ -179,6 +192,7 @@ def build_snapshot(directory=None):
                     load_json(json_generators / "lift-rates.json"),
                     load_json(json_generators / "rentals.json"),
                     load_json(json_generators / "tracks-and-lifts-weather-status.json"),
+                    load_json(json_generators / "skiresort.json"),
                 ),
             },
             {

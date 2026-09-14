@@ -1,20 +1,115 @@
 {
   "lifts": [
     {
-      "area": "Up Hill Bike Trails",
-      "name": "The Grind",
-      "status": "closed"
+      "area": "Orchard",
+      "name": "[A] The Grind",
+      "status": "Closed"
+    },
+    {
+      "area": "Orchard",
+      "name": "[C] Early Exit",
+      "status": "Open"
+    },
+    {
+      "area": "Orchard",
+      "name": "[D] Back At It",
+      "status": "Open"
+    },
+    {
+      "area": "Orchard",
+      "name": "[G] Up & Over",
+      "status": "Closed"
+    },
+    {
+      "area": "Orchard",
+      "name": "[J] Buttered Up",
+      "status": "Closed"
+    },
+    {
+      "area": "South",
+      "name": "Cascade",
+      "status": "Open"
+    },
+    {
+      "area": "South",
+      "name": "Green World",
+      "status": "Open for Multi Use"
+    },
+    {
+      "area": "Village",
+      "name": "Lower Green",
+      "status": "Open"
+    },
+    {
+      "area": "Village",
+      "name": "Memory Lane",
+      "status": "Open"
+    },
+    {
+      "area": "Village",
+      "name": "R-Shore",
+      "status": "Closed"
+    },
+    {
+      "area": "Village",
+      "name": "Route 66",
+      "status": "Open"
+    },
+    {
+      "area": "Village",
+      "name": "Sticks & Stones",
+      "status": "Open"
+    },
+    {
+      "area": "Village",
+      "name": "Time Line",
+      "status": "Open"
+    },
+    {
+      "area": "Village",
+      "name": "Village Way",
+      "status": "Open"
+    },
+    {
+      "area": "Valley",
+      "name": "Apple Bowl Lookout",
+      "status": "Open"
+    },
+    {
+      "area": "Valley",
+      "name": "Pathway to Village",
+      "status": "Open"
+    },
+    {
+      "area": "North",
+      "name": "1940",
+      "status": "Open"
+    },
+    {
+      "area": "North",
+      "name": "Cagey",
+      "status": "Open for Hiking"
+    },
+    {
+      "area": "North",
+      "name": "Happy Haul",
+      "status": "Open"
+    },
+    {
+      "area": "North",
+      "name": "Outer Limits",
+      "status": "Open for Hiking"
     }
   ],
   "tracks": [
     {
       "area": "Multi-Use (Bike/Hike) Trails",
       "difficulty": "green",
-      "name": "Open-Air-Gondola",
-      "status": "Scheduled"
+      "name": "Open-Air Gondola",
+      "status": "Open"
     }
   ],
   "resortId": "blue-mountain",
   "sourceUrl": "https://www.bluemountain.ca/mountain/mountain-report",
-  "updatedAt": 1789146468252
+  "updatedAt": 1789425879114
 }

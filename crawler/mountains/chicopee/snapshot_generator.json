@@ -13,9 +13,8 @@
         "country": "Canada",
         "email": "guestservices@chicopee.ca",
         "googleMapsUrl": "https://maps.app.goo.gl/GSNWkGQzo5aHdWmf9",
-        "hasAccommodations": false,
         "hasCrossCountry": false,
-        "hasLessons": false,
+        "hasLessons": true,
         "hasSnowshoeing": false,
         "hasSpa": false,
         "hasTubing": false,
@@ -28,6 +27,16 @@
         "ticketUrl": "https://www.discoverchicopee.com/plan-your-visit/lift-tickets/",
         "website": "http://www.discoverchicopee.com/",
         "name": "Chicopee",
+        "elevation": "314 m - 370 m",
+        "height": "56m",
+        "tracksGreenLength": "1km",
+        "tracksGreenProportion": "23",
+        "tracksBlueLength": "2km",
+        "tracksBlueProportion": "47",
+        "tracksBlackLength": "1.3km",
+        "tracksBlackProportion": "30",
+        "tracksTotalLength": "4.3km",
+        "hasAccommodations": false,
         "tracksSummary": {
           "black": 5,
           "blue": 5,
@@ -54,7 +63,7 @@
         },
         "resortId": "chicopee",
         "sourceUrl": "https://www.discoverchicopee.com/contact#hours",
-        "updatedAt": 1789402170296
+        "updatedAt": 1789425925733
       }
     },
     {
@@ -84,7 +93,7 @@
         },
         "resortId": "chicopee",
         "sourceUrl": "https://www.discoverchicopee.com/plan-a-day",
-        "updatedAt": 1789402174357
+        "updatedAt": 1789425933022
       }
     },
     {
@@ -102,7 +111,7 @@
         },
         "resortId": "chicopee",
         "sourceUrl": "https://www.discoverchicopee.com/plan-a-day",
-        "updatedAt": 1789402178286
+        "updatedAt": 1789425939062
       }
     },
     {
@@ -208,7 +217,7 @@
         ],
         "resortId": "chicopee",
         "sourceUrl": "https://www.discoverchicopee.com/activity-report",
-        "updatedAt": 1789402182330
+        "updatedAt": 1789425947706
       }
     }
   ]

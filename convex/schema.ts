@@ -4,6 +4,7 @@ import { v } from "convex/values";
 const liftSchema = v.object({
   name: v.string(),
   status: v.string(),
+  area: v.optional(v.string()),
   hours: v.optional(v.string()),
   dayStatus: v.optional(v.string()),
   nightStatus: v.optional(v.string()),
@@ -93,6 +94,7 @@ export const resortsFields = {
   continent: v.optional(v.string()),
   country: v.optional(v.string()),
   region: v.optional(v.string()),
+  resort_accommodations: v.optional(v.string()),
   website: v.optional(v.string()),
   address: v.optional(v.string()),
   coordinates: v.optional(
@@ -114,6 +116,15 @@ export const resortsFields = {
   lessonsPrice: v.optional(v.number()),
   phone: v.optional(v.string()),
   rating: v.optional(v.number()),
+  elevation: v.optional(v.string()),
+  height: v.optional(v.string()),
+  tracksGreenLength: v.optional(v.string()),
+  tracksGreenProportion: v.optional(v.string()),
+  tracksBlueLength: v.optional(v.string()),
+  tracksBlueProportion: v.optional(v.string()),
+  tracksBlackLength: v.optional(v.string()),
+  tracksBlackProportion: v.optional(v.string()),
+  tracksTotalLength: v.optional(v.string()),
   skiRentalPrice: v.optional(v.number()),
   snowBoardRentalPrice: v.optional(v.number()),
   tracksSummary: v.optional(
@@ -134,6 +145,18 @@ export default defineSchema({
   resorts: defineTable(resortsFields)
     .index("by_resort_id", ["resortId"])
     .index("by_location", ["continent", "country", "region"]),
+
+  skiresortinfo: defineTable({
+    resortId: v.string(),
+    name: v.string(),
+    continent: v.optional(v.string()),
+    country: v.optional(v.string()),
+    region: v.optional(v.string()),
+    address: v.optional(v.string()),
+    website: v.optional(v.string()),
+    image: v.optional(v.string()),
+    rating: v.optional(v.number()),
+  }).index("by_resort_id", ["resortId"]),
 
   locations: defineTable({
     continent: v.string(),

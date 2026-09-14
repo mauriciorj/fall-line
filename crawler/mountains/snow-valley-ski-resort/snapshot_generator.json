@@ -29,6 +29,15 @@
         "tollFree": "1-877-404-4744",
         "website": "http://www.skisnowvalley.com/",
         "name": "Snow Valley Ski Resort",
+        "elevation": "235 m - 320 m",
+        "height": "85m",
+        "tracksGreenLength": "3km",
+        "tracksGreenProportion": "43",
+        "tracksBlueLength": "1.7km",
+        "tracksBlueProportion": "24",
+        "tracksBlackLength": "2.3km",
+        "tracksBlackProportion": "33",
+        "tracksTotalLength": "7km",
         "tracksSummary": {
           "black": 6,
           "blue": 4,
@@ -55,7 +64,7 @@
         },
         "resortId": "snow-valley-ski-resort",
         "sourceUrl": "https://www.skisnowvalley.com/about/",
-        "updatedAt": 1789407345317
+        "updatedAt": 1789426004024
       }
     },
     {
@@ -85,7 +94,7 @@
         },
         "resortId": "snow-valley-ski-resort",
         "sourceUrl": "https://www.skisnowvalley.com/plan/ski-snowboard/tickets-and-passes/",
-        "updatedAt": 1789407345981
+        "updatedAt": 1789426005234
       }
     },
     {
@@ -109,7 +118,7 @@
         },
         "resortId": "snow-valley-ski-resort",
         "sourceUrl": "https://www.skisnowvalley.com/plan/ski-snowboard/equipment-rentals/",
-        "updatedAt": 1789407346681
+        "updatedAt": 1789426006205
       }
     },
     {
@@ -258,7 +267,7 @@
         ],
         "resortId": "snow-valley-ski-resort",
         "sourceUrl": "https://www.skisnowvalley.com/plan/weather-webcams/",
-        "updatedAt": 1789407346750
+        "updatedAt": 1789426008507
       }
     }
   ]

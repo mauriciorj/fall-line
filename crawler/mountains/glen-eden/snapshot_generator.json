@@ -15,7 +15,7 @@
         "googleMapsUrl": "https://maps.app.goo.gl/B1FXSZ1VtYbVTsaXA",
         "hasAccommodations": false,
         "hasCrossCountry": false,
-        "hasLessons": false,
+        "hasLessons": true,
         "hasSnowshoeing": false,
         "hasSpa": false,
         "hasTubing": false,
@@ -28,6 +28,15 @@
         "ticketUrl": "https://gleneden.on.ca/plan-your-visit/#tab-0",
         "website": "https://gleneden.on.ca/",
         "name": "Glen Eden",
+        "elevation": "248 m - 320 m",
+        "height": "72m",
+        "tracksGreenLength": "3km",
+        "tracksGreenProportion": "60",
+        "tracksBlueLength": "2km",
+        "tracksBlueProportion": "40",
+        "tracksBlackLength": "0km",
+        "tracksBlackProportion": "0",
+        "tracksTotalLength": "5km",
         "tracksSummary": {
           "black": 2,
           "blue": 5,
@@ -54,7 +63,7 @@
         },
         "resortId": "glen-eden",
         "sourceUrl": "https://gleneden.on.ca/plan-your-visit/",
-        "updatedAt": 1789406611805
+        "updatedAt": 1789425969585
       }
     },
     {
@@ -74,7 +83,7 @@
         },
         "resortId": "glen-eden",
         "sourceUrl": "https://gleneden.on.ca/plan-your-visit/",
-        "updatedAt": 1789406612428
+        "updatedAt": 1789425970878
       }
     },
     {
@@ -99,7 +108,7 @@
         },
         "resortId": "glen-eden",
         "sourceUrl": "https://gleneden.on.ca/plan-your-visit/",
-        "updatedAt": 1789406613021
+        "updatedAt": 1789425972463
       }
     },
     {
@@ -230,7 +239,7 @@
         ],
         "resortId": "glen-eden",
         "sourceUrl": "https://gleneden.on.ca/at-glen-eden/slope-conditions/",
-        "updatedAt": 1789406613092
+        "updatedAt": 1789425975580
       }
     }
   ]

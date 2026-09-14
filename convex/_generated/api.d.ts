@@ -15,6 +15,7 @@ import type * as resortHours from "../resortHours.js";
 import type * as resortRates from "../resortRates.js";
 import type * as resortRentals from "../resortRentals.js";
 import type * as resorts from "../resorts.js";
+import type * as skiresortinfo from "../skiresortinfo.js";
 import type * as weatherAndStatus from "../weatherAndStatus.js";
 
 import type {
@@ -31,6 +32,7 @@ declare const fullApi: ApiFromModules<{
   resortRates: typeof resortRates;
   resortRentals: typeof resortRentals;
   resorts: typeof resorts;
+  skiresortinfo: typeof skiresortinfo;
   weatherAndStatus: typeof weatherAndStatus;
 }>;
 

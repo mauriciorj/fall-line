@@ -13,11 +13,12 @@
         "country": "Canada",
         "email": "info@horseshoeresort.com",
         "googleMapsUrl": "https://maps.app.goo.gl/bzCpVSuKs9mPU3BNA",
-        "hasAccommodations": true,
         "hasCrossCountry": true,
+        "hasLessons": false,
         "hasSnowshoeing": true,
         "hasSpa": true,
         "hasTubing": true,
+        "hasZipline": false,
         "phone": "(705) 835-2790",
         "published": true,
         "rating": 4.1,
@@ -26,8 +27,16 @@
         "ticketUrl": "https://horseshoeresort.com/ski/lift-ticket-and-rentals-pricing",
         "website": "http://horseshoeresort.com/",
         "name": "Horseshoe Valley Resort",
-        "hasLessons": false,
-        "hasZipline": false,
+        "elevation": "309 m - 402 m",
+        "height": "93m",
+        "tracksGreenLength": "2.6km",
+        "tracksGreenProportion": "31",
+        "tracksBlueLength": "3.8km",
+        "tracksBlueProportion": "46",
+        "tracksBlackLength": "1.9km",
+        "tracksBlackProportion": "23",
+        "tracksTotalLength": "8.3km",
+        "hasAccommodations": false,
         "tracksSummary": {
           "black": 2,
           "blue": 14,
@@ -54,7 +63,7 @@
         },
         "resortId": "horseshoe-valley-resort",
         "sourceUrl": "https://horseshoeresort.com/hours-of-operation/",
-        "updatedAt": 1789406836837
+        "updatedAt": 1789425983568
       }
     },
     {
@@ -100,7 +109,7 @@
         },
         "resortId": "horseshoe-valley-resort",
         "sourceUrl": "https://horseshoeresort.com/ski/lift-ticket-and-rentals-pricing/",
-        "updatedAt": 1789406838494
+        "updatedAt": 1789425986023
       }
     },
     {
@@ -266,7 +275,7 @@
         ],
         "resortId": "horseshoe-valley-resort",
         "sourceUrl": "https://horseshoeresort.com/ski-report-trails/",
-        "updatedAt": 1789406838568
+        "updatedAt": 1789425988253
       }
     }
   ]

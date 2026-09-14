@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { Star, CableCar, MapPin } from "lucide-react";
+import { Star, CableCar, MapPin, Mountain } from "lucide-react";
 import TracksBreakdown from "@/components/tracksBreakdown";
 import ActivitiesList from "@/components/activitiesList";
 import { Resort } from "@/types/resort";
@@ -61,29 +61,33 @@ const ResortCard = ({
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-foreground/30 to-transparent" />
+        <div className="absolute top-3 right-3 flex items-center gap-1.5">
+          {resort.height && (
+            <span className="inline-flex items-center gap-1 rounded-full bg-background/90 px-2 py-1 text-xs font-medium text-foreground shadow-sm backdrop-blur-sm">
+              <Mountain className="h-3 w-3" />
+              {resort.height}
+            </span>
+          )}
+          {distance !== null && (
+            <span className="inline-flex items-center gap-1 rounded-full bg-background/90 px-2 py-1 text-xs font-medium text-foreground shadow-sm backdrop-blur-sm">
+              <MapPin className="h-3 w-3" />
+              {distance.toFixed(1)} {t("distanceAway")}
+            </span>
+          )}
+          <span className="inline-flex items-center gap-1 rounded-full bg-background/90 px-2 py-1 text-xs font-medium text-foreground shadow-sm backdrop-blur-sm">
+            <Star className="h-3 w-3 fill-primary text-primary" />
+            {resort.rating}
+          </span>
+        </div>
       </div>
 
       {/* Content */}
       <div className="p-5 space-y-4">
         {/* Resort Name */}
-        <div className="w-full flex flex-row justify-between gap-3">
-          <div className="min-w-0">
-            <h3 className="font-serif text-xl font-medium text-foreground leading-tight">
-              {resort.name}
-            </h3>
-            {distance !== null && (
-              <p className="mt-1 flex items-center gap-1 text-xs text-muted-foreground">
-                <MapPin className="h-3 w-3" />
-                {distance.toFixed(1)} {t("distanceAway")}
-              </p>
-            )}
-          </div>
-          <div className="flex shrink-0 flex-row justify-center items-center">
-            <Star className="w-3.5 h-3.5" />
-            <p className="text-sm font-medium text-foreground ml-1">
-              {resort.rating}
-            </p>
-          </div>
+        <div className="w-full">
+          <h3 className="font-serif text-xl font-medium text-foreground leading-tight">
+            {resort.name}
+          </h3>
         </div>
 
         <ActivitiesList resort={resort} />
@@ -92,7 +96,14 @@ const ResortCard = ({
         <TracksBreakdown resort={resort} />
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-4 gap-3 pt-3 border-t border-border">
+        <div
+          className={cn(
+            "grid gap-3 pt-3 border-t border-border",
+            resort.tubbingPrice && resort.tubbingPrice > 0
+              ? "grid-cols-4"
+              : "grid-cols-3",
+          )}
+        >
           <div className="flex flex-col justify-between space-y-1">
             <div className="flex items-center gap-1 text-muted-foreground h-[30px]">
               <CableCar className="w-3.5 h-3.5" />

@@ -46,32 +46,32 @@ const TracksBreakdown = ({
           {Boolean(greenTracks > 0) && (
             <span className="flex items-center gap-1.5">
               <span className="w-3 h-3 rounded-full bg-run-green" />
-              {greenTracks}
+              {greenTracks} ({Math.round(greenTracksPercent)}%)
             </span>
           )}
           {Boolean(blueTracks > 0) && (
             <span className="flex items-center gap-1.5">
               <span className="w-3 h-3 rounded-full bg-run-blue" />
-              {blueTracks}
+              {blueTracks} ({Math.round(blueTracksPercent)}%)
             </span>
           )}
           {Boolean(blackTracks > 0) && (
             <span className="flex items-center gap-1.5">
               <span className="w-3 h-3 rounded-full bg-run-black" />
-              {blackTracks}
+              {blackTracks} ({Math.round(blackTracksPercent)}%)
             </span>
           )}
           {Boolean(doubleBlackTracks && doubleBlackTracks > 0) && (
             <span className="flex items-center gap-1.5">
               <span className="w-3 h-3 rounded-full bg-run-double-black" />
               <span className="w-3 h-3 rounded-full bg-run-double-black" />
-              {doubleBlackTracks}
+              {doubleBlackTracks} ({Math.round(doubleBlackTracksPercent)}%)
             </span>
           )}
           {Boolean(freeStyleTracks && freeStyleTracks > 0) && (
             <span className="flex items-center gap-1.5">
               <span className="w-3 h-3 rounded-full bg-run-free-style" />
-              {freeStyleTracks}
+              {freeStyleTracks} ({Math.round(freeStyleTracksPercent)}%)
             </span>
           )}
         </div>

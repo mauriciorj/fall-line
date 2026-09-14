@@ -243,7 +243,10 @@ def main():
         if resorts:
             print(f"\nTotal resorts collected: {len(resorts)}")
             filepath = save_to_json(resorts, args.output)
-            push_result = push_ski_resorts(to_convex_records(resorts))
+            push_result = push_ski_resorts(
+                to_convex_records(resorts),
+                function_path="skiresortinfo:saveMany",
+            )
             if push_result is not None:
                 print(f"Pushed {len(resorts)} records to Convex")
             

@@ -13,7 +13,6 @@
         "country": "Canada",
         "email": "admin@lakeridgeresort.ca",
         "googleMapsUrl": "https://maps.app.goo.gl/3J7NiWbwWLPE2xJp9",
-        "hasAccommodations": false,
         "hasCrossCountry": false,
         "hasLessons": true,
         "hasSnowshoeing": false,
@@ -29,6 +28,16 @@
         "tollFree": "1-877-350-3640",
         "website": "http://www.ski-lakeridge.com/",
         "name": "Lakeridge Ski Resort",
+        "elevation": "300 m - 375 m",
+        "height": "75m",
+        "tracksGreenLength": "1.5km",
+        "tracksGreenProportion": "50",
+        "tracksBlueLength": "1km",
+        "tracksBlueProportion": "33",
+        "tracksBlackLength": "0.5km",
+        "tracksBlackProportion": "17",
+        "tracksTotalLength": "3km",
+        "hasAccommodations": false,
         "tracksSummary": {
           "black": 5,
           "blue": 4,
@@ -55,7 +64,7 @@
         },
         "resortId": "lakeridge-ski-resort",
         "sourceUrl": "https://ski-lakeridge.com/skiing-snowboarding/hours-ticket-prices/",
-        "updatedAt": 1789407008020
+        "updatedAt": 1789425993631
       }
     },
     {
@@ -231,7 +240,7 @@
         ],
         "resortId": "lakeridge-ski-resort",
         "sourceUrl": "https://ski-lakeridge.com/skiing-snowboarding/trail-status/",
-        "updatedAt": 1789407010068
+        "updatedAt": 1789425998079
       }
     }
   ]
