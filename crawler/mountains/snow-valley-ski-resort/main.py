@@ -64,9 +64,20 @@ def push_snapshot(snapshot):
     rates_id, rates_url, rates_time = metadata["resortRates"]
     rentals_id, rentals_url, rentals_time = metadata["resortRentals"]
     weather_id, weather_url, weather_time = metadata["weatherAndStatus"]
+    hours_data = hours["hours"]
+    if isinstance(hours_data, dict):
+        hours_data = [
+            {
+                "name": "Hours of operation",
+                "hours": [
+                    {"day": day, "time": time}
+                    for day, time in hours_data.items()
+                ],
+            }
+        ]
     return {
         "resorts": push_ski_resorts([contents["resorts"]]),
-        "resortHours": push_resort_hours(hours_id, hours_url, hours["hours"], updated_at_ms=hours_time),
+        "resortHours": push_resort_hours(hours_id, hours_url, hours_data, updated_at_ms=hours_time),
         "resortRates": push_resort_rates(rates_id, rates_url, rates["rates"], updated_at_ms=rates_time),
         "resortRentals": push_resort_rentals(rentals_id, rentals_url, rentals["rentals"], updated_at_ms=rentals_time),
         "weatherAndStatus": push_weather_and_status(weather_id, weather_url, {key: value for key, value in weather.items() if key not in METADATA_FIELDS}, updated_at_ms=weather_time),

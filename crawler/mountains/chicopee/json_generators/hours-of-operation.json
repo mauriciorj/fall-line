@@ -1,6 +1,14 @@
 {
-  "hours": [],
+  "hours": {
+    "sunday": "closed",
+    "monday": "closed",
+    "tuesday": "closed",
+    "wednesday": "closed",
+    "thursday": "closed",
+    "friday": "closed",
+    "saturday": "closed"
+  },
   "resortId": "chicopee",
   "sourceUrl": "https://www.discoverchicopee.com/contact#hours",
-  "updatedAt": 1789140909064
+  "updatedAt": 1789140913000
 }

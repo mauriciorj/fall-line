@@ -106,13 +106,24 @@ def push_snapshot(snapshot):
     weather_resort_id, weather_source_url, weather_updated_at = require_metadata(
         weather, "weatherAndStatus"
     )
+    hours_data = hours["hours"]
+    if isinstance(hours_data, dict):
+        hours_data = [
+            {
+                "name": "Hours of operation",
+                "hours": [
+                    {"day": day, "time": time}
+                    for day, time in hours_data.items()
+                ],
+            }
+        ]
 
     return {
         "resorts": push_ski_resorts([contents["resorts"]]),
         "resortHours": push_resort_hours(
             hours_resort_id,
             hours_source_url,
-            hours["hours"],
+            hours_data,
             updated_at_ms=hours_updated_at,
         ),
         "resortRates": push_resort_rates(

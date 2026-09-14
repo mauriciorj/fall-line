@@ -1,16 +1,14 @@
 {
-  "hours": [
-    {
-      "name": "Hours of operation",
-      "hours": [
-        {
-          "day": "Monday",
-          "time": "10:00am to 4:00pm"
-        }
-      ]
-    }
-  ],
+  "hours": {
+    "sunday": "closed",
+    "monday": "10am - 4pm",
+    "tuesday": "10am - 4pm",
+    "wednesday": "10am - 4pm",
+    "thursday": "9am - 4pm",
+    "friday": "10am - 4pm",
+    "saturday": "closed"
+  },
   "resortId": "dagmar-ski-resort",
   "sourceUrl": "https://www.skidagmar.com/alpine-rates/",
-  "updatedAt": 1789141323019
+  "updatedAt": 1789141324900
 }

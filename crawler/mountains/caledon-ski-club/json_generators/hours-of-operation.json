@@ -1,16 +1,14 @@
 {
-  "hours": [
-    {
-      "name": "Lift Operations",
-      "hours": [
-        {
-          "day": "Daily",
-          "time": "8:30am to 4:00pm"
-        }
-      ]
-    }
-  ],
+  "hours": {
+    "sunday": "8:30am to 4:00pm",
+    "monday": "8:30am to 4:00pm",
+    "tuesday": "8:30am to 4:00pm",
+    "wednesday": "8:30am to 4:00pm",
+    "thursday": "8:30am to 4:00pm",
+    "friday": "8:30am to 4:00pm",
+    "saturday": "8:30am to 4:00pm"
+  },
   "resortId": "caledon-ski-club",
   "sourceUrl": "https://caledonskiclub.com/hours-lift-prices",
-  "updatedAt": 1789140585143
+  "updatedAt": 1789140589639
 }
