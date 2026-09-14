@@ -13,6 +13,7 @@
         "country": "Canada",
         "email": "guestservices@chicopee.ca",
         "googleMapsUrl": "https://maps.app.goo.gl/GSNWkGQzo5aHdWmf9",
+        "hasIceSkate": false,
         "hasCrossCountry": false,
         "hasLessons": true,
         "hasSnowshoeing": false,

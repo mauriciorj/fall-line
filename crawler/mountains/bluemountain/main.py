@@ -16,6 +16,7 @@ TABLE_NAMES = (
 )
 METADATA_FIELDS = {"resortId", "sourceUrl", "updatedAt"}
 RESORT_INFO_FIELDS = (
+    "hasIceSkate",
     "elevation",
     "height",
     "tracksGreenLength",

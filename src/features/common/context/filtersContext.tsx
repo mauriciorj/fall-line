@@ -84,6 +84,7 @@ export function FiltersProvider({ children }: { children: ReactNode }) {
       accommodations: false,
       crosscountry: false,
       lessons: false,
+      iceSkating: false,
       snowshoeing: false,
       spa: false,
       tubbing: false,
@@ -218,6 +219,7 @@ export function FiltersProvider({ children }: { children: ReactNode }) {
       if (activities.accommodations && !resort.hasAccommodations) return false;
       if (activities.crosscountry && !resort.hasCrossCountry) return false;
       if (activities.lessons && !resort.hasLessons) return false;
+      if (activities.iceSkating && !resort.hasIceSkate) return false;
       if (activities.snowshoeing && !resort.hasSnowshoeing) return false;
       if (activities.spa && !resort.hasSpa) return false;
       if (activities.tubbing && !resort.hasTubing) return false;
@@ -264,6 +266,7 @@ export function FiltersProvider({ children }: { children: ReactNode }) {
         accommodations: false,
         crosscountry: false,
         lessons: false,
+        iceSkating: false,
         snowshoeing: false,
         spa: false,
         tubbing: false,

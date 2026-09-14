@@ -28,6 +28,7 @@ const resortFieldNames = [
   "hasAccommodations",
   "hasCrossCountry",
   "hasLessons",
+  "hasIceSkate",
   "hasSnowshoeing",
   "hasSpa",
   "hasTubing",

@@ -5,6 +5,7 @@
   "country": "Canada",
   "email": "info@skisnowvalley.com",
   "googleMapsUrl": "https://maps.app.goo.gl/HsGTUq8paByDS8z4A",
+  "hasIceSkate": false,
   "hasAccommodations": false,
   "hasCrossCountry": false,
   "hasLessons": true,

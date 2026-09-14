@@ -91,6 +91,7 @@ export function toResort(
     hasAccommodations: document.hasAccommodations ?? false,
     hasCrossCountry: document.hasCrossCountry ?? false,
     hasLessons: document.hasLessons ?? false,
+    hasIceSkate: document.hasIceSkate ?? false,
     hasSnowshoeing: document.hasSnowshoeing ?? false,
     hasSpa: document.hasSpa ?? false,
     hasTubing: document.hasTubing ?? false,

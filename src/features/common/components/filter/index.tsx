@@ -26,6 +26,7 @@ export interface FilterState {
     accommodations: boolean;
     crosscountry: boolean;
     lessons: boolean;
+    iceSkating: boolean;
     snowshoeing: boolean;
     spa: boolean;
     tubbing: boolean;
@@ -79,6 +80,7 @@ const Filter = ({
         accommodations: false,
         crosscountry: false,
         lessons: false,
+        iceSkating: false,
         snowshoeing: false,
         spa: false,
         tubbing: false,
@@ -240,6 +242,17 @@ const Filter = ({
                   updateLocalFilter("activities", {
                     ...localFilters.activities,
                     lessons: !localFilters.activities.lessons,
+                  })
+                }
+              />
+              <Toggle
+                label={t("iceSkating")}
+                color="green"
+                isActive={localFilters.activities.iceSkating}
+                onClick={() =>
+                  updateLocalFilter("activities", {
+                    ...localFilters.activities,
+                    iceSkating: !localFilters.activities.iceSkating,
                   })
                 }
               />

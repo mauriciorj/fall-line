@@ -12,6 +12,7 @@ import {
   toTrackConditions,
 } from "@/utils/convexResort";
 import InfoSection from "@/src/features/place/component/infoSection";
+import ActivitiesList from "@/components/activitiesList";
 import AccommodationsSection from "@/src/features/place/component/accommodationsSection";
 import LocationSection from "@/src/features/place/component/locationSection";
 import LocationMap from "@/src/features/place/component/locationMap";
@@ -117,6 +118,8 @@ const ResortDetail = () => {
             </a>
           </div>
         )}
+
+        <ActivitiesList resort={resort} />
 
         {/* Main Info */}
         <InfoSection

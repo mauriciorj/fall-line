@@ -30,6 +30,7 @@ export interface Resort {
   hasAccommodations: boolean;
   hasCrossCountry: boolean;
   hasLessons: boolean;
+  hasIceSkate: boolean;
   hasSnowshoeing: boolean;
   hasSpa: boolean;
   hasTubing: boolean;

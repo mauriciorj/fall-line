@@ -10,6 +10,7 @@ SNAPSHOT_FILE = DAGMAR_DIR / "snapshot_generator.json"
 TABLE_NAMES = ("resorts", "resortHours", "resortRates", "resortRentals", "weatherAndStatus")
 METADATA_FIELDS = {"resortId", "sourceUrl", "updatedAt"}
 RESORT_INFO_FIELDS = (
+    "hasIceSkate",
     "elevation", "height", "tracksGreenLength", "tracksGreenProportion",
     "tracksBlueLength", "tracksBlueProportion", "tracksBlackLength",
     "tracksBlackProportion", "tracksTotalLength",

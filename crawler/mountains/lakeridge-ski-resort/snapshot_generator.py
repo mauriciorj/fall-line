@@ -10,7 +10,7 @@ TABLE_COLUMNS = {
     "resorts": [
         "resortId", "published", "name", "continent", "country", "region", "website",
         "address", "coordinates", "dayTicketPrice", "email", "googleMapsUrl",
-        "hasAccommodations", "hasCrossCountry", "hasLessons", "hasSnowshoeing",
+        "hasIceSkate", "hasAccommodations", "hasCrossCountry", "hasLessons", "hasSnowshoeing",
         "hasSpa", "hasTubing", "hasZipline", "lessonsPrice", "phone", "rating",
         "skiRentalPrice", "snowBoardRentalPrice", "tracksSummary", "elevation", "height",
         "tracksGreenLength", "tracksGreenProportion", "tracksBlueLength",

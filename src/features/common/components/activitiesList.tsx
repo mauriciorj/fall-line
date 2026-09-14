@@ -4,6 +4,7 @@ import {
   Footprints,
   GraduationCap,
   Hotel,
+  Snowflake,
   Sparkles,
   Trees,
 } from "lucide-react";
@@ -50,6 +51,17 @@ const ActivitiesList = ({ resort }: ActivitiesListProps) => {
           >
             <GraduationCap className="w-4 h-4" />
             {t("lessons")}
+          </Badge>
+        </div>
+      )}
+      {resort.hasIceSkate && (
+        <div className="ml-1">
+          <Badge
+            variant="secondary"
+            className="text-[12px] font-medium gap-1 px-2 py-0.5"
+          >
+            <Snowflake className="w-4 h-4" />
+            {t("iceSkating")}
           </Badge>
         </div>
       )}

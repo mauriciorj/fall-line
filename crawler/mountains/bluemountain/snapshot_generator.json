@@ -13,6 +13,7 @@
         "country": "Canada",
         "email": "mail@bluemountain.ca",
         "googleMapsUrl": "https://maps.app.goo.gl/mX4YUs7faBFud9sX8",
+        "hasIceSkate": false,
         "hasCrossCountry": false,
         "hasLessons": false,
         "hasSnowshoeing": false,

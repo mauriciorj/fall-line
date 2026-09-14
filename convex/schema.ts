@@ -109,6 +109,7 @@ export const resortsFields = {
   hasAccommodations: v.optional(v.boolean()),
   hasCrossCountry: v.optional(v.boolean()),
   hasLessons: v.optional(v.boolean()),
+  hasIceSkate: v.optional(v.boolean()),
   hasSnowshoeing: v.optional(v.boolean()),
   hasSpa: v.optional(v.boolean()),
   hasTubing: v.optional(v.boolean()),

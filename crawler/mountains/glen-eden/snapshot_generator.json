@@ -13,6 +13,7 @@
         "country": "Canada",
         "email": "gleneden@hrca.on.ca",
         "googleMapsUrl": "https://maps.app.goo.gl/B1FXSZ1VtYbVTsaXA",
+        "hasIceSkate": false,
         "hasAccommodations": false,
         "hasCrossCountry": false,
         "hasLessons": true,

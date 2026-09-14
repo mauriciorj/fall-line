@@ -20,6 +20,7 @@ TABLE_COLUMNS = {
         "dayTicketPrice",
         "email",
         "googleMapsUrl",
+        "hasIceSkate",
         "hasAccommodations",
         "hasCrossCountry",
         "hasLessons",

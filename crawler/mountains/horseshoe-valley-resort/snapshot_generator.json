@@ -13,6 +13,7 @@
         "country": "Canada",
         "email": "info@horseshoeresort.com",
         "googleMapsUrl": "https://maps.app.goo.gl/bzCpVSuKs9mPU3BNA",
+        "hasIceSkate": false,
         "hasCrossCountry": true,
         "hasLessons": false,
         "hasSnowshoeing": true,

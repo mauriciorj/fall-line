@@ -9,7 +9,7 @@ RESORT_NAME = "Dagmar Ski Resort"
 TABLE_COLUMNS = {
     "resorts": [
         "resortId", "published", "name", "continent", "country", "region", "website", "address",
-        "coordinates", "dayTicketPrice", "email", "googleMapsUrl", "hasAccommodations",
+        "coordinates", "dayTicketPrice", "email", "googleMapsUrl", "hasIceSkate", "hasAccommodations",
         "hasCrossCountry", "hasLessons", "hasSnowshoeing", "hasSpa", "hasTubing",
         "hasZipline", "lessonsPrice", "phone", "rating", "skiRentalPrice",
         "snowBoardRentalPrice", "tracksSummary", "elevation", "height",
