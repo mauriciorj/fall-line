@@ -45,11 +45,7 @@ TABLE_COLUMNS = {
         "sourceUrl",
         "updatedAt",
         "lifts",
-        "trails",
-        "terrainParks",
-        "crossCountry",
-        "tubing",
-        "rawData",
+        "tracks",
     ],
 }
 DIFFICULTY_FIELDS = {
@@ -91,7 +87,7 @@ def build_tracks_summary(weather):
         "freeStyle": 0,
         "green": 0,
     }
-    for trail in weather.get("trails", []) + weather.get("terrainParks", []):
+    for trail in weather.get("lifts", []):
         field = DIFFICULTY_FIELDS.get(trail.get("difficulty", "").lower())
         if field:
             summary[field] += 1
@@ -182,7 +178,9 @@ def build_snapshot(directory=None):
     hours = load_json(json_generators / "hours-of-operation.json")
     rates = load_json(json_generators / "lift-rates.json")
     rentals = load_json(json_generators / "rentals.json")
-    weather = load_json(json_generators / "weather-and-status.json")
+    weather = load_json(
+        json_generators / "tracks-and-lifts-weather-status.json"
+    )
     static_info = load_json(directory / "static_infos.json")
 
     return {

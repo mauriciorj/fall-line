@@ -1,0 +1,20 @@
+{
+  "lifts": [
+    {
+      "area": "Up Hill Bike Trails",
+      "difficulty": "easy",
+      "name": "The Grind",
+      "status": "closed"
+    }
+  ],
+  "tracks": [
+    {
+      "area": "Multi-Use (Bike/Hike) Trails",
+      "name": "Open-Air-Gondola",
+      "status": "Scheduled"
+    }
+  ],
+  "resortId": "blue-mountain",
+  "sourceUrl": "https://www.bluemountain.ca/mountain/mountain-report",
+  "updatedAt": 1789146468252
+}
