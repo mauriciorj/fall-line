@@ -1,0 +1,16 @@
+{
+  "rentals": {
+    "ski": {
+      "adults": "$50",
+      "youth": "$50"
+    },
+    "snowboard": {
+      "adults": "$50",
+      "youth": "$50"
+    },
+    "items": {}
+  },
+  "resortId": "mount-jamieson",
+  "sourceUrl": "https://www.mountjamieson.ca/service-shop-rentals",
+  "updatedAt": 1789693258796
+}

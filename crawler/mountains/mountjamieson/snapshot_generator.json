@@ -1,0 +1,122 @@
+{
+  "resortId": "mount-jamieson",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "address": "5050 Kamiskotia Rd, Timmins, ON P4N 7G7",
+        "continent": "North America",
+        "country": "Canada",
+        "email": "administration@mountjamieson.ca",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": true,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": true,
+        "hasZipline": false,
+        "phone": "(705) 268-9057",
+        "published": true,
+        "region": "Ontario",
+        "resortId": "mount-jamieson",
+        "ticketUrl": "https://www.mountjamieson.ca/day-passes",
+        "website": "https://www.mountjamieson.ca/",
+        "name": "Mount Jamieson",
+        "tracksGreenLength": "2.5km",
+        "tracksGreenProportion": "28",
+        "tracksBlueLength": "1.8km",
+        "tracksBlueProportion": "20",
+        "tracksBlackLength": "4.6km",
+        "tracksBlackProportion": "52",
+        "tracksTotalLength": "8.9km",
+        "elevation": "307 m - 410 m",
+        "height": "103m",
+        "tracksSummary": {
+          "black": 0,
+          "blue": 0,
+          "doubleBlack": 0,
+          "freeStyle": 0,
+          "green": 0
+        },
+        "dayTicketPrice": 62.5
+      }
+    },
+    {
+      "table": "resortHours",
+      "content": {
+        "hours": {
+          "sunday": "10:00am to 4:30pm",
+          "monday": "closed",
+          "tuesday": "10:00am to 3:30pm",
+          "wednesday": "10:00am to 3:30pm",
+          "thursday": "10:00am to 3:30pm",
+          "friday": "10:00am to 3:30pm",
+          "saturday": "10:00am to 4:30pm"
+        },
+        "resortId": "mount-jamieson",
+        "sourceUrl": "https://www.mountjamieson.ca/",
+        "updatedAt": 1789693258701
+      }
+    },
+    {
+      "table": "resortRates",
+      "content": {
+        "rates": {
+          "day-week": {
+            "adults": "$62.50",
+            "youth": "$51.50",
+            "seniors": "$51.50"
+          },
+          "day-weekend": {
+            "adults": "$62.50",
+            "youth": "$51.50",
+            "seniors": "$51.50"
+          }
+        },
+        "resortId": "mount-jamieson",
+        "sourceUrl": "https://www.mountjamieson.ca/day-passes",
+        "updatedAt": 1789693258750
+      }
+    },
+    {
+      "table": "resortRentals",
+      "content": {
+        "rentals": {
+          "ski": {
+            "adults": "$50",
+            "youth": "$50"
+          },
+          "snowboard": {
+            "adults": "$50",
+            "youth": "$50"
+          },
+          "items": {}
+        },
+        "resortId": "mount-jamieson",
+        "sourceUrl": "https://www.mountjamieson.ca/service-shop-rentals",
+        "updatedAt": 1789693258796
+      }
+    },
+    {
+      "table": "weatherAndStatus",
+      "content": {
+        "lifts": [
+          {
+            "name": "Skyway",
+            "status": "closed"
+          },
+          {
+            "name": "Downhill",
+            "status": "closed"
+          }
+        ],
+        "tracks": [],
+        "terrainParks": [],
+        "resortId": "mount-jamieson",
+        "sourceUrl": "https://www.mountjamieson.ca/trail-map-conditions",
+        "updatedAt": 1789693262375
+      }
+    }
+  ]
+}
