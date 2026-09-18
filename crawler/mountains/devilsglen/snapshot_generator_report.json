@@ -1,0 +1,28 @@
+{
+  "resortId": "devils-glen",
+  "tables": [
+    {
+      "table": "resorts",
+      "missingColumns": []
+    },
+    {
+      "table": "resortHours",
+      "missingColumns": []
+    },
+    {
+      "table": "resortRates",
+      "missingColumns": []
+    },
+    {
+      "table": "resortRentals",
+      "missingColumns": [
+        "rentals"
+      ]
+    },
+    {
+      "table": "weatherAndStatus",
+      "missingColumns": []
+    }
+  ],
+  "missingColumnCount": 1
+}

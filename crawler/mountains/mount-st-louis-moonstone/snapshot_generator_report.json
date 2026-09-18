@@ -1,0 +1,21 @@
+{
+  "resortId": "mount-st-louis-moonstone",
+  "tables": [
+    {
+      "table": "resorts",
+      "missingColumns": [
+        "email",
+        "tollFree"
+      ]
+    },
+    {
+      "table": "resortHours",
+      "missingColumns": []
+    },
+    {
+      "table": "weatherAndStatus",
+      "missingColumns": []
+    }
+  ],
+  "missingColumnCount": 2
+}

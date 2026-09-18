@@ -1,0 +1,27 @@
+{
+  "rates": {
+    "day-week": {
+      "adults": "$95",
+      "youth": "$75",
+      "seniors": "$75"
+    },
+    "day-weekend": {
+      "adults": "$95",
+      "youth": "$75",
+      "seniors": "$75"
+    },
+    "night-week": {
+      "adults": "$68",
+      "youth": "$62",
+      "seniors": "$62"
+    },
+    "night-weekend": {
+      "adults": "$68",
+      "youth": "$62",
+      "seniors": "$62"
+    }
+  },
+  "resortId": "mount-st-louis-moonstone",
+  "sourceUrl": "https://shop.mountstlouis.com/lift-tickets/day/",
+  "updatedAt": 1789514783556
+}

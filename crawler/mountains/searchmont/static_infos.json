@@ -1,0 +1,20 @@
+{
+  "address": "103 Searchmont Resort Rd., Searchmont, ON P0S 1J0, Canada",
+  "continent": "North America",
+  "country": "Canada",
+  "email": "info@searchmont.com",
+  "hasIceSkate": false,
+  "hasAccommodations": true,
+  "hasCrossCountry": false,
+  "hasLessons": true,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(705) 781-2340",
+  "published": true,
+  "region": "Ontario",
+  "resortId": "searchmont",
+  "ticketUrl": "https://searchmont.com/lift-tickets/",
+  "website": "https://searchmont.com/"
+}

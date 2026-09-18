@@ -1,0 +1,26 @@
+{
+  "resortId": "calabogie-peaks",
+  "tables": [
+    {
+      "table": "resorts",
+      "missingColumns": []
+    },
+    {
+      "table": "resortHours",
+      "missingColumns": []
+    },
+    {
+      "table": "resortRates",
+      "missingColumns": []
+    },
+    {
+      "table": "resortRentals",
+      "missingColumns": []
+    },
+    {
+      "table": "weatherAndStatus",
+      "missingColumns": []
+    }
+  ],
+  "missingColumnCount": 0
+}

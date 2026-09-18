@@ -1,0 +1,20 @@
+{
+  "rentals": {
+    "ski": {
+      "adults": "$40",
+      "youth": "$40"
+    },
+    "snowboard": {
+      "adults": "$40",
+      "youth": "$40"
+    },
+    "items": {
+      "skis": "$30",
+      "snowboard": "$30",
+      "snowshoes": "$15"
+    }
+  },
+  "resortId": "calabogie-peaks",
+  "sourceUrl": "https://calabogie.com/winter/rentals/",
+  "updatedAt": 1789613750162
+}

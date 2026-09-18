@@ -1,0 +1,204 @@
+{
+  "resortId": "antoine-mountain",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "address": "Antoine Mountain, Mattawa, ON P0H 1V0",
+        "continent": "North America",
+        "country": "Canada",
+        "email": "hello@antoinemountain.ca",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": true,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(705) 744-4754",
+        "published": true,
+        "region": "Ontario",
+        "resortId": "antoine-mountain",
+        "ticketUrl": "https://antoinemountain.ca/pages/tickets",
+        "website": "https://antoinemountain.ca/",
+        "name": "Antoine Mountain",
+        "tracksGreenLength": "4km",
+        "tracksGreenProportion": "37",
+        "tracksBlueLength": "4km",
+        "tracksBlueProportion": "36",
+        "tracksBlackLength": "3km",
+        "tracksBlackProportion": "27",
+        "tracksTotalLength": "11km",
+        "elevation": "174 m - 366 m",
+        "height": "192m",
+        "tracksSummary": {
+          "black": 5,
+          "blue": 4,
+          "doubleBlack": 0,
+          "freeStyle": 0,
+          "green": 6
+        },
+        "dayTicketPrice": 76
+      }
+    },
+    {
+      "table": "resortHours",
+      "content": {
+        "hours": {
+          "sunday": "9:00am to 4:00pm",
+          "monday": "closed",
+          "tuesday": "closed",
+          "wednesday": "closed",
+          "thursday": "closed",
+          "friday": "9:00am to 4:00pm",
+          "saturday": "9:00am to 4:00pm"
+        },
+        "resortId": "antoine-mountain",
+        "sourceUrl": "https://antoinemountain.ca/pages/hours-of-operation",
+        "updatedAt": 1789611880024
+      }
+    },
+    {
+      "table": "resortRates",
+      "content": {
+        "rates": {
+          "day-week": {
+            "adults": "$76",
+            "youth": "$66",
+            "seniors": "$66"
+          },
+          "day-weekend": {
+            "adults": "$76",
+            "youth": "$66",
+            "seniors": "$66"
+          }
+        },
+        "resortId": "antoine-mountain",
+        "sourceUrl": "https://antoinemountain.ca/pages/tickets",
+        "updatedAt": 1789611880100
+      }
+    },
+    {
+      "table": "resortRentals",
+      "content": {
+        "rentals": {
+          "ski": {
+            "adults": "$50",
+            "youth": "$50"
+          },
+          "snowboard": {
+            "adults": "$50",
+            "youth": "$50"
+          },
+          "items": {
+            "skis": "$35",
+            "snowboard": "$35",
+            "boots": "$30",
+            "helmet": "$15",
+            "poles": "$15"
+          }
+        },
+        "resortId": "antoine-mountain",
+        "sourceUrl": "https://antoinemountain.ca/pages/rentals",
+        "updatedAt": 1789611880175
+      }
+    },
+    {
+      "table": "weatherAndStatus",
+      "content": {
+        "lifts": [
+          {
+            "name": "Skydigger",
+            "status": "closed"
+          },
+          {
+            "name": "Antoine Mountain Handle Tow",
+            "status": "closed"
+          }
+        ],
+        "tracks": [
+          {
+            "name": "Voyageur",
+            "status": "closed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Look Out",
+            "status": "closed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Static",
+            "status": "closed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Nice 'n' Easy",
+            "status": "closed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Portage",
+            "status": "closed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Handle Tow",
+            "status": "closed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Mattawa",
+            "status": "closed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Ottawa",
+            "status": "closed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Dambuster",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Laurentian",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Bowl",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Kate Pace",
+            "status": "closed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Chute",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Cliffhanger",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Spillway",
+            "status": "closed",
+            "difficulty": "green"
+          }
+        ],
+        "terrainParks": [],
+        "resortId": "antoine-mountain",
+        "sourceUrl": "https://antoinemountain.ca/pages/trail-conditions",
+        "updatedAt": 1789611883117
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "rentals": {
+    "ski": {
+      "adults": "$40",
+      "youth": "$40"
+    },
+    "snowboard": {
+      "adults": "$40",
+      "youth": "$40"
+    },
+    "items": {
+      "skis": "$30",
+      "snowboard": "$30",
+      "snowshoes": "$15"
+    }
+  },
+  "resortId": "loch-lomond",
+  "sourceUrl": "https://www.lochlomond.ca/rentals/equipment-rental/",
+  "updatedAt": 1789612567873
+}

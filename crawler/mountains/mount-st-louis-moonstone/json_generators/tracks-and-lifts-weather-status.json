@@ -1,0 +1,307 @@
+{
+  "lifts": [
+    {
+      "name": "Kinder B",
+      "status": "closed",
+      "area": "Mount St. Louis Slopes"
+    },
+    {
+      "name": "Kinder A",
+      "status": "closed",
+      "area": "Mount St. Louis Slopes"
+    },
+    {
+      "name": "Magic Carpet",
+      "status": "closed",
+      "area": "Mount St. Louis Slopes"
+    },
+    {
+      "name": "Gentle Ben",
+      "status": "closed",
+      "area": "Mount St. Louis Slopes"
+    },
+    {
+      "name": "Sundance",
+      "status": "closed",
+      "area": "Mount St. Louis Slopes"
+    },
+    {
+      "name": "Summit Express",
+      "status": "closed",
+      "area": "Mount St. Louis Slopes"
+    },
+    {
+      "name": "Josl Huter Express",
+      "status": "closed",
+      "area": "Mount St. Louis Slopes"
+    },
+    {
+      "name": "Elfriede Huter Express",
+      "status": "closed",
+      "area": "Moonstone Slopes"
+    },
+    {
+      "name": "Adventure 8",
+      "status": "closed",
+      "area": "Moonstone Slopes"
+    },
+    {
+      "name": "Novice Carpet",
+      "status": "closed",
+      "area": "Moonstone Slopes"
+    },
+    {
+      "name": "Promenade Express",
+      "status": "closed",
+      "area": "Moonstone Slopes"
+    }
+  ],
+  "tracks": [
+    {
+      "name": "Follow Me",
+      "status": "closed",
+      "difficulty": "green",
+      "area": "Mount St. Louis Slopes"
+    },
+    {
+      "name": "Magic Slope",
+      "status": "closed",
+      "difficulty": "green",
+      "area": "Mount St. Louis Slopes"
+    },
+    {
+      "name": "Kinder Slope",
+      "status": "closed",
+      "difficulty": "green",
+      "area": "Mount St. Louis Slopes"
+    },
+    {
+      "name": "Gentle Ben",
+      "status": "closed",
+      "difficulty": "green",
+      "area": "Mount St. Louis Slopes"
+    },
+    {
+      "name": "Sundance",
+      "status": "closed",
+      "difficulty": "green",
+      "area": "Mount St. Louis Slopes"
+    },
+    {
+      "name": "Saint",
+      "status": "closed",
+      "difficulty": "green",
+      "area": "Mount St. Louis Slopes"
+    },
+    {
+      "name": "West Arm",
+      "status": "closed",
+      "difficulty": "blue",
+      "area": "Mount St. Louis Slopes"
+    },
+    {
+      "name": "Thunderball",
+      "status": "closed",
+      "difficulty": "blue",
+      "area": "Mount St. Louis Slopes"
+    },
+    {
+      "name": "Upper Timberline",
+      "status": "closed",
+      "difficulty": "blue",
+      "area": "Mount St. Louis Slopes"
+    },
+    {
+      "name": "Timberline",
+      "status": "closed",
+      "difficulty": "blue",
+      "area": "Mount St. Louis Slopes"
+    },
+    {
+      "name": "Snowbowl",
+      "status": "closed",
+      "difficulty": "blue",
+      "area": "Mount St. Louis Slopes"
+    },
+    {
+      "name": "Tiroler",
+      "status": "closed",
+      "difficulty": "blue",
+      "area": "Mount St. Louis Slopes"
+    },
+    {
+      "name": "T-Bar Alley",
+      "status": "closed",
+      "difficulty": "blue",
+      "area": "Mount St. Louis Slopes"
+    },
+    {
+      "name": "West Peak Run",
+      "status": "closed",
+      "difficulty": "black",
+      "area": "Mount St. Louis Slopes"
+    },
+    {
+      "name": "East Peak Run",
+      "status": "closed",
+      "difficulty": "black",
+      "area": "Mount St. Louis Slopes"
+    },
+    {
+      "name": "Stretcher",
+      "status": "closed",
+      "difficulty": "black",
+      "area": "Mount St. Louis Slopes"
+    },
+    {
+      "name": "Yodler",
+      "status": "closed",
+      "difficulty": "blue",
+      "area": "Mount St. Louis Slopes"
+    },
+    {
+      "name": "North Peak Run",
+      "status": "closed",
+      "difficulty": "blue",
+      "area": "Mount St. Louis Slopes"
+    },
+    {
+      "name": "Holiday",
+      "status": "closed",
+      "difficulty": "blue",
+      "area": "Moonstone Slopes"
+    },
+    {
+      "name": "Mount St. Louis Crossover",
+      "status": "closed",
+      "difficulty": "blue",
+      "area": "Moonstone Slopes"
+    },
+    {
+      "name": "Adventure Run",
+      "status": "closed",
+      "difficulty": "black",
+      "area": "Moonstone Slopes"
+    },
+    {
+      "name": "Louis Express",
+      "status": "closed",
+      "difficulty": "black",
+      "area": "Moonstone Slopes"
+    },
+    {
+      "name": "Moonstone Crossover",
+      "status": "closed",
+      "difficulty": "blue",
+      "area": "Moonstone Slopes"
+    },
+    {
+      "name": "Turkey Chute",
+      "status": "closed",
+      "difficulty": "black",
+      "area": "Moonstone Slopes"
+    },
+    {
+      "name": "Ridge Run",
+      "status": "closed",
+      "difficulty": "black",
+      "area": "Moonstone Slopes"
+    },
+    {
+      "name": "Venture Mogul",
+      "status": "closed",
+      "difficulty": "black",
+      "area": "Moonstone Slopes"
+    },
+    {
+      "name": "Venture",
+      "status": "closed",
+      "difficulty": "black",
+      "area": "Moonstone Slopes"
+    },
+    {
+      "name": "Easy Out",
+      "status": "closed",
+      "difficulty": "green",
+      "area": "Moonstone Slopes"
+    },
+    {
+      "name": "Promenade",
+      "status": "closed",
+      "difficulty": "blue",
+      "area": "Moonstone Slopes"
+    },
+    {
+      "name": "Smart Alec",
+      "status": "closed",
+      "difficulty": "blue",
+      "area": "Moonstone Slopes"
+    },
+    {
+      "name": "Drifter",
+      "status": "closed",
+      "difficulty": "green",
+      "area": "Moonstone Slopes"
+    },
+    {
+      "name": "Big Lonely",
+      "status": "closed",
+      "difficulty": "green",
+      "area": "Moonstone Slopes"
+    },
+    {
+      "name": "Crescent",
+      "status": "closed",
+      "difficulty": "green",
+      "area": "Moonstone Slopes"
+    },
+    {
+      "name": "Elfie's Way",
+      "status": "closed",
+      "difficulty": "blue",
+      "area": "Moonstone Slopes"
+    },
+    {
+      "name": "Easy Street",
+      "status": "closed",
+      "difficulty": "green",
+      "area": "Moonstone Slopes"
+    },
+    {
+      "name": "Novice Slope",
+      "status": "closed",
+      "difficulty": "green",
+      "area": "Moonstone Slopes"
+    }
+  ],
+  "terrainParks": [
+    {
+      "name": "SBX Course",
+      "status": "closed",
+      "difficulty": "freeStyle"
+    },
+    {
+      "name": "Yodler",
+      "status": "closed",
+      "difficulty": "freeStyle"
+    },
+    {
+      "name": "Junkyard",
+      "status": "closed",
+      "difficulty": "freeStyle"
+    },
+    {
+      "name": "Outback",
+      "status": "closed",
+      "difficulty": "freeStyle"
+    },
+    {
+      "name": "Skool Yard",
+      "status": "closed",
+      "difficulty": "freeStyle"
+    }
+  ],
+  "resortId": "mount-st-louis-moonstone",
+  "sourceUrl": "https://www.mountstlouis.com/status/",
+  "updatedAt": 1789514789213
+}

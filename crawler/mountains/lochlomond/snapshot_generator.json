@@ -1,0 +1,231 @@
+{
+  "resortId": "loch-lomond",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "address": "1800 Loch Lomond Rd, Thunder Bay, ON P7J 1E9",
+        "continent": "North America",
+        "country": "Canada",
+        "hasIceSkate": false,
+        "hasAccommodations": true,
+        "hasCrossCountry": false,
+        "hasLessons": true,
+        "hasSnowshoeing": true,
+        "hasSpa": false,
+        "hasTubing": true,
+        "hasZipline": false,
+        "phone": "(807) 475-7787",
+        "published": true,
+        "region": "Ontario",
+        "resortId": "loch-lomond",
+        "ticketUrl": "https://www.lochlomond.ca/lift-tickets/",
+        "website": "https://www.lochlomond.ca/",
+        "name": "Loch Lomond Ski Area",
+        "tracksGreenLength": "2.5km",
+        "tracksGreenProportion": "35",
+        "tracksBlueLength": "2km",
+        "tracksBlueProportion": "30",
+        "tracksBlackLength": "2.5km",
+        "tracksBlackProportion": "35",
+        "tracksTotalLength": "7km",
+        "elevation": "251 m - 430 m",
+        "height": "179m",
+        "tracksSummary": {
+          "black": 3,
+          "blue": 8,
+          "doubleBlack": 3,
+          "freeStyle": 1,
+          "green": 5
+        },
+        "dayTicketPrice": 85
+      }
+    },
+    {
+      "table": "resortHours",
+      "content": {
+        "hours": {
+          "sunday": "10am to 6pm",
+          "monday": "closed",
+          "tuesday": "closed",
+          "wednesday": "closed",
+          "thursday": "closed",
+          "friday": "10am to 8pm",
+          "saturday": "10am to 8pm"
+        },
+        "resortId": "loch-lomond",
+        "sourceUrl": "https://www.lochlomond.ca/hill-hours/",
+        "updatedAt": 1789612567641
+      }
+    },
+    {
+      "table": "resortRates",
+      "content": {
+        "rates": {
+          "day-week": {
+            "adults": "$85",
+            "youth": "$70",
+            "seniors": "$70"
+          },
+          "day-weekend": {
+            "adults": "$85",
+            "youth": "$70",
+            "seniors": "$70"
+          }
+        },
+        "resortId": "loch-lomond",
+        "sourceUrl": "https://www.lochlomond.ca/lift-tickets/",
+        "updatedAt": 1789612567754
+      }
+    },
+    {
+      "table": "resortRentals",
+      "content": {
+        "rentals": {
+          "ski": {
+            "adults": "$40",
+            "youth": "$40"
+          },
+          "snowboard": {
+            "adults": "$40",
+            "youth": "$40"
+          },
+          "items": {
+            "skis": "$30",
+            "snowboard": "$30",
+            "snowshoes": "$15"
+          }
+        },
+        "resortId": "loch-lomond",
+        "sourceUrl": "https://www.lochlomond.ca/rentals/equipment-rental/",
+        "updatedAt": 1789612567873
+      }
+    },
+    {
+      "table": "weatherAndStatus",
+      "content": {
+        "lifts": [
+          {
+            "name": "South Chairlift",
+            "status": "closed"
+          },
+          {
+            "name": "Snoopy Chairlift",
+            "status": "closed"
+          },
+          {
+            "name": "North Chairlift",
+            "status": "closed"
+          }
+        ],
+        "tracks": [
+          {
+            "name": "Upper Sunbowl",
+            "status": "closed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Lower Sunbowl",
+            "status": "closed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Cliff",
+            "status": "closed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Mullet",
+            "status": "closed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Upper Pine",
+            "status": "closed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Lower Pine",
+            "status": "closed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Pine Glades",
+            "status": "closed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Lower Sunbowl",
+            "status": "closed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Chicken",
+            "status": "closed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Kitzbuel",
+            "status": "closed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Upper Maple",
+            "status": "closed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Lower Maple",
+            "status": "closed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Zipper",
+            "status": "closed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Birch",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Old Joe's",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Giant",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Jolly Giant",
+            "status": "closed",
+            "difficulty": "doubleBlack"
+          },
+          {
+            "name": "Devil's Dive",
+            "status": "closed",
+            "difficulty": "doubleBlack"
+          },
+          {
+            "name": "Devil's Playground",
+            "status": "closed",
+            "difficulty": "doubleBlack"
+          }
+        ],
+        "terrainParks": [
+          {
+            "name": "Terrain Park",
+            "status": "closed",
+            "difficulty": "freeStyle"
+          }
+        ],
+        "resortId": "loch-lomond",
+        "sourceUrl": "https://www.lochlomond.ca/conditions/",
+        "updatedAt": 1789612570741
+      }
+    }
+  ]
+}

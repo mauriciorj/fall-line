@@ -1,0 +1,14 @@
+{
+  "hours": {
+    "sunday": "9am to 4pm",
+    "monday": "closed",
+    "tuesday": "9am to 4pm",
+    "wednesday": "9am to 4pm",
+    "thursday": "9am to 4pm",
+    "friday": "9am to 4pm",
+    "saturday": "9am to 4pm"
+  },
+  "resortId": "searchmont",
+  "sourceUrl": "https://searchmont.com/hours/",
+  "updatedAt": 1789611283706
+}

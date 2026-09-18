@@ -1,0 +1,21 @@
+{
+  "address": "30 Barrett Chute Road, Calabogie, ON K0J 1H0",
+  "continent": "North America",
+  "country": "Canada",
+  "email": "info@calabogie.com",
+  "hasIceSkate": false,
+  "hasAccommodations": true,
+  "hasCrossCountry": false,
+  "hasLessons": true,
+  "hasSnowshoeing": true,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(613) 752-2720",
+  "published": true,
+  "region": "Ontario",
+  "resortId": "calabogie-peaks",
+  "ticketUrl": "https://calabogie.com/product-category/lift-tickets/",
+  "tollFree": "1-800-669-4861",
+  "website": "https://calabogie.com/"
+}

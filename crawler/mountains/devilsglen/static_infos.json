@@ -1,0 +1,20 @@
+{
+  "address": "1793 County Road 124, Duntroon, ON L0M 1H0",
+  "continent": "North America",
+  "country": "Canada",
+  "email": "info@devilsglen.com",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": true,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(705) 445-4890",
+  "published": true,
+  "region": "Ontario",
+  "resortId": "devils-glen",
+  "ticketUrl": "https://www.devilsglen.com/About/Ticket_Pricing",
+  "website": "https://www.devilsglen.com"
+}

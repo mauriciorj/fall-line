@@ -1,0 +1,122 @@
+{
+  "lifts": [
+    {
+      "name": "Edelweiss",
+      "status": "closed"
+    },
+    {
+      "name": "Lakeside",
+      "status": "closed"
+    },
+    {
+      "name": "Magic Carpet",
+      "status": "closed"
+    }
+  ],
+  "tracks": [
+    {
+      "name": "Beginner",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Bambi",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Big Easy",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Cannonball",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Chute",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Devil's Elbow",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Eagle's Nest",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Express",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Highlander",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Lower Main",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Main Street",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Maple",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Mountain View",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Race Hill",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Ridge Run",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Rocky Ridge",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Sidewinder",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Snowbird",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "The Bowl",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "The Glades",
+      "status": "closed",
+      "difficulty": "doubleBlack"
+    }
+  ],
+  "terrainParks": [],
+  "resortId": "calabogie-peaks",
+  "sourceUrl": "https://calabogie.com/trail-status/",
+  "updatedAt": 1789613753184
+}

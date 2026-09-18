@@ -1,0 +1,14 @@
+{
+  "hours": {
+    "sunday": "closed",
+    "monday": "closed",
+    "tuesday": "closed",
+    "wednesday": "closed",
+    "thursday": "closed",
+    "friday": "closed",
+    "saturday": "closed"
+  },
+  "resortId": "mount-st-louis-moonstone",
+  "sourceUrl": "https://shop.mountstlouis.com/",
+  "updatedAt": 1789514782365
+}

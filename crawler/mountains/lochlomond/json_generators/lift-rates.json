@@ -1,0 +1,17 @@
+{
+  "rates": {
+    "day-week": {
+      "adults": "$85",
+      "youth": "$70",
+      "seniors": "$70"
+    },
+    "day-weekend": {
+      "adults": "$85",
+      "youth": "$70",
+      "seniors": "$70"
+    }
+  },
+  "resortId": "loch-lomond",
+  "sourceUrl": "https://www.lochlomond.ca/lift-tickets/",
+  "updatedAt": 1789612567754
+}

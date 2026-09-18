@@ -1,0 +1,258 @@
+{
+  "resortId": "searchmont",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "address": "103 Searchmont Resort Rd., Searchmont, ON P0S 1J0, Canada",
+        "continent": "North America",
+        "country": "Canada",
+        "email": "info@searchmont.com",
+        "hasIceSkate": false,
+        "hasAccommodations": true,
+        "hasCrossCountry": false,
+        "hasLessons": true,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(705) 781-2340",
+        "published": true,
+        "region": "Ontario",
+        "resortId": "searchmont",
+        "ticketUrl": "https://searchmont.com/lift-tickets/",
+        "website": "https://searchmont.com/",
+        "name": "Searchmont Ski Resort",
+        "tracksGreenLength": "2km",
+        "tracksGreenProportion": "20",
+        "tracksBlueLength": "6km",
+        "tracksBlueProportion": "60",
+        "tracksBlackLength": "2km",
+        "tracksBlackProportion": "20",
+        "tracksTotalLength": "10km",
+        "elevation": "233 m - 488 m",
+        "height": "255m",
+        "tracksSummary": {
+          "black": 0,
+          "blue": 0,
+          "doubleBlack": 0,
+          "freeStyle": 1,
+          "green": 0
+        },
+        "dayTicketPrice": 80
+      }
+    },
+    {
+      "table": "resortHours",
+      "content": {
+        "hours": {
+          "sunday": "9am to 4pm",
+          "monday": "closed",
+          "tuesday": "9am to 4pm",
+          "wednesday": "9am to 4pm",
+          "thursday": "9am to 4pm",
+          "friday": "9am to 4pm",
+          "saturday": "9am to 4pm"
+        },
+        "resortId": "searchmont",
+        "sourceUrl": "https://searchmont.com/hours/",
+        "updatedAt": 1789611283706
+      }
+    },
+    {
+      "table": "resortRates",
+      "content": {
+        "rates": {
+          "day-week": {
+            "adults": "$80"
+          },
+          "day-weekend": {
+            "adults": "$85"
+          },
+          "night-week": {
+            "adults": "$60"
+          },
+          "night-weekend": {
+            "adults": "$60"
+          }
+        },
+        "resortId": "searchmont",
+        "sourceUrl": "https://searchmont.com/lift-tickets/",
+        "updatedAt": 1789611285393
+      }
+    },
+    {
+      "table": "resortRentals",
+      "content": {
+        "rentals": {
+          "ski": {
+            "adults": "$52",
+            "youth": "$42"
+          },
+          "snowboard": {
+            "adults": "$52",
+            "youth": "$42"
+          },
+          "items": {
+            "helmet": "$12",
+            "poles": "$12"
+          }
+        },
+        "resortId": "searchmont",
+        "sourceUrl": "https://searchmont.com/rentals/",
+        "updatedAt": 1789611287007
+      }
+    },
+    {
+      "table": "weatherAndStatus",
+      "content": {
+        "lifts": [
+          {
+            "name": "Lumberjack Belt",
+            "status": "closed"
+          },
+          {
+            "name": "Wabos Belt",
+            "status": "closed"
+          },
+          {
+            "name": "Buzzsaw Lift",
+            "status": "closed"
+          },
+          {
+            "name": "Goulais Lift",
+            "status": "closed"
+          },
+          {
+            "name": "Main Lift",
+            "status": "closed"
+          }
+        ],
+        "tracks": [
+          {
+            "name": "Binder Twine",
+            "status": "closed"
+          },
+          {
+            "name": "Champs",
+            "status": "closed"
+          },
+          {
+            "name": "Goulais",
+            "status": "closed"
+          },
+          {
+            "name": "Meadow Express",
+            "status": "closed"
+          },
+          {
+            "name": "Nan's Ski Askin",
+            "status": "closed"
+          },
+          {
+            "name": "Peggy's Promise",
+            "status": "closed"
+          },
+          {
+            "name": "Really Mealey",
+            "status": "closed"
+          },
+          {
+            "name": "Rocky Road",
+            "status": "closed"
+          },
+          {
+            "name": "3X4",
+            "status": "closed"
+          },
+          {
+            "name": "Buzzsaw",
+            "status": "closed"
+          },
+          {
+            "name": "Herb's Meadow",
+            "status": "closed"
+          },
+          {
+            "name": "Learning Centre",
+            "status": "closed"
+          },
+          {
+            "name": "Little Wabos",
+            "status": "closed"
+          },
+          {
+            "name": "Lumberjack",
+            "status": "closed"
+          },
+          {
+            "name": "The Main",
+            "status": "closed"
+          },
+          {
+            "name": "Trav's Trail",
+            "status": "closed"
+          },
+          {
+            "name": "5-0 Trees",
+            "status": "closed"
+          },
+          {
+            "name": "Agawa",
+            "status": "closed"
+          },
+          {
+            "name": "Bear Claw",
+            "status": "closed"
+          },
+          {
+            "name": "Brian's Brook",
+            "status": "closed"
+          },
+          {
+            "name": "Cougar Trax",
+            "status": "closed"
+          },
+          {
+            "name": "Exhibition Alley",
+            "status": "closed"
+          },
+          {
+            "name": "Jack's Dive",
+            "status": "closed"
+          },
+          {
+            "name": "Melville's Mile",
+            "status": "closed"
+          },
+          {
+            "name": "Moose Difficult",
+            "status": "closed"
+          },
+          {
+            "name": "Slalom",
+            "status": "closed"
+          },
+          {
+            "name": "The Glades",
+            "status": "closed"
+          },
+          {
+            "name": "Wolf's Head",
+            "status": "closed"
+          }
+        ],
+        "terrainParks": [
+          {
+            "name": "Terrain Park",
+            "status": "closed",
+            "difficulty": "freeStyle"
+          }
+        ],
+        "resortId": "searchmont",
+        "sourceUrl": "https://searchmont.com/snow-report/",
+        "updatedAt": 1789611291379
+      }
+    }
+  ]
+}

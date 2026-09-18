@@ -1,0 +1,147 @@
+{
+  "lifts": [
+    {
+      "name": "Hades Quad",
+      "status": "closed"
+    },
+    {
+      "name": "Magic Carpet",
+      "status": "closed"
+    },
+    {
+      "name": "Heavenly Quad",
+      "status": "closed"
+    },
+    {
+      "name": "Revelation Quad",
+      "status": "closed"
+    }
+  ],
+  "tracks": [
+    {
+      "difficulty": null,
+      "name": "Stairway",
+      "status": "closed"
+    },
+    {
+      "difficulty": null,
+      "name": "Siren",
+      "status": "closed"
+    },
+    {
+      "difficulty": null,
+      "name": "Cerberus",
+      "status": "closed"
+    },
+    {
+      "difficulty": null,
+      "name": "Lucifer's Lane",
+      "status": "closed"
+    },
+    {
+      "difficulty": null,
+      "name": "Waterfall",
+      "status": "closed"
+    },
+    {
+      "difficulty": "black",
+      "name": "Inferno",
+      "status": "closed"
+    },
+    {
+      "difficulty": "blue",
+      "name": "Limbo",
+      "status": "closed"
+    },
+    {
+      "difficulty": "green",
+      "name": "Pluto",
+      "status": "closed"
+    },
+    {
+      "difficulty": "green",
+      "name": "River Styx",
+      "status": "closed"
+    },
+    {
+      "difficulty": "blue",
+      "name": "Achilles Heel",
+      "status": "closed"
+    },
+    {
+      "difficulty": "green",
+      "name": "Upper Paradise",
+      "status": "closed"
+    },
+    {
+      "difficulty": "green",
+      "name": "Lower Paradise",
+      "status": "closed"
+    },
+    {
+      "difficulty": "green",
+      "name": "The Meadows",
+      "status": "closed"
+    },
+    {
+      "difficulty": "green",
+      "name": "Zeus",
+      "status": "closed"
+    },
+    {
+      "difficulty": "green",
+      "name": "Eden",
+      "status": "closed"
+    },
+    {
+      "difficulty": "green",
+      "name": "Elysian Fields",
+      "status": "closed"
+    },
+    {
+      "difficulty": "black",
+      "name": "Acheron",
+      "status": "closed"
+    },
+    {
+      "difficulty": "blue",
+      "name": "Salvation",
+      "status": "closed"
+    },
+    {
+      "difficulty": "blue",
+      "name": "Revelation",
+      "status": "closed"
+    },
+    {
+      "difficulty": "black",
+      "name": "Hallelujah",
+      "status": "closed"
+    },
+    {
+      "difficulty": null,
+      "name": "Hallelujah Glades",
+      "status": "closed"
+    }
+  ],
+  "terrainParks": [
+    {
+      "difficulty": "freeStyle",
+      "name": "Hade's Lane",
+      "status": "closed"
+    },
+    {
+      "difficulty": "freeStyle",
+      "name": "Purgatory Park",
+      "status": "closed"
+    },
+    {
+      "difficulty": "freeStyle",
+      "name": "Beatrice",
+      "status": "closed"
+    }
+  ],
+  "resortId": "devils-glen",
+  "sourceUrl": "https://www.devilsglen.com/About/Trail_Report",
+  "updatedAt": 1789585846955
+}

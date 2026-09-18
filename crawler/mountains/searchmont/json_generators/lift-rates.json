@@ -1,0 +1,19 @@
+{
+  "rates": {
+    "day-week": {
+      "adults": "$80"
+    },
+    "day-weekend": {
+      "adults": "$85"
+    },
+    "night-week": {
+      "adults": "$60"
+    },
+    "night-weekend": {
+      "adults": "$60"
+    }
+  },
+  "resortId": "searchmont",
+  "sourceUrl": "https://searchmont.com/lift-tickets/",
+  "updatedAt": 1789611285393
+}

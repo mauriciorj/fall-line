@@ -1,0 +1,22 @@
+{
+  "rentals": {
+    "ski": {
+      "adults": "$60",
+      "youth": "$50"
+    },
+    "snowboard": {
+      "adults": "$60",
+      "youth": "$50"
+    },
+    "items": {
+      "boots": "$30",
+      "skis": "$44",
+      "poles": "$12",
+      "helmet": "$16",
+      "snowboard": "$44"
+    }
+  },
+  "resortId": "mount-st-louis-moonstone",
+  "sourceUrl": "https://shop.mountstlouis.com/rentals/kit/",
+  "updatedAt": 1789514784831
+}

@@ -1,0 +1,148 @@
+{
+  "lifts": [
+    {
+      "name": "Lumberjack Belt",
+      "status": "closed"
+    },
+    {
+      "name": "Wabos Belt",
+      "status": "closed"
+    },
+    {
+      "name": "Buzzsaw Lift",
+      "status": "closed"
+    },
+    {
+      "name": "Goulais Lift",
+      "status": "closed"
+    },
+    {
+      "name": "Main Lift",
+      "status": "closed"
+    }
+  ],
+  "tracks": [
+    {
+      "name": "Binder Twine",
+      "status": "closed"
+    },
+    {
+      "name": "Champs",
+      "status": "closed"
+    },
+    {
+      "name": "Goulais",
+      "status": "closed"
+    },
+    {
+      "name": "Meadow Express",
+      "status": "closed"
+    },
+    {
+      "name": "Nan's Ski Askin",
+      "status": "closed"
+    },
+    {
+      "name": "Peggy's Promise",
+      "status": "closed"
+    },
+    {
+      "name": "Really Mealey",
+      "status": "closed"
+    },
+    {
+      "name": "Rocky Road",
+      "status": "closed"
+    },
+    {
+      "name": "3X4",
+      "status": "closed"
+    },
+    {
+      "name": "Buzzsaw",
+      "status": "closed"
+    },
+    {
+      "name": "Herb's Meadow",
+      "status": "closed"
+    },
+    {
+      "name": "Learning Centre",
+      "status": "closed"
+    },
+    {
+      "name": "Little Wabos",
+      "status": "closed"
+    },
+    {
+      "name": "Lumberjack",
+      "status": "closed"
+    },
+    {
+      "name": "The Main",
+      "status": "closed"
+    },
+    {
+      "name": "Trav's Trail",
+      "status": "closed"
+    },
+    {
+      "name": "5-0 Trees",
+      "status": "closed"
+    },
+    {
+      "name": "Agawa",
+      "status": "closed"
+    },
+    {
+      "name": "Bear Claw",
+      "status": "closed"
+    },
+    {
+      "name": "Brian's Brook",
+      "status": "closed"
+    },
+    {
+      "name": "Cougar Trax",
+      "status": "closed"
+    },
+    {
+      "name": "Exhibition Alley",
+      "status": "closed"
+    },
+    {
+      "name": "Jack's Dive",
+      "status": "closed"
+    },
+    {
+      "name": "Melville's Mile",
+      "status": "closed"
+    },
+    {
+      "name": "Moose Difficult",
+      "status": "closed"
+    },
+    {
+      "name": "Slalom",
+      "status": "closed"
+    },
+    {
+      "name": "The Glades",
+      "status": "closed"
+    },
+    {
+      "name": "Wolf's Head",
+      "status": "closed"
+    }
+  ],
+  "terrainParks": [
+    {
+      "name": "Terrain Park",
+      "status": "closed",
+      "difficulty": "freeStyle"
+    }
+  ],
+  "resortId": "searchmont",
+  "sourceUrl": "https://searchmont.com/snow-report/",
+  "updatedAt": 1789611291379
+}

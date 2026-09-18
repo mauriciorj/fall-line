@@ -1,0 +1,19 @@
+{
+  "rentals": {
+    "ski": {
+      "adults": "$52",
+      "youth": "$42"
+    },
+    "snowboard": {
+      "adults": "$52",
+      "youth": "$42"
+    },
+    "items": {
+      "helmet": "$12",
+      "poles": "$12"
+    }
+  },
+  "resortId": "searchmont",
+  "sourceUrl": "https://searchmont.com/rentals/",
+  "updatedAt": 1789611287007
+}
