@@ -1,0 +1,14 @@
+{
+  "hours": {
+    "sunday": "9:00am to 7:00pm",
+    "monday": "4:00pm to 10:00pm",
+    "tuesday": "9:00am to 10:00pm",
+    "wednesday": "9:00am to 10:00pm",
+    "thursday": "9:00am to 10:00pm",
+    "friday": "9:00am to 10:00pm",
+    "saturday": "9:00am to 10:00pm"
+  },
+  "resortId": "boler-mountain",
+  "sourceUrl": "https://www.bolermountain.com/hours-of-operation/",
+  "updatedAt": 1789696736482
+}

@@ -1,0 +1,16 @@
+{
+  "rentals": {
+    "ski": {
+      "adults": "$46",
+      "youth": "$46"
+    },
+    "snowboard": {
+      "adults": "$46",
+      "youth": "$46"
+    },
+    "items": {}
+  },
+  "resortId": "boler-mountain",
+  "sourceUrl": "https://www.bolermountain.com/day-tickets/",
+  "updatedAt": 1789696736574
+}
