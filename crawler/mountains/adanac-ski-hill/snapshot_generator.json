@@ -1,0 +1,113 @@
+{
+  "resortId": "adanac-ski-hill",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "address": "744 Beatrice Crescent, Sudbury, ON P3A 5B5",
+        "continent": "North America",
+        "country": "Canada",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": true,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(705) 688-3968",
+        "published": true,
+        "region": "Ontario",
+        "resortId": "adanac-ski-hill",
+        "ticketUrl": "https://www.greatersudbury.ca/play/ski-hills/adanac-ski-hill/",
+        "website": "https://www.greatersudbury.ca/",
+        "name": "Adanac Ski Hill",
+        "tracksGreenLength": "1.3 km",
+        "tracksGreenProportion": "65",
+        "tracksBlueLength": "0.6 km",
+        "tracksBlueProportion": "30",
+        "tracksBlackLength": "0.1 km",
+        "tracksBlackProportion": "5",
+        "tracksTotalLength": "2 km",
+        "elevation": "270 m - 340 m",
+        "height": "70 m",
+        "tracksSummary": {
+          "black": 0,
+          "blue": 0,
+          "doubleBlack": 0,
+          "freeStyle": 0,
+          "green": 0
+        },
+        "dayTicketPrice": 50
+      }
+    },
+    {
+      "table": "resortHours",
+      "content": {
+        "hours": {
+          "sunday": "10:00am to 4:00pm",
+          "monday": "closed",
+          "tuesday": "closed",
+          "wednesday": "closed",
+          "thursday": "closed",
+          "friday": "10:00am to 4:00pm",
+          "saturday": "10:00am to 4:00pm"
+        },
+        "resortId": "adanac-ski-hill",
+        "sourceUrl": "https://www.greatersudbury.ca/play/ski-hills/adanac-ski-hill/",
+        "updatedAt": 1789698974018
+      }
+    },
+    {
+      "table": "resortRates",
+      "content": {
+        "rates": {
+          "day-week": {
+            "adults": "$50"
+          },
+          "day-weekend": {
+            "adults": "$50"
+          }
+        },
+        "resortId": "adanac-ski-hill",
+        "sourceUrl": "https://www.greatersudbury.ca/play/ski-hills/adanac-ski-hill/",
+        "updatedAt": 1789698974064
+      }
+    },
+    {
+      "table": "resortRentals",
+      "content": {
+        "rentals": {
+          "ski": {
+            "adults": "$40",
+            "youth": "$40"
+          },
+          "snowboard": {
+            "adults": "$40",
+            "youth": "$40"
+          },
+          "items": {}
+        },
+        "resortId": "adanac-ski-hill",
+        "sourceUrl": "https://www.greatersudbury.ca/play/ski-hills/adanac-ski-hill/",
+        "updatedAt": 1789698974110
+      }
+    },
+    {
+      "table": "weatherAndStatus",
+      "content": {
+        "lifts": [
+          {
+            "name": "New Quad",
+            "status": "closed"
+          }
+        ],
+        "tracks": [],
+        "terrainParks": [],
+        "resortId": "adanac-ski-hill",
+        "sourceUrl": "https://www.greatersudbury.ca/play/ski-hills/adanac-ski-hill/",
+        "updatedAt": 1789698976056
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "rates": {
+    "day-week": {
+      "adults": "$50"
+    },
+    "day-weekend": {
+      "adults": "$50"
+    }
+  },
+  "resortId": "adanac-ski-hill",
+  "sourceUrl": "https://www.greatersudbury.ca/play/ski-hills/adanac-ski-hill/",
+  "updatedAt": 1789698974064
+}
