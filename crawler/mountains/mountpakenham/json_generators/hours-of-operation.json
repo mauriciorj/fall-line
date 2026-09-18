@@ -1,0 +1,14 @@
+{
+  "hours": {
+    "sunday": "9:00am to 5:00pm",
+    "monday": "9:00am to 5:00pm",
+    "tuesday": "9:00am to 5:00pm",
+    "wednesday": "9:00am to 5:00pm",
+    "thursday": "9:00am to 5:00pm",
+    "friday": "9:00am to 9:00pm",
+    "saturday": "9:00am to 9:00pm"
+  },
+  "resortId": "mount-pakenham",
+  "sourceUrl": "https://shop.mountpakenham.com/",
+  "updatedAt": 1789696248774
+}

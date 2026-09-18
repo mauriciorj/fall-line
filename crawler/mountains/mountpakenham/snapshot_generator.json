@@ -1,0 +1,202 @@
+{
+  "resortId": "mount-pakenham",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "address": "577 Ski Hill Road, Pakenham, ON K0A 2X0",
+        "continent": "North America",
+        "country": "Canada",
+        "email": "ski@mountpakenham.com",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": true,
+        "hasSnowshoeing": true,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(613) 624-5290",
+        "published": true,
+        "region": "Ontario",
+        "resortId": "mount-pakenham",
+        "ticketUrl": "https://shop.mountpakenham.com/",
+        "website": "https://mountpakenham.com/",
+        "name": "Mount Pakenham",
+        "tracksGreenLength": "2.7km",
+        "tracksGreenProportion": "47",
+        "tracksBlueLength": "1.6km",
+        "tracksBlueProportion": "28",
+        "tracksBlackLength": "1.4km",
+        "tracksBlackProportion": "25",
+        "tracksTotalLength": "5.7km",
+        "elevation": "137 m - 217 m",
+        "height": "80m",
+        "tracksSummary": {
+          "black": 2,
+          "blue": 3,
+          "doubleBlack": 0,
+          "freeStyle": 1,
+          "green": 6
+        },
+        "dayTicketPrice": 60
+      }
+    },
+    {
+      "table": "resortHours",
+      "content": {
+        "hours": {
+          "sunday": "9:00am to 5:00pm",
+          "monday": "9:00am to 5:00pm",
+          "tuesday": "9:00am to 5:00pm",
+          "wednesday": "9:00am to 5:00pm",
+          "thursday": "9:00am to 5:00pm",
+          "friday": "9:00am to 9:00pm",
+          "saturday": "9:00am to 9:00pm"
+        },
+        "resortId": "mount-pakenham",
+        "sourceUrl": "https://shop.mountpakenham.com/",
+        "updatedAt": 1789696248774
+      }
+    },
+    {
+      "table": "resortRates",
+      "content": {
+        "rates": {
+          "day-week": {
+            "adults": "$60"
+          },
+          "day-weekend": {
+            "adults": "$60"
+          },
+          "night-week": {
+            "adults": "$45"
+          },
+          "night-weekend": {
+            "adults": "$45"
+          }
+        },
+        "resortId": "mount-pakenham",
+        "sourceUrl": "https://shop.mountpakenham.com/",
+        "updatedAt": 1789696248840
+      }
+    },
+    {
+      "table": "resortRentals",
+      "content": {
+        "rentals": {
+          "ski": {
+            "adults": "$40",
+            "youth": "$40"
+          },
+          "snowboard": {
+            "adults": "$40",
+            "youth": "$40"
+          },
+          "items": {}
+        },
+        "resortId": "mount-pakenham",
+        "sourceUrl": "https://shop.mountpakenham.com/",
+        "updatedAt": 1789696248902
+      }
+    },
+    {
+      "table": "weatherAndStatus",
+      "content": {
+        "lifts": [
+          {
+            "name": "Main Lift",
+            "status": "closed"
+          },
+          {
+            "name": "Cameron Lift",
+            "status": "closed"
+          },
+          {
+            "name": "Pakenham Lift",
+            "status": "closed"
+          },
+          {
+            "name": "Carpet Lift",
+            "status": "closed"
+          },
+          {
+            "name": "Handle Tow",
+            "status": "closed"
+          },
+          {
+            "name": "Learning Carpet",
+            "status": "closed"
+          }
+        ],
+        "tracks": [
+          {
+            "name": "Beginner Centre",
+            "status": "closed",
+            "difficulty": "green"
+          },
+          {
+            "name": "The Loop",
+            "status": "closed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Wizard",
+            "status": "closed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Slowpoke",
+            "status": "closed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Exhibition",
+            "status": "closed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Clifford",
+            "status": "closed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Snowrider",
+            "status": "closed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Slalom",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Porcupine",
+            "status": "closed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Glades",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Snowshoe Trails",
+            "status": "closed",
+            "difficulty": "green"
+          }
+        ],
+        "terrainParks": [
+          {
+            "name": "Terrain Park",
+            "status": "closed",
+            "difficulty": "freeStyle"
+          }
+        ],
+        "resortId": "mount-pakenham",
+        "sourceUrl": "https://shop.mountpakenham.com/",
+        "updatedAt": 1789696251193
+      }
+    }
+  ]
+}

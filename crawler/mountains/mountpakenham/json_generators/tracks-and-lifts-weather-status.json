@@ -1,0 +1,95 @@
+{
+  "lifts": [
+    {
+      "name": "Main Lift",
+      "status": "closed"
+    },
+    {
+      "name": "Cameron Lift",
+      "status": "closed"
+    },
+    {
+      "name": "Pakenham Lift",
+      "status": "closed"
+    },
+    {
+      "name": "Carpet Lift",
+      "status": "closed"
+    },
+    {
+      "name": "Handle Tow",
+      "status": "closed"
+    },
+    {
+      "name": "Learning Carpet",
+      "status": "closed"
+    }
+  ],
+  "tracks": [
+    {
+      "name": "Beginner Centre",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "The Loop",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Wizard",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Slowpoke",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Exhibition",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Clifford",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Snowrider",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Slalom",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Porcupine",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Glades",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Snowshoe Trails",
+      "status": "closed",
+      "difficulty": "green"
+    }
+  ],
+  "terrainParks": [
+    {
+      "name": "Terrain Park",
+      "status": "closed",
+      "difficulty": "freeStyle"
+    }
+  ],
+  "resortId": "mount-pakenham",
+  "sourceUrl": "https://shop.mountpakenham.com/",
+  "updatedAt": 1789696251193
+}

@@ -1,0 +1,19 @@
+{
+  "rates": {
+    "day-week": {
+      "adults": "$60"
+    },
+    "day-weekend": {
+      "adults": "$60"
+    },
+    "night-week": {
+      "adults": "$45"
+    },
+    "night-weekend": {
+      "adults": "$45"
+    }
+  },
+  "resortId": "mount-pakenham",
+  "sourceUrl": "https://shop.mountpakenham.com/",
+  "updatedAt": 1789696248840
+}
