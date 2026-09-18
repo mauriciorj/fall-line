@@ -1,0 +1,21 @@
+{
+  "lifts": [
+    {
+      "name": "Stanislav Express",
+      "status": "closed"
+    },
+    {
+      "name": "Mount Baldy T-Bar",
+      "status": "closed"
+    },
+    {
+      "name": "Mount Baldy Magic Carpet",
+      "status": "closed"
+    }
+  ],
+  "tracks": [],
+  "terrainParks": [],
+  "resortId": "mount-baldy",
+  "sourceUrl": "https://www.skimountbaldy.ca/",
+  "updatedAt": 1789697242768
+}

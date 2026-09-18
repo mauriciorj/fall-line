@@ -1,0 +1,20 @@
+{
+  "address": "375 Mount Baldy Road, Shuniah, ON P7A 0W3",
+  "continent": "North America",
+  "country": "Canada",
+  "email": "info@skimountbaldy.ca",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": true,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(807) 683-8441",
+  "published": true,
+  "region": "Ontario",
+  "resortId": "mount-baldy",
+  "ticketUrl": "https://www.skimountbaldy.ca/tickets-and-passes",
+  "website": "https://www.skimountbaldy.ca/"
+}

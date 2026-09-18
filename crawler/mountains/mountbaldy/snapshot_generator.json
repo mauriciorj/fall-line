@@ -1,0 +1,122 @@
+{
+  "resortId": "mount-baldy",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "address": "375 Mount Baldy Road, Shuniah, ON P7A 0W3",
+        "continent": "North America",
+        "country": "Canada",
+        "email": "info@skimountbaldy.ca",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": true,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(807) 683-8441",
+        "published": true,
+        "region": "Ontario",
+        "resortId": "mount-baldy",
+        "ticketUrl": "https://www.skimountbaldy.ca/tickets-and-passes",
+        "website": "https://www.skimountbaldy.ca/",
+        "name": "Mount Baldy",
+        "tracksGreenLength": "2.3km",
+        "tracksGreenProportion": "36",
+        "tracksBlueLength": "1.8km",
+        "tracksBlueProportion": "28",
+        "tracksBlackLength": "2.3km",
+        "tracksBlackProportion": "36",
+        "tracksTotalLength": "6.4km",
+        "elevation": "345 m - 490 m",
+        "height": "145m",
+        "tracksSummary": {
+          "black": 0,
+          "blue": 0,
+          "doubleBlack": 0,
+          "freeStyle": 0,
+          "green": 0
+        },
+        "dayTicketPrice": 60
+      }
+    },
+    {
+      "table": "resortHours",
+      "content": {
+        "hours": {
+          "sunday": "10:00am to 5:00pm",
+          "monday": "10:00am to 5:00pm",
+          "tuesday": "10:00am to 5:00pm",
+          "wednesday": "10:00am to 5:00pm",
+          "thursday": "10:00am to 5:00pm",
+          "friday": "10:00am to 5:00pm",
+          "saturday": "10:00am to 5:00pm"
+        },
+        "resortId": "mount-baldy",
+        "sourceUrl": "https://www.skimountbaldy.ca/",
+        "updatedAt": 1789697240552
+      }
+    },
+    {
+      "table": "resortRates",
+      "content": {
+        "rates": {
+          "day-week": {
+            "adults": "$60"
+          },
+          "day-weekend": {
+            "adults": "$60"
+          }
+        },
+        "resortId": "mount-baldy",
+        "sourceUrl": "https://www.skimountbaldy.ca/",
+        "updatedAt": 1789697240612
+      }
+    },
+    {
+      "table": "resortRentals",
+      "content": {
+        "rentals": {
+          "ski": {
+            "adults": "$40",
+            "youth": "$40"
+          },
+          "snowboard": {
+            "adults": "$40",
+            "youth": "$40"
+          },
+          "items": {}
+        },
+        "resortId": "mount-baldy",
+        "sourceUrl": "https://www.skimountbaldy.ca/",
+        "updatedAt": 1789697240670
+      }
+    },
+    {
+      "table": "weatherAndStatus",
+      "content": {
+        "lifts": [
+          {
+            "name": "Stanislav Express",
+            "status": "closed"
+          },
+          {
+            "name": "Mount Baldy T-Bar",
+            "status": "closed"
+          },
+          {
+            "name": "Mount Baldy Magic Carpet",
+            "status": "closed"
+          }
+        ],
+        "tracks": [],
+        "terrainParks": [],
+        "resortId": "mount-baldy",
+        "sourceUrl": "https://www.skimountbaldy.ca/",
+        "updatedAt": 1789697242768
+      }
+    }
+  ]
+}
