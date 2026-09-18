@@ -1,0 +1,14 @@
+{
+  "hours": {
+    "sunday": "9:00am to 4:30pm",
+    "monday": "closed",
+    "tuesday": "9:30am to 4:00pm",
+    "wednesday": "9:30am to 4:00pm",
+    "thursday": "9:30am to 4:00pm",
+    "friday": "9:30am to 4:00pm",
+    "saturday": "9:00am to 4:30pm"
+  },
+  "resortId": "sir-sams",
+  "sourceUrl": "https://www.sirsams.ca/contact",
+  "updatedAt": 1789694917902
+}

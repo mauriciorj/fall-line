@@ -1,0 +1,140 @@
+{
+  "resortId": "sir-sams",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "address": "1054 Liswood Road, Eagle Lake, ON K0M 1M0",
+        "continent": "North America",
+        "country": "Canada",
+        "email": "info@sirsams.com",
+        "hasIceSkate": false,
+        "hasAccommodations": true,
+        "hasCrossCountry": false,
+        "hasLessons": true,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(705) 754-2298",
+        "published": true,
+        "region": "Ontario",
+        "resortId": "sir-sams",
+        "ticketUrl": "https://www.sirsams.ca/winter/lift-tickets",
+        "website": "https://www.sirsams.ca/",
+        "name": "Sir Sam's Ski/Ride",
+        "tracksGreenLength": "1.9km",
+        "tracksGreenProportion": "31",
+        "tracksBlueLength": "2.5km",
+        "tracksBlueProportion": "41",
+        "tracksBlackLength": "1.6km",
+        "tracksBlackProportion": "28",
+        "tracksTotalLength": "6km",
+        "elevation": "360 m - 447 m",
+        "height": "87m",
+        "tracksSummary": {
+          "black": 0,
+          "blue": 0,
+          "doubleBlack": 0,
+          "freeStyle": 0,
+          "green": 0
+        },
+        "dayTicketPrice": 70
+      }
+    },
+    {
+      "table": "resortHours",
+      "content": {
+        "hours": {
+          "sunday": "9:00am to 4:30pm",
+          "monday": "closed",
+          "tuesday": "9:30am to 4:00pm",
+          "wednesday": "9:30am to 4:00pm",
+          "thursday": "9:30am to 4:00pm",
+          "friday": "9:30am to 4:00pm",
+          "saturday": "9:00am to 4:30pm"
+        },
+        "resortId": "sir-sams",
+        "sourceUrl": "https://www.sirsams.ca/contact",
+        "updatedAt": 1789694917902
+      }
+    },
+    {
+      "table": "resortRates",
+      "content": {
+        "rates": {
+          "day-week": {
+            "adults": "$70",
+            "youth": "$58",
+            "seniors": "$62"
+          },
+          "day-weekend": {
+            "adults": "$89",
+            "youth": "$72",
+            "seniors": "$72"
+          }
+        },
+        "resortId": "sir-sams",
+        "sourceUrl": "https://www.sirsams.ca/winter/lift-tickets",
+        "updatedAt": 1789694917984
+      }
+    },
+    {
+      "table": "resortRentals",
+      "content": {
+        "rentals": {
+          "ski": {
+            "adults": "$64",
+            "youth": "$50"
+          },
+          "snowboard": {
+            "adults": "$64",
+            "youth": "$50"
+          },
+          "items": {
+            "skis": "$32",
+            "snowboard": "$32",
+            "boots": "$34",
+            "helmet": "$15",
+            "poles": "$15"
+          }
+        },
+        "resortId": "sir-sams",
+        "sourceUrl": "https://www.sirsams.ca/winter/rentals",
+        "updatedAt": 1789694918063
+      }
+    },
+    {
+      "table": "weatherAndStatus",
+      "content": {
+        "lifts": [
+          {
+            "name": "Main Street",
+            "status": "closed"
+          },
+          {
+            "name": "North Quad",
+            "status": "closed"
+          },
+          {
+            "name": "South Chair",
+            "status": "closed"
+          },
+          {
+            "name": "Handle Tow",
+            "status": "closed"
+          },
+          {
+            "name": "Eagle View Quad",
+            "status": "closed"
+          }
+        ],
+        "tracks": [],
+        "terrainParks": [],
+        "resortId": "sir-sams",
+        "sourceUrl": "https://www.sirsams.ca/resort-information",
+        "updatedAt": 1789694920881
+      }
+    }
+  ]
+}
