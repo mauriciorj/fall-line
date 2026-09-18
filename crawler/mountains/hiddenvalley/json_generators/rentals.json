@@ -1,0 +1,16 @@
+{
+  "rentals": {
+    "ski": {
+      "adults": "$40",
+      "youth": "$40"
+    },
+    "snowboard": {
+      "adults": "$40",
+      "youth": "$40"
+    },
+    "items": {}
+  },
+  "resortId": "hidden-valley-highlands",
+  "sourceUrl": "https://shop.skihiddenvalley.ca/rentals",
+  "updatedAt": 1789698188947
+}

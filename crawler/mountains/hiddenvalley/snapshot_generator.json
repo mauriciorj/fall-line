@@ -1,0 +1,132 @@
+{
+  "resortId": "hidden-valley-highlands",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "address": "1655 Hidden Valley Road, Huntsville, ON P1H 1A4",
+        "continent": "North America",
+        "country": "Canada",
+        "email": "info@skihiddenvalley.on.ca",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": true,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(705) 789-1773",
+        "published": true,
+        "region": "Ontario",
+        "resortId": "hidden-valley-highlands",
+        "ticketUrl": "https://shop.skihiddenvalley.ca/lift-passes",
+        "website": "https://skihiddenvalley.ca/",
+        "name": "Hidden Valley Highlands",
+        "tracksGreenLength": "1.8km",
+        "tracksGreenProportion": "60",
+        "tracksBlueLength": "0.7km",
+        "tracksBlueProportion": "23",
+        "tracksBlackLength": "0.5km",
+        "tracksBlackProportion": "17",
+        "tracksTotalLength": "3km",
+        "elevation": "280 m - 380 m",
+        "height": "100m",
+        "tracksSummary": {
+          "black": 0,
+          "blue": 0,
+          "doubleBlack": 0,
+          "freeStyle": 0,
+          "green": 0
+        },
+        "dayTicketPrice": 60
+      }
+    },
+    {
+      "table": "resortHours",
+      "content": {
+        "hours": {
+          "sunday": "9:00am to 4:00pm",
+          "monday": "closed",
+          "tuesday": "closed",
+          "wednesday": "9:00am to 4:00pm",
+          "thursday": "9:00am to 4:00pm",
+          "friday": "9:00am to 9:00pm",
+          "saturday": "9:00am to 9:00pm"
+        },
+        "resortId": "hidden-valley-highlands",
+        "sourceUrl": "https://skihiddenvalley.ca/explore/hours-of-operation/",
+        "updatedAt": 1789698188846
+      }
+    },
+    {
+      "table": "resortRates",
+      "content": {
+        "rates": {
+          "day-week": {
+            "adults": "$60"
+          },
+          "day-weekend": {
+            "adults": "$60"
+          },
+          "night-week": {
+            "adults": "$45"
+          },
+          "night-weekend": {
+            "adults": "$45"
+          }
+        },
+        "resortId": "hidden-valley-highlands",
+        "sourceUrl": "https://shop.skihiddenvalley.ca/lift-passes",
+        "updatedAt": 1789698188895
+      }
+    },
+    {
+      "table": "resortRentals",
+      "content": {
+        "rentals": {
+          "ski": {
+            "adults": "$40",
+            "youth": "$40"
+          },
+          "snowboard": {
+            "adults": "$40",
+            "youth": "$40"
+          },
+          "items": {}
+        },
+        "resortId": "hidden-valley-highlands",
+        "sourceUrl": "https://shop.skihiddenvalley.ca/rentals",
+        "updatedAt": 1789698188947
+      }
+    },
+    {
+      "table": "weatherAndStatus",
+      "content": {
+        "lifts": [
+          {
+            "name": "Main Chair",
+            "status": "closed"
+          },
+          {
+            "name": "North Chair",
+            "status": "closed"
+          },
+          {
+            "name": "South Chair",
+            "status": "closed"
+          },
+          {
+            "name": "Handle Tow",
+            "status": "closed"
+          }
+        ],
+        "tracks": [],
+        "terrainParks": [],
+        "resortId": "hidden-valley-highlands",
+        "sourceUrl": "https://skihiddenvalley.ca/",
+        "updatedAt": 1789698191106
+      }
+    }
+  ]
+}
