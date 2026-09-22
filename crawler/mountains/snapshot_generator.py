@@ -3,7 +3,7 @@ import sys
 from pathlib import Path
 
 MOUNTAINS_DIR = Path(__file__).resolve().parent
-SNAPSHOT_GENERATORS = tuple(sorted(MOUNTAINS_DIR.glob("*/snapshot_generator.py")))
+SNAPSHOT_GENERATORS = tuple(sorted(path for path in MOUNTAINS_DIR.rglob("snapshot_generator.py") if path.parent != MOUNTAINS_DIR))
 
 
 def run_snapshot_generator(script_path):

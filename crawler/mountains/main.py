@@ -7,7 +7,7 @@ from pathlib import Path
 MOUNTAINS_DIR = Path(__file__).resolve().parent
 CRAWLER_DIR = MOUNTAINS_DIR.parent
 FAILURE_LOG = CRAWLER_DIR / "crawler-errors.log"
-RESORT_MAIN_FILES = tuple(sorted(MOUNTAINS_DIR.glob("*/main.py")))
+RESORT_MAIN_FILES = tuple(sorted(path for path in MOUNTAINS_DIR.rglob("main.py") if path.parent != MOUNTAINS_DIR))
 
 
 def run_main(script_path):
