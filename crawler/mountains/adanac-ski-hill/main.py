@@ -1,20 +1,129 @@
-import json, subprocess, sys
+import json
+import subprocess
+import sys
 from pathlib import Path
-D=Path(__file__).parent; C=D.parents[1]; G=D/"snapshot_generator.py"; F=D/"snapshot_generator.json"
-TABLES=("resorts","resortHours","resortRates","resortRentals","weatherAndStatus"); META={"resortId","sourceUrl","updatedAt"}; REQUIRED=("elevation","height","tracksGreenLength","tracksGreenProportion","tracksBlueLength","tracksBlueProportion","tracksBlackLength","tracksBlackProportion","tracksTotalLength")
-sys.path.insert(0,str(C))
-from convex_client import push_resort_hours,push_resort_rates,push_resort_rentals,push_ski_resorts,push_weather_and_status
-def get_contents(s):
-    c={x["table"]:x["content"] for x in s["tables"]}; missing=set(TABLES)-c.keys()
-    if missing or c.keys()-set(TABLES): raise ValueError(f"Invalid snapshot tables: {sorted(missing)}")
-    return c
+
+ADANAC_DIR = Path(__file__).resolve().parent
+CRAWLER_DIR = ADANAC_DIR.parents[1]
+SNAPSHOT_GENERATOR = ADANAC_DIR / "snapshot_generator.py"
+SNAPSHOT_FILE = ADANAC_DIR / "snapshot_generator.json"
+TABLE_NAMES = ("resorts", "resortHours", "resortRates", "resortRentals", "weatherAndStatus")
+METADATA_FIELDS = {"resortId", "sourceUrl", "updatedAt"}
+RESORT_INFO_FIELDS = (
+    "hasIceSkate", "elevation", "height", "tracksGreenLength", "tracksGreenProportion",
+    "tracksBlueLength", "tracksBlueProportion", "tracksBlackLength",
+    "tracksBlackProportion", "tracksTotalLength",
+)
+
+sys.path.insert(0, str(CRAWLER_DIR))
+from convex_client import (
+    push_resort_hours,
+    push_resort_rates,
+    push_resort_rentals,
+    push_ski_resorts,
+    push_weather_and_status,
+)
+
+
+def run_snapshot_generator():
+    subprocess.run([sys.executable, str(SNAPSHOT_GENERATOR)], cwd=ADANAC_DIR, check=True)
+
+
+def load_snapshot():
+    with SNAPSHOT_FILE.open("r", encoding="utf-8") as source:
+        return json.load(source)
+
+
+def get_table_contents(snapshot):
+    tables = snapshot.get("tables")
+    if not isinstance(tables, list):
+        raise ValueError("Snapshot tables must be a list")
+    contents = {}
+    for table in tables:
+        name = table.get("table")
+        if name in contents:
+            raise ValueError(f"Duplicate table in snapshot: {name}")
+        content = table.get("content")
+        if not isinstance(content, dict):
+            raise ValueError(f"Table content must be an object: {name}")
+        contents[name] = content
+    missing = set(TABLE_NAMES) - contents.keys()
+    unexpected = contents.keys() - set(TABLE_NAMES)
+    if missing or unexpected:
+        raise ValueError(f"Invalid snapshot tables; missing={sorted(missing)}, unexpected={sorted(unexpected)}")
+    return contents
+
+
+def require_metadata(content, table_name):
+    missing = METADATA_FIELDS - content.keys()
+    if missing:
+        raise ValueError(f"Missing metadata in {table_name}: {sorted(missing)}")
+    return content["resortId"], content["sourceUrl"], content["updatedAt"]
+
+
+def normalize_weather_data(weather):
+    normalized = {
+        key: value for key, value in weather.items()
+        if key not in METADATA_FIELDS and key != "tracks"
+    }
+    normalized["trails"] = weather.get("tracks", [])
+    return normalized
+
+
+def push_snapshot(snapshot):
+    contents = get_table_contents(snapshot)
+    resort_id = contents["resorts"].get("resortId")
+    if not isinstance(resort_id, str) or not resort_id:
+        raise ValueError("Missing resortId in resorts")
+    if snapshot.get("resortId") != resort_id:
+        raise ValueError(f"Snapshot resort ID mismatch: {snapshot.get('resortId')} != {resort_id}")
+
+    missing_resort_info = [
+        field for field in RESORT_INFO_FIELDS
+        if contents["resorts"].get(field) in (None, "")
+    ]
+    if missing_resort_info:
+        raise ValueError(f"Missing ski resort information: {sorted(missing_resort_info)}")
+
+    metadata = {
+        name: require_metadata(contents[name], name)
+        for name in TABLE_NAMES[1:]
+    }
+    for name, (table_resort_id, _, _) in metadata.items():
+        if table_resort_id != resort_id:
+            raise ValueError(f"Resort ID mismatch in {name}: {table_resort_id} != {resort_id}")
+
+    hours = contents["resortHours"]
+    rates = contents["resortRates"]
+    rentals = contents["resortRentals"]
+    weather = contents["weatherAndStatus"]
+    hours_id, hours_url, hours_time = metadata["resortHours"]
+    rates_id, rates_url, rates_time = metadata["resortRates"]
+    rentals_id, rentals_url, rentals_time = metadata["resortRentals"]
+    weather_id, weather_url, weather_time = metadata["weatherAndStatus"]
+
+    hours_data = hours["hours"]
+    if isinstance(hours_data, dict):
+        hours_data = [{
+            "name": "Hours of operation",
+            "hours": [{"day": day, "time": time} for day, time in hours_data.items()],
+        }]
+
+    return {
+        "resorts": push_ski_resorts([contents["resorts"]]),
+        "resortHours": push_resort_hours(hours_id, hours_url, hours_data, updated_at_ms=hours_time),
+        "resortRates": push_resort_rates(rates_id, rates_url, rates["rates"], updated_at_ms=rates_time),
+        "resortRentals": push_resort_rentals(rentals_id, rentals_url, rentals["rentals"], updated_at_ms=rentals_time),
+        "weatherAndStatus": push_weather_and_status(
+            weather_id, weather_url, normalize_weather_data(weather), updated_at_ms=weather_time
+        ),
+    }
+
+
 def main():
-    subprocess.run([sys.executable,str(G)],cwd=D,check=True); s=json.load(F.open(encoding="utf-8")); c=get_contents(s); r=c["resorts"]
-    if s.get("resortId")!=r.get("resortId"): raise ValueError("Snapshot resort ID mismatch")
-    if any(r.get(x) in (None,"") for x in REQUIRED): raise ValueError("Missing ski resort information")
-    m={k:(c[k]["resortId"],c[k]["sourceUrl"],c[k]["updatedAt"]) for k in TABLES[1:]}
-    if any(v[0]!=r["resortId"] for v in m.values()): raise ValueError("Table resort ID mismatch")
-    h=c["resortHours"]["hours"]; h=[{"name":"Hours of operation","hours":[{"day":d,"time":t} for d,t in h.items()]}] if isinstance(h,dict) else h
-    w={k:v for k,v in c["weatherAndStatus"].items() if k not in META}; w["trails"]=w.pop("tracks",[])
-    return {"resorts":push_ski_resorts([r]),"resortHours":push_resort_hours(*m["resortHours"][:2],h,updated_at_ms=m["resortHours"][2]),"resortRates":push_resort_rates(*m["resortRates"][:2],c["resortRates"]["rates"],updated_at_ms=m["resortRates"][2]),"resortRentals":push_resort_rentals(*m["resortRentals"][:2],c["resortRentals"]["rentals"],updated_at_ms=m["resortRentals"][2]),"weatherAndStatus":push_weather_and_status(m["weatherAndStatus"][0],m["weatherAndStatus"][1],w,updated_at_ms=m["weatherAndStatus"][2])}
-if __name__=="__main__":main()
+    run_snapshot_generator()
+    return push_snapshot(load_snapshot())
+
+
+if __name__ == "__main__":
+    main()

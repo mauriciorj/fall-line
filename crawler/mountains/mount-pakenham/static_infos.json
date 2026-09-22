@@ -1,0 +1,22 @@
+{
+  "address": "577 Ski Hill Road, Pakenham, ON K0A 2X0",
+  "continent": "North America",
+  "coordinates": { "lat": 45.324800383587935, "lng": -76.33000576755973 },
+  "country": "Canada",
+  "email": "ski@mountpakenham.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/DvQvuVLbhes7noEEA",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": true,
+  "hasSnowshoeing": true,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(613) 624-5290",
+  "published": true,
+  "region": "Ontario",
+  "resortId": "mount-pakenham",
+  "ticketUrl": "https://shop.mountpakenham.com/",
+  "website": "https://mountpakenham.com/"
+}

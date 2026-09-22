@@ -1,0 +1,128 @@
+{
+  "lifts": [
+    {
+      "name": "Skyway",
+      "status": "closed"
+    },
+    {
+      "name": "Downhill",
+      "status": "closed"
+    }
+  ],
+  "tracks": [
+    {
+      "name": "Rick's Ecko",
+      "difficulty": "green",
+      "status": "closed"
+    },
+    {
+      "name": "The Boardwalk",
+      "difficulty": "green",
+      "status": "closed"
+    },
+    {
+      "name": "Kreiners Run",
+      "difficulty": "blue",
+      "status": "closed"
+    },
+    {
+      "name": "Dap Chute",
+      "difficulty": "black",
+      "status": "closed"
+    },
+    {
+      "name": "Booby Trap",
+      "difficulty": "blue",
+      "status": "closed"
+    },
+    {
+      "name": "Kidd Creek Cascade",
+      "difficulty": "doubleBlack",
+      "status": "closed"
+    },
+    {
+      "name": "The Arm",
+      "difficulty": "black",
+      "status": "closed"
+    },
+    {
+      "name": "Sissy Schusse",
+      "difficulty": "green",
+      "status": "closed"
+    },
+    {
+      "name": "Bunny Patch",
+      "difficulty": "green",
+      "status": "closed"
+    },
+    {
+      "name": "The Chalet",
+      "difficulty": "blue",
+      "status": "closed"
+    },
+    {
+      "name": "The Cat Track",
+      "difficulty": "green",
+      "status": "closed"
+    },
+    {
+      "name": "The Fanny",
+      "difficulty": "blue",
+      "status": "closed"
+    },
+    {
+      "name": "Upper Jules",
+      "difficulty": "black",
+      "status": "closed"
+    },
+    {
+      "name": "The Downhill",
+      "difficulty": "black",
+      "status": "closed"
+    },
+    {
+      "name": "The Eagles",
+      "difficulty": "doubleBlack",
+      "status": "closed"
+    },
+    {
+      "name": "The Jubilee",
+      "difficulty": "black",
+      "status": "closed"
+    },
+    {
+      "name": "Jamieson Drift",
+      "difficulty": "black",
+      "status": "closed"
+    },
+    {
+      "name": "The Stope",
+      "difficulty": "black",
+      "status": "closed"
+    },
+    {
+      "name": "The Goats Path",
+      "difficulty": "doubleBlack",
+      "status": "closed"
+    },
+    {
+      "name": "The 401",
+      "difficulty": "blue",
+      "status": "closed"
+    },
+    {
+      "name": "Lower Jules",
+      "difficulty": "blue",
+      "status": "closed"
+    },
+    {
+      "name": "The Trench",
+      "difficulty": "black",
+      "status": "closed"
+    }
+  ],
+  "terrainParks": [],
+  "resortId": "mount-jamieson",
+  "sourceUrl": "https://www.mountjamieson.ca/trail-map-conditions",
+  "updatedAt": 1790015824943
+}

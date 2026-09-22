@@ -1,0 +1,14 @@
+{
+  "hours": {
+    "sunday": "9:00am to 4:00pm",
+    "monday": "9:00am to 4:00pm",
+    "tuesday": "9:00am to 4:00pm",
+    "wednesday": "9:00am to 4:00pm",
+    "thursday": "9:00am to 4:00pm",
+    "friday": "9:00am to 4:00pm",
+    "saturday": "9:00am to 4:00pm"
+  },
+  "resortId": "calabogie-peaks",
+  "sourceUrl": "https://calabogie.com/",
+  "updatedAt": 1789764062529
+}

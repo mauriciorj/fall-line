@@ -1,0 +1,107 @@
+{
+  "lifts": [
+    {
+      "name": "Columbia Sportswear Titanium Express",
+      "status": "closed"
+    },
+    {
+      "name": "London International Airport Chair",
+      "status": "closed"
+    },
+    {
+      "name": "Oxford Dodge Chair",
+      "status": "closed"
+    },
+    {
+      "name": "Willie's Magic Carpet",
+      "status": "closed"
+    }
+  ],
+  "tracks": [
+    {
+      "name": "Apple Jack",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Big dip",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Dedication",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Double Dip",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Easy Street",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Elbow",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Hill 55",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "JS",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Kennedy Kruzer",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Red's Run",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Rub-A-Dub",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Rusty's Run",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Spriet Street",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Wayne's Way",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Willy's Bowl",
+      "status": "closed",
+      "difficulty": "green"
+    }
+  ],
+  "terrainParks": [
+    {
+      "name": "Terrain Park",
+      "status": "closed",
+      "difficulty": "freeStyle"
+    }
+  ],
+  "resortId": "boler-mountain",
+  "sourceUrl": "https://www.bolermountain.com/trailmap-2/",
+  "updatedAt": 1789754112128
+}

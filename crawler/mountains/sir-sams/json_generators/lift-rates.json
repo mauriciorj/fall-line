@@ -1,0 +1,17 @@
+{
+  "rates": {
+    "day-week": {
+      "adults": "$61",
+      "youth": "$49",
+      "seniors": "$49"
+    },
+    "day-weekend": {
+      "adults": "$79",
+      "youth": "$63",
+      "seniors": "$63"
+    }
+  },
+  "resortId": "sir-sams",
+  "sourceUrl": "https://www.sirsams.ca/winter/lift-tickets",
+  "updatedAt": 1790107971859
+}

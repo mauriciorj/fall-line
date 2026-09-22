@@ -1,0 +1,14 @@
+{
+  "hours": {
+    "sunday": "9am to 4pm",
+    "monday": "closed",
+    "tuesday": "closed",
+    "wednesday": "closed",
+    "thursday": "closed",
+    "friday": "12pm to 9pm",
+    "saturday": "9am to 4pm"
+  },
+  "resortId": "laurentian-ski-hill-north-bay",
+  "sourceUrl": "https://laurentianskihill.com/hours/",
+  "updatedAt": 1789769455376
+}

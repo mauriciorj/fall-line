@@ -2,12 +2,48 @@
   "lifts": [
     {
       "name": "New Quad",
-      "status": "closed"
+      "status": "not informed"
     }
   ],
-  "tracks": [],
+  "tracks": [
+    {
+      "name": "Easy Rider",
+      "difficulty": "green",
+      "status": "not informed"
+    },
+    {
+      "name": "Ellis Hazen",
+      "difficulty": "blue",
+      "status": "not informed"
+    },
+    {
+      "name": "Glades",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "name": "Friendly Giant",
+      "difficulty": "blue",
+      "status": "not informed"
+    },
+    {
+      "name": "Inco",
+      "difficulty": "blue",
+      "status": "not informed"
+    },
+    {
+      "name": "Beginner Area",
+      "difficulty": "green",
+      "status": "not informed"
+    },
+    {
+      "name": "Double Trouble",
+      "difficulty": "black",
+      "status": "not informed"
+    }
+  ],
   "terrainParks": [],
   "resortId": "adanac-ski-hill",
   "sourceUrl": "https://www.greatersudbury.ca/play/ski-hills/adanac-ski-hill/",
-  "updatedAt": 1789698976056
+  "updatedAt": 1789745281085
 }

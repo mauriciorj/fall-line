@@ -3,7 +3,13 @@
   "tables": [
     {
       "table": "resorts",
-      "missingColumns": []
+      "missingColumns": [
+        "lessonsPrice",
+        "skiRentalPrice",
+        "snowBoardRentalPrice",
+        "tollFree",
+        "tubbingPrice"
+      ]
     },
     {
       "table": "resortHours",
@@ -22,5 +28,5 @@
       "missingColumns": []
     }
   ],
-  "missingColumnCount": 0
+  "missingColumnCount": 5
 }

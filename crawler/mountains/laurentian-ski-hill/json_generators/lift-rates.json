@@ -1,0 +1,17 @@
+{
+  "rates": {
+    "day-week": {
+      "youth": "$50",
+      "adults": "$61",
+      "seniors": "$61"
+    },
+    "day-weekend": {
+      "youth": "$50",
+      "adults": "$61",
+      "seniors": "$61"
+    }
+  },
+  "resortId": "laurentian-ski-hill-north-bay",
+  "sourceUrl": "https://laurentianskihill.com/rates/lift-tickets/",
+  "updatedAt": 1789769456382
+}

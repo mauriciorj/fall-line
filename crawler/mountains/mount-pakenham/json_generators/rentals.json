@@ -1,0 +1,20 @@
+{
+  "rentals": {
+    "ski": {
+      "adults": "$38",
+      "youth": "$38"
+    },
+    "snowboard": {
+      "adults": "$38",
+      "youth": "$38"
+    },
+    "items": {
+      "poles": "$10",
+      "helmet": "$14",
+      "snowshoes": "$22"
+    }
+  },
+  "resortId": "mount-pakenham",
+  "sourceUrl": "https://shop.mountpakenham.com/pages/equipment-rental",
+  "updatedAt": 1790018205185
+}

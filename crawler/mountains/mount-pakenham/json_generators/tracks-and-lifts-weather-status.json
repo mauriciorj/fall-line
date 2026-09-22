@@ -1,0 +1,155 @@
+{
+  "lifts": [
+    {
+      "name": "Main Lift",
+      "status": "closed"
+    },
+    {
+      "name": "Cameron Lift",
+      "status": "closed"
+    },
+    {
+      "name": "Pakenham Lift",
+      "status": "closed"
+    },
+    {
+      "name": "Carpet Lift",
+      "status": "closed"
+    },
+    {
+      "name": "Handle Tow",
+      "status": "closed"
+    },
+    {
+      "name": "Learning Carpet",
+      "status": "closed"
+    }
+  ],
+  "tracks": [
+    {
+      "name": "The Loop",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Lower Slowpoke",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Middle Slowpoke",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Upper Slowpoke",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Frank's Run",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Crossover",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Wizard",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Lower Exhibition",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Clifford",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Snow Rider",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Slalom",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Upper Exhibition",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Porcupine",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Lower Porcupine",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Angel's Kiss Glades",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Devil's Challenge Glades",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Gauntlet Glades",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Fox Trot Glades",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Bear Paw Glades",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Crossover Glades",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Deer Run Glades",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Bark'n'Bite Glades",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Forbidden Forest Glades",
+      "status": "closed",
+      "difficulty": "black"
+    }
+  ],
+  "terrainParks": [
+    {
+      "name": "Terrain Park",
+      "status": "closed",
+      "difficulty": "freeStyle"
+    }
+  ],
+  "resortId": "mount-pakenham",
+  "sourceUrl": "https://shop.mountpakenham.com/",
+  "updatedAt": 1790019054245
+}

@@ -1,19 +1,23 @@
 {
-  "address": "231 First Avenue, Lively, ON P3Y 1K6",
+  "address": "231 1st Ave, Lively, ON P3Y 1M2",
   "continent": "North America",
+  "coordinates": { "lat": 46.43295756037137, "lng": -81.14311116176326 },
   "country": "Canada",
+  "email": "311@greatersudbury.ca",
+  "googleMapsUrl": "https://maps.app.goo.gl/8U6Rn7Ss1obPRXG17",
   "hasIceSkate": false,
   "hasAccommodations": false,
   "hasCrossCountry": false,
-  "hasLessons": true,
+  "hasLessons": false,
   "hasSnowshoeing": false,
   "hasSpa": false,
   "hasTubing": false,
   "hasZipline": false,
-  "phone": "(705) 692-5030",
+  "phone": "(705) 671-2489",
   "published": true,
+  "rating": 4.3,
   "region": "Ontario",
   "resortId": "lively-ski-hill",
-  "ticketUrl": "https://www.greatersudbury.ca/play/ski-hills/lively-ski-hill/",
-  "website": "https://www.greatersudbury.ca/"
+  "ticketUrl": "https://www.greatersudbury.ca/play/ski-hills/lively-ski-hill/#tab3",
+  "website": "https://www.greatersudbury.ca/play/ski-hills/lively-ski-hill"
 }

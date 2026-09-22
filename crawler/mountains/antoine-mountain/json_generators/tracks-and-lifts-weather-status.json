@@ -1,0 +1,84 @@
+{
+  "lifts": [],
+  "tracks": [
+    {
+      "name": "Voyageur",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Look Out",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Static",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Nice 'n' Easy",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Portage",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Handle Tow",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Mattawa",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Ottawa",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Dambuster",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Laurentian",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Bowl",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Kate Pace",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Chute",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Cliffhanger",
+      "status": "closed",
+      "difficulty": "doubleBlack"
+    },
+    {
+      "name": "Spillway",
+      "status": "closed",
+      "difficulty": "doubleBlack"
+    }
+  ],
+  "terrainParks": [],
+  "resortId": "antoine-mountain",
+  "sourceUrl": "https://antoinemountain.ca/pages/trail-conditions",
+  "updatedAt": 1789757885934
+}

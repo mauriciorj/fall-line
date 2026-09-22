@@ -9,7 +9,12 @@ SNAPSHOT_GENERATOR = SEARCHMONT_DIR / "snapshot_generator.py"
 SNAPSHOT_FILE = SEARCHMONT_DIR / "snapshot_generator.json"
 TABLE_NAMES = ("resorts", "resortHours", "resortRates", "resortRentals", "weatherAndStatus")
 METADATA_FIELDS = {"resortId", "sourceUrl", "updatedAt"}
-RESORT_INFO_FIELDS = ("hasIceSkate", "elevation", "height", "tracksGreenLength", "tracksGreenProportion", "tracksBlueLength", "tracksBlueProportion", "tracksBlackLength", "tracksBlackProportion", "tracksTotalLength")
+RESORT_INFO_FIELDS = (
+    "hasIceSkate",
+    "elevation", "height", "tracksGreenLength", "tracksGreenProportion",
+    "tracksBlueLength", "tracksBlueProportion", "tracksBlackLength",
+    "tracksBlackProportion", "tracksTotalLength",
+)
 
 sys.path.insert(0, str(CRAWLER_DIR))
 from convex_client import push_resort_hours, push_resort_rates, push_resort_rentals, push_ski_resorts, push_weather_and_status
@@ -52,9 +57,10 @@ def require_metadata(content, table_name):
 
 
 def normalize_weather_data(weather):
-    normalized = {key: value for key, value in weather.items() if key not in METADATA_FIELDS and key != "tracks"}
-    normalized["trails"] = weather.get("tracks", [])
-    return normalized
+    weather_data = {key: value for key, value in weather.items() if key not in METADATA_FIELDS}
+    if "tracks" in weather_data:
+        weather_data["trails"] = weather_data.pop("tracks")
+    return weather_data
 
 
 def push_snapshot(snapshot):
@@ -62,24 +68,29 @@ def push_snapshot(snapshot):
     resort_id = contents["resorts"].get("resortId")
     if not isinstance(resort_id, str) or not resort_id or snapshot.get("resortId") != resort_id:
         raise ValueError("Snapshot resort ID mismatch")
-    missing = [field for field in RESORT_INFO_FIELDS if contents["resorts"].get(field) in (None, "")]
-    if missing:
-        raise ValueError(f"Missing ski resort information: {sorted(missing)}")
+    missing_resort_info = [
+        field for field in RESORT_INFO_FIELDS
+        if contents["resorts"].get(field) in (None, "")
+    ]
+    if missing_resort_info:
+        raise ValueError(f"Missing ski resort information: {sorted(missing_resort_info)}")
     metadata = {name: require_metadata(contents[name], name) for name in TABLE_NAMES[1:]}
     for name, (table_resort_id, _, _) in metadata.items():
         if table_resort_id != resort_id:
             raise ValueError(f"Resort ID mismatch in {name}: {table_resort_id} != {resort_id}")
-    hours = contents["resortHours"]
-    rates = contents["resortRates"]
-    rentals = contents["resortRentals"]
-    weather = contents["weatherAndStatus"]
+    hours, rates, rentals, weather = (contents[name] for name in TABLE_NAMES[1:])
     hours_id, hours_url, hours_time = metadata["resortHours"]
     rates_id, rates_url, rates_time = metadata["resortRates"]
     rentals_id, rentals_url, rentals_time = metadata["resortRentals"]
     weather_id, weather_url, weather_time = metadata["weatherAndStatus"]
     hours_data = hours["hours"]
     if isinstance(hours_data, dict):
-        hours_data = [{"name": "Hours of operation", "hours": [{"day": day, "time": time} for day, time in hours_data.items()]}]
+        hours_data = [
+            {
+                "name": "Hours of operation",
+                "hours": [{"day": day, "time": time} for day, time in hours_data.items()],
+            }
+        ]
     return {
         "resorts": push_ski_resorts([contents["resorts"]]),
         "resortHours": push_resort_hours(hours_id, hours_url, hours_data, updated_at_ms=hours_time),

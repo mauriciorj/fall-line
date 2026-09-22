@@ -1,0 +1,22 @@
+{
+  "rentals": {
+    "ski": {
+      "adults": "$57",
+      "youth": "$57"
+    },
+    "snowboard": {
+      "adults": "$57",
+      "youth": "$57"
+    },
+    "items": {
+      "skis": "$27",
+      "snowboard": "$27",
+      "boots": "$29",
+      "helmet": "$12",
+      "poles": "$12"
+    }
+  },
+  "resortId": "sir-sams",
+  "sourceUrl": "https://www.sirsams.ca/winter/rentals",
+  "updatedAt": 1790108389478
+}

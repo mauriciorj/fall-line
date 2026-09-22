@@ -6,20 +6,41 @@ from pathlib import Path
 
 RESORT_ID = "searchmont"
 RESORT_NAME = "Searchmont Ski Resort"
-SKI_RESORT_FIELDS = {
-    "tracks-green-length": "tracksGreenLength", "tracks-green-proportion": "tracksGreenProportion",
-    "tracks-blue-length": "tracksBlueLength", "tracks-blue-proportion": "tracksBlueProportion",
-    "tracks-black-length": "tracksBlackLength", "tracks-black-proportion": "tracksBlackProportion",
-    "tracks-total-length": "tracksTotalLength",
-}
 TABLE_COLUMNS = {
-    "resorts": ["resortId", "published", "name", "continent", "country", "region", "website", "address", "email", "hasIceSkate", "hasAccommodations", "hasCrossCountry", "hasLessons", "hasSnowshoeing", "hasSpa", "hasTubing", "hasZipline", "dayTicketPrice", "phone", "tracksSummary", "elevation", "height", "tracksGreenLength", "tracksGreenProportion", "tracksBlueLength", "tracksBlueProportion", "tracksBlackLength", "tracksBlackProportion", "tracksTotalLength", "ticketUrl"],
+    "resorts": [
+        "resortId", "published", "name", "continent", "country", "region", "website", "address",
+        "coordinates", "dayTicketPrice", "email", "googleMapsUrl", "hasIceSkate", "hasAccommodations",
+        "hasCrossCountry", "hasLessons", "hasSnowshoeing", "hasSpa", "hasTubing", "hasZipline",
+        "lessonsPrice", "phone", "rating", "skiRentalPrice", "snowBoardRentalPrice", "tracksSummary",
+        "elevation", "height", "tracksGreenLength", "tracksGreenProportion", "tracksBlueLength",
+        "tracksBlueProportion", "tracksBlackLength", "tracksBlackProportion", "tracksTotalLength",
+        "ticketUrl", "tollFree", "tubbingPrice",
+    ],
     "resortHours": ["resortId", "sourceUrl", "updatedAt", "hours"],
     "resortRates": ["resortId", "sourceUrl", "updatedAt", "rates"],
     "resortRentals": ["resortId", "sourceUrl", "updatedAt", "rentals"],
     "weatherAndStatus": ["resortId", "sourceUrl", "updatedAt", "lifts", "tracks", "terrainParks"],
 }
-DIFFICULTY_FIELDS = {"black": "black", "blue": "blue", "doubleblack": "doubleBlack", "freestyle": "freeStyle", "green": "green"}
+SKI_RESORT_FIELDS = {
+    "elevation": "elevation",
+    "height": "height",
+    "tracks-green-length": "tracksGreenLength",
+    "tracks-green-proportion": "tracksGreenProportion",
+    "tracks-blue-length": "tracksBlueLength",
+    "tracks-blue-proportion": "tracksBlueProportion",
+    "tracks-black-length": "tracksBlackLength",
+    "tracks-black-proportion": "tracksBlackProportion",
+    "tracks-total-length": "tracksTotalLength",
+}
+DIFFICULTY_FIELDS = {
+    "black": "black",
+    "blue": "blue",
+    "doubleblack": "doubleBlack",
+    "double black": "doubleBlack",
+    "freestyle": "freeStyle",
+    "free style": "freeStyle",
+    "green": "green",
+}
 
 
 def load_json(path):
@@ -28,7 +49,9 @@ def load_json(path):
 
 
 def parse_price(value):
-    match = re.search(r"\d[\d,.]*", str(value or ""))
+    if value in (None, ""):
+        return None
+    match = re.search(r"\d[\d,.]*", str(value))
     if not match:
         return None
     amount = float(match.group().replace(",", ""))
@@ -44,23 +67,38 @@ def build_tracks_summary(weather):
     return summary
 
 
-def build_resort(static_info, rates, weather, ski_resort_info):
-    resort = {**static_info, "resortId": RESORT_ID, "name": RESORT_NAME}
-    for source, target in SKI_RESORT_FIELDS.items():
-        if ski_resort_info.get(source) not in (None, ""):
-            resort[target] = ski_resort_info[source]
-    resort["elevation"] = ski_resort_info.get("elevation")
-    resort["height"] = ski_resort_info.get("height")
+def get_rate_price(rates):
+    return parse_price(rates.get("rates", {}).get("day-week", {}).get("adults"))
+
+
+def get_rental_price(rentals):
+    return parse_price(rentals.get("rentals", {}).get("ski", {}).get("adults"))
+
+
+def build_resort(static_info, rates, rentals, weather, ski_resort_info=None):
+    resort = dict(static_info)
+    resort["resortId"] = RESORT_ID
+    resort["name"] = RESORT_NAME
+    for source_field, resort_field in SKI_RESORT_FIELDS.items():
+        value = (ski_resort_info or {}).get(source_field)
+        if value not in (None, ""):
+            resort[resort_field] = value
+    resort["hasAccommodations"] = bool(static_info.get("resort_accommodations"))
     resort["tracksSummary"] = build_tracks_summary(weather)
-    price = parse_price(rates.get("rates", {}).get("day-week", {}).get("adults"))
-    if price is not None:
-        resort["dayTicketPrice"] = price
+    day_price = get_rate_price(rates)
+    rental_price = get_rental_price(rentals)
+    if day_price is not None:
+        resort["dayTicketPrice"] = day_price
+    if rental_price is not None:
+        resort["skiRentalPrice"] = rental_price
+        resort["snowBoardRentalPrice"] = rental_price
     return resort
 
 
 def run_json_generators(directory):
-    for script in sorted((directory / "json_generators").glob("*.py")):
-        subprocess.run([sys.executable, str(script)], cwd=directory / "json_generators", check=True)
+    json_generators = directory / "json_generators"
+    for script in sorted(json_generators.glob("*.py")):
+        subprocess.run([sys.executable, str(script)], cwd=json_generators, check=True)
 
 
 def build_snapshot(directory=None):
@@ -74,22 +112,28 @@ def build_snapshot(directory=None):
     ski_resort_info = load_json(generators / "skiresort.json")
     static_info = load_json(directory / "static_infos.json")
     return {"resortId": RESORT_ID, "tables": [
-        {"table": "resorts", "content": build_resort(static_info, rates, weather, ski_resort_info)},
-        {"table": "resortHours", "content": hours}, {"table": "resortRates", "content": rates},
-        {"table": "resortRentals", "content": rentals}, {"table": "weatherAndStatus", "content": weather},
+        {"table": "resorts", "content": build_resort(static_info, rates, rentals, weather, ski_resort_info)},
+        {"table": "resortHours", "content": hours},
+        {"table": "resortRates", "content": rates},
+        {"table": "resortRentals", "content": rentals},
+        {"table": "weatherAndStatus", "content": weather},
     ]}
+
+
+def has_value(content, column):
+    return content.get(column) not in (None, "", [], {})
 
 
 def generate_report(snapshot, directory=None):
     directory = Path(directory) if directory is not None else Path(__file__).resolve().parent
     tables = []
-    missing = 0
+    missing_count = 0
     for table in snapshot["tables"]:
-        table_name = table["table"]
-        missing_columns = [column for column in TABLE_COLUMNS[table_name] if table.get("content", {}).get(column) in (None, "", [], {})]
-        missing += len(missing_columns)
-        tables.append({"table": table_name, "missingColumns": missing_columns})
-    report = {"resortId": snapshot["resortId"], "tables": tables, "missingColumnCount": missing}
+        name = table["table"]
+        missing = [column for column in TABLE_COLUMNS[name] if not has_value(table.get("content", {}), column)]
+        missing_count += len(missing)
+        tables.append({"table": name, "missingColumns": missing})
+    report = {"resortId": snapshot["resortId"], "tables": tables, "missingColumnCount": missing_count}
     with (directory / "snapshot_generator_report.json").open("w", encoding="utf-8") as output:
         json.dump(report, output, indent=2, ensure_ascii=False)
     return report

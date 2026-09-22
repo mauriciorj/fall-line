@@ -1,0 +1,14 @@
+{
+  "hours": {
+    "sunday": "8:30 to 4:00",
+    "monday": "9:00 to 4:00",
+    "tuesday": "9:00 to 4:00",
+    "wednesday": "9:00 to 4:00",
+    "thursday": "9:00 to 4:00",
+    "friday": "9:00 to 4:00",
+    "saturday": "8:30 to 4:30"
+  },
+  "resortId": "devils-glen",
+  "sourceUrl": "https://www.devilsglen.com/About/Directions_Hours",
+  "updatedAt": 1789764746825
+}

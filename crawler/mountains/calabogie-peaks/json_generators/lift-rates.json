@@ -1,0 +1,17 @@
+{
+  "rates": {
+    "day-week": {
+      "youth": "$45",
+      "adults": "$62",
+      "seniors": "$55"
+    },
+    "day-weekend": {
+      "youth": "$45",
+      "adults": "$62",
+      "seniors": "$55"
+    }
+  },
+  "resortId": "calabogie-peaks",
+  "sourceUrl": "https://calabogie.com/product/all-day-lift-tickets/",
+  "updatedAt": 1789764064405
+}

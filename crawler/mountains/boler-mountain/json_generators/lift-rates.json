@@ -1,0 +1,17 @@
+{
+  "rates": {
+    "day-week": {
+      "adults": "$58",
+      "youth": "$52",
+      "seniors": "$52"
+    },
+    "day-weekend": {
+      "adults": "$58",
+      "youth": "$52",
+      "seniors": "$52"
+    }
+  },
+  "resortId": "boler-mountain",
+  "sourceUrl": "https://www.bolermountain.com/day-tickets/",
+  "updatedAt": 1789753156546
+}

@@ -24,115 +24,143 @@
   "tracks": [
     {
       "name": "Binder Twine",
-      "status": "closed"
+      "status": "closed",
+      "difficulty": "blue"
     },
     {
       "name": "Champs",
-      "status": "closed"
+      "status": "closed",
+      "difficulty": "blue"
     },
     {
       "name": "Goulais",
-      "status": "closed"
+      "status": "closed",
+      "difficulty": "blue"
     },
     {
       "name": "Meadow Express",
-      "status": "closed"
+      "status": "closed",
+      "difficulty": "blue"
     },
     {
       "name": "Nan's Ski Askin",
-      "status": "closed"
+      "status": "closed",
+      "difficulty": "blue"
     },
     {
       "name": "Peggy's Promise",
-      "status": "closed"
+      "status": "closed",
+      "difficulty": "blue"
     },
     {
       "name": "Really Mealey",
-      "status": "closed"
+      "status": "closed",
+      "difficulty": "blue"
     },
     {
       "name": "Rocky Road",
-      "status": "closed"
+      "status": "closed",
+      "difficulty": "blue"
     },
     {
       "name": "3X4",
-      "status": "closed"
+      "status": "closed",
+      "difficulty": "green"
     },
     {
       "name": "Buzzsaw",
-      "status": "closed"
+      "status": "closed",
+      "difficulty": "green"
     },
     {
       "name": "Herb's Meadow",
-      "status": "closed"
+      "status": "closed",
+      "difficulty": "green"
     },
     {
       "name": "Learning Centre",
-      "status": "closed"
+      "status": "closed",
+      "difficulty": "green"
     },
     {
       "name": "Little Wabos",
-      "status": "closed"
+      "status": "closed",
+      "difficulty": "green"
     },
     {
       "name": "Lumberjack",
-      "status": "closed"
+      "status": "closed",
+      "difficulty": "green"
     },
     {
       "name": "The Main",
-      "status": "closed"
+      "status": "closed",
+      "difficulty": "green"
     },
     {
       "name": "Trav's Trail",
-      "status": "closed"
+      "status": "closed",
+      "difficulty": "green"
     },
     {
       "name": "5-0 Trees",
-      "status": "closed"
+      "status": "closed",
+      "difficulty": "black"
     },
     {
       "name": "Agawa",
-      "status": "closed"
+      "status": "closed",
+      "difficulty": "black"
     },
     {
       "name": "Bear Claw",
-      "status": "closed"
+      "status": "closed",
+      "difficulty": "black"
     },
     {
       "name": "Brian's Brook",
-      "status": "closed"
+      "status": "closed",
+      "difficulty": "black"
     },
     {
       "name": "Cougar Trax",
-      "status": "closed"
+      "status": "closed",
+      "difficulty": "black"
     },
     {
       "name": "Exhibition Alley",
-      "status": "closed"
+      "status": "closed",
+      "difficulty": "black"
     },
     {
       "name": "Jack's Dive",
-      "status": "closed"
+      "status": "closed",
+      "difficulty": "black"
     },
     {
       "name": "Melville's Mile",
-      "status": "closed"
+      "status": "closed",
+      "difficulty": "black"
     },
     {
       "name": "Moose Difficult",
-      "status": "closed"
+      "status": "closed",
+      "difficulty": "black"
     },
     {
       "name": "Slalom",
-      "status": "closed"
+      "status": "closed",
+      "difficulty": "black"
     },
     {
       "name": "The Glades",
-      "status": "closed"
+      "status": "closed",
+      "difficulty": "black"
     },
     {
       "name": "Wolf's Head",
-      "status": "closed"
+      "status": "closed",
+      "difficulty": "black"
     }
   ],
   "terrainParks": [
@@ -144,5 +172,5 @@
   ],
   "resortId": "searchmont",
   "sourceUrl": "https://searchmont.com/snow-report/",
-  "updatedAt": 1789611291379
+  "updatedAt": 1790106921221
 }

@@ -3,12 +3,12 @@
     "sunday": "12:00pm to 4:30pm",
     "monday": "closed",
     "tuesday": "closed",
-    "wednesday": "closed",
+    "wednesday": "6:00pm to 9:30pm",
     "thursday": "closed",
-    "friday": "12:00pm to 4:30pm",
+    "friday": "6:00pm to 9:30pm",
     "saturday": "12:00pm to 4:30pm"
   },
   "resortId": "lively-ski-hill",
   "sourceUrl": "https://www.greatersudbury.ca/play/ski-hills/lively-ski-hill/",
-  "updatedAt": 1789698976300
+  "updatedAt": 1790000802517
 }

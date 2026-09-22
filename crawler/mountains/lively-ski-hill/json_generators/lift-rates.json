@@ -1,13 +1,17 @@
 {
   "rates": {
     "day-week": {
-      "adults": "$40"
+      "youth": "$28",
+      "adults": "$28",
+      "seniors": "$23"
     },
     "day-weekend": {
-      "adults": "$40"
+      "youth": "$28",
+      "adults": "$28",
+      "seniors": "$23"
     }
   },
   "resortId": "lively-ski-hill",
   "sourceUrl": "https://www.greatersudbury.ca/play/ski-hills/lively-ski-hill/",
-  "updatedAt": 1789698976345
+  "updatedAt": 1790000804143
 }

@@ -1,16 +1,22 @@
 {
   "rentals": {
     "ski": {
-      "adults": "$40",
-      "youth": "$40"
+      "adults": "$50",
+      "youth": "$50"
     },
     "snowboard": {
-      "adults": "$40",
-      "youth": "$40"
+      "adults": "$50",
+      "youth": "$50"
     },
-    "items": {}
+    "items": {
+      "boots": "$24",
+      "poles": "$16",
+      "helmet": "$16",
+      "snowboard": "$40",
+      "skis": "$38"
+    }
   },
   "resortId": "adanac-ski-hill",
-  "sourceUrl": "https://www.greatersudbury.ca/play/ski-hills/adanac-ski-hill/",
-  "updatedAt": 1789698974110
+  "sourceUrl": "https://www.greatersudbury.ca/play/ski-hills/adanac-ski-hill/fees-and-rentals/equipment-rentals",
+  "updatedAt": 1789745278727
 }

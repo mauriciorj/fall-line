@@ -1,0 +1,14 @@
+{
+  "hours": {
+    "sunday": "9am to 4pm (no night skiing)",
+    "monday": "9am to 4pm (no night skiing)",
+    "tuesday": "closed",
+    "wednesday": "closed",
+    "thursday": "9am to 9pm (night skiing 4pm)",
+    "friday": "9am to 9pm (night skiing 4pm)",
+    "saturday": "9am to 9pm (night skiing 4pm)"
+  },
+  "resortId": "hidden-valley-highlands",
+  "sourceUrl": "https://skihiddenvalley.ca/explore/hours-of-operation/",
+  "updatedAt": 1789765069196
+}

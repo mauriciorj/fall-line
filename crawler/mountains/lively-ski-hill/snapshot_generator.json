@@ -4,41 +4,48 @@
     {
       "table": "resorts",
       "content": {
-        "address": "231 First Avenue, Lively, ON P3Y 1K6",
+        "address": "231 1st Ave, Lively, ON P3Y 1M2",
         "continent": "North America",
+        "coordinates": {
+          "lat": 46.43295756037137,
+          "lng": -81.14311116176326
+        },
         "country": "Canada",
+        "email": "311@greatersudbury.ca",
+        "googleMapsUrl": "https://maps.app.goo.gl/8U6Rn7Ss1obPRXG17",
         "hasIceSkate": false,
         "hasAccommodations": false,
         "hasCrossCountry": false,
-        "hasLessons": true,
+        "hasLessons": false,
         "hasSnowshoeing": false,
         "hasSpa": false,
         "hasTubing": false,
         "hasZipline": false,
-        "phone": "(705) 692-5030",
+        "phone": "(705) 671-2489",
         "published": true,
+        "rating": 4.3,
         "region": "Ontario",
         "resortId": "lively-ski-hill",
-        "ticketUrl": "https://www.greatersudbury.ca/play/ski-hills/lively-ski-hill/",
-        "website": "https://www.greatersudbury.ca/",
+        "ticketUrl": "https://www.greatersudbury.ca/play/ski-hills/lively-ski-hill/#tab3",
+        "website": "https://www.greatersudbury.ca/play/ski-hills/lively-ski-hill",
         "name": "Lively Ski Hill",
-        "tracksGreenLength": "0.3 km",
-        "tracksGreenProportion": "50",
-        "tracksBlueLength": "0.2 km",
-        "tracksBlueProportion": "33",
-        "tracksBlackLength": "0.1 km",
-        "tracksBlackProportion": "17",
-        "tracksTotalLength": "0.6 km",
         "elevation": "266 m - 310 m",
-        "height": "44 m",
+        "height": "44m",
+        "tracksGreenLength": "0.3km",
+        "tracksGreenProportion": "50",
+        "tracksBlueLength": "0.2km",
+        "tracksBlueProportion": "33",
+        "tracksBlackLength": "0.1km",
+        "tracksBlackProportion": "17",
+        "tracksTotalLength": "0.6km",
         "tracksSummary": {
-          "black": 0,
-          "blue": 0,
+          "black": 1,
+          "blue": 2,
           "doubleBlack": 0,
           "freeStyle": 0,
-          "green": 0
+          "green": 1
         },
-        "dayTicketPrice": 40
+        "dayTicketPrice": 28
       }
     },
     {
@@ -48,14 +55,14 @@
           "sunday": "12:00pm to 4:30pm",
           "monday": "closed",
           "tuesday": "closed",
-          "wednesday": "closed",
+          "wednesday": "6:00pm to 9:30pm",
           "thursday": "closed",
-          "friday": "12:00pm to 4:30pm",
+          "friday": "6:00pm to 9:30pm",
           "saturday": "12:00pm to 4:30pm"
         },
         "resortId": "lively-ski-hill",
         "sourceUrl": "https://www.greatersudbury.ca/play/ski-hills/lively-ski-hill/",
-        "updatedAt": 1789698976300
+        "updatedAt": 1790000802517
       }
     },
     {
@@ -63,34 +70,32 @@
       "content": {
         "rates": {
           "day-week": {
-            "adults": "$40"
+            "youth": "$28",
+            "adults": "$28",
+            "seniors": "$23"
           },
           "day-weekend": {
-            "adults": "$40"
+            "youth": "$28",
+            "adults": "$28",
+            "seniors": "$23"
           }
         },
         "resortId": "lively-ski-hill",
         "sourceUrl": "https://www.greatersudbury.ca/play/ski-hills/lively-ski-hill/",
-        "updatedAt": 1789698976345
+        "updatedAt": 1790000804143
       }
     },
     {
       "table": "resortRentals",
       "content": {
         "rentals": {
-          "ski": {
-            "adults": "$40",
-            "youth": "$40"
-          },
-          "snowboard": {
-            "adults": "$40",
-            "youth": "$40"
-          },
+          "ski": {},
+          "snowboard": {},
           "items": {}
         },
         "resortId": "lively-ski-hill",
         "sourceUrl": "https://www.greatersudbury.ca/play/ski-hills/lively-ski-hill/",
-        "updatedAt": 1789698976393
+        "updatedAt": 1790000804220
       }
     },
     {
@@ -102,11 +107,32 @@
             "status": "closed"
           }
         ],
-        "tracks": [],
+        "tracks": [
+          {
+            "name": "Old Tow",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "name": "Superman",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "name": "Nightmare",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "name": "Beginner Run",
+            "difficulty": "green",
+            "status": "not informed"
+          }
+        ],
         "terrainParks": [],
         "resortId": "lively-ski-hill",
         "sourceUrl": "https://www.greatersudbury.ca/play/ski-hills/lively-ski-hill/",
-        "updatedAt": 1789698978334
+        "updatedAt": 1790000806467
       }
     }
   ]

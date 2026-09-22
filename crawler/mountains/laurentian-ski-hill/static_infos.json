@@ -1,0 +1,22 @@
+{
+  "address": "15 Janey Ave, North Bay, ON P1C 1N1",
+  "continent": "North America",
+  "coordinates": { "lat": 46.33808705882426, "lng": -79.43223990013422 },
+  "country": "Canada",
+  "email": "info@laurentianskihill.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/CYsGXQ4fHtvfDGq27",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": true,
+  "hasSnowshoeing": true,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(705) 494-7463",
+  "published": true,
+  "region": "Ontario",
+  "resortId": "laurentian-ski-hill-north-bay",
+  "ticketUrl": "https://laurentianskihill.com/rates/lift-tickets/",
+  "website": "https://laurentianskihill.com/"
+}

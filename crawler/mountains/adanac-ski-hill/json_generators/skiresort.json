@@ -1,11 +1,11 @@
 {
   "elevation": "270 m - 340 m",
-  "height": "70 m",
-  "tracks-green-length": "1.3 km",
+  "height": "70m",
+  "tracks-green-length": "1.3km",
   "tracks-green-proportion": "65",
-  "tracks-blue-length": "0.6 km",
+  "tracks-blue-length": "0.6km",
   "tracks-blue-proportion": "30",
-  "tracks-black-length": "0.1 km",
+  "tracks-black-length": "0.1km",
   "tracks-black-proportion": "5",
-  "tracks-total-length": "2 km"
+  "tracks-total-length": "2km"
 }

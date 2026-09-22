@@ -1,0 +1,30 @@
+{
+  "resortId": "antoine-mountain",
+  "tables": [
+    {
+      "table": "resorts",
+      "missingColumns": [
+        "rating"
+      ]
+    },
+    {
+      "table": "resortHours",
+      "missingColumns": []
+    },
+    {
+      "table": "resortRates",
+      "missingColumns": []
+    },
+    {
+      "table": "resortRentals",
+      "missingColumns": []
+    },
+    {
+      "table": "weatherAndStatus",
+      "missingColumns": [
+        "lifts"
+      ]
+    }
+  ],
+  "missingColumnCount": 2
+}

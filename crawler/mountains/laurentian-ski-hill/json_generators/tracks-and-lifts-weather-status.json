@@ -1,0 +1,60 @@
+{
+  "lifts": [],
+  "tracks": [
+    {
+      "name": "Beginner Hill",
+      "status": "open",
+      "difficulty": "green"
+    },
+    {
+      "name": "No Name",
+      "status": "open",
+      "difficulty": "green"
+    },
+    {
+      "name": "Ron's Run",
+      "status": "open",
+      "difficulty": "green"
+    },
+    {
+      "name": "Slingshot",
+      "status": "open",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Poutine Pitch",
+      "status": "open",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Maples",
+      "status": "open",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Steve Omischl",
+      "status": "open",
+      "difficulty": "black"
+    },
+    {
+      "name": "Aeroplane",
+      "status": "open",
+      "difficulty": "black"
+    }
+  ],
+  "terrainParks": [
+    {
+      "name": "Upper Jack's Back",
+      "status": "open",
+      "difficulty": "freeStyle"
+    },
+    {
+      "name": "Terrain Park",
+      "status": "open",
+      "difficulty": "freeStyle"
+    }
+  ],
+  "resortId": "laurentian-ski-hill-north-bay",
+  "sourceUrl": "https://laurentianskihill.com/plan-a-visit/trail-map/",
+  "updatedAt": 1789769460958
+}

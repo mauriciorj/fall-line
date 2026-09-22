@@ -17,29 +17,38 @@ DAYS = ("sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "satur
 HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36"}
 
 
+def normalize_text(value):
+    return " ".join(value.replace("\xa0", " ").split()).lower()
+
+
+def normalize_time(value):
+    value = normalize_text(value)
+    value = re.sub(r"\s*[-–—]\s*", " to ", value)
+    return re.sub(r"\s+(am|pm)\b", r"\1", value)
+
+
 def get_hours():
-    hours = {
-        "sunday": "9am to 4pm",
-        "monday": "closed",
-        "tuesday": "9am to 4pm",
-        "wednesday": "9am to 4pm",
-        "thursday": "9am to 4pm",
-        "friday": "9am to 4pm",
-        "saturday": "9am to 4pm",
-    }
-    try:
-        response = requests.get(PAGE_URL, headers=HEADERS, timeout=30)
-        response.raise_for_status()
-        text = " ".join(BeautifulSoup(response.content, "html.parser").get_text(" ", strip=True).lower().split())
-    except requests.RequestException:
-        text = ""
-    if "weekdays 9am - 4pm" in text:
-        for day in ("monday", "tuesday", "wednesday", "thursday", "friday"):
-            hours[day] = "9am to 4pm"
-    if "weekends 9am-4pm" in text:
-        hours["saturday"] = hours["sunday"] = "9am to 4pm"
+    response = requests.get(PAGE_URL, headers=HEADERS, timeout=30)
+    response.raise_for_status()
+    text = normalize_text(BeautifulSoup(response.content, "html.parser").get_text(" ", strip=True))
+    hours = {day: None for day in DAYS}
+
+    weekday_match = re.search(r"weekdays\s+([0-9]{1,2}(?::[0-9]{2})?\s*(?:am|pm)\s*[-–—]\s*[0-9]{1,2}(?::[0-9]{2})?\s*(?:am|pm))", text)
+    weekend_match = re.search(r"weekends\s+([0-9]{1,2}(?::[0-9]{2})?\s*(?:am|pm)\s*[-–—]\s*[0-9]{1,2}(?::[0-9]{2})?\s*(?:am|pm))", text)
+    if not weekday_match or not weekend_match:
+        raise ValueError("Could not find weekday or weekend hours in HTML")
+
+    weekday_hours = normalize_time(weekday_match.group(1))
+    weekend_hours = normalize_time(weekend_match.group(1))
+    for day in ("tuesday", "wednesday", "thursday", "friday"):
+        hours[day] = weekday_hours
+    hours["saturday"] = weekend_hours
+    hours["sunday"] = weekend_hours
+
+    if not re.search(r"monday\s+closed", text):
+        raise ValueError("Could not find Monday closed status in HTML")
     hours["monday"] = "closed"
-    return hours
+    return {day: hours[day] for day in DAYS}
 
 
 def main():

@@ -1,0 +1,14 @@
+{
+  "hours": {
+    "sunday": "9am to 5pm",
+    "monday": "closed",
+    "tuesday": "9am to 9pm",
+    "wednesday": "9am to 9pm",
+    "thursday": "9am to 9pm",
+    "friday": "9am to 9pm",
+    "saturday": "9am to 9pm"
+  },
+  "resortId": "mount-pakenham",
+  "sourceUrl": "https://shop.mountpakenham.com/pages/skiing-snowboarding",
+  "updatedAt": 1790016767558
+}

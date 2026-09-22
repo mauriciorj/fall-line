@@ -16,25 +16,38 @@ RESORT_ID = "searchmont"
 HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36"}
 
 
+def normalize_text(value):
+    return " ".join(value.replace("\xa0", " ").split()).lower()
+
+
 def parse_price(value):
     match = re.search(r"\$\s*([0-9]+(?:[.,][0-9]+)?)", value)
     if not match:
-        return None
+        raise ValueError(f"Could not parse lift ticket price: {value}")
     amount = float(match.group(1).replace(",", "."))
     return f"${int(amount) if amount.is_integer() else amount:g}"
 
 
 def get_lift_rates():
-    text = ""
-    try:
-        response = requests.get(PAGE_URL, headers=HEADERS, timeout=30)
-        response.raise_for_status()
-        text = " ".join(BeautifulSoup(response.content, "html.parser").get_text(" ", strip=True).split())
-    except requests.RequestException:
-        pass
-    weekday = parse_price(re.search(r"Weekdays.*?\$\s*[0-9]+", text, re.IGNORECASE).group()) if re.search(r"Weekdays.*?\$\s*[0-9]+", text, re.IGNORECASE) else "$80"
-    weekend = parse_price(re.search(r"Weekend.*?\$\s*[0-9]+", text, re.IGNORECASE).group()) if re.search(r"Weekend.*?\$\s*[0-9]+", text, re.IGNORECASE) else "$85"
-    night = parse_price(re.search(r"Friday & Saturday.*?\$\s*[0-9]+", text, re.IGNORECASE).group()) if re.search(r"Friday & Saturday.*?\$\s*[0-9]+", text, re.IGNORECASE) else "$60"
+    response = requests.get(PAGE_URL, headers=HEADERS, timeout=30)
+    response.raise_for_status()
+    text = normalize_text(BeautifulSoup(response.content, "html.parser").get_text(" ", strip=True))
+    day_start = text.find("day tickets")
+    night_start = text.find("night lift ticket")
+    if day_start == -1 or night_start == -1 or night_start <= day_start:
+        raise ValueError("Could not find DAY Tickets and night lift TICKET sections")
+    day_section = text[day_start:night_start]
+    night_section = text[night_start:]
+
+    weekday_match = re.search(r"weekdays.*?(\$\s*[0-9]+(?:[.,][0-9]+)?)", day_section)
+    weekend_match = re.search(r"weekend.*?(\$\s*[0-9]+(?:[.,][0-9]+)?)", day_section)
+    night_match = re.search(r"friday & saturday.*?(\$\s*[0-9]+(?:[.,][0-9]+)?)", night_section)
+    if not weekday_match or not weekend_match or not night_match:
+        raise ValueError("Missing weekday, weekend, or night lift ticket price")
+
+    weekday = parse_price(weekday_match.group(1))
+    weekend = parse_price(weekend_match.group(1))
+    night = parse_price(night_match.group(1))
     return {
         "day-week": {"adults": weekday},
         "day-weekend": {"adults": weekend},

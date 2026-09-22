@@ -22,40 +22,42 @@
         "ticketUrl": "https://www.greatersudbury.ca/play/ski-hills/adanac-ski-hill/",
         "website": "https://www.greatersudbury.ca/",
         "name": "Adanac Ski Hill",
-        "tracksGreenLength": "1.3 km",
-        "tracksGreenProportion": "65",
-        "tracksBlueLength": "0.6 km",
-        "tracksBlueProportion": "30",
-        "tracksBlackLength": "0.1 km",
-        "tracksBlackProportion": "5",
-        "tracksTotalLength": "2 km",
         "elevation": "270 m - 340 m",
-        "height": "70 m",
+        "height": "70m",
+        "tracksGreenLength": "1.3km",
+        "tracksGreenProportion": "65",
+        "tracksBlueLength": "0.6km",
+        "tracksBlueProportion": "30",
+        "tracksBlackLength": "0.1km",
+        "tracksBlackProportion": "5",
+        "tracksTotalLength": "2km",
         "tracksSummary": {
-          "black": 0,
-          "blue": 0,
+          "black": 2,
+          "blue": 3,
           "doubleBlack": 0,
           "freeStyle": 0,
-          "green": 0
+          "green": 2
         },
-        "dayTicketPrice": 50
+        "dayTicketPrice": 57,
+        "skiRentalPrice": 50,
+        "snowBoardRentalPrice": 50
       }
     },
     {
       "table": "resortHours",
       "content": {
         "hours": {
-          "sunday": "10:00am to 4:00pm",
+          "sunday": "9 a.m. to 12:30 p.m. / 12:30 p.m. to 4 p.m.",
           "monday": "closed",
           "tuesday": "closed",
-          "wednesday": "closed",
-          "thursday": "closed",
-          "friday": "10:00am to 4:00pm",
-          "saturday": "10:00am to 4:00pm"
+          "wednesday": "10 a.m. to 1:30 p.m. / 12:30 p.m. to 4 p.m. / 6 p.m. to 9:30 p.m.",
+          "thursday": "10 a.m. to 1:30 p.m. / 12:30 p.m. to 4 p.m. / 6 p.m. to 9:30 p.m.",
+          "friday": "10 a.m. to 1:30 p.m. / 12:30 p.m. to 4 p.m. / 6 p.m. to 9:30 p.m.",
+          "saturday": "9 a.m. to 12:30 p.m. / 12:30 p.m. to 4 p.m."
         },
         "resortId": "adanac-ski-hill",
-        "sourceUrl": "https://www.greatersudbury.ca/play/ski-hills/adanac-ski-hill/",
-        "updatedAt": 1789698974018
+        "sourceUrl": "https://www.greatersudbury.ca/play/ski-hills/adanac-ski-hill/hours/",
+        "updatedAt": 1789745276632
       }
     },
     {
@@ -63,15 +65,19 @@
       "content": {
         "rates": {
           "day-week": {
-            "adults": "$50"
+            "youth": "$49",
+            "adults": "$57",
+            "seniors": "$49"
           },
           "day-weekend": {
-            "adults": "$50"
+            "youth": "$49",
+            "adults": "$57",
+            "seniors": "$49"
           }
         },
         "resortId": "adanac-ski-hill",
-        "sourceUrl": "https://www.greatersudbury.ca/play/ski-hills/adanac-ski-hill/",
-        "updatedAt": 1789698974064
+        "sourceUrl": "https://www.greatersudbury.ca/play/ski-hills/adanac-ski-hill/fees-and-rentals/lift-tickets/",
+        "updatedAt": 1789745277673
       }
     },
     {
@@ -79,18 +85,24 @@
       "content": {
         "rentals": {
           "ski": {
-            "adults": "$40",
-            "youth": "$40"
+            "adults": "$50",
+            "youth": "$50"
           },
           "snowboard": {
-            "adults": "$40",
-            "youth": "$40"
+            "adults": "$50",
+            "youth": "$50"
           },
-          "items": {}
+          "items": {
+            "boots": "$24",
+            "poles": "$16",
+            "helmet": "$16",
+            "snowboard": "$40",
+            "skis": "$38"
+          }
         },
         "resortId": "adanac-ski-hill",
-        "sourceUrl": "https://www.greatersudbury.ca/play/ski-hills/adanac-ski-hill/",
-        "updatedAt": 1789698974110
+        "sourceUrl": "https://www.greatersudbury.ca/play/ski-hills/adanac-ski-hill/fees-and-rentals/equipment-rentals",
+        "updatedAt": 1789745278727
       }
     },
     {
@@ -99,14 +111,50 @@
         "lifts": [
           {
             "name": "New Quad",
-            "status": "closed"
+            "status": "not informed"
           }
         ],
-        "tracks": [],
+        "tracks": [
+          {
+            "name": "Easy Rider",
+            "difficulty": "green",
+            "status": "not informed"
+          },
+          {
+            "name": "Ellis Hazen",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "name": "Glades",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "name": "Friendly Giant",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "name": "Inco",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "name": "Beginner Area",
+            "difficulty": "green",
+            "status": "not informed"
+          },
+          {
+            "name": "Double Trouble",
+            "difficulty": "black",
+            "status": "not informed"
+          }
+        ],
         "terrainParks": [],
         "resortId": "adanac-ski-hill",
         "sourceUrl": "https://www.greatersudbury.ca/play/ski-hills/adanac-ski-hill/",
-        "updatedAt": 1789698976056
+        "updatedAt": 1789745281085
       }
     }
   ]

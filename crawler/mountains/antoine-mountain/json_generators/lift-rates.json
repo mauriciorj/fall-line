@@ -1,0 +1,17 @@
+{
+  "rates": {
+    "day-week": {
+      "adults": "$76",
+      "youth": "$66",
+      "seniors": "$66"
+    },
+    "day-weekend": {
+      "adults": "$76",
+      "youth": "$66",
+      "seniors": "$66"
+    }
+  },
+  "resortId": "antoine-mountain",
+  "sourceUrl": "https://antoinemountain.ca/pages/tickets",
+  "updatedAt": 1789757881060
+}

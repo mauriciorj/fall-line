@@ -1,0 +1,217 @@
+{
+  "resortId": "boler-mountain",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "address": "689 Griffith St, London, ON N6K 2S5",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 42.94485676125093,
+          "lng": -81.33936421540905
+        },
+        "country": "Canada",
+        "email": "info@bolermountain.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/rfaNhtb4yQ8SMdmx7",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": true,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": true,
+        "hasZipline": false,
+        "phone": "(519) 657-8822",
+        "published": true,
+        "region": "Ontario",
+        "resortId": "boler-mountain",
+        "ticketUrl": "https://www.bolermountain.com/day-tickets/",
+        "website": "https://www.bolermountain.com/",
+        "name": "Boler Mountain",
+        "tracksGreenLength": "1.5km",
+        "tracksGreenProportion": "30",
+        "tracksBlueLength": "1.9km",
+        "tracksBlueProportion": "38",
+        "tracksBlackLength": "1.6km",
+        "tracksBlackProportion": "32",
+        "tracksTotalLength": "5km",
+        "elevation": "262 m - 328 m",
+        "height": "66m",
+        "tracksSummary": {
+          "black": 6,
+          "blue": 5,
+          "doubleBlack": 0,
+          "freeStyle": 1,
+          "green": 4
+        },
+        "dayTicketPrice": 58
+      }
+    },
+    {
+      "table": "resortHours",
+      "content": {
+        "hours": {
+          "sunday": "9:00am to 7:00pm",
+          "monday": "4:00pm to 10:00pm",
+          "tuesday": "9:00am to 10:00pm",
+          "wednesday": "9:00am to 10:00pm",
+          "thursday": "9:00am to 10:00pm",
+          "friday": "9:00am to 10:00pm",
+          "saturday": "9:00am to 10:00pm"
+        },
+        "resortId": "boler-mountain",
+        "sourceUrl": "https://www.bolermountain.com/hours-of-operation/",
+        "updatedAt": 1789696736482
+      }
+    },
+    {
+      "table": "resortRates",
+      "content": {
+        "rates": {
+          "day-week": {
+            "adults": "$58",
+            "youth": "$52",
+            "seniors": "$52"
+          },
+          "day-weekend": {
+            "adults": "$58",
+            "youth": "$52",
+            "seniors": "$52"
+          }
+        },
+        "resortId": "boler-mountain",
+        "sourceUrl": "https://www.bolermountain.com/day-tickets/",
+        "updatedAt": 1789753156546
+      }
+    },
+    {
+      "table": "resortRentals",
+      "content": {
+        "rentals": {
+          "ski": {
+            "adults": "$46",
+            "youth": "$46"
+          },
+          "snowboard": {
+            "adults": "$46",
+            "youth": "$46"
+          },
+          "items": {}
+        },
+        "resortId": "boler-mountain",
+        "sourceUrl": "https://www.bolermountain.com/day-tickets/",
+        "updatedAt": 1789753390837
+      }
+    },
+    {
+      "table": "weatherAndStatus",
+      "content": {
+        "lifts": [
+          {
+            "name": "Columbia Sportswear Titanium Express",
+            "status": "closed"
+          },
+          {
+            "name": "London International Airport Chair",
+            "status": "closed"
+          },
+          {
+            "name": "Oxford Dodge Chair",
+            "status": "closed"
+          },
+          {
+            "name": "Willie's Magic Carpet",
+            "status": "closed"
+          }
+        ],
+        "tracks": [
+          {
+            "name": "Apple Jack",
+            "status": "closed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Big dip",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Dedication",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Double Dip",
+            "status": "closed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Easy Street",
+            "status": "closed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Elbow",
+            "status": "closed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Hill 55",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "JS",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Kennedy Kruzer",
+            "status": "closed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Red's Run",
+            "status": "closed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Rub-A-Dub",
+            "status": "closed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Rusty's Run",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Spriet Street",
+            "status": "closed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Wayne's Way",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Willy's Bowl",
+            "status": "closed",
+            "difficulty": "green"
+          }
+        ],
+        "terrainParks": [
+          {
+            "name": "Terrain Park",
+            "status": "closed",
+            "difficulty": "freeStyle"
+          }
+        ],
+        "resortId": "boler-mountain",
+        "sourceUrl": "https://www.bolermountain.com/trailmap-2/",
+        "updatedAt": 1789754112128
+      }
+    }
+  ]
+}

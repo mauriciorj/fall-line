@@ -1,0 +1,177 @@
+{
+  "resortId": "laurentian-ski-hill-north-bay",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "address": "15 Janey Ave, North Bay, ON P1C 1N1",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 46.33808705882426,
+          "lng": -79.43223990013422
+        },
+        "country": "Canada",
+        "email": "info@laurentianskihill.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/CYsGXQ4fHtvfDGq27",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": true,
+        "hasSnowshoeing": true,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(705) 494-7463",
+        "published": true,
+        "region": "Ontario",
+        "resortId": "laurentian-ski-hill-north-bay",
+        "ticketUrl": "https://laurentianskihill.com/rates/lift-tickets/",
+        "website": "https://laurentianskihill.com/",
+        "name": "Laurentian Ski Hill",
+        "tracksGreenLength": "2.5km",
+        "tracksGreenProportion": "81",
+        "tracksBlueLength": "0.6km",
+        "tracksBlueProportion": "19",
+        "tracksBlackLength": "0km",
+        "tracksBlackProportion": "0",
+        "tracksTotalLength": "3.1km",
+        "elevation": "228 m - 325 m",
+        "height": "97m",
+        "tracksSummary": {
+          "black": 2,
+          "blue": 3,
+          "doubleBlack": 0,
+          "freeStyle": 2,
+          "green": 3
+        },
+        "dayTicketPrice": 61
+      }
+    },
+    {
+      "table": "resortHours",
+      "content": {
+        "hours": {
+          "sunday": "9am to 4pm",
+          "monday": "closed",
+          "tuesday": "closed",
+          "wednesday": "closed",
+          "thursday": "closed",
+          "friday": "12pm to 9pm",
+          "saturday": "9am to 4pm"
+        },
+        "resortId": "laurentian-ski-hill-north-bay",
+        "sourceUrl": "https://laurentianskihill.com/hours/",
+        "updatedAt": 1789769455376
+      }
+    },
+    {
+      "table": "resortRates",
+      "content": {
+        "rates": {
+          "day-week": {
+            "youth": "$50",
+            "adults": "$61",
+            "seniors": "$61"
+          },
+          "day-weekend": {
+            "youth": "$50",
+            "adults": "$61",
+            "seniors": "$61"
+          }
+        },
+        "resortId": "laurentian-ski-hill-north-bay",
+        "sourceUrl": "https://laurentianskihill.com/rates/lift-tickets/",
+        "updatedAt": 1789769456382
+      }
+    },
+    {
+      "table": "resortRentals",
+      "content": {
+        "rentals": {
+          "ski": {
+            "adults": "$45",
+            "youth": "$40"
+          },
+          "snowboard": {
+            "adults": "$45",
+            "youth": "$40"
+          },
+          "items": {
+            "skis": "$25",
+            "snowboard": "$25",
+            "boots": "$15",
+            "poles": "$5",
+            "helmet": "$5",
+            "snowshoes": "$20"
+          }
+        },
+        "resortId": "laurentian-ski-hill-north-bay",
+        "sourceUrl": "https://laurentianskihill.com/rentals/",
+        "updatedAt": 1789769457530
+      }
+    },
+    {
+      "table": "weatherAndStatus",
+      "content": {
+        "lifts": [],
+        "tracks": [
+          {
+            "name": "Beginner Hill",
+            "status": "open",
+            "difficulty": "green"
+          },
+          {
+            "name": "No Name",
+            "status": "open",
+            "difficulty": "green"
+          },
+          {
+            "name": "Ron's Run",
+            "status": "open",
+            "difficulty": "green"
+          },
+          {
+            "name": "Slingshot",
+            "status": "open",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Poutine Pitch",
+            "status": "open",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Maples",
+            "status": "open",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Steve Omischl",
+            "status": "open",
+            "difficulty": "black"
+          },
+          {
+            "name": "Aeroplane",
+            "status": "open",
+            "difficulty": "black"
+          }
+        ],
+        "terrainParks": [
+          {
+            "name": "Upper Jack's Back",
+            "status": "open",
+            "difficulty": "freeStyle"
+          },
+          {
+            "name": "Terrain Park",
+            "status": "open",
+            "difficulty": "freeStyle"
+          }
+        ],
+        "resortId": "laurentian-ski-hill-north-bay",
+        "sourceUrl": "https://laurentianskihill.com/plan-a-visit/trail-map/",
+        "updatedAt": 1789769460958
+      }
+    }
+  ]
+}

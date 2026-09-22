@@ -1,0 +1,96 @@
+{
+  "lifts": [
+    {
+      "name": "Algonquin Quad (Green Chair)",
+      "status": "closed"
+    },
+    {
+      "name": "Iroquois Quad (Red Chair)",
+      "status": "closed"
+    },
+    {
+      "name": "Bigwin Quad (Blue Chair)",
+      "status": "closed"
+    },
+    {
+      "name": "Handle Tow",
+      "status": "closed"
+    }
+  ],
+  "tracks": [
+    {
+      "name": "Fifth Avenue",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Terrain Park",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Back Trail",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "The Face",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Chalet Chute",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Beginner Hill",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Lazy Lady",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Wild Cat",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Dipsy Doodle",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Dutchman Glades",
+      "status": "closed",
+      "difficulty": "doubleBlack"
+    },
+    {
+      "name": "Nischans Run",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Fun Run",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Member's Dip",
+      "status": "closed",
+      "difficulty": "doubleBlack"
+    },
+    {
+      "name": "Flying Dutchman",
+      "status": "closed",
+      "difficulty": "blue"
+    }
+  ],
+  "terrainParks": [],
+  "resortId": "hidden-valley-highlands",
+  "sourceUrl": "https://msc.skihvh.com/status/embed.php",
+  "updatedAt": 1789766169959
+}

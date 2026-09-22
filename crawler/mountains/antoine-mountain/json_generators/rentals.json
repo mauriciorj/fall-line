@@ -1,0 +1,22 @@
+{
+  "rentals": {
+    "ski": {
+      "adults": "$50",
+      "youth": "$50"
+    },
+    "snowboard": {
+      "adults": "$50",
+      "youth": "$50"
+    },
+    "items": {
+      "skis": "$35",
+      "poles": "$15",
+      "boots": "$30",
+      "helmet": "$15",
+      "snowboard": "$35"
+    }
+  },
+  "resortId": "antoine-mountain",
+  "sourceUrl": "https://antoinemountain.ca/pages/rentals",
+  "updatedAt": 1789757882391
+}

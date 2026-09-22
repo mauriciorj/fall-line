@@ -1,0 +1,22 @@
+{
+  "rentals": {
+    "ski": {
+      "adults": "$40",
+      "youth": "$40"
+    },
+    "snowboard": {
+      "adults": "$40",
+      "youth": "$40"
+    },
+    "items": {
+      "skis": "$25",
+      "snowboard": "$25",
+      "boots": "$15",
+      "poles": "$10",
+      "helmet": "$10"
+    }
+  },
+  "resortId": "mount-baldy",
+  "sourceUrl": "https://www.skimountbaldy.ca/rentals-and-repairs",
+  "updatedAt": 1790005781220
+}

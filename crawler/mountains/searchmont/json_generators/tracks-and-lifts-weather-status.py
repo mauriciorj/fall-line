@@ -22,6 +22,15 @@ TRACKS = (
     "The Glades", "Wolf's Head",
 )
 HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36"}
+DIFFICULTIES = {
+    "Binder Twine": "blue", "Champs": "blue", "Goulais": "blue", "Meadow Express": "blue",
+    "Nan's Ski Askin": "blue", "Peggy's Promise": "blue", "Really Mealey": "blue", "Rocky Road": "blue",
+    "3X4": "green", "Buzzsaw": "green", "Herb's Meadow": "green", "Learning Centre": "green",
+    "Little Wabos": "green", "Lumberjack": "green", "The Main": "green", "Trav's Trail": "green",
+    "5-0 Trees": "black", "Agawa": "black", "Bear Claw": "black", "Brian's Brook": "black",
+    "Cougar Trax": "black", "Exhibition Alley": "black", "Jack's Dive": "black", "Melville's Mile": "black",
+    "Moose Difficult": "black", "Slalom": "black", "The Glades": "black", "Wolf's Head": "black",
+}
 
 
 def normalize_status(value):
@@ -45,7 +54,7 @@ def get_status():
         pass
     return {
         "lifts": [{"name": name, "status": statuses.get(name, "closed")} for name in LIFTS],
-        "tracks": [{"name": name, "status": statuses.get(name, "closed")} for name in TRACKS],
+        "tracks": [{"name": name, "status": statuses.get(name, "closed"), "difficulty": DIFFICULTIES[name]} for name in TRACKS],
         "terrainParks": [{"name": "Terrain Park", "status": statuses.get("Terrain Park", "closed"), "difficulty": "freeStyle"}],
     }
 

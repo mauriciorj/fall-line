@@ -1,0 +1,27 @@
+{
+  "rates": {
+    "day-week": {
+      "adults": "$49",
+      "youth": "$49",
+      "seniors": "$49"
+    },
+    "day-weekend": {
+      "adults": "$52",
+      "youth": "$52",
+      "seniors": "$52"
+    },
+    "night-week": {
+      "adults": "$36",
+      "youth": "$36",
+      "seniors": "$36"
+    },
+    "night-weekend": {
+      "adults": "$36",
+      "youth": "$36",
+      "seniors": "$36"
+    }
+  },
+  "resortId": "mount-pakenham",
+  "sourceUrl": "https://shop.mountpakenham.com/pages/skiing-snowboarding",
+  "updatedAt": 1790017965438
+}

@@ -1,0 +1,246 @@
+{
+  "resortId": "devils-glen",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "address": "1793 Simcoe County Rd 124, Clearview, ON L0M 1H0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 44.35468029590227,
+          "lng": -80.20082831356835
+        },
+        "country": "Canada",
+        "email": "info@devilsglen.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/D5jivkHiX1wEgwy26",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(705) 445-4890",
+        "published": true,
+        "region": "Ontario",
+        "resortId": "devils-glen",
+        "ticketUrl": "https://www.devilsglen.com/About/Ticket_Pricing",
+        "website": "https://www.devilsglen.com",
+        "name": "Devil's Glen Country Club",
+        "tracksGreenLength": "4.8km",
+        "tracksGreenProportion": "48",
+        "tracksBlueLength": "2.6km",
+        "tracksBlueProportion": "25",
+        "tracksBlackLength": "2.8km",
+        "tracksBlackProportion": "27",
+        "tracksTotalLength": "10.2km",
+        "elevation": "372 m - 522 m",
+        "height": "150m",
+        "tracksSummary": {
+          "black": 3,
+          "blue": 4,
+          "doubleBlack": 0,
+          "freeStyle": 3,
+          "green": 8
+        },
+        "dayTicketPrice": 106
+      }
+    },
+    {
+      "table": "resortHours",
+      "content": {
+        "hours": {
+          "sunday": "8:30 to 4:00",
+          "monday": "9:00 to 4:00",
+          "tuesday": "9:00 to 4:00",
+          "wednesday": "9:00 to 4:00",
+          "thursday": "9:00 to 4:00",
+          "friday": "9:00 to 4:00",
+          "saturday": "8:30 to 4:30"
+        },
+        "resortId": "devils-glen",
+        "sourceUrl": "https://www.devilsglen.com/About/Directions_Hours",
+        "updatedAt": 1789764746825
+      }
+    },
+    {
+      "table": "resortRates",
+      "content": {
+        "rates": {
+          "day-weekend": {
+            "adults": "$125",
+            "youth": "$95",
+            "seniors": "$95"
+          },
+          "day-week": {
+            "adults": "$106",
+            "youth": "$85",
+            "seniors": "$85"
+          }
+        },
+        "resortId": "devils-glen",
+        "sourceUrl": "https://www.devilsglen.com/About/Ticket_Pricing",
+        "updatedAt": 1789764748093
+      }
+    },
+    {
+      "table": "resortRentals",
+      "content": {
+        "resortId": "devils-glen",
+        "sourceUrl": "https://www.devilsglen.com/About/Rental_Equipment",
+        "updatedAt": 1789764748262
+      }
+    },
+    {
+      "table": "weatherAndStatus",
+      "content": {
+        "lifts": [
+          {
+            "name": "Hades Quad",
+            "status": "closed"
+          },
+          {
+            "name": "Magic Carpet",
+            "status": "closed"
+          },
+          {
+            "name": "Heavenly Quad",
+            "status": "closed"
+          },
+          {
+            "name": "Revelation Quad",
+            "status": "closed"
+          }
+        ],
+        "tracks": [
+          {
+            "difficulty": null,
+            "name": "Stairway",
+            "status": "closed"
+          },
+          {
+            "difficulty": null,
+            "name": "Siren",
+            "status": "closed"
+          },
+          {
+            "difficulty": null,
+            "name": "Cerberus",
+            "status": "closed"
+          },
+          {
+            "difficulty": null,
+            "name": "Lucifer's Lane",
+            "status": "closed"
+          },
+          {
+            "difficulty": null,
+            "name": "Waterfall",
+            "status": "closed"
+          },
+          {
+            "difficulty": "black",
+            "name": "Inferno",
+            "status": "closed"
+          },
+          {
+            "difficulty": "blue",
+            "name": "Limbo",
+            "status": "closed"
+          },
+          {
+            "difficulty": "green",
+            "name": "Pluto",
+            "status": "closed"
+          },
+          {
+            "difficulty": "green",
+            "name": "River Styx",
+            "status": "closed"
+          },
+          {
+            "difficulty": "blue",
+            "name": "Achilles Heel",
+            "status": "closed"
+          },
+          {
+            "difficulty": "green",
+            "name": "Upper Paradise",
+            "status": "closed"
+          },
+          {
+            "difficulty": "green",
+            "name": "Lower Paradise",
+            "status": "closed"
+          },
+          {
+            "difficulty": "green",
+            "name": "The Meadows",
+            "status": "closed"
+          },
+          {
+            "difficulty": "green",
+            "name": "Zeus",
+            "status": "closed"
+          },
+          {
+            "difficulty": "green",
+            "name": "Eden",
+            "status": "closed"
+          },
+          {
+            "difficulty": "green",
+            "name": "Elysian Fields",
+            "status": "closed"
+          },
+          {
+            "difficulty": "black",
+            "name": "Acheron",
+            "status": "closed"
+          },
+          {
+            "difficulty": "blue",
+            "name": "Salvation",
+            "status": "closed"
+          },
+          {
+            "difficulty": "blue",
+            "name": "Revelation",
+            "status": "closed"
+          },
+          {
+            "difficulty": "black",
+            "name": "Hallelujah",
+            "status": "closed"
+          },
+          {
+            "difficulty": null,
+            "name": "Hallelujah Glades",
+            "status": "closed"
+          }
+        ],
+        "terrainParks": [
+          {
+            "difficulty": "freeStyle",
+            "name": "Hade's Lane",
+            "status": "closed"
+          },
+          {
+            "difficulty": "freeStyle",
+            "name": "Purgatory Park",
+            "status": "closed"
+          },
+          {
+            "difficulty": "freeStyle",
+            "name": "Beatrice",
+            "status": "closed"
+          }
+        ],
+        "resortId": "devils-glen",
+        "sourceUrl": "https://www.devilsglen.com/About/Trail_Report",
+        "updatedAt": 1789764751553
+      }
+    }
+  ]
+}

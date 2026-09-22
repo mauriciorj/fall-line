@@ -5,9 +5,30 @@
       "status": "closed"
     }
   ],
-  "tracks": [],
+  "tracks": [
+    {
+      "name": "Old Tow",
+      "difficulty": "blue",
+      "status": "not informed"
+    },
+    {
+      "name": "Superman",
+      "difficulty": "blue",
+      "status": "not informed"
+    },
+    {
+      "name": "Nightmare",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "name": "Beginner Run",
+      "difficulty": "green",
+      "status": "not informed"
+    }
+  ],
   "terrainParks": [],
   "resortId": "lively-ski-hill",
   "sourceUrl": "https://www.greatersudbury.ca/play/ski-hills/lively-ski-hill/",
-  "updatedAt": 1789698978334
+  "updatedAt": 1790000806467
 }

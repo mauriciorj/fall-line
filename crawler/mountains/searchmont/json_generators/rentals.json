@@ -10,10 +10,11 @@
     },
     "items": {
       "helmet": "$12",
-      "poles": "$12"
+      "poles": "$12",
+      "snowshoes": "$25"
     }
   },
   "resortId": "searchmont",
   "sourceUrl": "https://searchmont.com/rentals/",
-  "updatedAt": 1789611287007
+  "updatedAt": 1790106540471
 }

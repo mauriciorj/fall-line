@@ -1,0 +1,155 @@
+{
+  "lifts": [],
+  "tracks": [
+    {
+      "name": "Upper Ole K & P​",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Lower Ole K & P",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Shantyman",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Fiddler",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Shannahan's",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Beginner Bowl",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Progression",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Barrett Chute",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "O'Brien's",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Jack Bone",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Dillon's Dip",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Bear Paw",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Bailey's",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Causeway",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Black Donald",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Juniper Junction",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Al's Alley",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Whistlin Paddy",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Lower Finnegan",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "High Falls",
+      "status": "-",
+      "difficulty": "black"
+    },
+    {
+      "name": "Upper Buckshot",
+      "status": "lower buckshot",
+      "difficulty": "black"
+    },
+    {
+      "name": "Closed",
+      "status": "-",
+      "difficulty": "black"
+    },
+    {
+      "name": "-",
+      "status": "-",
+      "difficulty": "black"
+    },
+    {
+      "name": "Closed",
+      "status": "-",
+      "difficulty": "black"
+    },
+    {
+      "name": "-",
+      "status": "-",
+      "difficulty": "black"
+    },
+    {
+      "name": "Lake Glades",
+      "status": "-",
+      "difficulty": "black"
+    },
+    {
+      "name": "China Glades",
+      "status": "-",
+      "difficulty": "black"
+    }
+  ],
+  "terrainParks": [
+    {
+      "name": "Mini Park",
+      "status": "-",
+      "difficulty": "freeStyle"
+    },
+    {
+      "name": "Pineside",
+      "status": "-",
+      "difficulty": "freeStyle"
+    }
+  ],
+  "resortId": "calabogie-peaks",
+  "sourceUrl": "https://calabogie.com/trail-status/",
+  "updatedAt": 1789764107326
+}

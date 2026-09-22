@@ -1,0 +1,100 @@
+{
+  "lifts": [
+    {
+      "name": "Main Street",
+      "status": "closed"
+    },
+    {
+      "name": "North Quad",
+      "status": "closed"
+    },
+    {
+      "name": "South Chair",
+      "status": "closed"
+    },
+    {
+      "name": "Handle Tow",
+      "status": "closed"
+    },
+    {
+      "name": "Eagle View Quad",
+      "status": "closed"
+    }
+  ],
+  "tracks": [
+    {
+      "name": "Lover's Lane",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Heartbreaker",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Banana",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Cash Register",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Kingston",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Parkway",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Ali's Alley",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Fred's Way",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Crash n' Carry",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Birdwatcher",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Dingle",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Dangle",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Ridge",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Run",
+      "status": "closed",
+      "difficulty": "green"
+    }
+  ],
+  "terrainParks": [],
+  "resortId": "sir-sams",
+  "sourceUrl": "https://www.sirsams.ca/resort-information",
+  "updatedAt": 1790109508946
+}

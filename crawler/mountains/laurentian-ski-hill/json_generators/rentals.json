@@ -1,0 +1,23 @@
+{
+  "rentals": {
+    "ski": {
+      "adults": "$45",
+      "youth": "$40"
+    },
+    "snowboard": {
+      "adults": "$45",
+      "youth": "$40"
+    },
+    "items": {
+      "skis": "$25",
+      "snowboard": "$25",
+      "boots": "$15",
+      "poles": "$5",
+      "helmet": "$5",
+      "snowshoes": "$20"
+    }
+  },
+  "resortId": "laurentian-ski-hill-north-bay",
+  "sourceUrl": "https://laurentianskihill.com/rentals/",
+  "updatedAt": 1789769457530
+}

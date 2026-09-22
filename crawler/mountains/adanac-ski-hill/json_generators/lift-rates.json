@@ -1,13 +1,17 @@
 {
   "rates": {
     "day-week": {
-      "adults": "$50"
+      "youth": "$49",
+      "adults": "$57",
+      "seniors": "$49"
     },
     "day-weekend": {
-      "adults": "$50"
+      "youth": "$49",
+      "adults": "$57",
+      "seniors": "$49"
     }
   },
   "resortId": "adanac-ski-hill",
-  "sourceUrl": "https://www.greatersudbury.ca/play/ski-hills/adanac-ski-hill/",
-  "updatedAt": 1789698974064
+  "sourceUrl": "https://www.greatersudbury.ca/play/ski-hills/adanac-ski-hill/fees-and-rentals/lift-tickets/",
+  "updatedAt": 1789745277673
 }

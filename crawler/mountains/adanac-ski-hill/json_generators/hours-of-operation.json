@@ -1,14 +1,14 @@
 {
   "hours": {
-    "sunday": "10:00am to 4:00pm",
+    "sunday": "9 a.m. to 12:30 p.m. / 12:30 p.m. to 4 p.m.",
     "monday": "closed",
     "tuesday": "closed",
-    "wednesday": "closed",
-    "thursday": "closed",
-    "friday": "10:00am to 4:00pm",
-    "saturday": "10:00am to 4:00pm"
+    "wednesday": "10 a.m. to 1:30 p.m. / 12:30 p.m. to 4 p.m. / 6 p.m. to 9:30 p.m.",
+    "thursday": "10 a.m. to 1:30 p.m. / 12:30 p.m. to 4 p.m. / 6 p.m. to 9:30 p.m.",
+    "friday": "10 a.m. to 1:30 p.m. / 12:30 p.m. to 4 p.m. / 6 p.m. to 9:30 p.m.",
+    "saturday": "9 a.m. to 12:30 p.m. / 12:30 p.m. to 4 p.m."
   },
   "resortId": "adanac-ski-hill",
-  "sourceUrl": "https://www.greatersudbury.ca/play/ski-hills/adanac-ski-hill/",
-  "updatedAt": 1789698974018
+  "sourceUrl": "https://www.greatersudbury.ca/play/ski-hills/adanac-ski-hill/hours/",
+  "updatedAt": 1789745276632
 }
