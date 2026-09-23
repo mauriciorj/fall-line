@@ -1,0 +1,19 @@
+{
+  "continent": "North America",
+  "country": "Canada",
+  "email": "p.gascoigne@hotmail.com",
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasIceSkate": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(807) 597-1234",
+  "published": true,
+  "region": "Ontario",
+  "resortId": "atikokan",
+  "ticketUrl": "https://visitatikokan.com/experiences/mount-fairweather/",
+  "website": "https://visitatikokan.com/experiences/mount-fairweather/"
+}

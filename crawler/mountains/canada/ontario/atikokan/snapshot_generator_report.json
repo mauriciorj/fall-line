@@ -1,0 +1,44 @@
+{
+  "resortId": "atikokan",
+  "tables": [
+    {
+      "table": "resorts",
+      "missingColumns": [
+        "address",
+        "coordinates",
+        "dayTicketPrice",
+        "googleMapsUrl",
+        "lessonsPrice",
+        "rating",
+        "skiRentalPrice",
+        "snowBoardRentalPrice",
+        "tollFree",
+        "tubbingPrice"
+      ]
+    },
+    {
+      "table": "resortHours",
+      "missingColumns": []
+    },
+    {
+      "table": "resortRates",
+      "missingColumns": [
+        "rates"
+      ]
+    },
+    {
+      "table": "resortRentals",
+      "missingColumns": [
+        "rentals"
+      ]
+    },
+    {
+      "table": "weatherAndStatus",
+      "missingColumns": [
+        "lifts",
+        "tracks"
+      ]
+    }
+  ],
+  "missingColumnCount": 14
+}
