@@ -1,0 +1,22 @@
+{
+  "address": "926 Mead Blvd, Espanola, ON P5E 1P9, Canada",
+  "continent": "North America",
+  "coordinates": { "lat": 46.24058805527771, "lng": -81.77412080341037 },
+  "country": "Canada",
+  "email": "gm@boogiemountain.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/apsNdHFcw97gV48E7",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": true,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(705) 869-1740",
+  "published": true,
+  "region": "Ontario",
+  "resortId": "boogie-mountain",
+  "ticketUrl": "https://boogiemountain.com/guest-passes-rentals/",
+  "website": "https://boogiemountain.com/"
+}

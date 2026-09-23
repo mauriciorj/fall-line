@@ -1,0 +1,16 @@
+{
+  "rentals": {
+    "ski": {
+      "youth": "$20",
+      "adults": "$20"
+    },
+    "snowboard": {
+      "youth": "$20",
+      "adults": "$20"
+    },
+    "items": {}
+  },
+  "resortId": "boogie-mountain",
+  "sourceUrl": "https://boogiemountain.com/guest-passes-rentals/",
+  "updatedAt": 1790181401936
+}

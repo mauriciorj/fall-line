@@ -1,0 +1,14 @@
+{
+  "hours": {
+    "sunday": "10:00 to 4:00",
+    "monday": "closed",
+    "tuesday": "6:00 to 9:00",
+    "wednesday": "6:00 to 9:00",
+    "thursday": "6:00 to 9:00",
+    "friday": "closed",
+    "saturday": "10:00 to 4:00"
+  },
+  "resortId": "boogie-mountain",
+  "sourceUrl": "https://boogiemountain.com/location-hours/",
+  "updatedAt": 1790181398967
+}

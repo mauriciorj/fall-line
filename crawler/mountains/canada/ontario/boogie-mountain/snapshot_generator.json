@@ -1,0 +1,192 @@
+{
+  "resortId": "boogie-mountain",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "address": "926 Mead Blvd, Espanola, ON P5E 1P9, Canada",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 46.24058805527771,
+          "lng": -81.77412080341037
+        },
+        "country": "Canada",
+        "email": "gm@boogiemountain.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/apsNdHFcw97gV48E7",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": true,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(705) 869-1740",
+        "published": true,
+        "region": "Ontario",
+        "resortId": "boogie-mountain",
+        "ticketUrl": "https://boogiemountain.com/guest-passes-rentals/",
+        "website": "https://boogiemountain.com/",
+        "name": "Boogie Mountain",
+        "elevation": "205 m - 260 m",
+        "height": "55m",
+        "tracksGreenLength": "2.4km",
+        "tracksGreenProportion": "80",
+        "tracksBlueLength": "0.6km",
+        "tracksBlueProportion": "20",
+        "tracksBlackLength": "0km",
+        "tracksBlackProportion": "0",
+        "tracksTotalLength": "3km",
+        "tracksSummary": {
+          "black": 3,
+          "blue": 5,
+          "doubleBlack": 1,
+          "freeStyle": 0,
+          "green": 2
+        },
+        "dayTicketPrice": 45,
+        "skiRentalPrice": 20,
+        "snowBoardRentalPrice": 20
+      }
+    },
+    {
+      "table": "resortHours",
+      "content": {
+        "hours": {
+          "sunday": "10:00 to 4:00",
+          "monday": "closed",
+          "tuesday": "6:00 to 9:00",
+          "wednesday": "6:00 to 9:00",
+          "thursday": "6:00 to 9:00",
+          "friday": "closed",
+          "saturday": "10:00 to 4:00"
+        },
+        "resortId": "boogie-mountain",
+        "sourceUrl": "https://boogiemountain.com/location-hours/",
+        "updatedAt": 1790181398967
+      }
+    },
+    {
+      "table": "resortRates",
+      "content": {
+        "rates": {
+          "night-week": {
+            "youth": "$25",
+            "seniors": "$25",
+            "adults": "$25"
+          },
+          "night-weekend": {
+            "youth": "$25",
+            "seniors": "$25",
+            "adults": "$25"
+          },
+          "day-week": {
+            "youth": "$40",
+            "seniors": "$40",
+            "adults": "$45"
+          },
+          "day-weekend": {
+            "youth": "$40",
+            "seniors": "$40",
+            "adults": "$45"
+          }
+        },
+        "resortId": "boogie-mountain",
+        "sourceUrl": "https://boogiemountain.com/guest-passes-rentals/",
+        "updatedAt": 1790181400281
+      }
+    },
+    {
+      "table": "resortRentals",
+      "content": {
+        "rentals": {
+          "ski": {
+            "youth": "$20",
+            "adults": "$20"
+          },
+          "snowboard": {
+            "youth": "$20",
+            "adults": "$20"
+          },
+          "items": {}
+        },
+        "resortId": "boogie-mountain",
+        "sourceUrl": "https://boogiemountain.com/guest-passes-rentals/",
+        "updatedAt": 1790181401936
+      }
+    },
+    {
+      "table": "weatherAndStatus",
+      "content": {
+        "lifts": [],
+        "tracks": [
+          {
+            "name": "Gord's Run",
+            "status": "closed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Boogie Run",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Speedo",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Nose Dive",
+            "status": "closed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Round About",
+            "status": "closed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Stellar Cellar",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "7 Leonard's Leap",
+            "status": "closed",
+            "difficulty": "doubleBlack"
+          },
+          {
+            "name": "Main",
+            "status": "closed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Fairhall",
+            "status": "closed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Boomerang",
+            "status": "closed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Bonzai",
+            "status": "closed",
+            "difficulty": "green"
+          }
+        ],
+        "terrainParks": [
+          {
+            "name": "Skdol Yard",
+            "status": "closed",
+            "difficulty": "freeStyle"
+          }
+        ],
+        "resortId": "boogie-mountain",
+        "sourceUrl": "https://boogiemountain.com/the-mountain/",
+        "updatedAt": 1790181403714
+      }
+    }
+  ]
+}

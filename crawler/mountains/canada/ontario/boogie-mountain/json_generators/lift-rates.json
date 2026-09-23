@@ -1,0 +1,27 @@
+{
+  "rates": {
+    "night-week": {
+      "youth": "$25",
+      "seniors": "$25",
+      "adults": "$25"
+    },
+    "night-weekend": {
+      "youth": "$25",
+      "seniors": "$25",
+      "adults": "$25"
+    },
+    "day-week": {
+      "youth": "$40",
+      "seniors": "$40",
+      "adults": "$45"
+    },
+    "day-weekend": {
+      "youth": "$40",
+      "seniors": "$40",
+      "adults": "$45"
+    }
+  },
+  "resortId": "boogie-mountain",
+  "sourceUrl": "https://boogiemountain.com/guest-passes-rentals/",
+  "updatedAt": 1790181400281
+}

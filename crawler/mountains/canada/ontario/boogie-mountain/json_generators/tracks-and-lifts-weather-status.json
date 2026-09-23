@@ -1,0 +1,70 @@
+{
+  "lifts": [],
+  "tracks": [
+    {
+      "name": "Gord's Run",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Boogie Run",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Speedo",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Nose Dive",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Round About",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Stellar Cellar",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "7 Leonard's Leap",
+      "status": "closed",
+      "difficulty": "doubleBlack"
+    },
+    {
+      "name": "Main",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Fairhall",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Boomerang",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Bonzai",
+      "status": "closed",
+      "difficulty": "green"
+    }
+  ],
+  "terrainParks": [
+    {
+      "name": "Skdol Yard",
+      "status": "closed",
+      "difficulty": "freeStyle"
+    }
+  ],
+  "resortId": "boogie-mountain",
+  "sourceUrl": "https://boogiemountain.com/the-mountain/",
+  "updatedAt": 1790181403714
+}
