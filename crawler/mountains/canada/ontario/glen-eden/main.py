@@ -4,7 +4,7 @@ import sys
 from pathlib import Path
 
 GLEN_EDEN_DIR = Path(__file__).resolve().parent
-CRAWLER_DIR = GLEN_EDEN_DIR.parents[1]
+CRAWLER_DIR = GLEN_EDEN_DIR.parents[3]
 SNAPSHOT_GENERATOR = GLEN_EDEN_DIR / "snapshot_generator.py"
 SNAPSHOT_FILE = GLEN_EDEN_DIR / "snapshot_generator.json"
 TABLE_NAMES = (

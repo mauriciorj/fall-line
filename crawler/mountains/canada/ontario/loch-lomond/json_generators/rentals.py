@@ -9,6 +9,8 @@ truststore.inject_into_ssl()
 
 import requests
 from bs4 import BeautifulSoup, NavigableString
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 SOURCE_URL = "https://www.lochlomond.ca/"
 PAGE_URL = "https://www.lochlomond.ca/rentals/equipment-rental/"
@@ -50,8 +52,26 @@ def get_price(text, label):
 
 
 def get_rentals():
-    response = requests.get(PAGE_URL, headers=HEADERS, timeout=30)
-    response.raise_for_status()
+    retry = Retry(
+        total=3,
+        backoff_factor=1,
+        status_forcelist=(502, 503, 504),
+        allowed_methods=frozenset({"GET"}),
+    )
+    session = requests.Session()
+    session.mount("https://", HTTPAdapter(max_retries=retry))
+    try:
+        response = session.get(PAGE_URL, headers=HEADERS, timeout=30)
+        response.raise_for_status()
+    except requests.HTTPError as error:
+        if error.response is None or error.response.status_code not in (403, 502, 503, 504):
+            raise
+        with open(os.path.join(os.path.dirname(__file__), "rentals.json"), encoding="utf-8") as source:
+            fallback = json.load(source).get("rentals")
+        if isinstance(fallback, dict):
+            return fallback
+        raise
+
     soup = BeautifulSoup(response.content, "html.parser")
     text = get_rental_prices_text(soup)
     ski_price = get_price(text, r"ski\s*/\s*snowboard\s+full\s+set")

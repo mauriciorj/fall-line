@@ -3,7 +3,12 @@
   "tables": [
     {
       "table": "resorts",
-      "missingColumns": []
+      "missingColumns": [
+        "lessonsPrice",
+        "rating",
+        "tollFree",
+        "tubbingPrice"
+      ]
     },
     {
       "table": "resortHours",
@@ -22,5 +27,5 @@
       "missingColumns": []
     }
   ],
-  "missingColumnCount": 0
+  "missingColumnCount": 4
 }

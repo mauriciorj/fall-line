@@ -1,0 +1,34 @@
+{
+  "resortId": "ski-kenora",
+  "tables": [
+    {
+      "table": "resorts",
+      "missingColumns": [
+        "dayTicketPrice",
+        "lessonsPrice",
+        "rating",
+        "tollFree",
+        "tubbingPrice"
+      ]
+    },
+    {
+      "table": "resortHours",
+      "missingColumns": []
+    },
+    {
+      "table": "resortRates",
+      "missingColumns": [
+        "rates"
+      ]
+    },
+    {
+      "table": "resortRentals",
+      "missingColumns": []
+    },
+    {
+      "table": "weatherAndStatus",
+      "missingColumns": []
+    }
+  ],
+  "missingColumnCount": 6
+}

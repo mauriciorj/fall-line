@@ -38,7 +38,7 @@
         "elevation": "372 m - 522 m",
         "height": "150m",
         "tracksSummary": {
-          "black": 3,
+          "black": 9,
           "blue": 4,
           "doubleBlack": 0,
           "freeStyle": 3,
@@ -61,7 +61,7 @@
         },
         "resortId": "devils-glen",
         "sourceUrl": "https://www.devilsglen.com/About/Directions_Hours",
-        "updatedAt": 1789764746825
+        "updatedAt": 1790178983494
       }
     },
     {
@@ -81,7 +81,7 @@
         },
         "resortId": "devils-glen",
         "sourceUrl": "https://www.devilsglen.com/About/Ticket_Pricing",
-        "updatedAt": 1789764748093
+        "updatedAt": 1790178984406
       }
     },
     {
@@ -89,7 +89,7 @@
       "content": {
         "resortId": "devils-glen",
         "sourceUrl": "https://www.devilsglen.com/About/Rental_Equipment",
-        "updatedAt": 1789764748262
+        "updatedAt": 1790178984498
       }
     },
     {
@@ -115,27 +115,27 @@
         ],
         "tracks": [
           {
-            "difficulty": null,
+            "difficulty": "black",
             "name": "Stairway",
             "status": "closed"
           },
           {
-            "difficulty": null,
+            "difficulty": "black",
             "name": "Siren",
             "status": "closed"
           },
           {
-            "difficulty": null,
+            "difficulty": "black",
             "name": "Cerberus",
             "status": "closed"
           },
           {
-            "difficulty": null,
+            "difficulty": "black",
             "name": "Lucifer's Lane",
             "status": "closed"
           },
           {
-            "difficulty": null,
+            "difficulty": "black",
             "name": "Waterfall",
             "status": "closed"
           },
@@ -215,7 +215,7 @@
             "status": "closed"
           },
           {
-            "difficulty": null,
+            "difficulty": "black",
             "name": "Hallelujah Glades",
             "status": "closed"
           }
@@ -239,7 +239,7 @@
         ],
         "resortId": "devils-glen",
         "sourceUrl": "https://www.devilsglen.com/About/Trail_Report",
-        "updatedAt": 1789764751553
+        "updatedAt": 1790178987178
       }
     }
   ]

@@ -37,10 +37,14 @@ def get_hours():
     response = requests.get(PAGE_URL, headers=HEADERS, timeout=30)
     response.raise_for_status()
     soup = BeautifulSoup(response.content, "html.parser")
-    heading = next((element for element in soup.find_all(["h1", "h2", "h3", "h4"]) if "ski/snowboard hours of operation" in normalize_text(element.get_text(" ", strip=True))), None)
-    if not heading:
-        raise ValueError("Could not find Ski/Snowboard Hours of Operation section")
-    table = heading.find_next("table")
+    table = next(
+        (
+            table
+            for table in soup.find_all("table")
+            if "ski/snowboard hours of operation" in normalize_text(table.get_text(" ", strip=True))
+        ),
+        None,
+    )
     if not table:
         raise ValueError("Could not find Ski/Snowboard Hours of Operation table")
 

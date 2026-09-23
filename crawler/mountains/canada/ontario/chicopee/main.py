@@ -4,7 +4,7 @@ import sys
 from pathlib import Path
 
 CHICOPEE_DIR = Path(__file__).resolve().parent
-CRAWLER_DIR = CHICOPEE_DIR.parents[1]
+CRAWLER_DIR = CHICOPEE_DIR.parents[3]
 SNAPSHOT_GENERATOR = CHICOPEE_DIR / "snapshot_generator.py"
 SNAPSHOT_FILE = CHICOPEE_DIR / "snapshot_generator.json"
 TABLE_NAMES = (

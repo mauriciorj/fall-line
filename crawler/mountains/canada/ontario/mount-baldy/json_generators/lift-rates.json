@@ -6,14 +6,14 @@
     "day-week": {
       "adults": "$49.99"
     },
-    "night-week": {
+    "night-weekend": {
       "adults": "$20"
     },
-    "night-weekend": {
+    "night-week": {
       "adults": "$20"
     }
   },
   "resortId": "mount-baldy",
   "sourceUrl": "https://www.skimountbaldy.ca/tickets-and-passes",
-  "updatedAt": 1790005242944
+  "updatedAt": 1790179077915
 }

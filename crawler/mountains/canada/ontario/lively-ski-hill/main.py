@@ -4,7 +4,7 @@ import sys
 from pathlib import Path
 
 LIVELY_DIR = Path(__file__).resolve().parent
-CRAWLER_DIR = LIVELY_DIR.parents[1]
+CRAWLER_DIR = LIVELY_DIR.parents[3]
 SNAPSHOT_GENERATOR = LIVELY_DIR / "snapshot_generator.py"
 SNAPSHOT_FILE = LIVELY_DIR / "snapshot_generator.json"
 TABLE_NAMES = ("resorts", "resortHours", "resortRates", "resortRentals", "weatherAndStatus")

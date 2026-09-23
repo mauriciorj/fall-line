@@ -1,0 +1,176 @@
+{
+  "resortId": "mount-dufour",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "address": "10 Ski Hill Road, Elliot Lake, ON P5A 2J6",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 46.385852928274005,
+          "lng": -82.6362658586335
+        },
+        "country": "Canada",
+        "email": "dufour@bellnet.ca",
+        "googleMapsUrl": "https://maps.app.goo.gl/uFBrAf2BkuFP6p6N8",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": true,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(705) 848-6655",
+        "published": true,
+        "region": "Ontario",
+        "resortId": "mount-dufour",
+        "ticketUrl": "https://www.mountdufour.com/index.php/ski-conditions/ticket-prices",
+        "website": "https://www.mountdufour.com/",
+        "name": "Mount Dufour",
+        "elevation": "314 m - 412 m",
+        "height": "98m",
+        "tracksGreenLength": "1.1km",
+        "tracksGreenProportion": "55",
+        "tracksBlueLength": "0.3km",
+        "tracksBlueProportion": "15",
+        "tracksBlackLength": "0.6km",
+        "tracksBlackProportion": "30",
+        "tracksTotalLength": "2km",
+        "tracksSummary": {
+          "black": 3,
+          "blue": 1,
+          "doubleBlack": 0,
+          "freeStyle": 1,
+          "green": 3
+        },
+        "dayTicketPrice": 65,
+        "skiRentalPrice": 30,
+        "snowBoardRentalPrice": 30
+      }
+    },
+    {
+      "table": "resortHours",
+      "content": {
+        "hours": {
+          "sunday": "closed",
+          "monday": "closed",
+          "tuesday": "closed",
+          "wednesday": "closed",
+          "thursday": "closed",
+          "friday": "closed",
+          "saturday": "closed"
+        },
+        "resortId": "mount-dufour",
+        "sourceUrl": "https://www.mountdufour.com/index.php/the-mountain/hours-of-operation",
+        "updatedAt": 1790179089624
+      }
+    },
+    {
+      "table": "resortRates",
+      "content": {
+        "rates": {
+          "day-week": {
+            "adults": "$65",
+            "seniors": "$55",
+            "youth": "$60"
+          },
+          "day-weekend": {
+            "adults": "$65",
+            "seniors": "$55",
+            "youth": "$60"
+          }
+        },
+        "resortId": "mount-dufour",
+        "sourceUrl": "https://www.mountdufour.com/index.php/ski-conditions/ticket-prices",
+        "updatedAt": 1790179090757
+      }
+    },
+    {
+      "table": "resortRentals",
+      "content": {
+        "rentals": {
+          "ski": {
+            "adults": "$30",
+            "youth": "$25"
+          },
+          "snowboard": {
+            "adults": "$35",
+            "youth": "$30"
+          },
+          "items": {
+            "skis": "$20",
+            "snowboard": "$25",
+            "boots": "$15",
+            "poles": "$7"
+          }
+        },
+        "resortId": "mount-dufour",
+        "sourceUrl": "https://www.mountdufour.com/index.php/rentals",
+        "updatedAt": 1790179091994
+      }
+    },
+    {
+      "table": "weatherAndStatus",
+      "content": {
+        "lifts": [
+          {
+            "name": "Quad Lift",
+            "status": "closed"
+          },
+          {
+            "name": "Beginner Poma Lift",
+            "status": "closed"
+          }
+        ],
+        "tracks": [
+          {
+            "name": "Beginner's Trail",
+            "status": "closed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Bruno's Edge",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Dengg's Peak",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Family Trail",
+            "status": "closed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Idiot's Delight",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Main Run",
+            "status": "closed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Valley Trail",
+            "status": "closed",
+            "difficulty": "green"
+          }
+        ],
+        "terrainParks": [
+          {
+            "name": "Terrain Park",
+            "status": "closed",
+            "difficulty": "freeStyle"
+          }
+        ],
+        "resortId": "mount-dufour",
+        "sourceUrl": "https://www.mountdufour.com/index.php/the-mountain/ski-conditions",
+        "updatedAt": 1790179095015
+      }
+    }
+  ]
+}

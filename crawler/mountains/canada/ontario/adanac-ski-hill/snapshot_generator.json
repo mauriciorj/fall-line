@@ -6,17 +6,24 @@
       "content": {
         "address": "744 Beatrice Crescent, Sudbury, ON P3A 5B5",
         "continent": "North America",
+        "coordinates": {
+          "lat": 46.51082250447364,
+          "lng": -80.96038157408354
+        },
         "country": "Canada",
+        "email": "311@greatersudbury.ca",
+        "googleMapsUrl": "https://maps.app.goo.gl/F5auCSi53GtUyseP8",
         "hasIceSkate": false,
         "hasAccommodations": false,
         "hasCrossCountry": false,
-        "hasLessons": true,
+        "hasLessons": false,
         "hasSnowshoeing": false,
         "hasSpa": false,
         "hasTubing": false,
         "hasZipline": false,
         "phone": "(705) 688-3968",
         "published": true,
+        "rating": 4.1,
         "region": "Ontario",
         "resortId": "adanac-ski-hill",
         "ticketUrl": "https://www.greatersudbury.ca/play/ski-hills/adanac-ski-hill/",
@@ -57,7 +64,7 @@
         },
         "resortId": "adanac-ski-hill",
         "sourceUrl": "https://www.greatersudbury.ca/play/ski-hills/adanac-ski-hill/hours/",
-        "updatedAt": 1789745276632
+        "updatedAt": 1790178842628
       }
     },
     {
@@ -77,7 +84,7 @@
         },
         "resortId": "adanac-ski-hill",
         "sourceUrl": "https://www.greatersudbury.ca/play/ski-hills/adanac-ski-hill/fees-and-rentals/lift-tickets/",
-        "updatedAt": 1789745277673
+        "updatedAt": 1790178843578
       }
     },
     {
@@ -102,7 +109,7 @@
         },
         "resortId": "adanac-ski-hill",
         "sourceUrl": "https://www.greatersudbury.ca/play/ski-hills/adanac-ski-hill/fees-and-rentals/equipment-rentals",
-        "updatedAt": 1789745278727
+        "updatedAt": 1790178844421
       }
     },
     {
@@ -154,7 +161,7 @@
         "terrainParks": [],
         "resortId": "adanac-ski-hill",
         "sourceUrl": "https://www.greatersudbury.ca/play/ski-hills/adanac-ski-hill/",
-        "updatedAt": 1789745281085
+        "updatedAt": 1790178846588
       }
     }
   ]

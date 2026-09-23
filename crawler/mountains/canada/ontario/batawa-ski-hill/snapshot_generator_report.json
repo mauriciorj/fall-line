@@ -1,5 +1,38 @@
 {
   "resortId": "batawa-ski-hill",
-  "tables": [],
-  "missingColumnCount": 0
+  "tables": [
+    {
+      "table": "resorts",
+      "missingColumns": [
+        "dayTicketPrice",
+        "lessonsPrice",
+        "rating",
+        "skiRentalPrice",
+        "snowBoardRentalPrice",
+        "tollFree",
+        "tubbingPrice"
+      ]
+    },
+    {
+      "table": "resortHours",
+      "missingColumns": []
+    },
+    {
+      "table": "resortRates",
+      "missingColumns": [
+        "rates"
+      ]
+    },
+    {
+      "table": "resortRentals",
+      "missingColumns": []
+    },
+    {
+      "table": "weatherAndStatus",
+      "missingColumns": [
+        "lifts"
+      ]
+    }
+  ],
+  "missingColumnCount": 9
 }

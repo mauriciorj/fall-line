@@ -23,7 +23,8 @@ PRICE_ROWS = {
 
 
 def normalize_text(value):
-    return " ".join(value.replace("\xa0", " ").split()).lower()
+    value = value.replace("\xa0", " ").replace("\ufeff", "").replace("\u200b", "")
+    return " ".join(value.split()).lower()
 
 
 def normalize_price(value):

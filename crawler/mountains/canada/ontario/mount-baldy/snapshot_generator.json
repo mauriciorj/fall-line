@@ -6,15 +6,20 @@
       "content": {
         "address": "375 Mount Baldy Road, Shuniah, ON P7A 0W3",
         "continent": "North America",
+        "coordinates": {
+          "lat": 48.52588392948118,
+          "lng": -89.12825765916386
+        },
         "country": "Canada",
         "email": "info@skimountbaldy.ca",
+        "googleMapsUrl": "https://maps.app.goo.gl/fbSDWxizT7Bmw9ic6",
         "hasIceSkate": false,
         "hasAccommodations": false,
         "hasCrossCountry": false,
         "hasLessons": true,
         "hasSnowshoeing": false,
         "hasSpa": false,
-        "hasTubing": false,
+        "hasTubing": true,
         "hasZipline": false,
         "phone": "(807) 683-8441",
         "published": true,
@@ -23,6 +28,8 @@
         "ticketUrl": "https://www.skimountbaldy.ca/tickets-and-passes",
         "website": "https://www.skimountbaldy.ca/",
         "name": "Mount Baldy",
+        "elevation": "345 m - 490 m",
+        "height": "145m",
         "tracksGreenLength": "2.3km",
         "tracksGreenProportion": "36",
         "tracksBlueLength": "1.8km",
@@ -30,8 +37,6 @@
         "tracksBlackLength": "2.3km",
         "tracksBlackProportion": "36",
         "tracksTotalLength": "6.4km",
-        "elevation": "345 m - 490 m",
-        "height": "145m",
         "tracksSummary": {
           "black": 0,
           "blue": 0,
@@ -39,40 +44,48 @@
           "freeStyle": 0,
           "green": 0
         },
-        "dayTicketPrice": 60
+        "dayTicketPrice": 49.99,
+        "skiRentalPrice": 40,
+        "snowBoardRentalPrice": 40
       }
     },
     {
       "table": "resortHours",
       "content": {
         "hours": {
-          "sunday": "10:00am to 5:00pm",
-          "monday": "10:00am to 5:00pm",
-          "tuesday": "10:00am to 5:00pm",
-          "wednesday": "10:00am to 5:00pm",
-          "thursday": "10:00am to 5:00pm",
-          "friday": "10:00am to 5:00pm",
-          "saturday": "10:00am to 5:00pm"
+          "sunday": "closed",
+          "monday": "closed",
+          "tuesday": "closed",
+          "wednesday": "closed",
+          "thursday": "tickets only $25\"",
+          "friday": "closed",
+          "saturday": "closed"
         },
         "resortId": "mount-baldy",
-        "sourceUrl": "https://www.skimountbaldy.ca/",
-        "updatedAt": 1789697240552
+        "sourceUrl": "https://www.skimountbaldy.ca/contact",
+        "updatedAt": 1790179077132
       }
     },
     {
       "table": "resortRates",
       "content": {
         "rates": {
-          "day-week": {
-            "adults": "$60"
-          },
           "day-weekend": {
-            "adults": "$60"
+            "adults": "$61.99"
+          },
+          "day-week": {
+            "adults": "$49.99"
+          },
+          "night-weekend": {
+            "adults": "$20"
+          },
+          "night-week": {
+            "adults": "$20"
           }
         },
         "resortId": "mount-baldy",
-        "sourceUrl": "https://www.skimountbaldy.ca/",
-        "updatedAt": 1789697240612
+        "sourceUrl": "https://www.skimountbaldy.ca/tickets-and-passes",
+        "updatedAt": 1790179077915
       }
     },
     {
@@ -87,11 +100,17 @@
             "adults": "$40",
             "youth": "$40"
           },
-          "items": {}
+          "items": {
+            "skis": "$25",
+            "snowboard": "$25",
+            "boots": "$15",
+            "poles": "$10",
+            "helmet": "$10"
+          }
         },
         "resortId": "mount-baldy",
-        "sourceUrl": "https://www.skimountbaldy.ca/",
-        "updatedAt": 1789697240670
+        "sourceUrl": "https://www.skimountbaldy.ca/rentals-and-repairs",
+        "updatedAt": 1790179078617
       }
     },
     {
@@ -115,7 +134,7 @@
         "terrainParks": [],
         "resortId": "mount-baldy",
         "sourceUrl": "https://www.skimountbaldy.ca/",
-        "updatedAt": 1789697242768
+        "updatedAt": 1790179080461
       }
     }
   ]

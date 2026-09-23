@@ -65,7 +65,7 @@
         },
         "resortId": "snow-valley-ski-resort",
         "sourceUrl": "https://www.skisnowvalley.com/about/",
-        "updatedAt": 1789426004024
+        "updatedAt": 1790179174286
       }
     },
     {
@@ -95,7 +95,7 @@
         },
         "resortId": "snow-valley-ski-resort",
         "sourceUrl": "https://www.skisnowvalley.com/plan/ski-snowboard/tickets-and-passes/",
-        "updatedAt": 1789426005234
+        "updatedAt": 1790179175255
       }
     },
     {
@@ -119,7 +119,7 @@
         },
         "resortId": "snow-valley-ski-resort",
         "sourceUrl": "https://www.skisnowvalley.com/plan/ski-snowboard/equipment-rentals/",
-        "updatedAt": 1789426006205
+        "updatedAt": 1790179176222
       }
     },
     {
@@ -268,7 +268,7 @@
         ],
         "resortId": "snow-valley-ski-resort",
         "sourceUrl": "https://www.skisnowvalley.com/plan/weather-webcams/",
-        "updatedAt": 1789426008507
+        "updatedAt": 1790179178369
       }
     }
   ]

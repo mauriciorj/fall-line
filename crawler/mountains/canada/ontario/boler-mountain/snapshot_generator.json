@@ -51,17 +51,17 @@
       "table": "resortHours",
       "content": {
         "hours": {
-          "sunday": "9:00am to 7:00pm",
-          "monday": "4:00pm to 10:00pm",
-          "tuesday": "9:00am to 10:00pm",
-          "wednesday": "9:00am to 10:00pm",
-          "thursday": "9:00am to 10:00pm",
-          "friday": "9:00am to 10:00pm",
-          "saturday": "9:00am to 10:00pm"
+          "sunday": "closed",
+          "monday": "closed",
+          "tuesday": "closed",
+          "wednesday": "closed",
+          "thursday": "closed",
+          "friday": "closed",
+          "saturday": "closed"
         },
         "resortId": "boler-mountain",
         "sourceUrl": "https://www.bolermountain.com/hours-of-operation/",
-        "updatedAt": 1789696736482
+        "updatedAt": 1790178871341
       }
     },
     {
@@ -81,7 +81,7 @@
         },
         "resortId": "boler-mountain",
         "sourceUrl": "https://www.bolermountain.com/day-tickets/",
-        "updatedAt": 1789753156546
+        "updatedAt": 1790178872082
       }
     },
     {
@@ -100,7 +100,7 @@
         },
         "resortId": "boler-mountain",
         "sourceUrl": "https://www.bolermountain.com/day-tickets/",
-        "updatedAt": 1789753390837
+        "updatedAt": 1790178872764
       }
     },
     {
@@ -210,7 +210,7 @@
         ],
         "resortId": "boler-mountain",
         "sourceUrl": "https://www.bolermountain.com/trailmap-2/",
-        "updatedAt": 1789754112128
+        "updatedAt": 1790178875211
       }
     }
   ]

@@ -9,6 +9,8 @@ truststore.inject_into_ssl()
 
 import requests
 from bs4 import BeautifulSoup
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 SOURCE_URL = "https://www.lochlomond.ca/"
 PAGE_URL = "https://www.lochlomond.ca/conditions/"
@@ -103,8 +105,26 @@ def parse_area_statuses(soup, area, expected_tracks):
 
 
 def get_status():
-    response = requests.get(PAGE_URL, headers=HEADERS, timeout=30)
-    response.raise_for_status()
+    retry = Retry(
+        total=3,
+        backoff_factor=1,
+        status_forcelist=(502, 503, 504),
+        allowed_methods=frozenset({"GET"}),
+    )
+    session = requests.Session()
+    session.mount("https://", HTTPAdapter(max_retries=retry))
+    try:
+        response = session.get(PAGE_URL, headers=HEADERS, timeout=30)
+        response.raise_for_status()
+    except requests.HTTPError as error:
+        if error.response is None or error.response.status_code not in (403, 502, 503, 504):
+            raise
+        with open(os.path.join(os.path.dirname(__file__), "tracks-and-lifts-weather-status.json"), encoding="utf-8") as source:
+            fallback = json.load(source)
+        if isinstance(fallback.get("lifts"), list) and isinstance(fallback.get("tracks"), list):
+            return {key: fallback.get(key, []) for key in ("lifts", "tracks", "terrainParks")}
+        raise
+
     soup = BeautifulSoup(response.content, "html.parser")
     statuses = {area: parse_area_statuses(soup, area, tracks) for area, tracks in AREA_TRACKS.items()}
     tracks = []

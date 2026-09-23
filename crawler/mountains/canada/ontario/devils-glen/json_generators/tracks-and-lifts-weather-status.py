@@ -21,6 +21,7 @@ DIFFICULTY_NAMES = {
     "green": "green",
     "blue": "blue",
     "black": "black",
+    "group_1": "black",
     "orange": "freeStyle",
 }
 

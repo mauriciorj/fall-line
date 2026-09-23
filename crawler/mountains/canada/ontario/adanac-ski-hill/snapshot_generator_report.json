@@ -3,9 +3,7 @@
   "tables": [
     {
       "table": "resorts",
-      "missingColumns": [
-        "email"
-      ]
+      "missingColumns": []
     },
     {
       "table": "resortHours",
@@ -24,5 +22,5 @@
       "missingColumns": []
     }
   ],
-  "missingColumnCount": 1
+  "missingColumnCount": 0
 }

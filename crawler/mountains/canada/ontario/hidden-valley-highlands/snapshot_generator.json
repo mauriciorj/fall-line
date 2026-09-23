@@ -22,7 +22,9 @@
         "resortId": "hidden-valley-highlands",
         "ticketUrl": "https://shop.skihiddenvalley.ca/lift-passes",
         "website": "https://skihiddenvalley.ca/",
-        "name": "Hidden Valley Highlands",
+        "name": "Hidden Valley Highlands Ski Area",
+        "elevation": "280 m - 380 m",
+        "height": "100m",
         "tracksGreenLength": "1.8km",
         "tracksGreenProportion": "60",
         "tracksBlueLength": "0.7km",
@@ -30,33 +32,33 @@
         "tracksBlackLength": "0.5km",
         "tracksBlackProportion": "17",
         "tracksTotalLength": "3km",
-        "elevation": "280 m - 380 m",
-        "height": "100m",
         "tracksSummary": {
-          "black": 0,
-          "blue": 0,
-          "doubleBlack": 0,
+          "black": 3,
+          "blue": 4,
+          "doubleBlack": 2,
           "freeStyle": 0,
-          "green": 0
+          "green": 5
         },
-        "dayTicketPrice": 60
+        "dayTicketPrice": 60,
+        "skiRentalPrice": 40,
+        "snowBoardRentalPrice": 40
       }
     },
     {
       "table": "resortHours",
       "content": {
         "hours": {
-          "sunday": "9:00am to 4:00pm",
-          "monday": "closed",
+          "sunday": "9am to 4pm (no night skiing)",
+          "monday": "9am to 4pm (no night skiing)",
           "tuesday": "closed",
-          "wednesday": "9:00am to 4:00pm",
-          "thursday": "9:00am to 4:00pm",
-          "friday": "9:00am to 9:00pm",
-          "saturday": "9:00am to 9:00pm"
+          "wednesday": "closed",
+          "thursday": "9am to 9pm (night skiing 4pm)",
+          "friday": "9am to 9pm (night skiing 4pm)",
+          "saturday": "9am to 9pm (night skiing 4pm)"
         },
         "resortId": "hidden-valley-highlands",
         "sourceUrl": "https://skihiddenvalley.ca/explore/hours-of-operation/",
-        "updatedAt": 1789698188846
+        "updatedAt": 1790179010940
       }
     },
     {
@@ -78,7 +80,7 @@
         },
         "resortId": "hidden-valley-highlands",
         "sourceUrl": "https://shop.skihiddenvalley.ca/lift-passes",
-        "updatedAt": 1789698188895
+        "updatedAt": 1790179011023
       }
     },
     {
@@ -97,7 +99,7 @@
         },
         "resortId": "hidden-valley-highlands",
         "sourceUrl": "https://shop.skihiddenvalley.ca/rentals",
-        "updatedAt": 1789698188947
+        "updatedAt": 1790179011070
       }
     },
     {
@@ -105,15 +107,15 @@
       "content": {
         "lifts": [
           {
-            "name": "Main Chair",
+            "name": "Algonquin Quad (Green Chair)",
             "status": "closed"
           },
           {
-            "name": "North Chair",
+            "name": "Iroquois Quad (Red Chair)",
             "status": "closed"
           },
           {
-            "name": "South Chair",
+            "name": "Bigwin Quad (Blue Chair)",
             "status": "closed"
           },
           {
@@ -121,11 +123,82 @@
             "status": "closed"
           }
         ],
-        "tracks": [],
+        "tracks": [
+          {
+            "name": "Fifth Avenue",
+            "status": "closed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Terrain Park",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Back Trail",
+            "status": "closed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "The Face",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Chalet Chute",
+            "status": "closed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Beginner Hill",
+            "status": "closed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Lazy Lady",
+            "status": "closed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Wild Cat",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Dipsy Doodle",
+            "status": "closed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Dutchman Glades",
+            "status": "closed",
+            "difficulty": "doubleBlack"
+          },
+          {
+            "name": "Nischans Run",
+            "status": "closed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Fun Run",
+            "status": "closed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Member's Dip",
+            "status": "closed",
+            "difficulty": "doubleBlack"
+          },
+          {
+            "name": "Flying Dutchman",
+            "status": "closed",
+            "difficulty": "blue"
+          }
+        ],
         "terrainParks": [],
         "resortId": "hidden-valley-highlands",
-        "sourceUrl": "https://skihiddenvalley.ca/",
-        "updatedAt": 1789698191106
+        "sourceUrl": "https://msc.skihvh.com/status/embed.php",
+        "updatedAt": 1790179013650
       }
     }
   ]

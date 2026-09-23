@@ -6,13 +6,18 @@
       "content": {
         "address": "103 Searchmont Resort Rd., Searchmont, ON P0S 1J0, Canada",
         "continent": "North America",
+        "coordinates": {
+          "lat": 46.770243957523235,
+          "lng": -84.04984769233018
+        },
         "country": "Canada",
         "email": "info@searchmont.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/S8vtJh5pXdXEGHFz9",
         "hasIceSkate": false,
-        "hasAccommodations": true,
+        "hasAccommodations": false,
         "hasCrossCountry": false,
-        "hasLessons": true,
-        "hasSnowshoeing": false,
+        "hasLessons": false,
+        "hasSnowshoeing": true,
         "hasSpa": false,
         "hasTubing": false,
         "hasZipline": false,
@@ -23,6 +28,8 @@
         "ticketUrl": "https://searchmont.com/lift-tickets/",
         "website": "https://searchmont.com/",
         "name": "Searchmont Ski Resort",
+        "elevation": "233 m - 488 m",
+        "height": "255m",
         "tracksGreenLength": "2km",
         "tracksGreenProportion": "20",
         "tracksBlueLength": "6km",
@@ -30,16 +37,16 @@
         "tracksBlackLength": "2km",
         "tracksBlackProportion": "20",
         "tracksTotalLength": "10km",
-        "elevation": "233 m - 488 m",
-        "height": "255m",
         "tracksSummary": {
-          "black": 0,
-          "blue": 0,
+          "black": 12,
+          "blue": 8,
           "doubleBlack": 0,
           "freeStyle": 1,
-          "green": 0
+          "green": 8
         },
-        "dayTicketPrice": 80
+        "dayTicketPrice": 80,
+        "skiRentalPrice": 52,
+        "snowBoardRentalPrice": 52
       }
     },
     {
@@ -56,7 +63,7 @@
         },
         "resortId": "searchmont",
         "sourceUrl": "https://searchmont.com/hours/",
-        "updatedAt": 1789611283706
+        "updatedAt": 1790179137083
       }
     },
     {
@@ -78,7 +85,7 @@
         },
         "resortId": "searchmont",
         "sourceUrl": "https://searchmont.com/lift-tickets/",
-        "updatedAt": 1789611285393
+        "updatedAt": 1790179137840
       }
     },
     {
@@ -95,12 +102,13 @@
           },
           "items": {
             "helmet": "$12",
-            "poles": "$12"
+            "poles": "$12",
+            "snowshoes": "$25"
           }
         },
         "resortId": "searchmont",
         "sourceUrl": "https://searchmont.com/rentals/",
-        "updatedAt": 1789611287007
+        "updatedAt": 1790179138611
       }
     },
     {
@@ -131,115 +139,143 @@
         "tracks": [
           {
             "name": "Binder Twine",
-            "status": "closed"
+            "status": "closed",
+            "difficulty": "blue"
           },
           {
             "name": "Champs",
-            "status": "closed"
+            "status": "closed",
+            "difficulty": "blue"
           },
           {
             "name": "Goulais",
-            "status": "closed"
+            "status": "closed",
+            "difficulty": "blue"
           },
           {
             "name": "Meadow Express",
-            "status": "closed"
+            "status": "closed",
+            "difficulty": "blue"
           },
           {
             "name": "Nan's Ski Askin",
-            "status": "closed"
+            "status": "closed",
+            "difficulty": "blue"
           },
           {
             "name": "Peggy's Promise",
-            "status": "closed"
+            "status": "closed",
+            "difficulty": "blue"
           },
           {
             "name": "Really Mealey",
-            "status": "closed"
+            "status": "closed",
+            "difficulty": "blue"
           },
           {
             "name": "Rocky Road",
-            "status": "closed"
+            "status": "closed",
+            "difficulty": "blue"
           },
           {
             "name": "3X4",
-            "status": "closed"
+            "status": "closed",
+            "difficulty": "green"
           },
           {
             "name": "Buzzsaw",
-            "status": "closed"
+            "status": "closed",
+            "difficulty": "green"
           },
           {
             "name": "Herb's Meadow",
-            "status": "closed"
+            "status": "closed",
+            "difficulty": "green"
           },
           {
             "name": "Learning Centre",
-            "status": "closed"
+            "status": "closed",
+            "difficulty": "green"
           },
           {
             "name": "Little Wabos",
-            "status": "closed"
+            "status": "closed",
+            "difficulty": "green"
           },
           {
             "name": "Lumberjack",
-            "status": "closed"
+            "status": "closed",
+            "difficulty": "green"
           },
           {
             "name": "The Main",
-            "status": "closed"
+            "status": "closed",
+            "difficulty": "green"
           },
           {
             "name": "Trav's Trail",
-            "status": "closed"
+            "status": "closed",
+            "difficulty": "green"
           },
           {
             "name": "5-0 Trees",
-            "status": "closed"
+            "status": "closed",
+            "difficulty": "black"
           },
           {
             "name": "Agawa",
-            "status": "closed"
+            "status": "closed",
+            "difficulty": "black"
           },
           {
             "name": "Bear Claw",
-            "status": "closed"
+            "status": "closed",
+            "difficulty": "black"
           },
           {
             "name": "Brian's Brook",
-            "status": "closed"
+            "status": "closed",
+            "difficulty": "black"
           },
           {
             "name": "Cougar Trax",
-            "status": "closed"
+            "status": "closed",
+            "difficulty": "black"
           },
           {
             "name": "Exhibition Alley",
-            "status": "closed"
+            "status": "closed",
+            "difficulty": "black"
           },
           {
             "name": "Jack's Dive",
-            "status": "closed"
+            "status": "closed",
+            "difficulty": "black"
           },
           {
             "name": "Melville's Mile",
-            "status": "closed"
+            "status": "closed",
+            "difficulty": "black"
           },
           {
             "name": "Moose Difficult",
-            "status": "closed"
+            "status": "closed",
+            "difficulty": "black"
           },
           {
             "name": "Slalom",
-            "status": "closed"
+            "status": "closed",
+            "difficulty": "black"
           },
           {
             "name": "The Glades",
-            "status": "closed"
+            "status": "closed",
+            "difficulty": "black"
           },
           {
             "name": "Wolf's Head",
-            "status": "closed"
+            "status": "closed",
+            "difficulty": "black"
           }
         ],
         "terrainParks": [
@@ -251,7 +287,7 @@
         ],
         "resortId": "searchmont",
         "sourceUrl": "https://searchmont.com/snow-report/",
-        "updatedAt": 1789611291379
+        "updatedAt": 1790179141195
       }
     }
   ]

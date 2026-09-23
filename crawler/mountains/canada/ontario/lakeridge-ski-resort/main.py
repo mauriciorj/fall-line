@@ -4,7 +4,7 @@ import sys
 from pathlib import Path
 
 LAKERIDGE_DIR = Path(__file__).resolve().parent
-CRAWLER_DIR = LAKERIDGE_DIR.parents[1]
+CRAWLER_DIR = LAKERIDGE_DIR.parents[3]
 SNAPSHOT_GENERATOR = LAKERIDGE_DIR / "snapshot_generator.py"
 SNAPSHOT_FILE = LAKERIDGE_DIR / "snapshot_generator.json"
 TABLE_NAMES = (

@@ -9,6 +9,8 @@ truststore.inject_into_ssl()
 
 import requests
 from bs4 import BeautifulSoup
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 SOURCE_URL = "https://www.lochlomond.ca/"
 PAGE_URL = "https://www.lochlomond.ca/hill-hours/"
@@ -57,8 +59,26 @@ def expand_days(value):
 
 
 def get_hours():
-    response = requests.get(PAGE_URL, headers=HEADERS, timeout=30)
-    response.raise_for_status()
+    retry = Retry(
+        total=3,
+        backoff_factor=1,
+        status_forcelist=(502, 503, 504),
+        allowed_methods=frozenset({"GET"}),
+    )
+    session = requests.Session()
+    session.mount("https://", HTTPAdapter(max_retries=retry))
+    try:
+        response = session.get(PAGE_URL, headers=HEADERS, timeout=30)
+        response.raise_for_status()
+    except requests.HTTPError as error:
+        if error.response is None or error.response.status_code not in (403, 502, 503, 504):
+            raise
+        with open(os.path.join(os.path.dirname(__file__), "hours-of-operation.json"), encoding="utf-8") as source:
+            fallback = json.load(source).get("hours")
+        if isinstance(fallback, dict) and set(DAYS) <= fallback.keys():
+            return {day: fallback[day] for day in DAYS}
+        raise
+
     soup = BeautifulSoup(response.content, "html.parser")
     page_text = normalize_text(soup.get_text(" ", strip=True))
     if CLOSED_MESSAGE in page_text:

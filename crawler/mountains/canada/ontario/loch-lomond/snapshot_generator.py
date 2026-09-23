@@ -7,15 +7,7 @@ from pathlib import Path
 RESORT_ID = "loch-lomond"
 RESORT_NAME = "Loch Lomond Ski Area"
 TABLE_COLUMNS = {
-    "resorts": [
-        "resortId", "published", "name", "continent", "country", "region", "website", "address",
-        "coordinates", "dayTicketPrice", "email", "googleMapsUrl", "hasIceSkate", "hasAccommodations",
-        "hasCrossCountry", "hasLessons", "hasSnowshoeing", "hasSpa", "hasTubing", "hasZipline",
-        "lessonsPrice", "phone", "rating", "skiRentalPrice", "snowBoardRentalPrice", "tracksSummary",
-        "elevation", "height", "tracksGreenLength", "tracksGreenProportion", "tracksBlueLength",
-        "tracksBlueProportion", "tracksBlackLength", "tracksBlackProportion", "tracksTotalLength",
-        "ticketUrl", "tollFree", "tubbingPrice",
-    ],
+    "resorts": ["resortId", "published", "name", "continent", "country", "region", "website", "address", "coordinates", "dayTicketPrice", "email", "googleMapsUrl", "hasIceSkate", "hasAccommodations", "hasCrossCountry", "hasLessons", "hasSnowshoeing", "hasSpa", "hasTubing", "hasZipline", "lessonsPrice", "phone", "rating", "skiRentalPrice", "snowBoardRentalPrice", "tracksSummary", "elevation", "height", "tracksGreenLength", "tracksGreenProportion", "tracksBlueLength", "tracksBlueProportion", "tracksBlackLength", "tracksBlackProportion", "tracksTotalLength", "ticketUrl", "tollFree", "tubbingPrice"],
     "resortHours": ["resortId", "sourceUrl", "updatedAt", "hours"],
     "resortRates": ["resortId", "sourceUrl", "updatedAt", "rates"],
     "resortRentals": ["resortId", "sourceUrl", "updatedAt", "rentals"],
@@ -68,11 +60,37 @@ def build_tracks_summary(weather):
 
 
 def get_rate_price(rates):
-    return parse_price(rates.get("rates", {}).get("day-week", {}).get("adults"))
+    structured_rates = rates.get("rates", {})
+    adult_day_rate = structured_rates.get("day-week", {}).get("adults")
+    if adult_day_rate is not None:
+        return parse_price(adult_day_rate)
+
+    for item in structured_rates.get("items", []):
+        name = item.get("name", "").lower()
+        if "lift tickets" not in name or "adult" not in name or "4 hour lift" not in name:
+            continue
+        for price in item.get("prices", []):
+            if price.get("label") == "price":
+                return parse_price(price.get("value"))
+    return None
 
 
 def get_rental_price(rentals):
-    return parse_price(rentals.get("rentals", {}).get("ski", {}).get("adults"))
+    structured_rentals = rentals.get("rentals", {})
+    adult_price = structured_rentals.get("ski", {}).get("adults")
+    if adult_price is not None:
+        return parse_price(adult_price)
+
+    for section in structured_rentals.get("sections", []):
+        if "full day" not in section.get("name", "").lower():
+            continue
+        for item in section.get("items", []):
+            if "adult" not in item.get("name", "").lower():
+                continue
+            for price in item.get("prices", []):
+                if price.get("label") == "price":
+                    return parse_price(price.get("value"))
+    return None
 
 
 def build_resort(static_info, rates, rentals, weather, ski_resort_info=None):

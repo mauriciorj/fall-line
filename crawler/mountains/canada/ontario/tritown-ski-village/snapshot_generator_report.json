@@ -3,7 +3,22 @@
   "tables": [
     {
       "table": "resorts",
-      "missingColumns": []
+      "missingColumns": [
+        "email",
+        "lessonsPrice",
+        "phone",
+        "rating",
+        "elevation",
+        "tracksGreenLength",
+        "tracksGreenProportion",
+        "tracksBlueLength",
+        "tracksBlueProportion",
+        "tracksBlackLength",
+        "tracksBlackProportion",
+        "tracksTotalLength",
+        "tollFree",
+        "tubbingPrice"
+      ]
     },
     {
       "table": "resortHours",
@@ -19,8 +34,10 @@
     },
     {
       "table": "weatherAndStatus",
-      "missingColumns": []
+      "missingColumns": [
+        "terrainParks"
+      ]
     }
   ],
-  "missingColumnCount": 0
+  "missingColumnCount": 15
 }

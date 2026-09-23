@@ -4,7 +4,7 @@ import sys
 from pathlib import Path
 
 HORSESHOE_DIR = Path(__file__).resolve().parent
-CRAWLER_DIR = HORSESHOE_DIR.parents[1]
+CRAWLER_DIR = HORSESHOE_DIR.parents[3]
 SNAPSHOT_GENERATOR = HORSESHOE_DIR / "snapshot_generator.py"
 SNAPSHOT_FILE = HORSESHOE_DIR / "snapshot_generator.json"
 TABLE_NAMES = (

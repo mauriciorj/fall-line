@@ -1,0 +1,16 @@
+{
+  "rentals": {
+    "ski": {
+      "adults": "$35.00",
+      "youth": "$30.00"
+    },
+    "snowboard": {
+      "adults": "$35.00",
+      "youth": "$30.00"
+    },
+    "items": {}
+  },
+  "resortId": "ski-kenora",
+  "sourceUrl": "https://www.skikenora.ca/downhill/#rental-equipment",
+  "updatedAt": 1790179164838
+}

@@ -46,8 +46,8 @@
           "green": 8
         },
         "dayTicketPrice": 35,
-        "skiRentalPrice": 35,
-        "snowBoardRentalPrice": 35
+        "skiRentalPrice": 59,
+        "snowBoardRentalPrice": 59
       }
     },
     {
@@ -64,7 +64,7 @@
         },
         "resortId": "horseshoe-valley-resort",
         "sourceUrl": "https://horseshoeresort.com/hours-of-operation/",
-        "updatedAt": 1789425983568
+        "updatedAt": 1790179020305
       }
     },
     {
@@ -92,25 +92,25 @@
       "content": {
         "rentals": {
           "ski": {
-            "adults": "$35",
-            "youth": "$35"
+            "adults": "$59",
+            "youth": "$49"
           },
           "snowboard": {
-            "adults": "$35",
-            "youth": "$35"
+            "adults": "$59",
+            "youth": "$49"
           },
           "items": {
-            "boots": "$34",
-            "poles": "$18",
-            "helmet": "$18",
+            "boots": "$39",
+            "poles": "$20",
+            "helmet": "$20",
             "ice-skates": "$15",
-            "skis": "$35",
-            "snowboard": "$35"
+            "skis": "$59",
+            "snowboard": "$59"
           }
         },
         "resortId": "horseshoe-valley-resort",
         "sourceUrl": "https://horseshoeresort.com/ski/lift-ticket-and-rentals-pricing/",
-        "updatedAt": 1789425986023
+        "updatedAt": 1790179022431
       }
     },
     {
@@ -276,7 +276,7 @@
         ],
         "resortId": "horseshoe-valley-resort",
         "sourceUrl": "https://horseshoeresort.com/ski-report-trails/",
-        "updatedAt": 1789425988253
+        "updatedAt": 1790179029805
       }
     }
   ]

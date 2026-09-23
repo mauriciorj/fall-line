@@ -6,8 +6,13 @@
       "content": {
         "address": "5050 Kamiskotia Rd, Timmins, ON P4N 7G7",
         "continent": "North America",
+        "coordinates": {
+          "lat": 48.5344442228911,
+          "lng": -81.54116198436738
+        },
         "country": "Canada",
         "email": "administration@mountjamieson.ca",
+        "googleMapsUrl": "https://maps.app.goo.gl/htDJVvnmbXLHwzfJA",
         "hasIceSkate": false,
         "hasAccommodations": false,
         "hasCrossCountry": false,
@@ -23,6 +28,8 @@
         "ticketUrl": "https://www.mountjamieson.ca/day-passes",
         "website": "https://www.mountjamieson.ca/",
         "name": "Mount Jamieson",
+        "elevation": "307 m - 410 m",
+        "height": "103m",
         "tracksGreenLength": "2.5km",
         "tracksGreenProportion": "28",
         "tracksBlueLength": "1.8km",
@@ -30,16 +37,16 @@
         "tracksBlackLength": "4.6km",
         "tracksBlackProportion": "52",
         "tracksTotalLength": "8.9km",
-        "elevation": "307 m - 410 m",
-        "height": "103m",
         "tracksSummary": {
-          "black": 0,
-          "blue": 0,
-          "doubleBlack": 0,
+          "black": 8,
+          "blue": 6,
+          "doubleBlack": 3,
           "freeStyle": 0,
-          "green": 0
+          "green": 5
         },
-        "dayTicketPrice": 62.5
+        "dayTicketPrice": 62.5,
+        "skiRentalPrice": 49.5,
+        "snowBoardRentalPrice": 49.5
       }
     },
     {
@@ -56,7 +63,7 @@
         },
         "resortId": "mount-jamieson",
         "sourceUrl": "https://www.mountjamieson.ca/",
-        "updatedAt": 1789693258701
+        "updatedAt": 1790179102144
       }
     },
     {
@@ -76,7 +83,7 @@
         },
         "resortId": "mount-jamieson",
         "sourceUrl": "https://www.mountjamieson.ca/day-passes",
-        "updatedAt": 1789693258750
+        "updatedAt": 1790179102956
       }
     },
     {
@@ -84,18 +91,22 @@
       "content": {
         "rentals": {
           "ski": {
-            "adults": "$50",
-            "youth": "$50"
+            "adults": "$49.50",
+            "youth": "$49.50"
           },
           "snowboard": {
-            "adults": "$50",
-            "youth": "$50"
+            "adults": "$49.50",
+            "youth": "$49.50"
           },
-          "items": {}
+          "items": {
+            "boots": "$25",
+            "helmet": "$15",
+            "poles": "$15"
+          }
         },
         "resortId": "mount-jamieson",
         "sourceUrl": "https://www.mountjamieson.ca/service-shop-rentals",
-        "updatedAt": 1789693258796
+        "updatedAt": 1790179103069
       }
     },
     {
@@ -111,11 +122,122 @@
             "status": "closed"
           }
         ],
-        "tracks": [],
+        "tracks": [
+          {
+            "name": "Rick's Ecko",
+            "difficulty": "green",
+            "status": "closed"
+          },
+          {
+            "name": "The Boardwalk",
+            "difficulty": "green",
+            "status": "closed"
+          },
+          {
+            "name": "Kreiners Run",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "name": "Dap Chute",
+            "difficulty": "black",
+            "status": "closed"
+          },
+          {
+            "name": "Booby Trap",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "name": "Kidd Creek Cascade",
+            "difficulty": "doubleBlack",
+            "status": "closed"
+          },
+          {
+            "name": "The Arm",
+            "difficulty": "black",
+            "status": "closed"
+          },
+          {
+            "name": "Sissy Schusse",
+            "difficulty": "green",
+            "status": "closed"
+          },
+          {
+            "name": "Bunny Patch",
+            "difficulty": "green",
+            "status": "closed"
+          },
+          {
+            "name": "The Chalet",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "name": "The Cat Track",
+            "difficulty": "green",
+            "status": "closed"
+          },
+          {
+            "name": "The Fanny",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "name": "Upper Jules",
+            "difficulty": "black",
+            "status": "closed"
+          },
+          {
+            "name": "The Downhill",
+            "difficulty": "black",
+            "status": "closed"
+          },
+          {
+            "name": "The Eagles",
+            "difficulty": "doubleBlack",
+            "status": "closed"
+          },
+          {
+            "name": "The Jubilee",
+            "difficulty": "black",
+            "status": "closed"
+          },
+          {
+            "name": "Jamieson Drift",
+            "difficulty": "black",
+            "status": "closed"
+          },
+          {
+            "name": "The Stope",
+            "difficulty": "black",
+            "status": "closed"
+          },
+          {
+            "name": "The Goats Path",
+            "difficulty": "doubleBlack",
+            "status": "closed"
+          },
+          {
+            "name": "The 401",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "name": "Lower Jules",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "name": "The Trench",
+            "difficulty": "black",
+            "status": "closed"
+          }
+        ],
         "terrainParks": [],
         "resortId": "mount-jamieson",
         "sourceUrl": "https://www.mountjamieson.ca/trail-map-conditions",
-        "updatedAt": 1789693262375
+        "updatedAt": 1790179104948
       }
     }
   ]

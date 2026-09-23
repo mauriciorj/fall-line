@@ -1,0 +1,192 @@
+{
+  "resortId": "ski-kenora",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "address": "120 Mt Evergreen Rd, Kenora, ON P9N 0A8, Canada",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 49.79298995602779,
+          "lng": -94.41342807516835
+        },
+        "country": "Canada",
+        "email": "info@skikenora.ca",
+        "googleMapsUrl": "https://maps.app.goo.gl/MxSWH7hSBgJj1fk88",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": true,
+        "hasLessons": true,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(807) 548-5100",
+        "published": true,
+        "region": "Ontario",
+        "resortId": "ski-kenora",
+        "ticketUrl": "https://www.skikenora.ca/downhill/#lift-passes",
+        "website": "https://www.skikenora.ca/",
+        "name": "Mount Evergreen – Kenora",
+        "elevation": "356 m - 401 m",
+        "height": "45m",
+        "tracksGreenLength": "1.1km",
+        "tracksGreenProportion": "50",
+        "tracksBlueLength": "0.3km",
+        "tracksBlueProportion": "14",
+        "tracksBlackLength": "0.8km",
+        "tracksBlackProportion": "36",
+        "tracksTotalLength": "2.2km",
+        "tracksSummary": {
+          "black": 4,
+          "blue": 4,
+          "doubleBlack": 0,
+          "freeStyle": 0,
+          "green": 6
+        },
+        "skiRentalPrice": 35,
+        "snowBoardRentalPrice": 35
+      }
+    },
+    {
+      "table": "resortHours",
+      "content": {
+        "hours": {
+          "sunday": "closed",
+          "monday": "closed",
+          "tuesday": "closed",
+          "wednesday": "closed",
+          "thursday": "closed",
+          "friday": "closed",
+          "saturday": "closed"
+        },
+        "resortId": "ski-kenora",
+        "sourceUrl": "https://skikenora.ca/downhill/#_hours-of-operation",
+        "updatedAt": 1790179160089
+      }
+    },
+    {
+      "table": "resortRates",
+      "content": {
+        "rates": {},
+        "resortId": "ski-kenora",
+        "sourceUrl": "https://www.skikenora.ca/downhill/#lift-passes",
+        "updatedAt": 1790179162656
+      }
+    },
+    {
+      "table": "resortRentals",
+      "content": {
+        "rentals": {
+          "ski": {
+            "adults": "$35.00",
+            "youth": "$30.00"
+          },
+          "snowboard": {
+            "adults": "$35.00",
+            "youth": "$30.00"
+          },
+          "items": {}
+        },
+        "resortId": "ski-kenora",
+        "sourceUrl": "https://www.skikenora.ca/downhill/#rental-equipment",
+        "updatedAt": 1790179164838
+      }
+    },
+    {
+      "table": "weatherAndStatus",
+      "content": {
+        "resortId": "ski-kenora",
+        "lifts": [
+          {
+            "name": "Colin Myles",
+            "status": "closed"
+          },
+          {
+            "name": "Skyline",
+            "status": "closed"
+          },
+          {
+            "name": "Magic Carpet",
+            "status": "closed"
+          }
+        ],
+        "tracks": [
+          {
+            "name": "Gentle Ben",
+            "status": "closed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Bunny Slope",
+            "status": "closed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Otter Slide",
+            "status": "closed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Chicken Trail",
+            "status": "closed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Lover’s Lane",
+            "status": "closed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Sidewinder",
+            "status": "closed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Surprise",
+            "status": "closed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Pete’s Fancy",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Skyline",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "B-Slalom",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Mary Glen",
+            "status": "closed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Shortcut",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Rotary Learn to Ski Area",
+            "status": "closed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Terrain Park",
+            "status": "closed",
+            "difficulty": "blue"
+          }
+        ],
+        "terrainParks": [],
+        "sourceUrl": "https://www.skikenora.ca/downhill/",
+        "updatedAt": 1790179168911
+      }
+    }
+  ]
+}

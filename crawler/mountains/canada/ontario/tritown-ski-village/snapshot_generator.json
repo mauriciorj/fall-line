@@ -6,14 +6,19 @@
       "content": {
         "address": "974368 HWY 567, North Cobalt, ON P0J 2R0",
         "continent": "North America",
+        "coordinates": {
+          "lat": 47.362375011079244,
+          "lng": -79.5702008730563
+        },
         "country": "Canada",
+        "googleMapsUrl": "https://maps.app.goo.gl/aRf4tEPeHLQgH8SF6",
         "hasIceSkate": false,
         "hasAccommodations": false,
         "hasCrossCountry": false,
         "hasLessons": true,
-        "hasSnowshoeing": true,
+        "hasSnowshoeing": false,
         "hasSpa": false,
-        "hasTubing": true,
+        "hasTubing": false,
         "hasZipline": false,
         "published": true,
         "region": "Ontario",
@@ -23,11 +28,11 @@
         "name": "Tri Town Ski and Snowboard Village",
         "height": "320' of vertical",
         "tracksSummary": {
-          "black": 0,
-          "blue": 0,
+          "black": 3,
+          "blue": 6,
           "doubleBlack": 0,
           "freeStyle": 0,
-          "green": 0
+          "green": 6
         },
         "dayTicketPrice": 45,
         "skiRentalPrice": 35,
@@ -38,17 +43,17 @@
       "table": "resortHours",
       "content": {
         "hours": {
-          "sunday": "10:00 am \u2013 4:00 pm",
+          "sunday": "10:00 am – 4:00 pm",
           "monday": "closed",
           "tuesday": "closed",
           "wednesday": "closed",
           "thursday": "closed",
           "friday": "closed",
-          "saturday": "10:00 am \u2013 4:00 pm"
+          "saturday": "10:00 am – 4:00 pm"
         },
         "resortId": "tritown-ski-village",
         "sourceUrl": "https://tritownskivillage.ca/",
-        "updatedAt": 1790113027213
+        "updatedAt": 1790179185462
       }
     },
     {
@@ -68,7 +73,7 @@
         },
         "resortId": "tritown-ski-village",
         "sourceUrl": "https://tritownskivillage.ca/?page_id=476",
-        "updatedAt": 1790113028030
+        "updatedAt": 1790179186644
       }
     },
     {
@@ -91,7 +96,7 @@
         },
         "resortId": "tritown-ski-village",
         "sourceUrl": "https://tritownskivillage.ca/?page_id=691",
-        "updatedAt": 1790113028837
+        "updatedAt": 1790179187607
       }
     },
     {
@@ -107,11 +112,87 @@
             "status": "not informed"
           }
         ],
-        "tracks": [],
+        "tracks": [
+          {
+            "name": "Skiers Grant",
+            "status": "not informed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Richelieu",
+            "status": "not informed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Frogs Breath Pass",
+            "status": "not informed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Whistler",
+            "status": "not informed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Expresso",
+            "status": "not informed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Jaws",
+            "status": "not informed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Down Draft",
+            "status": "not informed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Kool Kate",
+            "status": "not informed",
+            "difficulty": "green"
+          },
+          {
+            "name": "True Grit",
+            "status": "not informed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Zoot",
+            "status": "not informed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Donkey Trail",
+            "status": "not informed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Big G",
+            "status": "not informed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Willar's Way",
+            "status": "not informed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Half Way",
+            "status": "not informed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Bunny Run",
+            "status": "not informed",
+            "difficulty": "green"
+          }
+        ],
         "terrainParks": [],
         "resortId": "tritown-ski-village",
         "sourceUrl": "https://tritownskivillage.ca/",
-        "updatedAt": 1790113030499
+        "updatedAt": 1790179189515
       }
     }
   ]

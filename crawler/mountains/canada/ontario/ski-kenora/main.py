@@ -4,7 +4,7 @@ import sys
 from pathlib import Path
 
 SKI_KENORA_DIR = Path(__file__).resolve().parent
-CRAWLER_DIR = SKI_KENORA_DIR.parents[1]
+CRAWLER_DIR = SKI_KENORA_DIR.parents[3]
 SNAPSHOT_GENERATOR = SKI_KENORA_DIR / "snapshot_generator.py"
 SNAPSHOT_FILE = SKI_KENORA_DIR / "snapshot_generator.json"
 TABLE_NAMES = ("resorts", "resortHours", "resortRates", "resortRentals", "weatherAndStatus")

@@ -4,11 +4,11 @@
     "monday": "closed",
     "tuesday": "closed",
     "wednesday": "closed",
-    "thursday": "closed",
+    "thursday": "tickets only $25\"",
     "friday": "closed",
     "saturday": "closed"
   },
   "resortId": "mount-baldy",
   "sourceUrl": "https://www.skimountbaldy.ca/contact",
-  "updatedAt": 1790004867714
+  "updatedAt": 1790179077132
 }

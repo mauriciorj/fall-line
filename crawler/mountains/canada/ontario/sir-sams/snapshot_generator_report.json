@@ -3,7 +3,12 @@
   "tables": [
     {
       "table": "resorts",
-      "missingColumns": []
+      "missingColumns": [
+        "lessonsPrice",
+        "rating",
+        "tollFree",
+        "tubbingPrice"
+      ]
     },
     {
       "table": "resortHours",
@@ -19,8 +24,10 @@
     },
     {
       "table": "weatherAndStatus",
-      "missingColumns": []
+      "missingColumns": [
+        "terrainParks"
+      ]
     }
   ],
-  "missingColumnCount": 0
+  "missingColumnCount": 5
 }

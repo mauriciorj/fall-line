@@ -4,7 +4,7 @@ import sys
 from pathlib import Path
 
 CALEDON_DIR = Path(__file__).resolve().parent
-CRAWLER_DIR = CALEDON_DIR.parents[1]
+CRAWLER_DIR = CALEDON_DIR.parents[3]
 SNAPSHOT_GENERATOR = CALEDON_DIR / "snapshot_generator.py"
 SNAPSHOT_FILE = CALEDON_DIR / "snapshot_generator.json"
 TABLE_NAMES = (

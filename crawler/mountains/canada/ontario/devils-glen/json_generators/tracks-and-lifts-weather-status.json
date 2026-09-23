@@ -19,27 +19,27 @@
   ],
   "tracks": [
     {
-      "difficulty": null,
+      "difficulty": "black",
       "name": "Stairway",
       "status": "closed"
     },
     {
-      "difficulty": null,
+      "difficulty": "black",
       "name": "Siren",
       "status": "closed"
     },
     {
-      "difficulty": null,
+      "difficulty": "black",
       "name": "Cerberus",
       "status": "closed"
     },
     {
-      "difficulty": null,
+      "difficulty": "black",
       "name": "Lucifer's Lane",
       "status": "closed"
     },
     {
-      "difficulty": null,
+      "difficulty": "black",
       "name": "Waterfall",
       "status": "closed"
     },
@@ -119,7 +119,7 @@
       "status": "closed"
     },
     {
-      "difficulty": null,
+      "difficulty": "black",
       "name": "Hallelujah Glades",
       "status": "closed"
     }
@@ -143,5 +143,5 @@
   ],
   "resortId": "devils-glen",
   "sourceUrl": "https://www.devilsglen.com/About/Trail_Report",
-  "updatedAt": 1789764751553
+  "updatedAt": 1790178987178
 }

@@ -1,0 +1,31 @@
+{
+  "resortId": "mount-dufour",
+  "tables": [
+    {
+      "table": "resorts",
+      "missingColumns": [
+        "lessonsPrice",
+        "rating",
+        "tollFree",
+        "tubbingPrice"
+      ]
+    },
+    {
+      "table": "resortHours",
+      "missingColumns": []
+    },
+    {
+      "table": "resortRates",
+      "missingColumns": []
+    },
+    {
+      "table": "resortRentals",
+      "missingColumns": []
+    },
+    {
+      "table": "weatherAndStatus",
+      "missingColumns": []
+    }
+  ],
+  "missingColumnCount": 4
+}

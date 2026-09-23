@@ -6,10 +6,15 @@
       "content": {
         "address": "1054 Liswood Road, Eagle Lake, ON K0M 1M0",
         "continent": "North America",
+        "coordinates": {
+          "lat": 45.13009675705433,
+          "lng": -78.48196250230275
+        },
         "country": "Canada",
         "email": "info@sirsams.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/7YTY6hi41V1jHGb1A",
         "hasIceSkate": false,
-        "hasAccommodations": true,
+        "hasAccommodations": false,
         "hasCrossCountry": false,
         "hasLessons": true,
         "hasSnowshoeing": false,
@@ -23,6 +28,8 @@
         "ticketUrl": "https://www.sirsams.ca/winter/lift-tickets",
         "website": "https://www.sirsams.ca/",
         "name": "Sir Sam's Ski/Ride",
+        "elevation": "360 m - 447 m",
+        "height": "87m",
         "tracksGreenLength": "1.9km",
         "tracksGreenProportion": "31",
         "tracksBlueLength": "2.5km",
@@ -30,33 +37,33 @@
         "tracksBlackLength": "1.6km",
         "tracksBlackProportion": "28",
         "tracksTotalLength": "6km",
-        "elevation": "360 m - 447 m",
-        "height": "87m",
         "tracksSummary": {
-          "black": 0,
-          "blue": 0,
+          "black": 4,
+          "blue": 4,
           "doubleBlack": 0,
           "freeStyle": 0,
-          "green": 0
+          "green": 6
         },
-        "dayTicketPrice": 70
+        "dayTicketPrice": 61,
+        "skiRentalPrice": 57,
+        "snowBoardRentalPrice": 57
       }
     },
     {
       "table": "resortHours",
       "content": {
         "hours": {
-          "sunday": "9:00am to 4:30pm",
+          "sunday": "closed",
           "monday": "closed",
-          "tuesday": "9:30am to 4:00pm",
-          "wednesday": "9:30am to 4:00pm",
-          "thursday": "9:30am to 4:00pm",
-          "friday": "9:30am to 4:00pm",
-          "saturday": "9:00am to 4:30pm"
+          "tuesday": "closed",
+          "wednesday": "closed",
+          "thursday": "closed",
+          "friday": "closed",
+          "saturday": "closed"
         },
         "resortId": "sir-sams",
         "sourceUrl": "https://www.sirsams.ca/contact",
-        "updatedAt": 1789694917902
+        "updatedAt": 1790179147237
       }
     },
     {
@@ -64,19 +71,19 @@
       "content": {
         "rates": {
           "day-week": {
-            "adults": "$70",
-            "youth": "$58",
-            "seniors": "$62"
+            "adults": "$61",
+            "youth": "$49",
+            "seniors": "$49"
           },
           "day-weekend": {
-            "adults": "$89",
-            "youth": "$72",
-            "seniors": "$72"
+            "adults": "$79",
+            "youth": "$63",
+            "seniors": "$63"
           }
         },
         "resortId": "sir-sams",
         "sourceUrl": "https://www.sirsams.ca/winter/lift-tickets",
-        "updatedAt": 1789694917984
+        "updatedAt": 1790179148294
       }
     },
     {
@@ -84,24 +91,24 @@
       "content": {
         "rentals": {
           "ski": {
-            "adults": "$64",
-            "youth": "$50"
+            "adults": "$57",
+            "youth": "$57"
           },
           "snowboard": {
-            "adults": "$64",
-            "youth": "$50"
+            "adults": "$57",
+            "youth": "$57"
           },
           "items": {
-            "skis": "$32",
-            "snowboard": "$32",
-            "boots": "$34",
-            "helmet": "$15",
-            "poles": "$15"
+            "skis": "$27",
+            "snowboard": "$27",
+            "boots": "$29",
+            "helmet": "$12",
+            "poles": "$12"
           }
         },
         "resortId": "sir-sams",
         "sourceUrl": "https://www.sirsams.ca/winter/rentals",
-        "updatedAt": 1789694918063
+        "updatedAt": 1790179149215
       }
     },
     {
@@ -129,11 +136,82 @@
             "status": "closed"
           }
         ],
-        "tracks": [],
+        "tracks": [
+          {
+            "name": "Lover's Lane",
+            "status": "closed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Heartbreaker",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Banana",
+            "status": "closed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Cash Register",
+            "status": "closed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Kingston",
+            "status": "closed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Parkway",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Ali's Alley",
+            "status": "closed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Fred's Way",
+            "status": "closed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Crash n' Carry",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Birdwatcher",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Dingle",
+            "status": "closed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Dangle",
+            "status": "closed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Ridge",
+            "status": "closed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Run",
+            "status": "closed",
+            "difficulty": "green"
+          }
+        ],
         "terrainParks": [],
         "resortId": "sir-sams",
         "sourceUrl": "https://www.sirsams.ca/resort-information",
-        "updatedAt": 1789694920881
+        "updatedAt": 1790179151026
       }
     }
   ]

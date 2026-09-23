@@ -65,7 +65,7 @@
         },
         "resortId": "lakeridge-ski-resort",
         "sourceUrl": "https://ski-lakeridge.com/skiing-snowboarding/hours-ticket-prices/",
-        "updatedAt": 1789425993631
+        "updatedAt": 1790179034819
       }
     },
     {
@@ -241,7 +241,7 @@
         ],
         "resortId": "lakeridge-ski-resort",
         "sourceUrl": "https://ski-lakeridge.com/skiing-snowboarding/trail-status/",
-        "updatedAt": 1789425998079
+        "updatedAt": 1790179039133
       }
     }
   ]

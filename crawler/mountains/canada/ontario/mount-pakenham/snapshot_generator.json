@@ -6,8 +6,13 @@
       "content": {
         "address": "577 Ski Hill Road, Pakenham, ON K0A 2X0",
         "continent": "North America",
+        "coordinates": {
+          "lat": 45.324800383587935,
+          "lng": -76.33000576755973
+        },
         "country": "Canada",
         "email": "ski@mountpakenham.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/DvQvuVLbhes7noEEA",
         "hasIceSkate": false,
         "hasAccommodations": false,
         "hasCrossCountry": false,
@@ -23,6 +28,8 @@
         "ticketUrl": "https://shop.mountpakenham.com/",
         "website": "https://mountpakenham.com/",
         "name": "Mount Pakenham",
+        "elevation": "137 m - 217 m",
+        "height": "80m",
         "tracksGreenLength": "2.7km",
         "tracksGreenProportion": "47",
         "tracksBlueLength": "1.6km",
@@ -30,33 +37,33 @@
         "tracksBlackLength": "1.4km",
         "tracksBlackProportion": "25",
         "tracksTotalLength": "5.7km",
-        "elevation": "137 m - 217 m",
-        "height": "80m",
         "tracksSummary": {
-          "black": 2,
-          "blue": 3,
+          "black": 13,
+          "blue": 4,
           "doubleBlack": 0,
           "freeStyle": 1,
           "green": 6
         },
-        "dayTicketPrice": 60
+        "dayTicketPrice": 49,
+        "skiRentalPrice": 38,
+        "snowBoardRentalPrice": 38
       }
     },
     {
       "table": "resortHours",
       "content": {
         "hours": {
-          "sunday": "9:00am to 5:00pm",
-          "monday": "9:00am to 5:00pm",
-          "tuesday": "9:00am to 5:00pm",
-          "wednesday": "9:00am to 5:00pm",
-          "thursday": "9:00am to 5:00pm",
-          "friday": "9:00am to 9:00pm",
-          "saturday": "9:00am to 9:00pm"
+          "sunday": "9am to 5pm",
+          "monday": "closed",
+          "tuesday": "9am to 9pm",
+          "wednesday": "9am to 9pm",
+          "thursday": "9am to 9pm",
+          "friday": "9am to 9pm",
+          "saturday": "9am to 9pm"
         },
         "resortId": "mount-pakenham",
-        "sourceUrl": "https://shop.mountpakenham.com/",
-        "updatedAt": 1789696248774
+        "sourceUrl": "https://shop.mountpakenham.com/pages/skiing-snowboarding",
+        "updatedAt": 1790179113959
       }
     },
     {
@@ -64,21 +71,29 @@
       "content": {
         "rates": {
           "day-week": {
-            "adults": "$60"
+            "adults": "$49",
+            "youth": "$49",
+            "seniors": "$49"
           },
           "day-weekend": {
-            "adults": "$60"
+            "adults": "$52",
+            "youth": "$52",
+            "seniors": "$52"
           },
           "night-week": {
-            "adults": "$45"
+            "adults": "$36",
+            "youth": "$36",
+            "seniors": "$36"
           },
           "night-weekend": {
-            "adults": "$45"
+            "adults": "$36",
+            "youth": "$36",
+            "seniors": "$36"
           }
         },
         "resortId": "mount-pakenham",
-        "sourceUrl": "https://shop.mountpakenham.com/",
-        "updatedAt": 1789696248840
+        "sourceUrl": "https://shop.mountpakenham.com/pages/skiing-snowboarding",
+        "updatedAt": 1790179115451
       }
     },
     {
@@ -86,18 +101,22 @@
       "content": {
         "rentals": {
           "ski": {
-            "adults": "$40",
-            "youth": "$40"
+            "adults": "$38",
+            "youth": "$38"
           },
           "snowboard": {
-            "adults": "$40",
-            "youth": "$40"
+            "adults": "$38",
+            "youth": "$38"
           },
-          "items": {}
+          "items": {
+            "poles": "$10",
+            "helmet": "$14",
+            "snowshoes": "$22"
+          }
         },
         "resortId": "mount-pakenham",
-        "sourceUrl": "https://shop.mountpakenham.com/",
-        "updatedAt": 1789696248902
+        "sourceUrl": "https://shop.mountpakenham.com/pages/equipment-rental",
+        "updatedAt": 1790179117319
       }
     },
     {
@@ -131,12 +150,32 @@
         ],
         "tracks": [
           {
-            "name": "Beginner Centre",
+            "name": "The Loop",
             "status": "closed",
             "difficulty": "green"
           },
           {
-            "name": "The Loop",
+            "name": "Lower Slowpoke",
+            "status": "closed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Middle Slowpoke",
+            "status": "closed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Upper Slowpoke",
+            "status": "closed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Frank's Run",
+            "status": "closed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Crossover",
             "status": "closed",
             "difficulty": "green"
           },
@@ -146,12 +185,7 @@
             "difficulty": "green"
           },
           {
-            "name": "Slowpoke",
-            "status": "closed",
-            "difficulty": "green"
-          },
-          {
-            "name": "Exhibition",
+            "name": "Lower Exhibition",
             "status": "closed",
             "difficulty": "blue"
           },
@@ -161,7 +195,7 @@
             "difficulty": "blue"
           },
           {
-            "name": "Snowrider",
+            "name": "Snow Rider",
             "status": "closed",
             "difficulty": "blue"
           },
@@ -171,19 +205,64 @@
             "difficulty": "black"
           },
           {
-            "name": "Porcupine",
-            "status": "closed",
-            "difficulty": "green"
-          },
-          {
-            "name": "Glades",
+            "name": "Upper Exhibition",
             "status": "closed",
             "difficulty": "black"
           },
           {
-            "name": "Snowshoe Trails",
+            "name": "Porcupine",
             "status": "closed",
-            "difficulty": "green"
+            "difficulty": "black"
+          },
+          {
+            "name": "Lower Porcupine",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Angel's Kiss Glades",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Devil's Challenge Glades",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Gauntlet Glades",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Fox Trot Glades",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Bear Paw Glades",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Crossover Glades",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Deer Run Glades",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Bark'n'Bite Glades",
+            "status": "closed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Forbidden Forest Glades",
+            "status": "closed",
+            "difficulty": "black"
           }
         ],
         "terrainParks": [
@@ -195,7 +274,7 @@
         ],
         "resortId": "mount-pakenham",
         "sourceUrl": "https://shop.mountpakenham.com/",
-        "updatedAt": 1789696251193
+        "updatedAt": 1790179119457
       }
     }
   ]

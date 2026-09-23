@@ -6,8 +6,13 @@
       "content": {
         "address": "99 Ski Club Lane, Quinte West, ON K0K 1E0, Canada",
         "continent": "North America",
+        "coordinates": {
+          "lat": 44.167346192932484,
+          "lng": -77.59699002717811
+        },
         "country": "Canada",
         "email": "info@batawaskihill.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/qee9tYPrSYd4HrdT6",
         "hasIceSkate": false,
         "hasAccommodations": false,
         "hasCrossCountry": false,
@@ -25,23 +30,20 @@
         "name": "Batawa Ski Hill",
         "elevation": "30 m - 80 m",
         "height": "50 m",
-        "tracks-total-length": "1.5 km",
-        "tracks-green-length": "0.2 km",
-        "tracks-green-proportion": "13",
-        "tracks-blue-length": "0.9 km",
-        "tracks-blue-proportion": "60",
-        "tracks-black-length": "0.4 km",
-        "tracks-black-proportion": "27",
+        "tracksGreenLength": "0.2 km",
+        "tracksGreenProportion": "13",
+        "tracksBlueLength": "0.9 km",
+        "tracksBlueProportion": "60",
+        "tracksBlackLength": "0.4 km",
+        "tracksBlackProportion": "27",
+        "tracksTotalLength": "1.5 km",
         "tracksSummary": {
-          "black": 0,
-          "blue": 0,
-          "doubleBlack": 0,
-          "freeStyle": 0,
-          "green": 0
-        },
-        "dayTicketPrice": "$124",
-        "skiRentalPrice": null,
-        "snowBoardRentalPrice": null
+          "black": 2,
+          "blue": 6,
+          "doubleBlack": 2,
+          "freeStyle": 1,
+          "green": 2
+        }
       }
     },
     {
@@ -49,36 +51,25 @@
       "content": {
         "hours": {
           "sunday": "closed",
-          "monday": "08:00 to 14:00",
-          "tuesday": "08:00 to 14:00",
-          "wednesday": "08:00 to 14:00",
-          "thursday": "08:00 to 14:00",
-          "friday": "08:00 to 14:00",
+          "monday": "closed",
+          "tuesday": "closed",
+          "wednesday": "closed",
+          "thursday": "closed",
+          "friday": "closed",
           "saturday": "closed"
         },
         "resortId": "batawa-ski-hill",
-        "sourceUrl": "https://www.batawaskihill.com/",
-        "updatedAt": 1790116853071
+        "sourceUrl": "https://www.batawaskihill.com/directions-hours",
+        "updatedAt": 1790178863530
       }
     },
     {
       "table": "resortRates",
       "content": {
-        "rates": {
-          "day-week": {
-            "adults": "$124",
-            "youth": "$112",
-            "seniors": "$112"
-          },
-          "day-weekend": {
-            "adults": "$124",
-            "youth": "$112",
-            "seniors": "$112"
-          }
-        },
+        "rates": {},
         "resortId": "batawa-ski-hill",
-        "sourceUrl": "https://www.skiresort.com/en/ski-resort/batawa-ski-hill/",
-        "updatedAt": 1790116854364
+        "sourceUrl": "https://www.batawaskihill.com/lift-tickets",
+        "updatedAt": 1790178864201
       }
     },
     {
@@ -90,19 +81,86 @@
           "items": {}
         },
         "resortId": "batawa-ski-hill",
-        "sourceUrl": "https://www.batawaskihill.com/",
-        "updatedAt": 1790116855252
+        "sourceUrl": "https://www.batawaskihill.com/ski-snowboard-rentals",
+        "updatedAt": 1790178864278
       }
     },
     {
       "table": "weatherAndStatus",
       "content": {
         "lifts": [],
-        "tracks": [],
-        "terrainParks": [],
+        "tracks": [
+          {
+            "name": "Bambi",
+            "status": "not informed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Boomerang",
+            "status": "not informed",
+            "difficulty": "green"
+          },
+          {
+            "name": "Long John",
+            "status": "not informed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Detour",
+            "status": "not informed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Meadow",
+            "status": "not informed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Easy Way",
+            "status": "not informed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Lightning",
+            "status": "not informed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "The Chute",
+            "status": "not informed",
+            "difficulty": "blue"
+          },
+          {
+            "name": "Gus' Chili Bowl",
+            "status": "not informed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Smokey",
+            "status": "not informed",
+            "difficulty": "black"
+          },
+          {
+            "name": "Reneglade",
+            "status": "not informed",
+            "difficulty": "doubleBlack"
+          },
+          {
+            "name": "Old Smokey",
+            "status": "not informed",
+            "difficulty": "doubleBlack"
+          }
+        ],
+        "terrainParks": [
+          {
+            "name": "The Factory",
+            "status": "not informed",
+            "difficulty": "freeStyle"
+          }
+        ],
         "resortId": "batawa-ski-hill",
         "sourceUrl": "https://www.batawaskihill.com/",
-        "updatedAt": 1790116857311
+        "updatedAt": 1790178865919
       }
     }
   ]
