@@ -1,0 +1,21 @@
+{
+  "rentals": {
+    "ski": {
+      "adults": "$30",
+      "youth": "$25"
+    },
+    "snowboard": {
+      "adults": "$35",
+      "youth": "$30"
+    },
+    "items": {
+      "skis": "$20",
+      "snowboard": "$25",
+      "boots": "$15",
+      "poles": "$7"
+    }
+  },
+  "resortId": "mount-dufour",
+  "sourceUrl": "https://www.mountdufour.com/index.php/rentals",
+  "updatedAt": 1790111848013
+}

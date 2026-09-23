@@ -1,0 +1,93 @@
+{
+  "lifts": [
+    {
+      "name": "T Bar",
+      "status": "not informed"
+    },
+    {
+      "name": "Handle Tow",
+      "status": "not informed"
+    }
+  ],
+  "tracks": [
+    {
+      "name": "Skiers Grant",
+      "status": "not informed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Richelieu",
+      "status": "not informed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Frogs Breath Pass",
+      "status": "not informed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Whistler",
+      "status": "not informed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Expresso",
+      "status": "not informed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Jaws",
+      "status": "not informed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Down Draft",
+      "status": "not informed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Kool Kate",
+      "status": "not informed",
+      "difficulty": "green"
+    },
+    {
+      "name": "True Grit",
+      "status": "not informed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Zoot",
+      "status": "not informed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Donkey Trail",
+      "status": "not informed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Big G",
+      "status": "not informed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Willar's Way",
+      "status": "not informed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Half Way",
+      "status": "not informed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Bunny Run",
+      "status": "not informed",
+      "difficulty": "green"
+    }
+  ],
+  "terrainParks": [],
+  "resortId": "tritown-ski-village",
+  "sourceUrl": "https://tritownskivillage.ca/",
+  "updatedAt": 1790116493023
+}

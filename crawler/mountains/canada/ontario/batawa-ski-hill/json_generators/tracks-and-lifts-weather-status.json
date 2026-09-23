@@ -1,0 +1,75 @@
+{
+  "lifts": [],
+  "tracks": [
+    {
+      "name": "Bambi",
+      "status": "not informed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Boomerang",
+      "status": "not informed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Long John",
+      "status": "not informed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Detour",
+      "status": "not informed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Meadow",
+      "status": "not informed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Easy Way",
+      "status": "not informed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Lightning",
+      "status": "not informed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "The Chute",
+      "status": "not informed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Gus' Chili Bowl",
+      "status": "not informed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Smokey",
+      "status": "not informed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Reneglade",
+      "status": "not informed",
+      "difficulty": "doubleBlack"
+    },
+    {
+      "name": "Old Smokey",
+      "status": "not informed",
+      "difficulty": "doubleBlack"
+    }
+  ],
+  "terrainParks": [
+    {
+      "name": "The Factory",
+      "status": "not informed",
+      "difficulty": "freeStyle"
+    }
+  ],
+  "resortId": "batawa-ski-hill",
+  "sourceUrl": "https://www.batawaskihill.com/",
+  "updatedAt": 1790126378814
+}

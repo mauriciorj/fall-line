@@ -1,0 +1,17 @@
+{
+  "rates": {
+    "day-week": {
+      "adults": "$65",
+      "seniors": "$55",
+      "youth": "$60"
+    },
+    "day-weekend": {
+      "adults": "$65",
+      "seniors": "$55",
+      "youth": "$60"
+    }
+  },
+  "resortId": "mount-dufour",
+  "sourceUrl": "https://www.mountdufour.com/index.php/ski-conditions/ticket-prices",
+  "updatedAt": 1790111397013
+}

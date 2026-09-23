@@ -1,0 +1,14 @@
+{
+  "hours": {
+    "sunday": "10:00 am \u2013 4:00 pm",
+    "monday": "closed",
+    "tuesday": "closed",
+    "wednesday": "closed",
+    "thursday": "closed",
+    "friday": "closed",
+    "saturday": "10:00 am \u2013 4:00 pm"
+  },
+  "resortId": "tritown-ski-village",
+  "sourceUrl": "https://tritownskivillage.ca/",
+  "updatedAt": 1790113027213
+}

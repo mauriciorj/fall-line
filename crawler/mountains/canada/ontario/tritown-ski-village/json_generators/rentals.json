@@ -1,0 +1,20 @@
+{
+  "rentals": {
+    "ski": {
+      "adults": "$35.00",
+      "youth": "$35.00"
+    },
+    "snowboard": {
+      "adults": "$35.00",
+      "youth": "$35.00"
+    },
+    "items": {
+      "skis": "$23.00",
+      "snowboard": "$23.00",
+      "boots": "$23.00"
+    }
+  },
+  "resortId": "tritown-ski-village",
+  "sourceUrl": "https://tritownskivillage.ca/?page_id=691",
+  "updatedAt": 1790113028837
+}

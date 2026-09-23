@@ -1,0 +1,118 @@
+{
+  "resortId": "tritown-ski-village",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "address": "974368 HWY 567, North Cobalt, ON P0J 2R0",
+        "continent": "North America",
+        "country": "Canada",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": true,
+        "hasSnowshoeing": true,
+        "hasSpa": false,
+        "hasTubing": true,
+        "hasZipline": false,
+        "published": true,
+        "region": "Ontario",
+        "resortId": "tritown-ski-village",
+        "ticketUrl": "https://tritownskivillage.ca/?page_id=476",
+        "website": "https://tritownskivillage.ca/",
+        "name": "Tri Town Ski and Snowboard Village",
+        "height": "320' of vertical",
+        "tracksSummary": {
+          "black": 0,
+          "blue": 0,
+          "doubleBlack": 0,
+          "freeStyle": 0,
+          "green": 0
+        },
+        "dayTicketPrice": 45,
+        "skiRentalPrice": 35,
+        "snowBoardRentalPrice": 35
+      }
+    },
+    {
+      "table": "resortHours",
+      "content": {
+        "hours": {
+          "sunday": "10:00 am \u2013 4:00 pm",
+          "monday": "closed",
+          "tuesday": "closed",
+          "wednesday": "closed",
+          "thursday": "closed",
+          "friday": "closed",
+          "saturday": "10:00 am \u2013 4:00 pm"
+        },
+        "resortId": "tritown-ski-village",
+        "sourceUrl": "https://tritownskivillage.ca/",
+        "updatedAt": 1790113027213
+      }
+    },
+    {
+      "table": "resortRates",
+      "content": {
+        "rates": {
+          "day-week": {
+            "adults": "$45.00",
+            "youth": "$35.00",
+            "seniors": "$35.00"
+          },
+          "day-weekend": {
+            "adults": "$45.00",
+            "youth": "$35.00",
+            "seniors": "$35.00"
+          }
+        },
+        "resortId": "tritown-ski-village",
+        "sourceUrl": "https://tritownskivillage.ca/?page_id=476",
+        "updatedAt": 1790113028030
+      }
+    },
+    {
+      "table": "resortRentals",
+      "content": {
+        "rentals": {
+          "ski": {
+            "adults": "$35.00",
+            "youth": "$35.00"
+          },
+          "snowboard": {
+            "adults": "$35.00",
+            "youth": "$35.00"
+          },
+          "items": {
+            "skis": "$23.00",
+            "snowboard": "$23.00",
+            "boots": "$23.00"
+          }
+        },
+        "resortId": "tritown-ski-village",
+        "sourceUrl": "https://tritownskivillage.ca/?page_id=691",
+        "updatedAt": 1790113028837
+      }
+    },
+    {
+      "table": "weatherAndStatus",
+      "content": {
+        "lifts": [
+          {
+            "name": "T Bar",
+            "status": "not informed"
+          },
+          {
+            "name": "Handle Tow",
+            "status": "not informed"
+          }
+        ],
+        "tracks": [],
+        "terrainParks": [],
+        "resortId": "tritown-ski-village",
+        "sourceUrl": "https://tritownskivillage.ca/",
+        "updatedAt": 1790113030499
+      }
+    }
+  ]
+}

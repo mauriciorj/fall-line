@@ -1,0 +1,59 @@
+{
+  "lifts": [
+    {
+      "name": "Quad Lift",
+      "status": "closed"
+    },
+    {
+      "name": "Beginner Poma Lift",
+      "status": "closed"
+    }
+  ],
+  "tracks": [
+    {
+      "name": "Beginner's Trail",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Bruno's Edge",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Dengg's Peak",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Family Trail",
+      "status": "closed",
+      "difficulty": "green"
+    },
+    {
+      "name": "Idiot's Delight",
+      "status": "closed",
+      "difficulty": "black"
+    },
+    {
+      "name": "Main Run",
+      "status": "closed",
+      "difficulty": "blue"
+    },
+    {
+      "name": "Valley Trail",
+      "status": "closed",
+      "difficulty": "green"
+    }
+  ],
+  "terrainParks": [
+    {
+      "name": "Terrain Park",
+      "status": "closed",
+      "difficulty": "freeStyle"
+    }
+  ],
+  "resortId": "mount-dufour",
+  "sourceUrl": "https://www.mountdufour.com/index.php/the-mountain/ski-conditions",
+  "updatedAt": 1790112194802
+}

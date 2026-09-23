@@ -1,0 +1,109 @@
+{
+  "resortId": "batawa-ski-hill",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "address": "99 Ski Club Lane, Quinte West, ON K0K 1E0, Canada",
+        "continent": "North America",
+        "country": "Canada",
+        "email": "info@batawaskihill.com",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": true,
+        "hasSnowshoeing": true,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(613) 398-6568",
+        "published": true,
+        "region": "Ontario",
+        "resortId": "batawa-ski-hill",
+        "ticketUrl": "https://www.batawaskihill.com/lift-tickets",
+        "website": "https://www.batawaskihill.com/",
+        "name": "Batawa Ski Hill",
+        "elevation": "30 m - 80 m",
+        "height": "50 m",
+        "tracks-total-length": "1.5 km",
+        "tracks-green-length": "0.2 km",
+        "tracks-green-proportion": "13",
+        "tracks-blue-length": "0.9 km",
+        "tracks-blue-proportion": "60",
+        "tracks-black-length": "0.4 km",
+        "tracks-black-proportion": "27",
+        "tracksSummary": {
+          "black": 0,
+          "blue": 0,
+          "doubleBlack": 0,
+          "freeStyle": 0,
+          "green": 0
+        },
+        "dayTicketPrice": "$124",
+        "skiRentalPrice": null,
+        "snowBoardRentalPrice": null
+      }
+    },
+    {
+      "table": "resortHours",
+      "content": {
+        "hours": {
+          "sunday": "closed",
+          "monday": "08:00 to 14:00",
+          "tuesday": "08:00 to 14:00",
+          "wednesday": "08:00 to 14:00",
+          "thursday": "08:00 to 14:00",
+          "friday": "08:00 to 14:00",
+          "saturday": "closed"
+        },
+        "resortId": "batawa-ski-hill",
+        "sourceUrl": "https://www.batawaskihill.com/",
+        "updatedAt": 1790116853071
+      }
+    },
+    {
+      "table": "resortRates",
+      "content": {
+        "rates": {
+          "day-week": {
+            "adults": "$124",
+            "youth": "$112",
+            "seniors": "$112"
+          },
+          "day-weekend": {
+            "adults": "$124",
+            "youth": "$112",
+            "seniors": "$112"
+          }
+        },
+        "resortId": "batawa-ski-hill",
+        "sourceUrl": "https://www.skiresort.com/en/ski-resort/batawa-ski-hill/",
+        "updatedAt": 1790116854364
+      }
+    },
+    {
+      "table": "resortRentals",
+      "content": {
+        "rentals": {
+          "ski": {},
+          "snowboard": {},
+          "items": {}
+        },
+        "resortId": "batawa-ski-hill",
+        "sourceUrl": "https://www.batawaskihill.com/",
+        "updatedAt": 1790116855252
+      }
+    },
+    {
+      "table": "weatherAndStatus",
+      "content": {
+        "lifts": [],
+        "tracks": [],
+        "terrainParks": [],
+        "resortId": "batawa-ski-hill",
+        "sourceUrl": "https://www.batawaskihill.com/",
+        "updatedAt": 1790116857311
+      }
+    }
+  ]
+}

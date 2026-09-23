@@ -1,10 +1,12 @@
 {
   "address": "1054 Liswood Road, Eagle Lake, ON K0M 1M0",
   "continent": "North America",
+  "coordinates": { "lat": 45.13009675705433, "lng": -78.48196250230275 },
   "country": "Canada",
   "email": "info@sirsams.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/7YTY6hi41V1jHGb1A",
   "hasIceSkate": false,
-  "hasAccommodations": true,
+  "hasAccommodations": false,
   "hasCrossCountry": false,
   "hasLessons": true,
   "hasSnowshoeing": false,

@@ -1,0 +1,17 @@
+{
+  "rates": {
+    "day-week": {
+      "adults": "$45.00",
+      "youth": "$35.00",
+      "seniors": "$35.00"
+    },
+    "day-weekend": {
+      "adults": "$45.00",
+      "youth": "$35.00",
+      "seniors": "$35.00"
+    }
+  },
+  "resortId": "tritown-ski-village",
+  "sourceUrl": "https://tritownskivillage.ca/?page_id=476",
+  "updatedAt": 1790113028030
+}
