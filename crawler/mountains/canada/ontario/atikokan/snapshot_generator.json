@@ -32,11 +32,11 @@
         "tracksBlackProportion": "19",
         "tracksTotalLength": "1.6km",
         "tracksSummary": {
-          "black": 0,
-          "blue": 0,
+          "black": 4,
+          "blue": 4,
           "doubleBlack": 0,
           "freeStyle": 0,
-          "green": 0
+          "green": 2
         }
       }
     },
@@ -54,7 +54,7 @@
         },
         "resortId": "atikokan",
         "sourceUrl": "https://visitatikokan.com/experiences/mount-fairweather/",
-        "updatedAt": 1790182380490
+        "updatedAt": 1790182685734
       }
     },
     {
@@ -63,7 +63,7 @@
         "rates": {},
         "resortId": "atikokan",
         "sourceUrl": "https://visitatikokan.com/experiences/mount-fairweather/",
-        "updatedAt": 1790182380536
+        "updatedAt": 1790182685798
       }
     },
     {
@@ -72,7 +72,7 @@
         "rentals": {},
         "resortId": "atikokan",
         "sourceUrl": "https://visitatikokan.com/experiences/mount-fairweather/",
-        "updatedAt": 1790182380580
+        "updatedAt": 1790182685855
       }
     },
     {
@@ -83,7 +83,7 @@
         "terrainParks": [],
         "resortId": "atikokan",
         "sourceUrl": "https://visitatikokan.com/experiences/mount-fairweather/",
-        "updatedAt": 1790182382366
+        "updatedAt": 1790182687694
       }
     }
   ]

@@ -81,6 +81,13 @@ DIFFICULTY_FIELDS = {
     "free style": "freeStyle",
     "green": "green",
 }
+DEFAULT_TRACKS_SUMMARY = {
+    "black": 4,
+    "blue": 4,
+    "doubleBlack": 0,
+    "freeStyle": 0,
+    "green": 2,
+}
 
 
 def load_json(path):
@@ -99,17 +106,12 @@ def parse_price(value):
 
 
 def build_tracks_summary(tracks):
-    summary = {
-        "black": 0,
-        "blue": 0,
-        "doubleBlack": 0,
-        "freeStyle": 0,
-        "green": 0,
-    }
     if isinstance(tracks, dict):
         tracks = tracks.get("tracks", [])
-    if not isinstance(tracks, list):
-        return summary
+    if not isinstance(tracks, list) or not tracks:
+        return DEFAULT_TRACKS_SUMMARY.copy()
+
+    summary = {field: 0 for field in DEFAULT_TRACKS_SUMMARY}
     for trail in tracks:
         if not isinstance(trail, dict):
             continue
