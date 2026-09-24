@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Resort } from "@/types/resort";
 import { Snowflake, Map, ChevronDown } from "lucide-react";
 import {
@@ -42,6 +42,45 @@ const difficultyColor = {
 const TracksSection = ({ resort }: TracksSectionProps) => {
   const { t } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
+  const [isMapOpen, setIsMapOpen] = useState(false);
+  const [trailMapUrls, setTrailMapUrls] = useState<string[]>([]);
+  const [isLoadingTrailMaps, setIsLoadingTrailMaps] = useState(false);
+
+  const handleMapOpenChange = (open: boolean) => {
+    setIsMapOpen(open);
+    setTrailMapUrls([]);
+    setIsLoadingTrailMaps(open);
+  };
+
+  useEffect(() => {
+    if (!isMapOpen) return;
+
+    let cancelled = false;
+    const discoveredUrls: string[] = [];
+
+    const loadNextTrailMap = (index: number) => {
+      if (cancelled) return;
+
+      const url = `/assets/${resort.resortId}/trail-${index}.webp`;
+      const image = new window.Image();
+      image.onload = () => {
+        if (cancelled) return;
+        discoveredUrls.push(url);
+        setTrailMapUrls([...discoveredUrls]);
+        loadNextTrailMap(index + 1);
+      };
+      image.onerror = () => {
+        if (!cancelled) setIsLoadingTrailMaps(false);
+      };
+      image.src = url;
+    };
+
+    loadNextTrailMap(1);
+    return () => {
+      cancelled = true;
+    };
+  }, [isMapOpen, resort.resortId]);
+
   const trackConditions = resort.trackConditions ?? [];
   const summaryTracks: TrackSummary[] = [
     {
@@ -160,7 +199,7 @@ const TracksSection = ({ resort }: TracksSectionProps) => {
             <Map className="w-4 h-4 text-muted-foreground shrink-0" />
             <p className="text-sm font-medium text-foreground">{t("trailMap")}</p>
           </div>
-          <Dialog>
+          <Dialog open={isMapOpen} onOpenChange={handleMapOpenChange}>
             <DialogTrigger asChild>
               <Button variant="outline" size="sm">
                 {t("viewMap")}
@@ -172,14 +211,29 @@ const TracksSection = ({ resort }: TracksSectionProps) => {
                   {resort.name} — {t("trailMap")}
                 </DialogTitle>
               </DialogHeader>
-              <div className="mt-2">
-                <Image
-                  src={resort.trailMap}
-                  alt={`${resort.name} trail map`}
-                  width={1200}
-                  height={800}
-                  className="w-full h-auto rounded-md"
-                />
+              <div className="mt-2 space-y-4">
+                {trailMapUrls.length > 0 ? (
+                  trailMapUrls.map((url, index) => (
+                    <Image
+                      key={url}
+                      src={url}
+                      alt={`${resort.name} trail map ${index + 1}`}
+                      width={1200}
+                      height={800}
+                      className="w-full h-auto rounded-md"
+                    />
+                  ))
+                ) : (
+                  !isLoadingTrailMaps && (
+                    <Image
+                      src={resort.trailMap}
+                      alt={`${resort.name} trail map`}
+                      width={1200}
+                      height={800}
+                      className="w-full h-auto rounded-md"
+                    />
+                  )
+                )}
               </div>
             </DialogContent>
           </Dialog>

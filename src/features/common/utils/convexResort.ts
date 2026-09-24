@@ -1,15 +1,7 @@
 import { Resort } from "@/types/resort";
 
-const heroImageExtensions: Record<string, "jpg" | "webp"> = {
-  "glen-eden": "webp",
-  "horseshoe-valley-resort": "webp",
-  "lakeridge-ski-resort": "webp",
-  "snow-valley-ski-resort": "webp",
-};
-
 export function getResortHeroImage(resortId: string) {
-  const extension = heroImageExtensions[resortId] ?? "jpg";
-  return `/assets/${resortId}/hero.${extension}`;
+  return `/assets/${resortId}/hero.webp`;
 }
 
 type DbResort = Partial<Resort> & {
