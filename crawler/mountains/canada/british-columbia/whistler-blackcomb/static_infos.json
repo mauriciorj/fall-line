@@ -1,0 +1,16 @@
+{
+  "address": "4545 Blackcomb Wy, Whistler, BC V0N 1B4",
+  "continent": "North America",
+  "coordinates": {
+    "lat": 50.11510843276894,
+    "lng": -122.94851860383659
+  },
+  "country": "Canada",
+  "googleMapsUrl": "https://maps.app.goo.gl/DotiRkFKTedVzP568",
+  "hasAccommodations": true,
+  "hasLessons": true,
+  "phone": "604-967-8950",
+  "region": "British Columbia",
+  "resortId": "whistler-blackcomb",
+  "website": "https://www.whistlerblackcomb.com/"
+}

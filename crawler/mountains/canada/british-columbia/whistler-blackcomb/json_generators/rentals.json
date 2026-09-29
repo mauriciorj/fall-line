@@ -1,0 +1,16 @@
+{
+  "rentals": {
+    "ski": {
+      "week": "$78",
+      "weekend": ""
+    },
+    "snowboard": {
+      "week": "$78",
+      "weekend": ""
+    },
+    "items": {}
+  },
+  "resortId": "whistler-blackcomb",
+  "sourceUrl": "https://www.whistlerblackcomb.com/rentals/pick-package",
+  "updatedAt": 1790621390697
+}
