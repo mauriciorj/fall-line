@@ -1,0 +1,971 @@
+{
+  "resortId": "panorama",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "address": "2060 Summit Drive, Panorama, BC V0A 1T0, Canada",
+        "continent": "North America",
+        "country": "Canada",
+        "email": "information@panoramaresort.com",
+        "hasAccommodations": true,
+        "hasLessons": true,
+        "phone": "+1 250-341-3084",
+        "region": "British Columbia",
+        "resortId": "panorama",
+        "ticketUrl": "https://www.panoramaresort.com/planning/tickets-and-passes/lift-tickets",
+        "tollFree": "+1 800-663-2929",
+        "website": "https://www.panoramaresort.com/",
+        "name": "Panorama",
+        "elevation": "1150 m - 2365 m",
+        "height": "1215m",
+        "tracksGreenLength": "31.2km",
+        "tracksGreenProportion": "28",
+        "tracksBlueLength": "24.8km",
+        "tracksBlueProportion": "22",
+        "tracksBlackLength": "56km",
+        "tracksBlackProportion": "50",
+        "tracksTotalLength": "112km",
+        "tracksSummary": {
+          "black": 32,
+          "blue": 52,
+          "doubleBlack": 45,
+          "freeStyle": 0,
+          "green": 16
+        },
+        "dayTicketPrice": 179,
+        "skiRentalPrice": 61,
+        "snowBoardRentalPrice": 61
+      }
+    },
+    {
+      "table": "resortHours",
+      "content": {
+        "hours": {
+          "sunday": "closed",
+          "monday": "closed",
+          "tuesday": "closed",
+          "wednesday": "closed",
+          "thursday": "closed",
+          "friday": "closed",
+          "saturday": "closed"
+        },
+        "resortId": "panorama",
+        "sourceUrl": "https://www.panoramaresort.com/while-you-are-here/mountain-stats",
+        "updatedAt": 1790643202167
+      }
+    },
+    {
+      "table": "resortRates",
+      "content": {
+        "rates": {
+          "day-week": {
+            "adults": "$179"
+          }
+        },
+        "resortId": "panorama",
+        "sourceUrl": "https://www.panoramaresort.com/planning/tickets-and-passes/lift-tickets",
+        "updatedAt": 1790643203379
+      }
+    },
+    {
+      "table": "resortRentals",
+      "content": {
+        "rentals": {
+          "ski": {
+            "adults": "$61"
+          },
+          "snowboard": {
+            "adults": "$61"
+          },
+          "items": {}
+        },
+        "resortId": "panorama",
+        "sourceUrl": "https://www.panoramaresort.com/while-you-are-here/ski-bike-and-equipment-rentals/ski-rentals",
+        "updatedAt": 1790643205185
+      }
+    },
+    {
+      "table": "weatherAndStatus",
+      "content": {
+        "lifts": [],
+        "tracks": [
+          {
+            "area": "Champagne",
+            "name": "World Cup Way",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Champagne",
+            "name": "Skyway",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Champagne",
+            "name": "Grice Paddy",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Champagne",
+            "name": "Rollercoaster",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Champagne",
+            "name": "Chute",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Champagne",
+            "name": "Skyline",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Champagne",
+            "name": "Liftline",
+            "difficulty": "black",
+            "status": "closed"
+          },
+          {
+            "area": "Champagne",
+            "name": "Pod's",
+            "difficulty": "black",
+            "status": "closed"
+          },
+          {
+            "area": "Champagne",
+            "name": "Tacky",
+            "difficulty": "black",
+            "status": "closed"
+          },
+          {
+            "area": "Champagne",
+            "name": "Downhill",
+            "difficulty": "black",
+            "status": "closed"
+          },
+          {
+            "area": "Champagne",
+            "name": "Cow's Face",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Champagne",
+            "name": "Millennium Black",
+            "difficulty": "black",
+            "status": "closed"
+          },
+          {
+            "area": "Champagne",
+            "name": "Millennium Blue",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Champagne",
+            "name": "Elkhorn",
+            "difficulty": "black",
+            "status": "closed"
+          },
+          {
+            "area": "Champagne",
+            "name": "Canadian Way - Upper",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Champagne",
+            "name": "Canadian Way - Lower",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Champagne",
+            "name": "Silky",
+            "difficulty": "green",
+            "status": "closed"
+          },
+          {
+            "area": "Discovery Zone",
+            "name": "Highway 1",
+            "difficulty": "green",
+            "status": "closed"
+          },
+          {
+            "area": "Discovery Zone",
+            "name": "Stringer",
+            "difficulty": "green",
+            "status": "closed"
+          },
+          {
+            "area": "Discovery Zone",
+            "name": "Beginner",
+            "difficulty": "green",
+            "status": "closed"
+          },
+          {
+            "area": "Discovery Zone",
+            "name": "Campbell's Canyon",
+            "difficulty": "green",
+            "status": "closed"
+          },
+          {
+            "area": "Discovery Zone",
+            "name": "Canadian Discovery",
+            "difficulty": "green",
+            "status": "closed"
+          },
+          {
+            "area": "Discovery Zone",
+            "name": "Trapper's Ridge",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Discovery Zone",
+            "name": "Trapper’s Lynx",
+            "difficulty": "green",
+            "status": "closed"
+          },
+          {
+            "area": "Extreme Dream Zone",
+            "name": "Tombstone",
+            "difficulty": "black",
+            "status": "closed"
+          },
+          {
+            "area": "Extreme Dream Zone",
+            "name": "Zone 2",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Extreme Dream Zone",
+            "name": "Gun Barrel",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Extreme Dream Zone",
+            "name": "Laresser Lane",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Extreme Dream Zone",
+            "name": "Trigger",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Extreme Dream Zone",
+            "name": "Elmo",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Extreme Dream Zone",
+            "name": "Orca",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Extreme Dream Zone",
+            "name": "Mocha",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Extreme Dream Zone",
+            "name": "Latte",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Extreme Dream Zone",
+            "name": "Cafe",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Extreme Dream Zone",
+            "name": "Champagne Surf",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Extreme Dream Zone",
+            "name": "Fat Chance",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Extreme Dream Zone",
+            "name": "Dunes",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Extreme Dream Zone",
+            "name": "First Chance",
+            "difficulty": "black",
+            "status": "closed"
+          },
+          {
+            "area": "Extreme Dream Zone",
+            "name": "Pi",
+            "difficulty": "double black",
+            "status": "not informed"
+          },
+          {
+            "area": "Extreme Dream Zone",
+            "name": "Toadstool",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Extreme Dream Zone",
+            "name": "Surf",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Extreme Dream Zone",
+            "name": "Last Chance",
+            "difficulty": "black",
+            "status": "closed"
+          },
+          {
+            "area": "Extreme Dream Zone",
+            "name": "Messerli's Mile",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Founder's Ridge",
+            "name": "Deck's Cross",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Founder's Ridge",
+            "name": "Madson's Mile",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Founder's Ridge",
+            "name": "McIntosh Way",
+            "difficulty": "black",
+            "status": "closed"
+          },
+          {
+            "area": "Founder's Ridge",
+            "name": "Strobl Strasse",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Founder's Ridge",
+            "name": "Zehnder Way",
+            "difficulty": "black",
+            "status": "closed"
+          },
+          {
+            "area": "Founder's Ridge",
+            "name": "Ostrander Alley",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Founder's Ridge",
+            "name": "Delesalle",
+            "difficulty": "black",
+            "status": "closed"
+          },
+          {
+            "area": "Founder's Ridge",
+            "name": "Bell's Landing",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Mile One",
+            "name": "Powder Trail Green",
+            "difficulty": "green",
+            "status": "closed"
+          },
+          {
+            "area": "Mile One",
+            "name": "Horseshoe",
+            "difficulty": "green",
+            "status": "closed"
+          },
+          {
+            "area": "Mile One",
+            "name": "Showoff Blue",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Mile One",
+            "name": "Showoff Green",
+            "difficulty": "green",
+            "status": "closed"
+          },
+          {
+            "area": "Mile One",
+            "name": "Powder Trail Blue",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Mile One",
+            "name": "Loose Moose",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Mile One",
+            "name": "Moose Trail",
+            "difficulty": "green",
+            "status": "closed"
+          },
+          {
+            "area": "Mile One",
+            "name": "Old Timer",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Mile One",
+            "name": "Hay Fever",
+            "difficulty": "black",
+            "status": "closed"
+          },
+          {
+            "area": "Mile One",
+            "name": "Secret Forest",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Summit",
+            "name": "Getmedown",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Summit",
+            "name": "Top of the World",
+            "difficulty": "black",
+            "status": "closed"
+          },
+          {
+            "area": "Summit",
+            "name": "Tree Time",
+            "difficulty": "black",
+            "status": "closed"
+          },
+          {
+            "area": "Summit",
+            "name": "HLH",
+            "difficulty": "black",
+            "status": "closed"
+          },
+          {
+            "area": "Summit",
+            "name": "Tight Spots",
+            "difficulty": "black",
+            "status": "closed"
+          },
+          {
+            "area": "Summit",
+            "name": "Roy's Run",
+            "difficulty": "black",
+            "status": "closed"
+          },
+          {
+            "area": "Summit",
+            "name": "Outer Limits",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Summit",
+            "name": "Picture Perfect",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Summit",
+            "name": "Hideaway",
+            "difficulty": "black",
+            "status": "closed"
+          },
+          {
+            "area": "Summit",
+            "name": "Schober's Dream - Upper",
+            "difficulty": "black",
+            "status": "closed"
+          },
+          {
+            "area": "Summit",
+            "name": "Schober's Dream - Lower",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Summit",
+            "name": "Schober's Glade",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Summit",
+            "name": "View of 1000 Peaks",
+            "difficulty": "black",
+            "status": "closed"
+          },
+          {
+            "area": "Sun Bowl",
+            "name": "Alive Glades",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Sun Bowl",
+            "name": "Sunshine",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Sun Bowl",
+            "name": "Sun Bowl Trail",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Sun Bowl",
+            "name": "Sunburst",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Sun Bowl",
+            "name": "Sundog",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Sun Bowl",
+            "name": "Sunset",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Sun Bowl",
+            "name": "Sunna",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Sun Bowl",
+            "name": "Sunseeker",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Sun Bowl",
+            "name": "Stump Farm",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Sun Bowl",
+            "name": "C.F.I.",
+            "difficulty": "black",
+            "status": "closed"
+          },
+          {
+            "area": "Sun Bowl",
+            "name": "Marshall",
+            "difficulty": "black",
+            "status": "closed"
+          },
+          {
+            "area": "Sun Bowl",
+            "name": "Draino",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Sun Bowl",
+            "name": "Lower Bowl",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Sun Bowl",
+            "name": "Marker's Mark",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Sun Bowl",
+            "name": "Solarium",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Sun Bowl",
+            "name": "Sun's Out",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Sun Bowl",
+            "name": "Village Way - Lower",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Sun Bowl",
+            "name": "Village Way - Upper",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Sunbird",
+            "name": "Fritz's",
+            "difficulty": "black",
+            "status": "closed"
+          },
+          {
+            "area": "Sunbird",
+            "name": "Whiskey Jack",
+            "difficulty": "black",
+            "status": "closed"
+          },
+          {
+            "area": "Sunbird",
+            "name": "Chicken's Choice",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Sunbird",
+            "name": "Sunbird",
+            "difficulty": "black",
+            "status": "closed"
+          },
+          {
+            "area": "Sunbird",
+            "name": "Triple Traverse",
+            "difficulty": "green",
+            "status": "closed"
+          },
+          {
+            "area": "Sunbird",
+            "name": "Heaven Can Wait - Upper",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Sunbird",
+            "name": "Heaven Can Wait - Lower",
+            "difficulty": "black",
+            "status": "closed"
+          },
+          {
+            "area": "Sunbird",
+            "name": "Little Dipper - Upper",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Sunbird",
+            "name": "Little Dipper - Lower",
+            "difficulty": "black",
+            "status": "closed"
+          },
+          {
+            "area": "Sunbird",
+            "name": "Out Rider",
+            "difficulty": "green",
+            "status": "closed"
+          },
+          {
+            "area": "Sunbird",
+            "name": "Detour",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Sunbird",
+            "name": "Boomerang",
+            "difficulty": "green",
+            "status": "closed"
+          },
+          {
+            "area": "Taynton Bowl",
+            "name": "Outback Ridge",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Taynton Bowl",
+            "name": "Heli High",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Taynton Bowl",
+            "name": "Heli Face",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Taynton Bowl",
+            "name": "Star Fire Cliffs",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Taynton Bowl",
+            "name": "Star Fire",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Taynton Bowl",
+            "name": "Cauldron",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Taynton Bowl",
+            "name": "White Room",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Taynton Bowl",
+            "name": "B-1st",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Taynton Bowl",
+            "name": "Donny B's",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Taynton Bowl",
+            "name": "Devil's Drop",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Taynton Bowl",
+            "name": "Ktunaxa",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Taynton Bowl",
+            "name": "C-Spine",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Taynton Bowl",
+            "name": "Stinger",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Taynton Bowl",
+            "name": "Kinbasket",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Taynton Bowl",
+            "name": "Whitetail",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Taynton Bowl",
+            "name": "Never Never Land",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Taynton Bowl",
+            "name": "Jekyll & Hyde",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Taynton Bowl",
+            "name": "The Monster",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Taynton Bowl",
+            "name": "Spectre",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Taynton Bowl",
+            "name": "Get Out!",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Taynton Bowl",
+            "name": "Ridgeback",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Taynton Bowl",
+            "name": "Funnel",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Taynton Bowl",
+            "name": "Landing Strip",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Taynton Bowl",
+            "name": "Taynton Trail",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Taynton Bowl",
+            "name": "Stash",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Taynton Bowl",
+            "name": "Yeti",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Taynton Bowl",
+            "name": "Paranormal",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Taynton Bowl",
+            "name": "Wild Thing",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Taynton Bowl",
+            "name": "Evasion Traverse",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Taynton Bowl",
+            "name": "Sidewinder Glades",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Taynton Bowl",
+            "name": "Stumbock's",
+            "difficulty": "black",
+            "status": "closed"
+          },
+          {
+            "area": "Taynton Bowl",
+            "name": "Turnpike 1",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Taynton Bowl",
+            "name": "Sidebocks",
+            "difficulty": "double black",
+            "status": "closed"
+          },
+          {
+            "area": "Terrain Park",
+            "name": "Stringer Park",
+            "difficulty": "black",
+            "status": "closed"
+          },
+          {
+            "area": "Terrain Park",
+            "name": "Jib Park",
+            "difficulty": "black",
+            "status": "closed"
+          },
+          {
+            "area": "Terrain Park",
+            "name": "Powder Trail Park",
+            "difficulty": "black",
+            "status": "closed"
+          },
+          {
+            "area": "Toby",
+            "name": "Eagle Glide",
+            "difficulty": "green",
+            "status": "closed"
+          },
+          {
+            "area": "Toby",
+            "name": "New Timer",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Toby",
+            "name": "2 Toby",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Toby",
+            "name": "Over Easy",
+            "difficulty": "blue",
+            "status": "closed"
+          },
+          {
+            "area": "Toby",
+            "name": "Hoggs Flats",
+            "difficulty": "green",
+            "status": "closed"
+          }
+        ],
+        "terrainParks": [],
+        "resortId": "panorama",
+        "sourceUrl": "https://www.panoramaresort.com/panorama-today/daily-snow-report#trailreport",
+        "updatedAt": 1790643208308
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "address": "2060 Summit Drive, Panorama, BC V0A 1T0, Canada",
+  "continent": "North America",
+  "country": "Canada",
+  "coordinates": {
+    "lat": 50.46035965824397,
+    "lng": -116.23785478097766
+  },
+  "email": "information@panoramaresort.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/T95iUFjELgX4ZFsy7",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": true,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "+1 250-341-3084",
+  "region": "British Columbia",
+  "resortId": "panorama",
+  "ticketUrl": "https://www.panoramaresort.com/planning/tickets-and-passes/lift-tickets",
+  "tollFree": "+1 800-663-2929",
+  "website": "https://www.panoramaresort.com/"
+}

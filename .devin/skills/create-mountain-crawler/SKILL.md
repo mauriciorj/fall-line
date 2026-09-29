@@ -19,8 +19,7 @@ Create or update a mountain crawler. Apply this workflow to requests involving `
 ## 1. Inspect before editing
 
 - Identify the target path: `crawler/mountains/<continent>/<country>/<region>/<resort-slug>/`.
-- Read the nearest complete crawler in the same region. Prefer the same data shape and source type; use `antoine-mountain`, `brimacombe`, `blue-mountain`, or `mount-baldy` only after comparing them.
-- Read the target directory, `crawler/requirements.txt`, and any local README.
+- Read the nearest complete crawler in the same region. Prefer the same data shape and source type; use `brimacombe` or `snow-valley-ski-resort` only after comparing them.
 - Check `git status` before changing generated JSON or existing user work.
 - Verify the Python import root. Most Ontario crawlers use `Path(__file__).resolve().parent.parents[3]`; do not copy this blindly. Confirm the path that contains `convex_client.py`.
 
@@ -53,6 +52,10 @@ Each generator writes a sibling JSON file. Each table payload must preserve:
 ```
 
 Use the exact data key required by the table: `hours`, `rates`, `rentals`, or weather fields (`lifts`, `tracks`, and optional `terrainParks`). Unknown data may be empty, but keep metadata and schema valid. Do not fabricate prices, coordinates, ratings, trail names, or statuses.
+
+## IMPORTANT
+Its not negotiable, all information must be extract from HTML. It means the crawlers must create functions to fetch and parse the HTML.
+If some information is not found ask me what to do.
 
 ## 3. Generator conventions
 

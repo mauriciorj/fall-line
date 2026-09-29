@@ -1,0 +1,14 @@
+{
+  "rentals": {
+    "ski": {
+      "adults": "$61"
+    },
+    "snowboard": {
+      "adults": "$61"
+    },
+    "items": {}
+  },
+  "resortId": "panorama",
+  "sourceUrl": "https://www.panoramaresort.com/while-you-are-here/ski-bike-and-equipment-rentals/ski-rentals",
+  "updatedAt": 1790643205185
+}
