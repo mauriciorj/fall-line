@@ -1,0 +1,51 @@
+{
+  "resortId": "silverstar",
+  "tables": [
+    {
+      "table": "resorts",
+      "missingColumns": [
+        "published",
+        "address",
+        "coordinates",
+        "dayTicketPrice",
+        "email",
+        "hasIceSkate",
+        "hasAccommodations",
+        "hasCrossCountry",
+        "hasSnowshoeing",
+        "hasSpa",
+        "hasTubing",
+        "hasZipline",
+        "lessonsPrice",
+        "phone",
+        "rating",
+        "skiRentalPrice",
+        "snowBoardRentalPrice",
+        "ticketUrl",
+        "tollFree",
+        "tubbingPrice"
+      ]
+    },
+    {
+      "table": "resortHours",
+      "missingColumns": []
+    },
+    {
+      "table": "resortRates",
+      "missingColumns": [
+        "rates"
+      ]
+    },
+    {
+      "table": "resortRentals",
+      "missingColumns": []
+    },
+    {
+      "table": "weatherAndStatus",
+      "missingColumns": [
+        "lifts"
+      ]
+    }
+  ],
+  "missingColumnCount": 22
+}

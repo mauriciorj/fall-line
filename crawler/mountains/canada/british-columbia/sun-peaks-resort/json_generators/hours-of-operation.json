@@ -1,0 +1,14 @@
+{
+  "hours": {
+    "sunday": "9:30am to 4:00pm",
+    "monday": "9:30am to 4:00pm",
+    "tuesday": "9:30am to 4:00pm",
+    "wednesday": "9:30am to 4:00pm",
+    "thursday": "9:30am to 4:00pm",
+    "friday": "9:30am to 4:00pm",
+    "saturday": "9:30am to 4:00pm"
+  },
+  "resortId": "sun-peaks-resort",
+  "sourceUrl": "https://www.sunpeaksresort.com/ski-ride/the-mountain/winter-hours-of-operation",
+  "updatedAt": 1791067272565
+}

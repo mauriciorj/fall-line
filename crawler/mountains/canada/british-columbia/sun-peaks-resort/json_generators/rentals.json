@@ -1,0 +1,14 @@
+{
+  "rentals": {
+    "ski": {
+      "adults": "$77"
+    },
+    "snowboard": {
+      "adults": "$77"
+    },
+    "items": {}
+  },
+  "resortId": "sun-peaks-resort",
+  "sourceUrl": "https://www.sunpeaksresort.com/ski-ride/sports-school-rentals/rental-equipment/sun-peaks-rentals",
+  "updatedAt": 1791067308391
+}

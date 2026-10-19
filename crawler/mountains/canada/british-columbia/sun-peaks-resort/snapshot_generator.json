@@ -1,0 +1,1042 @@
+{
+  "resortId": "sun-peaks-resort",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "address": "3150 Creekside Way, Sun Peaks, BC V0E 5N0, Canada",
+        "continent": "North America",
+        "country": "Canada",
+        "hasAccommodations": true,
+        "hasLessons": true,
+        "phone": "250-578-5474",
+        "region": "British Columbia",
+        "resortId": "sun-peaks-resort",
+        "ticketUrl": "https://store.sunpeaksresort.com/l/winter-tickets/c/alpine-day-tickets",
+        "website": "https://www.sunpeaksresort.com/",
+        "name": "Sun Peaks Resort",
+        "elevation": "1198 m - 2082 m",
+        "height": "884m",
+        "tracksGreenLength": "13.5km",
+        "tracksGreenProportion": "10",
+        "tracksBlueLength": "78km",
+        "tracksBlueProportion": "58",
+        "tracksBlackLength": "43.5km",
+        "tracksBlackProportion": "32",
+        "tracksTotalLength": "135km",
+        "tracksSummary": {
+          "black": 47,
+          "blue": 61,
+          "doubleBlack": 7,
+          "freeStyle": 4,
+          "green": 23
+        },
+        "skiRentalPrice": 77,
+        "snowBoardRentalPrice": 77
+      }
+    },
+    {
+      "table": "resortHours",
+      "content": {
+        "hours": {
+          "sunday": "9:30am to 4:00pm",
+          "monday": "9:30am to 4:00pm",
+          "tuesday": "9:30am to 4:00pm",
+          "wednesday": "9:30am to 4:00pm",
+          "thursday": "9:30am to 4:00pm",
+          "friday": "9:30am to 4:00pm",
+          "saturday": "9:30am to 4:00pm"
+        },
+        "resortId": "sun-peaks-resort",
+        "sourceUrl": "https://www.sunpeaksresort.com/ski-ride/the-mountain/winter-hours-of-operation",
+        "updatedAt": 1791067272565
+      }
+    },
+    {
+      "table": "resortRates",
+      "content": {
+        "rates": {},
+        "resortId": "sun-peaks-resort",
+        "sourceUrl": "https://store.sunpeaksresort.com/l/winter-tickets/c/alpine-day-tickets",
+        "updatedAt": 1791067306393
+      }
+    },
+    {
+      "table": "resortRentals",
+      "content": {
+        "rentals": {
+          "ski": {
+            "adults": "$77"
+          },
+          "snowboard": {
+            "adults": "$77"
+          },
+          "items": {}
+        },
+        "resortId": "sun-peaks-resort",
+        "sourceUrl": "https://www.sunpeaksresort.com/ski-ride/sports-school-rentals/rental-equipment/sun-peaks-rentals",
+        "updatedAt": 1791067308391
+      }
+    },
+    {
+      "table": "weatherAndStatus",
+      "content": {
+        "lifts": [],
+        "tracks": [
+          {
+            "area": "Mt. Morrisey",
+            "name": "Anticipation",
+            "difficulty": "green",
+            "status": "not informed"
+          },
+          {
+            "area": "Mt. Morrisey",
+            "name": "Downtown",
+            "difficulty": "green",
+            "status": "not informed"
+          },
+          {
+            "area": "Mt. Morrisey",
+            "name": "Home Run",
+            "difficulty": "green",
+            "status": "not informed"
+          },
+          {
+            "area": "Mt. Morrisey",
+            "name": "The Sticks",
+            "difficulty": "green",
+            "status": "not informed"
+          },
+          {
+            "area": "Mt. Morrisey",
+            "name": "Back In Time",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Mt. Morrisey",
+            "name": "C.C. Riders",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Mt. Morrisey",
+            "name": "Grand Return",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Mt. Morrisey",
+            "name": "I'Dunno",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Mt. Morrisey",
+            "name": "Mid-Life Crisis",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Mt. Morrisey",
+            "name": "Out Of The Woods",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Mt. Morrisey",
+            "name": "Second Growth",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Mt. Morrisey",
+            "name": "Shiner",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Mt. Morrisey",
+            "name": "Showboat",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Mt. Morrisey",
+            "name": "Still Smokin'",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Mt. Morrisey",
+            "name": "Telly Gram",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Mt. Morrisey",
+            "name": "Agitator",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Mt. Morrisey",
+            "name": "Cover Shot",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Mt. Morrisey",
+            "name": "Lint Trap",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Mt. Morrisey",
+            "name": "Spin Cycle",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Mt. Morrisey",
+            "name": "Tumble Dry",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Mt. Morrisey",
+            "name": "Wringer",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Mt. Morrisey",
+            "name": "In Tatters",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Mt. Morrisey",
+            "name": "Static Cling",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Orient Ridge",
+            "name": "East Village Ski Way",
+            "difficulty": "green",
+            "status": "not informed"
+          },
+          {
+            "area": "Orient Ridge",
+            "name": "Main Village",
+            "difficulty": "green",
+            "status": "not informed"
+          },
+          {
+            "area": "Orient Ridge",
+            "name": "Mt. Morrisey Connector",
+            "difficulty": "green",
+            "status": "not informed"
+          },
+          {
+            "area": "Orient Ridge",
+            "name": "Orient Return",
+            "difficulty": "green",
+            "status": "not informed"
+          },
+          {
+            "area": "Orient Ridge",
+            "name": "Trapper’s Lynx",
+            "difficulty": "green",
+            "status": "not informed"
+          },
+          {
+            "area": "Orient Ridge",
+            "name": "Ausfahrt",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Orient Ridge",
+            "name": "Ça M'a Fait Plaisir",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Orient Ridge",
+            "name": "Carpe Diem",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Orient Ridge",
+            "name": "Chikamichi",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Orient Ridge",
+            "name": "Cześć",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Orient Ridge",
+            "name": "Fair Dinkum",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Orient Ridge",
+            "name": "Hasta La Vista",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Orient Ridge",
+            "name": "Kia Ora",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Orient Ridge",
+            "name": "Ca M'a Fait Plaisir Glades",
+            "difficulty": "off-trail",
+            "status": "not informed"
+          },
+          {
+            "area": "Orient Ridge",
+            "name": "Cześć Glades",
+            "difficulty": "off-trail",
+            "status": "not informed"
+          },
+          {
+            "area": "Orient Ridge",
+            "name": "Hasta La Vista Glades",
+            "difficulty": "off-trail",
+            "status": "not informed"
+          },
+          {
+            "area": "Sundance",
+            "name": "Cowabunga",
+            "difficulty": "green",
+            "status": "not informed"
+          },
+          {
+            "area": "Sundance",
+            "name": "Gentle Giant",
+            "difficulty": "green",
+            "status": "not informed"
+          },
+          {
+            "area": "Sundance",
+            "name": "Home Instead",
+            "difficulty": "green",
+            "status": "not informed"
+          },
+          {
+            "area": "Sundance",
+            "name": "Homesteader Lower",
+            "difficulty": "green",
+            "status": "not informed"
+          },
+          {
+            "area": "Sundance",
+            "name": "Homesteader Upper",
+            "difficulty": "green",
+            "status": "not informed"
+          },
+          {
+            "area": "Sundance",
+            "name": "Moonbeam",
+            "difficulty": "green",
+            "status": "not informed"
+          },
+          {
+            "area": "Sundance",
+            "name": "Rambler",
+            "difficulty": "green",
+            "status": "not informed"
+          },
+          {
+            "area": "Sundance",
+            "name": "Sunbeam",
+            "difficulty": "green",
+            "status": "not informed"
+          },
+          {
+            "area": "Sundance",
+            "name": "Grannie Greene's",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Sundance",
+            "name": "Lone Fir Centre",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Sundance",
+            "name": "Lone Fir West",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Sundance",
+            "name": "PV X-Course",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Sundance",
+            "name": "Sun Downer Lower",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Sundance",
+            "name": "Sun Downer Upper",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Sundance",
+            "name": "Sundance Lower",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Sundance",
+            "name": "Sundance Upper",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Sundance",
+            "name": "Sunrise",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Sundance",
+            "name": "Three Bears Lower",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Sundance",
+            "name": "Three Bears Upper",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Sundance",
+            "name": "Peak-A-Boo",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Sundance",
+            "name": "Terrain Park - Base Camp",
+            "difficulty": "free-style",
+            "status": "not informed"
+          },
+          {
+            "area": "Sundance",
+            "name": "Terrain Park - Basic Training",
+            "difficulty": "free-style",
+            "status": "not informed"
+          },
+          {
+            "area": "Sundance",
+            "name": "Terrain Park - Drop Zone",
+            "difficulty": "free-style",
+            "status": "not informed"
+          },
+          {
+            "area": "Sundance",
+            "name": "Terrain Park - Flight School",
+            "difficulty": "free-style",
+            "status": "not informed"
+          },
+          {
+            "area": "Sundance",
+            "name": "Bug Out Glades",
+            "difficulty": "off-trail",
+            "status": "not informed"
+          },
+          {
+            "area": "Sundance",
+            "name": "Grannie Greene's Glades",
+            "difficulty": "off-trail",
+            "status": "not informed"
+          },
+          {
+            "area": "Sundance",
+            "name": "Lonesome Fir Glades",
+            "difficulty": "off-trail",
+            "status": "not informed"
+          },
+          {
+            "area": "Sundance",
+            "name": "Three Bears Glades",
+            "difficulty": "off-trail",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "5 Mile Lower",
+            "difficulty": "green",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "5 Mile Upper",
+            "difficulty": "green",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Burfield Outrun",
+            "difficulty": "green",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Cahilty",
+            "difficulty": "green",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Connector",
+            "difficulty": "green",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Crystal Lane",
+            "difficulty": "green",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Alley",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Blazer",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Blue Line",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Chute Lower",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Cruiser Lower",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Cruiser Upper",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Crystal Run",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Distributor",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Exhibition Lower",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Exhibition Upper",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Fall Line",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Gateway",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Harry's Run",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Hot Shot",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Last Chance",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Long Draw",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Lunch Time",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Munro Ridge Lower",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Munro Ridge Upper",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "OSV",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Quick Shot",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Round-A-Bout",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Runaway Lane",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Saddle Up",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Shortcut",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "The Other Way",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "The Spine",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Trans Canada",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "West Bushwacker",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Westsyde",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Whyte's Ride",
+            "difficulty": "blue",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "5th Avenue",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Back Door",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Black Line",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Bluff",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Broadway",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Cariboo",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Chief",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Coquihalla",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Crystal Bowl",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "East Bushwacker",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Easy Out",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Father Tom's",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Front Door",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Gil's Area",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Hat Trick",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Headwalls",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Highway 22H",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Highway 22A",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Inner Gil's",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Intimidator",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Juniper Ridge",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Little Headwalls",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Main Face",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Mid Mountain",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Pink Flamingos",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Ralph's Reach",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Rice Bowl",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Roller Coaster",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Rollers",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Short Draw",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Skunk",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Spillway",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Sting",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Sunny Side",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Tighten Yer Boots",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Toilet Bowl",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "White Rabbit",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "7 Mile Road",
+            "difficulty": "black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Challenger",
+            "difficulty": "double-black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Chute Upper",
+            "difficulty": "double-black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Expo",
+            "difficulty": "double-black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Freddy's",
+            "difficulty": "double-black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Green Door",
+            "difficulty": "double-black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Kookamungas",
+            "difficulty": "double-black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Offset",
+            "difficulty": "double-black",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Bling Glades",
+            "difficulty": "off-trail",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Bushwacker Glades",
+            "difficulty": "off-trail",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Cahilty Glades",
+            "difficulty": "off-trail",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Cariboo Glades",
+            "difficulty": "off-trail",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Chillway Glades",
+            "difficulty": "off-trail",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Coquihalla Glades",
+            "difficulty": "off-trail",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Cruiser Glades",
+            "difficulty": "off-trail",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Crystal Glades",
+            "difficulty": "off-trail",
+            "status": "not informed"
+          },
+          {
+            "area": "Tod Mountain",
+            "name": "Ralph's Reach Glades",
+            "difficulty": "off-trail",
+            "status": "not informed"
+          }
+        ],
+        "terrainParks": [],
+        "resortId": "sun-peaks-resort",
+        "sourceUrl": "https://www.sunpeaksresort.com/ski-ride/weather-conditions-cams/lifts-trail-status",
+        "updatedAt": 1791067311453
+      }
+    }
+  ]
+}

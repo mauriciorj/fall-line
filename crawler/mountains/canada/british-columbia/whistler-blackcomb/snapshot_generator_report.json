@@ -1,0 +1,46 @@
+{
+  "resortId": "whistler-blackcomb",
+  "tables": [
+    {
+      "table": "resorts",
+      "missingColumns": [
+        "published",
+        "dayTicketPrice",
+        "email",
+        "hasIceSkate",
+        "hasCrossCountry",
+        "hasSnowshoeing",
+        "hasSpa",
+        "hasTubing",
+        "hasZipline",
+        "lessonsPrice",
+        "rating",
+        "ticketUrl",
+        "tollFree",
+        "tubbingPrice"
+      ]
+    },
+    {
+      "table": "resortHours",
+      "missingColumns": []
+    },
+    {
+      "table": "resortRates",
+      "missingColumns": [
+        "rates"
+      ]
+    },
+    {
+      "table": "resortRentals",
+      "missingColumns": []
+    },
+    {
+      "table": "weatherAndStatus",
+      "missingColumns": [
+        "lifts",
+        "tracks"
+      ]
+    }
+  ],
+  "missingColumnCount": 17
+}

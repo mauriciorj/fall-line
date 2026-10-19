@@ -1,0 +1,99 @@
+{
+  "resortId": "whistler-blackcomb",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "address": "4545 Blackcomb Wy, Whistler, BC V0N 1B4",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 50.11510843276894,
+          "lng": -122.94851860383659
+        },
+        "country": "Canada",
+        "googleMapsUrl": "https://maps.app.goo.gl/DotiRkFKTedVzP568",
+        "hasAccommodations": true,
+        "hasLessons": true,
+        "phone": "604-967-8950",
+        "region": "British Columbia",
+        "resortId": "whistler-blackcomb",
+        "website": "https://www.whistlerblackcomb.com/",
+        "name": "Whistler Blackcomb",
+        "elevation": "675 m - 2284 m",
+        "height": "1609m",
+        "tracksGreenLength": "40km",
+        "tracksGreenProportion": "20",
+        "tracksBlueLength": "110km",
+        "tracksBlueProportion": "55",
+        "tracksBlackLength": "50km",
+        "tracksBlackProportion": "25",
+        "tracksTotalLength": "200km",
+        "tracksSummary": {
+          "black": 0,
+          "blue": 0,
+          "doubleBlack": 0,
+          "freeStyle": 0,
+          "green": 0
+        },
+        "skiRentalPrice": 78,
+        "snowBoardRentalPrice": 78
+      }
+    },
+    {
+      "table": "resortHours",
+      "content": {
+        "hours": {
+          "sunday": "closed",
+          "monday": "closed",
+          "tuesday": "closed",
+          "wednesday": "closed",
+          "thursday": "closed",
+          "friday": "closed",
+          "saturday": "closed"
+        },
+        "resortId": "whistler-blackcomb",
+        "sourceUrl": "https://www.whistlerblackcomb.com/explore-the-resort/about-the-resort/hours-of-operation.aspx",
+        "updatedAt": 1791067557440
+      }
+    },
+    {
+      "table": "resortRates",
+      "content": {
+        "rates": {},
+        "resortId": "whistler-blackcomb",
+        "sourceUrl": "https://waitingroom.snow.com/?c=vailresorts&e=vailresortsecomm1&ver=v3-aspnet-3.6.2&cver=149&man=Sapphire%20-%20All%20Non%20Reservation%20Pages%20and%20APIs%20-%20PROD&t=https%3A%2F%2Fwww.whistlerblackcomb.com%2Fplan-your-trip%2Flift-access%2Ftickets.aspx",
+        "updatedAt": 1791067557515
+      }
+    },
+    {
+      "table": "resortRentals",
+      "content": {
+        "rentals": {
+          "ski": {
+            "week": "$78",
+            "weekend": ""
+          },
+          "snowboard": {
+            "week": "$78",
+            "weekend": ""
+          },
+          "items": {}
+        },
+        "resortId": "whistler-blackcomb",
+        "sourceUrl": "https://www.whistlerblackcomb.com/rentals/pick-package",
+        "updatedAt": 1791067557578
+      }
+    },
+    {
+      "table": "weatherAndStatus",
+      "content": {
+        "lifts": [],
+        "tracks": [],
+        "terrainParks": [],
+        "resortId": "whistler-blackcomb",
+        "sourceUrl": "https://www.whistlerblackcomb.com/the-mountain/mountain-conditions/terrain-and-lift-status.aspx",
+        "updatedAt": 1791067560471
+      }
+    }
+  ]
+}

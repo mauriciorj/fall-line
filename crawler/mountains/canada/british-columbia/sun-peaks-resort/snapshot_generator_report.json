@@ -1,0 +1,46 @@
+{
+  "resortId": "sun-peaks-resort",
+  "tables": [
+    {
+      "table": "resorts",
+      "missingColumns": [
+        "published",
+        "coordinates",
+        "dayTicketPrice",
+        "email",
+        "googleMapsUrl",
+        "hasIceSkate",
+        "hasCrossCountry",
+        "hasSnowshoeing",
+        "hasSpa",
+        "hasTubing",
+        "hasZipline",
+        "lessonsPrice",
+        "rating",
+        "tollFree",
+        "tubbingPrice"
+      ]
+    },
+    {
+      "table": "resortHours",
+      "missingColumns": []
+    },
+    {
+      "table": "resortRates",
+      "missingColumns": [
+        "rates"
+      ]
+    },
+    {
+      "table": "resortRentals",
+      "missingColumns": []
+    },
+    {
+      "table": "weatherAndStatus",
+      "missingColumns": [
+        "lifts"
+      ]
+    }
+  ],
+  "missingColumnCount": 17
+}

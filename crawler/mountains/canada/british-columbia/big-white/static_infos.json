@@ -1,0 +1,12 @@
+{
+  "continent": "North America",
+  "country": "Canada",
+  "coordinates": {
+    "lat": 49.72210206798288,
+    "lng": -118.9268213123354
+  },
+  "googleMapsUrl": "https://maps.app.goo.gl/cEjfpYwFjLSkB3hMA",
+  "region": "British Columbia",
+  "resortId": "big-white",
+  "website": "https://www.bigwhite.com/geo/nz"
+}

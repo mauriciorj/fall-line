@@ -1,0 +1,78 @@
+{
+  "resortId": "big-white",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "continent": "North America",
+        "country": "Canada",
+        "coordinates": {
+          "lat": 49.72210206798288,
+          "lng": -118.9268213123354
+        },
+        "googleMapsUrl": "https://maps.app.goo.gl/cEjfpYwFjLSkB3hMA",
+        "region": "British Columbia",
+        "resortId": "big-white",
+        "website": "https://www.bigwhite.com/geo/nz",
+        "name": "Big White Ski Resort",
+        "tracksSummary": {
+          "black": 0,
+          "blue": 0,
+          "doubleBlack": 0,
+          "freeStyle": 0,
+          "green": 0
+        }
+      }
+    },
+    {
+      "table": "resortHours",
+      "content": {
+        "hours": {
+          "sunday": "closed",
+          "monday": "closed",
+          "tuesday": "closed",
+          "wednesday": "closed",
+          "thursday": "closed",
+          "friday": "closed",
+          "saturday": "closed"
+        },
+        "resortId": "big-white",
+        "sourceUrl": "https://www.bigwhite.com/",
+        "updatedAt": 1791071564695
+      }
+    },
+    {
+      "table": "resortRates",
+      "content": {
+        "rates": {},
+        "resortId": "big-white",
+        "sourceUrl": "https://www.bigwhite.com/",
+        "updatedAt": 1791071564758
+      }
+    },
+    {
+      "table": "resortRentals",
+      "content": {
+        "rentals": {
+          "ski": {},
+          "snowboard": {},
+          "items": {}
+        },
+        "resortId": "big-white",
+        "sourceUrl": "https://www.bigwhite.com/",
+        "updatedAt": 1791071564824
+      }
+    },
+    {
+      "table": "weatherAndStatus",
+      "content": {
+        "lifts": [],
+        "tracks": [],
+        "terrainParks": [],
+        "resortId": "big-white",
+        "sourceUrl": "https://www.bigwhite.com/",
+        "updatedAt": 1791071564945
+      }
+    }
+  ]
+}

@@ -1,0 +1,627 @@
+{
+  "lifts": [],
+  "tracks": [
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Criss Cross",
+      "difficulty": "green",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Comet Trail",
+      "difficulty": "green",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Hursin' Around",
+      "difficulty": "green",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Main Street Skiway",
+      "difficulty": "green",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Far Out",
+      "difficulty": "green",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Over the Hill",
+      "difficulty": "green",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Last Chance",
+      "difficulty": "green",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Silver Fox",
+      "difficulty": "green",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Bergerstrasse",
+      "difficulty": "green",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Ab erdeen Skiway",
+      "difficulty": "green",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Easy Street",
+      "difficulty": "green",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Abbott's Gulch",
+      "difficulty": "blue",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Split Decision",
+      "difficulty": "blue",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Solitude",
+      "difficulty": "blue",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Home Run",
+      "difficulty": "blue",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Ridge Run",
+      "difficulty": "blue",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Milky Way",
+      "difficulty": "blue",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Exhibition",
+      "difficulty": "blue",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Big Dipper",
+      "difficulty": "blue",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Middle Dipper",
+      "difficulty": "blue",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Little Dipper",
+      "difficulty": "blue",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Lower Exhibition",
+      "difficulty": "blue",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "East Off",
+      "difficulty": "blue",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Walt's Run",
+      "difficulty": "blue",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Whiskey Jack",
+      "difficulty": "blue",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Sundance",
+      "difficulty": "blue",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Spence Meadows",
+      "difficulty": "blue",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Silver Meadows",
+      "difficulty": "blue",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Trinity Trees",
+      "difficulty": "blue",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Robson Street",
+      "difficulty": "blue",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Eldorado",
+      "difficulty": "blue",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Sunny High",
+      "difficulty": "blue",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "25 North",
+      "difficulty": "blue",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Roller Coaster",
+      "difficulty": "blue",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Robin's Hood",
+      "difficulty": "blue",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "North Star",
+      "difficulty": "blue",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Star Struck",
+      "difficulty": "blue",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Sherwood Forest",
+      "difficulty": "blue",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Shooting Star",
+      "difficulty": "blue",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Baker's Acres",
+      "difficulty": "blue",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Outback",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Fastback",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Soreback",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Bushback",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Ridgeback",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Attridge Face",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Moonbeam",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Bib's Bumps",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Southern Cross",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Chute",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Show Off",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Hot Dog",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Chalet Alley",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Gopher Glades",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Mine Shaft",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Glade Runner",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Attridge / Vance Creek / Silver Woods",
+      "name": "Chaos",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Focus Peak",
+      "difficulty": "blue",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Sunny Ridge",
+      "difficulty": "blue",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Davidson's Delight",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Uncle Buck",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Huckleberry",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Hunk With We Willie",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Pipeline",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Can Man Do",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Morris Maxit",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Gong Show",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Quick Silver",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "High Lead",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Chute 5",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Kasanova",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Rusty Whistle",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Head Wall",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Abbey Road",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Three Wise Men",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Doose Bob",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Caliper Ridge",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Normania",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Nirvana",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Paradise Glades",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Cudd's Run",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Northern Lights",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Raven",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Hinky Heights",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Sunny Glades",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Campbell's Loop",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Leash",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Black Bear",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Muerte",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Holy Smokes",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Spirit Bowl",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Bon Diablo",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Free Fall",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "White Elephant",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Where's Bob",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Stardust",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Here's Joe",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Black Pine",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Bobtail's Rush",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Zipper",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Blue Moon",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "No Knees",
+      "difficulty": "black",
+      "status": "not informed"
+    },
+    {
+      "area": "Putnam Creek / Backside",
+      "name": "Eldorado Bumps",
+      "difficulty": "black",
+      "status": "not informed"
+    }
+  ],
+  "terrainParks": [],
+  "resortId": "silverstar",
+  "sourceUrl": "https://www.skisilverstar.com/the-mountain/weather-conditions/lift-trail-status/",
+  "updatedAt": 1791066996281
+}

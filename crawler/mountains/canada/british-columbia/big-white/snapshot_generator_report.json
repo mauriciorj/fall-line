@@ -1,0 +1,61 @@
+{
+  "resortId": "big-white",
+  "tables": [
+    {
+      "table": "resorts",
+      "missingColumns": [
+        "published",
+        "address",
+        "dayTicketPrice",
+        "email",
+        "hasIceSkate",
+        "hasAccommodations",
+        "hasCrossCountry",
+        "hasLessons",
+        "hasSnowshoeing",
+        "hasSpa",
+        "hasTubing",
+        "hasZipline",
+        "lessonsPrice",
+        "phone",
+        "rating",
+        "skiRentalPrice",
+        "snowBoardRentalPrice",
+        "elevation",
+        "height",
+        "tracksGreenLength",
+        "tracksGreenProportion",
+        "tracksBlueLength",
+        "tracksBlueProportion",
+        "tracksBlackLength",
+        "tracksBlackProportion",
+        "tracksTotalLength",
+        "ticketUrl",
+        "tollFree",
+        "tubbingPrice"
+      ]
+    },
+    {
+      "table": "resortHours",
+      "missingColumns": []
+    },
+    {
+      "table": "resortRates",
+      "missingColumns": [
+        "rates"
+      ]
+    },
+    {
+      "table": "resortRentals",
+      "missingColumns": []
+    },
+    {
+      "table": "weatherAndStatus",
+      "missingColumns": [
+        "lifts",
+        "tracks"
+      ]
+    }
+  ],
+  "missingColumnCount": 32
+}
