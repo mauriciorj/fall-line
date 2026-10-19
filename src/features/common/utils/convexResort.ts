@@ -1,7 +1,53 @@
 import { Resort } from "@/types/resort";
 
-export function getResortHeroImage(resortId: string) {
-  return `/assets/${resortId}/hero.webp`;
+function toAssetSegment(value: string | undefined) {
+  return (
+    value
+      ?.normalize("NFKD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "") || "unknown"
+  );
+}
+
+export function getResortAssetPath(
+  resortId: string,
+  country: string | undefined,
+  region: string | undefined,
+  filename: string,
+) {
+  return `/assets/resorts/${toAssetSegment(country)}/${toAssetSegment(region)}/${toAssetSegment(resortId)}/${filename}`;
+}
+
+export function getResortHeroImage(
+  resortId: string,
+  country?: string,
+  region?: string,
+) {
+  return getResortAssetPath(resortId, country, region, "hero.webp");
+}
+
+export function getResortTrailMap(
+  resortId: string,
+  country?: string,
+  region?: string,
+  index = 1,
+) {
+  return getResortAssetPath(
+    resortId,
+    country,
+    region,
+    `trail-${index}.webp`,
+  );
+}
+
+export function getResortLocationPath(
+  resortId: string,
+  country?: string,
+  region?: string,
+) {
+  return `/location/${toAssetSegment(country)}/${toAssetSegment(region)}/${toAssetSegment(resortId)}`;
 }
 
 type DbResort = Partial<Resort> & {
@@ -87,14 +133,26 @@ export function toResort(
     hasSnowshoeing: document.hasSnowshoeing ?? false,
     hasSpa: document.hasSpa ?? false,
     hasTubing: document.hasTubing ?? false,
-    image: document.image ?? getResortHeroImage(document.resortId),
+    image:
+      document.image ??
+      getResortHeroImage(
+        document.resortId,
+        document.country,
+        document.region,
+      ),
     lessonsPrice: document.lessonsPrice ?? 0,
     phone: document.phone ?? document.contact ?? "",
     rating: document.rating ?? 0,
     runs: { ...emptyRuns, ...runs },
     skiRentalPrice: document.skiRentalPrice ?? 0,
     snowBoardRentalPrice: document.snowBoardRentalPrice ?? 0,
-    trailMap: document.trailMap ?? "/assets/lakeridge-ski-resort-trail-map.jpg",
+    trailMap:
+      document.trailMap ??
+      getResortTrailMap(
+        document.resortId,
+        document.country,
+        document.region,
+      ),
     website: document.website ?? "",
     ...overrides,
   };

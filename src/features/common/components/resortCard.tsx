@@ -6,7 +6,10 @@ import { Star, CableCar, MapPin, Mountain } from "lucide-react";
 import TracksBreakdown from "@/components/tracksBreakdown";
 import ActivitiesList from "@/components/activitiesList";
 import { Resort } from "@/types/resort";
-import { getResortHeroImage } from "@/utils/convexResort";
+import {
+  getResortHeroImage,
+  getResortLocationPath,
+} from "@/utils/convexResort";
 import { cn } from "@/utils/utils";
 import { useLanguage } from "@/src/i18n";
 import { useFiltersContext } from "@/context/filtersContext";
@@ -36,7 +39,13 @@ const ResortCard = ({
       : null;
 
   const handleClick = () => {
-    router.push(`/place/${resort.resortId}`);
+    router.push(
+      getResortLocationPath(
+        resort.resortId,
+        resort.country,
+        resort.region,
+      ),
+    );
   };
 
   return (
@@ -54,7 +63,11 @@ const ResortCard = ({
       {/* Hero Image */}
       <div className="relative aspect-[16/9] overflow-hidden">
         <Image
-          src={getResortHeroImage(resort.resortId)}
+          src={getResortHeroImage(
+            resort.resortId,
+            resort.country,
+            resort.region,
+          )}
           alt={resort.name}
           width={500}
           height={500}

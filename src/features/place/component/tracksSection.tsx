@@ -18,6 +18,7 @@ import {
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/src/i18n";
+import { getResortTrailMap } from "@/utils/convexResort";
 
 interface TracksSectionProps {
   resort: Resort;
@@ -61,7 +62,12 @@ const TracksSection = ({ resort }: TracksSectionProps) => {
     const loadNextTrailMap = (index: number) => {
       if (cancelled) return;
 
-      const url = `/assets/${resort.resortId}/trail-${index}.webp`;
+      const url = getResortTrailMap(
+        resort.resortId,
+        resort.country,
+        resort.region,
+        index,
+      );
       const image = new window.Image();
       image.onload = () => {
         if (cancelled) return;
@@ -79,7 +85,7 @@ const TracksSection = ({ resort }: TracksSectionProps) => {
     return () => {
       cancelled = true;
     };
-  }, [isMapOpen, resort.resortId]);
+  }, [isMapOpen, resort.country, resort.region, resort.resortId]);
 
   const trackConditions = resort.trackConditions ?? [];
   const summaryTracks: TrackSummary[] = [
