@@ -1,0 +1,80 @@
+{
+  "resortId": "banff-sunshine",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "address": "T1L 1J5 Banff",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 51.07865095241355,
+          "lng": -115.77646169299285
+        },
+        "country": "Canada",
+        "email": "reservations@skibanff.com",
+        "elevation": "1660 m - 2730 m",
+        "googleMapsUrl": "https://maps.app.goo.gl/TVusg4pVc9yxg9ei9",
+        "height": "1070m",
+        "tracksGreenLength": "25km",
+        "tracksGreenProportion": "23",
+        "tracksBlueLength": "50km",
+        "tracksBlueProportion": "46",
+        "tracksBlackLength": "34km",
+        "tracksBlackProportion": "31",
+        "tracksTotalLength": "109km",
+        "phone": "(877) 542-2633",
+        "region": "Alberta",
+        "resortId": "banff-sunshine",
+        "website": "http://skibanff.com/",
+        "sourceUrl": "https://www.skiresort.com/en/ski-resort/banff-sunshine/",
+        "updatedAt": 1792377827653,
+        "name": "Banff Sunshine",
+        "published": true,
+        "tracksSummary": {
+          "black": 0,
+          "blue": 0,
+          "doubleBlack": 0,
+          "freeStyle": 0,
+          "green": 0
+        }
+      }
+    },
+    {
+      "table": "resortHours",
+      "content": {
+        "resortId": "banff-sunshine",
+        "sourceUrl": "https://www.skiresort.com/en/ski-resort/banff-sunshine/",
+        "updatedAt": 1792377827653,
+        "hours": []
+      }
+    },
+    {
+      "table": "resortRates",
+      "content": {
+        "resortId": "banff-sunshine",
+        "sourceUrl": "https://www.skiresort.com/en/ski-resort/banff-sunshine/",
+        "updatedAt": 1792377827653,
+        "rates": {}
+      }
+    },
+    {
+      "table": "resortRentals",
+      "content": {
+        "resortId": "banff-sunshine",
+        "sourceUrl": "https://www.skiresort.com/en/ski-resort/banff-sunshine/",
+        "updatedAt": 1792377827653,
+        "rentals": {}
+      }
+    },
+    {
+      "table": "weatherAndStatus",
+      "content": {
+        "resortId": "banff-sunshine",
+        "sourceUrl": "https://www.skiresort.com/en/ski-resort/banff-sunshine/",
+        "updatedAt": 1792377827653,
+        "lifts": [],
+        "tracks": []
+      }
+    }
+  ]
+}

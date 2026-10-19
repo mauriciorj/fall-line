@@ -1,0 +1,35 @@
+{
+  "resortId": "banff-sunshine",
+  "tables": [
+    {
+      "table": "resorts",
+      "missingColumns": []
+    },
+    {
+      "table": "resortHours",
+      "missingColumns": [
+        "hours"
+      ]
+    },
+    {
+      "table": "resortRates",
+      "missingColumns": [
+        "rates"
+      ]
+    },
+    {
+      "table": "resortRentals",
+      "missingColumns": [
+        "rentals"
+      ]
+    },
+    {
+      "table": "weatherAndStatus",
+      "missingColumns": [
+        "lifts",
+        "tracks"
+      ]
+    }
+  ],
+  "missingColumnCount": 5
+}
