@@ -25,7 +25,13 @@ const LocationDropdown = ({
   const { t } = useLanguage();
   const isMobile = useIsMobile();
   const selectedValue = selectedLocation ? locationKey(selectedLocation) : "";
-  const groupedLocations = locations.reduce<
+  const sortedLocations = [...locations].sort(
+    (left, right) =>
+      left.continent.localeCompare(right.continent) ||
+      left.country.localeCompare(right.country) ||
+      left.region.localeCompare(right.region),
+  );
+  const groupedLocations = sortedLocations.reduce<
     Record<string, Record<string, LocationOption[]>>
   >((groups, location) => {
     groups[location.continent] ??= {};
