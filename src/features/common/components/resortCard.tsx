@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 import { Star, CableCar, MapPin, Mountain } from "lucide-react";
 import TracksBreakdown from "@/components/tracksBreakdown";
 import ActivitiesList from "@/components/activitiesList";
@@ -32,150 +32,147 @@ const ResortCard = ({
 }: ResortCardProps) => {
   const { t } = useLanguage();
   const { userCoordinates } = useFiltersContext();
-  const router = useRouter();
   const distance =
     userCoordinates && resort.coordinates
       ? calculateDistanceKm(userCoordinates, resort.coordinates)
       : null;
 
-  const handleClick = () => {
-    router.push(
-      getResortLocationPath(
+  return (
+    <Link
+      href={getResortLocationPath(
         resort.resortId,
         resort.country,
         resort.region,
-      ),
-    );
-  };
-
-  return (
-    <article
-      className={cn(
-        "group bg-card rounded-lg overflow-hidden transition-all duration-300 cursor-pointer",
-        "shadow-card hover:shadow-card-hover",
-        isResortHoveredOrSelected &&
-          "shadow-md shadow-primary ring-1 ring-primary"
       )}
+      className="block rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
       onMouseEnter={() => setHoveredResort(resort.resortId)}
       onMouseLeave={() => setHoveredResort(null)}
-      onClick={handleClick}
     >
-      {/* Hero Image */}
-      <div className="relative aspect-[16/9] overflow-hidden">
-        <Image
-          src={getResortHeroImage(
-            resort.resortId,
-            resort.country,
-            resort.region,
-          )}
-          alt={resort.name}
-          width={500}
-          height={500}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-foreground/30 to-transparent" />
-        <div className="absolute top-3 right-3 flex items-center gap-1.5">
-          {resort.height && (
+      <article
+        className={cn(
+          "group bg-card rounded-lg overflow-hidden transition-all duration-300",
+          "shadow-card hover:shadow-card-hover",
+          isResortHoveredOrSelected &&
+            "shadow-md shadow-primary ring-1 ring-primary",
+        )}
+      >
+        {/* Hero Image */}
+        <div className="relative aspect-[16/9] overflow-hidden">
+          <Image
+            src={getResortHeroImage(
+              resort.resortId,
+              resort.country,
+              resort.region,
+            )}
+            alt={resort.name}
+            width={500}
+            height={500}
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-foreground/30 to-transparent" />
+          <div className="absolute top-3 right-3 flex items-center gap-1.5">
+            {resort.height && (
+              <span className="inline-flex items-center gap-1 rounded-full bg-background/90 px-2 py-1 text-xs font-medium text-foreground shadow-sm backdrop-blur-sm">
+                <Mountain className="h-3 w-3" />
+                {resort.height}
+              </span>
+            )}
+            {distance !== null && (
+              <span className="inline-flex items-center gap-1 rounded-full bg-background/90 px-2 py-1 text-xs font-medium text-foreground shadow-sm backdrop-blur-sm">
+                <MapPin className="h-3 w-3" />
+                {distance.toFixed(1)} {t("distanceAway")}
+              </span>
+            )}
             <span className="inline-flex items-center gap-1 rounded-full bg-background/90 px-2 py-1 text-xs font-medium text-foreground shadow-sm backdrop-blur-sm">
-              <Mountain className="h-3 w-3" />
-              {resort.height}
+              <Star className="h-3 w-3 fill-primary text-primary" />
+              {resort.rating}
             </span>
-          )}
-          {distance !== null && (
-            <span className="inline-flex items-center gap-1 rounded-full bg-background/90 px-2 py-1 text-xs font-medium text-foreground shadow-sm backdrop-blur-sm">
-              <MapPin className="h-3 w-3" />
-              {distance.toFixed(1)} {t("distanceAway")}
-            </span>
-          )}
-          <span className="inline-flex items-center gap-1 rounded-full bg-background/90 px-2 py-1 text-xs font-medium text-foreground shadow-sm backdrop-blur-sm">
-            <Star className="h-3 w-3 fill-primary text-primary" />
-            {resort.rating}
-          </span>
-        </div>
-      </div>
-
-      {/* Content */}
-      <div className="p-5 space-y-4">
-        {/* Resort Name */}
-        <div className="w-full">
-          <h3 className="font-serif text-xl font-medium text-foreground leading-tight">
-            {resort.name}
-          </h3>
+          </div>
         </div>
 
-        <ActivitiesList resort={resort} />
+        {/* Content */}
+        <div className="p-5 space-y-4">
+          {/* Resort Name */}
+          <div className="w-full">
+            <h3 className="font-serif text-xl font-medium text-foreground leading-tight">
+              {resort.name}
+            </h3>
+          </div>
 
-        {/* Run Breakdown */}
-        <TracksBreakdown resort={resort} />
+          <ActivitiesList resort={resort} />
 
-        {/* Stats Grid */}
-        <div
-          className={cn(
-            "grid gap-3 pt-3 border-t border-border",
-            resort.tubbingPrice && resort.tubbingPrice > 0
-              ? "grid-cols-4"
-              : "grid-cols-3",
-          )}
-        >
-          <div className="flex flex-col justify-between space-y-1">
-            <div className="flex items-center gap-1 text-muted-foreground h-[30px]">
-              <CableCar className="w-3.5 h-3.5" />
-              <span className="text-[10px] font-bold uppercase tracking-wide">
-                {t("liftPass")}
-              </span>
-            </div>
-            <p className="text-sm font-medium text-foreground">
-              ${resort.dayTicketPrice}
-            </p>
-          </div>
-          <div className="flex flex-col justify-between space-y-1">
-            <div className="flex items-center gap-1 text-muted-foreground h-[30px]">
-              <Image alt="ski-icons" src={skiIcon} width={16} height={16} />
-              <span className="text-[10px] font-bold uppercase tracking-wide">
-                {t("skiRental")}
-              </span>
-            </div>
-            <p className="text-sm font-medium text-foreground">
-              ${resort.skiRentalPrice}
-            </p>
-          </div>
-          <div className="flex flex-col justify-between space-y-1">
-            <div className="flex items-center gap-1 text-muted-foreground">
-              <Image
-                alt="ski-icons"
-                src={snowboardIcon}
-                width={14}
-                height={14}
-              />
-              <span className="text-[10px] font-bold uppercase tracking-wide">
-                {t("snowboardRental")}
-              </span>
-            </div>
-            <p className="text-sm font-medium text-foreground">
-              ${resort.snowBoardRentalPrice}
-            </p>
-          </div>
-          {Boolean(resort?.tubbingPrice && resort?.tubbingPrice > 0) && (
-            <div className="flex flex-col justify-between space-y-1 ml-4">
+          {/* Run Breakdown */}
+          <TracksBreakdown resort={resort} />
+
+          {/* Stats Grid */}
+          <div
+            className={cn(
+              "grid gap-3 pt-3 border-t border-border",
+              resort.tubbingPrice && resort.tubbingPrice > 0
+                ? "grid-cols-4"
+                : "grid-cols-3",
+            )}
+          >
+            <div className="flex flex-col justify-between space-y-1">
               <div className="flex items-center gap-1 text-muted-foreground h-[30px]">
+                <CableCar className="w-3.5 h-3.5" />
+                <span className="text-[10px] font-bold uppercase tracking-wide">
+                  {t("liftPass")}
+                </span>
+              </div>
+              <p className="text-sm font-medium text-foreground">
+                ${resort.dayTicketPrice}
+              </p>
+            </div>
+            <div className="flex flex-col justify-between space-y-1">
+              <div className="flex items-center gap-1 text-muted-foreground h-[30px]">
+                <Image alt="ski-icons" src={skiIcon} width={16} height={16} />
+                <span className="text-[10px] font-bold uppercase tracking-wide">
+                  {t("skiRental")}
+                </span>
+              </div>
+              <p className="text-sm font-medium text-foreground">
+                ${resort.skiRentalPrice}
+              </p>
+            </div>
+            <div className="flex flex-col justify-between space-y-1">
+              <div className="flex items-center gap-1 text-muted-foreground">
                 <Image
                   alt="ski-icons"
-                  src={tubbingIcon}
+                  src={snowboardIcon}
                   width={14}
                   height={14}
                 />
                 <span className="text-[10px] font-bold uppercase tracking-wide">
-                  {t("tubbing")}
+                  {t("snowboardRental")}
                 </span>
               </div>
               <p className="text-sm font-medium text-foreground">
-                ${resort.tubbingPrice}
+                ${resort.snowBoardRentalPrice}
               </p>
             </div>
-          )}
+            {Boolean(resort?.tubbingPrice && resort?.tubbingPrice > 0) && (
+              <div className="flex flex-col justify-between space-y-1 ml-4">
+                <div className="flex items-center gap-1 text-muted-foreground h-[30px]">
+                  <Image
+                    alt="ski-icons"
+                    src={tubbingIcon}
+                    width={14}
+                    height={14}
+                  />
+                  <span className="text-[10px] font-bold uppercase tracking-wide">
+                    {t("tubbing")}
+                  </span>
+                </div>
+                <p className="text-sm font-medium text-foreground">
+                  ${resort.tubbingPrice}
+                </p>
+              </div>
+            )}
+          </div>
         </div>
-      </div>
-    </article>
+      </article>
+    </Link>
   );
 };
 

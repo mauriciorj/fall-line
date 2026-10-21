@@ -7,4 +7,4 @@
 - Compile generators and run the resort snapshot generator before completion. Review `snapshot_generator_report.json`.
 - Do not run `main.py` unless Convex publishing side effects are intended.
 - SEO env: set `NEXT_PUBLIC_SITE_URL` (production origin, used for `metadataBase`/canonical/OG URLs; falls back to `VERCEL_PROJECT_PRODUCTION_URL`, then `http://localhost:3000`) and optionally `GOOGLE_SITE_VERIFICATION` (Search Console token).
-- `next build` calls the Convex deployment (`NEXT_PUBLIC_CONVEX_URL`) for `generateStaticParams`; pages use `dynamic = "force-static"` + `revalidate` because `convex/nextjs` forces `cache: "no-store"`.
+- `next build` calls the Convex deployment (`NEXT_PUBLIC_CONVEX_URL`) for `generateStaticParams` and the footer; the root layout and data pages use `dynamic = "force-static"` + `revalidate` because `convex/nextjs` forces `cache: "no-store"`. Server-side `cookies()`/`headers()` are therefore empty — do not rely on them.

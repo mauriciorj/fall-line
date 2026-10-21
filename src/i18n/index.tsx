@@ -112,6 +112,12 @@ const translations: Record<Locale, Record<string, string>> = {
     noArticles: "No published articles yet.",
     articleNotFound: "Article not found",
     loadingArticle: "Loading article...",
+    homeTitle: "{region} Ski Resorts",
+    homeIntro:
+      "Compare lift ticket prices, ski and snowboard rentals, runs by difficulty, hours and snow conditions for every ski resort and hill in {region}. Pick a resort for its trail map, directions and live conditions.",
+    tagline: "Ski resorts, lift ticket prices & snow conditions",
+    footerNav: "Explore",
+    footerResorts: "Ski resorts by region",
   },
   fr: {
     appName: "Guide de ski de l’Ontario",
@@ -210,6 +216,12 @@ const translations: Record<Locale, Record<string, string>> = {
     noArticles: "Aucun article publié pour le moment.",
     articleNotFound: "Article introuvable",
     loadingArticle: "Chargement de l’article...",
+    homeTitle: "Stations de ski – {region}",
+    homeIntro:
+      "Comparez le prix des billets de remontée, la location de skis et de planches, les pistes par niveau, les heures d’ouverture et les conditions de neige de chaque station de ski en {region}. Choisissez une station pour voir son plan des pistes, l’itinéraire et les conditions en direct.",
+    tagline: "Stations de ski, prix des billets et conditions de neige",
+    footerNav: "Explorer",
+    footerResorts: "Stations de ski par région",
   },
   es: {
     appName: "Guía de esquí de Ontario",
@@ -308,6 +320,12 @@ const translations: Record<Locale, Record<string, string>> = {
     noArticles: "Todavía no hay artículos publicados.",
     articleNotFound: "Artículo no encontrado",
     loadingArticle: "Cargando artículo...",
+    homeTitle: "Estaciones de esquí en {region}",
+    homeIntro:
+      "Compara precios de pases, alquiler de esquís y snowboard, pistas por nivel, horarios y condiciones de nieve de cada estación de esquí en {region}. Elige una estación para ver su mapa de pistas, cómo llegar y las condiciones en vivo.",
+    tagline: "Estaciones de esquí, precios de pases y condiciones de nieve",
+    footerNav: "Explorar",
+    footerResorts: "Estaciones de esquí por región",
   },
 };
 

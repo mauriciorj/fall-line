@@ -10,6 +10,8 @@ import {
 } from "@/components/ui/resizable";
 import { useFiltersContext } from "@/context/filtersContext";
 import { useIsMobile } from "@/hooks/useMobile";
+import { useLanguage } from "@/src/i18n";
+import { DEFAULT_LOCATION } from "@/types/location";
 import { Resort } from "@/types/resort";
 import { applyResortFilters } from "@/utils/resortFilters";
 
@@ -19,17 +21,31 @@ interface HomeViewProps {
 
 const HomeView = ({ initialResorts }: HomeViewProps) => {
   const isMobile = useIsMobile();
+  const { t } = useLanguage();
 
   const {
     filters,
     filteredResorts,
     isLoading,
     hoveredResort,
+    selectedLocation,
     selectedResort,
     userCoordinates,
     setHoveredResort,
     setSelectedResort,
   } = useFiltersContext();
+
+  const region = selectedLocation?.region ?? DEFAULT_LOCATION.region;
+  const intro = (
+    <div className="border-b border-border px-6 py-4">
+      <h1 className="font-serif text-xl font-medium text-foreground">
+        {t("homeTitle").replace("{region}", region)}
+      </h1>
+      <p className="mt-1 text-sm text-muted-foreground">
+        {t("homeIntro").replace("{region}", region)}
+      </p>
+    </div>
+  );
 
   // Server-rendered default-region list until the client resolves its location.
   const initialFilteredResorts = useMemo(
@@ -56,6 +72,7 @@ const HomeView = ({ initialResorts }: HomeViewProps) => {
           <ResizableHandle withHandle />
           <ResizablePanel defaultSize={50} minSize={15}>
             <div className="overflow-y-auto h-full">
+              {intro}
               <ResortList
                 hoveredResort={hoveredResort}
                 resorts={resorts}
@@ -69,6 +86,7 @@ const HomeView = ({ initialResorts }: HomeViewProps) => {
       ) : (
         <>
           <section className="order-2 lg:order-1 w-full lg:w-[480px] xl:w-[520px] flex-1 lg:flex-none border-t lg:border-t-0 lg:border-r border-border flex flex-col overflow-hidden min-h-0">
+            {intro}
             <ResortList
               hoveredResort={hoveredResort}
               resorts={resorts}

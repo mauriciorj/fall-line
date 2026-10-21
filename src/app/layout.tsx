@@ -3,9 +3,14 @@ import Script from "next/script";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Geist, Geist_Mono } from "next/font/google";
 import Header from "@/components/header";
+import SiteFooter from "@/components/siteFooter";
 import ConvexClientProvider from "./ConvexClientProvider";
 import { FiltersProvider } from "@/src/features/common/context/filtersContext";
 import { LanguageProvider } from "@/src/i18n";
+import {
+  groupResortsByRegion,
+  listPublishedResorts,
+} from "@/utils/publishedResorts";
 import {
   SITE_DESCRIPTION,
   SITE_NAME,
@@ -15,6 +20,11 @@ import {
 } from "@/utils/seo";
 
 import "./globals.css";
+
+// The footer fetches from Convex (`cache: "no-store"`); force-static keeps every
+// route statically rendered and `revalidate` drives ISR. Pages may override.
+export const dynamic = "force-static";
+export const revalidate = 3600;
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -42,11 +52,13 @@ export const metadata: Metadata = {
     : undefined,
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const footerGroups = groupResortsByRegion(await listPublishedResorts());
+
   return (
     <html lang="en">
       <body
@@ -71,6 +83,7 @@ export default function RootLayout({
                 <div className="min-h-screen bg-background">
                   <Header />
                   {children}
+                  <SiteFooter groups={footerGroups} />
                 </div>
               </FiltersProvider>
             </LanguageProvider>

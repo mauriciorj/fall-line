@@ -4,9 +4,40 @@ import { LocationOption, locationKey } from "@/types/location";
 
 export type PublishedResort = {
   resortId: string;
+  name?: string;
   country?: string;
   region?: string;
 };
+
+export type FooterResort = {
+  resortId: string;
+  name: string;
+  country?: string;
+  region?: string;
+};
+
+export type FooterGroup = { label: string; resorts: FooterResort[] };
+
+// Grouped and sorted on the server so client rendering is deterministic.
+export function groupResortsByRegion(
+  resorts: PublishedResort[],
+): FooterGroup[] {
+  const groups = new Map<string, FooterResort[]>();
+  for (const { resortId, name, country, region } of resorts) {
+    const label = [region, country].filter(Boolean).join(", ") || "Other";
+    groups.set(label, [
+      ...(groups.get(label) ?? []),
+      { resortId, name: name ?? resortId, country, region },
+    ]);
+  }
+
+  return [...groups.entries()]
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([label, items]) => ({
+      label,
+      resorts: items.sort((a, b) => a.name.localeCompare(b.name)),
+    }));
+}
 
 // Server-only. Uses the existing public queries so no new Convex functions
 // have to be deployed: distinct locations -> published resorts per location.
