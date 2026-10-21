@@ -1,9 +1,9 @@
 "use client";
 
-import Link from "next/link";
 import { Preloaded, usePreloadedQuery } from "convex/react";
 import { api } from "@/convex/_generated/api";
 import { useLanguage } from "@/src/i18n";
+import Link from "@/src/i18n/link";
 import RichText from "@/src/features/blog/components/richText";
 
 type Article = {

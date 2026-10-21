@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { ArrowLeft, Mountain } from "lucide-react";
 import { usePathname } from "next/navigation";
 import Filter from "@/components/filter";
@@ -9,10 +8,12 @@ import { useFiltersContext } from "@/context/filtersContext";
 import { useIsMobile } from "@/hooks/useMobile";
 import Menu from "@/components/menu";
 import { useLanguage } from "@/src/i18n";
+import Link from "@/src/i18n/link";
+import { stripLocale } from "@/src/i18n/routing";
 
 const Header = () => {
   const { t } = useLanguage();
-  const pathname = usePathname();
+  const pathname = stripLocale(usePathname());
   const isMobile = useIsMobile();
   const {
     filters,

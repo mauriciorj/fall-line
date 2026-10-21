@@ -20,6 +20,7 @@ import PricingSection from "@/src/features/place/component/pricingSection";
 import TerrainSection from "@/src/features/place/component/terrainSection";
 import TracksSection from "@/place/component/tracksSection";
 import { useLanguage } from "@/src/i18n";
+import { localizePath } from "@/src/i18n/routing";
 import { useFiltersContext } from "@/context/filtersContext";
 import { calculateDistanceKm } from "@/src/features/common/utils/distance";
 
@@ -34,7 +35,7 @@ const ResortDetail = ({
   preloadedResortHours,
   preloadedWeatherAndStatus,
 }: ResortDetailProps) => {
-  const { t } = useLanguage();
+  const { locale, t } = useLanguage();
   const { userCoordinates } = useFiltersContext();
   const router = useRouter();
   const dbResort = usePreloadedQuery(preloadedResort);
@@ -55,7 +56,10 @@ const ResortDetail = ({
           <h1 className="text-2xl font-serif text-foreground">
             {t("resortNotFound")}
           </h1>
-          <Button variant="ghost" onClick={() => router.push("/")}>
+          <Button
+            variant="ghost"
+            onClick={() => router.push(localizePath("/", locale))}
+          >
             <ArrowLeft className="w-4 h-4 mr-2" />
             {t("backAllResorts")}
           </Button>

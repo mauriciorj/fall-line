@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { Star, CableCar, MapPin, Mountain } from "lucide-react";
 import TracksBreakdown from "@/components/tracksBreakdown";
 import ActivitiesList from "@/components/activitiesList";
@@ -12,6 +11,7 @@ import {
 } from "@/utils/convexResort";
 import { cn } from "@/utils/utils";
 import { useLanguage } from "@/src/i18n";
+import Link from "@/src/i18n/link";
 import { useFiltersContext } from "@/context/filtersContext";
 import { calculateDistanceKm } from "@/src/features/common/utils/distance";
 

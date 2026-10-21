@@ -1,9 +1,11 @@
 import type { MetadataRoute } from "next";
 import { fetchQuery } from "convex/nextjs";
 import { api } from "@/convex/_generated/api";
+import { localizePath } from "@/src/i18n/routing";
+import { defaultLocale, locales } from "@/src/i18n/translations";
 import { getResortLocationPath } from "@/utils/convexResort";
 import { listPublishedResorts } from "@/utils/publishedResorts";
-import { getSiteUrl } from "@/utils/seo";
+import { absoluteUrl, languageAlternates } from "@/utils/seo";
 
 // Convex's fetchQuery forces `cache: "no-store"`; force-static keeps the route
 // statically rendered and lets `revalidate` drive ISR.
@@ -16,10 +18,28 @@ function lastModified(timestamp?: number) {
   return timestamp ? { lastModified: new Date(timestamp) } : {};
 }
 
-export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const siteUrl = getSiteUrl();
-  const absolute = (path: string) => new URL(path, siteUrl).toString();
+// Translated pages: one entry per locale, each carrying the full hreflang set.
+function localizedEntries(
+  path: string,
+  extra: Partial<MetadataRoute.Sitemap[number]> = {},
+): MetadataRoute.Sitemap {
+  const alternates = { languages: languageAlternates(path, absoluteUrl) };
+  return locales.map((locale) => ({
+    url: absoluteUrl(localizePath(path, locale)),
+    alternates,
+    ...extra,
+  }));
+}
 
+// English-only content: the localized copies canonicalize here, so list once.
+function englishEntry(
+  path: string,
+  extra: Partial<MetadataRoute.Sitemap[number]> = {},
+): MetadataRoute.Sitemap[number] {
+  return { url: absoluteUrl(localizePath(path, defaultLocale)), ...extra };
+}
+
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const [resorts, articles] = await Promise.all([
     listPublishedResorts(),
     fetchQuery(api.blog.listPublished) as Promise<ArticleSummary[]>,
@@ -33,27 +53,26 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ),
   );
 
-  const resortEntries = resorts.map((resort, index) => ({
-    url: absolute(
+  const resortEntries = resorts.flatMap((resort, index) =>
+    localizedEntries(
       getResortLocationPath(resort.resortId, resort.country, resort.region),
+      lastModified(conditions[index]?.updatedAt),
     ),
-    ...lastModified(conditions[index]?.updatedAt),
-  }));
-  const articleEntries = articles.map((article) => ({
-    url: absolute(`/blog/${article.slug}`),
-    ...lastModified(article.updatedAt),
-  }));
+  );
+  const articleEntries = articles.map((article) =>
+    englishEntry(`/blog/${article.slug}`, lastModified(article.updatedAt)),
+  );
   const latestArticleUpdate = articles.reduce(
     (latest, article) => Math.max(latest, article.updatedAt),
     0,
   );
 
   return [
-    { url: absolute("/") },
-    { url: absolute("/blog"), ...lastModified(latestArticleUpdate) },
-    { url: absolute("/contact") },
-    { url: absolute("/privacy") },
-    { url: absolute("/terms") },
+    ...localizedEntries("/"),
+    ...localizedEntries("/contact"),
+    englishEntry("/blog", lastModified(latestArticleUpdate)),
+    englishEntry("/privacy"),
+    englishEntry("/terms"),
     ...resortEntries,
     ...articleEntries,
   ];

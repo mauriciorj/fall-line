@@ -8,7 +8,12 @@ import {
 } from "convex/nextjs";
 import { api } from "@/convex/_generated/api";
 import BlogArticle from "@/src/features/blog/components/blogArticle";
-import { DEFAULT_OG_IMAGE, baseOpenGraph } from "@/utils/seo";
+import type { Locale } from "@/src/i18n/translations";
+import {
+  DEFAULT_OG_IMAGE,
+  englishOnlyAlternates,
+  openGraphBase,
+} from "@/utils/seo";
 
 // Convex's fetchQuery forces `cache: "no-store"`; force-static keeps the route
 // statically rendered and lets `revalidate` drive ISR.
@@ -38,9 +43,9 @@ export async function generateStaticParams(): Promise<{ id: string }[]> {
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ id: string }>;
+  params: Promise<{ locale: Locale; id: string }>;
 }): Promise<Metadata> {
-  const { id } = await params;
+  const { locale, id } = await params;
   const article = preloadedQueryResult(
     await getPreloadedArticle(id),
   ) as ArticleSummary | null;
@@ -49,14 +54,15 @@ export async function generateMetadata({
     return { title: "Article not found", robots: { index: false, follow: false } };
   }
 
+  // Articles are stored in English only, so localized copies canonicalize to EN.
   const canonical = `/blog/${article.slug}`;
 
   return {
     title: article.title,
     description: article.description,
-    alternates: { canonical },
+    alternates: englishOnlyAlternates(canonical),
     openGraph: {
-      ...baseOpenGraph,
+      ...openGraphBase(locale),
       type: "article",
       title: article.title,
       description: article.description,

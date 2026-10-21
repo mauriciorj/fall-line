@@ -4,6 +4,8 @@ import { notFound } from "next/navigation";
 import { preloadQuery, preloadedQueryResult } from "convex/nextjs";
 import { api } from "@/convex/_generated/api";
 import ResortDetail from "@/src/features/place/component/resortDetail";
+import { localizePath } from "@/src/i18n/routing";
+import type { Locale } from "@/src/i18n/translations";
 import {
   getResortHeroImage,
   getResortLocationParams,
@@ -11,21 +13,34 @@ import {
   toResort,
 } from "@/utils/convexResort";
 import { listPublishedResorts } from "@/utils/publishedResorts";
-import { baseOpenGraph, resortDescription, resortTitle } from "@/utils/seo";
+import {
+  localizedAlternates,
+  openGraphBase,
+  resortDescription,
+  resortTitle,
+} from "@/utils/seo";
 
 // Convex's fetchQuery forces `cache: "no-store"`; force-static keeps the route
 // statically rendered and lets `revalidate` drive ISR.
 export const dynamic = "force-static";
 export const revalidate = 3600;
 
-type ResortPageParams = { country: string; region: string; resortId: string };
+type ResortPageParams = {
+  locale: Locale;
+  country: string;
+  region: string;
+  resortId: string;
+};
 
 // Shared between generateMetadata and the page within one render.
 const getPreloadedResort = cache((resortId: string) =>
   preloadQuery(api.resorts.getByResortId, { resortId }),
 );
 
-export async function generateStaticParams(): Promise<ResortPageParams[]> {
+// Runs once per locale from the parent segment, so pages are built per locale.
+export async function generateStaticParams(): Promise<
+  Omit<ResortPageParams, "locale">[]
+> {
   const resorts = await listPublishedResorts();
   return resorts.map((resort) =>
     getResortLocationParams(resort.resortId, resort.country, resort.region),
@@ -37,7 +52,7 @@ export async function generateMetadata({
 }: {
   params: Promise<ResortPageParams>;
 }): Promise<Metadata> {
-  const { resortId } = await params;
+  const { locale, resortId } = await params;
   const resort = toResort(
     preloadedQueryResult(await getPreloadedResort(resortId)),
   );
@@ -46,9 +61,9 @@ export async function generateMetadata({
     return { title: "Resort not found", robots: { index: false, follow: false } };
   }
 
-  const title = resortTitle(resort);
-  const description = resortDescription(resort);
-  const canonical = getResortLocationPath(
+  const title = resortTitle(resort, locale);
+  const description = resortDescription(resort, locale);
+  const path = getResortLocationPath(
     resort.resortId,
     resort.country,
     resort.region,
@@ -57,15 +72,15 @@ export async function generateMetadata({
   return {
     title,
     description,
-    alternates: { canonical },
+    alternates: localizedAlternates(path, locale),
     robots:
       resort.published === false ? { index: false, follow: false } : undefined,
     openGraph: {
-      ...baseOpenGraph,
+      ...openGraphBase(locale),
       type: "website",
       title,
       description,
-      url: canonical,
+      url: localizePath(path, locale),
       images: [
         {
           url: getResortHeroImage(resort.resortId, resort.country, resort.region),

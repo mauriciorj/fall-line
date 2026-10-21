@@ -1,20 +1,41 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { localizePath } from "@/src/i18n/routing";
+import { Locale, defaultLocale, getTranslator } from "@/src/i18n/translations";
+import { englishOnlyAlternates } from "@/utils/seo";
 
+type TermsParams = Promise<{ locale: Locale }>;
+
+// Legal copy exists in English only; localized URLs canonicalize to /terms.
 export const metadata: Metadata = {
   title: "Terms of Service",
   description: "Terms of Service for Ontario Ski Guide.",
-  alternates: { canonical: "/terms" },
+  alternates: englishOnlyAlternates("/terms"),
 };
 
-export default function TermsPage() {
+export default async function TermsPage({
+  params,
+}: {
+  params: TermsParams;
+}) {
+  const { locale } = await params;
+  const t = getTranslator(locale);
+
   return (
     <main className="min-h-[calc(100vh-57px)] bg-background px-6 py-10">
-      <article className="mx-auto max-w-3xl space-y-8 text-foreground">
+      <article lang="en" className="mx-auto max-w-3xl space-y-8 text-foreground">
         <header className="space-y-3">
-          <Link href="/" className="text-sm text-primary hover:underline">
-            Back to Ontario Ski Guide
+          <Link
+            href={localizePath("/", locale)}
+            className="text-sm text-primary hover:underline"
+          >
+            {t("backHome")}
           </Link>
+          {locale !== defaultLocale && (
+            <p lang={locale} className="text-sm text-muted-foreground">
+              {t("englishOnly")}
+            </p>
+          )}
           <h1 className="text-4xl font-bold tracking-tight">Terms of Service</h1>
           <p className="text-sm text-muted-foreground">Last updated: September 8, 2026</p>
         </header>

@@ -1,8 +1,12 @@
 "use client";
 
-import Link from "next/link";
+import NextLink from "next/link";
+import { usePathname } from "next/navigation";
 import { Mountain } from "lucide-react";
-import { useLanguage } from "@/src/i18n";
+import { localeOptions, useLanguage } from "@/src/i18n";
+import Link from "@/src/i18n/link";
+import { localizePath, stripLocale } from "@/src/i18n/routing";
+import { getTranslator } from "@/src/i18n/translations";
 import type { FooterGroup } from "@/utils/publishedResorts";
 import { getResortLocationPath } from "@/utils/convexResort";
 
@@ -15,7 +19,8 @@ const navLinks = [
 ];
 
 const SiteFooter = ({ groups }: { groups: FooterGroup[] }) => {
-  const { t } = useLanguage();
+  const { locale, t } = useLanguage();
+  const basePath = stripLocale(usePathname());
 
   return (
     <footer className="border-t border-border bg-card text-sm">
@@ -71,6 +76,29 @@ const SiteFooter = ({ groups }: { groups: FooterGroup[] }) => {
             ))}
           </nav>
         )}
+
+        {/* Crawlable links between language versions (complements hreflang). */}
+        <nav aria-label={t("language")}>
+          <ul className="flex flex-wrap gap-x-4 gap-y-1.5">
+            {localeOptions.map((option) => (
+              <li key={option.value}>
+                <NextLink
+                  href={localizePath(basePath, option.value)}
+                  hrefLang={option.value}
+                  lang={option.value}
+                  aria-current={option.value === locale ? "true" : undefined}
+                  className={
+                    option.value === locale
+                      ? "font-medium text-foreground"
+                      : "text-muted-foreground hover:text-primary hover:underline"
+                  }
+                >
+                  {getTranslator(option.value)(option.labelKey)}
+                </NextLink>
+              </li>
+            ))}
+          </ul>
+        </nav>
 
         <p className="text-xs text-muted-foreground">© {t("appName")}</p>
       </div>

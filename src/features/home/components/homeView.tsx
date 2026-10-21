@@ -39,10 +39,10 @@ const HomeView = ({ initialResorts }: HomeViewProps) => {
   const intro = (
     <div className="border-b border-border px-6 py-4">
       <h1 className="font-serif text-xl font-medium text-foreground">
-        {t("homeTitle").replace("{region}", region)}
+        {t("homeTitle", { region })}
       </h1>
       <p className="mt-1 text-sm text-muted-foreground">
-        {t("homeIntro").replace("{region}", region)}
+        {t("homeIntro", { region })}
       </p>
     </div>
   );

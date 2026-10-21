@@ -6,5 +6,7 @@
 - Do not invent unavailable mountain data. Use explicit empty or closed/not-informed fallbacks.
 - Compile generators and run the resort snapshot generator before completion. Review `snapshot_generator_report.json`.
 - Do not run `main.py` unless Convex publishing side effects are intended.
+- i18n: locale is a URL segment (`src/app/[locale]`); EN is unprefixed, `/fr` and `/es` prefixed. `src/proxy.ts` rewrites unprefixed paths to `/en/...` and 308s `/en/...` to unprefixed. Use `Link` from `src/i18n/link.tsx` for internal links in client components and `localizePath()` in server components. Translations live in `src/i18n/translations.ts` (`getTranslator(locale)` works server-side). EN-only content (blog, privacy, terms) uses `englishOnlyAlternates`; translated pages use `localizedAlternates` (self canonical + hreflang).
+- After adding/removing routes, stale `.next/dev/types` can fail `next build` typechecking; run `next dev` once (or remove `.next/dev`) to regenerate.
 - SEO env: set `NEXT_PUBLIC_SITE_URL` (production origin, used for `metadataBase`/canonical/OG URLs; falls back to `VERCEL_PROJECT_PRODUCTION_URL`, then `http://localhost:3000`) and optionally `GOOGLE_SITE_VERIFICATION` (Search Console token).
 - `next build` calls the Convex deployment (`NEXT_PUBLIC_CONVEX_URL`) for `generateStaticParams` and the footer; the root layout and data pages use `dynamic = "force-static"` + `revalidate` because `convex/nextjs` forces `cache: "no-store"`. Server-side `cookies()`/`headers()` are therefore empty — do not rely on them.

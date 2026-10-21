@@ -11,10 +11,13 @@ import {
 } from "lucide-react";
 import { useClerk, useUser } from "@clerk/nextjs";
 import { useQuery } from "convex/react";
-import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 import { api } from "@/convex/_generated/api";
 import { Button } from "@/components/ui/button";
 import { localeOptions, useLanguage } from "@/src/i18n";
+import Link from "@/src/i18n/link";
+import { localizePath, stripLocale } from "@/src/i18n/routing";
+import type { Locale } from "@/src/i18n/translations";
 import {
   Sheet,
   SheetContent,
@@ -32,10 +35,15 @@ import {
 } from "@/components/ui/select";
 
 const Menu = () => {
-  const { locale, setLocale, t } = useLanguage();
+  const { locale, t } = useLanguage();
+  const pathname = usePathname();
+  const router = useRouter();
   const { signOut } = useClerk();
   const { isSignedIn } = useUser();
   const adminStatus = useQuery(api.admin.isAdmin);
+  // Language is part of the URL, so switching is a navigation.
+  const setLocale = (nextLocale: Locale) =>
+    router.push(localizePath(stripLocale(pathname), nextLocale));
 
   return (
     <Sheet>
@@ -61,7 +69,7 @@ const Menu = () => {
           </label>
           <Select
             value={locale}
-            onValueChange={(value) => setLocale(value as "en" | "fr" | "es")}
+            onValueChange={(value) => setLocale(value as Locale)}
           >
             <SelectTrigger
               id="language-select"
