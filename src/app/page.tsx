@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { fetchQuery } from "convex/nextjs";
 import { api } from "@/convex/_generated/api";
 import HomeView from "@/src/features/home/components/homeView";
@@ -9,6 +10,11 @@ import { toResort } from "@/utils/convexResort";
 // statically rendered and lets `revalidate` drive ISR.
 export const dynamic = "force-static";
 export const revalidate = 3600;
+
+// Title/description come from the root layout defaults.
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 export default async function HomePage() {
   const locations = await fetchQuery(api.locations.list);

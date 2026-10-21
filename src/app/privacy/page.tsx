@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Ontario Ski Guide",
+  title: "Privacy Policy",
   description: "Privacy Policy for Ontario Ski Guide.",
+  alternates: { canonical: "/privacy" },
 };
 
 export default function PrivacyPage() {

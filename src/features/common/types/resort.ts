@@ -36,6 +36,7 @@ export interface Resort {
   hasTubing: boolean;
   hasZipline?: boolean;
   resortId: string;
+  published?: boolean;
   continent?: string;
   country?: string;
   region?: string;

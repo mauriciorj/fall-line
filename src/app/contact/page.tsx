@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Ontario Ski Guide",
+  title: "Contact Us",
   description: "Contact Ontario Ski Guide for questions, feedback, and support.",
+  alternates: { canonical: "/contact" },
 };
 
 export default function ContactPage() {

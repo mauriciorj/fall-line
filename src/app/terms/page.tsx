@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Terms of Service | Ontario Ski Guide",
+  title: "Terms of Service",
   description: "Terms of Service for Ontario Ski Guide.",
+  alternates: { canonical: "/terms" },
 };
 
 export default function TermsPage() {
