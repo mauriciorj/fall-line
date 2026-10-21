@@ -1,20 +1,16 @@
 import { cache } from "react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import {
-  fetchQuery,
-  preloadQuery,
-  preloadedQueryResult,
-} from "convex/nextjs";
+import { preloadQuery, preloadedQueryResult } from "convex/nextjs";
 import { api } from "@/convex/_generated/api";
 import ResortDetail from "@/src/features/place/component/resortDetail";
-import { LocationOption, locationKey } from "@/types/location";
 import {
   getResortHeroImage,
   getResortLocationParams,
   getResortLocationPath,
   toResort,
 } from "@/utils/convexResort";
+import { listPublishedResorts } from "@/utils/publishedResorts";
 import { baseOpenGraph, resortDescription, resortTitle } from "@/utils/seo";
 
 // Convex's fetchQuery forces `cache: "no-store"`; force-static keeps the route
@@ -30,25 +26,10 @@ const getPreloadedResort = cache((resortId: string) =>
 );
 
 export async function generateStaticParams(): Promise<ResortPageParams[]> {
-  const resortLocations = await fetchQuery(api.resorts.listLocations);
-  const locations = new Map<string, LocationOption>();
-  for (const { continent, country, region } of resortLocations) {
-    if (!continent || !country || !region) continue;
-    const location = { continent, country, region };
-    locations.set(locationKey(location), location);
-  }
-
-  const resortsByLocation = await Promise.all(
-    [...locations.values()].map((location) =>
-      fetchQuery(api.resorts.list, location),
-    ),
+  const resorts = await listPublishedResorts();
+  return resorts.map((resort) =>
+    getResortLocationParams(resort.resortId, resort.country, resort.region),
   );
-
-  return resortsByLocation
-    .flat()
-    .map((resort) =>
-      getResortLocationParams(resort.resortId, resort.country, resort.region),
-    );
 }
 
 export async function generateMetadata({
