@@ -42,12 +42,25 @@ export function getResortTrailMap(
   );
 }
 
+export function getResortLocationParams(
+  resortId: string,
+  country?: string,
+  region?: string,
+) {
+  return {
+    country: toAssetSegment(country),
+    region: toAssetSegment(region),
+    resortId: toAssetSegment(resortId),
+  };
+}
+
 export function getResortLocationPath(
   resortId: string,
   country?: string,
   region?: string,
 ) {
-  return `/location/${toAssetSegment(country)}/${toAssetSegment(region)}/${toAssetSegment(resortId)}`;
+  const params = getResortLocationParams(resortId, country, region);
+  return `/location/${params.country}/${params.region}/${params.resortId}`;
 }
 
 type DbResort = Partial<Resort> & {

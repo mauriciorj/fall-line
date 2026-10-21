@@ -14,9 +14,16 @@ import { useLoadScript } from "@react-google-maps/api";
 import { api } from "@/convex/_generated/api";
 import { FilterState } from "@/src/features/common/components/filter";
 import { toResort } from "@/utils/convexResort";
-import { LocationOption, locationKey } from "@/types/location";
+import {
+  applyResortFilters,
+  defaultFilters,
+} from "@/utils/resortFilters";
+import {
+  LocationOption,
+  findDefaultLocation,
+  locationKey,
+} from "@/types/location";
 import { Coordinates, Resort } from "@/types/resort";
-import { calculateDistanceKm } from "@/src/features/common/utils/distance";
 
 interface FiltersContextType {
   filters: FilterState;
@@ -77,28 +84,17 @@ export function FiltersProvider({ children }: { children: ReactNode }) {
   );
   const locationInitialized = useRef(false);
 
-  const [filters, setFilters] = useState<FilterState>({
-    sortBy: "price",
-    distanceRange: [0, 250],
-    activities: {
-      accommodations: false,
-      crosscountry: false,
-      lessons: false,
-      iceSkating: false,
-      snowshoeing: false,
-      spa: false,
-      tubbing: false,
-    },
-  });
+  const [filters, setFilters] = useState<FilterState>(defaultFilters);
 
   const dbLocations = useQuery(api.locations.list);
   const locations = useMemo(() => dbLocations ?? [], [dbLocations]);
 
   useEffect(() => {
+    const fallbackLocation = findDefaultLocation(locations);
     if (
       locationInitialized.current ||
       dbLocations === undefined ||
-      locations.length === 0
+      !fallbackLocation
     ) {
       return;
     }
@@ -109,11 +105,6 @@ export function FiltersProvider({ children }: { children: ReactNode }) {
     const savedLocation = locations.find(
       (location) => locationKey(location) === savedKey,
     );
-    const fallbackLocation =
-      locations.find(
-        (location) =>
-          location.country === "Canada" && location.region === "Ontario",
-      ) ?? locations[0];
     const commitLocation = (location: LocationOption) => {
       locationInitialized.current = true;
       window.localStorage.setItem(
@@ -211,43 +202,10 @@ export function FiltersProvider({ children }: { children: ReactNode }) {
     [dbResorts],
   );
 
-  const filteredResorts = useMemo(() => {
-    let result = allResorts.filter((resort) => {
-      // Activities filter
-      const { activities } = filters;
-
-      if (activities.accommodations && !resort.hasAccommodations) return false;
-      if (activities.crosscountry && !resort.hasCrossCountry) return false;
-      if (activities.lessons && !resort.hasLessons) return false;
-      if (activities.iceSkating && !resort.hasIceSkate) return false;
-      if (activities.snowshoeing && !resort.hasSnowshoeing) return false;
-      if (activities.spa && !resort.hasSpa) return false;
-      if (activities.tubbing && !resort.hasTubing) return false;
-
-      return true;
-    });
-
-    // Sort
-    result = [...result].sort((a, b) => {
-      if (filters.sortBy === "rating") {
-        return b.rating - a.rating;
-      }
-
-      if (filters.sortBy === "distance" && userCoordinates) {
-        const distanceA = a.coordinates
-          ? calculateDistanceKm(userCoordinates, a.coordinates)
-          : Number.POSITIVE_INFINITY;
-        const distanceB = b.coordinates
-          ? calculateDistanceKm(userCoordinates, b.coordinates)
-          : Number.POSITIVE_INFINITY;
-        return distanceA - distanceB;
-      }
-
-      return a.dayTicketPrice - b.dayTicketPrice;
-    });
-
-    return result;
-  }, [allResorts, filters, userCoordinates]);
+  const filteredResorts = useMemo(
+    () => applyResortFilters(allResorts, filters, userCoordinates),
+    [allResorts, filters, userCoordinates],
+  );
 
   const isLoading =
     dbLocations === undefined ||
@@ -259,19 +217,7 @@ export function FiltersProvider({ children }: { children: ReactNode }) {
     filters.activities !== null;
 
   const handleClearFilters = () => {
-    setFilters({
-      sortBy: "price",
-      distanceRange: [0, 250],
-      activities: {
-        accommodations: false,
-        crosscountry: false,
-        lessons: false,
-        iceSkating: false,
-        snowshoeing: false,
-        spa: false,
-        tubbing: false,
-      },
-    });
+    setFilters(defaultFilters);
   };
 
   const value = {

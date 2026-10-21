@@ -1,81 +1,24 @@
-"use client";
+import { fetchQuery } from "convex/nextjs";
+import { api } from "@/convex/_generated/api";
+import HomeView from "@/src/features/home/components/homeView";
+import { findDefaultLocation } from "@/types/location";
+import { Resort } from "@/types/resort";
+import { toResort } from "@/utils/convexResort";
 
-import ResortList from "@/components/resortList";
-import ResortMap from "@/components/resortMap";
-import {
-  ResizableHandle,
-  ResizablePanel,
-  ResizablePanelGroup,
-} from "@/components/ui/resizable";
-import { useFiltersContext } from "@/context/filtersContext";
-import { useIsMobile } from "@/hooks/useMobile";
+// Convex's fetchQuery forces `cache: "no-store"`; force-static keeps the route
+// statically rendered and lets `revalidate` drive ISR.
+export const dynamic = "force-static";
+export const revalidate = 3600;
 
-const Index = () => {
-  const isMobile = useIsMobile();
+export default async function HomePage() {
+  const locations = await fetchQuery(api.locations.list);
+  const defaultLocation = findDefaultLocation(locations);
+  const dbResorts = defaultLocation
+    ? await fetchQuery(api.resorts.list, defaultLocation)
+    : [];
+  const initialResorts = dbResorts
+    .map((resort) => toResort(resort))
+    .filter((resort): resort is Resort => resort !== null);
 
-  const {
-    filteredResorts,
-    isLoading,
-    hoveredResort,
-    selectedResort,
-    userCoordinates,
-    setHoveredResort,
-    setSelectedResort,
-  } = useFiltersContext();
-
-  return (
-    <main className="flex flex-col lg:flex-row h-[calc(100vh-57px)]">
-      {isMobile ? (
-        <ResizablePanelGroup direction="vertical" className="h-full">
-          <ResizablePanel defaultSize={50} minSize={15}>
-            <ResortMap
-              hoveredResort={hoveredResort}
-              selectedResort={selectedResort}
-              userCoordinates={userCoordinates}
-              setHoveredResort={setHoveredResort}
-              setSelectedResort={setSelectedResort}
-              resorts={filteredResorts}
-            />
-          </ResizablePanel>
-          <ResizableHandle withHandle />
-          <ResizablePanel defaultSize={50} minSize={15}>
-            <div className="overflow-y-auto h-full">
-              <ResortList
-                hoveredResort={hoveredResort}
-                resorts={filteredResorts}
-                selectedResort={selectedResort}
-                isLoading={isLoading}
-                setHoveredResort={setHoveredResort}
-              />
-            </div>
-          </ResizablePanel>
-        </ResizablePanelGroup>
-      ) : (
-        <>
-          <section className="order-2 lg:order-1 w-full lg:w-[480px] xl:w-[520px] flex-1 lg:flex-none border-t lg:border-t-0 lg:border-r border-border flex flex-col overflow-hidden min-h-0">
-            <ResortList
-              hoveredResort={hoveredResort}
-              resorts={filteredResorts}
-              selectedResort={selectedResort}
-              isLoading={isLoading}
-              setHoveredResort={setHoveredResort}
-            />
-          </section>
-
-          <section className="order-1 lg:order-2 w-full h-[40%] lg:h-auto flex-none lg:flex-1 relative">
-            <ResortMap
-              hoveredResort={hoveredResort}
-              resorts={filteredResorts}
-              selectedResort={selectedResort}
-              userCoordinates={userCoordinates}
-              setHoveredResort={setHoveredResort}
-              setSelectedResort={setSelectedResort}
-            />
-          </section>
-        </>
-      )}
-    </main>
-  );
-};
-
-export default Index;
+  return <HomeView initialResorts={initialResorts} />;
+}
