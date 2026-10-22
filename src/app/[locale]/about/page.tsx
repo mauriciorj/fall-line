@@ -65,6 +65,11 @@ export default async function AboutPage({ params }: { params: AboutParams }) {
           <p className="text-lg text-muted-foreground">{t("aboutIntro", { site })}</p>
         </header>
 
+        <section className="space-y-3">
+          <h2 className="text-2xl font-semibold">{t("aboutTeamHeading")}</h2>
+          <p>{t("aboutTeamBody", { site, team: t("teamName") })}</p>
+        </section>
+
         {sections.map(([headingKey, bodyKey]) => (
           <section key={headingKey} className="space-y-3">
             <h2 className="text-2xl font-semibold">{t(headingKey)}</h2>

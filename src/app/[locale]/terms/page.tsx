@@ -9,7 +9,7 @@ type TermsParams = Promise<{ locale: Locale }>;
 // Legal copy exists in English only; localized URLs canonicalize to /terms.
 export const metadata: Metadata = {
   title: "Terms of Service",
-  description: "Terms of Service for Ontario Ski Guide.",
+  description: "Terms of Service for Fall Line.",
   alternates: englishOnlyAlternates("/terms"),
 };
 
@@ -44,7 +44,7 @@ export default async function TermsPage({
         <section className="space-y-3">
           <h2 className="text-2xl font-semibold">1. Acceptance</h2>
           <p>
-            By using Ontario Ski Guide, you agree to these Terms of Service. If you do not agree,
+            By using Fall Line, you agree to these Terms of Service. If you do not agree,
             do not use the service.
           </p>
         </section>
@@ -52,7 +52,7 @@ export default async function TermsPage({
         <section className="space-y-3">
           <h2 className="text-2xl font-semibold">2. Service purpose</h2>
           <p>
-            Ontario Ski Guide provides resort information, conditions, prices, hours, maps, and
+            Fall Line provides resort information, conditions, prices, hours, maps, and
             related links for general informational and trip-planning purposes.
           </p>
           <p>
@@ -74,7 +74,7 @@ export default async function TermsPage({
           <p>
             The service may display information from resorts and link to third-party websites,
             maps, booking systems, and payment providers. Third-party services have their own
-            terms and privacy policies. Ontario Ski Guide does not control or guarantee them.
+            terms and privacy policies. Fall Line does not control or guarantee them.
           </p>
         </section>
 
@@ -82,7 +82,7 @@ export default async function TermsPage({
           <h2 className="text-2xl font-semibold">5. No warranty</h2>
           <p>
             The service is provided on an as-is and as-available basis. To the extent permitted by
-            law, Ontario Ski Guide disclaims warranties about accuracy, availability, suitability,
+            law, Fall Line disclaims warranties about accuracy, availability, suitability,
             or uninterrupted operation.
           </p>
         </section>
@@ -90,7 +90,7 @@ export default async function TermsPage({
         <section className="space-y-3">
           <h2 className="text-2xl font-semibold">6. Limitation of liability</h2>
           <p>
-            To the extent permitted by law, Ontario Ski Guide is not responsible for losses,
+            To the extent permitted by law, Fall Line is not responsible for losses,
             injuries, missed reservations, costs, or damages arising from reliance on displayed
             information or use of linked third-party services.
           </p>

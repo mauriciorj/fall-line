@@ -8,10 +8,10 @@ export type Translator = (key: string, vars?: TranslationVars) => string;
 
 const translations: Record<Locale, Record<string, string>> = {
   en: {
-    appName: "Ontario Ski Guide",
-    siteTitle: "Ontario Ski Guide – Ski Resorts, Lift Tickets & Conditions",
+    appName: "Fall Line",
+    siteTitle: "Fall Line – Ski Resorts, Lift Tickets & Snow Conditions",
     siteDescription:
-      "Compare ski resorts and hills in Ontario and across Canada: lift ticket prices, ski and snowboard rentals, trail maps, hours, snow conditions and directions.",
+      "Compare ski resorts and hills region by region: lift ticket prices, ski and snowboard rentals, trail maps, hours, snow conditions and directions.",
     tagline: "Ski resorts, lift ticket prices & snow conditions",
     menu: "Menu",
     contactUs: "Contact Us",
@@ -21,7 +21,7 @@ const translations: Record<Locale, Record<string, string>> = {
     english: "English",
     french: "French",
     spanish: "Spanish",
-    backHome: "Back to Ontario Ski Guide",
+    backHome: "Back to Fall Line",
     filters: "Filters and Sort",
     filterResorts: "Filter Resorts",
     location: "Location",
@@ -99,7 +99,7 @@ const translations: Record<Locale, Record<string, string>> = {
     contactDescription: "Questions, feedback, or support.",
     getInTouch: "Get in touch",
     contactBody:
-      "Contact us about resort information, corrections, feedback, or help using Ontario Ski Guide.",
+      "Contact us about resort information, corrections, feedback, or help using Fall Line.",
     email: "Email",
     lastUpdated: "Last updated: September 8, 2026",
     termsTitle: "Terms of Service",
@@ -108,7 +108,7 @@ const translations: Record<Locale, Record<string, string>> = {
     blog: "Blog",
     blogTitle: "Ski stories and mountain news",
     blogDescription:
-      "Guides, updates, and stories from Ontario’s ski community.",
+      "Guides, updates, and stories from the ski community.",
     backToResorts: "Back to resorts",
     resortList: "Resort list",
     signOut: "Sign out",
@@ -174,7 +174,7 @@ const translations: Record<Locale, Record<string, string>> = {
     aboutMetaDescription:
       "What {site} is, where its resort data comes from, how often it is updated and how to report a correction.",
     aboutIntro:
-      "{site} compares ski resorts and hills in Ontario and across Canada in one place: day lift ticket prices, ski and snowboard rentals, runs by difficulty, hours, trail status and snow conditions, with a map and directions for each resort.",
+      "{site} compares ski resorts and hills region by region in one place: day lift ticket prices, ski and snowboard rentals, runs by difficulty, hours, trail status and snow conditions, with a map and directions for each resort.",
     aboutDataHeading: "Where the data comes from",
     aboutDataBody:
       "Hours, trail status, lift status and snow conditions are collected automatically from each resort’s official website and refreshed regularly. Prices and amenities are checked against the resort’s official pages. Each section shows when it was last updated and links to its source, so you can verify any figure before you go.",
@@ -185,13 +185,16 @@ const translations: Record<Locale, Record<string, string>> = {
     aboutLanguagesBody:
       "The guide is available in English, French and Spanish. Resort data is the same in every language; editorial descriptions are translated as they become available.",
     aboutContactBody: "Questions, corrections or feedback: use the contact page.",
+    teamName: "Fall Line Team",
+    aboutTeamHeading: "Who we are",
+    aboutTeamBody:
+      "{site} is built and maintained by the {team}: the data pipeline that collects resort information from official sources, the editorial descriptions and FAQs, and the blog. Articles without a named author are written by the team.",
   },
   fr: {
-    appName: "Guide de ski de l’Ontario",
-    siteTitle:
-      "Guide de ski de l’Ontario – Stations, billets de remontée et conditions",
+    appName: "Fall Line",
+    siteTitle: "Fall Line – Stations de ski, billets de remontée et conditions de neige",
     siteDescription:
-      "Comparez les stations et centres de ski de l’Ontario et du Canada : prix des billets de remontée, location de skis et de planches, plans des pistes, horaires, conditions de neige et itinéraires.",
+      "Comparez les stations et centres de ski région par région : prix des billets de remontée, location de skis et de planches, plans des pistes, horaires, conditions de neige et itinéraires.",
     tagline: "Stations de ski, prix des billets et conditions de neige",
     menu: "Menu",
     contactUs: "Nous contacter",
@@ -201,7 +204,7 @@ const translations: Record<Locale, Record<string, string>> = {
     english: "Anglais",
     french: "Français",
     spanish: "Espagnol",
-    backHome: "Retour au Guide de ski de l’Ontario",
+    backHome: "Retour à Fall Line",
     filters: "Filtres et tri",
     filterResorts: "Filtrer les stations",
     location: "Emplacement",
@@ -279,7 +282,7 @@ const translations: Record<Locale, Record<string, string>> = {
     contactDescription: "Questions, commentaires ou assistance.",
     getInTouch: "Nous contacter",
     contactBody:
-      "Contactez-nous pour toute question sur les stations, correction, commentaire ou aide concernant le Guide de ski de l’Ontario.",
+      "Contactez-nous pour toute question sur les stations, correction, commentaire ou aide concernant Fall Line.",
     email: "Courriel",
     lastUpdated: "Dernière mise à jour : 8 septembre 2026",
     termsTitle: "Conditions d’utilisation",
@@ -288,7 +291,7 @@ const translations: Record<Locale, Record<string, string>> = {
     blog: "Blogue",
     blogTitle: "Histoires de ski et nouvelles de la montagne",
     blogDescription:
-      "Guides, nouvelles et récits de la communauté de ski de l’Ontario.",
+      "Guides, nouvelles et récits de la communauté de ski.",
     backToResorts: "Retour aux stations",
     resortList: "Liste des stations",
     signOut: "Se déconnecter",
@@ -354,7 +357,7 @@ const translations: Record<Locale, Record<string, string>> = {
     aboutMetaDescription:
       "Ce qu’est {site}, d’où proviennent les données des stations, à quelle fréquence elles sont mises à jour et comment signaler une correction.",
     aboutIntro:
-      "{site} compare les stations et centres de ski de l’Ontario et du Canada en un seul endroit : prix des billets de remontée à la journée, location de skis et de planches, pistes par niveau, horaires, état des pistes et conditions de neige, avec une carte et l’itinéraire pour chaque station.",
+      "{site} compare les stations et centres de ski région par région en un seul endroit : prix des billets de remontée à la journée, location de skis et de planches, pistes par niveau, horaires, état des pistes et conditions de neige, avec une carte et l’itinéraire pour chaque station.",
     aboutDataHeading: "D’où viennent les données",
     aboutDataBody:
       "Les horaires, l’état des pistes et des remontées et les conditions de neige sont recueillis automatiquement sur le site officiel de chaque station et actualisés régulièrement. Les prix et les services sont vérifiés sur les pages officielles de la station. Chaque section indique la date de sa dernière mise à jour et renvoie à sa source, pour que vous puissiez vérifier toute donnée avant de partir.",
@@ -365,12 +368,16 @@ const translations: Record<Locale, Record<string, string>> = {
     aboutLanguagesBody:
       "Le guide est offert en anglais, en français et en espagnol. Les données des stations sont identiques dans toutes les langues; les descriptions éditoriales sont traduites au fur et à mesure.",
     aboutContactBody: "Questions, corrections ou commentaires : utilisez la page de contact.",
+    teamName: "Équipe Fall Line",
+    aboutTeamHeading: "Qui nous sommes",
+    aboutTeamBody:
+      "{site} est conçu et maintenu par l’{team} : le pipeline de données qui recueille l’information des stations à partir des sources officielles, les descriptions et FAQ éditoriales, et le blogue. Les articles sans auteur nommé sont rédigés par l’équipe.",
   },
   es: {
-    appName: "Guía de esquí de Ontario",
-    siteTitle: "Guía de esquí de Ontario – Estaciones, pases y condiciones",
+    appName: "Fall Line",
+    siteTitle: "Fall Line – Estaciones de esquí, pases y condiciones de nieve",
     siteDescription:
-      "Compara estaciones y centros de esquí de Ontario y Canadá: precios de pases, alquiler de esquís y snowboard, mapas de pistas, horarios, condiciones de nieve y cómo llegar.",
+      "Compara estaciones y centros de esquí región por región: precios de pases, alquiler de esquís y snowboard, mapas de pistas, horarios, condiciones de nieve y cómo llegar.",
     tagline: "Estaciones de esquí, precios de pases y condiciones de nieve",
     menu: "Menú",
     contactUs: "Contáctenos",
@@ -380,7 +387,7 @@ const translations: Record<Locale, Record<string, string>> = {
     english: "Inglés",
     french: "Francés",
     spanish: "Español",
-    backHome: "Volver a la Guía de esquí de Ontario",
+    backHome: "Volver a Fall Line",
     filters: "Filtros y ordenación",
     filterResorts: "Filtrar estaciones",
     location: "Ubicación",
@@ -458,7 +465,7 @@ const translations: Record<Locale, Record<string, string>> = {
     contactDescription: "Preguntas, comentarios o asistencia.",
     getInTouch: "Contáctenos",
     contactBody:
-      "Contáctenos sobre información de estaciones, correcciones, comentarios o ayuda con la Guía de esquí de Ontario.",
+      "Contáctenos sobre información de estaciones, correcciones, comentarios o ayuda con Fall Line.",
     email: "Correo electrónico",
     lastUpdated: "Última actualización: 8 de septiembre de 2026",
     termsTitle: "Términos de servicio",
@@ -467,7 +474,7 @@ const translations: Record<Locale, Record<string, string>> = {
     blog: "Blog",
     blogTitle: "Historias de esquí y noticias de montaña",
     blogDescription:
-      "Guías, novedades e historias de la comunidad de esquí de Ontario.",
+      "Guías, novedades e historias de la comunidad de esquí.",
     backToResorts: "Volver a las estaciones",
     resortList: "Lista de estaciones",
     signOut: "Cerrar sesión",
@@ -534,7 +541,7 @@ const translations: Record<Locale, Record<string, string>> = {
     aboutMetaDescription:
       "Qué es {site}, de dónde provienen los datos de las estaciones, con qué frecuencia se actualizan y cómo informar una corrección.",
     aboutIntro:
-      "{site} compara estaciones y centros de esquí de Ontario y de todo Canadá en un solo lugar: precios de pases diarios, alquiler de esquís y snowboard, pistas por nivel, horarios, estado de las pistas y condiciones de nieve, con mapa y cómo llegar a cada estación.",
+      "{site} compara estaciones y centros de esquí región por región en un solo lugar: precios de pases diarios, alquiler de esquís y snowboard, pistas por nivel, horarios, estado de las pistas y condiciones de nieve, con mapa y cómo llegar a cada estación.",
     aboutDataHeading: "De dónde provienen los datos",
     aboutDataBody:
       "Horarios, estado de pistas y remontes y condiciones de nieve se recopilan automáticamente del sitio web oficial de cada estación y se actualizan con regularidad. Los precios y servicios se comprueban en las páginas oficiales de la estación. Cada sección muestra cuándo se actualizó por última vez y enlaza a su fuente, para que puedas verificar cualquier dato antes de ir.",
@@ -545,6 +552,10 @@ const translations: Record<Locale, Record<string, string>> = {
     aboutLanguagesBody:
       "La guía está disponible en inglés, francés y español. Los datos de las estaciones son los mismos en todos los idiomas; las descripciones editoriales se traducen a medida que están disponibles.",
     aboutContactBody: "Preguntas, correcciones o comentarios: usa la página de contacto.",
+    teamName: "Equipo Fall Line",
+    aboutTeamHeading: "Quiénes somos",
+    aboutTeamBody:
+      "{site} es creado y mantenido por el {team}: la canalización de datos que recopila la información de las estaciones desde fuentes oficiales, las descripciones y preguntas frecuentes editoriales y el blog. Los artículos sin autor firmado los escribe el equipo.",
   },
 };
 

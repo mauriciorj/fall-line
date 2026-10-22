@@ -3,8 +3,9 @@
 import { useLanguage } from "@/src/i18n";
 import { formatDate } from "@/src/i18n/format";
 
-// Byline + machine-readable dates. "Updated" only when it falls on a later
-// calendar day than publication, so same-day edits don't add noise.
+// Byline + machine-readable dates. Articles without a named author are
+// credited to the team. "Updated" only when it falls on a later calendar day
+// than publication, so same-day edits don't add noise.
 export default function ArticleMeta({
   author,
   publishedAt,
@@ -27,7 +28,7 @@ export default function ArticleMeta({
 
   return (
     <p className={className}>
-      {author && <span>{t("byAuthor", { author })} · </span>}
+      <span>{t("byAuthor", { author: author || t("teamName") })} · </span>
       <time dateTime={new Date(publishedAt).toISOString()}>
         {t("publishedOn", { date: published })}
       </time>

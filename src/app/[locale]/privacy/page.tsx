@@ -9,7 +9,7 @@ type PrivacyParams = Promise<{ locale: Locale }>;
 // Legal copy exists in English only; localized URLs canonicalize to /privacy.
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "Privacy Policy for Ontario Ski Guide.",
+  description: "Privacy Policy for Fall Line.",
   alternates: englishOnlyAlternates("/privacy"),
 };
 
@@ -44,7 +44,7 @@ export default async function PrivacyPage({
         <section className="space-y-3">
           <h2 className="text-2xl font-semibold">1. Scope</h2>
           <p>
-            This Privacy Policy explains how Ontario Ski Guide handles information when you use
+            This Privacy Policy explains how Fall Line handles information when you use
             the website.
           </p>
         </section>
