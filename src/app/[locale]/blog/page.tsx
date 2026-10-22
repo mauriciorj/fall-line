@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
-import { preloadQuery } from "convex/nextjs";
+import { preloadQuery, preloadedQueryResult } from "convex/nextjs";
 import { api } from "@/convex/_generated/api";
+import JsonLd from "@/components/jsonLd";
 import BlogList from "@/src/features/blog/components/blogList";
-import { Locale, getTranslator } from "@/src/i18n/translations";
-import { englishOnlyAlternates } from "@/utils/seo";
+import { Locale, defaultLocale, getTranslator } from "@/src/i18n/translations";
+import { BlogArticleSummary, blogNode, breadcrumbNode } from "@/utils/jsonLd";
+import { absoluteUrl, englishOnlyAlternates } from "@/utils/seo";
 
 // Convex's fetchQuery forces `cache: "no-store"`; force-static keeps the route
 // statically rendered and lets `revalidate` drive ISR.
@@ -26,8 +28,35 @@ export async function generateMetadata({
   };
 }
 
-export default async function BlogPage() {
+export default async function BlogPage({
+  params,
+}: {
+  params: Promise<{ locale: Locale }>;
+}) {
+  const { locale } = await params;
   const preloadedArticles = await preloadQuery(api.blog.listPublished);
+  const articles = preloadedQueryResult(preloadedArticles) as BlogArticleSummary[];
+  const t = getTranslator(defaultLocale);
 
-  return <BlogList preloadedArticles={preloadedArticles} />;
+  return (
+    <>
+      <JsonLd
+        nodes={[
+          blogNode(articles, {
+            url: absoluteUrl("/blog"),
+            name: t("blogTitle"),
+            description: t("blogDescription"),
+          }),
+          breadcrumbNode(
+            [
+              { name: getTranslator(locale)("home"), path: "/" },
+              { name: getTranslator(locale)("blog"), path: "/blog" },
+            ],
+            locale,
+          ),
+        ]}
+      />
+      <BlogList preloadedArticles={preloadedArticles} />
+    </>
+  );
 }

@@ -10,6 +10,12 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "www.skiresort.info",
       },
+      // Convex file storage (blog hero images), any deployment.
+      {
+        protocol: "https",
+        hostname: "*.convex.cloud",
+        pathname: "/api/storage/**",
+      },
     ],
   },
   env: {

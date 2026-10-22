@@ -1,17 +1,21 @@
 "use client";
 
+import Image from "next/image";
 import { Preloaded, usePreloadedQuery } from "convex/react";
 import { api } from "@/convex/_generated/api";
 import { useLanguage } from "@/src/i18n";
 import Link from "@/src/i18n/link";
+import ArticleMeta from "@/src/features/blog/components/articleMeta";
 import RichText from "@/src/features/blog/components/richText";
 
 type Article = {
   title: string;
   description: string;
+  author?: string | null;
   body: unknown[];
   tags: string[];
   publishedAt: number;
+  updatedAt: number;
   heroImageUrl?: string | null;
 };
 
@@ -20,9 +24,8 @@ export default function BlogArticle({
 }: {
   preloadedArticle: Preloaded<typeof api.blog.getPublishedBySlug>;
 }) {
-  const { locale, t } = useLanguage();
+  const { t } = useLanguage();
   const article = usePreloadedQuery(preloadedArticle) as Article | null;
-  const dateLocale = locale === "fr" ? "fr-CA" : locale === "es" ? "es-ES" : "en-CA";
 
   if (!article) {
     return (
@@ -43,10 +46,25 @@ export default function BlogArticle({
           </div>
           <h1 className="font-serif text-4xl font-semibold tracking-tight md:text-6xl">{article.title}</h1>
           <p className="text-xl text-muted-foreground">{article.description}</p>
-          <p className="text-sm text-muted-foreground">{new Intl.DateTimeFormat(dateLocale, { dateStyle: "long", timeZone: "UTC" }).format(new Date(article.publishedAt))}</p>
+          <ArticleMeta
+            author={article.author}
+            publishedAt={article.publishedAt}
+            updatedAt={article.updatedAt}
+            dateStyle="long"
+            className="text-sm text-muted-foreground"
+          />
         </header>
         {article.heroImageUrl && (
-          <img src={article.heroImageUrl} alt={article.title} className="mt-10 aspect-[16/8] w-full rounded-xl object-cover" />
+          <div className="relative mt-10 aspect-[16/8] w-full overflow-hidden rounded-xl bg-muted">
+            <Image
+              src={article.heroImageUrl}
+              alt={article.title}
+              fill
+              priority
+              sizes="(min-width: 896px) 848px, 100vw"
+              className="object-cover"
+            />
+          </div>
         )}
         <div className="mt-10">
           <RichText blocks={article.body} />

@@ -10,7 +10,11 @@ import { api } from "@/convex/_generated/api";
 import JsonLd from "@/components/jsonLd";
 import BlogArticle from "@/src/features/blog/components/blogArticle";
 import { Locale, defaultLocale, getTranslator } from "@/src/i18n/translations";
-import { blogPostingNode, breadcrumbNode } from "@/utils/jsonLd";
+import {
+  BlogArticleSummary,
+  blogPostingNode,
+  breadcrumbNode,
+} from "@/utils/jsonLd";
 import {
   DEFAULT_OG_IMAGE,
   absoluteUrl,
@@ -23,15 +27,7 @@ import {
 export const dynamic = "force-static";
 export const revalidate = 3600;
 
-type ArticleSummary = {
-  slug: string;
-  title: string;
-  description: string;
-  tags: string[];
-  publishedAt: number;
-  updatedAt: number;
-  heroImageUrl?: string | null;
-};
+type ArticleSummary = BlogArticleSummary;
 
 // Shared between generateMetadata and the page within one render.
 const getPreloadedArticle = cache((slug: string) =>

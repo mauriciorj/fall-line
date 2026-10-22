@@ -30,7 +30,7 @@ export default function RichText({ blocks }: { blocks: unknown[] }) {
         if (block.type === "image" && block.url) {
           return (
             <figure key={key}>
-              <img src={block.url} alt={block.alt ?? ""} className="rounded-lg" />
+              <img src={block.url} alt={block.alt ?? ""} loading="lazy" decoding="async" className="rounded-lg" />
               {block.text && <figcaption>{block.text}</figcaption>}
             </figure>
           );

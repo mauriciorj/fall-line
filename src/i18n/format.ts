@@ -4,9 +4,13 @@ import type { Locale } from "@/src/i18n/translations";
 // Fixed zone: the audience is Ontario/Québec and server/client output must match.
 export const SITE_TIME_ZONE = "America/Toronto";
 
-export function formatDate(timestamp: number, locale: Locale) {
+export function formatDate(
+  timestamp: number,
+  locale: Locale,
+  dateStyle: "medium" | "long" = "medium",
+) {
   return new Intl.DateTimeFormat(intlLocale[locale], {
-    dateStyle: "medium",
+    dateStyle,
     timeZone: SITE_TIME_ZONE,
   }).format(new Date(timestamp));
 }

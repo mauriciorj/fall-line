@@ -42,12 +42,13 @@ type ResortRecord = {
 
 type LocationRecord = { _id: string; country: string; region: string };
 type AdminRecord = { _id: Id<"adminEmails">; email: string; enabled: boolean };
-type ArticleRecord = { _id: Id<"articles">; slug: string; title: string; description: string; tags: string[]; published: boolean; heroImageId: string; body: unknown[] };
+type ArticleRecord = { _id: Id<"articles">; slug: string; title: string; description: string; author?: string; tags: string[]; published: boolean; heroImageId: string; body: unknown[] };
 
 type Draft = {
   slug: string;
   title: string;
   description: string;
+  author: string;
   tags: string;
   published: boolean;
   heroImageId?: string;
@@ -58,6 +59,7 @@ const emptyDraft: Draft = {
   slug: "",
   title: "",
   description: "",
+  author: "",
   tags: "",
   published: false,
   blocks: [{ type: "paragraph", text: "" }],
@@ -138,6 +140,7 @@ function AdminDashboard() {
       slug: article.slug,
       title: article.title,
       description: article.description,
+      author: article.author ?? "",
       tags: article.tags.join(", "),
       published: article.published,
       heroImageId: article.heroImageId,
@@ -164,6 +167,7 @@ function AdminDashboard() {
         slug: draft.slug,
         title: draft.title,
         description: draft.description,
+        author: draft.author.trim() || undefined,
         body: draft.blocks,
         tags: draft.tags.split(",").map((tag) => tag.trim()).filter(Boolean),
         published: draft.published,
@@ -248,6 +252,7 @@ function AdminDashboard() {
           <Input placeholder="Slug" value={draft.slug} onChange={(event) => setDraft({ ...draft, slug: event.target.value })} />
           <Input placeholder="Title" value={draft.title} onChange={(event) => setDraft({ ...draft, title: event.target.value })} />
           <Input placeholder="Description" value={draft.description} onChange={(event) => setDraft({ ...draft, description: event.target.value })} />
+          <Input placeholder="Author (shown in byline and structured data)" value={draft.author} onChange={(event) => setDraft({ ...draft, author: event.target.value })} />
           <Input placeholder="Tags, comma separated" value={draft.tags} onChange={(event) => setDraft({ ...draft, tags: event.target.value })} />
           <label className="block text-sm">Hero image<input className="mt-1 block w-full text-sm" type="file" accept="image/*" onChange={(event) => event.target.files?.[0] && uploadHero(event.target.files[0])} /></label>
           <div className="space-y-2"><p className="text-sm font-medium">Body blocks</p>{draft.blocks.map((block, index) => <div key={index} className="grid gap-2 rounded-lg border border-border p-3"><select className="rounded-md border border-input bg-background px-3 py-2 text-sm" value={block.type} onChange={(event) => { const blocks = [...draft.blocks]; blocks[index] = { ...block, type: event.target.value as Block["type"] }; setDraft({ ...draft, blocks }); }}><option value="paragraph">Paragraph</option><option value="heading">Heading</option><option value="list">List</option></select><Textarea value={block.type === "list" ? (block.items ?? []).join("\n") : block.text} placeholder="Content" onChange={(event) => { const blocks = [...draft.blocks]; blocks[index] = block.type === "list" ? { ...block, items: event.target.value.split("\n") } : { ...block, text: event.target.value }; setDraft({ ...draft, blocks }); }} /></div>)}<Button variant="outline" onClick={() => setDraft({ ...draft, blocks: [...draft.blocks, { type: "paragraph", text: "" }] })}>Add block</Button></div>

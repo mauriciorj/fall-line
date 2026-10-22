@@ -1,16 +1,20 @@
 "use client";
 
+import Image from "next/image";
 import { Preloaded, usePreloadedQuery } from "convex/react";
 import { api } from "@/convex/_generated/api";
 import { useLanguage } from "@/src/i18n";
 import Link from "@/src/i18n/link";
+import ArticleMeta from "@/src/features/blog/components/articleMeta";
 
 type Article = {
   slug: string;
   title: string;
   description: string;
+  author?: string | null;
   tags: string[];
   publishedAt: number;
+  updatedAt: number;
   heroImageUrl?: string | null;
 };
 
@@ -19,9 +23,8 @@ export default function BlogList({
 }: {
   preloadedArticles: Preloaded<typeof api.blog.listPublished>;
 }) {
-  const { locale, t } = useLanguage();
+  const { t } = useLanguage();
   const articles = usePreloadedQuery(preloadedArticles) as Article[];
-  const dateLocale = locale === "fr" ? "fr-CA" : locale === "es" ? "es-ES" : "en-CA";
 
   return (
     <main className="min-h-[calc(100vh-73px)] bg-background">
@@ -39,9 +42,15 @@ export default function BlogList({
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {articles.map((article) => (
               <Link key={article.slug} href={`/blog/${article.slug}`} className="group overflow-hidden rounded-xl border border-border bg-card transition-shadow hover:shadow-lg">
-                <div className="aspect-[16/9] overflow-hidden bg-primary/10">
+                <div className="relative aspect-[16/9] overflow-hidden bg-primary/10">
                   {article.heroImageUrl ? (
-                    <img src={article.heroImageUrl} alt={article.title} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                    <Image
+                      src={article.heroImageUrl}
+                      alt={article.title}
+                      fill
+                      sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
                   ) : (
                     <div className="h-full w-full bg-gradient-to-br from-primary/30 via-primary/10 to-background" />
                   )}
@@ -54,7 +63,12 @@ export default function BlogList({
                     <h2 className="font-serif text-2xl font-semibold group-hover:text-primary">{article.title}</h2>
                     <p className="line-clamp-3 text-sm text-muted-foreground">{article.description}</p>
                   </div>
-                  <p className="text-xs text-muted-foreground">{new Intl.DateTimeFormat(dateLocale, { dateStyle: "medium", timeZone: "UTC" }).format(new Date(article.publishedAt))}</p>
+                  <ArticleMeta
+                    author={article.author}
+                    publishedAt={article.publishedAt}
+                    updatedAt={article.updatedAt}
+                    className="text-xs text-muted-foreground"
+                  />
                 </div>
               </Link>
             ))}

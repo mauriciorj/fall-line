@@ -234,6 +234,7 @@ export default defineSchema({
     slug: v.string(),
     title: v.string(),
     description: v.string(),
+    author: v.optional(v.string()),
     body: v.array(v.any()),
     tags: v.array(v.string()),
     published: v.boolean(),

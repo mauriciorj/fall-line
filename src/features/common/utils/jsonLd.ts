@@ -234,15 +234,19 @@ export function skiResortNode(
   };
 }
 
+export type BlogArticleSummary = {
+  slug: string;
+  title: string;
+  description: string;
+  author?: string | null;
+  tags: string[];
+  publishedAt: number;
+  updatedAt: number;
+  heroImageUrl?: string | null;
+};
+
 export function blogPostingNode(
-  article: {
-    title: string;
-    description: string;
-    tags: string[];
-    publishedAt: number;
-    updatedAt: number;
-    heroImageUrl?: string | null;
-  },
+  article: BlogArticleSummary,
   pageUrl: string,
 ): JsonLdNode {
   return {
@@ -256,8 +260,30 @@ export function blogPostingNode(
     // Articles are authored in English only (see blog metadata).
     inLanguage: "en-CA",
     mainEntityOfPage: pageUrl,
+    url: pageUrl,
     ...(article.tags.length ? { keywords: article.tags.join(", ") } : {}),
-    author: { "@id": ORGANIZATION_ID() },
+    // A named person is a stronger E-E-A-T signal than the organization.
+    author: article.author
+      ? { "@type": "Person", name: article.author }
+      : { "@id": ORGANIZATION_ID() },
     publisher: { "@id": ORGANIZATION_ID() },
+  };
+}
+
+export function blogNode(
+  articles: BlogArticleSummary[],
+  options: { url: string; name: string; description: string },
+): JsonLdNode {
+  return {
+    "@type": "Blog",
+    "@id": `${options.url}#blog`,
+    url: options.url,
+    name: options.name,
+    description: options.description,
+    inLanguage: "en-CA",
+    publisher: { "@id": ORGANIZATION_ID() },
+    blogPost: articles.map((article) =>
+      blogPostingNode(article, absoluteUrl(`/blog/${article.slug}`)),
+    ),
   };
 }
