@@ -25,11 +25,12 @@ export function organizationNode(locale: Locale): JsonLdNode {
     "@id": ORGANIZATION_ID(),
     name: t("appName"),
     url: getSiteUrl(),
+    // Square brand mark from scripts/generateBrandIcons.mjs.
     logo: {
       "@type": "ImageObject",
-      url: absoluteUrl(DEFAULT_OG_IMAGE),
-      width: 1200,
-      height: 630,
+      url: absoluteUrl("/icons/icon-512.png"),
+      width: 512,
+      height: 512,
     },
     ...(email
       ? {

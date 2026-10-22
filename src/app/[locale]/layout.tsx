@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import { notFound } from "next/navigation";
 import { ClerkProvider } from "@clerk/nextjs";
@@ -36,6 +36,11 @@ const geistMono = Geist_Mono({
 });
 
 type LocaleParams = Promise<{ locale: string }>;
+
+// Matches manifest.ts; colours the browser UI on mobile.
+export const viewport: Viewport = {
+  themeColor: "#4A6FA5",
+};
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
