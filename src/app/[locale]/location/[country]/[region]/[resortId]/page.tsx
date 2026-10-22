@@ -11,9 +11,9 @@ import { Locale, getTranslator } from "@/src/i18n/translations";
 import {
   getCountryPath,
   getRegionPath,
-  getResortHeroImage,
   getResortLocationParams,
   getResortLocationPath,
+  getResortSocialImage,
   toResort,
 } from "@/utils/convexResort";
 import {
@@ -100,7 +100,7 @@ export async function generateMetadata({
       url: localizePath(path, locale),
       images: [
         {
-          url: getResortHeroImage(resort.resortId, resort.country, resort.region),
+          ...getResortSocialImage(resort.resortId, resort.country, resort.region),
           alt: resort.name,
         },
       ],

@@ -22,12 +22,15 @@ import tubbingIcon from "@/icons/buoy-svgrepo-com.svg";
 interface ResortCardProps {
   isResortHoveredOrSelected: boolean;
   resort: Resort;
+  // First cards are in the initial viewport: preload them as LCP candidates.
+  priority?: boolean;
   setHoveredResort: (id: string | null) => void;
 }
 
 const ResortCard = ({
   isResortHoveredOrSelected,
   resort,
+  priority = false,
   setHoveredResort,
 }: ResortCardProps) => {
   const { t } = useLanguage();
@@ -65,9 +68,10 @@ const ResortCard = ({
               resort.region,
             )}
             alt={resort.name}
-            width={500}
-            height={500}
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            fill
+            priority={priority}
+            sizes="(min-width: 1280px) 520px, (min-width: 1024px) 480px, 100vw"
+            className="object-cover transition-transform duration-500 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-foreground/30 to-transparent" />
           <div className="absolute top-3 right-3 flex items-center gap-1.5">

@@ -37,7 +37,10 @@ for (const country of readdirSync(root)) {
         .map(([, candidates]) => bestFormat(candidates))
         .filter(Boolean);
 
-      manifest[`${country}/${region}/${resort}`] = { hero, trailMaps };
+      // 1200x630 social crop produced by scripts/optimizeResortImages.mjs.
+      const og = files.includes("og.jpg") ? "og.jpg" : null;
+
+      manifest[`${country}/${region}/${resort}`] = { hero, og, trailMaps };
     }
   }
 }

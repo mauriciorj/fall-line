@@ -69,6 +69,7 @@ const ResortList = ({
           >
             <ResortCard
               resort={resort}
+              priority={index < 2}
               isResortHoveredOrSelected={
                 hoveredResort === resort.resortId || selectedResort === resort.resortId
               }
