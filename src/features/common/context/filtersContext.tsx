@@ -37,6 +37,8 @@ interface FiltersContextType {
   setLocation: (location: LocationOption) => void;
   userCoordinates: Coordinates | null;
   filteredResorts: Resort[];
+  // Newest resort-data write in the current list (null until data carries it).
+  dataUpdatedAt: number | null;
   isLoading: boolean;
   isFiltersActive: boolean;
   handleClearFilters: () => void;
@@ -206,6 +208,15 @@ export function FiltersProvider({ children }: { children: ReactNode }) {
     () => applyResortFilters(allResorts, filters, userCoordinates),
     [allResorts, filters, userCoordinates],
   );
+  const dataUpdatedAt = useMemo(
+    () =>
+      allResorts.reduce<number | null>(
+        (latest, resort) =>
+          resort.updatedAt ? Math.max(latest ?? 0, resort.updatedAt) : latest,
+        null,
+      ),
+    [allResorts],
+  );
 
   const isLoading =
     dbLocations === undefined ||
@@ -238,6 +249,7 @@ export function FiltersProvider({ children }: { children: ReactNode }) {
     },
     userCoordinates,
     filteredResorts,
+    dataUpdatedAt,
     isLoading,
     isFiltersActive,
     handleClearFilters,

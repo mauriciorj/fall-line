@@ -16,7 +16,12 @@ import {
   getResortLocationPath,
   toResort,
 } from "@/utils/convexResort";
-import { breadcrumbNode, faqNode, skiResortNode } from "@/utils/jsonLd";
+import {
+  breadcrumbNode,
+  faqNode,
+  skiResortNode,
+  webPageNode,
+} from "@/utils/jsonLd";
 import { listPublishedResorts } from "@/utils/publishedResorts";
 import {
   absoluteUrl,
@@ -129,13 +134,28 @@ export default async function ResortPage({
   );
   // Mirrors what the page displays: editorial copy (with EN fallback) or the data summary.
   const faq = pickLocalized(resort.faq, locale);
+  const pageUrl = absoluteUrl(localizePath(path, locale));
+  const hoursDoc = preloadedQueryResult(preloadedResortHours);
+  const conditionsDoc = preloadedQueryResult(preloadedWeatherAndStatus);
+  const dateModified = Math.max(
+    resort.updatedAt ?? 0,
+    resort.contentUpdatedAt ?? 0,
+    hoursDoc?.updatedAt ?? 0,
+    conditionsDoc?.updatedAt ?? 0,
+  );
   const structuredData = [
+    webPageNode(locale, {
+      url: pageUrl,
+      name: resortTitle(resort, locale),
+      mainEntityId: `${pageUrl}#resort`,
+      dateModified: dateModified || null,
+    }),
     skiResortNode(resort, locale, {
-      pageUrl: absoluteUrl(localizePath(path, locale)),
+      pageUrl,
       description:
         pickLocalized(resort.description, locale)?.value ??
         resortDescription(resort, locale),
-      hours: preloadedQueryResult(preloadedResortHours)?.hours ?? [],
+      hours: hoursDoc?.hours ?? [],
     }),
     breadcrumbNode(
       [

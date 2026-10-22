@@ -154,11 +154,15 @@ const ResortDetail = ({
         <InfoSection
           resort={resort}
           resortHours={dbResortHours?.hours ?? []}
+          resortHoursUpdatedAt={dbResortHours?.updatedAt}
         />
         <AccommodationsSection resort={resort} />
 
         {/* Tracks */}
-        <TracksSection resort={resort} />
+        <TracksSection
+          resort={resort}
+          conditionsUpdatedAt={dbWeatherAndStatus?.updatedAt}
+        />
 
         <TerrainSection resort={resort} />
         {/* Terrain Breakdown */}

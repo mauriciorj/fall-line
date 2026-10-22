@@ -7,6 +7,7 @@ import RegionStats, {
   priceRangeLabel,
 } from "@/src/features/location/components/regionStats";
 import RegionTable from "@/src/features/location/components/regionTable";
+import { formatDate } from "@/src/i18n/format";
 import { localizePath } from "@/src/i18n/routing";
 import { Locale, getTranslator } from "@/src/i18n/translations";
 import { getResortLocationPath } from "@/utils/convexResort";
@@ -141,6 +142,14 @@ export default async function RegionPage({
       <section className="space-y-4">
         <h2 className="font-serif text-2xl font-medium">{t("compareResorts")}</h2>
         <RegionTable resorts={group.resorts} locale={locale} />
+        {stats.updatedAt && (
+          <time
+            dateTime={new Date(stats.updatedAt).toISOString()}
+            className="block text-xs text-muted-foreground"
+          >
+            {t("dataUpdatedOn", { date: formatDate(stats.updatedAt, locale) })}
+          </time>
+        )}
       </section>
     </main>
   );

@@ -16,6 +16,7 @@ import { SlidersHorizontal, X } from "lucide-react";
 import LocationDropdown from "../locationDropdown";
 import { LocationOption } from "@/types/location";
 import { useLanguage } from "@/src/i18n";
+import UpdatedAt from "@/components/updatedAt";
 
 import Toggle from "@/components/filter/toggle";
 
@@ -42,6 +43,7 @@ interface FilterProps {
   selectedLocation: LocationOption | null;
   setLocation: (location: LocationOption) => void;
   canSortByDistance: boolean;
+  dataUpdatedAt?: number | null;
 }
 
 const Filter = ({
@@ -53,6 +55,7 @@ const Filter = ({
   selectedLocation,
   setLocation,
   canSortByDistance,
+  dataUpdatedAt,
 }: FilterProps) => {
   const { t } = useLanguage();
   const isMobile = useIsMobile();
@@ -293,11 +296,15 @@ const Filter = ({
           </div>
 
           {/* Timestamp */}
-          <div className="pt-2 border-t border-border">
-            <span className="text-[10px] text-muted-foreground/50">
-              {t("pricesUpdated")}
-            </span>
-          </div>
+          {dataUpdatedAt && (
+            <div className="pt-2 border-t border-border">
+              <UpdatedAt
+                timestamp={dataUpdatedAt}
+                labelKey="pricesUpdatedOn"
+                className="text-[10px] text-muted-foreground/50"
+              />
+            </div>
+          )}
         </div>
 
         {/* Actions */}

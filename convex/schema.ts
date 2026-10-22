@@ -121,6 +121,8 @@ export const resortEditorialFields = {
 export const resortsFields = {
   resortId: v.string(),
   published: v.optional(v.boolean()),
+  // Last crawler/admin write of resort data (prices, contact, runs...).
+  updatedAt: v.optional(v.number()),
   ...resortEditorialFields,
   name: v.optional(v.string()),
   continent: v.optional(v.string()),

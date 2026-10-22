@@ -13,6 +13,7 @@ const locationFields = v.object({
 const resortFieldNames = [
   "resortId",
   "published",
+  "updatedAt",
   "description",
   "highlights",
   "faq",
@@ -152,10 +153,10 @@ export const saveMany = internalMutation({
         throw new Error("Each resort must include a resortId");
       }
 
-      const document = selectResortFields(
-        resort,
-        resort.resortId as string,
-      );
+      const document = {
+        ...selectResortFields(resort, resort.resortId as string),
+        updatedAt: Date.now(),
+      };
       const existing = await ctx.db
         .query("resorts")
         .withIndex("by_resort_id", (q) => q.eq("resortId", resort.resortId as string))
@@ -191,10 +192,13 @@ export const seed = internalMutation({
     const ids = [];
 
     for (const resort of resortSeedData) {
-      const document = selectResortFields(
-        resort as unknown as Record<string, unknown>,
-        resort.resortId,
-      );
+      const document = {
+        ...selectResortFields(
+          resort as unknown as Record<string, unknown>,
+          resort.resortId,
+        ),
+        updatedAt: Date.now(),
+      };
       const existing = await ctx.db
         .query("resorts")
         .withIndex("by_resort_id", (q) => q.eq("resortId", resort.resortId))

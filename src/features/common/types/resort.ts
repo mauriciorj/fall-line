@@ -46,6 +46,7 @@ export interface Resort {
   hasZipline?: boolean;
   resortId: string;
   published?: boolean;
+  updatedAt?: number;
   description?: LocalizedText;
   highlights?: LocalizedStrings;
   faq?: LocalizedFaq;

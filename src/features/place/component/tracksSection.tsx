@@ -18,10 +18,12 @@ import {
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/src/i18n";
+import UpdatedAt from "@/components/updatedAt";
 import { getResortTrailMaps } from "@/utils/convexResort";
 
 interface TracksSectionProps {
   resort: Resort;
+  conditionsUpdatedAt?: number | null;
 }
 
 type TrackDifficulty = NonNullable<Resort["trackConditions"]>[number]["difficulty"];
@@ -40,7 +42,7 @@ const difficultyColor = {
   "free-style": "bg-run-free-style",
 };
 
-const TracksSection = ({ resort }: TracksSectionProps) => {
+const TracksSection = ({ resort, conditionsUpdatedAt }: TracksSectionProps) => {
   const { t } = useLanguage();
   // Open by default so trail names/status are in the server-rendered HTML.
   const [isOpen, setIsOpen] = useState(true);
@@ -102,6 +104,11 @@ const TracksSection = ({ resort }: TracksSectionProps) => {
                 <p className="text-xs text-muted-foreground mt-0.5">
                   {trackCount} {t("trackCount")}
                 </p>
+                <UpdatedAt
+                  timestamp={conditionsUpdatedAt}
+                  labelKey="conditionsUpdatedOn"
+                  className="mt-0.5 block"
+                />
               </div>
             </div>
             <ChevronDown

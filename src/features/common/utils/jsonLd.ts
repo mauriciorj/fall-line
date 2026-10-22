@@ -41,6 +41,25 @@ export function webSiteNode(locale: Locale): JsonLdNode {
   };
 }
 
+// Freshness lives on the page node: Place types have no dateModified.
+export function webPageNode(
+  locale: Locale,
+  options: { url: string; name: string; mainEntityId: string; dateModified?: number | null },
+): JsonLdNode {
+  return {
+    "@type": "WebPage",
+    "@id": options.url,
+    url: options.url,
+    name: options.name,
+    inLanguage: intlLocale[locale],
+    isPartOf: { "@id": `${getSiteUrl()}/#website` },
+    mainEntity: { "@id": options.mainEntityId },
+    ...(options.dateModified
+      ? { dateModified: new Date(options.dateModified).toISOString() }
+      : {}),
+  };
+}
+
 export function breadcrumbNode(
   items: { name: string; path?: string }[],
   locale: Locale,

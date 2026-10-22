@@ -81,6 +81,12 @@ export function regionStats(resorts: Resort[]) {
     0,
   );
 
+  const updatedAt = resorts.reduce<number | null>(
+    (latest, resort) =>
+      resort.updatedAt ? Math.max(latest ?? 0, resort.updatedAt) : latest,
+    null,
+  );
+
   return {
     count: resorts.length,
     minPrice: prices.length ? Math.min(...prices) : null,
@@ -88,5 +94,6 @@ export function regionStats(resorts: Resort[]) {
     totalRuns,
     withTubing: resorts.filter((resort) => resort.hasTubing).length,
     withLessons: resorts.filter((resort) => resort.hasLessons).length,
+    updatedAt,
   };
 }

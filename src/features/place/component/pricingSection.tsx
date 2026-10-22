@@ -2,6 +2,7 @@
 
 import { CircleDot, GraduationCap } from "lucide-react";
 import { useLanguage } from "@/src/i18n";
+import UpdatedAt from "@/components/updatedAt";
 import { Resort } from "@/types/resort";
 
 const PricingSection = ({ resort }: { resort: Resort }) => {
@@ -12,6 +13,7 @@ const PricingSection = ({ resort }: { resort: Resort }) => {
       <h2 className="font-serif text-xl font-medium text-foreground">
         {t("sectionPricing", { name: resort.name })}
       </h2>
+      <UpdatedAt timestamp={resort.updatedAt} labelKey="pricesUpdatedOn" />
       <div className="bg-card rounded-lg border border-border divide-y divide-border">
         {Boolean(resort?.dayTicketPrice && resort.dayTicketPrice > 0) && (
           <div className="flex items-center justify-between p-5">

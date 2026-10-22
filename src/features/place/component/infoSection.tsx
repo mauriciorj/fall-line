@@ -13,6 +13,7 @@ import {
   StarHalf,
 } from "lucide-react";
 import { useLanguage } from "@/src/i18n";
+import UpdatedAt from "@/components/updatedAt";
 import {
   Collapsible,
   CollapsibleContent,
@@ -22,6 +23,7 @@ import {
 interface ResortInfoSectionProps {
   resort: Resort;
   resortHours: ResortHourSection[];
+  resortHoursUpdatedAt?: number | null;
 }
 
 function StarRating({ rating }: { rating: number }) {
@@ -38,7 +40,11 @@ function StarRating({ rating }: { rating: number }) {
   );
 }
 
-const InfoSection = ({ resort, resortHours }: ResortInfoSectionProps) => {
+const InfoSection = ({
+  resort,
+  resortHours,
+  resortHoursUpdatedAt,
+}: ResortInfoSectionProps) => {
   const { t } = useLanguage();
   // Open by default so hours are in the server-rendered HTML (crawlers, no-JS).
   const [isOpen, setIsOpen] = useState(true);
@@ -57,6 +63,11 @@ const InfoSection = ({ resort, resortHours }: ResortInfoSectionProps) => {
                 <p className="text-sm font-medium text-foreground">
                   {t("hoursOperation")}
                 </p>
+                <UpdatedAt
+                  timestamp={resortHoursUpdatedAt}
+                  labelKey="hoursUpdatedOn"
+                  className="mt-0.5 block"
+                />
               </div>
             </div>
             <ChevronDown

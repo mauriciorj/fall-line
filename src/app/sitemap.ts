@@ -62,7 +62,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     localizedEntries(
       getResortLocationPath(resort.resortId, resort.country, resort.region),
       lastModified(
-        Math.max(conditions[index]?.updatedAt ?? 0, resort.contentUpdatedAt ?? 0),
+        Math.max(
+          conditions[index]?.updatedAt ?? 0,
+          resort.contentUpdatedAt ?? 0,
+          resort.updatedAt ?? 0,
+        ),
       ),
     ),
   );

@@ -131,8 +131,13 @@ export const updateResort = mutation({
     const input = args.fields as Record<string, unknown>;
     const fields = Object.fromEntries(Object.entries(input).filter(([key]) => allowed.has(key)));
     const touchesEditorial = Object.keys(fields).some((key) => editorial.has(key));
+    const now = Date.now();
     // Schema validation on patch rejects malformed editorial payloads.
-    await ctx.db.patch(args.id, touchesEditorial ? { ...fields, contentUpdatedAt: Date.now() } : fields);
+    await ctx.db.patch(args.id, {
+      ...fields,
+      updatedAt: now,
+      ...(touchesEditorial ? { contentUpdatedAt: now } : {}),
+    });
     return null;
   },
 });
