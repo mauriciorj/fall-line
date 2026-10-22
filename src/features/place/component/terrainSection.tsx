@@ -27,7 +27,7 @@ const TerrainSection = ({ resort }: { resort: Resort }) => {
   return (
     <section className="space-y-4">
       <h2 className="font-serif text-xl font-medium text-foreground">
-        {t("terrainBreakdown")}
+        {t("sectionTerrain", { name: resort.name })}
       </h2>
       <div className="bg-card rounded-lg p-6 border border-border space-y-6">
         <TracksBreakdown resort={resort} isToHideStatusBadge={true} />

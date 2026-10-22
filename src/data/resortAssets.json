@@ -1,0 +1,188 @@
+{
+  "canada/british-columbia/whistler-blackcomb": {
+    "hero": null,
+    "trailMaps": [
+      "trail-1.jpg"
+    ]
+  },
+  "canada/ontario/adanac-ski-hill": {
+    "hero": "hero.webp",
+    "trailMaps": [
+      "trail-1.webp"
+    ]
+  },
+  "canada/ontario/antoine-mountain": {
+    "hero": "hero.webp",
+    "trailMaps": [
+      "trail-1.webp"
+    ]
+  },
+  "canada/ontario/atikokan": {
+    "hero": "hero.webp",
+    "trailMaps": [
+      "trail-1.webp"
+    ]
+  },
+  "canada/ontario/batawa-ski-hill": {
+    "hero": "hero.webp",
+    "trailMaps": [
+      "trail.webp"
+    ]
+  },
+  "canada/ontario/blue-mountain": {
+    "hero": "hero.webp",
+    "trailMaps": [
+      "trail-1.webp"
+    ]
+  },
+  "canada/ontario/boler-mountain": {
+    "hero": "hero.webp",
+    "trailMaps": [
+      "trail-1.webp"
+    ]
+  },
+  "canada/ontario/boogie-mountain": {
+    "hero": "hero.webp",
+    "trailMaps": [
+      "trail-1.webp"
+    ]
+  },
+  "canada/ontario/brimacombe": {
+    "hero": "hero.webp",
+    "trailMaps": [
+      "trail-1.webp"
+    ]
+  },
+  "canada/ontario/calabogie-peaks": {
+    "hero": "hero.webp",
+    "trailMaps": [
+      "trail-1.webp"
+    ]
+  },
+  "canada/ontario/caledon-ski-club": {
+    "hero": "hero.webp",
+    "trailMaps": [
+      "trail-1.webp"
+    ]
+  },
+  "canada/ontario/chicopee": {
+    "hero": "hero.webp",
+    "trailMaps": [
+      "trail-1.webp"
+    ]
+  },
+  "canada/ontario/dagmar-ski-resort": {
+    "hero": "hero.webp",
+    "trailMaps": [
+      "trail-1.webp"
+    ]
+  },
+  "canada/ontario/devils-glen": {
+    "hero": "hero.webp",
+    "trailMaps": [
+      "trail-1.webp"
+    ]
+  },
+  "canada/ontario/glen-eden": {
+    "hero": "hero.webp",
+    "trailMaps": [
+      "trail-1.webp"
+    ]
+  },
+  "canada/ontario/hidden-valley-highlands": {
+    "hero": "hero.webp",
+    "trailMaps": [
+      "trail-1.webp"
+    ]
+  },
+  "canada/ontario/horseshoe-valley-resort": {
+    "hero": "hero.webp",
+    "trailMaps": [
+      "trail-1.webp"
+    ]
+  },
+  "canada/ontario/lakeridge-ski-resort": {
+    "hero": "hero.webp",
+    "trailMaps": [
+      "trail-1.webp"
+    ]
+  },
+  "canada/ontario/laurentian-ski-hill-north-bay": {
+    "hero": "hero.webp",
+    "trailMaps": [
+      "trail-1.webp"
+    ]
+  },
+  "canada/ontario/lively-ski-hill": {
+    "hero": "hero.webp",
+    "trailMaps": [
+      "trail-1.webp"
+    ]
+  },
+  "canada/ontario/loch-lomond": {
+    "hero": "hero.webp",
+    "trailMaps": [
+      "trail-1.webp"
+    ]
+  },
+  "canada/ontario/mount-baldy": {
+    "hero": "hero.webp",
+    "trailMaps": [
+      "trail-1.webp"
+    ]
+  },
+  "canada/ontario/mount-dufour": {
+    "hero": "hero.webp",
+    "trailMaps": [
+      "trail-1.webp"
+    ]
+  },
+  "canada/ontario/mount-jamieson": {
+    "hero": "hero.webp",
+    "trailMaps": [
+      "trail.webp"
+    ]
+  },
+  "canada/ontario/mount-pakenham": {
+    "hero": "hero.webp",
+    "trailMaps": [
+      "trail.webp"
+    ]
+  },
+  "canada/ontario/mount-st-louis-moonstone": {
+    "hero": "hero.webp",
+    "trailMaps": [
+      "trail-1.webp"
+    ]
+  },
+  "canada/ontario/searchmont": {
+    "hero": "hero.webp",
+    "trailMaps": [
+      "trail-1.webp"
+    ]
+  },
+  "canada/ontario/sir-sams": {
+    "hero": "hero.webp",
+    "trailMaps": [
+      "trail-1.webp"
+    ]
+  },
+  "canada/ontario/ski-kenora": {
+    "hero": "hero.webp",
+    "trailMaps": [
+      "trail-1.webp"
+    ]
+  },
+  "canada/ontario/snow-valley-ski-resort": {
+    "hero": "hero.webp",
+    "trailMaps": [
+      "trail-1.webp"
+    ]
+  },
+  "canada/ontario/tritown-ski-village": {
+    "hero": "hero.webp",
+    "trailMaps": [
+      "trail.webp"
+    ]
+  }
+}

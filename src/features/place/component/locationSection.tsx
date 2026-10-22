@@ -10,7 +10,7 @@ const LocationSection = ({ resort }: { resort: Resort }) => {
   return (
     <section className="space-y-4">
       <h2 className="font-serif text-xl font-medium text-foreground">
-        {t("location")}
+        {t("sectionLocation", { name: resort.name })}
       </h2>
       <div className="bg-card rounded-lg p-6 border border-border">
         <div className="flex items-start gap-4">

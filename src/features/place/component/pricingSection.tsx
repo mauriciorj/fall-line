@@ -10,7 +10,7 @@ const PricingSection = ({ resort }: { resort: Resort }) => {
   return (
     <section className="space-y-4">
       <h2 className="font-serif text-xl font-medium text-foreground">
-        {t("pricing")}
+        {t("sectionPricing", { name: resort.name })}
       </h2>
       <div className="bg-card rounded-lg border border-border divide-y divide-border">
         {Boolean(resort?.dayTicketPrice && resort.dayTicketPrice > 0) && (

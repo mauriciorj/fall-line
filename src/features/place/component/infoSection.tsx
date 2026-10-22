@@ -40,12 +40,13 @@ function StarRating({ rating }: { rating: number }) {
 
 const InfoSection = ({ resort, resortHours }: ResortInfoSectionProps) => {
   const { t } = useLanguage();
-  const [isOpen, setIsOpen] = useState(false);
+  // Open by default so hours are in the server-rendered HTML (crawlers, no-JS).
+  const [isOpen, setIsOpen] = useState(true);
 
   return (
     <section className="space-y-4">
       <h2 className="font-serif text-xl font-medium text-foreground">
-        {t("mainInfo")}
+        {t("sectionInfo", { name: resort.name })}
       </h2>
       <div className="bg-card rounded-lg border border-border divide-y divide-border">
         <Collapsible open={isOpen} onOpenChange={setIsOpen}>

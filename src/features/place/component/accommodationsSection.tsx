@@ -12,7 +12,7 @@ const AccommodationsSection = ({ resort }: { resort: Resort }) => {
   return (
     <section className="space-y-4">
       <h2 className="font-serif text-xl font-medium text-foreground">
-        {t("accommodations")}
+        {t("sectionAccommodations", { name: resort.name })}
       </h2>
       <div className="bg-card rounded-lg p-6 border border-border">
         <a

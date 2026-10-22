@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Resort } from "@/types/resort";
 import { Snowflake, Map, ChevronDown } from "lucide-react";
 import {
@@ -18,7 +18,7 @@ import {
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/src/i18n";
-import { getResortTrailMap } from "@/utils/convexResort";
+import { getResortTrailMaps } from "@/utils/convexResort";
 
 interface TracksSectionProps {
   resort: Resort;
@@ -42,50 +42,15 @@ const difficultyColor = {
 
 const TracksSection = ({ resort }: TracksSectionProps) => {
   const { t } = useLanguage();
-  const [isOpen, setIsOpen] = useState(false);
-  const [isMapOpen, setIsMapOpen] = useState(false);
-  const [trailMapUrls, setTrailMapUrls] = useState<string[]>([]);
-  const [isLoadingTrailMaps, setIsLoadingTrailMaps] = useState(false);
-
-  const handleMapOpenChange = (open: boolean) => {
-    setIsMapOpen(open);
-    setTrailMapUrls([]);
-    setIsLoadingTrailMaps(open);
-  };
-
-  useEffect(() => {
-    if (!isMapOpen) return;
-
-    let cancelled = false;
-    const discoveredUrls: string[] = [];
-
-    const loadNextTrailMap = (index: number) => {
-      if (cancelled) return;
-
-      const url = getResortTrailMap(
-        resort.resortId,
-        resort.country,
-        resort.region,
-        index,
-      );
-      const image = new window.Image();
-      image.onload = () => {
-        if (cancelled) return;
-        discoveredUrls.push(url);
-        setTrailMapUrls([...discoveredUrls]);
-        loadNextTrailMap(index + 1);
-      };
-      image.onerror = () => {
-        if (!cancelled) setIsLoadingTrailMaps(false);
-      };
-      image.src = url;
-    };
-
-    loadNextTrailMap(1);
-    return () => {
-      cancelled = true;
-    };
-  }, [isMapOpen, resort.country, resort.region, resort.resortId]);
+  // Open by default so trail names/status are in the server-rendered HTML.
+  const [isOpen, setIsOpen] = useState(true);
+  // Known at build time via the asset manifest — no client-side probing.
+  const trailMapUrls = getResortTrailMaps(
+    resort.resortId,
+    resort.country,
+    resort.region,
+  );
+  const trailMapAlt = t("trailMapOf", { name: resort.name });
 
   const trackConditions = resort.trackConditions ?? [];
   const summaryTracks: TrackSummary[] = [
@@ -121,7 +86,9 @@ const TracksSection = ({ resort }: TracksSectionProps) => {
   );
   return (
     <section className="space-y-4">
-      <h2 className="font-serif text-xl font-medium text-foreground">{t("tracks")}</h2>
+      <h2 className="font-serif text-xl font-medium text-foreground">
+        {t("sectionTracks", { name: resort.name })}
+      </h2>
       <div className="bg-card rounded-lg border border-border divide-y divide-border">
         {/* Track Conditions - Collapsible */}
         <Collapsible open={isOpen} onOpenChange={setIsOpen}>
@@ -199,51 +166,57 @@ const TracksSection = ({ resort }: TracksSectionProps) => {
           </CollapsibleContent>
         </Collapsible>
 
-        {/* Trail Map - Dialog */}
-        <div className="flex items-center justify-between p-5">
-          <div className="flex items-center gap-4">
-            <Map className="w-4 h-4 text-muted-foreground shrink-0" />
-            <p className="text-sm font-medium text-foreground">{t("trailMap")}</p>
-          </div>
-          <Dialog open={isMapOpen} onOpenChange={handleMapOpenChange}>
-            <DialogTrigger asChild>
-              <Button variant="outline" size="sm">
-                {t("viewMap")}
-              </Button>
-            </DialogTrigger>
-            <DialogContent className="w-full max-h-[85vh] overflow-auto">
-              <DialogHeader>
-                <DialogTitle className="font-serif">
-                  {resort.name} — {t("trailMap")}
-                </DialogTitle>
-              </DialogHeader>
-              <div className="mt-2 space-y-4">
-                {trailMapUrls.length > 0 ? (
-                  trailMapUrls.map((url, index) => (
-                    <Image
-                      key={url}
-                      src={url}
-                      alt={`${resort.name} trail map ${index + 1}`}
-                      width={1200}
-                      height={800}
-                      className="w-full h-auto rounded-md"
-                    />
-                  ))
-                ) : (
-                  !isLoadingTrailMaps && (
-                    <Image
-                      src={resort.trailMap}
-                      alt={`${resort.name} trail map`}
-                      width={1200}
-                      height={800}
-                      className="w-full h-auto rounded-md"
-                    />
-                  )
-                )}
+        {/* Trail Map - inline, with a full-size dialog */}
+        {trailMapUrls.length > 0 && (
+          <div className="space-y-4 p-5">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-4">
+                <Map className="w-4 h-4 text-muted-foreground shrink-0" />
+                <p className="text-sm font-medium text-foreground">{t("trailMap")}</p>
               </div>
-            </DialogContent>
-          </Dialog>
-        </div>
+              <Dialog>
+                <DialogTrigger asChild>
+                  <Button variant="outline" size="sm">
+                    {t("viewFullSize")}
+                  </Button>
+                </DialogTrigger>
+                <DialogContent className="w-full max-h-[85vh] overflow-auto">
+                  <DialogHeader>
+                    <DialogTitle className="font-serif">
+                      {resort.name} — {t("trailMap")}
+                    </DialogTitle>
+                  </DialogHeader>
+                  <div className="mt-2 space-y-4">
+                    {trailMapUrls.map((url, index) => (
+                      <Image
+                        key={url}
+                        src={url}
+                        alt={trailMapUrls.length > 1 ? `${trailMapAlt} ${index + 1}` : trailMapAlt}
+                        width={1600}
+                        height={1067}
+                        className="w-full h-auto rounded-md"
+                      />
+                    ))}
+                  </div>
+                </DialogContent>
+              </Dialog>
+            </div>
+            <figure>
+              <div className="relative aspect-[3/2] overflow-hidden rounded-md bg-muted">
+                <Image
+                  src={trailMapUrls[0]}
+                  alt={trailMapAlt}
+                  fill
+                  sizes="(min-width: 896px) 848px, 100vw"
+                  className="object-contain"
+                />
+              </div>
+              <figcaption className="mt-2 text-xs text-muted-foreground">
+                {trailMapAlt}
+              </figcaption>
+            </figure>
+          </div>
+        )}
       </div>
     </section>
   );
