@@ -130,7 +130,13 @@ const ResortCard = ({
             </div>
             <div className="flex flex-col justify-between space-y-1">
               <div className="flex items-center gap-1 text-muted-foreground h-[30px]">
-                <Image alt="ski-icons" src={skiIcon} width={16} height={16} />
+                <Image
+                  alt=""
+                  aria-hidden="true"
+                  src={skiIcon}
+                  width={16}
+                  height={16}
+                />
                 <span className="text-[10px] font-bold uppercase tracking-wide">
                   {t("skiRental")}
                 </span>
@@ -142,7 +148,8 @@ const ResortCard = ({
             <div className="flex flex-col justify-between space-y-1">
               <div className="flex items-center gap-1 text-muted-foreground">
                 <Image
-                  alt="ski-icons"
+                  alt=""
+                  aria-hidden="true"
                   src={snowboardIcon}
                   width={14}
                   height={14}
@@ -159,7 +166,8 @@ const ResortCard = ({
               <div className="flex flex-col justify-between space-y-1 ml-4">
                 <div className="flex items-center gap-1 text-muted-foreground h-[30px]">
                   <Image
-                    alt="ski-icons"
+                    alt=""
+                    aria-hidden="true"
                     src={tubbingIcon}
                     width={14}
                     height={14}

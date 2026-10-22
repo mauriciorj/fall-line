@@ -17,7 +17,9 @@ const QuickStatsCards = (resort: Resort) => {
       <div className="flex flex-col justify-between bg-card rounded-lg p-5 border border-border">
         <div className="flex items-center gap-2 text-muted-foreground mb-2">
           <CableCar className="w-3.5 h-3.5" />
-          <span className="text-xs uppercase tracking-wide">{t("liftPass")}</span>
+          <span className="text-xs uppercase tracking-wide">
+            {t("liftPass")}
+          </span>
         </div>
         <p className="text-2xl font-medium text-foreground">
           ${resort.dayTicketPrice}
@@ -25,8 +27,16 @@ const QuickStatsCards = (resort: Resort) => {
       </div>
       <div className="flex flex-col justify-between  bg-card rounded-lg p-5 border border-border">
         <div className="flex items-center gap-2 text-muted-foreground mb-2">
-          <Image alt="ski-icons" src={skiIcon} width={16} height={16} />
-          <span className="text-xs uppercase tracking-wide">{t("skiRental")}</span>
+          <Image
+            alt=""
+            aria-hidden="true"
+            src={skiIcon}
+            width={16}
+            height={16}
+          />
+          <span className="text-xs uppercase tracking-wide">
+            {t("skiRental")}
+          </span>
         </div>
         <p className="text-2xl font-medium text-foreground">
           ${resort.skiRentalPrice}
@@ -34,7 +44,13 @@ const QuickStatsCards = (resort: Resort) => {
       </div>
       <div className="flex flex-col justify-between  bg-card rounded-lg p-5 border border-border">
         <div className="flex items-center gap-2 text-muted-foreground mb-2">
-          <Image alt="ski-icons" src={snowboardIcon} width={14} height={14} />
+          <Image
+            alt=""
+            aria-hidden="true"
+            src={snowboardIcon}
+            width={14}
+            height={14}
+          />
           <span className="text-xs uppercase tracking-wide">
             {t("snowboardRental")}
           </span>
@@ -46,8 +62,16 @@ const QuickStatsCards = (resort: Resort) => {
       {Boolean(resort?.tubbingPrice && resort?.tubbingPrice > 0) && (
         <div className="flex flex-col justify-between  bg-card rounded-lg p-5 border border-border">
           <div className="flex items-center gap-2 text-muted-foreground mb-2">
-            <Image alt="ski-icons" src={tubbingIcon} width={14} height={14} />
-            <span className="text-xs uppercase tracking-wide">{t("tubbing")}</span>
+            <Image
+              alt=""
+              aria-hidden="true"
+              src={tubbingIcon}
+              width={14}
+              height={14}
+            />
+            <span className="text-xs uppercase tracking-wide">
+              {t("tubbing")}
+            </span>
           </div>
           <p className="text-2xl font-medium text-foreground">
             ${resort.tubbingPrice}
@@ -57,7 +81,9 @@ const QuickStatsCards = (resort: Resort) => {
       <div className="flex flex-col justify-between  bg-card rounded-lg p-5 border border-border">
         <div className="flex items-center gap-2 text-muted-foreground mb-2">
           <Mountain className="w-4 h-4" />
-          <span className="text-xs uppercase tracking-wide">{t("totalRuns")}</span>
+          <span className="text-xs uppercase tracking-wide">
+            {t("totalRuns")}
+          </span>
         </div>
         <p className="text-2xl font-medium text-foreground">{totalTracks}</p>
       </div>
