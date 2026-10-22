@@ -151,6 +151,9 @@ const translations: Record<Locale, Record<string, string>> = {
     metaCountryTitle: "{country} Ski Resorts by Region",
     metaCountryDescription:
       "Ski resorts in {country} by region: {regions}. Compare lift ticket prices, rentals, runs and amenities.",
+    aboutTitle: "About {name}",
+    highlightsTitle: "Highlights",
+    faqTitle: "Frequently asked questions",
   },
   fr: {
     appName: "Guide de ski de l’Ontario",
@@ -297,6 +300,9 @@ const translations: Record<Locale, Record<string, string>> = {
     metaCountryTitle: "Stations de ski – {country}, par région",
     metaCountryDescription:
       "Stations de ski – {country}, par région : {regions}. Comparez les prix des billets, la location, les pistes et les services.",
+    aboutTitle: "À propos de {name}",
+    highlightsTitle: "Points forts",
+    faqTitle: "Foire aux questions",
   },
   es: {
     appName: "Guía de esquí de Ontario",
@@ -443,6 +449,9 @@ const translations: Record<Locale, Record<string, string>> = {
     metaCountryTitle: "Estaciones de esquí en {country} por región",
     metaCountryDescription:
       "Estaciones de esquí en {country} por región: {regions}. Compara precios de pases, alquiler, pistas y servicios.",
+    aboutTitle: "Acerca de {name}",
+    highlightsTitle: "Puntos destacados",
+    faqTitle: "Preguntas frecuentes",
   },
 };
 

@@ -13,6 +13,10 @@ const locationFields = v.object({
 const resortFieldNames = [
   "resortId",
   "published",
+  "description",
+  "highlights",
+  "faq",
+  "contentUpdatedAt",
   "name",
   "continent",
   "country",

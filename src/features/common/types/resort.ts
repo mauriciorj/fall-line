@@ -1,4 +1,13 @@
 import { StaticImageData } from "next/image";
+import type { Locale } from "@/src/i18n/translations";
+
+export type LocalizedText = Partial<Record<Locale, string>>;
+export type LocalizedStrings = Partial<Record<Locale, string[]>>;
+export interface FaqItem {
+  question: string;
+  answer: string;
+}
+export type LocalizedFaq = Partial<Record<Locale, FaqItem[]>>;
 
 export interface ResortHourRow {
   day: string;
@@ -37,6 +46,10 @@ export interface Resort {
   hasZipline?: boolean;
   resortId: string;
   published?: boolean;
+  description?: LocalizedText;
+  highlights?: LocalizedStrings;
+  faq?: LocalizedFaq;
+  contentUpdatedAt?: number;
   continent?: string;
   country?: string;
   region?: string;

@@ -87,9 +87,41 @@ export const resortRentalsFields = {
   rentals: v.any(),
 };
 
+// Editorial content, keyed by UI locale. Missing locales fall back to `en`.
+const localizedText = v.object({
+  en: v.optional(v.string()),
+  fr: v.optional(v.string()),
+  es: v.optional(v.string()),
+});
+
+const localizedStrings = v.object({
+  en: v.optional(v.array(v.string())),
+  fr: v.optional(v.array(v.string())),
+  es: v.optional(v.array(v.string())),
+});
+
+const faqItemSchema = v.object({
+  question: v.string(),
+  answer: v.string(),
+});
+
+const localizedFaq = v.object({
+  en: v.optional(v.array(faqItemSchema)),
+  fr: v.optional(v.array(faqItemSchema)),
+  es: v.optional(v.array(faqItemSchema)),
+});
+
+export const resortEditorialFields = {
+  description: v.optional(localizedText),
+  highlights: v.optional(localizedStrings),
+  faq: v.optional(localizedFaq),
+  contentUpdatedAt: v.optional(v.number()),
+};
+
 export const resortsFields = {
   resortId: v.string(),
   published: v.optional(v.boolean()),
+  ...resortEditorialFields,
   name: v.optional(v.string()),
   continent: v.optional(v.string()),
   country: v.optional(v.string()),

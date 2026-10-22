@@ -22,6 +22,11 @@ import LocationMap from "@/src/features/place/component/locationMap";
 import PricingSection from "@/src/features/place/component/pricingSection";
 import TerrainSection from "@/src/features/place/component/terrainSection";
 import TracksSection from "@/place/component/tracksSection";
+import {
+  AboutSection,
+  FaqSection,
+  HighlightsSection,
+} from "@/src/features/place/component/editorialSections";
 import { useLanguage } from "@/src/i18n";
 import { localizePath } from "@/src/i18n/routing";
 import { useFiltersContext } from "@/context/filtersContext";
@@ -142,6 +147,9 @@ const ResortDetail = ({
 
         <ActivitiesList resort={resort} />
 
+        <AboutSection resort={resort} />
+        <HighlightsSection resort={resort} />
+
         {/* Main Info */}
         <InfoSection
           resort={resort}
@@ -161,6 +169,8 @@ const ResortDetail = ({
         {/* Location */}
         <LocationSection resort={resort} />
         <LocationMap resort={resort} />
+
+        <FaqSection resort={resort} />
       </main>
     </div>
   );

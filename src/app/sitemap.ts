@@ -61,7 +61,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const resortEntries = resorts.flatMap((resort, index) =>
     localizedEntries(
       getResortLocationPath(resort.resortId, resort.country, resort.region),
-      lastModified(conditions[index]?.updatedAt),
+      lastModified(
+        Math.max(conditions[index]?.updatedAt ?? 0, resort.contentUpdatedAt ?? 0),
+      ),
     ),
   );
   const articleEntries = articles.map((article) =>

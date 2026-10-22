@@ -8,6 +8,13 @@ import type { Id } from "@/convex/_generated/dataModel";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import EditorialEditor, {
+  EditorialDraft,
+  emptyEditorial,
+  fromEditorialDraft,
+  toEditorialDraft,
+} from "@/src/features/admin/components/editorialEditor";
+import type { LocalizedFaq, LocalizedStrings, LocalizedText } from "@/types/resort";
 
 type Block = { type: "paragraph" | "heading" | "list"; text: string; level?: number; items?: string[] };
 
@@ -28,6 +35,9 @@ type ResortRecord = {
   tubbingPrice?: number;
   rating?: number;
   published?: boolean;
+  description?: LocalizedText;
+  highlights?: LocalizedStrings;
+  faq?: LocalizedFaq;
 };
 
 type LocationRecord = { _id: string; country: string; region: string };
@@ -80,6 +90,7 @@ function AdminDashboard() {
     [resorts, selectedResortId],
   );
   const [resortForm, setResortForm] = useState<Record<string, string | number | boolean | undefined>>({});
+  const [editorial, setEditorial] = useState<EditorialDraft>(emptyEditorial);
   const [adminEmail, setAdminEmail] = useState("");
   const [draft, setDraft] = useState<Draft>(emptyDraft);
   const [editingArticleId, setEditingArticleId] = useState<Id<"articles"> | null>(null);
@@ -103,18 +114,19 @@ function AdminDashboard() {
       rating: resort.rating ?? "",
       published: resort.published !== false,
     });
+    setEditorial(toEditorialDraft(resort));
   };
 
   const saveResort = async () => {
     if (!selectedResortId) return;
     setBusy(true);
     try {
-      const fields = { ...resortForm };
+      const fields: Record<string, unknown> = { ...resortForm };
       for (const field of ["dayTicketPrice", "lessonsPrice", "skiRentalPrice", "snowBoardRentalPrice", "tubbingPrice", "rating"]) {
         const value = fields[field];
         fields[field] = value === "" ? undefined : Number(value);
       }
-      await updateResort({ id: selectedResortId, fields });
+      await updateResort({ id: selectedResortId, fields: { ...fields, ...fromEditorialDraft(editorial) } });
     } finally {
       setBusy(false);
     }
@@ -217,6 +229,7 @@ function AdminDashboard() {
               <Input key={field} type="number" step="any" value={String(resortForm[field] ?? "")} placeholder={field} onChange={(event) => setResortForm({ ...resortForm, [field]: event.target.value })} />
             ))}
             <label className="flex items-center gap-2 text-sm"><input type="checkbox" checked={Boolean(resortForm.published)} onChange={(event) => setResortForm({ ...resortForm, published: event.target.checked })} /> Published</label>
+            <EditorialEditor value={editorial} onChange={setEditorial} />
             <Button disabled={busy} onClick={saveResort}>Save resort</Button>
           </div>
         )}

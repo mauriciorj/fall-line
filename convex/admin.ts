@@ -122,14 +122,17 @@ export const updateResort = mutation({
   returns: v.null(),
   handler: async (ctx, args) => {
     await requireAdmin(ctx);
+    const editorial = new Set(["description", "highlights", "faq"]);
     const allowed = new Set([
       "published", "name", "address", "website", "email", "phone", "tollFree",
       "dayTicketPrice", "lessonsPrice", "skiRentalPrice", "snowBoardRentalPrice",
-      "tubbingPrice", "rating", "ticketUrl",
+      "tubbingPrice", "rating", "ticketUrl", ...editorial,
     ]);
     const input = args.fields as Record<string, unknown>;
     const fields = Object.fromEntries(Object.entries(input).filter(([key]) => allowed.has(key)));
-    await ctx.db.patch(args.id, fields);
+    const touchesEditorial = Object.keys(fields).some((key) => editorial.has(key));
+    // Schema validation on patch rejects malformed editorial payloads.
+    await ctx.db.patch(args.id, touchesEditorial ? { ...fields, contentUpdatedAt: Date.now() } : fields);
     return null;
   },
 });

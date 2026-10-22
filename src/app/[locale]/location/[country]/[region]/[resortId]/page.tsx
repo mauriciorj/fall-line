@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { preloadQuery, preloadedQueryResult } from "convex/nextjs";
 import { api } from "@/convex/_generated/api";
 import ResortDetail from "@/src/features/place/component/resortDetail";
+import { pickLocalized, summarize } from "@/src/i18n/localized";
 import { localizePath } from "@/src/i18n/routing";
 import type { Locale } from "@/src/i18n/translations";
 import {
@@ -62,7 +63,13 @@ export async function generateMetadata({
   }
 
   const title = resortTitle(resort, locale);
-  const description = resortDescription(resort, locale);
+  // Editorial copy in the page's own language beats the generated summary;
+  // an English-only description is not used for FR/ES metadata.
+  const editorial = pickLocalized(resort.description, locale);
+  const description =
+    editorial && editorial.lang === locale
+      ? summarize(editorial.value)
+      : resortDescription(resort, locale);
   const path = getResortLocationPath(
     resort.resortId,
     resort.country,
