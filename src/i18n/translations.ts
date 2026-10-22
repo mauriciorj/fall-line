@@ -168,6 +168,23 @@ const translations: Record<Locale, Record<string, string>> = {
     sectionAccommodations: "{name} accommodations",
     trailMapOf: "{name} trail map",
     viewFullSize: "View full size",
+    source: "Source",
+    aboutPage: "About",
+    aboutHeading: "About {site}",
+    aboutMetaDescription:
+      "What {site} is, where its resort data comes from, how often it is updated and how to report a correction.",
+    aboutIntro:
+      "{site} compares ski resorts and hills in Ontario and across Canada in one place: day lift ticket prices, ski and snowboard rentals, runs by difficulty, hours, trail status and snow conditions, with a map and directions for each resort.",
+    aboutDataHeading: "Where the data comes from",
+    aboutDataBody:
+      "Hours, trail status, lift status and snow conditions are collected automatically from each resort’s official website and refreshed regularly. Prices and amenities are checked against the resort’s official pages. Each section shows when it was last updated and links to its source, so you can verify any figure before you go.",
+    aboutAccuracyHeading: "Accuracy",
+    aboutAccuracyBody:
+      "Resorts change prices, schedules and openings without notice. Treat the figures here as a starting point and confirm with the resort before travelling. If you spot an error, tell us and we will correct it.",
+    aboutLanguagesHeading: "Languages",
+    aboutLanguagesBody:
+      "The guide is available in English, French and Spanish. Resort data is the same in every language; editorial descriptions are translated as they become available.",
+    aboutContactBody: "Questions, corrections or feedback: use the contact page.",
   },
   fr: {
     appName: "Guide de ski de l’Ontario",
@@ -331,6 +348,23 @@ const translations: Record<Locale, Record<string, string>> = {
     sectionAccommodations: "{name} : hébergement",
     trailMapOf: "Plan des pistes – {name}",
     viewFullSize: "Voir en plein format",
+    source: "Source",
+    aboutPage: "À propos",
+    aboutHeading: "À propos de {site}",
+    aboutMetaDescription:
+      "Ce qu’est {site}, d’où proviennent les données des stations, à quelle fréquence elles sont mises à jour et comment signaler une correction.",
+    aboutIntro:
+      "{site} compare les stations et centres de ski de l’Ontario et du Canada en un seul endroit : prix des billets de remontée à la journée, location de skis et de planches, pistes par niveau, horaires, état des pistes et conditions de neige, avec une carte et l’itinéraire pour chaque station.",
+    aboutDataHeading: "D’où viennent les données",
+    aboutDataBody:
+      "Les horaires, l’état des pistes et des remontées et les conditions de neige sont recueillis automatiquement sur le site officiel de chaque station et actualisés régulièrement. Les prix et les services sont vérifiés sur les pages officielles de la station. Chaque section indique la date de sa dernière mise à jour et renvoie à sa source, pour que vous puissiez vérifier toute donnée avant de partir.",
+    aboutAccuracyHeading: "Exactitude",
+    aboutAccuracyBody:
+      "Les stations modifient prix, horaires et ouvertures sans préavis. Considérez les données présentées comme un point de départ et confirmez auprès de la station avant de vous déplacer. Si vous repérez une erreur, signalez-la et nous la corrigerons.",
+    aboutLanguagesHeading: "Langues",
+    aboutLanguagesBody:
+      "Le guide est offert en anglais, en français et en espagnol. Les données des stations sont identiques dans toutes les langues; les descriptions éditoriales sont traduites au fur et à mesure.",
+    aboutContactBody: "Questions, corrections ou commentaires : utilisez la page de contact.",
   },
   es: {
     appName: "Guía de esquí de Ontario",
@@ -494,6 +528,23 @@ const translations: Record<Locale, Record<string, string>> = {
     sectionAccommodations: "{name}: alojamiento",
     trailMapOf: "Mapa de pistas de {name}",
     viewFullSize: "Ver a tamaño completo",
+    source: "Fuente",
+    aboutPage: "Acerca de",
+    aboutHeading: "Acerca de {site}",
+    aboutMetaDescription:
+      "Qué es {site}, de dónde provienen los datos de las estaciones, con qué frecuencia se actualizan y cómo informar una corrección.",
+    aboutIntro:
+      "{site} compara estaciones y centros de esquí de Ontario y de todo Canadá en un solo lugar: precios de pases diarios, alquiler de esquís y snowboard, pistas por nivel, horarios, estado de las pistas y condiciones de nieve, con mapa y cómo llegar a cada estación.",
+    aboutDataHeading: "De dónde provienen los datos",
+    aboutDataBody:
+      "Horarios, estado de pistas y remontes y condiciones de nieve se recopilan automáticamente del sitio web oficial de cada estación y se actualizan con regularidad. Los precios y servicios se comprueban en las páginas oficiales de la estación. Cada sección muestra cuándo se actualizó por última vez y enlaza a su fuente, para que puedas verificar cualquier dato antes de ir.",
+    aboutAccuracyHeading: "Exactitud",
+    aboutAccuracyBody:
+      "Las estaciones cambian precios, horarios y aperturas sin previo aviso. Toma las cifras como punto de partida y confírmalas con la estación antes de viajar. Si detectas un error, avísanos y lo corregiremos.",
+    aboutLanguagesHeading: "Idiomas",
+    aboutLanguagesBody:
+      "La guía está disponible en inglés, francés y español. Los datos de las estaciones son los mismos en todos los idiomas; las descripciones editoriales se traducen a medida que están disponibles.",
+    aboutContactBody: "Preguntas, correcciones o comentarios: usa la página de contacto.",
   },
 };
 

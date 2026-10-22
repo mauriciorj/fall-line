@@ -24,6 +24,7 @@ interface ResortInfoSectionProps {
   resort: Resort;
   resortHours: ResortHourSection[];
   resortHoursUpdatedAt?: number | null;
+  resortHoursSourceUrl?: string | null;
 }
 
 function StarRating({ rating }: { rating: number }) {
@@ -44,6 +45,7 @@ const InfoSection = ({
   resort,
   resortHours,
   resortHoursUpdatedAt,
+  resortHoursSourceUrl,
 }: ResortInfoSectionProps) => {
   const { t } = useLanguage();
   // Open by default so hours are in the server-rendered HTML (crawlers, no-JS).
@@ -66,6 +68,7 @@ const InfoSection = ({
                 <UpdatedAt
                   timestamp={resortHoursUpdatedAt}
                   labelKey="hoursUpdatedOn"
+                  sourceUrl={resortHoursSourceUrl}
                   className="mt-0.5 block"
                 />
               </div>

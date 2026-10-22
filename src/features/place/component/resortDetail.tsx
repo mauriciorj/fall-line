@@ -155,6 +155,7 @@ const ResortDetail = ({
           resort={resort}
           resortHours={dbResortHours?.hours ?? []}
           resortHoursUpdatedAt={dbResortHours?.updatedAt}
+          resortHoursSourceUrl={dbResortHours?.sourceUrl}
         />
         <AccommodationsSection resort={resort} />
 
@@ -162,6 +163,7 @@ const ResortDetail = ({
         <TracksSection
           resort={resort}
           conditionsUpdatedAt={dbWeatherAndStatus?.updatedAt}
+          conditionsSourceUrl={dbWeatherAndStatus?.sourceUrl}
         />
 
         <TerrainSection resort={resort} />

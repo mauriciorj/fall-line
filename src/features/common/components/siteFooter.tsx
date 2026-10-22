@@ -13,6 +13,7 @@ import { getResortLocationPath } from "@/utils/convexResort";
 const navLinks = [
   { href: "/", labelKey: "resortList" },
   { href: "/blog", labelKey: "blog" },
+  { href: "/about", labelKey: "aboutPage" },
   { href: "/contact", labelKey: "contactUs" },
   { href: "/terms", labelKey: "terms" },
   { href: "/privacy", labelKey: "privacy" },

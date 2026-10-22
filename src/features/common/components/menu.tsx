@@ -2,6 +2,7 @@
 
 import {
   FileText,
+  Info,
   List,
   LogOut,
   Mail,
@@ -107,6 +108,13 @@ const Menu = () => {
           >
             <Newspaper className="h-4 w-4 text-muted-foreground" />
             {t("blog")}
+          </Link>
+          <Link
+            href="/about"
+            className="flex items-center gap-3 rounded-md px-3 py-2.5 text-sm font-medium text-foreground hover:bg-accent transition-colors"
+          >
+            <Info className="h-4 w-4 text-muted-foreground" />
+            {t("aboutPage")}
           </Link>
           <Link
             href="/contact"

@@ -3,7 +3,12 @@ import { intlLocale, localizePath } from "@/src/i18n/routing";
 import { Locale, getTranslator } from "@/src/i18n/translations";
 import type { FaqItem, Resort, ResortHourSection } from "@/types/resort";
 import { getResortHeroImage } from "@/utils/convexResort";
-import { DEFAULT_OG_IMAGE, absoluteUrl, getSiteUrl } from "@/utils/seo";
+import {
+  DEFAULT_OG_IMAGE,
+  absoluteUrl,
+  getSiteUrl,
+  getSupportEmail,
+} from "@/utils/seo";
 
 const ORGANIZATION_ID = () => `${getSiteUrl()}/#organization`;
 
@@ -14,6 +19,7 @@ const countryCodes: Record<string, string> = {
 
 export function organizationNode(locale: Locale): JsonLdNode {
   const t = getTranslator(locale);
+  const email = getSupportEmail();
   return {
     "@type": "Organization",
     "@id": ORGANIZATION_ID(),
@@ -25,6 +31,35 @@ export function organizationNode(locale: Locale): JsonLdNode {
       width: 1200,
       height: 630,
     },
+    ...(email
+      ? {
+          email,
+          contactPoint: [
+            {
+              "@type": "ContactPoint",
+              contactType: "customer support",
+              email,
+              availableLanguage: ["en", "fr", "es"],
+            },
+          ],
+        }
+      : {}),
+  };
+}
+
+export function aboutPageNode(
+  locale: Locale,
+  options: { url: string; name: string; description: string },
+): JsonLdNode {
+  return {
+    "@type": "AboutPage",
+    "@id": options.url,
+    url: options.url,
+    name: options.name,
+    description: options.description,
+    inLanguage: intlLocale[locale],
+    isPartOf: { "@id": `${getSiteUrl()}/#website` },
+    mainEntity: { "@id": ORGANIZATION_ID() },
   };
 }
 

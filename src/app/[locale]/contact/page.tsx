@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { localizePath } from "@/src/i18n/routing";
 import { Locale, getTranslator } from "@/src/i18n/translations";
-import { localizedAlternates } from "@/utils/seo";
+import { getSupportEmail, localizedAlternates } from "@/utils/seo";
 
 type ContactParams = Promise<{ locale: Locale }>;
 
@@ -28,6 +28,7 @@ export default async function ContactPage({
 }) {
   const { locale } = await params;
   const t = getTranslator(locale);
+  const email = getSupportEmail();
 
   return (
     <main className="min-h-[calc(100vh-57px)] bg-background px-6 py-10">
@@ -48,11 +49,21 @@ export default async function ContactPage({
         <section className="space-y-3">
           <h2 className="text-2xl font-semibold">{t("getInTouch")}</h2>
           <p>{t("contactBody")}</p>
+          {email && (
+            <p>
+              {t("email")}:{" "}
+              <a className="text-primary hover:underline" href={`mailto:${email}`}>
+                {email}
+              </a>
+            </p>
+          )}
           <p>
-            {t("email")}:{" "}
-            <a className="text-primary hover:underline" href="mailto:support@mywebsite.com">
-              support@mywebsite.com
-            </a>
+            <Link
+              href={localizePath("/about", locale)}
+              className="text-primary hover:underline"
+            >
+              {t("aboutHeading", { site: t("appName") })}
+            </Link>
           </p>
         </section>
       </article>

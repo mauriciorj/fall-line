@@ -24,6 +24,11 @@ export function absoluteUrl(path: string) {
   return new URL(path, getSiteUrl()).toString();
 }
 
+// Unset → no email is shown anywhere. A placeholder address is worse than none.
+export function getSupportEmail() {
+  return process.env.NEXT_PUBLIC_SUPPORT_EMAIL?.trim() || undefined;
+}
+
 // Child pages that define `openGraph` replace the root block entirely, so they
 // spread this to keep site-wide fields.
 export function openGraphBase(locale: Locale) {

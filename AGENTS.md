@@ -10,5 +10,6 @@
 - After adding/removing routes, stale `.next/dev/types` can fail `next build` typechecking; run `next dev` once (or remove `.next/dev`) to regenerate.
 - Resort images: `scripts/generateResortAssets.mjs` scans `public/assets/resorts` and writes `src/data/resortAssets.json` (which hero/trail-map files exist). `pnpm dev`/`pnpm build` run it; rerun after adding assets. Resorts without a hero fall back to `/opengraph-image`.
 - Convex CLI behind the corporate TLS proxy needs `NODE_USE_SYSTEM_CA=1` (e.g. `NODE_USE_SYSTEM_CA=1 pnpm exec convex dev --once`).
+- `NEXT_PUBLIC_SUPPORT_EMAIL`: contact address shown on contact/privacy/terms and in Organization JSON-LD. Unset → no email is rendered (never use a placeholder address).
 - SEO env: set `NEXT_PUBLIC_SITE_URL` (production origin, used for `metadataBase`/canonical/OG URLs; falls back to `VERCEL_PROJECT_PRODUCTION_URL`, then `http://localhost:3000`) and optionally `GOOGLE_SITE_VERIFICATION` (Search Console token).
 - `next build` calls the Convex deployment (`NEXT_PUBLIC_CONVEX_URL`) for `generateStaticParams` and the footer; the root layout and data pages use `dynamic = "force-static"` + `revalidate` because `convex/nextjs` forces `cache: "no-store"`. Server-side `cookies()`/`headers()` are therefore empty — do not rely on them.

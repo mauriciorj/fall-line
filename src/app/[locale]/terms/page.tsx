@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { localizePath } from "@/src/i18n/routing";
 import { Locale, defaultLocale, getTranslator } from "@/src/i18n/translations";
-import { englishOnlyAlternates } from "@/utils/seo";
+import { englishOnlyAlternates, getSupportEmail } from "@/utils/seo";
 
 type TermsParams = Promise<{ locale: Locale }>;
 
@@ -20,6 +20,7 @@ export default async function TermsPage({
 }) {
   const { locale } = await params;
   const t = getTranslator(locale);
+  const email = getSupportEmail();
 
   return (
     <main className="min-h-[calc(100vh-57px)] bg-background px-6 py-10">
@@ -106,10 +107,16 @@ export default async function TermsPage({
         <section className="space-y-3">
           <h2 className="text-2xl font-semibold">8. Contact</h2>
           <p>
-            Questions about these terms: {" "}
-            <a className="text-primary hover:underline" href="mailto:support@mywebsite.com">
-              support@mywebsite.com
-            </a>
+            Questions about these terms:{" "}
+            {email ? (
+              <a className="text-primary hover:underline" href={`mailto:${email}`}>
+                {email}
+              </a>
+            ) : (
+              <Link href={localizePath("/contact", locale)} className="text-primary hover:underline">
+                {t("contactUs")}
+              </Link>
+            )}
             .
           </p>
         </section>

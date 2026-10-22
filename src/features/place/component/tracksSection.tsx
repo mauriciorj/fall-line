@@ -24,6 +24,7 @@ import { getResortTrailMaps } from "@/utils/convexResort";
 interface TracksSectionProps {
   resort: Resort;
   conditionsUpdatedAt?: number | null;
+  conditionsSourceUrl?: string | null;
 }
 
 type TrackDifficulty = NonNullable<Resort["trackConditions"]>[number]["difficulty"];
@@ -42,7 +43,11 @@ const difficultyColor = {
   "free-style": "bg-run-free-style",
 };
 
-const TracksSection = ({ resort, conditionsUpdatedAt }: TracksSectionProps) => {
+const TracksSection = ({
+  resort,
+  conditionsUpdatedAt,
+  conditionsSourceUrl,
+}: TracksSectionProps) => {
   const { t } = useLanguage();
   // Open by default so trail names/status are in the server-rendered HTML.
   const [isOpen, setIsOpen] = useState(true);
@@ -107,6 +112,7 @@ const TracksSection = ({ resort, conditionsUpdatedAt }: TracksSectionProps) => {
                 <UpdatedAt
                   timestamp={conditionsUpdatedAt}
                   labelKey="conditionsUpdatedOn"
+                  sourceUrl={conditionsSourceUrl}
                   className="mt-0.5 block"
                 />
               </div>
