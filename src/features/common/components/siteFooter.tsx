@@ -55,7 +55,14 @@ const SiteFooter = ({ groups }: { groups: FooterGroup[] }) => {
           <nav aria-label={t("footerResorts")} className="space-y-6">
             {groups.map((group) => (
               <div key={group.label} className="space-y-2">
-                <p className="font-semibold text-foreground">{group.label}</p>
+                <p className="font-semibold">
+                  <Link
+                    href={group.path}
+                    className="text-foreground hover:text-primary hover:underline"
+                  >
+                    {group.label}
+                  </Link>
+                </p>
                 <ul className="flex flex-wrap gap-x-4 gap-y-1.5">
                   {group.resorts.map((resort) => (
                     <li key={resort.resortId}>

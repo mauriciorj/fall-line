@@ -7,10 +7,13 @@ import { ArrowLeft, MapPin, Ticket } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { api } from "@/convex/_generated/api";
 import {
+  getCountryPath,
+  getRegionPath,
   getResortHeroImage,
   toResort,
   toTrackConditions,
 } from "@/utils/convexResort";
+import LocationBreadcrumb from "@/src/features/location/components/locationBreadcrumb";
 import InfoSection from "@/src/features/place/component/infoSection";
 import ActivitiesList from "@/components/activitiesList";
 import AccommodationsSection from "@/src/features/place/component/accommodationsSection";
@@ -98,6 +101,25 @@ const ResortDetail = ({
 
       {/* Content */}
       <main className="max-w-4xl mx-auto mb-20 px-6 py-10 space-y-10">
+        <LocationBreadcrumb
+          locale={locale}
+          items={[
+            { label: t("home"), href: "/" },
+            ...(resort.country
+              ? [{ label: resort.country, href: getCountryPath(resort.country) }]
+              : []),
+            ...(resort.country && resort.region
+              ? [
+                  {
+                    label: resort.region,
+                    href: getRegionPath(resort.country, resort.region),
+                  },
+                ]
+              : []),
+            { label: resort.name },
+          ]}
+        />
+
         {/* Buy Tickets CTA - Sticky on mobile */}
         {resort?.ticketUrl && (
           <div className="sticky top-16 z-30 bg-background/95 backdrop-blur-sm px-6 py-3">

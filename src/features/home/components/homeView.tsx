@@ -11,8 +11,10 @@ import {
 import { useFiltersContext } from "@/context/filtersContext";
 import { useIsMobile } from "@/hooks/useMobile";
 import { useLanguage } from "@/src/i18n";
+import Link from "@/src/i18n/link";
 import { DEFAULT_LOCATION } from "@/types/location";
 import { Resort } from "@/types/resort";
+import { getRegionPath } from "@/utils/convexResort";
 import { applyResortFilters } from "@/utils/resortFilters";
 
 interface HomeViewProps {
@@ -35,7 +37,8 @@ const HomeView = ({ initialResorts }: HomeViewProps) => {
     setSelectedResort,
   } = useFiltersContext();
 
-  const region = selectedLocation?.region ?? DEFAULT_LOCATION.region;
+  const location = selectedLocation ?? DEFAULT_LOCATION;
+  const region = location.region;
   const intro = (
     <div className="border-b border-border px-6 py-4">
       <h1 className="font-serif text-xl font-medium text-foreground">
@@ -44,6 +47,12 @@ const HomeView = ({ initialResorts }: HomeViewProps) => {
       <p className="mt-1 text-sm text-muted-foreground">
         {t("homeIntro", { region })}
       </p>
+      <Link
+        href={getRegionPath(location.country, region)}
+        className="mt-2 inline-block text-sm font-medium text-primary hover:underline"
+      >
+        {t("allResortsIn", { region })} →
+      </Link>
     </div>
   );
 

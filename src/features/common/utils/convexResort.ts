@@ -1,6 +1,6 @@
 import { Resort } from "@/types/resort";
 
-function toAssetSegment(value: string | undefined) {
+export function toAssetSegment(value: string | undefined) {
   return (
     value
       ?.normalize("NFKD")
@@ -54,13 +54,20 @@ export function getResortLocationParams(
   };
 }
 
+export function getCountryPath(country?: string) {
+  return `/location/${toAssetSegment(country)}`;
+}
+
+export function getRegionPath(country?: string, region?: string) {
+  return `${getCountryPath(country)}/${toAssetSegment(region)}`;
+}
+
 export function getResortLocationPath(
   resortId: string,
   country?: string,
   region?: string,
 ) {
-  const params = getResortLocationParams(resortId, country, region);
-  return `/location/${params.country}/${params.region}/${params.resortId}`;
+  return `${getRegionPath(country, region)}/${toAssetSegment(resortId)}`;
 }
 
 type DbResort = Partial<Resort> & {

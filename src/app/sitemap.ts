@@ -4,6 +4,7 @@ import { api } from "@/convex/_generated/api";
 import { localizePath } from "@/src/i18n/routing";
 import { defaultLocale, locales } from "@/src/i18n/translations";
 import { getResortLocationPath } from "@/utils/convexResort";
+import { groupByCountry } from "@/utils/locationGroups";
 import { listPublishedResorts } from "@/utils/publishedResorts";
 import { absoluteUrl, languageAlternates } from "@/utils/seo";
 
@@ -53,6 +54,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ),
   );
 
+  const hubEntries = groupByCountry(resorts).flatMap((country) => [
+    ...localizedEntries(country.path),
+    ...country.regions.flatMap((region) => localizedEntries(region.path)),
+  ]);
   const resortEntries = resorts.flatMap((resort, index) =>
     localizedEntries(
       getResortLocationPath(resort.resortId, resort.country, resort.region),
@@ -73,6 +78,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     englishEntry("/blog", lastModified(latestArticleUpdate)),
     englishEntry("/privacy"),
     englishEntry("/terms"),
+    ...hubEntries,
     ...resortEntries,
     ...articleEntries,
   ];

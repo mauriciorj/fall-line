@@ -1,47 +1,15 @@
+import { cache } from "react";
 import { fetchQuery } from "convex/nextjs";
 import { api } from "@/convex/_generated/api";
 import { LocationOption, locationKey } from "@/types/location";
-
-export type PublishedResort = {
-  resortId: string;
-  name?: string;
-  country?: string;
-  region?: string;
-};
-
-export type FooterResort = {
-  resortId: string;
-  name: string;
-  country?: string;
-  region?: string;
-};
-
-export type FooterGroup = { label: string; resorts: FooterResort[] };
-
-// Grouped and sorted on the server so client rendering is deterministic.
-export function groupResortsByRegion(
-  resorts: PublishedResort[],
-): FooterGroup[] {
-  const groups = new Map<string, FooterResort[]>();
-  for (const { resortId, name, country, region } of resorts) {
-    const label = [region, country].filter(Boolean).join(", ") || "Other";
-    groups.set(label, [
-      ...(groups.get(label) ?? []),
-      { resortId, name: name ?? resortId, country, region },
-    ]);
-  }
-
-  return [...groups.entries()]
-    .sort(([a], [b]) => a.localeCompare(b))
-    .map(([label, items]) => ({
-      label,
-      resorts: items.sort((a, b) => a.name.localeCompare(b.name)),
-    }));
-}
+import type { Resort } from "@/types/resort";
+import { toResort } from "@/utils/convexResort";
+import { groupByRegion } from "@/utils/locationGroups";
 
 // Server-only. Uses the existing public queries so no new Convex functions
 // have to be deployed: distinct locations -> published resorts per location.
-export async function listPublishedResorts(): Promise<PublishedResort[]> {
+// Memoized per request so the layout (footer) and the page share one fetch.
+export const listPublishedResorts = cache(async (): Promise<Resort[]> => {
   const resortLocations = await fetchQuery(api.resorts.listLocations);
   const locations = new Map<string, LocationOption>();
   for (const { continent, country, region } of resortLocations) {
@@ -56,5 +24,35 @@ export async function listPublishedResorts(): Promise<PublishedResort[]> {
     ),
   );
 
-  return resortsByLocation.flat();
+  return resortsByLocation
+    .flat()
+    .map((resort) => toResort(resort))
+    .filter((resort): resort is Resort => resort !== null);
+});
+
+export type FooterResort = {
+  resortId: string;
+  name: string;
+  country?: string;
+  region?: string;
+};
+
+export type FooterGroup = {
+  label: string;
+  path: string;
+  resorts: FooterResort[];
+};
+
+// Grouped and sorted on the server so client rendering is deterministic.
+export function groupResortsByRegion(resorts: Resort[]): FooterGroup[] {
+  return groupByRegion(resorts).map((group) => ({
+    label: `${group.region}, ${group.country}`,
+    path: group.path,
+    resorts: group.resorts.map(({ resortId, name, country, region }) => ({
+      resortId,
+      name: name || resortId,
+      country,
+      region,
+    })),
+  }));
 }
