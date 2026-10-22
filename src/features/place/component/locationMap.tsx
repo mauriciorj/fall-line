@@ -1,46 +1,46 @@
 "use client";
 
-import { useMemo } from "react";
+import dynamic from "next/dynamic";
+import { useEffect, useRef, useState } from "react";
 import { ArrowUpRight } from "lucide-react";
-import { GoogleMap, MarkerF, useLoadScript } from "@react-google-maps/api";
 import MapPlaceholder from "@/components/resortMap/mapPlaceholder";
 import { useLanguage } from "@/src/i18n";
 import { Resort } from "@/types/resort";
 
+// Code-split and mounted only when the section is near the viewport, so the
+// page's LCP/INP never pay for a below-the-fold map.
+const LocationMapCanvas = dynamic(
+  () => import("@/src/features/place/component/locationMapCanvas"),
+  { ssr: false },
+);
+
 const LocationMap = ({ resort }: { resort: Resort }) => {
   const { t } = useLanguage();
-  const { isLoaded, loadError } = useLoadScript({
-    id: "google-maps-script",
-    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_JAVASCRIPT_API ?? "",
-  });
-  const options = useMemo(
-    () => ({
-      disableDefaultUI: true,
-      zoomControl: true,
-      mapTypeControl: false,
-      streetViewControl: false,
-      fullscreenControl: false,
-    }),
-    [],
-  );
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [isNearViewport, setIsNearViewport] = useState(false);
+
+  useEffect(() => {
+    const element = containerRef.current;
+    if (!element || isNearViewport) return;
+    if (typeof IntersectionObserver === "undefined") {
+      const timer = window.setTimeout(() => setIsNearViewport(true), 0);
+      return () => window.clearTimeout(timer);
+    }
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          setIsNearViewport(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "600px 0px" },
+    );
+    observer.observe(element);
+    return () => observer.disconnect();
+  }, [isNearViewport]);
 
   if (!resort.coordinates) {
     return null;
-  }
-
-  if (loadError || !isLoaded) {
-    return (
-      <section className="space-y-4">
-        <h2 className="font-serif text-xl font-medium text-foreground">
-          {t("map")}
-        </h2>
-        <div className="h-80 overflow-hidden rounded-lg border border-border">
-          <MapPlaceholder
-            message={t(loadError ? "unableLoadMap" : "loadingMap")}
-          />
-        </div>
-      </section>
-    );
   }
 
   return (
@@ -48,27 +48,15 @@ const LocationMap = ({ resort }: { resort: Resort }) => {
       <h2 className="font-serif text-xl font-medium text-foreground">
         {t("map")}
       </h2>
-      <div className="relative h-80 overflow-hidden rounded-lg border border-border">
-        <GoogleMap
-          mapContainerStyle={{ width: "100%", height: "100%" }}
-          center={resort.coordinates}
-          zoom={13}
-          options={options}
-        >
-          <MarkerF
-            position={resort.coordinates}
-            title={resort.name}
-            icon={{
-              path: "M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z",
-              fillColor: "#4A6FA5",
-              fillOpacity: 1,
-              strokeColor: "#ffffff",
-              strokeWeight: 2,
-              scale: 1.6,
-              anchor: { x: 12, y: 24 } as google.maps.Point,
-            }}
-          />
-        </GoogleMap>
+      <div
+        ref={containerRef}
+        className="relative h-80 overflow-hidden rounded-lg border border-border"
+      >
+        {isNearViewport ? (
+          <LocationMapCanvas resort={resort} />
+        ) : (
+          <MapPlaceholder message={t("loadingMap")} />
+        )}
         {resort.googleMapsUrl && (
           <a
             href={resort.googleMapsUrl}

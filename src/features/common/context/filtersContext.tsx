@@ -2,6 +2,7 @@
 
 import {
   createContext,
+  useCallback,
   useContext,
   useEffect,
   useMemo,
@@ -10,7 +11,7 @@ import {
   ReactNode,
 } from "react";
 import { useQuery } from "convex/react";
-import { useLoadScript } from "@react-google-maps/api";
+import dynamic from "next/dynamic";
 import { api } from "@/convex/_generated/api";
 import { FilterState } from "@/src/features/common/components/filter";
 import { toResort } from "@/utils/convexResort";
@@ -45,43 +46,26 @@ interface FiltersContextType {
 }
 
 const FiltersContext = createContext<FiltersContextType | undefined>(undefined);
-const SELECTED_LOCATION_STORAGE_KEY = "selected-location";
 
-function findLocation(
-  locations: LocationOption[],
-  country: string,
-  region: string,
-) {
-  const normalizedCountry = country.toLowerCase();
-  const normalizedRegion = region.toLowerCase();
-  return (
-    locations.find(
-      (location) =>
-        location.country.toLowerCase() === normalizedCountry &&
-        location.region.toLowerCase() === normalizedRegion,
-    ) ??
-    locations.find(
-      (location) =>
-        location.country.toLowerCase() === normalizedCountry &&
-        location.region.toLowerCase() === "unknown",
-    ) ??
-    locations.find((location) => location.country.toLowerCase() === normalizedCountry)
-  );
-}
+// Code-split: pulls in @react-google-maps/api only when a detection is pending.
+const RegionDetector = dynamic(() => import("@/components/regionDetector"), {
+  ssr: false,
+});
+const SELECTED_LOCATION_STORAGE_KEY = "selected-location";
 
 export function FiltersProvider({ children }: { children: ReactNode }) {
   const isGoogleMapsKeyAvailable = Boolean(
     process.env.NEXT_PUBLIC_GOOGLE_MAPS_JAVASCRIPT_API,
   );
-  const { isLoaded: isGoogleMapsLoaded, loadError: googleMapsLoadError } = useLoadScript({
-    id: "google-maps-script",
-    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_JAVASCRIPT_API ?? "",
-  });
   const [hoveredResort, setHoveredResort] = useState<string | null>(null);
   const [selectedResort, setSelectedResort] = useState<string | null>(null);
   const [selectedLocation, setSelectedLocation] =
     useState<LocationOption | null>(null);
   const [userCoordinates, setUserCoordinates] = useState<Coordinates | null>(
+    null,
+  );
+  // Coordinates awaiting reverse geocoding (first visit, no saved location).
+  const [pendingDetection, setPendingDetection] = useState<Coordinates | null>(
     null,
   );
   const locationInitialized = useRef(false);
@@ -90,9 +74,21 @@ export function FiltersProvider({ children }: { children: ReactNode }) {
 
   const dbLocations = useQuery(api.locations.list);
   const locations = useMemo(() => dbLocations ?? [], [dbLocations]);
+  const fallbackLocation = useMemo(
+    () => findDefaultLocation(locations),
+    [locations],
+  );
+
+  const commitLocation = useCallback((location: LocationOption) => {
+    locationInitialized.current = true;
+    window.localStorage.setItem(
+      SELECTED_LOCATION_STORAGE_KEY,
+      locationKey(location),
+    );
+    window.setTimeout(() => setSelectedLocation(location), 0);
+  }, []);
 
   useEffect(() => {
-    const fallbackLocation = findDefaultLocation(locations);
     if (
       locationInitialized.current ||
       dbLocations === undefined ||
@@ -107,14 +103,6 @@ export function FiltersProvider({ children }: { children: ReactNode }) {
     const savedLocation = locations.find(
       (location) => locationKey(location) === savedKey,
     );
-    const commitLocation = (location: LocationOption) => {
-      locationInitialized.current = true;
-      window.localStorage.setItem(
-        SELECTED_LOCATION_STORAGE_KEY,
-        locationKey(location),
-      );
-      window.setTimeout(() => setSelectedLocation(location), 0);
-    };
     const hasSavedLocation = Boolean(savedLocation);
 
     if (savedLocation) {
@@ -140,36 +128,13 @@ export function FiltersProvider({ children }: { children: ReactNode }) {
           return;
         }
 
-        if (!isGoogleMapsKeyAvailable || googleMapsLoadError) {
+        if (!isGoogleMapsKeyAvailable) {
           commitLocation(fallbackLocation);
           return;
         }
 
-        if (!isGoogleMapsLoaded) {
-          return;
-        }
-
-        new google.maps.Geocoder().geocode(
-          { location: coordinates },
-          (results, status) => {
-            if (status === "OK" && results?.[0]) {
-              const components = results[0].address_components;
-              const country = components.find((component) =>
-                component.types.includes("country"),
-              )?.long_name;
-              const region = components.find((component) =>
-                component.types.includes("administrative_area_level_1"),
-              )?.long_name;
-              const detected =
-                country && region
-                  ? findLocation(locations, country, region)
-                  : undefined;
-              commitLocation(detected ?? fallbackLocation);
-              return;
-            }
-            commitLocation(fallbackLocation);
-          },
-        );
+        // Defer to RegionDetector, which loads Google Maps only now.
+        setPendingDetection(coordinates);
       },
       () => {
         if (!hasSavedLocation) {
@@ -179,12 +144,21 @@ export function FiltersProvider({ children }: { children: ReactNode }) {
       { enableHighAccuracy: false, maximumAge: 300000, timeout: 10000 },
     );
   }, [
+    commitLocation,
     dbLocations,
-    googleMapsLoadError,
+    fallbackLocation,
     isGoogleMapsKeyAvailable,
-    isGoogleMapsLoaded,
     locations,
   ]);
+
+  const handleDetected = useCallback(
+    (location: LocationOption | null) => {
+      setPendingDetection(null);
+      const resolved = location ?? fallbackLocation;
+      if (resolved) commitLocation(resolved);
+    },
+    [commitLocation, fallbackLocation],
+  );
 
   const dbResorts = useQuery(
     api.resorts.list,
@@ -256,7 +230,16 @@ export function FiltersProvider({ children }: { children: ReactNode }) {
   };
 
   return (
-    <FiltersContext.Provider value={value}>{children}</FiltersContext.Provider>
+    <FiltersContext.Provider value={value}>
+      {pendingDetection && (
+        <RegionDetector
+          coordinates={pendingDetection}
+          locations={locations}
+          onResolved={handleDetected}
+        />
+      )}
+      {children}
+    </FiltersContext.Provider>
   );
 }
 
