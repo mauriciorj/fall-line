@@ -89,11 +89,12 @@ export default async function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <JsonLd nodes={[organizationNode(locale), webSiteNode(locale)]} />
+        {/* Ads conversion tag: not needed for first paint, so load after window.load. */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-18449858040"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="google-ads-tag" strategy="afterInteractive">
+        <Script id="google-ads-tag" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
