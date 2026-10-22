@@ -1,6 +1,7 @@
 import { cache } from "react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import JsonLd from "@/components/jsonLd";
 import LocationBreadcrumb from "@/src/features/location/components/locationBreadcrumb";
 import RegionStats, {
   priceRangeLabel,
@@ -8,6 +9,8 @@ import RegionStats, {
 import RegionTable from "@/src/features/location/components/regionTable";
 import { localizePath } from "@/src/i18n/routing";
 import { Locale, getTranslator } from "@/src/i18n/translations";
+import { getResortLocationPath } from "@/utils/convexResort";
+import { breadcrumbNode, itemListNode } from "@/utils/jsonLd";
 import { groupByRegion, regionStats } from "@/utils/locationGroups";
 import { listPublishedResorts } from "@/utils/publishedResorts";
 import {
@@ -88,9 +91,30 @@ export default async function RegionPage({
 
   const t = getTranslator(locale);
   const stats = regionStats(group.resorts);
+  const heading = t("regionHeading", { region: group.region, country: group.country });
 
   return (
     <main className="mx-auto max-w-6xl space-y-10 px-6 py-10">
+      <JsonLd
+        nodes={[
+          breadcrumbNode(
+            [
+              { name: t("home"), path: "/" },
+              { name: group.country, path: `/location/${group.countrySlug}` },
+              { name: group.region, path: group.path },
+            ],
+            locale,
+          ),
+          itemListNode(
+            heading,
+            group.resorts.map((resort) => ({
+              name: resort.name,
+              path: getResortLocationPath(resort.resortId, resort.country, resort.region),
+            })),
+            locale,
+          ),
+        ]}
+      />
       <header className="space-y-4">
         <LocationBreadcrumb
           locale={locale}
@@ -101,7 +125,7 @@ export default async function RegionPage({
           ]}
         />
         <h1 className="font-serif text-3xl font-semibold tracking-tight md:text-5xl">
-          {t("regionHeading", { region: group.region, country: group.country })}
+          {heading}
         </h1>
         <p className="max-w-3xl text-lg text-muted-foreground">
           {t("regionIntro", {

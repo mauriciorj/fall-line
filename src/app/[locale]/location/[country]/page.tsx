@@ -2,11 +2,13 @@ import { cache } from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import JsonLd from "@/components/jsonLd";
 import LocationBreadcrumb from "@/src/features/location/components/locationBreadcrumb";
 import { priceRangeLabel } from "@/src/features/location/components/regionStats";
 import { localizePath } from "@/src/i18n/routing";
 import { Locale, getTranslator } from "@/src/i18n/translations";
 import { getResortLocationPath } from "@/utils/convexResort";
+import { breadcrumbNode, itemListNode } from "@/utils/jsonLd";
 import { groupByCountry, regionStats } from "@/utils/locationGroups";
 import { listPublishedResorts } from "@/utils/publishedResorts";
 import {
@@ -80,16 +82,36 @@ export default async function CountryPage({
   if (!group) notFound();
 
   const t = getTranslator(locale);
+  const heading = t("countryHeading", { country: group.country });
 
   return (
     <main className="mx-auto max-w-6xl space-y-10 px-6 py-10">
+      <JsonLd
+        nodes={[
+          breadcrumbNode(
+            [
+              { name: t("home"), path: "/" },
+              { name: group.country, path: group.path },
+            ],
+            locale,
+          ),
+          itemListNode(
+            heading,
+            group.regions.map((region) => ({
+              name: t("regionHeading", { region: region.region, country: region.country }),
+              path: region.path,
+            })),
+            locale,
+          ),
+        ]}
+      />
       <header className="space-y-4">
         <LocationBreadcrumb
           locale={locale}
           items={[{ label: t("home"), href: "/" }, { label: group.country }]}
         />
         <h1 className="font-serif text-3xl font-semibold tracking-tight md:text-5xl">
-          {t("countryHeading", { country: group.country })}
+          {heading}
         </h1>
         <p className="max-w-3xl text-lg text-muted-foreground">
           {t("countryIntro", { country: group.country })}

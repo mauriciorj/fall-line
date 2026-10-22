@@ -4,12 +4,14 @@ import { notFound } from "next/navigation";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Geist, Geist_Mono } from "next/font/google";
 import Header from "@/components/header";
+import JsonLd from "@/components/jsonLd";
 import SiteFooter from "@/components/siteFooter";
 import ConvexClientProvider from "../ConvexClientProvider";
 import { FiltersProvider } from "@/src/features/common/context/filtersContext";
 import { LanguageProvider } from "@/src/i18n";
 import { isLocale } from "@/src/i18n/routing";
 import { getTranslator, locales } from "@/src/i18n/translations";
+import { organizationNode, webSiteNode } from "@/utils/jsonLd";
 import {
   groupResortsByRegion,
   listPublishedResorts,
@@ -81,6 +83,7 @@ export default async function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <JsonLd nodes={[organizationNode(locale), webSiteNode(locale)]} />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-18449858040"
           strategy="afterInteractive"

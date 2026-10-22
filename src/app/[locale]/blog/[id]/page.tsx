@@ -7,10 +7,13 @@ import {
   preloadedQueryResult,
 } from "convex/nextjs";
 import { api } from "@/convex/_generated/api";
+import JsonLd from "@/components/jsonLd";
 import BlogArticle from "@/src/features/blog/components/blogArticle";
-import type { Locale } from "@/src/i18n/translations";
+import { Locale, defaultLocale, getTranslator } from "@/src/i18n/translations";
+import { blogPostingNode, breadcrumbNode } from "@/utils/jsonLd";
 import {
   DEFAULT_OG_IMAGE,
+  absoluteUrl,
   englishOnlyAlternates,
   openGraphBase,
 } from "@/utils/seo";
@@ -80,14 +83,36 @@ export async function generateMetadata({
 export default async function BlogArticlePage({
   params,
 }: {
-  params: Promise<{ id: string }>;
+  params: Promise<{ locale: Locale; id: string }>;
 }) {
-  const { id } = await params;
+  const { locale, id } = await params;
   const preloadedArticle = await getPreloadedArticle(id);
+  const article = preloadedQueryResult(preloadedArticle) as ArticleSummary | null;
 
-  if (!preloadedQueryResult(preloadedArticle)) {
+  if (!article) {
     notFound();
   }
 
-  return <BlogArticle preloadedArticle={preloadedArticle} />;
+  const t = getTranslator(locale);
+  // Canonical lives on the EN URL (see generateMetadata), so the entity does too.
+  const pageUrl = absoluteUrl(`/blog/${article.slug}`);
+
+  return (
+    <>
+      <JsonLd
+        nodes={[
+          blogPostingNode(article, pageUrl),
+          breadcrumbNode(
+            [
+              { name: t("home"), path: "/" },
+              { name: t("blog"), path: "/blog" },
+              { name: article.title, path: `/blog/${article.slug}` },
+            ],
+            defaultLocale,
+          ),
+        ]}
+      />
+      <BlogArticle preloadedArticle={preloadedArticle} />
+    </>
+  );
 }

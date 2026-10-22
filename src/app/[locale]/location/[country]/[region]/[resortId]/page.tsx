@@ -3,18 +3,23 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { preloadQuery, preloadedQueryResult } from "convex/nextjs";
 import { api } from "@/convex/_generated/api";
+import JsonLd from "@/components/jsonLd";
 import ResortDetail from "@/src/features/place/component/resortDetail";
 import { pickLocalized, summarize } from "@/src/i18n/localized";
 import { localizePath } from "@/src/i18n/routing";
-import type { Locale } from "@/src/i18n/translations";
+import { Locale, getTranslator } from "@/src/i18n/translations";
 import {
+  getCountryPath,
+  getRegionPath,
   getResortHeroImage,
   getResortLocationParams,
   getResortLocationPath,
   toResort,
 } from "@/utils/convexResort";
+import { breadcrumbNode, faqNode, skiResortNode } from "@/utils/jsonLd";
 import { listPublishedResorts } from "@/utils/publishedResorts";
 import {
+  absoluteUrl,
   localizedAlternates,
   openGraphBase,
   resortDescription,
@@ -103,7 +108,7 @@ export default async function ResortPage({
 }: {
   params: Promise<ResortPageParams>;
 }) {
-  const { resortId } = await params;
+  const { locale, resortId } = await params;
   const [preloadedResort, preloadedResortHours, preloadedWeatherAndStatus] =
     await Promise.all([
       getPreloadedResort(resortId),
@@ -111,15 +116,51 @@ export default async function ResortPage({
       preloadQuery(api.weatherAndStatus.getByResort, { resortId }),
     ]);
 
-  if (!preloadedQueryResult(preloadedResort)) {
+  const resort = toResort(preloadedQueryResult(preloadedResort));
+  if (!resort) {
     notFound();
   }
 
+  const t = getTranslator(locale);
+  const path = getResortLocationPath(
+    resort.resortId,
+    resort.country,
+    resort.region,
+  );
+  // Mirrors what the page displays: editorial copy (with EN fallback) or the data summary.
+  const faq = pickLocalized(resort.faq, locale);
+  const structuredData = [
+    skiResortNode(resort, locale, {
+      pageUrl: absoluteUrl(localizePath(path, locale)),
+      description:
+        pickLocalized(resort.description, locale)?.value ??
+        resortDescription(resort, locale),
+      hours: preloadedQueryResult(preloadedResortHours)?.hours ?? [],
+    }),
+    breadcrumbNode(
+      [
+        { name: t("home"), path: "/" },
+        ...(resort.country
+          ? [{ name: resort.country, path: getCountryPath(resort.country) }]
+          : []),
+        ...(resort.country && resort.region
+          ? [{ name: resort.region, path: getRegionPath(resort.country, resort.region) }]
+          : []),
+        { name: resort.name, path },
+      ],
+      locale,
+    ),
+    ...(faq ? [faqNode(faq.value)] : []),
+  ];
+
   return (
-    <ResortDetail
-      preloadedResort={preloadedResort}
-      preloadedResortHours={preloadedResortHours}
-      preloadedWeatherAndStatus={preloadedWeatherAndStatus}
-    />
+    <>
+      <JsonLd nodes={structuredData} />
+      <ResortDetail
+        preloadedResort={preloadedResort}
+        preloadedResortHours={preloadedResortHours}
+        preloadedWeatherAndStatus={preloadedWeatherAndStatus}
+      />
+    </>
   );
 }
