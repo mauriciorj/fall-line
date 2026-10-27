@@ -23,6 +23,20 @@ from dto import to_convex_records
 
 DEFAULT_URL = "https://www.skiresort.info/ski-resorts/"
 SKIRESORT_INFO_BASE_URL = "https://www.skiresort.info"
+COUNTRY_REGIONS = {
+    "canada": (
+        "alberta",
+        "british-columbia",
+        "manitoba",
+        "new-brunswick",
+        "newfoundland-and-labrador",
+        "nova-scotia",
+        "ontario",
+        "prince-edward-island",
+        "saskatchewan",
+        "quebec",
+    ),
+}
 
 
 def fetch_html(url):
@@ -259,6 +273,44 @@ def fetch_all_pages(base_url=DEFAULT_URL, max_pages=None, delay=1.0):
     return all_resorts
 
 
+def resolve_listing_urls(target, regions=None):
+    """Return listing URLs for a URL or a country name (optionally filtered by regions)."""
+
+    if "://" in target:
+        if regions:
+            raise ValueError("--regions requires a country name, not a URL")
+        return [target]
+    country = slugify(target)
+    available = COUNTRY_REGIONS.get(country)
+    if available is None:
+        raise ValueError(
+            f"Unknown country {target!r}. Available: {', '.join(sorted(COUNTRY_REGIONS))}"
+        )
+    selected = [slugify(region) for region in regions] if regions else list(available)
+    unknown = [region for region in selected if region not in available]
+    if unknown:
+        raise ValueError(
+            f"Unknown region(s) for {country}: {', '.join(unknown)}. "
+            f"Available: {', '.join(available)}"
+        )
+    return [f"{DEFAULT_URL}{region}/" for region in selected]
+
+
+def collect_resorts(url, pages, delay):
+    if pages == 1:
+        resorts, total_pages = fetch_ski_resorts(url)
+        print(
+            f"Found {len(resorts)} ski resorts on page 1 "
+            f"(Total pages available: {total_pages})"
+        )
+        return resorts
+    return fetch_all_pages(
+        base_url=url,
+        max_pages=None if pages == 0 else pages,
+        delay=delay,
+    )
+
+
 def extract_resort_info(panel):
     """Extract information from a single resort panel/card"""
 
@@ -431,7 +483,16 @@ def main():
         "url",
         nargs="?",
         default=DEFAULT_URL,
-        help=f"Ski resort listing URL (default: {DEFAULT_URL})",
+        help=(
+            f"Ski resort listing URL or country name "
+            f"({', '.join(sorted(COUNTRY_REGIONS))}) (default: {DEFAULT_URL})"
+        ),
+    )
+    parser.add_argument(
+        "--regions",
+        nargs="+",
+        default=None,
+        help="Subset of regions to fetch when a country is given (default: all)",
     )
     parser.add_argument(
         "--pages",
@@ -462,21 +523,21 @@ def main():
     print("Fetching ski resort data from skiresort.info...")
 
     try:
-        if args.pages == 1:
-            # Single page mode
-            resorts, total_pages = fetch_ski_resorts(args.url)
-            print(
-                f"Found {len(resorts)} ski resorts on page 1 "
-                f"(Total pages available: {total_pages})"
-            )
-        else:
-            # Multi-page mode
-            max_pages = None if args.pages == 0 else args.pages
-            resorts = fetch_all_pages(
-                base_url=args.url,
-                max_pages=max_pages,
-                delay=args.delay,
-            )
+        urls = resolve_listing_urls(args.url, args.regions)
+        resorts_by_url = {}
+        for index, url in enumerate(urls):
+            if index:
+                time.sleep(args.delay)
+            if len(urls) > 1:
+                print(f"\nRegion {index + 1}/{len(urls)}: {url}")
+            try:
+                for resort in collect_resorts(url, args.pages, args.delay):
+                    resorts_by_url.setdefault(resort.get("url") or id(resort), resort)
+            except requests.RequestException as error:
+                if len(urls) == 1:
+                    raise
+                print(f"  Error fetching {url}: {error}")
+        resorts = list(resorts_by_url.values())
 
         enriched_resorts = []
         for index, resort in enumerate(resorts, start=1):

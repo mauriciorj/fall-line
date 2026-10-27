@@ -118,35 +118,6 @@
     "website": "http://skinakiska.com/"
   },
   {
-    "address": "T0K 1W0 Pincher Creek",
-    "continent": "North America",
-    "country": "Canada",
-    "email": "info@skicastle.ca",
-    "elevation": "1425 m - 2295 m",
-    "height": "870m",
-    "tracksGreenLength": "12km",
-    "tracksGreenProportion": "10",
-    "tracksBlueLength": "24km",
-    "tracksBlueProportion": "21",
-    "tracksBlackLength": "81km",
-    "tracksBlackProportion": "69",
-    "tracksTotalLength": "117km",
-    "id": "resort586",
-    "location": [
-      "North America",
-      "Canada",
-      "Alberta",
-      "Southern Alberta"
-    ],
-    "name": "Castle Mountain",
-    "phone": "(403) 627-5101",
-    "region": "Alberta",
-    "resortId": "castle-mountain",
-    "skiresortUrl": "https://www.skiresort.com/en/ski-resort/castle-mountain/",
-    "url": "https://www.skiresort.com/en/ski-resort/castle-mountain/",
-    "website": "http://skicastle.ca/"
-  },
-  {
     "address": "T1L 1B4 Banff",
     "continent": "North America",
     "country": "Canada",
@@ -175,6 +146,35 @@
     "skiresortUrl": "https://www.skiresort.com/en/ski-resort/mt-norquay-banff/",
     "url": "https://www.skiresort.com/en/ski-resort/mt-norquay-banff/",
     "website": "http://banffnorquay.com/"
+  },
+  {
+    "address": "T0K 1W0 Pincher Creek",
+    "continent": "North America",
+    "country": "Canada",
+    "email": "info@skicastle.ca",
+    "elevation": "1425 m - 2295 m",
+    "height": "870m",
+    "tracksGreenLength": "12km",
+    "tracksGreenProportion": "10",
+    "tracksBlueLength": "24km",
+    "tracksBlueProportion": "21",
+    "tracksBlackLength": "81km",
+    "tracksBlackProportion": "69",
+    "tracksTotalLength": "117km",
+    "id": "resort586",
+    "location": [
+      "North America",
+      "Canada",
+      "Alberta",
+      "Southern Alberta"
+    ],
+    "name": "Castle Mountain",
+    "phone": "(403) 627-5101",
+    "region": "Alberta",
+    "resortId": "castle-mountain",
+    "skiresortUrl": "https://www.skiresort.com/en/ski-resort/castle-mountain/",
+    "url": "https://www.skiresort.com/en/ski-resort/castle-mountain/",
+    "website": "http://skicastle.ca/"
   },
   {
     "address": "T3B 5R5 Calgary",

@@ -14,6 +14,18 @@ Specific region:
 python3 websites/skiresortinfo/ski-resorts-list.py https://www.skiresort.com/en/ski-resorts/alberta/ --pages 0
 ```
 
+Whole country (all configured regions, see `COUNTRY_REGIONS`):
+
+```text
+python3 websites/skiresortinfo/ski-resorts-list.py canada --pages 0
+```
+
+Subset of a country's regions:
+
+```text
+python3 websites/skiresortinfo/ski-resorts-list.py canada --regions quebec ontario --pages 0
+```
+
 The scraper writes grouped files to:
 
 ```text

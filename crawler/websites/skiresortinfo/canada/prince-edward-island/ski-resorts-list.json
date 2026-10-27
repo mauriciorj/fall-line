@@ -1,0 +1,30 @@
+[
+  {
+    "address": "C0A 1Y0 Brookvale",
+    "continent": "North America",
+    "country": "Canada",
+    "email": "skiresorts@yahoo.ca",
+    "elevation": "20 m - 96 m",
+    "height": "76m",
+    "tracksGreenLength": "2.1km",
+    "tracksGreenProportion": "45",
+    "tracksBlueLength": "1km",
+    "tracksBlueProportion": "23",
+    "tracksBlackLength": "1.5km",
+    "tracksBlackProportion": "32",
+    "tracksTotalLength": "4.6km",
+    "id": "resort2009",
+    "location": [
+      "North America",
+      "Canada",
+      "Prince Edward Island"
+    ],
+    "name": "Brookvale Ski Park",
+    "phone": "(800) 463-4734",
+    "region": "Prince Edward Island",
+    "resortId": "brookvale-ski-park",
+    "skiresortUrl": "https://www.skiresort.com/en/ski-resort/brookvale-ski-park/",
+    "url": "https://www.skiresort.com/en/ski-resort/brookvale-ski-park/",
+    "website": "http://yahoo.ca/"
+  }
+]

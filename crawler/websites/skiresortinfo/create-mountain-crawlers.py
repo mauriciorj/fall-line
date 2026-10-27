@@ -8,14 +8,9 @@ from urllib.parse import urljoin
 
 
 CRAWLER_ROOT = Path(__file__).resolve().parents[2]
+RESORTS_ROOT = CRAWLER_ROOT / "resorts"
 REFERENCE_GENERATOR = (
-    CRAWLER_ROOT
-    / "mountains"
-    / "canada"
-    / "ontario"
-    / "brimacombe"
-    / "json_generators"
-    / "skiresort.py"
+    RESORTS_ROOT / "canada" / "ontario" / "brimacombe" / "json_generators" / "skiresort.py"
 )
 RESORT_URL_FIELDS = ("skiresortUrl", "skiresortInfoUrl", "sourceUrl", "url")
 CONVEX_RESORT_FIELDS = (
@@ -156,7 +151,7 @@ def create_skiresort_generator(resort):
     country = slugify(resort["country"], "country")
     region = slugify(resort["region"], "region")
     resort_id = slugify(resort["resortId"], "resortId")
-    resort_directory = CRAWLER_ROOT / "mountains" / country / region / resort_id
+    resort_directory = RESORTS_ROOT / country / region / resort_id
     generator_directory = resort_directory / "json_generators"
     generator_path = generator_directory / "skiresort.py"
 
