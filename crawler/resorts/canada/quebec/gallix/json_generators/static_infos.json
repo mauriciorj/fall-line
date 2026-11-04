@@ -1,0 +1,23 @@
+{
+  "address": "600, route du, Chem. de Club de Ski Gallix, Sept-Îles, QC G0G 1L0",
+  "continent": "North America",
+  "coordinates": { "lat": "50.17537067672466", "lng": "-66.70966117137895" },
+  "country": "Canada",
+  "email": "info@skigallix.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/rGcuP3TxaVDbBUhd9",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(418) 766-7547",
+  "published": true,
+  "rating": 4.6,
+  "region": "Quebec",
+  "resortId": "gallix",
+  "ticketUrl": "",
+  "website": "http://www.skigallix.com/"
+}

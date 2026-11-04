@@ -1,0 +1,23 @@
+{
+  "address": "370 Ski Martock Rd, Windsor Forks, NS B0N 2T0",
+  "continent": "North America",
+  "coordinates": { "lat": "44.93547707065033", "lng": "-64.17161133474698" },
+  "country": "Canada",
+  "email": "admin@martock.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/77CF7Sbv5Cnpbykw7",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(902) 798-9501",
+  "published": true,
+  "rating": 4.4,
+  "region": "Nova Scotia",
+  "resortId": "martock",
+  "ticketUrl": "",
+  "website": "http://www.martock.com/"
+}

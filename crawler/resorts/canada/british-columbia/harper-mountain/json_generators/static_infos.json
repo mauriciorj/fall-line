@@ -1,0 +1,23 @@
+{
+  "address": "2580 Harper Mountain Rd, Kamloops, BC V2C 4C5",
+  "continent": "North America",
+  "coordinates": { "lat": "50.72372397573379", "lng": "-120.1382069567587" },
+  "country": "Canada",
+  "email": "harpermountain@gmail.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/Qc3Ex3AhxdCdBc5b8",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(250) 573-5115",
+  "published": true,
+  "rating": 4.7,
+  "region": "British Columbia",
+  "resortId": "harper-mountain",
+  "ticketUrl": "",
+  "website": "http://www.harpermountain.com/"
+}

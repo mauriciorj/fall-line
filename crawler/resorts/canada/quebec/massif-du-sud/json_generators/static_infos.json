@@ -1,0 +1,23 @@
+{
+  "address": "1989 Rte du Massif-du-Sud, Saint-Philémon, QC G0R 4A0",
+  "continent": "North America",
+  "coordinates": { "lat": "46.62166592348934", "lng": "-70.48974793503615" },
+  "country": "Canada",
+  "email": "info@massifdusud.net",
+  "googleMapsUrl": "https://maps.app.goo.gl/srwiKfP5Xk681K4KA",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(877) 869-3676",
+  "published": true,
+  "rating": 4.6,
+  "region": "Quebec",
+  "resortId": "massif-du-sud",
+  "ticketUrl": "",
+  "website": "http://www.massifdusud.net/"
+}

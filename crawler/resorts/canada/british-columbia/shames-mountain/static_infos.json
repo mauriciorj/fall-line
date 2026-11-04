@@ -1,0 +1,23 @@
+{
+  "address": "Unnamed Rd Terrace BC V8G Canada, BC",
+  "continent": "North America",
+  "coordinates": { "lat": "54.48422037555475", "lng": "-128.95264923931694" },
+  "country": "Canada",
+  "email": "admin@shamesmtn.ca",
+  "googleMapsUrl": "https://maps.app.goo.gl/Ld7sGBTYYW9gKhef8",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(250) 635-3773",
+  "published": true,
+  "rating": 4.8,
+  "region": "British Columbia",
+  "resortId": "shames-mountain",
+  "ticketUrl": "",
+  "website": "http://www.mymountaincoop.ca/mountain/about-shames-mountain"
+}

@@ -1,0 +1,23 @@
+{
+  "address": "4855 Bd de la Grande-Baie S, La Baie, QC G7B 3P6",
+  "continent": "North America",
+  "coordinates": { "lat": "48.32419157083713", "lng": "-70.8381820119244" },
+  "country": "Canada",
+  "email": "montbelu@royaume.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/57DBbpHZR5jyK3ou6",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(418) 697-5090",
+  "published": true,
+  "rating": 4.6,
+  "region": "Quebec",
+  "resortId": "mont-belu",
+  "ticketUrl": "",
+  "website": "https://montbelu.com/"
+}

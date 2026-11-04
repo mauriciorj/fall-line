@@ -1,0 +1,23 @@
+{
+  "address": "50 Crabbe Mountain Rd, Central Hainesville, NB E6E 1E3",
+  "continent": "North America",
+  "coordinates": { "lat": "46.11718746086647", "lng": "-67.10069900310529" },
+  "country": "Canada",
+  "email": "info@crabbemountain.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/bztTSWJZSwqX4jUU7",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(506) 463-8311",
+  "published": true,
+  "rating": 4.5,
+  "region": "New Brunswick",
+  "resortId": "crabbe-mountain",
+  "ticketUrl": "",
+  "website": "http://www.crabbemountain.com/"
+}

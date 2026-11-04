@@ -1,0 +1,23 @@
+{
+  "address": "301 N Star Blvd, Kimberley, BC V1A 2Y5",
+  "continent": "North America",
+  "coordinates": { "lat": "49.6883035271334", "lng": "-116.0042145107781" },
+  "country": "Canada",
+  "email": "information@skircr.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/fj43vVne1v7WKTr67",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(250) 427-4881",
+  "published": true,
+  "rating": 4.5,
+  "region": "British Columbia",
+  "resortId": "kimberley",
+  "ticketUrl": "",
+  "website": "http://www.skikimberley.com/"
+}

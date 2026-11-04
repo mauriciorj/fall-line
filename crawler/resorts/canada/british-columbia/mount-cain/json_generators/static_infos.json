@@ -1,0 +1,23 @@
+{
+  "address": "PO BOX 1225, Port McNeill, BC V0N 3P0",
+  "continent": "North America",
+  "coordinates": { "lat": "50.219051094130165", "lng": "-126.35419179675084" },
+  "country": "Canada",
+  "email": "info@mountcain.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/h4NyZ84158muZdxv8",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(888) 668-6622",
+  "published": true,
+  "rating": 4.5,
+  "region": "British Columbia",
+  "resortId": "mount-cain",
+  "ticketUrl": "",
+  "website": "https://www.mountcain.com/"
+}

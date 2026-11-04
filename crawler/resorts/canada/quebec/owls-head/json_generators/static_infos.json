@@ -1,0 +1,23 @@
+{
+  "address": "40 Chem. du Mont Owls Head, Mansonville, QC J0E 1X0",
+  "continent": "North America",
+  "coordinates": { "lat": "45.074204590134805", "lng": "-72.2981907850738" },
+  "country": "Canada",
+  "email": "info@owlshead.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/JRoFEywJhvv2ASLD9",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(450) 292-3342",
+  "published": true,
+  "rating": 4.6,
+  "region": "Quebec",
+  "resortId": "owls-head",
+  "ticketUrl": "",
+  "website": "http://owlshead.com/"
+}

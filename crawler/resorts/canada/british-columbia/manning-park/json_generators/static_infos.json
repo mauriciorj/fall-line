@@ -1,0 +1,23 @@
+{
+  "address": "7500 BC-3, Manning Park, BC V0X 1R0",
+  "continent": "North America",
+  "coordinates": { "lat": "49.06366889545047", "lng": "-120.78683082867082" },
+  "country": "Canada",
+  "email": "info@manningpark.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/Bh1snYVCVFDfRqNc8",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(604) 668-5922",
+  "published": true,
+  "rating": 4.4,
+  "region": "British Columbia",
+  "resortId": "manning-park",
+  "ticketUrl": "",
+  "website": "https://www.manningpark.com/"
+}

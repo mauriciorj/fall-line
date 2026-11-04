@@ -1,0 +1,23 @@
+{
+  "address": "61411 Range Rd 241, Tawatinaw, AB T0G 2E0",
+  "continent": "North America",
+  "coordinates": { "lat": "54.301383326342346" , "lng": "-113.47747295364267" },
+  "country": "Canada",
+  "email": "tawatinawfriends@gmail.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/wpVuSiDk9XrqoeWw5",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(780) 698-2212",
+  "published": true,
+  "rating": 4.7,
+  "region": "Alberta",
+  "resortId": "tawatinaw-valley",
+  "ticketUrl": "",
+  "website": "https://tawatinawvalley.ca/"
+}

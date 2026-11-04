@@ -1,0 +1,23 @@
+{
+  "address": "33 Laurier Dr, Mackenzie, BC V0J 2C0",
+  "continent": "North America",
+  "coordinates": { "lat": "55.338567408479605", "lng": "-123.08013311096815" },
+  "country": "Canada",
+  "email": "info@districtofmackenzie.ca",
+  "googleMapsUrl": "https://maps.app.goo.gl/buQT7ekUmGt3u15A7",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(250) 997-5283",
+  "published": true,
+  "rating": 4.1,
+  "region": "British Columbia",
+  "resortId": "little-mac-mackenzie",
+  "ticketUrl": "",
+  "website": "http://www.districtofmackenzie.ca/"
+}

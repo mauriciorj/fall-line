@@ -1,0 +1,23 @@
+{
+  "address": "7904 Chalet Dr, Fort St James, BC V0J 1P0",
+  "continent": "North America",
+  "coordinates": { "lat": "54.51800885080546", "lng": "-124.2098339706669" },
+  "country": "Canada",
+  "email": "murrayridge@gmail.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/Us4K9vmJ9GuPptWD7",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(250) 996-8515",
+  "published": true,
+  "rating": 4.7,
+  "region": "British Columbia",
+  "resortId": "murray-ridge",
+  "ticketUrl": "",
+  "website": "https://www.murrayridge.com/"
+}

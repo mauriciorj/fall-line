@@ -1,0 +1,23 @@
+{
+  "address": "11016 E Sellars Hill Road, Stony Mountain, MB R0C 3A0",
+  "continent": "North America",
+  "coordinates": { "lat": "50.09429504836878", "lng": "-97.20586726101017" },
+  "country": "Canada",
+  "email": "info@skistony.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/GgMRxEyx1DcEeoYu9",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(204) 344-5977",
+  "published": true,
+  "rating": 4.1,
+  "region": "Manitoba",
+  "resortId": "stony-mountain",
+  "ticketUrl": "",
+  "website": "http://skistony.com/"
+}

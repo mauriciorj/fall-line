@@ -1,0 +1,23 @@
+{
+  "address": "BOX 246, Thompson, MB R8N 0Z4",
+  "continent": "North America",
+  "coordinates": { "lat": "55.87114630437429", "lng": "-97.77714310250221" },
+  "country": "Canada",
+  "email": "president@mysterymountain.ca",
+  "googleMapsUrl": "https://maps.app.goo.gl/y5QFnzs1MvcARJVQ9",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(204) 778-8624",
+  "published": true,
+  "rating": 4.6,
+  "region": "Manitoba",
+  "resortId": "mystery-mountain",
+  "ticketUrl": "",
+  "website": "https://www.mysterymountain.ca/"
+}

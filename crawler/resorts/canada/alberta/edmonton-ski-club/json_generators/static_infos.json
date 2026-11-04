@@ -1,0 +1,23 @@
+{
+  "address": "9613 96 Ave NW, Edmonton, AB T6C 4L8",
+  "continent": "North America",
+  "coordinates": { "lat": "53.5345244537487" , "lng": "-113.47646064851088" },
+  "country": "Canada",
+  "email": "guestservices@edmontonskiclub.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/zTx3weVANVcVAfDd9",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(780) 465-0852",
+  "published": true,
+  "rating": 4.2,
+  "region": "Alberta",
+  "resortId": "edmonton-ski-club",
+  "ticketUrl": "",
+  "website": "http://edmontonskiclub.com/"
+}

@@ -1,0 +1,23 @@
+{
+  "address": "Mont-Tremblant, QC J8E 1E1",
+  "continent": "North America",
+  "coordinates": { "lat": "46.22004802670881", "lng": "-74.55292955726155" },
+  "country": "Canada",
+  "email": "isac@tremblant.ca",
+  "googleMapsUrl": "https://maps.app.goo.gl/DzTJh4enDPnXJiiC7",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(819) 681-2000",
+  "published": true,
+  "rating": 4.7,
+  "region": "Quebec",
+  "resortId": "tremblant",
+  "ticketUrl": "",
+  "website": "https://www.tremblant.ca/"
+}

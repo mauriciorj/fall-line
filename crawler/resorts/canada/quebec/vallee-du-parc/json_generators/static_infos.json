@@ -1,0 +1,23 @@
+{
+  "address": "10000 Chem. de la Vallée-du-Parc, Shawinigan, QC G9T 0N1",
+  "continent": "North America",
+  "coordinates": { "lat": "46.615440499800656", "lng": "-72.79635687895947" },
+  "country": "Canada",
+  "email": "info@valleeduparc.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/ZWQjRtnEKrGqdcRW9",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(819) 538-1639",
+  "published": true,
+  "rating": 4.4,
+  "region": "Quebec",
+  "resortId": "vallee-du-parc",
+  "ticketUrl": "",
+  "website": "http://www.valleeduparc.com/"
+}

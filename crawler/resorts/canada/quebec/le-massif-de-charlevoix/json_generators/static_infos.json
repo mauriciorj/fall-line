@@ -1,0 +1,23 @@
+{
+  "address": "185 Chem. du Massif, Petite-Rivière-Saint-François, QC G0A 2L0",
+  "continent": "North America",
+  "coordinates": { "lat": "47.27936649291567", "lng": "-70.60927156707228" },
+  "country": "Canada",
+  "email": "info@lemassif.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/ozUrBcfvHxFA59uV7",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(418) 632-5876",
+  "published": true,
+  "rating": 4.6,
+  "region": "Quebec",
+  "resortId": "le-massif-de-charlevoix",
+  "ticketUrl": "",
+  "website": "https://www.lemassif.com/fr/"
+}

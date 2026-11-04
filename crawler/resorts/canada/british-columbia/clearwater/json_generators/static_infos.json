@@ -1,0 +1,23 @@
+{
+  "address": "566 Dunn Lake Rd, Clearwater, BC V0E 1N2",
+  "continent": "North America",
+  "coordinates": { "lat": "51.63688147122862", "lng": "-120.02479557863366" },
+  "country": "Canada",
+  "email": "info@clearwaterskihill.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/7CpKCV4tS1qJEzz18",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(250) 674-3848",
+  "published": true,
+  "rating": 4.8,
+  "region": "British Columbia",
+  "resortId": "clearwater",
+  "ticketUrl": "",
+  "website": "https://clearwaterskihill.com/"
+}

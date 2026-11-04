@@ -1,0 +1,23 @@
+{
+  "address": "69 Poley Mountain Rd, Waterford, NB E4E 5C5",
+  "continent": "North America",
+  "coordinates": { "lat": "45.67999110137217", "lng": "-65.38125213790246" },
+  "country": "Canada",
+  "email": "info@poleymountain.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/ESejoyYgR85jMHQ6A",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(506) 433-7668",
+  "published": true,
+  "rating": 4.4,
+  "region": "New Brunswick",
+  "resortId": "poley-mountain",
+  "ticketUrl": "",
+  "website": "http://poleymountain.com/"
+}

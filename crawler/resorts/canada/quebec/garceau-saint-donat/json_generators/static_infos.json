@@ -1,0 +1,23 @@
+{
+  "address": "190 Chem. du Lac Blanc, Saint-Donat-de-Montcalm, QC J0T 2C0",
+  "continent": "North America",
+  "coordinates": { "lat": "46.337634770790935", "lng": "-74.22003003006435" },
+  "country": "Canada",
+  "email": "ski@skigarceau.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/JQLbt79R6UYoGNNz8",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(819) 424-2784",
+  "published": true,
+  "rating": 4.6,
+  "region": "Quebec",
+  "resortId": "garceau-saint-donat",
+  "ticketUrl": "",
+  "website": "http://www.skigarceau.com/"
+}

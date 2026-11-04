@@ -1,0 +1,23 @@
+{
+  "address": "Lloydminster, AB T9V 3A6",
+  "continent": "North America",
+  "coordinates": { "lat": "53.10204739791595" , "lng": "-110.15256748482743" },
+  "country": "Canada",
+  "email": "info@mountjoy.ca",
+  "googleMapsUrl": "https://maps.app.goo.gl/UVmwLmwG1bTJWB279",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "",
+  "published": true,
+  "rating": 4.8,
+  "region": "Alberta",
+  "resortId": "mount-joy",
+  "ticketUrl": "",
+  "website": "http://www.mountjoyresort.com/"
+}

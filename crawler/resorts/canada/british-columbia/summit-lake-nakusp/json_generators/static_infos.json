@@ -1,0 +1,23 @@
+{
+  "address": "2915 BC-6, Nakusp, BC V0G 1R1",
+  "continent": "North America",
+  "coordinates": { "lat": "50.14601864478911", "lng": "-117.6145834174068" },
+  "country": "Canada",
+  "email": "info@skisummitlake.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/HEFnFjEMxZK414Qk9",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(250) 265-3312",
+  "published": true,
+  "rating": 4.5,
+  "region": "British Columbia",
+  "resortId": "summit-lake-nakusp",
+  "ticketUrl": "",
+  "website": "http://www.skisummitlake.com/"
+}

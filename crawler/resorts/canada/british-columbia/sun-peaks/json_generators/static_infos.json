@@ -1,0 +1,23 @@
+{
+  "address": "3150 Creekside Way, Sun Peaks, BC V0E 5N0",
+  "continent": "North America",
+  "coordinates": { "lat": "50.883862961739595", "lng": "-119.88880104215443" },
+  "country": "Canada",
+  "email": "tourism@sunpeaksresort.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/pM1Aipmg7GNsJZM36",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(250) 578-2555",
+  "published": true,
+  "rating": 4.7,
+  "region": "British Columbia",
+  "resortId": "sun-peaks",
+  "ticketUrl": "",
+  "website": "https://www.sunpeaksresort.com/"
+}

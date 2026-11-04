@@ -1,0 +1,23 @@
+{
+  "address": "6010 Whitewater Ski Hill Rd, Nelson, BC V1L 5R3",
+  "continent": "North America",
+  "coordinates": { "lat": "49.44297790085318", "lng": "-117.1456208996228" },
+  "country": "Canada",
+  "email": "info@whitewatermountainresort.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/nE7dPCUFkzLkUPox7",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(250) 354-4944",
+  "published": true,
+  "rating": 4.7,
+  "region": "British Columbia",
+  "resortId": "whitewater-nelson",
+  "ticketUrl": "",
+  "website": "http://www.whitewatermountainresort.com/"
+}

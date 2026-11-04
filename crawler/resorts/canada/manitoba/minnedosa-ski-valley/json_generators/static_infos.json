@@ -1,0 +1,23 @@
+{
+  "address": "34 Manitoba 16A, Minnedosa, MB R0J 1E0",
+  "continent": "North America",
+  "coordinates": { "lat": "50.31985652885285", "lng": "-99.87742784379766" },
+  "country": "Canada",
+  "email": "info@skivalley.ca",
+  "googleMapsUrl": "https://maps.app.goo.gl/YWDFWbUL1nMqk19b9",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(204) 867-3509",
+  "published": true,
+  "rating": 4.3,
+  "region": "Manitoba",
+  "resortId": "minnedosa-ski-valley",
+  "ticketUrl": "",
+  "website": "http://www.skivalley.ca/"
+}

@@ -1,0 +1,23 @@
+{
+  "address": "Bentley, 15km west of, Bentley, AB T0C 0J0",
+  "continent": "North America",
+  "coordinates": { "lat": "52.4554514870164" , "lng": "-114.25805257644988" },
+  "country": "Canada",
+  "email": "medicinelodgeskihill@gmail.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/UkYWhfp2AdUtPrL7A",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(403) 748-2025",
+  "published": true,
+  "rating": 4.3,
+  "region": "Alberta",
+  "resortId": "medicine-lodge",
+  "ticketUrl": "",
+  "website": "https://www.medicinelodgeskihill.com/"
+}

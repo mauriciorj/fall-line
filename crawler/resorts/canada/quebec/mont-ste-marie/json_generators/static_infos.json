@@ -1,0 +1,23 @@
+{
+  "address": "76 Chem. de la Montagne, Lac-Sainte-Marie, QC J0X 1Z0",
+  "continent": "North America",
+  "coordinates": { "lat": "45.94108992604241", "lng": "-75.87451774214156" },
+  "country": "Canada",
+  "email": "info@montstemarie.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/UkhkDfirparrQ9Zk8",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(819) 467-5200",
+  "published": true,
+  "rating": 4.5,
+  "region": "Quebec",
+  "resortId": "mont-ste-marie",
+  "ticketUrl": "",
+  "website": "http://montstemarie.com/"
+}

@@ -1,0 +1,23 @@
+{
+  "address": "Saddle Hills County, AB T0H 1C0",
+  "continent": "North America",
+  "coordinates": { "lat": "55.505821732713265" , "lng": "-119.58628761900863" },
+  "country": "Canada",
+  "email": "",
+  "googleMapsUrl": "https://maps.app.goo.gl/KUYwxLkjL7rzYntq5",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(780) 356-3045",
+  "published": true,
+  "rating": 4.6,
+  "region": "Alberta",
+  "resortId": "spring-lake-ski-hill",
+  "ticketUrl": "",
+  "website": "http://www.springlakehill.com/"
+}

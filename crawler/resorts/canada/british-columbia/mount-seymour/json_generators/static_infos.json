@@ -1,0 +1,23 @@
+{
+  "address": "9382+4H, 1700 Mt Seymour Rd #9382+4H, North Vancouver, BC V7G 2S4",
+  "continent": "North America",
+  "coordinates": { "lat": "49.36621817513418", "lng": "-122.9477712693089" },
+  "country": "Canada",
+  "email": "snow@mtseymour.ca",
+  "googleMapsUrl": "https://maps.app.goo.gl/Df77b8m64a2fDmaV8",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(604) 986-2261",
+  "published": true,
+  "rating": 4.4,
+  "region": "British Columbia",
+  "resortId": "mount-seymour",
+  "ticketUrl": "",
+  "website": "http://www.mtseymour.ca/"
+}

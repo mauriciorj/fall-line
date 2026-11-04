@@ -1,0 +1,23 @@
+{
+  "address": "100 White Hills Rd, Clarenville, NL A5A 2B3",
+  "continent": "North America",
+  "coordinates": { "lat": "48.1635217704215", "lng": "-54.04626332805947" },
+  "country": "Canada",
+  "email": "info@snowgoosemountain.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/fMFXoTmBJKGuG4zh6",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(709) 217-0081",
+  "published": true,
+  "rating": 4.3,
+  "region": "Newfoundland and Labrador",
+  "resortId": "white-hills",
+  "ticketUrl": "",
+  "website": "http://www.whitehillsresort.com/"
+}

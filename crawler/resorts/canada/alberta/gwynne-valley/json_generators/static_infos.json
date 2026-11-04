@@ -1,0 +1,23 @@
+{
+  "address": "Range Rd 231, County Of Wetaskiwin No. 10, AB T0C 1L0",
+  "continent": "North America",
+  "coordinates": { "lat": "52.98603892290983" , "lng": "-113.21837531899688" },
+  "country": "Canada",
+  "email": "wetaskiwinskiclub@hotmail.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/VKANwoUZ2tWKrAKe6",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(780) 352-3515",
+  "published": true,
+  "rating": 4.8,
+  "region": "Alberta",
+  "resortId": "gwynne-valley",
+  "ticketUrl": "",
+  "website": "http://www.gwynnevalley.ca/"
+}

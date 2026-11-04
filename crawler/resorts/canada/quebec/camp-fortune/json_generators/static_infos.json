@@ -1,0 +1,23 @@
+{
+  "address": "300 Dunlop Rd, Chelsea, Quebec J9B 2N3",
+  "continent": "North America",
+  "coordinates": { "lat": "45.509130088249975", "lng": "-75.85115930497744" },
+  "country": "Canada",
+  "email": "info@campfortune.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/vQAFM9NbLGPX7b8d7",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(819) 827-1717",
+  "published": true,
+  "rating": 4.4,
+  "region": "Quebec",
+  "resortId": "camp-fortune",
+  "ticketUrl": "",
+  "website": "http://campfortune.com/"
+}

@@ -1,0 +1,27 @@
+{
+  "rates": {
+    "night-week": {
+      "youth": "$",
+      "seniors": "$",
+      "adults": "$"
+    },
+    "night-weekend": {
+      "youth": "$",
+      "seniors": "$",
+      "adults": "$"
+    },
+    "day-week": {
+      "youth": "$",
+      "seniors": "$",
+      "adults": "$"
+    },
+    "day-weekend": {
+      "youth": "$",
+      "seniors": "$",
+      "adults": "$"
+    }
+  },
+  "resortId": "",
+  "sourceUrl": "",
+  "updatedAt": ""
+}

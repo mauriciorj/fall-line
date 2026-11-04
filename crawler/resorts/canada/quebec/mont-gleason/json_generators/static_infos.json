@@ -1,0 +1,23 @@
+{
+  "address": "180 Chem. Mont Gleason, Tingwick, QC J0A 1L0",
+  "continent": "North America",
+  "coordinates": { "lat": "45.93054845354989", "lng": "-71.96159383002879" },
+  "country": "Canada",
+  "email": "info@montgleason.ca",
+  "googleMapsUrl": "https://maps.app.goo.gl/39tvQHBxd2JBxzgv8",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(819) 359-2301",
+  "published": true,
+  "rating": 4.5,
+  "region": "Quebec",
+  "resortId": "mont-gleason",
+  "ticketUrl": "",
+  "website": "http://www.montgleason.ca/"
+}

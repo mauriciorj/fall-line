@@ -1,0 +1,23 @@
+{
+  "address": "Benito, MB R0L 0C0",
+  "continent": "North America",
+  "coordinates": { "lat": "52.01289743122061", "lng": "-101.59676432513655" },
+  "country": "Canada",
+  "email": "info@skithunderhill.ca",
+  "googleMapsUrl": "https://maps.app.goo.gl/9UQ2SADRafzNkL2D9",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(204) 539-2626",
+  "published": true,
+  "rating": 4.8,
+  "region": "Manitoba",
+  "resortId": "thunderhill-benito",
+  "ticketUrl": "",
+  "website": "https://skithunderhill.myshopify.com/"
+}

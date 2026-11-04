@@ -1,0 +1,23 @@
+{
+  "address": "432 Chem. du Mont-Loup-Garou, Sainte-Adèle, QC J8B 3C8",
+  "continent": "North America",
+  "coordinates": { "lat": "45.961505490534826", "lng": "-74.1725732093413" },
+  "country": "Canada",
+  "email": "ski@lechantecler.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/f6HhncqvBtQ6fbtXA",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(450) 229-1404",
+  "published": true,
+  "rating": 4.2,
+  "region": "Quebec",
+  "resortId": "le-chantecler",
+  "ticketUrl": "",
+  "website": "http://www.skichantecler.com/"
+}

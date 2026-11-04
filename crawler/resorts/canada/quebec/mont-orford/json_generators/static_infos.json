@@ -1,0 +1,23 @@
+{
+  "address": "4380 Chem. du Parc, Orford, QC J0B 1B0",
+  "continent": "North America",
+  "coordinates": { "lat": "45.317817021512994", "lng": "-72.2209896110045" },
+  "country": "Canada",
+  "email": "info@orford.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/sfRMAtkjr2hcdJgZ9",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(819) 843-6548",
+  "published": true,
+  "rating": 4.7,
+  "region": "Quebec",
+  "resortId": "mont-orford",
+  "ticketUrl": "",
+  "website": "https://montorford.com/en-ca/home"
+}

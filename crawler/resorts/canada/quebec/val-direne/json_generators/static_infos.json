@@ -1,0 +1,23 @@
+{
+  "address": "115 Rte de Val d'Irène, Sainte-Irène, QC G0J 2P0",
+  "continent": "North America",
+  "coordinates": { "lat": "48.47199040865687", "lng": "-67.57251568927511" },
+  "country": "Canada",
+  "email": "info@valdi.ski",
+  "googleMapsUrl": "https://maps.app.goo.gl/BghnUmPXXpraVsSE8",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(418) 629-3450",
+  "published": true,
+  "rating": 4.6,
+  "region": "Quebec",
+  "resortId": "val-direne",
+  "ticketUrl": "",
+  "website": "https://valdi.ski/"
+}

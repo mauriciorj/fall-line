@@ -1,0 +1,23 @@
+{
+  "address": "448 Chem. du Mont-des-Cascades, Cantley, QC J8V 3B2",
+  "continent": "North America",
+  "coordinates": { "lat": "45.59252455090082", "lng": "-75.84881684351656" },
+  "country": "Canada",
+  "email": "info@montcascades.ca",
+  "googleMapsUrl": "https://maps.app.goo.gl/erdaHqKSCRFhn8Vk7",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(819) 827-0301",
+  "published": true,
+  "rating": 4.4,
+  "region": "Quebec",
+  "resortId": "mont-cascades",
+  "ticketUrl": "",
+  "website": "http://www.montcascades.ca/"
+}

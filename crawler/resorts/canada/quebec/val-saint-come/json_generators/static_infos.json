@@ -1,0 +1,23 @@
+{
+  "address": "501 Rue Val St Côme, Saint-Côme, QC J0K 2B0",
+  "continent": "North America",
+  "coordinates": { "lat": "46.27176612617467", "lng": "-73.87130125746424" },
+  "country": "Canada",
+  "email": "info@skivsc.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/jic3qp8NCinyZd8D6",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(450) 883-0701",
+  "published": true,
+  "rating": 4.5,
+  "region": "Quebec",
+  "resortId": "val-saint-come",
+  "ticketUrl": "",
+  "website": "http://www.valsaintcome.com/"
+}

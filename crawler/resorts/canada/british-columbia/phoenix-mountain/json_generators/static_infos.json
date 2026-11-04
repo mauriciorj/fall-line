@@ -1,0 +1,23 @@
+{
+  "address": "8000, Phoenix Ski Hill Road, Grand Forks, BC V0H 1H5",
+  "continent": "North America",
+  "coordinates": { "lat": "49.109236558827064", "lng": "-118.58601703392965" },
+  "country": "Canada",
+  "email": "skiphoenix@gmail.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/BqwEYPLkxc684SuRA",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(250) 444-6565",
+  "published": true,
+  "rating": 4.8,
+  "region": "British Columbia",
+  "resortId": "phoenix-mountain",
+  "ticketUrl": "",
+  "website": "http://www.skiphoenix.ca/"
+}

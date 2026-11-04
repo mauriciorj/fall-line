@@ -1,0 +1,23 @@
+{
+  "address": "Central Kootenay, BC V0G 1Z0",
+  "continent": "North America",
+  "coordinates": { "lat": "49.181469071320485", "lng": "-117.30090399804331" },
+  "country": "Canada",
+  "email": "info@skisalmo.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/tyXiWGkPbsAtDwHx7",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(250) 357-2323",
+  "published": true,
+  "rating": 4.1,
+  "region": "British Columbia",
+  "resortId": "salmo",
+  "ticketUrl": "",
+  "website": "https://skisalmo.com/"
+}

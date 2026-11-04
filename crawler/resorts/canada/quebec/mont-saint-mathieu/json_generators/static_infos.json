@@ -1,0 +1,23 @@
+{
+  "address": "121 Chem. du Lac S, Saint-Mathieu-de-Rioux, QC G0L 3T0",
+  "continent": "North America",
+  "coordinates": { "lat": "48.154475105873665", "lng": "-69.01055594526017" },
+  "country": "Canada",
+  "email": "serviceclient@montstmathieu.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/8S16RTGJDZmbuVoP8",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(738) 229-8201",
+  "published": true,
+  "rating": 4.7,
+  "region": "Quebec",
+  "resortId": "mont-saint-mathieu",
+  "ticketUrl": "",
+  "website": "http://montstmathieu.com/"
+}

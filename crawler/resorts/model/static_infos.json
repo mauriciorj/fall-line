@@ -1,0 +1,23 @@
+{
+  "address": "",
+  "continent": "",
+  "coordinates": { "lat": "", "lng": "" },
+  "country": "",
+  "email": "",
+  "googleMapsUrl": "",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "",
+  "published": true,
+  "rating": 4.1,
+  "region": "",
+  "resortId": "",
+  "ticketUrl": "",
+  "website": ""
+}

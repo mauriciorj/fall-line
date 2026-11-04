@@ -1,0 +1,23 @@
+{
+  "address": "5101 NS-4, Ben Eoin, NS B1J 1P1",
+  "continent": "North America",
+  "coordinates": { "lat": "45.974792624845385", "lng": "-60.43553257847735" },
+  "country": "Canada",
+  "email": "office@skibeneoin.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/NVz3EoY8p39y3Pxb7",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(902) 828-2804",
+  "published": true,
+  "rating": 4.7,
+  "region": "Nova Scotia",
+  "resortId": "ben-eoin",
+  "ticketUrl": "",
+  "website": "http://www.skibeneoin.com/"
+}

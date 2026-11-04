@@ -1,0 +1,23 @@
+{
+  "address": "1000 Natal Rd, Elkford, BC V0B 1H0",
+  "continent": "North America",
+  "coordinates": { "lat": "50.02187415814264", "lng": "-114.93880292842273" },
+  "country": "Canada",
+  "email": "office@wapitiskiclub.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/wpJ6bmfddMqhZvaq5",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(250) 865-2020",
+  "published": true,
+  "rating": 4.7,
+  "region": "British Columbia",
+  "resortId": "wapiti-ski-hill-elkford",
+  "ticketUrl": "",
+  "website": "https://wapitiskiclub.com/"
+}

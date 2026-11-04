@@ -1,0 +1,23 @@
+{
+  "address": "38433 Range Rd 264A, Red Deer County, AB T4E 0Z1",
+  "continent": "North America",
+  "coordinates": { "lat": "52.304308134512574" , "lng": "-113.68309418998949" },
+  "country": "Canada",
+  "email": "info@canyonski.ca",
+  "googleMapsUrl": "https://maps.app.goo.gl/fUXTtyCsemWuNBn69",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(403) 346-5588",
+  "published": true,
+  "rating": 4.3,
+  "region": "Alberta",
+  "resortId": "canyon",
+  "ticketUrl": "",
+  "website": "http://canyonski.ca/"
+}

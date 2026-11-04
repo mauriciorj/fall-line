@@ -1,0 +1,23 @@
+{
+  "address": "100 Roszko Ln, Whitecourt, AB T7S 0A9",
+  "continent": "North America",
+  "coordinates": { "lat": "54.13239543916462" , "lng": "-115.65199801727262" },
+  "country": "Canada",
+  "email": "gs@eastlinkpark.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/Ecq2PGc3mn75ASX48",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(780) 746-3000",
+  "published": true,
+  "rating": 4.6,
+  "region": "Alberta",
+  "resortId": "eastlink-park-whitecourt",
+  "ticketUrl": "",
+  "website": "http://eastlinkpark.com/"
+}

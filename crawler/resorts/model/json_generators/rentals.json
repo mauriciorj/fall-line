@@ -1,0 +1,22 @@
+{
+  "rentals": {
+    "ski": {
+      "adults": "$",
+      "youth": "$"
+    },
+    "snowboard": {
+      "adults": "$",
+      "youth": "$"
+    },
+    "items": {
+      "boots": "$",
+      "poles": "",
+      "helmet": "",
+      "snowboard": "$",
+      "skis": "$"
+    }
+  },
+  "resortId": "",
+  "sourceUrl": "",
+  "updatedAt": ""
+}

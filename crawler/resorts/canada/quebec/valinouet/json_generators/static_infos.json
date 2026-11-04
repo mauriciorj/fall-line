@@ -1,0 +1,23 @@
+{
+  "address": "181 Rte du Valinouët, Saint-David-de-Falardeau, QC G0V 1C0",
+  "continent": "North America",
+  "coordinates": { "lat": "48.654626453540345", "lng": "-70.89477740361593" },
+  "country": "Canada",
+  "email": "info@valinouet.qc.ca",
+  "googleMapsUrl": "https://maps.app.goo.gl/51arrkCBpsBigkSu5",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(418) 673-6455",
+  "published": true,
+  "rating": 4.6,
+  "region": "Quebec",
+  "resortId": "valinouet",
+  "ticketUrl": "",
+  "website": "https://valinouet.qc.ca/"
+}

@@ -1,0 +1,23 @@
+{
+  "address": "20 Chem. du Mont Ti Basse, Baie-Comeau, QC G4Z 2A5",
+  "continent": "North America",
+  "coordinates": { "lat": "49.28982607116549", "lng": "-68.16798748491244" },
+  "country": "Canada",
+  "email": "ti-basse@ville.baie-comeau.qc.ca",
+  "googleMapsUrl": "https://maps.app.goo.gl/ahMVLpjPKaguVEpk6",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(418) 296-8311",
+  "published": true,
+  "rating": 4.4,
+  "region": "Quebec",
+  "resortId": "mont-ti-basse-baie-comeau",
+  "ticketUrl": "",
+  "website": "https://www.monttibasse.com/"
+}

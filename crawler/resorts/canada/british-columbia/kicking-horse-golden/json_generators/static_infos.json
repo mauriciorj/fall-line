@@ -1,0 +1,23 @@
+{
+  "address": "1500 Kicking Horse Trl, Golden, BC V0A 1H0",
+  "continent": "North America",
+  "coordinates": { "lat": "51.297709649657314", "lng": "-117.04769370327156" },
+  "country": "Canada",
+  "email": "info@kickinghorseresort.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/nGXSLdnzyyG2BaPw9",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(250) 439-5425",
+  "published": true,
+  "rating": 4.6,
+  "region": "British Columbia",
+  "resortId": "kicking-horse-golden",
+  "ticketUrl": "",
+  "website": "https://kickinghorseresort.com/"
+}

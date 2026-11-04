@@ -1,0 +1,23 @@
+{
+  "address": "7271 Barkerville Hwy, Quesnel, BC V2J 2J1",
+  "continent": "North America",
+  "coordinates": { "lat": "53.06688682523251", "lng": "-121.9420496140512" },
+  "country": "Canada",
+  "email": "theshop@trollsnowschool.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/uu4a2waxGXyxkK9g9",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(250) 994-3200",
+  "published": true,
+  "rating": 4.8,
+  "region": "British Columbia",
+  "resortId": "troll-resort-quesnel",
+  "ticketUrl": "",
+  "website": "http://www.trollresort.com/"
+}

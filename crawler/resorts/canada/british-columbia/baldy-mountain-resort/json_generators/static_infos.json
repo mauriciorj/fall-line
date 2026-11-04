@@ -1,0 +1,23 @@
+{
+  "address": "2680 Mount Baldy Rd, Oliver, BC V0H 1T0",
+  "continent": "North America",
+  "coordinates": { "lat": "49.15294642813764", "lng": "-119.23601420709738" },
+  "country": "Canada",
+  "email": "ticketoffice@skibaldy.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/AGdNFb9CGfxwyycZ8",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(250) 498-4086",
+  "published": true,
+  "rating": 4.7,
+  "region": "British Columbia",
+  "resortId": "baldy-mountain-resort",
+  "ticketUrl": "",
+  "website": "https://baldyresort.com/"
+}

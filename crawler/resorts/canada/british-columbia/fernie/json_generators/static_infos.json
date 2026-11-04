@@ -1,0 +1,23 @@
+{
+  "address": "5339 Fernie Ski Hill Rd, Fernie, BC V0B 1M6",
+  "continent": "North America",
+  "coordinates": { "lat": "49.46282866822832", "lng": "-115.08729581635447" },
+  "country": "Canada",
+  "email": "information@skircr.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/HYee6awySe9Tab1Z9",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(250) 423-4655",
+  "published": true,
+  "rating": 4.6,
+  "region": "British Columbia",
+  "resortId": "fernie",
+  "ticketUrl": "",
+  "website": "http://www.skifernie.com/"
+}

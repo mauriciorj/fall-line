@@ -1,0 +1,23 @@
+{
+  "address": "2950 Camozzi Rd, Revelstoke, BC V0E 2S0",
+  "continent": "North America",
+  "coordinates": { "lat": "50.958587773403174", "lng": "-118.16230786947347" },
+  "country": "Canada",
+  "email": "info@revelstokemountainresort.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/bTCFWR4BHRjD1uZY7",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(250) 814-0087",
+  "published": true,
+  "rating": 4.7,
+  "region": "British Columbia",
+  "resortId": "revelstoke-mountain-resort",
+  "ticketUrl": "",
+  "website": "https://www.revelstokemountainresort.com/"
+}

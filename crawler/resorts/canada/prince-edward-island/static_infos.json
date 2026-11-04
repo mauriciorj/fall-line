@@ -1,0 +1,23 @@
+{
+  "address": "2018 PE-13, North Wiltshire, PE C0A 1Y0",
+  "continent": "North America",
+  "coordinates": { "lat": "46.282638165715596", "lng": "-63.40993052105398" },
+  "country": "Canada",
+  "email": "skiresorts@yahoo.ca",
+  "googleMapsUrl": "https://maps.app.goo.gl/29aHuvvGUDbJQeyaA",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(800) 463-4734",
+  "published": true,
+  "rating": 4.6,
+  "region": "Prince Edward Island",
+  "resortId": "brookvale-ski-park",
+  "ticketUrl": "",
+  "website": "http://www.markarendzprovincialskipark.com/"
+}

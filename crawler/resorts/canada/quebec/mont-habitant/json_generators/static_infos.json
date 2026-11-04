@@ -1,0 +1,23 @@
+{
+  "address": "12 Chem. des Skieurs, Saint-Sauveur, QC J0R 1R2",
+  "continent": "North America",
+  "coordinates": { "lat": "45.88247303897467", "lng": "-74.17846565886806" },
+  "country": "Canada",
+  "email": "info@monthabitant.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/ch186SRDzRxeWHZF7",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(450) 227-2637",
+  "published": true,
+  "rating": 4.5,
+  "region": "Quebec",
+  "resortId": "mont-habitant",
+  "ticketUrl": "",
+  "website": "https://www.monthabitant.com/"
+}

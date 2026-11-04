@@ -1,0 +1,23 @@
+{
+  "address": "Dawson Creek, BC V1G 0C1",
+  "continent": "North America",
+  "coordinates": { "lat": "55.71509777012139", "lng": "-120.264935430001" },
+  "country": "Canada",
+  "email": "bearmountain@hotmail.ca",
+  "googleMapsUrl": "https://maps.app.goo.gl/EgvA7Nj5HmMsCSSYA",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(250) 782-4988",
+  "published": true,
+  "rating": 4.5,
+  "region": "British Columbia",
+  "resortId": "bear-mountain-dawson-creek",
+  "ticketUrl": "",
+  "website": "https://bearmtnskihill.com/"
+}

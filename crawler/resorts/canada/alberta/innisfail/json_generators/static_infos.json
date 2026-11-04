@@ -1,0 +1,23 @@
+{
+  "address": "Lakewood Dr, Innisfail, AB T4G 1Y6",
+  "continent": "North America",
+  "coordinates": { "lat": "52.03494499771606" , "lng": "-113.96812514952711" },
+  "country": "Canada",
+  "email": "iskivolunteers@gmail.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/9hTD9k54fCtL18nN9",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(403) 227-5155",
+  "published": true,
+  "rating": 4.3,
+  "region": "Alberta",
+  "resortId": "innisfail",
+  "ticketUrl": "",
+  "website": "http://www.innisfailskihill.com/"
+}

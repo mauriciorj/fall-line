@@ -1,0 +1,23 @@
+{
+  "address": "49315 RR 72, Drayton Valley, AB T7A 1S9",
+  "continent": "North America",
+  "coordinates": { "lat": "" , "lng": "" },
+  "country": "Canada",
+  "email": "dvskiclub@hotmail.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/jvueDv6QCGqjU9YMA",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(780) 542-2837",
+  "published": false,
+  "rating": 4.5,
+  "region": "Alberta",
+  "resortId": "drayton-valley-brazeau-ski-hill",
+  "ticketUrl": "",
+  "website": "http://hotmail.com/"
+}

@@ -1,0 +1,23 @@
+{
+  "address": "120 Rte du Mont Adstock, Adstock, QC G0N 1S0",
+  "continent": "North America",
+  "coordinates": { "lat": "46.02898037187785", "lng": "-71.18890285943597" },
+  "country": "Canada",
+  "email": "serviceclient@montadstock.ca",
+  "googleMapsUrl": "https://maps.app.goo.gl/pQGPZYwrQNTpouod9",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(418) 422-2242",
+  "published": true,
+  "rating": 4.5,
+  "region": "Quebec",
+  "resortId": "mont-adstock",
+  "ticketUrl": "",
+  "website": "http://www.montadstock.ca/"
+}

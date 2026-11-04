@@ -1,0 +1,23 @@
+{
+  "address": "1501 Ch du Mont-Gabriel, Sainte-Adèle, QC J8B 2J8",
+  "continent": "North America",
+  "coordinates": { "lat": "45.92404141582657", "lng": "-74.15444088745483" },
+  "country": "Canada",
+  "email": "infos@sommets.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/rdX7Kaa5HYGytibH9",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(450) 227-1100",
+  "published": true,
+  "rating": 4.2,
+  "region": "Quebec",
+  "resortId": "sommet-gabriel",
+  "ticketUrl": "",
+  "website": "https://www.sommets.com/fr/decouvrir-les-sommets/sommet-gabriel/?utm_source=google&utm_medium=organic&utm_campaign=gbp&utm_content=sommet-gabriel"
+}

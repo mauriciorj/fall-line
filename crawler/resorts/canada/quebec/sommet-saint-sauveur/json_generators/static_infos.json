@@ -1,0 +1,23 @@
+{
+  "address": "655 Ch. Louis-Dufour, Saint-Sauveur, QC J0R 1R3",
+  "continent": "North America",
+  "coordinates": { "lat": "45.88540413817512", "lng": "-74.1508022416188" },
+  "country": "Canada",
+  "email": "info@sommets.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/oBU9shhFfuPEk3vv5",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(450) 227-4671",
+  "published": true,
+  "rating": 4.0,
+  "region": "Quebec",
+  "resortId": "sommet-saint-sauveur",
+  "ticketUrl": "",
+  "website": "https://www.sommets.com/fr/decouvrir-les-sommets/sommet-saint-sauveur/?utm_source=google&utm_medium=organic&utm_campaign=gbp&utm_content=sommet-saint-sauveur"
+}

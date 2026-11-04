@@ -1,0 +1,23 @@
+{
+  "address": "56 Chem. du Mont la Réserve, Saint-Donat-de-Montcalm, QC J0T 2C0",
+  "continent": "North America",
+  "coordinates": { "lat": "46.28650256252232", "lng": "-74.18145285331407" },
+  "country": "Canada",
+  "email": "info@skilareserve.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/CWE68aAeBc8sAWCs6",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(819) 424-1373",
+  "published": true,
+  "rating": 4.5,
+  "region": "Quebec",
+  "resortId": "la-reserve-saint-donat",
+  "ticketUrl": "",
+  "website": "http://skilareserve.com/"
+}

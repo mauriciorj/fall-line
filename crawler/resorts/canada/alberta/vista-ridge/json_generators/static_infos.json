@@ -1,0 +1,23 @@
+{
+  "address": "1 Spruce Valley Dr, Fort McMurray, AB T9H 5B4",
+  "continent": "North America",
+  "coordinates": { "lat": "56.66180656632214" , "lng": "-111.13347793684922" },
+  "country": "Canada",
+  "email": "vistaridge@shaw.ca",
+  "googleMapsUrl": "https://maps.app.goo.gl/mRqHZy5pzDd7tJhUA",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(780) 734-8651",
+  "published": true,
+  "rating": 4.6,
+  "region": "Alberta",
+  "resortId": "vista-ridge",
+  "ticketUrl": "",
+  "website": "http://www.vistaridge.ab.ca/"
+}

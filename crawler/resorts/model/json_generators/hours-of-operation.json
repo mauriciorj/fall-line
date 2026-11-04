@@ -1,0 +1,14 @@
+{
+  "hours": {
+    "sunday": "9 a.m. to 4 p.m.",
+    "monday": "9 a.m. to 4 p.m.",
+    "tuesday": "9 a.m. to 4 p.m.",
+    "wednesday": "9 a.m. to 4 p.m.",
+    "thursday": "9 a.m. to 4 p.m.",
+    "friday": "9 a.m. to 4 p.m.",
+    "saturday": "9 a.m. to 4 p.m."
+  },
+  "resortId": "",
+  "sourceUrl": "",
+  "updatedAt": ""
+}

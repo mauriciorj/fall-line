@@ -21,6 +21,7 @@ Create or update a mountain crawler. Apply this workflow to requests involving `
 - Identify the target path: `crawler/mountains/<continent>/<country>/<region>/<resort-slug>/`.
 - Read the nearest complete crawler in the same region. Prefer the same data shape and source type; use `brimacombe` or `snow-valley-ski-resort` only after comparing them.
 - Check `git status` before changing generated JSON or existing user work.
+- If `crawler/super-crawler/output/<resort-slug>/discovery.json` exists (or the user provides one), use its `pageMap` to choose source URLs per generator, `needsJs` to decide between `requests` and Selenium, `documents`/`thirdParty` for PDF or widget sources, and `needsReview` for open questions. Use `static_infos.draft.json` as the starting point for `static_infos.json` after verifying each value. Discovery snippets are hints, not data: generators must still fetch and parse the HTML.
 - Verify the Python import root. Most Ontario crawlers use `Path(__file__).resolve().parent.parents[3]`; do not copy this blindly. Confirm the path that contains `convex_client.py`.
 
 ## 2. Required crawler contract

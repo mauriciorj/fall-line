@@ -1,0 +1,23 @@
+{
+  "address": "1000 Chem. des Loisirs, La Malbaie, QC G5A 1Y8",
+  "continent": "North America",
+  "coordinates": { "lat": "47.77112757265683", "lng": "-70.10323527256993" },
+  "country": "Canada",
+  "email": "info@skimgf.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/sDDWFPrJtekASp7c6",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(877) 665-0095",
+  "published": true,
+  "rating": 4.5,
+  "region": "Quebec",
+  "resortId": "le-mont-grand-fonds",
+  "ticketUrl": "",
+  "website": "https://montgrandfonds.com/"
+}

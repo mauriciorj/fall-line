@@ -1,0 +1,23 @@
+{
+  "address": "Hwy 83, Inglis, MB R0J 0X0",
+  "continent": "North America",
+  "coordinates": { "lat": "50.95131073823496", "lng": "-101.33932631256418" },
+  "country": "Canada",
+  "email": "sales@asessippi.com",
+  "googleMapsUrl": "",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(204) 564-2000",
+  "published": true,
+  "rating": 4.5,
+  "region": "Manitoba",
+  "resortId": "asessippi",
+  "ticketUrl": "",
+  "website": "http://www.asessippi.com/"
+}

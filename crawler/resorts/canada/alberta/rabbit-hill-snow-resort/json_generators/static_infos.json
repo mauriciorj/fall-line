@@ -1,0 +1,23 @@
+{
+  "address": "20715 57 Ave SW, Edmonton, AB T6Y 0J5",
+  "continent": "North America",
+  "coordinates": { "lat": "53.38125234840407" , "lng": "-113.67071918030912" },
+  "country": "Canada",
+  "email": "customerservice@rabbithill.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/tok88HXG9UzmwKTA9",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(780) 955-2440",
+  "published": true,
+  "rating": 4.4,
+  "region": "Alberta",
+  "resortId": "rabbit-hill-snow-resort",
+  "ticketUrl": "",
+  "website": "https://www.rabbithill.com/"
+}

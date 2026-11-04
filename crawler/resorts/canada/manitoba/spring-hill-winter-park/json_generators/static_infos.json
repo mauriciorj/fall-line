@@ -1,0 +1,23 @@
+{
+  "address": "65036 Oasis Rd, Springfield, MB R5R 0A2",
+  "continent": "North America",
+  "coordinates": { "lat": "49.963785213884826", "lng": "-96.98106865865469" },
+  "country": "Canada",
+  "email": "cs@springhillwinterpark.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/FGgYnzADawmv1pc97",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(204) 224-3051",
+  "published": true,
+  "rating": 4.1,
+  "region": "Manitoba",
+  "resortId": "spring-hill-winter-park",
+  "ticketUrl": "",
+  "website": "http://www.springhillwinterpark.com/"
+}

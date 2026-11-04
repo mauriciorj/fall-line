@@ -1,0 +1,23 @@
+{
+  "address": "5225 Fairmont Resort Rd, Fairmont Hot Springs, BC V0A 1K4",
+  "continent": "North America",
+  "coordinates": { "lat": "50.33899636226228", "lng": "-115.82561512423382" },
+  "country": "Canada",
+  "email": "resinfo@fairmonthotsprings.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/ndKieNwdos1nSgK79",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(250) 345-6311",
+  "published": true,
+  "rating": 4.3,
+  "region": "British Columbia",
+  "resortId": "fairmont-hot-springs",
+  "ticketUrl": "",
+  "website": "https://www.fairmonthotsprings.com"
+}

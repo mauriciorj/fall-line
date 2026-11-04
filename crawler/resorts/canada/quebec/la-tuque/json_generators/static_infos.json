@@ -1,0 +1,23 @@
+{
+  "address": "700 Rue Desbiens, La Tuque, QC G9X 4E6",
+  "continent": "North America",
+  "coordinates": { "lat": "47.435160902106084", "lng": "-72.77621592574575" },
+  "country": "Canada",
+  "email": "infoservice@ville.latuque.qc.ca",
+  "googleMapsUrl": "",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(819) 523-4422",
+  "published": true,
+  "rating": 4.6,
+  "region": "Quebec",
+  "resortId": "la-tuque",
+  "ticketUrl": "",
+  "website": "https://www.ville.latuque.qc.ca/"
+}

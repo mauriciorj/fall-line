@@ -1,0 +1,23 @@
+{
+  "address": "5398 Timothy Lake Rd, Lac la Hache, BC V0K 1T1",
+  "continent": "North America",
+  "coordinates": { "lat": "51.91503231145276", "lng": "-121.2510951074546" },
+  "country": "Canada",
+  "email": "info@skitimothy.com",
+  "googleMapsUrl": "https://maps.app.goo.gl/S79AtJoY8hsmt1DG9",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(250) 396-4095",
+  "published": true,
+  "rating": 4.6,
+  "region": "British Columbia",
+  "resortId": "mount-timothy",
+  "ticketUrl": "",
+  "website": "http://www.skitimothy.com/"
+}

@@ -1,0 +1,23 @@
+{
+  "address": "1 Marmot Rd, Jasper, AB T0E 1E0",
+  "continent": "North America",
+  "coordinates": { "lat": "52.80221914248114" , "lng": "-118.0821258059968" },
+  "country": "Canada",
+  "email": "info@skimarmot.com",
+  "googleMapsUrl": "info@skimarmot.com",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(780) 852-3816",
+  "published": true,
+  "rating": 4.7,
+  "region": "Alberta",
+  "resortId": "marmot-basin-jasper",
+  "ticketUrl": "",
+  "website": "http://skimarmot.com/"
+}

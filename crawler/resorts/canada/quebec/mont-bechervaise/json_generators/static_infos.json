@@ -1,0 +1,23 @@
+{
+  "address": "RFP4+GX, 50 Rue Eden, Gaspé, QC G4X 1Z2",
+  "continent": "North America",
+  "coordinates": { "lat": "48.83638674927083", "lng": "-64.54303033165355" },
+  "country": "Canada",
+  "email": "info@montbechervaise.ca",
+  "googleMapsUrl": "https://maps.app.goo.gl/mEdkSN3A5Ams8x8NA",
+  "hasIceSkate": false,
+  "hasAccommodations": false,
+  "hasCrossCountry": false,
+  "hasLessons": false,
+  "hasSnowshoeing": false,
+  "hasSpa": false,
+  "hasTubing": false,
+  "hasZipline": false,
+  "phone": "(418) 368-2000",
+  "published": true,
+  "rating": 4.7,
+  "region": "Quebec",
+  "resortId": "mont-bechervaise",
+  "ticketUrl": "",
+  "website": "https://www.montbechervaise.ca/"
+}
