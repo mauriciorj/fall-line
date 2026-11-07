@@ -1,0 +1,43 @@
+{
+  "resortId": "massif-du-sud",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "515 m - 915 m",
+        "height": "400m",
+        "tracksGreenLength": "5.9km",
+        "tracksGreenProportion": "24",
+        "tracksBlueLength": "4.6km",
+        "tracksBlueProportion": "19",
+        "tracksBlackLength": "14.2km",
+        "tracksBlackProportion": "57",
+        "tracksTotalLength": "24.7km",
+        "address": "1989 Rte du Massif-du-Sud, Saint-Philémon, QC G0R 4A0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 46.62166592348934,
+          "lng": -70.48974793503615
+        },
+        "country": "Canada",
+        "email": "info@massifdusud.net",
+        "googleMapsUrl": "https://maps.app.goo.gl/srwiKfP5Xk681K4KA",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(877) 869-3676",
+        "published": true,
+        "rating": 4.6,
+        "region": "Quebec",
+        "resortId": "massif-du-sud",
+        "website": "http://www.massifdusud.net/",
+        "name": "Massif du Sud"
+      }
+    }
+  ]
+}

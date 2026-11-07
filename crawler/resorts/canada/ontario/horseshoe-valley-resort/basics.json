@@ -1,0 +1,43 @@
+{
+  "resortId": "horseshoe-valley-resort",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "309 m - 402 m",
+        "height": "93m",
+        "tracksGreenLength": "2.6km",
+        "tracksGreenProportion": "31",
+        "tracksBlueLength": "3.8km",
+        "tracksBlueProportion": "46",
+        "tracksBlackLength": "1.9km",
+        "tracksBlackProportion": "23",
+        "tracksTotalLength": "8.3km",
+        "address": "1101 Horseshoe Valley Rd W, Barrie, ON L4M 4Y8",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 44.59429988048484,
+          "lng": -79.68125046375664
+        },
+        "country": "Canada",
+        "email": "info@horseshoeresort.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/bzCpVSuKs9mPU3BNA",
+        "hasIceSkate": false,
+        "hasCrossCountry": true,
+        "hasLessons": false,
+        "hasSnowshoeing": true,
+        "hasSpa": true,
+        "hasTubing": true,
+        "hasZipline": false,
+        "phone": "(705) 835-2790",
+        "published": true,
+        "rating": 4.1,
+        "region": "Ontario",
+        "resortId": "horseshoe-valley-resort",
+        "ticketUrl": "https://horseshoeresort.com/ski/lift-ticket-and-rentals-pricing",
+        "website": "http://horseshoeresort.com/",
+        "name": "Horseshoe Valley Resort"
+      }
+    }
+  ]
+}

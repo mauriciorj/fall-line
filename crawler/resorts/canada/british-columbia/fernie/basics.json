@@ -1,0 +1,43 @@
+{
+  "resortId": "fernie",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "1052 m - 2134 m",
+        "height": "1082m",
+        "tracksGreenLength": "42km",
+        "tracksGreenProportion": "31",
+        "tracksBlueLength": "58km",
+        "tracksBlueProportion": "40",
+        "tracksBlackLength": "42km",
+        "tracksBlackProportion": "29",
+        "tracksTotalLength": "142km",
+        "address": "5339 Fernie Ski Hill Rd, Fernie, BC V0B 1M6",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 49.46282866822832,
+          "lng": -115.08729581635447
+        },
+        "country": "Canada",
+        "email": "information@skircr.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/HYee6awySe9Tab1Z9",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(250) 423-4655",
+        "published": true,
+        "rating": 4.6,
+        "region": "British Columbia",
+        "resortId": "fernie",
+        "website": "http://www.skifernie.com/",
+        "name": "Fernie"
+      }
+    }
+  ]
+}

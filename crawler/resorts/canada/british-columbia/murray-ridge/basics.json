@@ -1,0 +1,43 @@
+{
+  "resortId": "murray-ridge",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "895 m - 1405 m",
+        "height": "510m",
+        "tracksGreenLength": "7km",
+        "tracksGreenProportion": "32",
+        "tracksBlueLength": "7km",
+        "tracksBlueProportion": "32",
+        "tracksBlackLength": "8km",
+        "tracksBlackProportion": "36",
+        "tracksTotalLength": "22km",
+        "address": "7904 Chalet Dr, Fort St James, BC V0J 1P0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 54.51800885080546,
+          "lng": -124.2098339706669
+        },
+        "country": "Canada",
+        "email": "murrayridge@gmail.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/Us4K9vmJ9GuPptWD7",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(250) 996-8515",
+        "published": true,
+        "rating": 4.7,
+        "region": "British Columbia",
+        "resortId": "murray-ridge",
+        "website": "https://www.murrayridge.com/",
+        "name": "Murray Ridge"
+      }
+    }
+  ]
+}

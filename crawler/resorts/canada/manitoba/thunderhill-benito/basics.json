@@ -1,0 +1,43 @@
+{
+  "resortId": "thunderhill-benito",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "469 m - 572 m",
+        "height": "103m",
+        "tracksGreenLength": "3km",
+        "tracksGreenProportion": "62",
+        "tracksBlueLength": "1km",
+        "tracksBlueProportion": "20",
+        "tracksBlackLength": "0.9km",
+        "tracksBlackProportion": "18",
+        "tracksTotalLength": "4.9km",
+        "address": "Benito, MB R0L 0C0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 52.01289743122061,
+          "lng": -101.59676432513655
+        },
+        "country": "Canada",
+        "email": "info@skithunderhill.ca",
+        "googleMapsUrl": "https://maps.app.goo.gl/9UQ2SADRafzNkL2D9",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(204) 539-2626",
+        "published": true,
+        "rating": 4.8,
+        "region": "Manitoba",
+        "resortId": "thunderhill-benito",
+        "website": "https://skithunderhill.myshopify.com/",
+        "name": "Thunderhill"
+      }
+    }
+  ]
+}

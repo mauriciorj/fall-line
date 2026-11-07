@@ -1,0 +1,44 @@
+{
+  "resortId": "canada-olympic-park-calgary",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "1130 m - 1250 m",
+        "height": "120m",
+        "tracksGreenLength": "3.5km",
+        "tracksGreenProportion": "87",
+        "tracksBlueLength": "0.5km",
+        "tracksBlueProportion": "13",
+        "tracksBlackLength": "0km",
+        "tracksBlackProportion": "0",
+        "tracksTotalLength": "4km",
+        "address": "88 Canada Olympic Rd S W, Calgary, AB T3B 5R5",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 51.08257021178062,
+          "lng": -114.2151346290137
+        },
+        "country": "Canada",
+        "email": "info@winsportcanada.ca",
+        "googleMapsUrl": "https://maps.app.goo.gl/iHBBqKghmV1Sd88T7",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(403) 247-5452",
+        "published": true,
+        "rating": 4.5,
+        "region": "Alberta",
+        "resortId": "canada-olympic-park-calgary",
+        "ticketUrl": "",
+        "website": "http://winsportcanada.ca/",
+        "name": "Canada Olympic Park"
+      }
+    }
+  ]
+}

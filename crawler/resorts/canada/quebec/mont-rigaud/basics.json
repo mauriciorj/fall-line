@@ -1,0 +1,43 @@
+{
+  "resortId": "mont-rigaud",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "55 m - 167 m",
+        "height": "112m",
+        "tracksGreenLength": "2.4km",
+        "tracksGreenProportion": "30",
+        "tracksBlueLength": "2.5km",
+        "tracksBlueProportion": "31",
+        "tracksBlackLength": "3.1km",
+        "tracksBlackProportion": "39",
+        "tracksTotalLength": "8km",
+        "address": "321 des Erables, Rigaud, QC J0P 1P0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 45.46822140336121,
+          "lng": -74.33907507237954
+        },
+        "country": "Canada",
+        "email": "info@montrigaud.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/yQdC2gYWr1vR1MPZ6",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(450) 451-0000",
+        "published": true,
+        "rating": 4.4,
+        "region": "Quebec",
+        "resortId": "mont-rigaud",
+        "website": "http://montrigaud.com/",
+        "name": "Mont Rigaud"
+      }
+    }
+  ]
+}

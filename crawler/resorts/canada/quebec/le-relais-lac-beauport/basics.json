@@ -1,0 +1,43 @@
+{
+  "resortId": "le-relais-lac-beauport",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "205 m - 429 m",
+        "height": "224m",
+        "tracksGreenLength": "4km",
+        "tracksGreenProportion": "28",
+        "tracksBlueLength": "5.5km",
+        "tracksBlueProportion": "36",
+        "tracksBlackLength": "5.5km",
+        "tracksBlackProportion": "36",
+        "tracksTotalLength": "15km",
+        "address": "1084 Bd du Lac, Lac-Beauport, QC G3B 2P9",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 46.94158927958102,
+          "lng": -71.2992074557965
+        },
+        "country": "Canada",
+        "email": "contact@skirelais.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/cT7hEN6ezuyjC5Lp7",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(418) 849-1851",
+        "published": true,
+        "rating": 4.6,
+        "region": "Quebec",
+        "resortId": "le-relais-lac-beauport",
+        "website": "http://www.skirelais.com/",
+        "name": "Le Relais"
+      }
+    }
+  ]
+}

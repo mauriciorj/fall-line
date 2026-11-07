@@ -1,0 +1,43 @@
+{
+  "resortId": "tremblant",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "230 m - 875 m",
+        "height": "645m",
+        "tracksGreenLength": "21.6km",
+        "tracksGreenProportion": "26",
+        "tracksBlueLength": "24.5km",
+        "tracksBlueProportion": "30",
+        "tracksBlackLength": "35.8km",
+        "tracksBlackProportion": "44",
+        "tracksTotalLength": "81.9km",
+        "address": "Mont-Tremblant, QC J8E 1E1",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 46.22004802670881,
+          "lng": -74.55292955726155
+        },
+        "country": "Canada",
+        "email": "isac@tremblant.ca",
+        "googleMapsUrl": "https://maps.app.goo.gl/DzTJh4enDPnXJiiC7",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(819) 681-2000",
+        "published": true,
+        "rating": 4.7,
+        "region": "Quebec",
+        "resortId": "tremblant",
+        "website": "https://www.tremblant.ca/",
+        "name": "Tremblant"
+      }
+    }
+  ]
+}

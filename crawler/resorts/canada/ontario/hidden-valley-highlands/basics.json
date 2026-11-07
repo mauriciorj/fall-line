@@ -1,0 +1,38 @@
+{
+  "resortId": "hidden-valley-highlands",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "280 m - 380 m",
+        "height": "100m",
+        "tracksGreenLength": "1.8km",
+        "tracksGreenProportion": "60",
+        "tracksBlueLength": "0.7km",
+        "tracksBlueProportion": "23",
+        "tracksBlackLength": "0.5km",
+        "tracksBlackProportion": "17",
+        "tracksTotalLength": "3km",
+        "address": "1655 Hidden Valley Road, Huntsville, ON P1H 1A4",
+        "continent": "North America",
+        "country": "Canada",
+        "email": "info@skihiddenvalley.on.ca",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": true,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(705) 789-1773",
+        "published": true,
+        "region": "Ontario",
+        "resortId": "hidden-valley-highlands",
+        "ticketUrl": "https://shop.skihiddenvalley.ca/lift-passes",
+        "website": "https://skihiddenvalley.ca/",
+        "name": "Hidden Valley Highlands Ski Area"
+      }
+    }
+  ]
+}

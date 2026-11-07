@@ -1,0 +1,43 @@
+{
+  "resortId": "le-massif-de-charlevoix",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "36 m - 806 m",
+        "height": "770m",
+        "tracksGreenLength": "12km",
+        "tracksGreenProportion": "31",
+        "tracksBlueLength": "16km",
+        "tracksBlueProportion": "41",
+        "tracksBlackLength": "11km",
+        "tracksBlackProportion": "28",
+        "tracksTotalLength": "39km",
+        "address": "185 Chem. du Massif, Petite-Rivière-Saint-François, QC G0A 2L0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 47.27936649291567,
+          "lng": -70.60927156707228
+        },
+        "country": "Canada",
+        "email": "info@lemassif.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/ozUrBcfvHxFA59uV7",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(418) 632-5876",
+        "published": true,
+        "rating": 4.6,
+        "region": "Quebec",
+        "resortId": "le-massif-de-charlevoix",
+        "website": "https://www.lemassif.com/fr/",
+        "name": "Le Massif de Charlevoix"
+      }
+    }
+  ]
+}

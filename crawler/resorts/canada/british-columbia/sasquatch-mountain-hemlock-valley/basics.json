@@ -1,0 +1,43 @@
+{
+  "resortId": "sasquatch-mountain-hemlock-valley",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "975 m - 1372 m",
+        "height": "397m",
+        "tracksGreenLength": "2km",
+        "tracksGreenProportion": "21",
+        "tracksBlueLength": "6km",
+        "tracksBlueProportion": "58",
+        "tracksBlackLength": "2.2km",
+        "tracksBlackProportion": "21",
+        "tracksTotalLength": "10.2km",
+        "address": "20955 Hemlock Valley Rd, Agassiz, BC V0M 1A1",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 49.37994596586996,
+          "lng": -121.93456332792918
+        },
+        "country": "Canada",
+        "email": "info@sasquatchmountainresort.ca",
+        "googleMapsUrl": "https://maps.app.goo.gl/nxeDDHbix2YnhznN8",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(604) 797-4411",
+        "published": true,
+        "rating": 4.1,
+        "region": "British Columbia",
+        "resortId": "sasquatch-mountain-hemlock-valley",
+        "website": "https://sasquatchmountain.ca/",
+        "name": "Sasquatch Mountain"
+      }
+    }
+  ]
+}

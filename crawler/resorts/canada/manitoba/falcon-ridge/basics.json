@@ -1,0 +1,43 @@
+{
+  "resortId": "falcon-ridge",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "331 m - 367 m",
+        "height": "36m",
+        "tracksGreenLength": "1.2km",
+        "tracksGreenProportion": "80",
+        "tracksBlueLength": "0.3km",
+        "tracksBlueProportion": "20",
+        "tracksBlackLength": "0km",
+        "tracksBlackProportion": "0",
+        "tracksTotalLength": "1.5km",
+        "address": "200 Ridge Rd, Falcon Lake, MB R0E 0N0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 49.70390093025875,
+          "lng": -95.18995243404959
+        },
+        "country": "Canada",
+        "email": "info@falconridgeski.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/D4xzEhfwp9VigqQL6",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(204) 349-8935",
+        "published": true,
+        "rating": 4.7,
+        "region": "Manitoba",
+        "resortId": "falcon-ridge",
+        "website": "http://www.falconridgeski.com/",
+        "name": "Falcon Ridge"
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "resortId": "mont-sainte-anne",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "175 m - 800 m",
+        "height": "625m",
+        "tracksGreenLength": "15km",
+        "tracksGreenProportion": "22",
+        "tracksBlueLength": "34km",
+        "tracksBlueProportion": "46",
+        "tracksBlackLength": "24km",
+        "tracksBlackProportion": "32",
+        "tracksTotalLength": "73km",
+        "address": "300 Rang St Julien, Saint-Ferréol-les-Neiges, QC G0A 3R0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 47.12365877442542,
+          "lng": -70.87696884914082
+        },
+        "country": "Canada",
+        "email": "info@mont-sainte-anne.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/vjzqXJH63RRDwRaN9",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(418) 827-4561",
+        "published": true,
+        "rating": 4.3,
+        "region": "Quebec",
+        "resortId": "mont-sainte-anne",
+        "website": "https://www.sepaq.com/destinations/parc-mont-sainte-anne/",
+        "name": "Mont-Sainte-Anne"
+      }
+    }
+  ]
+}

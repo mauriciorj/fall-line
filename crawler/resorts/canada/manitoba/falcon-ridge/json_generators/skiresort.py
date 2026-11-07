@@ -48,13 +48,19 @@ def normalize_kilometers(value):
 def parse_slope_row(text, difficulty):
     match = re.search(
         rf"\b{difficulty}\s+([0-9]+(?:[.,][0-9]+)?\s*km)\s*"
-        r"\(\s*([0-9]+(?:[.,][0-9]+)?)\s*%\s*\)",
+        r"(?:\(\s*([0-9]+(?:[.,][0-9]+)?)\s*%\s*\))?",
         text,
         re.IGNORECASE,
     )
     if not match:
         raise ValueError(f"Could not find {difficulty.lower()} slope information")
-    return normalize_kilometers(match.group(1)), match.group(2)
+    length = normalize_kilometers(match.group(1))
+    proportion = match.group(2)
+    if proportion is None:
+        if float(length.removesuffix("km").replace(",", ".")) != 0:
+            raise ValueError(f"Could not find {difficulty.lower()} slope proportion")
+        proportion = "0"
+    return length, proportion
 
 
 def parse_slopes(text):

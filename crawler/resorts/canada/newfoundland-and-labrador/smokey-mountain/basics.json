@@ -1,0 +1,43 @@
+{
+  "resortId": "smokey-mountain",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "595 m - 845 m",
+        "height": "250m",
+        "tracksGreenLength": "7.5km",
+        "tracksGreenProportion": "37",
+        "tracksBlueLength": "7.5km",
+        "tracksBlueProportion": "37",
+        "tracksBlackLength": "5km",
+        "tracksBlackProportion": "26",
+        "tracksTotalLength": "20km",
+        "address": "Smokey Mountain Rd, Labrador City, NL A2V 2K3",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 52.97859706200146,
+          "lng": -66.9208145571408
+        },
+        "country": "Canada",
+        "email": "info@skismokey.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/Q49peyZjcQXgTWQE9",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(709) 944-2129",
+        "published": true,
+        "rating": 4.6,
+        "region": "Newfoundland and Labrador",
+        "resortId": "smokey-mountain",
+        "website": "http://www.skismokey.ca/",
+        "name": "Smokey Mountain"
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "resortId": "belle-neige",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "305 m - 462 m",
+        "height": "157m",
+        "tracksGreenLength": "8km",
+        "tracksGreenProportion": "40",
+        "tracksBlueLength": "4km",
+        "tracksBlueProportion": "20",
+        "tracksBlackLength": "8km",
+        "tracksBlackProportion": "40",
+        "tracksTotalLength": "20km",
+        "address": "6820 Rte 117, Val-Morin, Quebec J0T 2R0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 46.00384106864884,
+          "lng": -74.21418817666449
+        },
+        "country": "Canada",
+        "email": "info@belleneige.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/SzAJGTtsZhgY4R687",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(819) 322-3311",
+        "published": true,
+        "rating": 4.4,
+        "region": "Quebec",
+        "resortId": "belle-neige",
+        "website": "http://belleneige.com/",
+        "name": "Belle Neige"
+      }
+    }
+  ]
+}

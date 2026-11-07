@@ -1,0 +1,43 @@
+{
+  "resortId": "mont-saint-bruno-saint-bruno-de-montarville",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "45 m - 175 m",
+        "height": "130m",
+        "tracksGreenLength": "4.4km",
+        "tracksGreenProportion": "54",
+        "tracksBlueLength": "2.6km",
+        "tracksBlueProportion": "32",
+        "tracksBlackLength": "1km",
+        "tracksBlackProportion": "14",
+        "tracksTotalLength": "8km",
+        "address": "550 Rang des Vingt-Cing E, Saint-Bruno-de-Montarville, QC J3V 0G6",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 45.55879911615289,
+          "lng": -73.3345287993567
+        },
+        "country": "Canada",
+        "email": "information@skisaintbruno.ca",
+        "googleMapsUrl": "https://maps.app.goo.gl/FpgTK85YyFKfyJRR7",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(450) 653-3441",
+        "published": true,
+        "rating": 4.3,
+        "region": "Quebec",
+        "resortId": "mont-saint-bruno-saint-bruno-de-montarville",
+        "website": "http://skisaintbruno.ca/",
+        "name": "Mont Saint-Bruno"
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "resortId": "calabogie-peaks",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "154 m - 392 m",
+        "height": "238m",
+        "tracksGreenLength": "2.4km",
+        "tracksGreenProportion": "30",
+        "tracksBlueLength": "3.6km",
+        "tracksBlueProportion": "45",
+        "tracksBlackLength": "2km",
+        "tracksBlackProportion": "25",
+        "tracksTotalLength": "8km",
+        "address": "30 Barrett Chute Rd, Greater Madawaska, ON K0J 1H0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 45.27457476256423,
+          "lng": -76.78036622861572
+        },
+        "country": "Canada",
+        "email": "info@calabogie.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/ivEkXCNrDV4hr1TF9",
+        "hasIceSkate": false,
+        "hasAccommodations": true,
+        "hasCrossCountry": false,
+        "hasLessons": true,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(613) 752-2720",
+        "published": true,
+        "region": "Ontario",
+        "resortId": "calabogie-peaks",
+        "ticketUrl": "https://calabogie.com/product-category/lift-tickets/",
+        "tollFree": "1-800-669-4861",
+        "website": "https://calabogie.com/",
+        "name": "Calabogie Peaks Resort"
+      }
+    }
+  ]
+}

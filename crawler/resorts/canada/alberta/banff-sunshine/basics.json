@@ -1,0 +1,34 @@
+{
+  "resortId": "banff-sunshine",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "1660 m - 2730 m",
+        "height": "1070m",
+        "tracksGreenLength": "25km",
+        "tracksGreenProportion": "23",
+        "tracksBlueLength": "50km",
+        "tracksBlueProportion": "46",
+        "tracksBlackLength": "34km",
+        "tracksBlackProportion": "31",
+        "tracksTotalLength": "109km",
+        "continent": "North America",
+        "country": "Canada",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "published": true,
+        "rating": 4.5,
+        "region": "Alberta",
+        "name": "Banff Sunshine",
+        "resortId": "banff-sunshine"
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "resortId": "mystery-mountain",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "214 m - 279 m",
+        "height": "65m",
+        "tracksGreenLength": "2.2km",
+        "tracksGreenProportion": "40",
+        "tracksBlueLength": "2.2km",
+        "tracksBlueProportion": "40",
+        "tracksBlackLength": "1.1km",
+        "tracksBlackProportion": "20",
+        "tracksTotalLength": "5.5km",
+        "address": "BOX 246, Thompson, MB R8N 0Z4",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 55.87114630437429,
+          "lng": -97.77714310250221
+        },
+        "country": "Canada",
+        "email": "president@mysterymountain.ca",
+        "googleMapsUrl": "https://maps.app.goo.gl/y5QFnzs1MvcARJVQ9",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(204) 778-8624",
+        "published": true,
+        "rating": 4.6,
+        "region": "Manitoba",
+        "resortId": "mystery-mountain",
+        "website": "https://www.mysterymountain.ca/",
+        "name": "Mystery Mountain"
+      }
+    }
+  ]
+}

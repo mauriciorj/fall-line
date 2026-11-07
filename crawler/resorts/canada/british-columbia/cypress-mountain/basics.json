@@ -1,0 +1,43 @@
+{
+  "resortId": "cypress-mountain",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "824 m - 1440 m",
+        "height": "616m",
+        "tracksGreenLength": "6.6km",
+        "tracksGreenProportion": "13",
+        "tracksBlueLength": "22km",
+        "tracksBlueProportion": "43",
+        "tracksBlackLength": "22.4km",
+        "tracksBlackProportion": "44",
+        "tracksTotalLength": "51km",
+        "address": "6000 Cypress Bowl Rd, West Vancouver, BC V7V 3N9",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 49.39647885048612,
+          "lng": -123.20244214748533
+        },
+        "country": "Canada",
+        "email": "info@cypressmountain.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/Jd1UL9FYVSb1uqWL7",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(604) 926-5612",
+        "published": true,
+        "rating": 4.5,
+        "region": "British Columbia",
+        "resortId": "cypress-mountain",
+        "website": "http://cypressmountain.com/",
+        "name": "Cypress Mountain"
+      }
+    }
+  ]
+}

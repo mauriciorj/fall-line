@@ -1,0 +1,43 @@
+{
+  "resortId": "mont-farlagne",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "150 m - 338 m",
+        "height": "188m",
+        "tracksGreenLength": "3km",
+        "tracksGreenProportion": "30",
+        "tracksBlueLength": "3.5km",
+        "tracksBlueProportion": "35",
+        "tracksBlackLength": "3.5km",
+        "tracksBlackProportion": "35",
+        "tracksTotalLength": "10km",
+        "address": "360 Chem. Mont Farlagne, Saint-Jacques, NB E7B 2X1",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 47.41431869096312,
+          "lng": -68.38118273774988
+        },
+        "country": "Canada",
+        "email": "info@montfarlagne.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/mStv4cmGz5F2YoHM7",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(506) 739-7669",
+        "published": true,
+        "rating": 4.5,
+        "region": "New Brunswick",
+        "resortId": "mont-farlagne",
+        "website": "https://republiknature.com/",
+        "name": "Mont Farlagne"
+      }
+    }
+  ]
+}

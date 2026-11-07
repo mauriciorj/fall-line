@@ -1,0 +1,43 @@
+{
+  "resortId": "sugarloaf-park",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "42 m - 199 m",
+        "height": "157m",
+        "tracksGreenLength": "2.5km",
+        "tracksGreenProportion": "27",
+        "tracksBlueLength": "3.2km",
+        "tracksBlueProportion": "34",
+        "tracksBlackLength": "3.6km",
+        "tracksBlackProportion": "39",
+        "tracksTotalLength": "9.3km",
+        "address": "596, rue, Val-d'Amour Rd, Atholville, NB E3N 4C9",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 47.98316812700196,
+          "lng": -66.69324442262547
+        },
+        "country": "Canada",
+        "email": "sugarloaf@gnb.ca",
+        "googleMapsUrl": "https://maps.app.goo.gl/HCzNuYyEXypW7Ydz7",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(506) 789-2366",
+        "published": true,
+        "rating": 4.6,
+        "region": "New Brunswick",
+        "resortId": "sugarloaf-park",
+        "website": "https://www.parcsnbparks.info/en/parks/9/sugarloaf-provincial-park",
+        "name": "Sugarloaf Park"
+      }
+    }
+  ]
+}

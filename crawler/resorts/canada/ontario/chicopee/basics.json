@@ -1,0 +1,43 @@
+{
+  "resortId": "chicopee",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "314 m - 370 m",
+        "height": "56m",
+        "tracksGreenLength": "1km",
+        "tracksGreenProportion": "23",
+        "tracksBlueLength": "2km",
+        "tracksBlueProportion": "47",
+        "tracksBlackLength": "1.3km",
+        "tracksBlackProportion": "30",
+        "tracksTotalLength": "4.3km",
+        "address": "396 Morrison Road, Kitchener, ON N2A 2Z6",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 43.50150295771778,
+          "lng": -80.42101373098909
+        },
+        "country": "Canada",
+        "email": "guestservices@chicopee.ca",
+        "googleMapsUrl": "https://maps.app.goo.gl/GSNWkGQzo5aHdWmf9",
+        "hasIceSkate": false,
+        "hasCrossCountry": false,
+        "hasLessons": true,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(519) 894-5610",
+        "published": true,
+        "rating": 4.2,
+        "region": "Ontario",
+        "resortId": "chicopee",
+        "ticketUrl": "https://www.discoverchicopee.com/plan-your-visit/lift-tickets/",
+        "website": "http://www.discoverchicopee.com/",
+        "name": "Chicopee"
+      }
+    }
+  ]
+}

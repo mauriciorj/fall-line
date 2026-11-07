@@ -1,0 +1,44 @@
+{
+  "resortId": "little-smoky",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "480 m - 550 m",
+        "height": "70m",
+        "tracksGreenLength": "1.3km",
+        "tracksGreenProportion": "31",
+        "tracksBlueLength": "1km",
+        "tracksBlueProportion": "24",
+        "tracksBlackLength": "1.9km",
+        "tracksBlackProportion": "45",
+        "tracksTotalLength": "4.2km",
+        "address": "AB-49, Falher, AB T0H 1M0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 55.464367792344035,
+          "lng": -117.19582519966949
+        },
+        "country": "Canada",
+        "email": "info@littlesmokyski.ca",
+        "googleMapsUrl": "https://maps.app.goo.gl/8fiLcjKnTNW1efAZ8",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(780) 837-8144",
+        "published": true,
+        "rating": 4.6,
+        "region": "Alberta",
+        "resortId": "little-smoky",
+        "ticketUrl": "",
+        "website": "http://littlesmokyski.ca/",
+        "name": "Little Smoky"
+      }
+    }
+  ]
+}

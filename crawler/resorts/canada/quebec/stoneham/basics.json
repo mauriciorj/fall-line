@@ -1,0 +1,43 @@
+{
+  "resortId": "stoneham",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "248 m - 593 m",
+        "height": "345m",
+        "tracksGreenLength": "6km",
+        "tracksGreenProportion": "18",
+        "tracksBlueLength": "9km",
+        "tracksBlueProportion": "26",
+        "tracksBlackLength": "19km",
+        "tracksBlackProportion": "56",
+        "tracksTotalLength": "34km",
+        "address": "600 Chem. du Hibou, Stoneham-et-Tewkesbury, QC G3C 1T3",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 47.027816384420326,
+          "lng": -71.3823487474371
+        },
+        "country": "Canada",
+        "email": "info@ski-stoneham.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/ciajHmjGN1QV1kji8",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(418) 848-2411",
+        "published": true,
+        "rating": 4.4,
+        "region": "Quebec",
+        "resortId": "stoneham",
+        "website": "https://ski-stoneham.com/",
+        "name": "Stoneham"
+      }
+    }
+  ]
+}

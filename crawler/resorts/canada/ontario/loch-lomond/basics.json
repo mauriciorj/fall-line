@@ -1,0 +1,43 @@
+{
+  "resortId": "loch-lomond",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "251 m - 430 m",
+        "height": "179m",
+        "tracksGreenLength": "2.5km",
+        "tracksGreenProportion": "35",
+        "tracksBlueLength": "2km",
+        "tracksBlueProportion": "30",
+        "tracksBlackLength": "2.5km",
+        "tracksBlackProportion": "35",
+        "tracksTotalLength": "7km",
+        "address": "1800 Loch Lomond Rd, Thunder Bay, ON P7J 1E9",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 48.29411481974411,
+          "lng": -89.3482490141305
+        },
+        "country": "Canada",
+        "email": "guestservices@lochlomond.ca",
+        "googleMapsUrl": "https://maps.app.goo.gl/PPdCHj9VNGeS8xSj6",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": true,
+        "hasSpa": false,
+        "hasTubing": true,
+        "hasZipline": false,
+        "phone": "(807) 475-7787",
+        "published": true,
+        "region": "Ontario",
+        "resortId": "loch-lomond",
+        "ticketUrl": "https://www.lochlomond.ca/lift-tickets/",
+        "website": "https://www.lochlomond.ca/",
+        "name": "Loch Lomond Ski Area"
+      }
+    }
+  ]
+}

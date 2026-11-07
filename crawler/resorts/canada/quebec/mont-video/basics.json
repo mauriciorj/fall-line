@@ -1,0 +1,43 @@
+{
+  "resortId": "mont-video",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "370 m - 460 m",
+        "height": "90m",
+        "tracksGreenLength": "2km",
+        "tracksGreenProportion": "25",
+        "tracksBlueLength": "2km",
+        "tracksBlueProportion": "25",
+        "tracksBlackLength": "4km",
+        "tracksBlackProportion": "50",
+        "tracksTotalLength": "8km",
+        "address": "43 Chem. du Mont-Vidéo, Barraute, QC J0Y 1A0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 48.41907607697867,
+          "lng": -77.77616069737165
+        },
+        "country": "Canada",
+        "email": "info@montvideo.ca",
+        "googleMapsUrl": "https://maps.app.goo.gl/LwVfmoDRbW3vTQGWA",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(819) 734-3193",
+        "published": true,
+        "rating": 4.4,
+        "region": "Quebec",
+        "resortId": "mont-video",
+        "website": "http://www.montvideo.ca/",
+        "name": "Mont Vidéo"
+      }
+    }
+  ]
+}

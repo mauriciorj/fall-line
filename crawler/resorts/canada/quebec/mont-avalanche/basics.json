@@ -1,0 +1,43 @@
+{
+  "resortId": "mont-avalanche",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "390 m - 555 m",
+        "height": "165m",
+        "tracksGreenLength": "3km",
+        "tracksGreenProportion": "42",
+        "tracksBlueLength": "2km",
+        "tracksBlueProportion": "30",
+        "tracksBlackLength": "2km",
+        "tracksBlackProportion": "28",
+        "tracksTotalLength": "7km",
+        "address": "1657 Chem. de l'Avalanche, Saint-Adolphe-d'Howard, QC J0T 2B0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 45.97030721176854,
+          "lng": -74.34697063385991
+        },
+        "country": "Canada",
+        "email": "info@mont-avalanche.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/8PdCAnHpQTwyLEmHA",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(819) 327-3232",
+        "published": true,
+        "rating": 4.5,
+        "region": "Quebec",
+        "resortId": "mont-avalanche",
+        "website": "http://www.avalancheculturepleinair.com/",
+        "name": "Mont Avalanche"
+      }
+    }
+  ]
+}

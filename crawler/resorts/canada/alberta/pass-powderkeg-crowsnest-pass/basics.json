@@ -1,0 +1,44 @@
+{
+  "resortId": "pass-powderkeg-crowsnest-pass",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "1300 m - 1580 m",
+        "height": "280m",
+        "tracksGreenLength": "3km",
+        "tracksGreenProportion": "43",
+        "tracksBlueLength": "2.5km",
+        "tracksBlueProportion": "36",
+        "tracksBlackLength": "1.5km",
+        "tracksBlackProportion": "21",
+        "tracksTotalLength": "7km",
+        "address": "202 Powderkeg Dr, Blairmore, AB T0K 0E0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 49.602994265336726,
+          "lng": -114.4488360776084
+        },
+        "country": "Canada",
+        "email": "info@passpowderkeg.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/Yu5gf3EFBkfswCAn7",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(403) 562-8334",
+        "published": true,
+        "rating": 4.7,
+        "region": "Alberta",
+        "resortId": "pass-powderkeg-crowsnest-pass",
+        "ticketUrl": "",
+        "website": "http://www.passpowderkeg.com/",
+        "name": "Pass Powderkeg"
+      }
+    }
+  ]
+}

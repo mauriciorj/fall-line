@@ -1,0 +1,43 @@
+{
+  "resortId": "dagmar-ski-resort",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "120 m - 199 m",
+        "height": "79m",
+        "tracksGreenLength": "1.7km",
+        "tracksGreenProportion": "57",
+        "tracksBlueLength": "1km",
+        "tracksBlueProportion": "33",
+        "tracksBlackLength": "0.3km",
+        "tracksBlackProportion": "10",
+        "tracksTotalLength": "3km",
+        "address": "1220 Lake Ridge Rd, Uxbridge, ON L9L 1V7",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 44.02314189216543,
+          "lng": -79.04741821453386
+        },
+        "country": "Canada",
+        "email": "info@skidagmar.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/m7aFQ1mktoy449cC6",
+        "hasIceSkate": false,
+        "hasCrossCountry": false,
+        "hasLessons": true,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(905) 649-2002",
+        "published": true,
+        "rating": 4.2,
+        "region": "Ontario",
+        "resortId": "dagmar-ski-resort",
+        "ticketUrl": "https://brimacombe.ca/plan-your-visit/lift-tickets/",
+        "website": "http://www.skidagmar.com/",
+        "name": "Dagmar Ski Resort"
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "resortId": "nitehawk",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "540 m - 675 m",
+        "height": "135m",
+        "tracksGreenLength": "2km",
+        "tracksGreenProportion": "49",
+        "tracksBlueLength": "1.5km",
+        "tracksBlueProportion": "37",
+        "tracksBlackLength": "0.5km",
+        "tracksBlackProportion": "14",
+        "tracksTotalLength": "4km",
+        "address": "6356 Township Rd 702, Grande Prairie County No. 1, AB T8V 4B5",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 55.05625804277735,
+          "lng": -118.86237118130133
+        },
+        "country": "Canada",
+        "email": "info@gonitehawk.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/3jkz3jNsVP2sDXGF7",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(780) 532-6637",
+        "published": true,
+        "rating": 4.4,
+        "region": "Alberta",
+        "resortId": "nitehawk",
+        "ticketUrl": "",
+        "website": "https://gonitehawk.com/",
+        "name": "Nitehawk"
+      }
+    }
+  ]
+}

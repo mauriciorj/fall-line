@@ -1,0 +1,43 @@
+{
+  "resortId": "purden",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "976 m - 1311 m",
+        "height": "335m",
+        "tracksGreenLength": "5km",
+        "tracksGreenProportion": "20",
+        "tracksBlueLength": "14km",
+        "tracksBlueProportion": "56",
+        "tracksBlackLength": "6km",
+        "tracksBlackProportion": "24",
+        "tracksTotalLength": "25km",
+        "address": "3000 Purden Ski Hill Rd, Fraser-Fort George, BC V2L 4V3",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 53.90099805568698,
+          "lng": -121.88428090746325
+        },
+        "country": "Canada",
+        "email": "skipurden@gmail.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/oSfuypqFE26vK8jX6",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(250) 565-7777",
+        "published": true,
+        "rating": 4.4,
+        "region": "British Columbia",
+        "resortId": "purden",
+        "website": "http://www.purden.com/",
+        "name": "Purden"
+      }
+    }
+  ]
+}

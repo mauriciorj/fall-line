@@ -1,0 +1,43 @@
+{
+  "resortId": "mont-lac-vert-hebertville",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "160 m - 400 m",
+        "height": "240m",
+        "tracksGreenLength": "4.7km",
+        "tracksGreenProportion": "24",
+        "tracksBlueLength": "3.3km",
+        "tracksBlueProportion": "17",
+        "tracksBlackLength": "11.6km",
+        "tracksBlackProportion": "59",
+        "tracksTotalLength": "19.6km",
+        "address": "173 Chem. du Vallon, Hébertville, QC G8N 1M5",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 48.35618787447647,
+          "lng": -71.6063433722315
+        },
+        "country": "Canada",
+        "email": "info@montlacvert.qc.ca",
+        "googleMapsUrl": "https://maps.app.goo.gl/9r83gMcR2JgVnAps5",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(418) 344-4000",
+        "published": true,
+        "rating": 4.2,
+        "region": "Quebec",
+        "resortId": "mont-lac-vert-hebertville",
+        "website": "http://www.montlacvert.com/",
+        "name": "Mont Lac-Vert"
+      }
+    }
+  ]
+}

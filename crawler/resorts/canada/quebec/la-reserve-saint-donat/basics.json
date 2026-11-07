@@ -1,0 +1,43 @@
+{
+  "resortId": "la-reserve-saint-donat",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "440 m - 690 m",
+        "height": "250m",
+        "tracksGreenLength": "4km",
+        "tracksGreenProportion": "31",
+        "tracksBlueLength": "3km",
+        "tracksBlueProportion": "23",
+        "tracksBlackLength": "6km",
+        "tracksBlackProportion": "46",
+        "tracksTotalLength": "13km",
+        "address": "56 Chem. du Mont la Réserve, Saint-Donat-de-Montcalm, QC J0T 2C0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 46.28650256252232,
+          "lng": -74.18145285331407
+        },
+        "country": "Canada",
+        "email": "info@skilareserve.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/CWE68aAeBc8sAWCs6",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(819) 424-1373",
+        "published": true,
+        "rating": 4.5,
+        "region": "Quebec",
+        "resortId": "la-reserve-saint-donat",
+        "website": "http://skilareserve.com/",
+        "name": "La Réserve"
+      }
+    }
+  ]
+}

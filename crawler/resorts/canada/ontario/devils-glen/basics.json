@@ -1,0 +1,43 @@
+{
+  "resortId": "devils-glen",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "372 m - 522 m",
+        "height": "150m",
+        "tracksGreenLength": "4.8km",
+        "tracksGreenProportion": "48",
+        "tracksBlueLength": "2.6km",
+        "tracksBlueProportion": "25",
+        "tracksBlackLength": "2.8km",
+        "tracksBlackProportion": "27",
+        "tracksTotalLength": "10.2km",
+        "address": "1793 Simcoe County Rd 124, Clearview, ON L0M 1H0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 44.35468029590227,
+          "lng": -80.20082831356835
+        },
+        "country": "Canada",
+        "email": "info@devilsglen.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/D5jivkHiX1wEgwy26",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(705) 445-4890",
+        "published": true,
+        "region": "Ontario",
+        "resortId": "devils-glen",
+        "ticketUrl": "https://www.devilsglen.com/About/Ticket_Pricing",
+        "website": "https://www.devilsglen.com",
+        "name": "Devil's Glen Country Club"
+      }
+    }
+  ]
+}

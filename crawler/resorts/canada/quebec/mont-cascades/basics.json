@@ -1,0 +1,43 @@
+{
+  "resortId": "mont-cascades",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "147 m - 294 m",
+        "height": "147m",
+        "tracksGreenLength": "4km",
+        "tracksGreenProportion": "20",
+        "tracksBlueLength": "11km",
+        "tracksBlueProportion": "55",
+        "tracksBlackLength": "5km",
+        "tracksBlackProportion": "25",
+        "tracksTotalLength": "20km",
+        "address": "448 Chem. du Mont-des-Cascades, Cantley, QC J8V 3B2",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 45.59252455090082,
+          "lng": -75.84881684351656
+        },
+        "country": "Canada",
+        "email": "info@montcascades.ca",
+        "googleMapsUrl": "https://maps.app.goo.gl/erdaHqKSCRFhn8Vk7",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(819) 827-0301",
+        "published": true,
+        "rating": 4.4,
+        "region": "Quebec",
+        "resortId": "mont-cascades",
+        "website": "http://www.montcascades.ca/",
+        "name": "Mont Cascades"
+      }
+    }
+  ]
+}

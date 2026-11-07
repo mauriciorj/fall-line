@@ -1,0 +1,43 @@
+{
+  "resortId": "martock",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "26 m - 188 m",
+        "height": "162m",
+        "tracksGreenLength": "1km",
+        "tracksGreenProportion": "22",
+        "tracksBlueLength": "3.5km",
+        "tracksBlueProportion": "78",
+        "tracksBlackLength": "0km",
+        "tracksBlackProportion": "0",
+        "tracksTotalLength": "4.5km",
+        "address": "370 Ski Martock Rd, Windsor Forks, NS B0N 2T0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 44.93547707065033,
+          "lng": -64.17161133474698
+        },
+        "country": "Canada",
+        "email": "admin@martock.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/77CF7Sbv5Cnpbykw7",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(902) 798-9501",
+        "published": true,
+        "rating": 4.4,
+        "region": "Nova Scotia",
+        "resortId": "martock",
+        "website": "http://www.martock.com/",
+        "name": "Martock"
+      }
+    }
+  ]
+}

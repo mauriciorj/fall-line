@@ -1,0 +1,43 @@
+{
+  "resortId": "pin-rouge",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "50 m - 500 m",
+        "height": "450m",
+        "tracksGreenLength": "3.5km",
+        "tracksGreenProportion": "33",
+        "tracksBlueLength": "3km",
+        "tracksBlueProportion": "29",
+        "tracksBlackLength": "4km",
+        "tracksBlackProportion": "38",
+        "tracksTotalLength": "10.5km",
+        "address": "1250 Chem. de Saint-Edgar, New Richmond, QC G0C 2B0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 48.31344564197566,
+          "lng": -65.7294128762656
+        },
+        "country": "Canada",
+        "email": "info@pinrouge.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/ycxpEYkUxvGztJjFA",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(866) 992-5134",
+        "published": true,
+        "rating": 4.5,
+        "region": "Quebec",
+        "resortId": "pin-rouge",
+        "website": "http://www.pinrouge.com/",
+        "name": "Pin Rouge"
+      }
+    }
+  ]
+}

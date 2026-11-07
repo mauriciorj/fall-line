@@ -1,0 +1,37 @@
+{
+  "resortId": "atikokan",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "100 m - 206 m",
+        "height": "106m",
+        "tracksGreenLength": "0.5km",
+        "tracksGreenProportion": "31",
+        "tracksBlueLength": "0.8km",
+        "tracksBlueProportion": "50",
+        "tracksBlackLength": "0.3km",
+        "tracksBlackProportion": "19",
+        "tracksTotalLength": "1.6km",
+        "continent": "North America",
+        "country": "Canada",
+        "email": "p.gascoigne@hotmail.com",
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasIceSkate": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(807) 597-1234",
+        "published": true,
+        "region": "Ontario",
+        "resortId": "atikokan",
+        "ticketUrl": "https://visitatikokan.com/experiences/mount-fairweather/",
+        "website": "https://visitatikokan.com/experiences/mount-fairweather/",
+        "name": "Mount Fairweather – Atikokan"
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "resortId": "mount-timothy",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "1350 m - 1660 m",
+        "height": "310m",
+        "tracksGreenLength": "6km",
+        "tracksGreenProportion": "26",
+        "tracksBlueLength": "12km",
+        "tracksBlueProportion": "49",
+        "tracksBlackLength": "6.2km",
+        "tracksBlackProportion": "25",
+        "tracksTotalLength": "24.2km",
+        "address": "5398 Timothy Lake Rd, Lac la Hache, BC V0K 1T1",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 51.91503231145276,
+          "lng": -121.2510951074546
+        },
+        "country": "Canada",
+        "email": "info@skitimothy.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/S79AtJoY8hsmt1DG9",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(250) 396-4095",
+        "published": true,
+        "rating": 4.6,
+        "region": "British Columbia",
+        "resortId": "mount-timothy",
+        "website": "http://www.skitimothy.com/",
+        "name": "Mount Timothy"
+      }
+    }
+  ]
+}

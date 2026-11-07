@@ -1,0 +1,43 @@
+{
+  "resortId": "mont-edouard-lanse-saint-jean",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "183 m - 633 m",
+        "height": "450m",
+        "tracksGreenLength": "7km",
+        "tracksGreenProportion": "23",
+        "tracksBlueLength": "9km",
+        "tracksBlueProportion": "29",
+        "tracksBlackLength": "15km",
+        "tracksBlackProportion": "48",
+        "tracksTotalLength": "31km",
+        "address": "67 Rue Dallaire, L'Anse-Saint-Jean, QC G0V 1J0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 48.1679669276018,
+          "lng": -70.28793467409604
+        },
+        "country": "Canada",
+        "email": "info@montedouard.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/V9wggguVDM14RymD7",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(418) 272-2927",
+        "published": true,
+        "rating": 4.7,
+        "region": "Quebec",
+        "resortId": "mont-edouard-lanse-saint-jean",
+        "website": "http://www.montedouard.com/",
+        "name": "Mont Édouard"
+      }
+    }
+  ]
+}

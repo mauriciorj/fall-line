@@ -1,0 +1,43 @@
+{
+  "resortId": "sir-sams",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "360 m - 447 m",
+        "height": "87m",
+        "tracksGreenLength": "1.9km",
+        "tracksGreenProportion": "31",
+        "tracksBlueLength": "2.5km",
+        "tracksBlueProportion": "41",
+        "tracksBlackLength": "1.6km",
+        "tracksBlackProportion": "28",
+        "tracksTotalLength": "6km",
+        "address": "1054 Liswood Road, Eagle Lake, ON K0M 1M0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 45.13009675705433,
+          "lng": -78.48196250230275
+        },
+        "country": "Canada",
+        "email": "info@sirsams.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/7YTY6hi41V1jHGb1A",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": true,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(705) 754-2298",
+        "published": true,
+        "region": "Ontario",
+        "resortId": "sir-sams",
+        "ticketUrl": "https://www.sirsams.ca/winter/lift-tickets",
+        "website": "https://www.sirsams.ca/",
+        "name": "Sir Sam's Ski/Ride"
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "resortId": "montcalm",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "190 m - 330 m",
+        "height": "140m",
+        "tracksGreenLength": "4km",
+        "tracksGreenProportion": "40",
+        "tracksBlueLength": "4km",
+        "tracksBlueProportion": "40",
+        "tracksBlackLength": "2km",
+        "tracksBlackProportion": "20",
+        "tracksTotalLength": "10km",
+        "address": "3294 Rue Park, Rawdon, QC J0K 1S0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 46.04352838441752,
+          "lng": -73.82541532898556
+        },
+        "country": "Canada",
+        "email": "ecole@skimontcalm.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/gcupUy6URjvdFyZh6",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(450) 834-3139",
+        "published": true,
+        "rating": 4.4,
+        "region": "Quebec",
+        "resortId": "montcalm",
+        "website": "http://www.skimontcalm.com/",
+        "name": "Montcalm"
+      }
+    }
+  ]
+}

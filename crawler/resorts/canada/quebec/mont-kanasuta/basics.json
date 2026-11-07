@@ -1,0 +1,43 @@
+{
+  "resortId": "mont-kanasuta",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "336 m - 483 m",
+        "height": "147m",
+        "tracksGreenLength": "2.5km",
+        "tracksGreenProportion": "32",
+        "tracksBlueLength": "2.2km",
+        "tracksBlueProportion": "29",
+        "tracksBlackLength": "3km",
+        "tracksBlackProportion": "39",
+        "tracksTotalLength": "7.7km",
+        "address": "Rouyn-Noranda, QC J0Z 1B0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 48.188115142457946,
+          "lng": -79.39849586181525
+        },
+        "country": "Canada",
+        "email": "info@kanasuta.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/gkzThgWCqzSugbUW9",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(819) 279-2331",
+        "published": true,
+        "rating": 4.8,
+        "region": "Quebec",
+        "resortId": "mont-kanasuta",
+        "website": "http://www.kanasuta.com/",
+        "name": "Mont Kanasuta"
+      }
+    }
+  ]
+}

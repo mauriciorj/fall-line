@@ -1,0 +1,43 @@
+{
+  "resortId": "mount-st-louis-moonstone",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "215 m - 368 m",
+        "height": "153m",
+        "tracksGreenLength": "7km",
+        "tracksGreenProportion": "35",
+        "tracksBlueLength": "10km",
+        "tracksBlueProportion": "50",
+        "tracksBlackLength": "3km",
+        "tracksBlackProportion": "15",
+        "tracksTotalLength": "20km",
+        "address": "24 Mt St Louis Rd W, Coldwater, ON L0K 1E0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 44.62770786775007,
+          "lng": -79.66983669161849
+        },
+        "country": "Canada",
+        "googleMapsUrl": "https://maps.app.goo.gl/KAQmqPhTKdgQQsmc9",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": true,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(705) 835-2112",
+        "published": true,
+        "rating": 4.4,
+        "region": "Ontario",
+        "resortId": "mount-st-louis-moonstone",
+        "ticketUrl": "https://shop.mountstlouis.com/lift-tickets/",
+        "website": "https://shop.mountstlouis.com/",
+        "name": "Mount St. Louis Moonstone"
+      }
+    }
+  ]
+}

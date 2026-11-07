@@ -1,0 +1,43 @@
+{
+  "resortId": "tabor-mountain",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "785 m - 1040 m",
+        "height": "255m",
+        "tracksGreenLength": "4km",
+        "tracksGreenProportion": "25",
+        "tracksBlueLength": "8km",
+        "tracksBlueProportion": "50",
+        "tracksBlackLength": "4km",
+        "tracksBlackProportion": "25",
+        "tracksTotalLength": "16km",
+        "address": "17875 Hwy 16 east, Prince George, BC V2L 2J2",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 53.945607682645694,
+          "lng": -122.45586126545749
+        },
+        "country": "Canada",
+        "email": "jennifer@tabormountain.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/g4E2jbgQHuyBe3pn7",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(250) 963-7542",
+        "published": true,
+        "rating": 4.2,
+        "region": "British Columbia",
+        "resortId": "tabor-mountain",
+        "website": "http://www.tabormountain.com/",
+        "name": "Tabor Mountain"
+      }
+    }
+  ]
+}

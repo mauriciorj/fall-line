@@ -1,0 +1,44 @@
+{
+  "resortId": "kinosoo-ridge",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "541 m - 647 m",
+        "height": "106m",
+        "tracksGreenLength": "1.5km",
+        "tracksGreenProportion": "30",
+        "tracksBlueLength": "2km",
+        "tracksBlueProportion": "40",
+        "tracksBlackLength": "1.5km",
+        "tracksBlackProportion": "30",
+        "tracksTotalLength": "5km",
+        "address": "63231 Range Rd 411, Cold Lake, AB T9M 0A1",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 54.44100328074834,
+          "lng": -110.01733715761831
+        },
+        "country": "Canada",
+        "email": "info@kinosoo.ca",
+        "googleMapsUrl": "https://maps.app.goo.gl/G2wbVXk4QPqfxvcE6",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(780) 594-5564",
+        "published": true,
+        "rating": 4.6,
+        "region": "Alberta",
+        "resortId": "kinosoo-ridge",
+        "ticketUrl": "",
+        "website": "http://www.kinosoo.ca/",
+        "name": "Kinosoo Ridge"
+      }
+    }
+  ]
+}

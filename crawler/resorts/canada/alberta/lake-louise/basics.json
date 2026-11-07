@@ -1,0 +1,44 @@
+{
+  "resortId": "lake-louise",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "1646 m - 2637 m",
+        "height": "991m",
+        "tracksGreenLength": "35km",
+        "tracksGreenProportion": "25",
+        "tracksBlueLength": "62km",
+        "tracksBlueProportion": "45",
+        "tracksBlackLength": "42km",
+        "tracksBlackProportion": "30",
+        "tracksTotalLength": "139km",
+        "address": "1 Whitehorn Rd, Lake Louise, AB T0L 1E0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 51.442065796839096,
+          "lng": -116.16207805070881
+        },
+        "country": "Canada",
+        "email": "info@skilouise.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/ret34QT86f1tGvbs7",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(403) 522-3555",
+        "published": true,
+        "rating": 4.7,
+        "region": "Alberta",
+        "resortId": "lake-louise",
+        "ticketUrl": "",
+        "website": "http://skilouise.com/",
+        "name": "Lake Louise"
+      }
+    }
+  ]
+}

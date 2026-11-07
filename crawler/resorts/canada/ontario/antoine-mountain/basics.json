@@ -1,0 +1,43 @@
+{
+  "resortId": "antoine-mountain",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "174 m - 366 m",
+        "height": "192m",
+        "tracksGreenLength": "4km",
+        "tracksGreenProportion": "37",
+        "tracksBlueLength": "4km",
+        "tracksBlueProportion": "36",
+        "tracksBlackLength": "3km",
+        "tracksBlackProportion": "27",
+        "tracksTotalLength": "11km",
+        "address": "596 ON-656, Mattawan, ON P0H 1V0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 46.36866202040023,
+          "lng": -78.73389084700965
+        },
+        "country": "Canada",
+        "email": "hello@antoinemountain.ca",
+        "googleMapsUrl": "https://maps.app.goo.gl/11PH9WfLjcmDM2bk6",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": true,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(705) 744-4754",
+        "published": true,
+        "region": "Ontario",
+        "resortId": "antoine-mountain",
+        "ticketUrl": "https://antoinemountain.ca/pages/tickets",
+        "website": "https://antoinemountain.ca/",
+        "name": "Antoine Mountain"
+      }
+    }
+  ]
+}

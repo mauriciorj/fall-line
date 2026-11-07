@@ -1,0 +1,46 @@
+{
+  "resortId": "blue-mountain",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "230 m - 450 m",
+        "height": "220m",
+        "tracksGreenLength": "6.1km",
+        "tracksGreenProportion": "21",
+        "tracksBlueLength": "14.3km",
+        "tracksBlueProportion": "49",
+        "tracksBlackLength": "8.9km",
+        "tracksBlackProportion": "30",
+        "tracksTotalLength": "29.3km",
+        "address": "190 Gord Canning Drive Blue Mountains, Ontario, Canada L9Y 1C2",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 44.55091707586931,
+          "lng": -80.31056434810445
+        },
+        "country": "Canada",
+        "email": "mail@bluemountain.ca",
+        "googleMapsUrl": "https://maps.app.goo.gl/mX4YUs7faBFud9sX8",
+        "hasIceSkate": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "1-833-583-2583",
+        "published": true,
+        "rating": 4.4,
+        "resort_accommodations": "https://www.bluemountain.ca/plan-your-trip/lodging",
+        "region": "Ontario",
+        "resortId": "blue-mountain",
+        "ticketUrl": "https://www.bluemountain.ca/plan-your-trip/day-tickets/winter-lift-tickets",
+        "tollFree": "1-833-583-2583",
+        "website": "https://www.bluemountain.ca/",
+        "name": "Blue Mountain",
+        "hasAccommodations": true
+      }
+    }
+  ]
+}

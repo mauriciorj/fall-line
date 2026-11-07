@@ -1,0 +1,44 @@
+{
+  "resortId": "canyon",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "818 m - 967 m",
+        "height": "149m",
+        "tracksGreenLength": "4km",
+        "tracksGreenProportion": "28",
+        "tracksBlueLength": "7km",
+        "tracksBlueProportion": "46",
+        "tracksBlackLength": "4km",
+        "tracksBlackProportion": "26",
+        "tracksTotalLength": "15km",
+        "address": "38433 Range Rd 264A, Red Deer County, AB T4E 0Z1",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 52.304308134512574,
+          "lng": -113.68309418998949
+        },
+        "country": "Canada",
+        "email": "info@canyonski.ca",
+        "googleMapsUrl": "https://maps.app.goo.gl/fUXTtyCsemWuNBn69",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(403) 346-5588",
+        "published": true,
+        "rating": 4.3,
+        "region": "Alberta",
+        "resortId": "canyon",
+        "ticketUrl": "",
+        "website": "http://canyonski.ca/",
+        "name": "Canyon"
+      }
+    }
+  ]
+}

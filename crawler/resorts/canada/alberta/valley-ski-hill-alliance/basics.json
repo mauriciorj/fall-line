@@ -1,0 +1,44 @@
+{
+  "resortId": "valley-ski-hill-alliance",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "655 m - 687 m",
+        "height": "32m",
+        "tracksGreenLength": "0.6km",
+        "tracksGreenProportion": "46",
+        "tracksBlueLength": "0.4km",
+        "tracksBlueProportion": "31",
+        "tracksBlackLength": "0.3km",
+        "tracksBlackProportion": "23",
+        "tracksTotalLength": "1.3km",
+        "address": "Box 141, Alliance, AB T0B 0A0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 52.41384261831011,
+          "lng": -111.82310187502323
+        },
+        "country": "Canada",
+        "email": "info@valleyskihill.ca",
+        "googleMapsUrl": "https://maps.app.goo.gl/iiswPth8AjdnNHEN7",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(780) 879-2106",
+        "published": true,
+        "rating": 4.7,
+        "region": "Alberta",
+        "resortId": "valley-ski-hill-alliance",
+        "ticketUrl": "",
+        "website": "http://www.valleyskihill.ca/",
+        "name": "Valley Ski Hill"
+      }
+    }
+  ]
+}

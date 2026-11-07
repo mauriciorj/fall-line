@@ -1,0 +1,41 @@
+{
+  "resortId": "crystal-mountain-westbank",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "1228 m - 1440 m",
+        "height": "212m",
+        "tracksGreenLength": "9km",
+        "tracksGreenProportion": "36",
+        "tracksBlueLength": "13km",
+        "tracksBlueProportion": "52",
+        "tracksBlackLength": "3km",
+        "tracksBlackProportion": "12",
+        "tracksTotalLength": "25km",
+        "address": "West Kelowna, BC V4T 2G3",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 49.88225333543947,
+          "lng": -119.7095193112755
+        },
+        "country": "Canada",
+        "googleMapsUrl": "https://maps.app.goo.gl/uDw84mUawUDJN9BN8",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "published": true,
+        "rating": 4.2,
+        "region": "British Columbia",
+        "resortId": "crystal-mountain-westbank",
+        "website": "https://crystalresort.ca/",
+        "name": "Crystal Mountain"
+      }
+    }
+  ]
+}

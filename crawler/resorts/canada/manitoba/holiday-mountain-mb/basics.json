@@ -1,0 +1,43 @@
+{
+  "resortId": "holiday-mountain-mb",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "394 m - 466 m",
+        "height": "72m",
+        "tracksGreenLength": "0.6km",
+        "tracksGreenProportion": "18",
+        "tracksBlueLength": "1.5km",
+        "tracksBlueProportion": "44",
+        "tracksBlackLength": "1.3km",
+        "tracksBlackProportion": "38",
+        "tracksTotalLength": "3.4km",
+        "address": "12 Later Way, La Rivière, MB R0G 1A0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 49.7088249332716,
+          "lng": -95.39778476506922
+        },
+        "country": "Canada",
+        "email": "info@holidaymountain.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/4DX1nqYgK2kRAqMD8",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(204) 242-2172",
+        "published": true,
+        "rating": 4.3,
+        "region": "Manitoba",
+        "resortId": "holiday-mountain-mb",
+        "website": "http://www.holidaymountain.ca/",
+        "name": "Holiday Mountain"
+      }
+    }
+  ]
+}

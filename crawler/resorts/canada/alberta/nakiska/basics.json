@@ -1,0 +1,44 @@
+{
+  "resortId": "nakiska",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "1525 m - 2260 m",
+        "height": "735m",
+        "tracksGreenLength": "4.2km",
+        "tracksGreenProportion": "17",
+        "tracksBlueLength": "14.7km",
+        "tracksBlueProportion": "59",
+        "tracksBlackLength": "6.1km",
+        "tracksBlackProportion": "24",
+        "tracksTotalLength": "25km",
+        "address": "2 Mt Allan Dr, Kananaskis, AB T0L 2H0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 50.94202109094404,
+          "lng": -115.15107020078685
+        },
+        "country": "Canada",
+        "email": "information@skinakiska.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/c6seuraimYH23MMQ8",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(403) 591-7777",
+        "published": true,
+        "rating": 4.3,
+        "region": "Alberta",
+        "resortId": "nakiska",
+        "ticketUrl": "",
+        "website": "http://www.skinakiska.com/",
+        "name": "Nakiska"
+      }
+    }
+  ]
+}

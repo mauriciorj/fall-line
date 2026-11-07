@@ -1,0 +1,44 @@
+{
+  "resortId": "fortress-mountain",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "2040 m - 2370 m",
+        "height": "330m",
+        "tracksGreenLength": "7km",
+        "tracksGreenProportion": "23",
+        "tracksBlueLength": "15km",
+        "tracksBlueProportion": "50",
+        "tracksBlackLength": "8km",
+        "tracksBlackProportion": "27",
+        "tracksTotalLength": "30km",
+        "address": "Kananaskis Village, AB T0L 2H0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 50.824951877462524,
+          "lng": -115.1976217087464
+        },
+        "country": "Canada",
+        "email": "chris.chevalier@skifortress.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/SzwWuAvYFXapyGA19",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(403) 229-3637",
+        "published": true,
+        "rating": 4.7,
+        "region": "Alberta",
+        "resortId": "fortress-mountain",
+        "ticketUrl": "",
+        "website": "http://skifortress.com",
+        "name": "Fortress Mountain"
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "resortId": "sun-peaks-resort",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "1198 m - 2082 m",
+        "height": "884m",
+        "tracksGreenLength": "13.5km",
+        "tracksGreenProportion": "10",
+        "tracksBlueLength": "78km",
+        "tracksBlueProportion": "58",
+        "tracksBlackLength": "43.5km",
+        "tracksBlackProportion": "32",
+        "tracksTotalLength": "135km",
+        "address": "3150 Creekside Way, Sun Peaks, BC V0E 5N0, Canada",
+        "continent": "North America",
+        "country": "Canada",
+        "hasAccommodations": true,
+        "hasLessons": true,
+        "phone": "250-578-5474",
+        "published": true,
+        "region": "British Columbia",
+        "resortId": "sun-peaks-resort",
+        "ticketUrl": "https://store.sunpeaksresort.com/l/winter-tickets/c/alpine-day-tickets",
+        "website": "https://www.sunpeaksresort.com/",
+        "name": "Sun Peaks Resort"
+      }
+    }
+  ]
+}

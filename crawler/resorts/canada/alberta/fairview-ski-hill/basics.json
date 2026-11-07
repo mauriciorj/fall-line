@@ -1,0 +1,44 @@
+{
+  "resortId": "fairview-ski-hill",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "405 m - 580 m",
+        "height": "175m",
+        "tracksGreenLength": "1.4km",
+        "tracksGreenProportion": "35",
+        "tracksBlueLength": "0.8km",
+        "tracksBlueProportion": "20",
+        "tracksBlackLength": "1.8km",
+        "tracksBlackProportion": "45",
+        "tracksTotalLength": "4km",
+        "address": "45011 Township Rd 811, Fairview, AB T0H 3P0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 55.99604480155448,
+          "lng": -118.60494284201162
+        },
+        "country": "Canada",
+        "email": "info@skifairview.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/qm1p1irckTXrzzMC9",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(780) 835-4725",
+        "published": true,
+        "rating": 4.6,
+        "region": "Alberta",
+        "resortId": "fairview-ski-hill",
+        "ticketUrl": "",
+        "website": "http://skifairview.com/",
+        "name": "Fairview Ski Hill"
+      }
+    }
+  ]
+}

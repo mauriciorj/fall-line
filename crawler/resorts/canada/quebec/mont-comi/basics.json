@@ -1,0 +1,43 @@
+{
+  "resortId": "mont-comi",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "269 m - 575 m",
+        "height": "306m",
+        "tracksGreenLength": "5km",
+        "tracksGreenProportion": "35",
+        "tracksBlueLength": "5km",
+        "tracksBlueProportion": "35",
+        "tracksBlackLength": "4km",
+        "tracksBlackProportion": "30",
+        "tracksTotalLength": "14km",
+        "address": "300 Chem. du Plateau, Saint-Donat, QC G0K 1L0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 48.467706903056076,
+          "lng": -68.19519788188407
+        },
+        "country": "Canada",
+        "email": "comi@globetrotter.net",
+        "googleMapsUrl": "https://maps.app.goo.gl/vd5kpd2DcwCPTZ2z7",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(418) 739-4858",
+        "published": true,
+        "rating": 4.6,
+        "region": "Quebec",
+        "resortId": "mont-comi",
+        "website": "https://mont-comi.ca/",
+        "name": "Mont Comi"
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "resortId": "sommet-edelweiss",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "152 m - 345 m",
+        "height": "193m",
+        "tracksGreenLength": "4.5km",
+        "tracksGreenProportion": "45",
+        "tracksBlueLength": "2.5km",
+        "tracksBlueProportion": "25",
+        "tracksBlackLength": "3km",
+        "tracksBlackProportion": "30",
+        "tracksTotalLength": "10km",
+        "address": "538 Ch Edelweiss, Wakefield, QC J0X 3G0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 45.64687192435051,
+          "lng": -75.85061857900331
+        },
+        "country": "Canada",
+        "email": "info@sommets.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/J7MnR6hhqZFixDm47",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(819) 459-2328",
+        "published": true,
+        "rating": 4.1,
+        "region": "Quebec",
+        "resortId": "sommet-edelweiss",
+        "website": "https://www.sommets.com/fr/decouvrir-les-sommets/sommet-edelweiss/?utm_source=google&utm_medium=organic&utm_campaign=gbp&utm_content=sommet-edelweiss",
+        "name": "Sommet Edelweiss"
+      }
+    }
+  ]
+}

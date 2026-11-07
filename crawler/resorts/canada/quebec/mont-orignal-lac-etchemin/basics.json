@@ -1,0 +1,43 @@
+{
+  "resortId": "mont-orignal-lac-etchemin",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "316 m - 612 m",
+        "height": "296m",
+        "tracksGreenLength": "4km",
+        "tracksGreenProportion": "27",
+        "tracksBlueLength": "6km",
+        "tracksBlueProportion": "40",
+        "tracksBlackLength": "5km",
+        "tracksBlackProportion": "33",
+        "tracksTotalLength": "15km",
+        "address": "158 Rang du Mont-Orignal, Lac-Etchemin, QC G0R 1S0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 46.411121630821924,
+          "lng": -70.58091730302316
+        },
+        "country": "Canada",
+        "email": "info@montorignal.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/YxqwQX49tudxTPmV6",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(418) 625-1551",
+        "published": true,
+        "rating": 4.5,
+        "region": "Quebec",
+        "resortId": "mont-orignal-lac-etchemin",
+        "website": "http://www.montorignal.com/",
+        "name": "Mont Orignal"
+      }
+    }
+  ]
+}

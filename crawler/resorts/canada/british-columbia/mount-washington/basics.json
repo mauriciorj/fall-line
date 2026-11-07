@@ -1,0 +1,43 @@
+{
+  "resortId": "mount-washington",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "1083 m - 1588 m",
+        "height": "505m",
+        "tracksGreenLength": "12km",
+        "tracksGreenProportion": "20",
+        "tracksBlueLength": "21km",
+        "tracksBlueProportion": "35",
+        "tracksBlackLength": "27km",
+        "tracksBlackProportion": "45",
+        "tracksTotalLength": "60km",
+        "address": "Mt. Washington, 1 Strathcona Pkwy, Comox-Strathcona C, BC V9J 1L0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 49.74143513910847,
+          "lng": -125.30264494939314
+        },
+        "country": "Canada",
+        "email": "reservations@mountwashington.ca",
+        "googleMapsUrl": "https://maps.app.goo.gl/kik8uyEjahbHAiDj8",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(250) 338-1515",
+        "published": true,
+        "rating": 4.5,
+        "region": "British Columbia",
+        "resortId": "mount-washington",
+        "website": "https://www.mountwashington.ca/",
+        "name": "Mount Washington"
+      }
+    }
+  ]
+}

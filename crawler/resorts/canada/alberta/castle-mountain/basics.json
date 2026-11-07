@@ -1,0 +1,44 @@
+{
+  "resortId": "castle-mountain",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "1425 m - 2295 m",
+        "height": "870m",
+        "tracksGreenLength": "12km",
+        "tracksGreenProportion": "10",
+        "tracksBlueLength": "24km",
+        "tracksBlueProportion": "21",
+        "tracksBlackLength": "81km",
+        "tracksBlackProportion": "69",
+        "tracksTotalLength": "117km",
+        "address": "HWY-774, Pincher Creek No. 9, AB T0K 1W0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 49.31927434883251,
+          "lng": -114.41260723531148
+        },
+        "country": "Canada",
+        "email": "info@skicastle.ca",
+        "googleMapsUrl": "https://maps.app.goo.gl/r1qd49kCAD6Fw4Ue6",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(403) 627-5101",
+        "published": true,
+        "rating": 4.7,
+        "region": "Alberta",
+        "resortId": "castle-mountain",
+        "ticketUrl": "",
+        "website": "http://skicastle.ca/",
+        "name": "Castle Mountain"
+      }
+    }
+  ]
+}

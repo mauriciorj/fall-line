@@ -1,0 +1,43 @@
+{
+  "resortId": "mont-sutton",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "400 m - 860 m",
+        "height": "460m",
+        "tracksGreenLength": "6km",
+        "tracksGreenProportion": "30",
+        "tracksBlueLength": "7km",
+        "tracksBlueProportion": "35",
+        "tracksBlackLength": "7km",
+        "tracksBlackProportion": "35",
+        "tracksTotalLength": "20km",
+        "address": "671 Rue Maple, Sutton, QC J0E 2K0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 45.10481607820321,
+          "lng": -72.5612483568755
+        },
+        "country": "Canada",
+        "email": "sutton@montsutton.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/zfjDcpcfqSenkL5EA",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "+1 / 1866 / 5382545",
+        "published": true,
+        "rating": 4.6,
+        "region": "Quebec",
+        "resortId": "mont-sutton",
+        "website": "https://www.montsutton.com/",
+        "name": "Mont Sutton"
+      }
+    }
+  ]
+}

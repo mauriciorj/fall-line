@@ -1,0 +1,43 @@
+{
+  "resortId": "stony-mountain",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "239 m - 257 m",
+        "height": "18m",
+        "tracksGreenLength": "0.4km",
+        "tracksGreenProportion": "66",
+        "tracksBlueLength": "0.1km",
+        "tracksBlueProportion": "18",
+        "tracksBlackLength": "0.1km",
+        "tracksBlackProportion": "16",
+        "tracksTotalLength": "0.6km",
+        "address": "11016 E Sellars Hill Road, Stony Mountain, MB R0C 3A0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 50.09429504836878,
+          "lng": -97.20586726101017
+        },
+        "country": "Canada",
+        "email": "info@skistony.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/GgMRxEyx1DcEeoYu9",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(204) 344-5977",
+        "published": true,
+        "rating": 4.1,
+        "region": "Manitoba",
+        "resortId": "stony-mountain",
+        "website": "http://skistony.com/",
+        "name": "Stony Mountain"
+      }
+    }
+  ]
+}

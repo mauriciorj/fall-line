@@ -1,0 +1,43 @@
+{
+  "resortId": "wentworth",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "55 m - 288 m",
+        "height": "233m",
+        "tracksGreenLength": "5km",
+        "tracksGreenProportion": "50",
+        "tracksBlueLength": "4km",
+        "tracksBlueProportion": "40",
+        "tracksBlackLength": "1km",
+        "tracksBlackProportion": "10",
+        "tracksTotalLength": "10km",
+        "address": "14595 NS-4, Wentworth, NS B0M 1Z0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 45.60957255284008,
+          "lng": -63.56134448226555
+        },
+        "country": "Canada",
+        "email": "skiadmin@skiwentworth.ca",
+        "googleMapsUrl": "https://maps.app.goo.gl/U1SCdtytDAooJkkN8",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(902) 548-2089",
+        "published": true,
+        "rating": 4.6,
+        "region": "Nova Scotia",
+        "resortId": "wentworth",
+        "website": "https://skiwentworth.ca/%20https://www.bikewentworth.ca/",
+        "name": "Wentworth"
+      }
+    }
+  ]
+}

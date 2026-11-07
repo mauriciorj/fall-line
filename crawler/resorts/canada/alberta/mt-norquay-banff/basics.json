@@ -1,0 +1,44 @@
+{
+  "resortId": "mt-norquay-banff",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "1615 m - 2017 m",
+        "height": "402m",
+        "tracksGreenLength": "10km",
+        "tracksGreenProportion": "33",
+        "tracksBlueLength": "8km",
+        "tracksBlueProportion": "27",
+        "tracksBlackLength": "12km",
+        "tracksBlackProportion": "40",
+        "tracksTotalLength": "30km",
+        "address": "2 Mt Norquay Rd, Banff, AB T1L 1B4",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 51.205444597584666,
+          "lng": -115.60662561726699
+        },
+        "country": "Canada",
+        "email": "info@banffnorquay.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/dBS9VLErYsPwcV956",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(403) 762-4421",
+        "published": true,
+        "rating": 4.5,
+        "region": "Alberta",
+        "resortId": "mt-norquay-banff",
+        "ticketUrl": "",
+        "website": "https://banffnorquay.com/",
+        "name": "Mt Norquay"
+      }
+    }
+  ]
+}

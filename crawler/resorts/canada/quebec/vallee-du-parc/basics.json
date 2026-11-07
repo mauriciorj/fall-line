@@ -1,0 +1,43 @@
+{
+  "resortId": "vallee-du-parc",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "150 m - 310 m",
+        "height": "160m",
+        "tracksGreenLength": "2km",
+        "tracksGreenProportion": "26",
+        "tracksBlueLength": "3km",
+        "tracksBlueProportion": "37",
+        "tracksBlackLength": "3km",
+        "tracksBlackProportion": "37",
+        "tracksTotalLength": "8km",
+        "address": "10000 Chem. de la Vallée-du-Parc, Shawinigan, QC G9T 0N1",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 46.615440499800656,
+          "lng": -72.79635687895947
+        },
+        "country": "Canada",
+        "email": "info@valleeduparc.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/ZWQjRtnEKrGqdcRW9",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(819) 538-1639",
+        "published": true,
+        "rating": 4.4,
+        "region": "Quebec",
+        "resortId": "vallee-du-parc",
+        "website": "http://www.valleeduparc.com/",
+        "name": "Vallée du Parc"
+      }
+    }
+  ]
+}

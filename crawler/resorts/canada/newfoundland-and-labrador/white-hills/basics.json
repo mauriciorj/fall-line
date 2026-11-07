@@ -1,0 +1,43 @@
+{
+  "resortId": "white-hills",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "147 m - 374 m",
+        "height": "227m",
+        "tracksGreenLength": "1.2km",
+        "tracksGreenProportion": "12",
+        "tracksBlueLength": "4.2km",
+        "tracksBlueProportion": "42",
+        "tracksBlackLength": "4.6km",
+        "tracksBlackProportion": "46",
+        "tracksTotalLength": "10km",
+        "address": "100 White Hills Rd, Clarenville, NL A5A 2B3",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 48.1635217704215,
+          "lng": -54.04626332805947
+        },
+        "country": "Canada",
+        "email": "info@snowgoosemountain.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/fMFXoTmBJKGuG4zh6",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(709) 217-0081",
+        "published": true,
+        "rating": 4.3,
+        "region": "Newfoundland and Labrador",
+        "resortId": "white-hills",
+        "website": "http://www.whitehillsresort.com/",
+        "name": "White Hills"
+      }
+    }
+  ]
+}

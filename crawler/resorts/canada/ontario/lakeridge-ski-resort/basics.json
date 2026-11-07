@@ -1,0 +1,44 @@
+{
+  "resortId": "lakeridge-ski-resort",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "300 m - 375 m",
+        "height": "75m",
+        "tracksGreenLength": "1.5km",
+        "tracksGreenProportion": "50",
+        "tracksBlueLength": "1km",
+        "tracksBlueProportion": "33",
+        "tracksBlackLength": "0.5km",
+        "tracksBlackProportion": "17",
+        "tracksTotalLength": "3km",
+        "address": "790 Chalk Lake Rd, Uxbridge, ON L9P 1R4",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 44.04597402067868,
+          "lng": -79.06573258279116
+        },
+        "country": "Canada",
+        "email": "admin@lakeridgeresort.ca",
+        "googleMapsUrl": "https://maps.app.goo.gl/3J7NiWbwWLPE2xJp9",
+        "hasIceSkate": false,
+        "hasCrossCountry": false,
+        "hasLessons": true,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": true,
+        "hasZipline": false,
+        "phone": "(905) 649-2058",
+        "published": true,
+        "rating": 4.3,
+        "region": "Ontario",
+        "resortId": "lakeridge-ski-resort",
+        "ticketUrl": "https://ski-lakeridge.resortstore.net/en/catalogue/categories/lift-tickets_3/",
+        "tollFree": "1-877-350-3640",
+        "website": "http://www.ski-lakeridge.com/",
+        "name": "Lakeridge Ski Resort"
+      }
+    }
+  ]
+}

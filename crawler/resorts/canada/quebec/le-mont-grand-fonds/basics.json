@@ -1,0 +1,43 @@
+{
+  "resortId": "le-mont-grand-fonds",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "400 m - 735 m",
+        "height": "335m",
+        "tracksGreenLength": "6.3km",
+        "tracksGreenProportion": "26",
+        "tracksBlueLength": "8.8km",
+        "tracksBlueProportion": "36",
+        "tracksBlackLength": "9.2km",
+        "tracksBlackProportion": "38",
+        "tracksTotalLength": "24.3km",
+        "address": "1000 Chem. des Loisirs, La Malbaie, QC G5A 1Y8",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 47.77112757265683,
+          "lng": -70.10323527256993
+        },
+        "country": "Canada",
+        "email": "info@skimgf.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/sDDWFPrJtekASp7c6",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(877) 665-0095",
+        "published": true,
+        "rating": 4.5,
+        "region": "Quebec",
+        "resortId": "le-mont-grand-fonds",
+        "website": "https://montgrandfonds.com/",
+        "name": "Le Mont Grand-Fonds"
+      }
+    }
+  ]
+}

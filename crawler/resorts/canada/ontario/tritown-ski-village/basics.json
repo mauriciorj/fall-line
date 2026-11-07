@@ -1,0 +1,33 @@
+{
+  "resortId": "tritown-ski-village",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "height": "320' of vertical",
+        "address": "974368 HWY 567, North Cobalt, ON P0J 2R0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 47.362375011079244,
+          "lng": -79.5702008730563
+        },
+        "country": "Canada",
+        "googleMapsUrl": "https://maps.app.goo.gl/aRf4tEPeHLQgH8SF6",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": true,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "published": true,
+        "region": "Ontario",
+        "resortId": "tritown-ski-village",
+        "ticketUrl": "https://tritownskivillage.ca/?page_id=476",
+        "website": "https://tritownskivillage.ca/",
+        "name": "Tri Town Ski and Snowboard Village"
+      }
+    }
+  ]
+}

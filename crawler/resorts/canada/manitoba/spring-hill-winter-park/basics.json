@@ -1,0 +1,43 @@
+{
+  "resortId": "spring-hill-winter-park",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "220 m - 265 m",
+        "height": "45m",
+        "tracksGreenLength": "0.8km",
+        "tracksGreenProportion": "100",
+        "tracksBlueLength": "0km",
+        "tracksBlueProportion": "0",
+        "tracksBlackLength": "0km",
+        "tracksBlackProportion": "0",
+        "tracksTotalLength": "0.8km",
+        "address": "65036 Oasis Rd, Springfield, MB R5R 0A2",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 49.963785213884826,
+          "lng": -96.98106865865469
+        },
+        "country": "Canada",
+        "email": "cs@springhillwinterpark.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/FGgYnzADawmv1pc97",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(204) 224-3051",
+        "published": true,
+        "rating": 4.1,
+        "region": "Manitoba",
+        "resortId": "spring-hill-winter-park",
+        "website": "http://www.springhillwinterpark.com/",
+        "name": "Spring Hill Winter Park"
+      }
+    }
+  ]
+}

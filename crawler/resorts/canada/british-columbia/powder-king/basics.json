@@ -1,0 +1,43 @@
+{
+  "resortId": "powder-king",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "940 m - 1520 m",
+        "height": "580m",
+        "tracksGreenLength": "12km",
+        "tracksGreenProportion": "48",
+        "tracksBlueLength": "7km",
+        "tracksBlueProportion": "28",
+        "tracksBlackLength": "6km",
+        "tracksBlackProportion": "24",
+        "tracksTotalLength": "25km",
+        "address": "55565 PowderKing Rd, Fraser-Fort George G, BC V0J 2C0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 55.364482228554806,
+          "lng": -122.61054682303265
+        },
+        "country": "Canada",
+        "email": "powderhound@powderking.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/Vp4N5aCFFsFBBEQX7",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(866) 769-5464",
+        "published": true,
+        "rating": 4.6,
+        "region": "British Columbia",
+        "resortId": "powder-king",
+        "website": "http://www.powderking.com/",
+        "name": "Powder King"
+      }
+    }
+  ]
+}

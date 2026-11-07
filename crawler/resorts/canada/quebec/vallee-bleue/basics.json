@@ -1,0 +1,43 @@
+{
+  "resortId": "vallee-bleue",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "321 m - 432 m",
+        "height": "111m",
+        "tracksGreenLength": "2.8km",
+        "tracksGreenProportion": "30",
+        "tracksBlueLength": "3.8km",
+        "tracksBlueProportion": "40",
+        "tracksBlackLength": "2.8km",
+        "tracksBlackProportion": "30",
+        "tracksTotalLength": "9.4km",
+        "address": "1418 Chem. de la Vall. Bleue, Val-David, QC J0T 2N0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 46.02611733285854,
+          "lng": -74.21835278782727
+        },
+        "country": "Canada",
+        "email": "info@valleebleue.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/c1AqAS3b62D7xvS98",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(819) 322-3427",
+        "published": true,
+        "rating": 4.6,
+        "region": "Quebec",
+        "resortId": "vallee-bleue",
+        "website": "http://www.valleebleue.com/",
+        "name": "Vallée Bleue"
+      }
+    }
+  ]
+}

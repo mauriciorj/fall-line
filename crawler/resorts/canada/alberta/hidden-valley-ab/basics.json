@@ -1,0 +1,44 @@
+{
+  "resortId": "hidden-valley-ab",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "1271 m - 1437 m",
+        "height": "166m",
+        "tracksGreenLength": "2.6km",
+        "tracksGreenProportion": "38",
+        "tracksBlueLength": "2.6km",
+        "tracksBlueProportion": "38",
+        "tracksBlackLength": "1.6km",
+        "tracksBlackProportion": "24",
+        "tracksTotalLength": "6.8km",
+        "address": "AB-41, Cypress County, AB T0J 1C0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 49.65707140884152,
+          "lng": -110.26068042512696
+        },
+        "country": "Canada",
+        "email": "hiddenvalley@gov.ab.ca",
+        "googleMapsUrl": "https://maps.app.goo.gl/PkeZoxJiResEg3Qu8",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(403) 893-3961",
+        "published": true,
+        "rating": 4.4,
+        "region": "Alberta",
+        "resortId": "hidden-valley-ab",
+        "ticketUrl": "",
+        "website": "http://gov.ab.ca/",
+        "name": "Hidden Valley"
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "resortId": "boler-mountain",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "262 m - 328 m",
+        "height": "66m",
+        "tracksGreenLength": "1.5km",
+        "tracksGreenProportion": "30",
+        "tracksBlueLength": "1.9km",
+        "tracksBlueProportion": "38",
+        "tracksBlackLength": "1.6km",
+        "tracksBlackProportion": "32",
+        "tracksTotalLength": "5km",
+        "address": "689 Griffith St, London, ON N6K 2S5",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 42.94485676125093,
+          "lng": -81.33936421540905
+        },
+        "country": "Canada",
+        "email": "info@bolermountain.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/rfaNhtb4yQ8SMdmx7",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": true,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": true,
+        "hasZipline": false,
+        "phone": "(519) 657-8822",
+        "published": true,
+        "region": "Ontario",
+        "resortId": "boler-mountain",
+        "ticketUrl": "https://www.bolermountain.com/day-tickets/",
+        "website": "https://www.bolermountain.com/",
+        "name": "Boler Mountain"
+      }
+    }
+  ]
+}

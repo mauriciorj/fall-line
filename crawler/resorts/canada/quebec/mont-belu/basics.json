@@ -1,0 +1,43 @@
+{
+  "resortId": "mont-belu",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "26 m - 190 m",
+        "height": "164m",
+        "tracksGreenLength": "2.3km",
+        "tracksGreenProportion": "23",
+        "tracksBlueLength": "2.1km",
+        "tracksBlueProportion": "23",
+        "tracksBlackLength": "5.3km",
+        "tracksBlackProportion": "54",
+        "tracksTotalLength": "9.7km",
+        "address": "4855 Bd de la Grande-Baie S, La Baie, QC G7B 3P6",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 48.32419157083713,
+          "lng": -70.8381820119244
+        },
+        "country": "Canada",
+        "email": "montbelu@royaume.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/57DBbpHZR5jyK3ou6",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(418) 697-5090",
+        "published": true,
+        "rating": 4.6,
+        "region": "Quebec",
+        "resortId": "mont-belu",
+        "website": "https://montbelu.com/",
+        "name": "Mont Bélu"
+      }
+    }
+  ]
+}

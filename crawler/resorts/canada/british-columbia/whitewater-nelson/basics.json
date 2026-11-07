@@ -1,0 +1,43 @@
+{
+  "resortId": "whitewater-nelson",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "1380 m - 2063 m",
+        "height": "683m",
+        "tracksGreenLength": "10km",
+        "tracksGreenProportion": "20",
+        "tracksBlueLength": "20km",
+        "tracksBlueProportion": "40",
+        "tracksBlackLength": "20km",
+        "tracksBlackProportion": "40",
+        "tracksTotalLength": "50km",
+        "address": "6010 Whitewater Ski Hill Rd, Nelson, BC V1L 5R3",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 49.44297790085318,
+          "lng": -117.1456208996228
+        },
+        "country": "Canada",
+        "email": "info@whitewatermountainresort.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/nE7dPCUFkzLkUPox7",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(250) 354-4944",
+        "published": true,
+        "rating": 4.7,
+        "region": "British Columbia",
+        "resortId": "whitewater-nelson",
+        "website": "http://www.whitewatermountainresort.com/",
+        "name": "Whitewater"
+      }
+    }
+  ]
+}

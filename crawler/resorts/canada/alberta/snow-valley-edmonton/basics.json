@@ -1,0 +1,44 @@
+{
+  "resortId": "snow-valley-edmonton",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "625 m - 665 m",
+        "height": "40m",
+        "tracksGreenLength": "1km",
+        "tracksGreenProportion": "83",
+        "tracksBlueLength": "0km",
+        "tracksBlueProportion": "0",
+        "tracksBlackLength": "0.2km",
+        "tracksBlackProportion": "17",
+        "tracksTotalLength": "1.2km",
+        "address": "13204 Rainbow Valley Rd NW, Edmonton, AB T6H 3Y9",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 53.48373620485547,
+          "lng": -113.55645380553524
+        },
+        "country": "Canada",
+        "email": "ski@snowvalley.ca",
+        "googleMapsUrl": "https://maps.app.goo.gl/dXiLx4jUGdTWQdyg9",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(780) 434-3991",
+        "published": true,
+        "rating": 4.4,
+        "region": "Alberta",
+        "resortId": "snow-valley-edmonton",
+        "ticketUrl": "",
+        "website": "http://www.snowvalley.ca/",
+        "name": "Snow Valley"
+      }
+    }
+  ]
+}

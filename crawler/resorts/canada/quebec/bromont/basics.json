@@ -1,0 +1,43 @@
+{
+  "resortId": "bromont",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "185 m - 553 m",
+        "height": "368m",
+        "tracksGreenLength": "10km",
+        "tracksGreenProportion": "22",
+        "tracksBlueLength": "15km",
+        "tracksBlueProportion": "33",
+        "tracksBlackLength": "20km",
+        "tracksBlackProportion": "45",
+        "tracksTotalLength": "45km",
+        "address": "150 Rue Champlain, Bromont, QC J2L 1A2",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 45.30175046824881,
+          "lng": -72.63786941989109
+        },
+        "country": "Canada",
+        "email": "parlez@skibromont.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/eT4tGdwhvgZd8Wei8",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(450) 534-2200",
+        "published": true,
+        "rating": 4.4,
+        "region": "Quebec",
+        "resortId": "bromont",
+        "website": "https://www.bromontmontagne.com/",
+        "name": "Bromont"
+      }
+    }
+  ]
+}

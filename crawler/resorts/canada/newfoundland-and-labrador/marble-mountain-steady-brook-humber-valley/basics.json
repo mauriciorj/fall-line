@@ -1,0 +1,43 @@
+{
+  "resortId": "marble-mountain-steady-brook-humber-valley",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "27 m - 546 m",
+        "height": "519m",
+        "tracksGreenLength": "4km",
+        "tracksGreenProportion": "22",
+        "tracksBlueLength": "8km",
+        "tracksBlueProportion": "45",
+        "tracksBlackLength": "6km",
+        "tracksBlackProportion": "33",
+        "tracksTotalLength": "18km",
+        "address": "2 Marble Dr, Steady Brook, NL A2H 2N2",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 48.94855967062732,
+          "lng": -57.82811475650257
+        },
+        "country": "Canada",
+        "email": "info@skimarble.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/JGoCkgLLs8YAgHAC9",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(709) 637-7601",
+        "published": true,
+        "rating": 4.6,
+        "region": "Newfoundland and Labrador",
+        "resortId": "marble-mountain-steady-brook-humber-valley",
+        "website": "http://skimarble.com/",
+        "name": "Marble Mountain"
+      }
+    }
+  ]
+}

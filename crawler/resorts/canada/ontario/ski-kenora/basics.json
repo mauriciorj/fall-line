@@ -1,0 +1,43 @@
+{
+  "resortId": "ski-kenora",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "356 m - 401 m",
+        "height": "45m",
+        "tracksGreenLength": "1.1km",
+        "tracksGreenProportion": "50",
+        "tracksBlueLength": "0.3km",
+        "tracksBlueProportion": "14",
+        "tracksBlackLength": "0.8km",
+        "tracksBlackProportion": "36",
+        "tracksTotalLength": "2.2km",
+        "address": "120 Mt Evergreen Rd, Kenora, ON P9N 0A8, Canada",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 49.79298995602779,
+          "lng": -94.41342807516835
+        },
+        "country": "Canada",
+        "email": "info@skikenora.ca",
+        "googleMapsUrl": "https://maps.app.goo.gl/MxSWH7hSBgJj1fk88",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": true,
+        "hasLessons": true,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(807) 548-5100",
+        "published": true,
+        "region": "Ontario",
+        "resortId": "ski-kenora",
+        "ticketUrl": "https://www.skikenora.ca/downhill/#lift-passes",
+        "website": "https://www.skikenora.ca/",
+        "name": "Mount Evergreen – Kenora"
+      }
+    }
+  ]
+}

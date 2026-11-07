@@ -1,0 +1,44 @@
+{
+  "resortId": "misery-mountain",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "337 m - 484 m",
+        "height": "147m",
+        "tracksGreenLength": "3km",
+        "tracksGreenProportion": "37",
+        "tracksBlueLength": "3km",
+        "tracksBlueProportion": "37",
+        "tracksBlackLength": "2km",
+        "tracksBlackProportion": "26",
+        "tracksTotalLength": "8km",
+        "address": "10408 89 St, Peace River, AB T8S 1P7",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 56.22689774353336,
+          "lng": -117.30258620394008
+        },
+        "country": "Canada",
+        "email": "skimiserymountain@gmail.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/g9nCRBCdNkRqbZo76",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(780) 624-4881",
+        "published": true,
+        "rating": 4.4,
+        "region": "Alberta",
+        "resortId": "misery-mountain",
+        "ticketUrl": "",
+        "website": "https://www.miserymountain.ca/",
+        "name": "Misery Mountain"
+      }
+    }
+  ]
+}

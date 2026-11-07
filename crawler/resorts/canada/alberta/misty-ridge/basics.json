@@ -1,0 +1,44 @@
+{
+  "resortId": "misty-ridge",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "633 m - 675 m",
+        "height": "42m",
+        "tracksGreenLength": "0.6km",
+        "tracksGreenProportion": "60",
+        "tracksBlueLength": "0.4km",
+        "tracksBlueProportion": "40",
+        "tracksBlackLength": "0km",
+        "tracksBlackProportion": "0",
+        "tracksTotalLength": "1km",
+        "address": "Range Road 44a, Township Rd 622, Neerlandia, AB T0G 1R0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 54.36252108186851,
+          "lng": -114.54080433370216
+        },
+        "country": "Canada",
+        "email": "mistyridgeskihill@gmail.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/JXDoc4CvSEyeq5Ns7",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(780) 674-4242",
+        "published": true,
+        "rating": 4.7,
+        "region": "Alberta",
+        "resortId": "misty-ridge",
+        "ticketUrl": "",
+        "website": "http://www.mistyridgeskihill.com/",
+        "name": "Misty Ridge"
+      }
+    }
+  ]
+}

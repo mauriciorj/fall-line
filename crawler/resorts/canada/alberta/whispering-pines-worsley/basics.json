@@ -1,0 +1,44 @@
+{
+  "resortId": "whispering-pines-worsley",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "970 m - 1110 m",
+        "height": "140m",
+        "tracksGreenLength": "1.8km",
+        "tracksGreenProportion": "28",
+        "tracksBlueLength": "1.3km",
+        "tracksBlueProportion": "22",
+        "tracksBlackLength": "3.2km",
+        "tracksBlackProportion": "50",
+        "tracksTotalLength": "6.3km",
+        "address": "88 9 W6 Sec. 5, Worsley, AB T0H 3W0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 56.60236489074294,
+          "lng": -119.39128649421934
+        },
+        "country": "Canada",
+        "email": "info@skiworsley.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/e8rL8Hp9xVJBrZ749",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(780) 685-2594",
+        "published": true,
+        "rating": 4.8,
+        "region": "Alberta",
+        "resortId": "whispering-pines-worsley",
+        "ticketUrl": "",
+        "website": "https://www.skiworsley.com/",
+        "name": "Whispering Pines"
+      }
+    }
+  ]
+}

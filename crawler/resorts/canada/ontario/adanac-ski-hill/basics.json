@@ -1,0 +1,44 @@
+{
+  "resortId": "adanac-ski-hill",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "270 m - 340 m",
+        "height": "70m",
+        "tracksGreenLength": "1.3km",
+        "tracksGreenProportion": "65",
+        "tracksBlueLength": "0.6km",
+        "tracksBlueProportion": "30",
+        "tracksBlackLength": "0.1km",
+        "tracksBlackProportion": "5",
+        "tracksTotalLength": "2km",
+        "address": "744 Beatrice Crescent, Sudbury, ON P3A 5B5",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 46.51082250447364,
+          "lng": -80.96038157408354
+        },
+        "country": "Canada",
+        "email": "311@greatersudbury.ca",
+        "googleMapsUrl": "https://maps.app.goo.gl/F5auCSi53GtUyseP8",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(705) 688-3968",
+        "published": true,
+        "rating": 4.1,
+        "region": "Ontario",
+        "resortId": "adanac-ski-hill",
+        "ticketUrl": "https://www.greatersudbury.ca/play/ski-hills/adanac-ski-hill/",
+        "website": "https://www.greatersudbury.ca/",
+        "name": "Adanac Ski Hill"
+      }
+    }
+  ]
+}

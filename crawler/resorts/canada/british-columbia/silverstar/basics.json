@@ -1,0 +1,28 @@
+{
+  "resortId": "silverstar",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "1155 m - 1915 m",
+        "height": "760m",
+        "tracksGreenLength": "20km",
+        "tracksGreenProportion": "17",
+        "tracksBlueLength": "45km",
+        "tracksBlueProportion": "39",
+        "tracksBlackLength": "50km",
+        "tracksBlackProportion": "44",
+        "tracksTotalLength": "115km",
+        "continent": "North America",
+        "country": "Canada",
+        "googleMapsUrl": "https://maps.app.goo.gl/kjQPx3L2DxVLpGyq8",
+        "hasLessons": true,
+        "published": true,
+        "region": "British Columbia",
+        "resortId": "silverstar",
+        "website": "https://www.skisilverstar.com/",
+        "name": "SilverStar"
+      }
+    }
+  ]
+}

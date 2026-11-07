@@ -1,0 +1,43 @@
+{
+  "resortId": "mont-orford",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "317 m - 850 m",
+        "height": "533m",
+        "tracksGreenLength": "10km",
+        "tracksGreenProportion": "33",
+        "tracksBlueLength": "8km",
+        "tracksBlueProportion": "27",
+        "tracksBlackLength": "12km",
+        "tracksBlackProportion": "40",
+        "tracksTotalLength": "30km",
+        "address": "4380 Chem. du Parc, Orford, QC J0B 1B0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 45.317817021512994,
+          "lng": -72.2209896110045
+        },
+        "country": "Canada",
+        "email": "info@orford.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/sfRMAtkjr2hcdJgZ9",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(819) 843-6548",
+        "published": true,
+        "rating": 4.7,
+        "region": "Quebec",
+        "resortId": "mont-orford",
+        "website": "https://montorford.com/en-ca/home",
+        "name": "Mont Orford"
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "resortId": "cape-smokey",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "15 m - 283 m",
+        "height": "268m",
+        "tracksGreenLength": "3km",
+        "tracksGreenProportion": "30",
+        "tracksBlueLength": "5km",
+        "tracksBlueProportion": "50",
+        "tracksBlackLength": "2km",
+        "tracksBlackProportion": "20",
+        "tracksTotalLength": "10km",
+        "address": "38696 Cabot Trail, Ingonish Beach, NS B0C 1L0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 46.62775773509772,
+          "lng": -60.42119034702866
+        },
+        "country": "Canada",
+        "email": "customer.support@capesmokeyholding.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/DsWmbktSr9fSRCQM9",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(902) 517-0371",
+        "published": true,
+        "rating": 4.3,
+        "region": "Nova Scotia",
+        "resortId": "cape-smokey",
+        "website": "http://www.capesmokey.ca/",
+        "name": "Cape Smokey"
+      }
+    }
+  ]
+}

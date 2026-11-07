@@ -1,0 +1,44 @@
+{
+  "resortId": "marmot-basin-jasper",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "1698 m - 2518 m",
+        "height": "820m",
+        "tracksGreenLength": "26km",
+        "tracksGreenProportion": "30",
+        "tracksBlueLength": "26km",
+        "tracksBlueProportion": "28",
+        "tracksBlackLength": "39km",
+        "tracksBlackProportion": "42",
+        "tracksTotalLength": "91km",
+        "address": "1 Marmot Rd, Jasper, AB T0E 1E0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 52.80221914248114,
+          "lng": -118.0821258059968
+        },
+        "country": "Canada",
+        "email": "info@skimarmot.com",
+        "googleMapsUrl": "info@skimarmot.com",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(780) 852-3816",
+        "published": true,
+        "rating": 4.7,
+        "region": "Alberta",
+        "resortId": "marmot-basin-jasper",
+        "ticketUrl": "",
+        "website": "http://skimarmot.com/",
+        "name": "Marmot Basin"
+      }
+    }
+  ]
+}

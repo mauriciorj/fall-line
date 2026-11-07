@@ -1,0 +1,43 @@
+{
+  "resortId": "searchmont",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "233 m - 488 m",
+        "height": "255m",
+        "tracksGreenLength": "2km",
+        "tracksGreenProportion": "20",
+        "tracksBlueLength": "6km",
+        "tracksBlueProportion": "60",
+        "tracksBlackLength": "2km",
+        "tracksBlackProportion": "20",
+        "tracksTotalLength": "10km",
+        "address": "103 Searchmont Resort Rd., Searchmont, ON P0S 1J0, Canada",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 46.770243957523235,
+          "lng": -84.04984769233018
+        },
+        "country": "Canada",
+        "email": "info@searchmont.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/S8vtJh5pXdXEGHFz9",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": true,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(705) 781-2340",
+        "published": true,
+        "region": "Ontario",
+        "resortId": "searchmont",
+        "ticketUrl": "https://searchmont.com/lift-tickets/",
+        "website": "https://searchmont.com/",
+        "name": "Searchmont Ski Resort"
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "resortId": "mount-jamieson",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "307 m - 410 m",
+        "height": "103m",
+        "tracksGreenLength": "2.5km",
+        "tracksGreenProportion": "28",
+        "tracksBlueLength": "1.8km",
+        "tracksBlueProportion": "20",
+        "tracksBlackLength": "4.6km",
+        "tracksBlackProportion": "52",
+        "tracksTotalLength": "8.9km",
+        "address": "5050 Kamiskotia Rd, Timmins, ON P4N 7G7",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 48.5344442228911,
+          "lng": -81.54116198436738
+        },
+        "country": "Canada",
+        "email": "administration@mountjamieson.ca",
+        "googleMapsUrl": "https://maps.app.goo.gl/htDJVvnmbXLHwzfJA",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": true,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": true,
+        "hasZipline": false,
+        "phone": "(705) 268-9057",
+        "published": true,
+        "region": "Ontario",
+        "resortId": "mount-jamieson",
+        "ticketUrl": "https://www.mountjamieson.ca/day-passes",
+        "website": "https://www.mountjamieson.ca/",
+        "name": "Mount Jamieson"
+      }
+    }
+  ]
+}

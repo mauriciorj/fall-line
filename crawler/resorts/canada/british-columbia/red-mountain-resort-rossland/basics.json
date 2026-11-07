@@ -1,0 +1,43 @@
+{
+  "resortId": "red-mountain-resort-rossland",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "1185 m - 2075 m",
+        "height": "890m",
+        "tracksGreenLength": "20km",
+        "tracksGreenProportion": "17",
+        "tracksBlueLength": "40km",
+        "tracksBlueProportion": "33",
+        "tracksBlackLength": "60km",
+        "tracksBlackProportion": "50",
+        "tracksTotalLength": "120km",
+        "address": "4280 Old Red Mountain Rd., Rossland, BC V0G 1Y0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 49.103729707605005,
+          "lng": -117.81856344336725
+        },
+        "country": "Canada",
+        "email": "info@redresort.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/xPSfSMsMvpTzwRBQ6",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(250) 362-7384",
+        "published": true,
+        "rating": 4.6,
+        "region": "British Columbia",
+        "resortId": "red-mountain-resort-rossland",
+        "website": "http://www.redresort.com/lodging",
+        "name": "Red Mountain Resort"
+      }
+    }
+  ]
+}

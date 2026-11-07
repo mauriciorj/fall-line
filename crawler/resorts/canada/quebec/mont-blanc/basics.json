@@ -1,0 +1,43 @@
+{
+  "resortId": "mont-blanc",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "346 m - 556 m",
+        "height": "210m",
+        "tracksGreenLength": "7km",
+        "tracksGreenProportion": "20",
+        "tracksBlueLength": "12km",
+        "tracksBlueProportion": "34",
+        "tracksBlackLength": "16km",
+        "tracksBlackProportion": "46",
+        "tracksTotalLength": "35km",
+        "address": "Municipality of, 1006 Rte 117, Mont-Blanc, Quebec J0T 2G0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 46.109598373008744,
+          "lng": -74.48278620649785
+        },
+        "country": "Canada",
+        "email": "info@skimontblanc.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/t4PPF88pbgB3kLK99",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(819) 688-2444",
+        "published": true,
+        "rating": 4.1,
+        "region": "Quebec",
+        "resortId": "mont-blanc",
+        "website": "http://www.skimontblanc.com/",
+        "name": "Mont Blanc"
+      }
+    }
+  ]
+}

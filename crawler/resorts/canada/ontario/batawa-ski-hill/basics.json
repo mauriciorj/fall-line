@@ -1,0 +1,43 @@
+{
+  "resortId": "batawa-ski-hill",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "30 m - 80 m",
+        "height": "50 m",
+        "tracksGreenLength": "0.2 km",
+        "tracksGreenProportion": "13",
+        "tracksBlueLength": "0.9 km",
+        "tracksBlueProportion": "60",
+        "tracksBlackLength": "0.4 km",
+        "tracksBlackProportion": "27",
+        "tracksTotalLength": "1.5 km",
+        "address": "99 Ski Club Lane, Quinte West, ON K0K 1E0, Canada",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 44.167346192932484,
+          "lng": -77.59699002717811
+        },
+        "country": "Canada",
+        "email": "info@batawaskihill.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/qee9tYPrSYd4HrdT6",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": true,
+        "hasSnowshoeing": true,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(613) 398-6568",
+        "published": true,
+        "region": "Ontario",
+        "resortId": "batawa-ski-hill",
+        "ticketUrl": "https://www.batawaskihill.com/lift-tickets",
+        "website": "https://www.batawaskihill.com/",
+        "name": "Batawa Ski Hill"
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "resortId": "revelstoke-mountain-resort",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "512 m - 2225 m",
+        "height": "1713m",
+        "tracksGreenLength": "16km",
+        "tracksGreenProportion": "29",
+        "tracksBlueLength": "18km",
+        "tracksBlueProportion": "33",
+        "tracksBlackLength": "21km",
+        "tracksBlackProportion": "38",
+        "tracksTotalLength": "55km",
+        "address": "2950 Camozzi Rd, Revelstoke, BC V0E 2S0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 50.958587773403174,
+          "lng": -118.16230786947347
+        },
+        "country": "Canada",
+        "email": "info@revelstokemountainresort.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/bTCFWR4BHRjD1uZY7",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(250) 814-0087",
+        "published": true,
+        "rating": 4.7,
+        "region": "British Columbia",
+        "resortId": "revelstoke-mountain-resort",
+        "website": "https://www.revelstokemountainresort.com/",
+        "name": "Revelstoke Mountain Resort"
+      }
+    }
+  ]
+}

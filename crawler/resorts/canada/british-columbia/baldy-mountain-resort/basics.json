@@ -1,0 +1,43 @@
+{
+  "resortId": "baldy-mountain-resort",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "1726 m - 2303 m",
+        "height": "577m",
+        "tracksGreenLength": "10km",
+        "tracksGreenProportion": "30",
+        "tracksBlueLength": "15km",
+        "tracksBlueProportion": "42",
+        "tracksBlackLength": "10km",
+        "tracksBlackProportion": "28",
+        "tracksTotalLength": "35km",
+        "address": "2680 Mount Baldy Rd, Oliver, BC V0H 1T0",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 49.15294642813764,
+          "lng": -119.23601420709738
+        },
+        "country": "Canada",
+        "email": "ticketoffice@skibaldy.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/AGdNFb9CGfxwyycZ8",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(250) 498-4086",
+        "published": true,
+        "rating": 4.7,
+        "region": "British Columbia",
+        "resortId": "baldy-mountain-resort",
+        "website": "https://baldyresort.com/",
+        "name": "Baldy Mountain Resort"
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "resortId": "sunridge",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "615 m - 673 m",
+        "height": "58m",
+        "tracksGreenLength": "0.5km",
+        "tracksGreenProportion": "31",
+        "tracksBlueLength": "0.4km",
+        "tracksBlueProportion": "25",
+        "tracksBlackLength": "0.7km",
+        "tracksBlackProportion": "44",
+        "tracksTotalLength": "1.6km",
+        "address": "10980 17 St NW, Edmonton, AB T6S 1E4",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 53.564393213224875,
+          "lng": -113.37059196914223
+        },
+        "country": "Canada",
+        "email": "info@skisunridge.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/LVaZKzSNyNtgU3QH6",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": false,
+        "hasSnowshoeing": false,
+        "hasSpa": false,
+        "hasTubing": false,
+        "hasZipline": false,
+        "phone": "(780) 449-6555",
+        "published": true,
+        "rating": 4.3,
+        "region": "Alberta",
+        "resortId": "sunridge",
+        "ticketUrl": "",
+        "website": "https://www.skisunridge.com/",
+        "name": "Sunridge"
+      }
+    }
+  ]
+}

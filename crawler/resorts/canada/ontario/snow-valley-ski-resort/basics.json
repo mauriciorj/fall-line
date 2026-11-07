@@ -1,0 +1,45 @@
+{
+  "resortId": "snow-valley-ski-resort",
+  "tables": [
+    {
+      "table": "resorts",
+      "content": {
+        "elevation": "235 m - 320 m",
+        "height": "85m",
+        "tracksGreenLength": "3km",
+        "tracksGreenProportion": "43",
+        "tracksBlueLength": "1.7km",
+        "tracksBlueProportion": "24",
+        "tracksBlackLength": "2.3km",
+        "tracksBlackProportion": "33",
+        "tracksTotalLength": "7km",
+        "address": "2632 Vespra Valley Rd, Minesing ON L9X 0G8",
+        "continent": "North America",
+        "coordinates": {
+          "lat": 44.46119110037171,
+          "lng": -79.7835534199466
+        },
+        "country": "Canada",
+        "email": "info@skisnowvalley.com",
+        "googleMapsUrl": "https://maps.app.goo.gl/HsGTUq8paByDS8z4A",
+        "hasIceSkate": false,
+        "hasAccommodations": false,
+        "hasCrossCountry": false,
+        "hasLessons": true,
+        "hasSnowshoeing": true,
+        "hasSpa": false,
+        "hasTubing": true,
+        "hasZipline": true,
+        "phone": "(705) 721-7669",
+        "published": true,
+        "rating": 4.3,
+        "region": "Ontario",
+        "resortId": "snow-valley-ski-resort",
+        "ticketUrl": "https://skisnowvalley.resortstore.net/en/catalogue/categories/",
+        "tollFree": "1-877-404-4744",
+        "website": "http://www.skisnowvalley.com/",
+        "name": "Snow Valley Ski Resort"
+      }
+    }
+  ]
+}
