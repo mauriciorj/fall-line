@@ -1,10 +1,14 @@
 "use client";
 
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { GoogleMap, useLoadScript, MarkerF } from "@react-google-maps/api";
 import MapPlaceholder from "@/components/resortMap/mapPlaceholder";
 import { useLanguage } from "@/src/i18n";
 import { Coordinates, Resort } from "@/types/resort";
+
+const DEFAULT_CENTER: Coordinates = { lat: 44.5, lng: -80.0 };
+const MAX_FIT_ZOOM = 11;
+const FIT_PADDING = 50;
 
 interface ResortMapProps {
   hoveredResort: string | null;
@@ -33,11 +37,42 @@ const ResortMap = ({
     height: "100%",
   };
 
-  // Center on Ontario
-  const defaultCenter = {
-    lat: 44.5,
-    lng: -80.0,
-  };
+  // Initial view only; later view changes come from fitting the resort markers.
+  const [initialCenter] = useState<Coordinates>(
+    () => userCoordinates ?? DEFAULT_CENTER,
+  );
+  const [map, setMap] = useState<google.maps.Map | null>(null);
+
+  const mappedResorts = useMemo(
+    () => resorts.filter((resort) => resort.coordinates),
+    [resorts],
+  );
+  const mappedResortsKey = mappedResorts
+    .map((resort) => resort.resortId)
+    .join("|");
+
+  useEffect(() => {
+    if (!map || mappedResorts.length === 0) return;
+
+    if (mappedResorts.length === 1) {
+      map.setCenter(mappedResorts[0].coordinates!);
+      map.setZoom(MAX_FIT_ZOOM);
+      return;
+    }
+
+    const bounds = new google.maps.LatLngBounds();
+    mappedResorts.forEach((resort) => bounds.extend(resort.coordinates!));
+    map.fitBounds(bounds, FIT_PADDING);
+    const listener = google.maps.event.addListenerOnce(
+      map,
+      "idle",
+      () => {
+        if ((map.getZoom() ?? 0) > MAX_FIT_ZOOM) map.setZoom(MAX_FIT_ZOOM);
+      },
+    );
+    return () => listener.remove();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [map, mappedResortsKey]);
 
   const options = useMemo(
     () => ({
@@ -62,9 +97,11 @@ const ResortMap = ({
   return (
     <GoogleMap
       mapContainerStyle={containerStyle}
-      center={userCoordinates ?? defaultCenter}
+      center={initialCenter}
       zoom={8}
       options={options}
+      onLoad={setMap}
+      onUnmount={() => setMap(null)}
     >
       {userCoordinates && (
         <MarkerF
@@ -80,7 +117,7 @@ const ResortMap = ({
           }}
         />
       )}
-      {resorts.filter((resort) => resort.coordinates).map((resort) => (
+      {mappedResorts.map((resort) => (
         <MarkerF
           icon={{
             path: "M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z",
