@@ -2,7 +2,7 @@ import { internalMutation, query } from "./_generated/server";
 import type { MutationCtx } from "./_generated/server";
 import type { Doc } from "./_generated/dataModel";
 import { v } from "convex/values";
-import { resortSeedData } from "../crawler/mountains/resortSeed";
+import { resortSeedData } from "../crawler/resorts/resortSeed";
 
 const locationFields = v.object({
   continent: v.optional(v.string()),
