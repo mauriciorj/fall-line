@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { preloadQuery, preloadedQueryResult } from "convex/nextjs";
 import { api } from "@/convex/_generated/api";
 import JsonLd from "@/components/jsonLd";
+import SiteFooter from "@/components/siteFooter";
 import ResortDetail from "@/src/features/place/component/resortDetail";
 import { pickLocalized, summarize } from "@/src/i18n/localized";
 import { localizePath } from "@/src/i18n/routing";
@@ -22,7 +23,10 @@ import {
   skiResortNode,
   webPageNode,
 } from "@/utils/jsonLd";
-import { listPublishedResorts } from "@/utils/publishedResorts";
+import {
+  groupResortsByRegion,
+  listPublishedResorts,
+} from "@/utils/publishedResorts";
 import {
   absoluteUrl,
   localizedAlternates,
@@ -114,12 +118,17 @@ export default async function ResortPage({
   params: Promise<ResortPageParams>;
 }) {
   const { locale, resortId } = await params;
-  const [preloadedResort, preloadedResortHours, preloadedWeatherAndStatus] =
-    await Promise.all([
-      getPreloadedResort(resortId),
-      preloadQuery(api.resortHours.getByResort, { resortId }),
-      preloadQuery(api.weatherAndStatus.getByResort, { resortId }),
-    ]);
+  const [
+    preloadedResort,
+    preloadedResortHours,
+    preloadedWeatherAndStatus,
+    publishedResorts,
+  ] = await Promise.all([
+    getPreloadedResort(resortId),
+    preloadQuery(api.resortHours.getByResort, { resortId }),
+    preloadQuery(api.weatherAndStatus.getByResort, { resortId }),
+    listPublishedResorts(),
+  ]);
 
   const resort = toResort(preloadedQueryResult(preloadedResort));
   if (!resort) {
@@ -181,6 +190,7 @@ export default async function ResortPage({
         preloadedResortHours={preloadedResortHours}
         preloadedWeatherAndStatus={preloadedWeatherAndStatus}
       />
+      <SiteFooter groups={groupResortsByRegion(publishedResorts)} />
     </>
   );
 }

@@ -8,7 +8,7 @@ import { groupByRegion } from "@/utils/locationGroups";
 
 // Server-only. Uses the existing public queries so no new Convex functions
 // have to be deployed: distinct locations -> published resorts per location.
-// Memoized per request so the layout (footer) and the page share one fetch.
+// Memoized per request so callers can share one fetch.
 export const listPublishedResorts = cache(async (): Promise<Resort[]> => {
   const resortLocations = await fetchQuery(api.resorts.listLocations);
   const locations = new Map<string, LocationOption>();

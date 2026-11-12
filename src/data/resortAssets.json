@@ -1,4 +1,165 @@
 {
+  "canada/alberta/banff-sunshine": {
+    "hero": "hero.jpg",
+    "og": null,
+    "trailMaps": [
+      "trail.png"
+    ]
+  },
+  "canada/alberta/canada-olympic-park-calgary": {
+    "hero": "hero.jpg",
+    "og": null,
+    "trailMaps": [
+      "trail.webp"
+    ]
+  },
+  "canada/alberta/canyon": {
+    "hero": "hero.jpg",
+    "og": null,
+    "trailMaps": [
+      "trail.png"
+    ]
+  },
+  "canada/alberta/castle-mountain": {
+    "hero": "hero.jpg",
+    "og": null,
+    "trailMaps": []
+  },
+  "canada/alberta/eastlink-park-whitecourt": {
+    "hero": "hero.jpg",
+    "og": null,
+    "trailMaps": []
+  },
+  "canada/alberta/edmonton-ski-club": {
+    "hero": "hero.jpg",
+    "og": null,
+    "trailMaps": []
+  },
+  "canada/alberta/fairview-ski-hill": {
+    "hero": "hero.jpg",
+    "og": null,
+    "trailMaps": []
+  },
+  "canada/alberta/fortress-mountain": {
+    "hero": "hero.jpg",
+    "og": null,
+    "trailMaps": []
+  },
+  "canada/alberta/gwynne-valley": {
+    "hero": "hero.jpg",
+    "og": null,
+    "trailMaps": []
+  },
+  "canada/alberta/hidden-valley-ab": {
+    "hero": "hero.jpg",
+    "og": null,
+    "trailMaps": []
+  },
+  "canada/alberta/innisfail": {
+    "hero": "hero.jpg",
+    "og": null,
+    "trailMaps": []
+  },
+  "canada/alberta/kinosoo-ridge": {
+    "hero": "hero.jpg",
+    "og": null,
+    "trailMaps": []
+  },
+  "canada/alberta/lake-louise": {
+    "hero": "hero.jpg",
+    "og": null,
+    "trailMaps": []
+  },
+  "canada/alberta/little-smoky": {
+    "hero": "hero.jpg",
+    "og": null,
+    "trailMaps": []
+  },
+  "canada/alberta/marmot-basin-jasper": {
+    "hero": "hero.jpg",
+    "og": null,
+    "trailMaps": []
+  },
+  "canada/alberta/medicine-lodge": {
+    "hero": "hero.jpg",
+    "og": null,
+    "trailMaps": []
+  },
+  "canada/alberta/misery-mountain": {
+    "hero": "hero.jpg",
+    "og": null,
+    "trailMaps": []
+  },
+  "canada/alberta/misty-ridge": {
+    "hero": "hero.jpg",
+    "og": null,
+    "trailMaps": []
+  },
+  "canada/alberta/mount-joy": {
+    "hero": "hero.jpg",
+    "og": null,
+    "trailMaps": []
+  },
+  "canada/alberta/mt-norquay-banff": {
+    "hero": "hero.jpg",
+    "og": null,
+    "trailMaps": []
+  },
+  "canada/alberta/nakiska": {
+    "hero": "hero.jpg",
+    "og": null,
+    "trailMaps": []
+  },
+  "canada/alberta/nitehawk": {
+    "hero": "hero.jpg",
+    "og": null,
+    "trailMaps": []
+  },
+  "canada/alberta/pass-powderkeg-crowsnest-pass": {
+    "hero": "hero.jpg",
+    "og": null,
+    "trailMaps": []
+  },
+  "canada/alberta/rabbit-hill-snow-resort": {
+    "hero": "hero.jpg",
+    "og": null,
+    "trailMaps": []
+  },
+  "canada/alberta/snow-valley-edmonton": {
+    "hero": "hero.jpg",
+    "og": null,
+    "trailMaps": []
+  },
+  "canada/alberta/spring-lake-ski-hill": {
+    "hero": "hero.jpg",
+    "og": null,
+    "trailMaps": []
+  },
+  "canada/alberta/sunridge": {
+    "hero": "hero.jpg",
+    "og": null,
+    "trailMaps": []
+  },
+  "canada/alberta/tawatinaw-valley": {
+    "hero": "hero.jpg",
+    "og": null,
+    "trailMaps": []
+  },
+  "canada/alberta/valley-ski-hill-alliance": {
+    "hero": "hero.jpg",
+    "og": null,
+    "trailMaps": []
+  },
+  "canada/alberta/vista-ridge": {
+    "hero": "hero.jpg",
+    "og": null,
+    "trailMaps": []
+  },
+  "canada/alberta/whispering-pines-worsley": {
+    "hero": "hero.jpg",
+    "og": null,
+    "trailMaps": []
+  },
   "canada/british-columbia/whistler-blackcomb": {
     "hero": null,
     "og": null,
