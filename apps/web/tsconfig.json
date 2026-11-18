@@ -19,6 +19,7 @@
       }
     ],
     "paths": {
+      "@/convex/*": ["../../convex/*"],
       "@/*": ["./*"],
       "@/assets/*": ["./public/assets/*"],
       "@/components/*": ["./src/features/common/components/*"],
@@ -40,5 +41,5 @@
     ".next/dev/types/**/*.ts",
     "**/*.mts"
   ],
-  "exclude": ["node_modules", "crawler", "apps/mobile", "packages/shared", "convex/**/*.test.ts", "vitest.config.ts"]
+  "exclude": ["node_modules"]
 }

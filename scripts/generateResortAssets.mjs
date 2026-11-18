@@ -1,11 +1,13 @@
-// Scans public/assets/resorts and writes src/data/resortAssets.json so the app
+// Scans web resort assets and writes the shared manifest so both apps
 // knows which hero/trail-map files exist without probing the filesystem at
 // request time (ISR revalidation on serverless hosts has no `public/` on disk).
 import { mkdirSync, readdirSync, statSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
 
-const root = join(process.cwd(), "public", "assets", "resorts");
-const output = join(process.cwd(), "src", "data", "resortAssets.json");
+const repo = join(dirname(fileURLToPath(import.meta.url)), "..");
+const root = join(repo, "apps", "web", "public", "assets", "resorts");
+const output = join(repo, "packages", "shared", "src", "data", "resortAssets.json");
 const formatRank = ["webp", "avif", "jpg", "jpeg", "png"];
 
 const bestFormat = (candidates) =>

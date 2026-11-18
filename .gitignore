@@ -151,6 +151,7 @@ __pycache__/
 
 # clerk configuration (can include secrets)
 /.clerk/
+/apps/web/.clerk/
 
 # Expo local state and generated native projects
 .expo/

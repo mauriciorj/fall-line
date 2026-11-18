@@ -6,7 +6,8 @@
 //
 //   node scripts/generateBrandIcons.mjs
 import { mkdirSync, writeFileSync } from "node:fs";
-import { join } from "node:path";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
 import sharp from "sharp";
 
 const PRIMARY = "#4A6FA5";
@@ -55,8 +56,9 @@ function ico(entries) {
   return Buffer.concat([header, ...directory, ...entries.map((e) => e.buffer)]);
 }
 
-const app = join(process.cwd(), "src", "app");
-const icons = join(process.cwd(), "public", "icons");
+const web = join(dirname(fileURLToPath(import.meta.url)), "..", "apps", "web");
+const app = join(web, "src", "app");
+const icons = join(web, "public", "icons");
 mkdirSync(icons, { recursive: true });
 
 const standard = svg({ rounded: true, inset: 0.19 });

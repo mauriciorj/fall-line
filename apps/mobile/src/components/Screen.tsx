@@ -37,7 +37,7 @@ export function Screen({
           onPress={() => home ? router.replace("/") : router.canGoBack() ? router.back() : router.replace("/")}
           style={styles.brand}
         >
-          <Image source={require("../../../../public/icons/icon-512.png")} style={styles.logo} />
+          <Image source={require("../../../web/public/icons/icon-512.png")} style={styles.logo} />
           <Text style={styles.brandText}>FALL LINE</Text>
         </Pressable>
         <View style={styles.actions}>

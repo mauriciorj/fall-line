@@ -37,7 +37,7 @@ Installed versions match published security advisories:
 
 These floors address the checked advisories, not future vulnerabilities or every possible dependency combination. Select maintained, compatible releases when remediation begins, update React/ReactDOM and `eslint-config-next` alongside Next.js as appropriate, and re-audit the resulting lockfile and transitive dependencies.
 
-Evidence: [application dependencies](../../package.json).
+Evidence: [application dependencies](../../apps/web/package.json).
 
 **Main exposure:** Next.js/Sharp image-processing vulnerabilities, including published remote-code-execution advisories. The configuration also permits images from **any `*.convex.cloud` deployment**. The installed Next.js matcher accepted an unrelated deployment during isolated verification.
 
@@ -48,7 +48,7 @@ Evidence: [application dependencies](../../package.json).
 - Remove unused remote image hosts.
 - Verify that the Sharp version actually resolved by Next.js is patched, not only the direct package declaration.
 
-Evidence: [remote image configuration](../../next.config.ts#L7-L19).
+Evidence: [remote image configuration](../../apps/web/next.config.ts#L32-L44).
 
 **Applicability limits:**
 
@@ -72,7 +72,7 @@ The required behavior is that unpublished resorts must be inaccessible.
 Evidence:
 
 - [Public resort lookup](../../convex/resorts.ts#L177-L185)
-- [Public resort page lookup and existence check](../../src/app/[locale]/location/[country]/[region]/[resortId]/page.tsx#L120-L138)
+- [Public resort page lookup and existence check](../../apps/web/src/app/[locale]/location/[country]/[region]/[resortId]/page.tsx#L120-L138)
 - [Public hours lookup](../../convex/resortHours.ts#L35-L43)
 - [Public weather lookup](../../convex/weatherAndStatus.ts#L94-L102)
 
@@ -101,7 +101,7 @@ Browser exposure is normal for a Maps JavaScript key. **Unrestricted usage is no
 
 Do not proxy Maps JavaScript merely to hide its browser key.
 
-Evidence: [Maps JavaScript key usage](../../src/features/common/components/regionDetector.tsx#L20-L23).
+Evidence: [Maps JavaScript key usage](../../apps/web/src/features/common/components/regionDetector.tsx#L20-L23).
 
 Reference: [Google Maps Platform security guidance](https://developers.google.com/maps/api-security-best-practices).
 
@@ -122,9 +122,9 @@ Clerk middleware initializes authentication but does not call `auth.protect()`. 
 
 Evidence:
 
-- [Clerk middleware invocation](../../src/proxy.ts#L47-L54)
-- [Admin layout](../../src/app/[locale]/admin/layout.tsx)
-- [Shared static rendering configuration](../../src/app/[locale]/layout.tsx#L18-L20)
+- [Clerk middleware invocation](../../apps/web/src/proxy.ts#L47-L54)
+- [Admin layout](../../apps/web/src/app/[locale]/admin/layout.tsx)
+- [Shared static rendering configuration](../../apps/web/src/app/[locale]/layout.tsx#L18-L20)
 
 ### M2. Strengthen admin identity and account security
 
@@ -186,7 +186,7 @@ Evidence:
 
 - [Article input validation](../../convex/admin.ts#L5-L15)
 - [Upload URL creation and article creation](../../convex/admin.ts#L155-L176)
-- [Browser upload flow](../../src/app/[locale]/admin/page.tsx#L151-L159)
+- [Browser upload flow](../../apps/web/src/app/[locale]/admin/page.tsx#L151-L159)
 
 ### M5. Separate advertising from admin and address privacy behavior
 
@@ -202,9 +202,9 @@ Google Ads loads through the shared layout without consent gating, including on 
 
 Evidence:
 
-- [Shared Google Ads scripts](../../src/app/[locale]/layout.tsx#L85-L98)
-- [Coordinates supplied to Google Geocoding](../../src/features/common/components/regionDetector.tsx#L35-L38)
-- [Privacy policy](../../src/app/[locale]/privacy/page.tsx)
+- [Shared Google Ads scripts](../../apps/web/src/app/[locale]/layout.tsx#L85-L98)
+- [Coordinates supplied to Google Geocoding](../../apps/web/src/features/common/components/regionDetector.tsx#L35-L38)
+- [Privacy policy](../../apps/web/src/app/[locale]/privacy/page.tsx)
 
 ### M6. Establish security headers
 
@@ -217,7 +217,7 @@ The reviewed Next.js configuration defines no application security headers. Effe
 - Verify HTTPS and HSTS behavior.
 - Allow necessary Clerk and Maps resources in CSP without broad unrestricted allowances.
 
-Evidence: [Next.js configuration](../../next.config.ts).
+Evidence: [Next.js configuration](../../apps/web/next.config.ts).
 
 ### M7. Update remaining dependencies and add regression checks
 
@@ -232,7 +232,7 @@ The dev-only critical `proxy-addr` finding traces through **shadcn's MCP/Express
 - Add automated dependency and secret scanning.
 - Add regression tests covering anonymous, non-admin, disabled-admin, and unpublished-record access.
 
-Evidence: [development dependencies](../../package.json#L73-L91) and [dependency lockfile](../../pnpm-lock.yaml).
+Evidence: [development dependencies](../../apps/web/package.json#L73-L91) and [dependency lockfile](../../pnpm-lock.yaml).
 
 ## Low priority
 
@@ -242,7 +242,7 @@ The admin page logs the Clerk user object. This unnecessarily exposes personal i
 
 **Required fix:** remove the user-object logging from production code.
 
-Evidence: [admin logging](../../src/app/[locale]/admin/page.tsx#L68-L74).
+Evidence: [admin logging](../../apps/web/src/app/[locale]/admin/page.tsx#L68-L74).
 
 ### L2. Prevent administrative lockout and accidental destructive operations
 
@@ -256,7 +256,7 @@ The current mutation can disable the final enabled admin.
 Evidence:
 
 - [Admin enable/disable mutation](../../convex/admin.ts#L73-L80)
-- [Admin dashboard actions](../../src/app/[locale]/admin/page.tsx#L242-L250)
+- [Admin dashboard actions](../../apps/web/src/app/[locale]/admin/page.tsx#L242-L250)
 
 ### L3. Validate stored outbound URLs
 
@@ -270,7 +270,7 @@ Rich-text links and images accept arbitrary destinations.
 
 No executable-HTML or XSS exploit was demonstrated here.
 
-Evidence: [rich-text image and link rendering](../../src/features/blog/components/richText.tsx#L30-L40).
+Evidence: [rich-text image and link rendering](../../apps/web/src/features/blog/components/richText.tsx#L30-L40).
 
 ## Dependency audit results
 

@@ -23,7 +23,7 @@ export function ResortCard({ resort, selected, onPress }: { resort: Resort; sele
   return (
     <Pressable accessibilityRole="button" onPress={onPress} style={[styles.card, selected && styles.selected]}>
       <View style={styles.imageWrap}>
-        <Image style={styles.image} source={url && !failedImage ? { uri: url } : require("../../../../public/icons/icon-512.png")} contentFit={url && !failedImage ? "cover" : "contain"} onError={() => setFailedUrl(url)} />
+        <Image style={styles.image} source={url && !failedImage ? { uri: url } : require("../../../web/public/icons/icon-512.png")} contentFit={url && !failedImage ? "cover" : "contain"} onError={() => setFailedUrl(url)} />
         <View style={styles.badges}>
           {resort.height ? <Text style={styles.badge}>{resort.height}</Text> : null}
           {distance !== null ? <Text style={styles.badge}>{distance.toFixed(1)} {t("distanceAway")}</Text> : null}

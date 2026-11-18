@@ -65,7 +65,7 @@ export default function ResortDetail() {
     <Screen>
       <ScrollView contentContainerStyle={styles.content}>
         <View style={styles.hero}>
-          <Image source={hero && !heroFailed ? { uri: hero } : require("../../../../public/icons/icon-512.png")} style={styles.heroImage} contentFit={hero && !heroFailed ? "cover" : "contain"} onError={() => setHeroFailed(true)} />
+          <Image source={hero && !heroFailed ? { uri: hero } : require("../../../web/public/icons/icon-512.png")} style={styles.heroImage} contentFit={hero && !heroFailed ? "cover" : "contain"} onError={() => setHeroFailed(true)} />
           <View style={styles.heroCaption}><Text style={styles.heroTitle}>{resort.name}</Text>{distance !== null && <Text style={styles.heroDistance}>{distance.toFixed(1)} {t("distanceAway")}</Text>}</View>
         </View>
         <View style={styles.body}>

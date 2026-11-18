@@ -1,4 +1,4 @@
-// Brings resort images in public/assets/resorts within a size budget and
+// Brings resort images in apps/web/public/assets/resorts within a size budget and
 // derives a 1200x630 social crop (og.jpg) per resort. Manual step: run after
 // adding or replacing images, then commit.
 //
@@ -10,10 +10,11 @@
 //
 //   node scripts/optimizeResortImages.mjs
 import { readFileSync, readdirSync, statSync, writeFileSync } from "node:fs";
-import { join } from "node:path";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
 import sharp from "sharp";
 
-const root = join(process.cwd(), "public", "assets", "resorts");
+const root = join(dirname(fileURLToPath(import.meta.url)), "..", "apps", "web", "public", "assets", "resorts");
 const HERO = { maxWidth: 1920, quality: 75, budget: 400 * 1024 };
 const TRAIL = { maxWidth: 2400, quality: 85, budget: 400 * 1024 };
 const OG = { width: 1200, height: 630, quality: 80 };

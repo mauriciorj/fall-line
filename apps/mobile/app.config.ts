@@ -5,7 +5,7 @@ const config: ExpoConfig = {
   slug: "fall-line",
   scheme: "fallline",
   version: "0.1.0",
-  icon: "../../public/icons/icon-512.png",
+  icon: "../web/public/icons/icon-512.png",
   orientation: "default",
   userInterfaceStyle: "light",
   ios: {

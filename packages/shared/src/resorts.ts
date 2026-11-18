@@ -1,4 +1,4 @@
-import resortAssets from "../../../src/data/resortAssets.json";
+import resortAssets from "./data/resortAssets.json";
 import type { Resort } from "./types/resort";
 
 type ResortAssets = { hero: string | null; og: string | null; trailMaps: string[] };
