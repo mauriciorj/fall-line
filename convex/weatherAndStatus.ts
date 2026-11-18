@@ -95,9 +95,19 @@ export const getByResort = query({
   args: { resortId: v.string() },
   returns: v.any(),
   handler: async (ctx, args) => {
-    return await ctx.db
+    const resort = await ctx.db
+      .query("resorts")
+      .withIndex("by_resort_id", (q) => q.eq("resortId", args.resortId))
+      .unique();
+    if (resort?.published !== true) return null;
+
+    const status = await ctx.db
       .query("weatherAndStatus")
       .withIndex("by_resort", (q) => q.eq("resortId", args.resortId))
       .unique();
+    if (!status) return null;
+
+    const { resortId, sourceUrl, updatedAt, trails } = status;
+    return { resortId, sourceUrl, updatedAt, trails };
   },
 });

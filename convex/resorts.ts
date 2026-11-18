@@ -178,10 +178,11 @@ export const getByResortId = query({
   args: { resortId: v.string() },
   returns: v.any(),
   handler: async (ctx, args) => {
-    return await ctx.db
+    const resort = await ctx.db
       .query("resorts")
       .withIndex("by_resort_id", (q) => q.eq("resortId", args.resortId))
       .unique();
+    return resort?.published === true ? resort : null;
   },
 });
 

@@ -151,3 +151,13 @@ __pycache__/
 
 # clerk configuration (can include secrets)
 /.clerk/
+
+# Expo local state and generated native projects
+.expo/
+/apps/mobile/android/
+/apps/mobile/ios/
+/apps/mobile/credentials.json
+/apps/mobile/*.keystore
+/apps/mobile/*.jks
+/apps/mobile/*.p12
+/apps/mobile/*.mobileprovision

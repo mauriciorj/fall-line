@@ -3,6 +3,8 @@ import Link from "next/link";
 import { localizePath } from "@/src/i18n/routing";
 import { Locale, defaultLocale, getTranslator } from "@/src/i18n/translations";
 import { englishOnlyAlternates, getSupportEmail } from "@/utils/seo";
+import LegalSections from "@/components/legalSections";
+import { legalUpdated } from "@fall-line/shared/content/legal";
 
 type TermsParams = Promise<{ locale: Locale }>;
 
@@ -38,71 +40,10 @@ export default async function TermsPage({
             </p>
           )}
           <h1 className="text-4xl font-bold tracking-tight">Terms of Service</h1>
-          <p className="text-sm text-muted-foreground">Last updated: September 8, 2026</p>
+          <p className="text-sm text-muted-foreground">Last updated: {legalUpdated}</p>
         </header>
 
-        <section className="space-y-3">
-          <h2 className="text-2xl font-semibold">1. Acceptance</h2>
-          <p>
-            By using Fall Line, you agree to these Terms of Service. If you do not agree,
-            do not use the service.
-          </p>
-        </section>
-
-        <section className="space-y-3">
-          <h2 className="text-2xl font-semibold">2. Service purpose</h2>
-          <p>
-            Fall Line provides resort information, conditions, prices, hours, maps, and
-            related links for general informational and trip-planning purposes.
-          </p>
-          <p>
-            Resort information can change without notice. Confirm prices, schedules, closures,
-            availability, and restrictions with the resort before travelling.
-          </p>
-        </section>
-
-        <section className="space-y-3">
-          <h2 className="text-2xl font-semibold">3. Acceptable use</h2>
-          <p>
-            Use the service lawfully. Do not interfere with the service, attempt unauthorized
-            access, scrape or overload systems, or use displayed information to create safety risks.
-          </p>
-        </section>
-
-        <section className="space-y-3">
-          <h2 className="text-2xl font-semibold">4. Third-party services and links</h2>
-          <p>
-            The service may display information from resorts and link to third-party websites,
-            maps, booking systems, and payment providers. Third-party services have their own
-            terms and privacy policies. Fall Line does not control or guarantee them.
-          </p>
-        </section>
-
-        <section className="space-y-3">
-          <h2 className="text-2xl font-semibold">5. No warranty</h2>
-          <p>
-            The service is provided on an as-is and as-available basis. To the extent permitted by
-            law, Fall Line disclaims warranties about accuracy, availability, suitability,
-            or uninterrupted operation.
-          </p>
-        </section>
-
-        <section className="space-y-3">
-          <h2 className="text-2xl font-semibold">6. Limitation of liability</h2>
-          <p>
-            To the extent permitted by law, Fall Line is not responsible for losses,
-            injuries, missed reservations, costs, or damages arising from reliance on displayed
-            information or use of linked third-party services.
-          </p>
-        </section>
-
-        <section className="space-y-3">
-          <h2 className="text-2xl font-semibold">7. Changes</h2>
-          <p>
-            These terms may be updated from time to time. The updated version takes effect when it
-            is published on this page.
-          </p>
-        </section>
+        <LegalSections page="terms" />
 
         <section className="space-y-3">
           <h2 className="text-2xl font-semibold">8. Contact</h2>

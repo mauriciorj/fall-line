@@ -36,6 +36,12 @@ export const getByResort = query({
   args: { resortId: v.string() },
   returns: v.any(),
   handler: async (ctx, args) => {
+    const resort = await ctx.db
+      .query("resorts")
+      .withIndex("by_resort_id", (q) => q.eq("resortId", args.resortId))
+      .unique();
+    if (resort?.published !== true) return null;
+
     return await ctx.db
       .query("resortHours")
       .withIndex("by_resort", (q) => q.eq("resortId", args.resortId))

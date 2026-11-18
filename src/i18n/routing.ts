@@ -24,11 +24,7 @@ export function localeFromPathname(pathname: string): Locale {
 }
 
 // BCP 47 tags for Intl formatting.
-export const intlLocale: Record<Locale, string> = {
-  en: "en-CA",
-  fr: "fr-CA",
-  es: "es-ES",
-};
+export { intlLocale } from "@fall-line/shared/i18n/format";
 
 export const ogLocale: Record<Locale, string> = {
   en: "en_CA",

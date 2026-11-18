@@ -40,5 +40,5 @@
     ".next/dev/types/**/*.ts",
     "**/*.mts"
   ],
-  "exclude": ["node_modules", "crawler"]
+  "exclude": ["node_modules", "crawler", "apps/mobile", "packages/shared", "convex/**/*.test.ts", "vitest.config.ts"]
 }

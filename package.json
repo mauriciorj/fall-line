@@ -6,13 +6,17 @@
     "dev": "node scripts/generateResortAssets.mjs && next dev",
     "build": "node scripts/generateResortAssets.mjs && next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "mobile": "pnpm --filter @fall-line/mobile start",
+    "mobile:typecheck": "pnpm --filter @fall-line/mobile typecheck",
+    "test": "vitest run"
   },
   "dependencies": {
     "@clerk/nextjs": "^6.37.3",
     "@clerk/themes": "^2.4.49",
     "@convex-dev/aggregate": "^0.2.1",
     "@convex-dev/react-query": "^0.1.0",
+    "@fall-line/shared": "workspace:*",
     "@hookform/resolvers": "^5.2.2",
     "@radix-ui/react-accordion": "1.2.2",
     "@radix-ui/react-alert-dialog": "1.1.4",
@@ -77,6 +81,7 @@
     "@types/pg": "^8.16.0",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "convex-test": "^0.0.71",
     "eslint": "^9",
     "eslint-config-next": "16.0.10",
     "eslint-config-prettier": "^10.1.8",
@@ -88,6 +93,7 @@
     "sharp": "0.34.5",
     "tailwindcss": "^4",
     "tw-animate-css": "^1.4.0",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vitest": "^3.2.7"
   }
 }

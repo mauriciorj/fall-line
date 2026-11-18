@@ -19,20 +19,9 @@ import { useLanguage } from "@/src/i18n";
 import UpdatedAt from "@/components/updatedAt";
 
 import Toggle from "@/components/filter/toggle";
+import type { FilterState } from "@fall-line/shared/types/filters";
 
-export interface FilterState {
-  sortBy: "price" | "rating" | "distance";
-  distanceRange: [number, number];
-  activities: {
-    accommodations: boolean;
-    crosscountry: boolean;
-    lessons: boolean;
-    iceSkating: boolean;
-    snowshoeing: boolean;
-    spa: boolean;
-    tubbing: boolean;
-  };
-}
+export type { FilterState } from "@fall-line/shared/types/filters";
 
 interface FilterProps {
   filters: FilterState;

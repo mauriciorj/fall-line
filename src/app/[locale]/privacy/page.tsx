@@ -3,6 +3,8 @@ import Link from "next/link";
 import { localizePath } from "@/src/i18n/routing";
 import { Locale, defaultLocale, getTranslator } from "@/src/i18n/translations";
 import { englishOnlyAlternates, getSupportEmail } from "@/utils/seo";
+import LegalSections from "@/components/legalSections";
+import { legalUpdated } from "@fall-line/shared/content/legal";
 
 type PrivacyParams = Promise<{ locale: Locale }>;
 
@@ -38,88 +40,10 @@ export default async function PrivacyPage({
             </p>
           )}
           <h1 className="text-4xl font-bold tracking-tight">Privacy Policy</h1>
-          <p className="text-sm text-muted-foreground">Last updated: September 8, 2026</p>
+          <p className="text-sm text-muted-foreground">Last updated: {legalUpdated}</p>
         </header>
 
-        <section className="space-y-3">
-          <h2 className="text-2xl font-semibold">1. Scope</h2>
-          <p>
-            This Privacy Policy explains how Fall Line handles information when you use
-            the website.
-          </p>
-        </section>
-
-        <section className="space-y-3">
-          <h2 className="text-2xl font-semibold">2. Information handled</h2>
-          <ul className="list-disc space-y-2 pl-6">
-            <li>
-              Resort and location data retrieved from the application database to display search
-              results.
-            </li>
-            <li>
-              Your selected location stored in your browser&apos;s local storage so the site can
-              preserve that preference.
-            </li>
-            <li>
-              Approximate location information only when you grant browser location permission.
-              This is used to suggest a nearby region.
-            </li>
-            <li>
-              Information you choose to send when contacting support or providing feedback.
-            </li>
-          </ul>
-        </section>
-
-        <section className="space-y-3">
-          <h2 className="text-2xl font-semibold">3. How information is used</h2>
-          <p>
-            Information is used to operate the resort directory, filter and sort results, suggest
-            a location, respond to messages, protect the service, and improve reliability.
-          </p>
-        </section>
-
-        <section className="space-y-3">
-          <h2 className="text-2xl font-semibold">4. Service providers</h2>
-          <p>
-            The website uses infrastructure and map services to provide its features. Those
-            providers may process information under their own privacy policies. External resort,
-            map, booking, and payment links are governed by the policies of the linked service.
-          </p>
-        </section>
-
-        <section className="space-y-3">
-          <h2 className="text-2xl font-semibold">5. Your choices</h2>
-          <ul className="list-disc space-y-2 pl-6">
-            <li>Decline browser location permission and choose a location manually.</li>
-            <li>Clear the site&apos;s local storage through your browser settings.</li>
-            <li>Contact support about a privacy request or question.</li>
-          </ul>
-        </section>
-
-        <section className="space-y-3">
-          <h2 className="text-2xl font-semibold">6. Retention and security</h2>
-          <p>
-            Local preferences remain in your browser until you remove them. Information sent to
-            support is retained only as needed to respond and maintain records. Reasonable
-            safeguards are used, but no online service can guarantee absolute security.
-          </p>
-        </section>
-
-        <section className="space-y-3">
-          <h2 className="text-2xl font-semibold">7. Children</h2>
-          <p>
-            The service is not directed to children under 13, and we do not knowingly collect
-            personal information from children under 13.
-          </p>
-        </section>
-
-        <section className="space-y-3">
-          <h2 className="text-2xl font-semibold">8. Policy changes</h2>
-          <p>
-            This policy may be updated as the service changes. The current version is always
-            available on this page.
-          </p>
-        </section>
+        <LegalSections page="privacy" />
 
         <section className="space-y-3">
           <h2 className="text-2xl font-semibold">9. Contact</h2>
