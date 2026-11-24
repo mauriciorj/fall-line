@@ -10,6 +10,7 @@ Run `pnpm install` from the repository root, then:
 ```sh
 pnpm start:web      # Next.js only (http://localhost:3000)
 pnpm start:mobile   # Expo development server only
+pnpm start:mobile:go # Expo server for testing in Expo Go
 pnpm start:all      # Both servers; Ctrl+C stops both
 ```
 

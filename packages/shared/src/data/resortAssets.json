@@ -167,6 +167,41 @@
       "trail-1.webp"
     ]
   },
+  "canada/newfoundland-and-labrador/marble-mountain-steady-brook-humber-valley": {
+    "hero": "hero.jpg",
+    "og": null,
+    "trailMaps": []
+  },
+  "canada/newfoundland-and-labrador/smokey-mountain": {
+    "hero": "hero.jpg",
+    "og": null,
+    "trailMaps": []
+  },
+  "canada/newfoundland-and-labrador/white-hills": {
+    "hero": "hero.jpg",
+    "og": null,
+    "trailMaps": []
+  },
+  "canada/nova-scotia/ben-eoin": {
+    "hero": "hero.jpg",
+    "og": null,
+    "trailMaps": []
+  },
+  "canada/nova-scotia/cape-smokey": {
+    "hero": "hero.jpg",
+    "og": null,
+    "trailMaps": []
+  },
+  "canada/nova-scotia/martock": {
+    "hero": "hero.jpg",
+    "og": null,
+    "trailMaps": []
+  },
+  "canada/nova-scotia/wentworth": {
+    "hero": "hero.jpg",
+    "og": null,
+    "trailMaps": []
+  },
   "canada/ontario/adanac-ski-hill": {
     "hero": "hero.webp",
     "og": "og.jpg",
@@ -376,5 +411,10 @@
     "trailMaps": [
       "trail-1.webp"
     ]
+  },
+  "canada/prince-edward-island/brookvale-ski-park": {
+    "hero": "hero.jpg",
+    "og": null,
+    "trailMaps": []
   }
 }
