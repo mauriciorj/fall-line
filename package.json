@@ -6,17 +6,20 @@
     "dev:web": "pnpm --filter @fall-line/web dev",
     "dev:mobile": "pnpm --filter @fall-line/mobile start",
     "dev:mobile:go": "pnpm --filter @fall-line/mobile go",
+    "dev:mobile:tunnel": "pnpm --filter @fall-line/mobile go:tunnel",
     "dev:all": "pnpm --parallel --filter @fall-line/web --filter @fall-line/mobile run dev",
     "start:web": "pnpm dev:web",
     "start:mobile": "pnpm dev:mobile",
     "start:mobile:go": "pnpm dev:mobile:go",
+    "start:mobile:tunnel": "pnpm dev:mobile:tunnel",
     "start:all": "pnpm dev:all",
     "mobile": "pnpm dev:mobile",
     "mobile:typecheck": "pnpm --filter @fall-line/mobile typecheck",
     "build": "pnpm --filter @fall-line/web build",
     "start": "pnpm --filter @fall-line/web start",
     "lint": "pnpm --filter @fall-line/web lint",
-    "test": "vitest run"
+    "test": "vitest run",
+    "images:webp": "node scripts/convertImagesToWebp.mjs"
   },
   "dependencies": {
     "convex": "^1.45.0"

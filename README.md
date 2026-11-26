@@ -11,6 +11,7 @@ Run `pnpm install` from the repository root, then:
 pnpm start:web      # Next.js only (http://localhost:3000)
 pnpm start:mobile   # Expo development server only
 pnpm start:mobile:go # Expo server for testing in Expo Go
+pnpm start:mobile:tunnel # Expo Go via tunnel; scan the QR code after "Ready" appears
 pnpm start:all      # Both servers; Ctrl+C stops both
 ```
 
